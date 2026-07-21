@@ -1,7 +1,7 @@
 ---
 title: Baseline Controls
-parent: Security and Assurance
-nav_order: 2
+parent: Security Architecture
+nav_order: 7
 ---
 
 # Baseline Controls

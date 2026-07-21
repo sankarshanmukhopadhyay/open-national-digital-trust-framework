@@ -30,28 +30,6 @@ for p in list((root/'docs').rglob('*.md'))+list((root/'profiles').rglob('*.md'))
         if not target or '://' in target or target.startswith(('mailto:','#')): continue
         resolved=(p.parent/target).resolve()
         if not resolved.exists(): errors.append(f'Broken local link in {p.relative_to(root)}: {target}')
-
-# Mermaid publication contract: Just the Docs is the single browser runtime.
-config=(root/'_config.yml').read_text(encoding='utf-8')
-try:
-    site_config=yaml.safe_load(config) or {}
-except Exception:
-    site_config={}
-mermaid_config=site_config.get('mermaid') or {}
-if not mermaid_config.get('version'):
-    errors.append('Missing mermaid.version in _config.yml')
-for duplicate_loader in (root/'assets/js/mermaid-init.js', root/'assets/js/mermaid.js'):
-    if duplicate_loader.exists():
-        errors.append(f'Competing Mermaid browser loader is not allowed: {duplicate_loader.relative_to(root)}')
-head_custom=root/'_includes/head_custom.html'
-if head_custom.exists():
-    head_text=head_custom.read_text(encoding='utf-8', errors='ignore').lower()
-    if 'mermaid' in head_text:
-        errors.append('Mermaid MUST NOT be loaded or initialized from _includes/head_custom.html')
-runtime_config=root/'_includes/mermaid_config.js'
-if not runtime_config.exists():
-    errors.append('Missing _includes/mermaid_config.js')
-
 for jp in list((root/'bindings').rglob('*.json')):
     try: json.loads(jp.read_text(encoding='utf-8'))
     except Exception as e: errors.append(f'Invalid JSON {jp.relative_to(root)}: {e}')

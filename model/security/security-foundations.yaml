@@ -1,0 +1,80 @@
+specification: ONDTF
+working_release: 0.5.0
+status: draft
+catalogue: security-foundations
+principles:
+  - id: SEC-PR-01
+    name: Protect legitimacy, not only access
+    objective_refs: [SEC-OBJ-01, SEC-OBJ-02, SEC-OBJ-05]
+  - id: SEC-PR-02
+    name: Bind authority to context
+    objective_refs: [SEC-OBJ-02, SEC-OBJ-05, SEC-OBJ-06]
+  - id: SEC-PR-03
+    name: Evidence before effect
+    objective_refs: [SEC-OBJ-04, SEC-OBJ-05, SEC-OBJ-06]
+  - id: SEC-PR-04
+    name: Separate critical powers
+    objective_refs: [SEC-OBJ-01, SEC-OBJ-07, SEC-OBJ-10]
+  - id: SEC-PR-05
+    name: Make trust boundaries explicit
+    objective_refs: [SEC-OBJ-08, SEC-OBJ-10]
+  - id: SEC-PR-06
+    name: Contain compromise
+    objective_refs: [SEC-OBJ-09, SEC-OBJ-10, SEC-OBJ-11]
+  - id: SEC-PR-07
+    name: Preserve accountable evidence
+    objective_refs: [SEC-OBJ-07, SEC-OBJ-11, SEC-OBJ-12]
+  - id: SEC-PR-08
+    name: Fail safely and visibly
+    objective_refs: [SEC-OBJ-09, SEC-OBJ-10, SEC-OBJ-12]
+  - id: SEC-PR-09
+    name: Preserve security under change
+    objective_refs: [SEC-OBJ-01, SEC-OBJ-09, SEC-OBJ-11]
+  - id: SEC-PR-10
+    name: Do not externalise security harm
+    objective_refs: [SEC-OBJ-12]
+  - id: SEC-PR-11
+    name: Treat automation as an exercised authority
+    objective_refs: [SEC-OBJ-02, SEC-OBJ-05, SEC-OBJ-07, SEC-OBJ-12]
+  - id: SEC-PR-12
+    name: Continuously justify reliance
+    objective_refs: [SEC-OBJ-04, SEC-OBJ-08, SEC-OBJ-09, SEC-OBJ-11]
+objectives:
+  - {id: SEC-OBJ-01, name: Governance integrity}
+  - {id: SEC-OBJ-02, name: Authority integrity}
+  - {id: SEC-OBJ-03, name: Policy integrity}
+  - {id: SEC-OBJ-04, name: Evidence integrity}
+  - {id: SEC-OBJ-05, name: Decision integrity}
+  - {id: SEC-OBJ-06, name: Effect integrity}
+  - {id: SEC-OBJ-07, name: Accountability integrity}
+  - {id: SEC-OBJ-08, name: Boundary security}
+  - {id: SEC-OBJ-09, name: Service resilience}
+  - {id: SEC-OBJ-10, name: Compromise containment}
+  - {id: SEC-OBJ-11, name: Recovery integrity}
+  - {id: SEC-OBJ-12, name: Human and public-interest protection}
+domains:
+  - {id: SEC-DOM-01, name: Governance and mandate security}
+  - {id: SEC-DOM-02, name: Authority and privilege security}
+  - {id: SEC-DOM-03, name: Identity, credential, and authenticator security}
+  - {id: SEC-DOM-04, name: Policy and rule security}
+  - {id: SEC-DOM-05, name: Evidence, registry, and status security}
+  - {id: SEC-DOM-06, name: Decision and effect security}
+  - {id: SEC-DOM-07, name: Platform, software, and supply-chain security}
+  - {id: SEC-DOM-08, name: Operations, monitoring, and resilience}
+  - {id: SEC-DOM-09, name: Accountability, audit, and redress security}
+  - {id: SEC-DOM-10, name: Federation and external-dependency security}
+  - {id: SEC-DOM-11, name: Privacy and disclosure security}
+  - {id: SEC-DOM-12, name: Automated-agent and human-interaction security}
+trust_assumptions:
+  - {id: TA-01, name: Governance authority is legitimate and current}
+  - {id: TA-02, name: Administrative privilege is exercised as authorised}
+  - {id: TA-03, name: Issuers and evidence providers remain competent and uncompromised}
+  - {id: TA-04, name: Registries and status services are sufficiently current}
+  - {id: TA-05, name: Policy evaluation matches authorised policy intent}
+  - {id: TA-06, name: Cryptographic protection remains suitable}
+  - {id: TA-07, name: Technical dependencies do not exceed their declared role}
+  - {id: TA-08, name: External domains mean what the recognition mapping says they mean}
+  - {id: TA-09, name: Decision evidence remains available and trustworthy}
+  - {id: TA-10, name: Affected parties can use the redress mechanism}
+  - {id: TA-11, name: Automated agents remain within mandate}
+  - {id: TA-12, name: Security controls do not create disproportionate harm}

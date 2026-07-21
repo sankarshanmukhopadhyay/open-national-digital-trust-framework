@@ -2,11 +2,14 @@
 
 ## Unreleased
 
-### Fixed
+### Added
 
-- Restored repository-wide Mermaid rendering on GitHub Pages by removing the competing custom Mermaid loader and delegating loading, initialization, and fenced-block rendering to the native Just the Docs Mermaid integration.
-- Added an explicit Mermaid runtime configuration through `_includes/mermaid_config.js`.
-- Strengthened built-site validation to detect missing Mermaid runtime integration and malformed generated diagram markup.
+- established the ONDTF security architecture foundation, including twelve security principles, twelve security objectives, twelve security domains, and an explicit trust-assumption model;
+- added a machine-readable security-foundations catalogue for future threat, control, assurance, and metric traceability.
+
+### Changed
+
+- separated the Security Architecture publication section from the independent Assurance section and expanded repository-wide navigation for the developing v0.5.0 baseline.
 
 ## [0.4.0] - 2026-07-21
 
