@@ -3,7 +3,7 @@ short_title: ONDTF
 description: Jurisdiction-neutral, open standards-based framework for national digital trust infrastructure.
 url: "https://sankarshanmukhopadhyay.github.io"
 baseurl: "/open-national-digital-trust-framework"
-remote_theme: just-the-docs/just-the-docs
+theme: just-the-docs
 color_scheme: light
 search_enabled: true
 heading_anchors: true

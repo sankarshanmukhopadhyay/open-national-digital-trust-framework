@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased]
+
+### Fixed
+
+- Replaced the legacy `github-pages` and remote-theme dependency chain with a current Jekyll 4 and Just the Docs toolchain.
+- Removed the Ruby 3.3-incompatible Jekyll 3.6/Kramdown 1.14 dependency path that failed while loading `rexml/parsers/baseparser`.
+- Pinned Ruby 3.3 consistently across documentation workflows.
+
 ## [0.1.0] — 2026-07-21
 
 ### Added
