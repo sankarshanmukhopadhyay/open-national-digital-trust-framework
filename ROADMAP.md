@@ -1,27 +1,33 @@
 # Roadmap
 
-## v0.2.0 — Initial Public Draft
+## v0.1.0 — Initial Public Draft
 
 - jurisdiction-neutral ONDTF identity;
-- core architecture and governance map;
-- initial India-profile skeleton;
-- framework independence with optional TSMM/TIS compatibility;
-- GitHub Pages and Mermaid rendering;
-- repository validation and contribution hygiene.
+- initial architecture, governance, assurance, and profile structure;
+- GitHub Pages and repository hygiene.
 
-## v0.2.0 — Semantic Alignment Draft
+## v0.2.0 — Semantic and Framework Independence Draft
 
-- optional TSMM compatibility crosswalk;
-- optional TIS compatibility profile and reference registry;
-- canonical terminology and information model;
-- formal scope and conformance targets;
-- architecture decision record set.
+- self-contained ONDTF information baseline;
+- framework independence and optional external compatibility;
+- programme controls and architecture decisions;
+- validated GitHub Pages and Mermaid publication pipeline.
+
+## v0.3.0 — Core Specification and Operating Model Draft
+
+- core scope, non-goals, and conceptual baseline;
+- outcome-oriented capability model;
+- first normative requirement register;
+- scoped and technology-neutral conformance model;
+- institutional function and decision-rights model;
+- trust-scheme and participant lifecycles;
+- policy change, oversight, transparency, redress, and maturity guidance.
 
 ## v0.5.0 — Feature-Complete Draft
 
-- normative governance, security, assurance, operations, and profile requirements;
-- complete India profile and at least three sector profiles;
-- machine-readable profile and optional compatibility schemas;
+- complete reference and information architecture;
+- normative security, privacy, assurance, operations, and interoperability requirements;
+- profile method and priority jurisdiction and sector profiles;
 - reference APIs, examples, and negative tests;
 - public review disposition log.
 
@@ -30,7 +36,7 @@
 - stable semantics and profile method;
 - interoperability and conformance suite;
 - implementation evidence from multiple independent pilots;
-- completed privacy, security, legal, and adversarial reviews.
+- completed privacy, security, legal, accessibility, and adversarial reviews.
 
 ## v1.0.0 — Stable Initial Release
 
@@ -39,7 +45,6 @@
 - versioned jurisdiction and sector profiles;
 - implementer and assessor guidance;
 - release and migration policy.
-
 
 ## Canonical portfolio repositories
 

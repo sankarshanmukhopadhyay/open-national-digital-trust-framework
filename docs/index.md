@@ -38,6 +38,8 @@ flowchart LR
 
 | Area | Purpose |
 |---|---|
+| [Core specification](core-specification/index.md) | Scope, concepts, capabilities, requirements, and conformance |
+| [Target operating model](operating-model/index.md) | Institutional functions, lifecycles, decision rights, and maturity |
 | [Programme management](programme/index.md) | Delivery governance, workplan, decisions, and quality gates |
 | [Information model](information-model/index.md) | Canonical entities, relationships, lifecycle, identifiers, and provenance |
 | [Foundations](foundations/index.md) | Scope, principles, terminology, TSMM/TIS relationship |
@@ -55,4 +57,4 @@ flowchart LR
 
 ## Release posture
 
-Version 0.2.0 establishes the semantic alignment, programme controls, and the canonical information-model baseline. It is intentionally broad enough to support structured review but does not yet claim a complete target operating model, stable implementation interfaces, or production conformance.
+Version 0.3.0 establishes the first coordinated core specification and national digital trust target operating model. It introduces an outcome-oriented capability model, a normative requirement baseline, scoped conformance, institutional functions, governance lifecycles, operational redress, and staged maturity. It remains a public draft and does not yet claim complete reference interfaces, sector profiles, or production certification.

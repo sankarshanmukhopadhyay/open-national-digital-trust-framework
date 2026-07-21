@@ -14,7 +14,7 @@ aux_links:
   "ONDTF on GitHub":
     - "https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework"
 aux_links_new_tab: true
-footer_content: "Open National Digital Trust Framework v0.2.0 — Semantic and Portfolio Alignment Draft"
+footer_content: "Open National Digital Trust Framework v0.3.0 — Core Specification and Operating Model Draft"
 plugins:
   - jekyll-seo-tag
 exclude:

@@ -29,3 +29,26 @@ This page provides publication coverage for the complete documentation set.
 ## Machine-readable companion artefacts
 
 Machine-readable bindings, model records, governance registers, and validation evidence are distributed in the repository and described by the corresponding documentation pages. They are deliberately excluded from direct Jekyll rendering because GitHub Pages is the human-readable publication surface.
+
+## Core specification
+
+- [Core specification](core-specification/index.md)
+- [Scope and non-goals](core-specification/scope-and-non-goals.md)
+- [Conceptual baseline](core-specification/conceptual-baseline.md)
+- [Capability model](core-specification/capability-model.md)
+- [Normative requirements](core-specification/normative-requirements.md)
+- [Conformance model](core-specification/conformance-model.md)
+- [Requirements traceability](core-specification/traceability.md)
+
+## Target operating model
+
+- [Target operating model](operating-model/index.md)
+- [Operating model overview](operating-model/overview.md)
+- [Institutional functions](operating-model/institutional-functions.md)
+- [Decision rights](operating-model/decision-rights.md)
+- [Trust-scheme lifecycle](operating-model/trust-scheme-lifecycle.md)
+- [Participant lifecycle](operating-model/participant-lifecycle.md)
+- [Policy and change management](operating-model/policy-change-management.md)
+- [Oversight and transparency](operating-model/oversight-transparency.md)
+- [Challenge and redress operations](operating-model/challenge-redress.md)
+- [Capability maturity](operating-model/capability-maturity.md)

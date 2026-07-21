@@ -1,5 +1,5 @@
 schema_version: "1.0"
-model_version: "0.2.0"
+model_version: "0.3.0"
 entities:
   - {name: Jurisdiction, owner: ONDTF}
   - {name: TrustScheme, owner: ONDTF, informed_by: TSMM}

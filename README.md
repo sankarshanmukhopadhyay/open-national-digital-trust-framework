@@ -2,7 +2,7 @@
 
 [![Documentation](https://img.shields.io/badge/docs-GitHub%20Pages-blue)](https://sankarshanmukhopadhyay.github.io/open-national-digital-trust-framework/)
 [![Status](https://img.shields.io/badge/status-initial%20public%20draft-orange)](RELEASE_NOTES.md)
-[![Version](https://img.shields.io/badge/version-v0.2.0-green)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-v0.3.0-green)](CHANGELOG.md)
 
 The **Open National Digital Trust Framework (ONDTF)** is a jurisdiction-neutral, multi-sector reference framework for governing, implementing, assuring, and interoperating digital trust infrastructure.
 
@@ -28,7 +28,7 @@ ONDTF supplies that missing governance and architecture layer.
 |---|---|
 | Portfolio role | Jurisdiction-neutral national framework |
 | Lifecycle | Active initial public draft |
-| Current version | v0.2.0 |
+| Current version | v0.3.0 |
 | Stability | Experimental; architecture under review |
 | Primary artefact | Framework, reference architecture, and profile method |
 | Normative posture | Normative requirements are explicitly labelled |

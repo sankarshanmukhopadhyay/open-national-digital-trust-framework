@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.3.0] - 2026-07-21
+
+### Added
+
+- self-contained ONDTF core specification;
+- capability catalogue and initial normative requirements;
+- scoped, technology-neutral conformance model;
+- machine-readable core requirements register;
+- national digital trust target operating model;
+- institutional function and decision-rights models;
+- trust-scheme and participant lifecycle specifications;
+- policy-change, oversight, transparency, redress, and maturity guidance;
+- GitHub Pages navigation and site-map coverage for all new content.
+
 ## Unreleased
 
 ### Fixed

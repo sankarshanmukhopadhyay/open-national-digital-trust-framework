@@ -1,0 +1,64 @@
+specification: ONDTF
+version: 0.3.0
+status: draft
+requirements:
+  - id: ONDTF-GOV-001
+    category: governance
+    force: MUST
+    capability: CAP-01
+    statement: Identify the legal, policy, or institutional mandate under which the framework operates.
+    evidence: Published mandate or equivalent authoritative instrument.
+  - id: ONDTF-GOV-002
+    category: governance
+    force: MUST
+    capability: CAP-01
+    statement: Identify accountable, operating, supervisory, assessment, and review authorities.
+    evidence: Governance and decision-rights register.
+  - id: ONDTF-AUT-001
+    category: authority
+    force: MUST_NOT
+    capability: CAP-04
+    statement: Admit a consequential action solely because the actor is authenticated.
+    evidence: Decision policy demonstrating separate authority evaluation.
+  - id: ONDTF-AUT-003
+    category: delegation
+    force: MUST_NOT
+    capability: CAP-05
+    statement: Permit delegated authority to exceed authority held by the delegating party.
+    evidence: Delegation constraints and validation tests.
+  - id: ONDTF-EVI-001
+    category: evidence
+    force: MUST
+    capability: CAP-07
+    statement: Evaluate consequential evidence for source attribution, integrity, relevance, and freshness.
+    evidence: Evidence policy and decision records.
+  - id: ONDTF-ASR-001
+    category: assurance
+    force: MUST
+    capability: CAP-09
+    statement: Scope assurance claims by subject, controls, evidence basis, assessment, and freshness.
+    evidence: Assurance statement or declaration.
+  - id: ONDTF-DEC-003
+    category: accountability
+    force: MUST
+    capability: CAP-11
+    statement: Produce a reviewable record for a consequential decision.
+    evidence: Decision record or reference to preserved evidence.
+  - id: ONDTF-RED-001
+    category: redress
+    force: MUST
+    capability: CAP-13
+    statement: Provide affected parties an accessible route to correction, challenge, and remedy.
+    evidence: Published procedure and operational case records.
+  - id: ONDTF-CON-001
+    category: conformance
+    force: MUST
+    capability: CAP-15
+    statement: Scope a conformance claim by version, profile, class, boundary, and evidence basis.
+    evidence: Conformance declaration.
+  - id: ONDTF-CON-002
+    category: independence
+    force: MUST_NOT
+    capability: CAP-15
+    statement: Require a particular external meta-model, schema, protocol, registry implementation, or product for core conformance.
+    evidence: Core conformance policy and profile dependency declarations.
