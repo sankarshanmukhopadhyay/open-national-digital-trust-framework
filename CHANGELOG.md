@@ -1,5 +1,13 @@
 # Changelog
 
+## Unreleased
+
+### Fixed
+
+- Restored repository-wide Mermaid rendering on GitHub Pages by removing the competing custom Mermaid loader and delegating loading, initialization, and fenced-block rendering to the native Just the Docs Mermaid integration.
+- Added an explicit Mermaid runtime configuration through `_includes/mermaid_config.js`.
+- Strengthened built-site validation to detect missing Mermaid runtime integration and malformed generated diagram markup.
+
 ## [0.4.0] - 2026-07-21
 
 ### Added
