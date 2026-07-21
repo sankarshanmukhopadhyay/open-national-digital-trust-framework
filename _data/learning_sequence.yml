@@ -1,0 +1,170 @@
+- path: docs/learning/index.md
+  title: Learn ONDTF
+  url: /learn/
+  track: Learning journey
+  position: 1
+  next:
+    title: ONDTF in One Hour
+    url: /docs/learning/one-hour.html
+- path: docs/learning/one-hour.md
+  title: ONDTF in One Hour
+  url: /docs/learning/one-hour.html
+  track: Learning journey
+  position: 2
+  previous:
+    title: Learn ONDTF
+    url: /learn/
+  next:
+    title: Framework Overview
+    url: /
+- path: docs/index.md
+  title: Framework Overview
+  url: /
+  track: Canonical framework
+  position: 3
+  previous:
+    title: ONDTF in One Hour
+    url: /docs/learning/one-hour.html
+  next:
+    title: Foundations
+    url: /docs/foundations/
+- path: docs/foundations/index.md
+  title: Foundations
+  url: /docs/foundations/
+  track: Canonical framework
+  position: 4
+  previous:
+    title: Framework Overview
+    url: /
+  next:
+    title: Core Specification
+    url: /docs/core-specification/
+- path: docs/core-specification/index.md
+  title: Core Specification
+  url: /docs/core-specification/
+  track: Canonical framework
+  position: 5
+  previous:
+    title: Foundations
+    url: /docs/foundations/
+  next:
+    title: Target Operating Model
+    url: /docs/operating-model/
+- path: docs/operating-model/index.md
+  title: Target Operating Model
+  url: /docs/operating-model/
+  track: Canonical framework
+  position: 6
+  previous:
+    title: Core Specification
+    url: /docs/core-specification/
+  next:
+    title: Governance
+    url: /docs/governance/
+- path: docs/governance/index.md
+  title: Governance
+  url: /docs/governance/
+  track: Canonical framework
+  position: 7
+  previous:
+    title: Target Operating Model
+    url: /docs/operating-model/
+  next:
+    title: Reference Architecture
+    url: /docs/architecture/
+- path: docs/architecture/index.md
+  title: Reference Architecture
+  url: /docs/architecture/
+  track: Canonical framework
+  position: 8
+  previous:
+    title: Governance
+    url: /docs/governance/
+  next:
+    title: Information Architecture
+    url: /docs/information-model/
+- path: docs/information-model/index.md
+  title: Information Architecture
+  url: /docs/information-model/
+  track: Canonical framework
+  position: 9
+  previous:
+    title: Reference Architecture
+    url: /docs/architecture/
+  next:
+    title: Canonical Workflows
+    url: /docs/workflows/
+- path: docs/workflows/index.md
+  title: Canonical Workflows
+  url: /docs/workflows/
+  track: Canonical framework
+  position: 10
+  previous:
+    title: Information Architecture
+    url: /docs/information-model/
+  next:
+    title: Security Architecture
+    url: /docs/security/
+- path: docs/security/index.md
+  title: Security Architecture
+  url: /docs/security/
+  track: Canonical framework
+  position: 11
+  previous:
+    title: Canonical Workflows
+    url: /docs/workflows/
+  next:
+    title: Assurance
+    url: /docs/assurance/
+- path: docs/assurance/index.md
+  title: Assurance
+  url: /docs/assurance/
+  track: Canonical framework
+  position: 12
+  previous:
+    title: Security Architecture
+    url: /docs/security/
+  next:
+    title: Implementation Guide
+    url: /docs/implementation/
+- path: docs/implementation/index.md
+  title: Implementation Guide
+  url: /docs/implementation/
+  track: Canonical framework
+  position: 13
+  previous:
+    title: Assurance
+    url: /docs/assurance/
+  next:
+    title: Worked Reference Scenario
+    url: /docs/reference-scenario/
+- path: docs/reference-scenario/index.md
+  title: Worked Reference Scenario
+  url: /docs/reference-scenario/
+  track: Canonical framework
+  position: 14
+  previous:
+    title: Implementation Guide
+    url: /docs/implementation/
+  next:
+    title: Jurisdiction Profiles
+    url: /profiles/
+- path: profiles/index.md
+  title: Jurisdiction Profiles
+  url: /profiles/
+  track: Canonical framework
+  position: 15
+  previous:
+    title: Worked Reference Scenario
+    url: /docs/reference-scenario/
+  next:
+    title: Adoption
+    url: /docs/adoption/
+- path: docs/adoption/index.md
+  title: Adoption
+  url: /docs/adoption/
+  track: Canonical framework
+  position: 16
+  previous:
+    title: Jurisdiction Profiles
+    url: /profiles/

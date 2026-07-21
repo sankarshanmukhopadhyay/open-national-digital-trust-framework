@@ -63,11 +63,13 @@ See [Framework independence](docs/foundations/framework-independence.md), [Portf
 
 ## Start here
 
-- [Policy and regulatory readers](docs/adoption/policy-reader-path.md)
-- [Architects](docs/adoption/architect-reader-path.md)
-- [Implementers](docs/adoption/implementer-reader-path.md)
-- [Assurance and audit teams](docs/adoption/assurance-reader-path.md)
-- [India profile](profiles/india/index.md)
+For a guided introduction, use the rendered documentation:
+
+- **[ONDTF in One Hour](https://sankarshanmukhopadhyay.github.io/open-national-digital-trust-framework/docs/learning/one-hour.html)**
+- **[Choose a role-based learning path](https://sankarshanmukhopadhyay.github.io/open-national-digital-trust-framework/learn/)**
+- **[View the framework map](https://sankarshanmukhopadhyay.github.io/open-national-digital-trust-framework/docs/documentation/framework-map.html)**
+
+The GitHub Pages site provides sidebar reference navigation, breadcrumbs, search, and explicit Previous/Next links for the canonical guided sequence.
 
 ## Ten-minute validation
 

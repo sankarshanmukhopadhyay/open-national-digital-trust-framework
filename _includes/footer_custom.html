@@ -1,0 +1,27 @@
+{% assign sequence_entry = site.data.learning_sequence | where: "path", page.path | first %}
+{% if sequence_entry %}
+<nav class="ondtf-page-sequence" aria-label="Guided reading navigation">
+  <div class="ondtf-sequence-context">
+    <span class="ondtf-sequence-label">{{ sequence_entry.track }}</span>
+    <span>Step {{ sequence_entry.position }} of {{ site.data.learning_sequence.size }}</span>
+  </div>
+  <div class="ondtf-sequence-links">
+    {% if sequence_entry.previous %}
+      <a class="ondtf-sequence-link ondtf-sequence-previous" href="{{ sequence_entry.previous.url | relative_url }}">
+        <span class="ondtf-sequence-direction">← Previous</span>
+        <strong>{{ sequence_entry.previous.title }}</strong>
+      </a>
+    {% else %}<span></span>{% endif %}
+    {% if sequence_entry.next %}
+      <a class="ondtf-sequence-link ondtf-sequence-next" href="{{ sequence_entry.next.url | relative_url }}">
+        <span class="ondtf-sequence-direction">Next →</span>
+        <strong>{{ sequence_entry.next.title }}</strong>
+      </a>
+    {% endif %}
+  </div>
+</nav>
+{% endif %}
+<div class="ondtf-footer-meta">
+  <span>Open National Digital Trust Framework v0.4.0</span>
+  <span><a href="{{ '/docs/documentation/reading-order.html' | relative_url }}">Reading order</a> · <a href="{{ '/docs/site-map.html' | relative_url }}">Site map</a></span>
+</div>

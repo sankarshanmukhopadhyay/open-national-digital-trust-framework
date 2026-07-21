@@ -107,3 +107,13 @@ Machine-readable bindings, model records, governance registers, and validation e
 - [Threat and control trace]({{ '/docs/reference-scenario/threat-control-trace.html' | relative_url }})
 - [Evidence package]({{ '/docs/reference-scenario/evidence-package.html' | relative_url }})
 - [Implementation lessons]({{ '/docs/reference-scenario/implementation-lessons.html' | relative_url }})
+
+
+## Guided learning and documentation architecture
+
+- [Learn ONDTF](learning/index.md)
+- [ONDTF in One Hour](learning/one-hour.md)
+- [Documentation Architecture](documentation/index.md)
+- [Canonical Reading Order](documentation/reading-order.md)
+- [Framework Map](documentation/framework-map.md)
+- [Concept Dependency Map](documentation/concept-dependency-map.md)

@@ -15,8 +15,6 @@ aux_links:
   ONDTF on GitHub:
   - https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework
 aux_links_new_tab: true
-footer_content: Open National Digital Trust Framework v0.4.0 — Reference Architecture
-  and Information Architecture Draft
 plugins:
 - jekyll-seo-tag
 exclude:
@@ -45,3 +43,8 @@ defaults:
     type: pages
   values:
     layout: default
+gh_edit_link: true
+gh_edit_link_text: Suggest an improvement to this page on GitHub.
+gh_edit_repository: https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework
+gh_edit_branch: main
+gh_edit_view_mode: edit
