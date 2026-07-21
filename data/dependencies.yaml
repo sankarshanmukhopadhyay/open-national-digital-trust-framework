@@ -1,0 +1,14 @@
+schema_version: "0.1"
+framework: open-national-digital-trust-framework
+framework_version: "0.1.0"
+dependencies:
+  - name: trust-systems-meta-model
+    role: canonical-semantic-model
+    relationship: informative-at-v0.1.0
+    planned_relationship: normative-profiled-dependency
+    alignment_target: "v0.2.0"
+  - name: trust-infrastructure-schemas
+    role: portable-schema-contracts
+    relationship: informative-at-v0.1.0
+    planned_relationship: normative-profiled-dependency
+    alignment_target: "v0.2.0"

@@ -1,0 +1,16 @@
+schema_version: "0.1"
+profile:
+  id: example-jurisdiction
+  title: Example Jurisdiction Profile
+  ondtf_version: "0.1.0"
+  status: draft
+  authorities: []
+  legal_bases: []
+  recognised_mechanisms: []
+  registries: []
+  sector_overlays: []
+  assurance_mapping: []
+  privacy_requirements: []
+  incident_and_redress: []
+  cross_border_rules: []
+  deviations: []
