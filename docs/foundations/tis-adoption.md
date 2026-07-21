@@ -1,7 +1,7 @@
 ---
 title: TIS Artefact Adoption
 parent: Foundations
-nav_order: 4
+nav_order: 6
 ---
 # TIS Compatibility Profile
 

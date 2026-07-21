@@ -1,7 +1,7 @@
 ---
 title: Standards Profile
 parent: Open National Digital Trust Framework
-nav_order: 4
+nav_order: 5
 has_children: true
 ---
 

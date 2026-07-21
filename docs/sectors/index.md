@@ -1,7 +1,7 @@
 ---
 title: Sector Profiles
 parent: Open National Digital Trust Framework
-nav_order: 7
+nav_order: 9
 has_children: true
 ---
 

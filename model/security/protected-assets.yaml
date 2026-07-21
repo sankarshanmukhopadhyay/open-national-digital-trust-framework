@@ -23,3 +23,4 @@ assets:
   - {id: AST-18, name: Personal organisational and relationship information, domains: [SEC-DOM-11]}
   - {id: AST-19, name: Federation and recognition mappings, domains: [SEC-DOM-10]}
   - {id: AST-20, name: Public trust and institutional continuity, domains: [SEC-DOM-01, SEC-DOM-08, SEC-DOM-09]}
+  - {id: AST-21, name: Automated-agent mandates and tool-invocation records, domains: [SEC-DOM-12, SEC-DOM-02, SEC-DOM-09]}

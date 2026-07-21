@@ -1,26 +1,15 @@
 ---
-title: Trust Lifecycle
+layout: default
+title: Architecture lifecycle (moved)
 parent: Reference Architecture
-nav_order: 3
+nav_exclude: true
+permalink: /docs/architecture/lifecycle.html
 ---
 
-# Trust Lifecycle
+# Architecture lifecycle
 
-```mermaid
-stateDiagram-v2
-  [*] --> Proposed
-  Proposed --> Authorised: governance approval
-  Authorised --> Active: onboarding and controls complete
-  Active --> Suspended: incident or review
-  Suspended --> Active: remediation accepted
-  Active --> Revoked: authority withdrawn
-  Active --> Expired: time limit reached
-  Suspended --> Revoked
-  Revoked --> Archived
-  Expired --> Archived
-  Archived --> [*]
-```
+Lifecycle behaviour is now defined through the canonical architecture and workflow documents:
 
-The lifecycle applies to participants, credentials, delegated authorities, registry entries, policy versions and certification states.
-
-Every lifecycle transition MUST identify the initiating authority, effective time, reason, evidence and notification obligations. High-impact transitions SHOULD support independent review and appeal.
+- [Interaction Catalogue]({{ '/docs/architecture/interaction-catalogue.html' | relative_url }})
+- [Workflow Catalogue]({{ '/docs/workflows/' | relative_url }})
+- [State Models]({{ '/docs/information-model/state-models.html' | relative_url }})

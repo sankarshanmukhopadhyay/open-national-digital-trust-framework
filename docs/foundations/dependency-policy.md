@@ -2,7 +2,7 @@
 layout: default
 title: Reference and Dependency Policy
 parent: Foundations
-nav_order: 4
+nav_order: 5
 ---
 # Reference and Dependency Policy
 

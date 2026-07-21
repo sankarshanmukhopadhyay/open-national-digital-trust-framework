@@ -51,6 +51,7 @@ An implementation MUST identify which assets it holds, processes, publishes, eva
 | AST-18 | Personal, organisational, and relationship information | identifiers, attributes, transactions, affiliations, delegation chains | minimisation, confidentiality, unlinkability, lawful use |
 | AST-19 | Federation and recognition mappings | equivalence map, foreign-domain recognition, assurance translation | semantic accuracy, jurisdictional scope, withdrawal handling |
 | AST-20 | Public trust and institutional continuity | public notices, transparency reports, continuity plans | accuracy, availability, consistency, credible recovery |
+| AST-21 | Automated-agent mandates and tool-invocation records | agent authority scope, tool permission grants, invocation and delegation logs | mandate boundedness, prompt/instruction integrity, attributable execution, human-override capability |
 
 ## Protection properties
 

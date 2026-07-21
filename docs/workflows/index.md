@@ -2,7 +2,7 @@
 layout: default
 title: Canonical Workflows
 parent: Open National Digital Trust Framework
-nav_order: 4
+nav_order: 6
 has_children: true
 ---
 

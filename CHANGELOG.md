@@ -2,18 +2,37 @@
 
 ## Unreleased
 
+### Fixed
+
+- Aligned authoritative ONDTF repository metadata with the released `0.4.0` baseline.
+- Completed the machine-readable decision register for ADR-0004 and ADR-0005.
+- Added protected asset `AST-21` for automated-agent mandates and tool-invocation records and linked it to `SB-19`.
+- Resolved Just-the-Docs navigation-order collisions while preserving superseded public routes through non-navigational migration pages.
+- Extended repository validation for navigation uniqueness, authoritative version consistency, binding identifier/version coherence, ADR completeness, and security-domain traceability.
+
+
 ### Added
 
 - established the ONDTF security architecture foundation, including twelve security principles, twelve security objectives, twelve security domains, and an explicit trust-assumption model;
 - added a machine-readable security-foundations catalogue for future threat, control, assurance, and metric traceability.
 - added a canonical protected-asset catalogue spanning institutional, authority, semantic, operational, accountability, privacy, and continuity assets;
 - added a security-boundary model with twenty-two stable boundary identifiers, crossing requirements, lifecycle states, evidence obligations, and failure modes;
+- added AST-21 (automated-agent mandates and tool-invocation records) so SEC-DOM-12 has protected-asset and boundary traceability;
+- added repository validation checks for nav_order uniqueness per navigation parent, framework self-version consistency across VERSION/PROJECT-STATUS/CITATION.cff/README/bindings/dependencies, decision-register completeness against published ADRs, and security-domain-to-asset traceability.
 
 ### Changed
 
 - corrected the documentation site map to generate base-path-aware published URLs instead of links to Markdown source files;
 - corrected numbered Mermaid node labels in the layered reference architecture that were interpreted as unsupported Markdown lists;
-- separated the Security Architecture publication section from the independent Assurance section and expanded repository-wide navigation for the developing v0.5.0 baseline.
+- separated the Security Architecture publication section from the independent Assurance section and expanded repository-wide navigation for the developing v0.5.0 baseline;
+- registered ADR-0004 and ADR-0005 in `governance/decision-register.yaml`, which previously only listed ADR-0001 through ADR-0003;
+- renumbered colliding `nav_order` values across the top-level navigation, Foundations, Security Architecture, Reference Architecture, and Information Architecture sections so every page has a stable, unambiguous sidebar position.
+
+### Fixed
+
+- corrected the ONDTF self-version declared in `data/dependencies.yaml` (was 0.3.0) and in `bindings/tis/ondtf-tis-profile.json` and `bindings/tsmm/ondtf-tsmm-binding.json` (both were 0.2.0, including their URN identifiers) to match the actual repository version, 0.4.0;
+- removed seven orphaned pre-catalogue documentation pages (`docs/information-model/entities.md`, `identifiers-provenance.md`, `lifecycle.md`; `docs/architecture/trust-model.md`, `actor-model.md`, `lifecycle.md`, `reference-stack.md`) that had been superseded by their ID-based canonical replacements but were never retired, and that had no inbound links;
+- consolidated three duplicate `## Unreleased` sections in this changelog into the release entries they actually shipped with.
 
 ## [0.4.0] - 2026-07-21
 
@@ -41,8 +60,6 @@
 - policy-change, oversight, transparency, redress, and maturity guidance;
 - GitHub Pages navigation and site-map coverage for all new content.
 
-## Unreleased
-
 ### Fixed
 
 - Configure Mermaid CLI to launch Chromium with GitHub Actions-compatible no-sandbox arguments, resolving diagram-render validation failures on Ubuntu runners.
@@ -63,17 +80,12 @@
 
 - corrected canonical links for ONDTF, TSMM, and TIS throughout the framework;
 - strengthened GitHub Pages navigation and publication controls;
-- advanced the repository to the Semantic and Portfolio Alignment Draft.
-
-## [Unreleased]
-
-### Changed
-
-- Made the ONDTF core self-contained and implementation-neutral.
-- Reclassified TSMM and TIS as optional compatible reference resources.
-- Added outcome-based conformance and explicit profile dependency rules.
-- Added ADR 0004 documenting the framework-independence decision.
-- Corrected labelled dotted-edge syntax in Mermaid diagrams.
+- advanced the repository to the Semantic and Portfolio Alignment Draft;
+- Made the ONDTF core self-contained and implementation-neutral;
+- Reclassified TSMM and TIS as optional compatible reference resources;
+- Added outcome-based conformance and explicit profile dependency rules;
+- Added ADR 0004 documenting the framework-independence decision;
+- Corrected labelled dotted-edge syntax in Mermaid diagrams;
 - Hardened browser-side Mermaid rendering and error reporting.
 
 ### Fixed

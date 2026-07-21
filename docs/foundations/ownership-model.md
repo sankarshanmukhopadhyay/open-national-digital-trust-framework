@@ -1,7 +1,7 @@
 ---
 title: Concept Ownership Model
 parent: Foundations
-nav_order: 6
+nav_order: 7
 ---
 # Concept Ownership Model
 

@@ -1,7 +1,7 @@
 ---
 title: Threat Model
 parent: Security Architecture
-nav_order: 6
+nav_order: 8
 ---
 
 # Adversarial Threat Model

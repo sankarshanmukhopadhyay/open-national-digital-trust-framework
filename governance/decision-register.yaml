@@ -12,3 +12,11 @@ decisions:
     title: Complete GitHub Pages publication coverage
     status: accepted
     record: docs/decisions/0003-pages-publication-contract.md
+  - id: ADR-0004
+    title: Keep ONDTF independent of optional technical foundations
+    status: accepted
+    record: docs/decisions/0004-framework-independence.md
+  - id: ADR-0005
+    title: Release thresholds
+    status: accepted
+    record: docs/decisions/0005-release-thresholds.md
