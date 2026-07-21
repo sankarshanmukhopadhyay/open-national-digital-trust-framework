@@ -27,7 +27,7 @@ for p in list((root/'docs').rglob('*.md'))+list((root/'profiles').rglob('*.md'))
         errors.append(f'Unclosed or malformed Mermaid block: {p.relative_to(root)}')
     for m in re.finditer(r'\[[^\]]+\]\(([^)]+)\)', text):
         target=m.group(1).split('#')[0]
-        if not target or '://' in target or target.startswith(('mailto:','#')): continue
+        if not target or '://' in target or target.startswith(('mailto:','#')) or '{{' in target or '{%' in target: continue
         resolved=(p.parent/target).resolve()
         if not resolved.exists(): errors.append(f'Broken local link in {p.relative_to(root)}: {target}')
 for jp in list((root/'bindings').rglob('*.json')):

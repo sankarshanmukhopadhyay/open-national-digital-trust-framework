@@ -6,9 +6,13 @@
 
 - established the ONDTF security architecture foundation, including twelve security principles, twelve security objectives, twelve security domains, and an explicit trust-assumption model;
 - added a machine-readable security-foundations catalogue for future threat, control, assurance, and metric traceability.
+- added a canonical protected-asset catalogue spanning institutional, authority, semantic, operational, accountability, privacy, and continuity assets;
+- added a security-boundary model with twenty-two stable boundary identifiers, crossing requirements, lifecycle states, evidence obligations, and failure modes;
 
 ### Changed
 
+- corrected the documentation site map to generate base-path-aware published URLs instead of links to Markdown source files;
+- corrected numbered Mermaid node labels in the layered reference architecture that were interpreted as unsupported Markdown lists;
 - separated the Security Architecture publication section from the independent Assurance section and expanded repository-wide navigation for the developing v0.5.0 baseline.
 
 ## [0.4.0] - 2026-07-21

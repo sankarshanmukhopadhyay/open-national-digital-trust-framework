@@ -1,0 +1,25 @@
+specification: ONDTF
+working_release: 0.5.0
+status: draft
+catalogue: protected-assets
+assets:
+  - {id: AST-01, name: Mandate and legitimacy records, domains: [SEC-DOM-01]}
+  - {id: AST-02, name: Governance decisions, domains: [SEC-DOM-01]}
+  - {id: AST-03, name: Authority and privilege records, domains: [SEC-DOM-02]}
+  - {id: AST-04, name: Participant and role records, domains: [SEC-DOM-03]}
+  - {id: AST-05, name: Policies duties and prohibitions, domains: [SEC-DOM-04]}
+  - {id: AST-06, name: Credentials claims and attestations, domains: [SEC-DOM-03, SEC-DOM-05]}
+  - {id: AST-07, name: Evidence and provenance, domains: [SEC-DOM-05, SEC-DOM-09]}
+  - {id: AST-08, name: Registries directories and status data, domains: [SEC-DOM-05]}
+  - {id: AST-09, name: Assurance assertions, domains: [SEC-DOM-09]}
+  - {id: AST-10, name: Trust decisions, domains: [SEC-DOM-06]}
+  - {id: AST-11, name: Effects and execution authorisations, domains: [SEC-DOM-06]}
+  - {id: AST-12, name: Decision receipts and audit trails, domains: [SEC-DOM-09]}
+  - {id: AST-13, name: Incident and recovery records, domains: [SEC-DOM-08, SEC-DOM-09]}
+  - {id: AST-14, name: Challenge appeal and remedy records, domains: [SEC-DOM-09]}
+  - {id: AST-15, name: Cryptographic and authentication material, domains: [SEC-DOM-03, SEC-DOM-07]}
+  - {id: AST-16, name: Software configuration and policy code, domains: [SEC-DOM-04, SEC-DOM-07]}
+  - {id: AST-17, name: Operational telemetry and service state, domains: [SEC-DOM-08]}
+  - {id: AST-18, name: Personal organisational and relationship information, domains: [SEC-DOM-11]}
+  - {id: AST-19, name: Federation and recognition mappings, domains: [SEC-DOM-10]}
+  - {id: AST-20, name: Public trust and institutional continuity, domains: [SEC-DOM-01, SEC-DOM-08, SEC-DOM-09]}

@@ -11,19 +11,19 @@ The layered model prevents identity, credential verification and registry lookup
 
 ```mermaid
 flowchart TB
-  L1[1. Governance and legal authority]
-  L2[2. Participant and role resolution]
-  L3[3. Authority and delegation]
-  L4[4. Policy, duties and prohibitions]
-  L5[5. Credentials, claims and evidence]
-  L6[6. Registry, discovery and status]
-  L7[7. Verification and trust resolution]
-  L8[8. Assurance evaluation]
-  L9[9. Decision and effect admission]
-  L10[10. Receipts, audit and accountability]
-  L11[11. Incident, challenge and redress]
-  L12[12. Federation and recognition]
-  L13[13. Operations and monitoring]
+  L1["Layer 1: Governance and legal authority"]
+  L2["Layer 2: Participant and role resolution"]
+  L3["Layer 3: Authority and delegation"]
+  L4["Layer 4: Policy, duties and prohibitions"]
+  L5["Layer 5: Credentials, claims and evidence"]
+  L6["Layer 6: Registry, discovery and status"]
+  L7["Layer 7: Verification and trust resolution"]
+  L8["Layer 8: Assurance evaluation"]
+  L9["Layer 9: Decision and effect admission"]
+  L10["Layer 10: Receipts, audit and accountability"]
+  L11["Layer 11: Incident, challenge and redress"]
+  L12["Layer 12: Federation and recognition"]
+  L13["Layer 13: Operations and monitoring"]
   L1 --> L2 --> L3 --> L4 --> L5 --> L6 --> L7 --> L8 --> L9 --> L10 --> L11
   L12 --> L1
   L12 --> L6

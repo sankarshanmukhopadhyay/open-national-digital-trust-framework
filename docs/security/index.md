@@ -21,6 +21,8 @@ This section establishes the security foundations that later ONDTF security work
 - [security objectives](security-objectives.md) and the outcomes that must be protected;
 - [security domains](security-domains.md) used to organise responsibilities and controls;
 - [trust assumptions](trust-assumptions.md), including assumptions that must not be made implicitly;
+- [protected assets](protected-assets.md), including institutional, semantic, operational, and accountability assets;
+- [security boundaries](security-boundaries.md), including governed boundary states and crossing evidence;
 - the existing [threat model](threat-model.md), which will be expanded incrementally;
 - the existing [baseline controls](controls.md), which will be replaced by a structured control catalogue before v0.5.0.
 

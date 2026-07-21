@@ -38,3 +38,5 @@ flowchart TD
 ```
 
 Every boundary crossing MUST identify source provenance, evaluation time, applicable profile and responsibility for error correction. Assurance inherited from another domain MUST be constrained to the scope assessed in that domain.
+
+The developing v0.5.0 security baseline provides a more granular [security boundary model](../security/security-boundaries.md), including boundary states, crossing evidence, failure modes, and stable security-boundary identifiers.

@@ -1,0 +1,27 @@
+specification: ONDTF
+working_release: 0.5.0
+status: draft
+catalogue: security-boundaries
+boundaries:
+  - {id: SB-01, name: Mandate to governing authority, asset_refs: [AST-01, AST-02]}
+  - {id: SB-02, name: Governing authority to scheme operator, asset_refs: [AST-02, AST-03, AST-05]}
+  - {id: SB-03, name: Scheme operator to technical operator, asset_refs: [AST-03, AST-05, AST-16]}
+  - {id: SB-04, name: Administrator to privileged service, asset_refs: [AST-03, AST-15, AST-16]}
+  - {id: SB-05, name: Participant to trust scheme, asset_refs: [AST-04, AST-06, AST-07]}
+  - {id: SB-06, name: Principal to delegate, asset_refs: [AST-03, AST-07, AST-12]}
+  - {id: SB-07, name: Issuer to holder or subject, asset_refs: [AST-06, AST-07]}
+  - {id: SB-08, name: Holder to verifier, asset_refs: [AST-06, AST-18]}
+  - {id: SB-09, name: Evidence source to verifier, asset_refs: [AST-07]}
+  - {id: SB-10, name: Registry or status service to resolver, asset_refs: [AST-08]}
+  - {id: SB-11, name: Policy authority to policy engine, asset_refs: [AST-05, AST-16]}
+  - {id: SB-12, name: Verifier or resolver to decision service, asset_refs: [AST-07, AST-09, AST-10]}
+  - {id: SB-13, name: Decision service to effect executor, asset_refs: [AST-10, AST-11, AST-12]}
+  - {id: SB-14, name: Effect executor to affected party, asset_refs: [AST-11, AST-12, AST-14, AST-18]}
+  - {id: SB-15, name: Production service to evidence store, asset_refs: [AST-07, AST-12, AST-13]}
+  - {id: SB-16, name: Operator to assessor or auditor, asset_refs: [AST-07, AST-09, AST-12]}
+  - {id: SB-17, name: Domestic domain to foreign domain, asset_refs: [AST-06, AST-08, AST-09, AST-19]}
+  - {id: SB-18, name: Primary service to external dependency, asset_refs: [AST-15, AST-16, AST-17]}
+  - {id: SB-19, name: Automated agent to tool or downstream agent, asset_refs: [AST-03, AST-10, AST-11, AST-12]}
+  - {id: SB-20, name: Incident authority to emergency control, asset_refs: [AST-02, AST-03, AST-13]}
+  - {id: SB-21, name: Trust system to challenge and redress function, asset_refs: [AST-12, AST-14]}
+  - {id: SB-22, name: Public transparency surface to society, asset_refs: [AST-01, AST-02, AST-05, AST-20]}
