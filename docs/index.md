@@ -38,6 +38,8 @@ flowchart LR
 
 | Area | Purpose |
 |---|---|
+| [Programme management](programme/index.md) | Delivery governance, workplan, decisions, and quality gates |
+| [Information model](information-model/index.md) | Canonical entities, relationships, lifecycle, identifiers, and provenance |
 | [Foundations](foundations/index.md) | Scope, principles, terminology, TSMM/TIS relationship |
 | [Architecture](architecture/index.md) | Trust model, actors, lifecycle, runtime interactions |
 | [Governance](governance/index.md) | Authorities, communities, delegation, decisions, redress |
@@ -53,4 +55,4 @@ flowchart LR
 
 ## Release posture
 
-Version 0.1.0 establishes the seed architecture and repository contract. It is intentionally broad enough to support structured review but does not claim stable semantics, complete schemas, or production conformance.
+Version 0.2.0 establishes the semantic alignment, programme controls, and the canonical information-model baseline. It is intentionally broad enough to support structured review but does not yet claim a complete target operating model, stable implementation interfaces, or production conformance.

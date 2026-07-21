@@ -2,7 +2,7 @@
 
 [![Documentation](https://img.shields.io/badge/docs-GitHub%20Pages-blue)](https://sankarshanmukhopadhyay.github.io/open-national-digital-trust-framework/)
 [![Status](https://img.shields.io/badge/status-initial%20public%20draft-orange)](RELEASE_NOTES.md)
-[![Version](https://img.shields.io/badge/version-v0.1.0-green)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-v0.2.0-green)](CHANGELOG.md)
 
 The **Open National Digital Trust Framework (ONDTF)** is a jurisdiction-neutral, multi-sector reference framework for governing, implementing, assuring, and interoperating digital trust infrastructure.
 
@@ -28,7 +28,7 @@ ONDTF supplies that missing governance and architecture layer.
 |---|---|
 | Portfolio role | Jurisdiction-neutral national framework |
 | Lifecycle | Active initial public draft |
-| Current version | v0.1.0 |
+| Current version | v0.2.0 |
 | Stability | Experimental; architecture under review |
 | Primary artefact | Framework, reference architecture, and profile method |
 | Normative posture | Normative requirements are explicitly labelled |
@@ -39,8 +39,8 @@ ONDTF supplies that missing governance and architecture layer.
 
 ONDTF draws on, but does not duplicate or subsume, two portfolio foundations:
 
-- **Trust Systems Meta-Model (TSMM):** canonical semantic and structural concepts for actors, roles, authority, policy, evidence, decisions, effects, lifecycle, accountability, and conformance.
-- **Trust Infrastructure Schemas (TIS):** portable machine-readable contracts for exchanging and validating trust infrastructure records and evidence.
+- **[Trust Systems Meta-Model (TSMM)](https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model):** canonical semantic and structural concepts for actors, roles, authority, policy, evidence, decisions, effects, lifecycle, accountability, and conformance.
+- **[Trust Infrastructure Schemas (TIS)](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas):** portable machine-readable contracts for exchanging and validating trust infrastructure records and evidence.
 
 ONDTF owns the national-framework layer: governance, adoption, assurance expectations, sector and jurisdiction profiling, operational coordination, and conformance policy.
 
@@ -72,7 +72,10 @@ See [Portfolio alignment](docs/foundations/portfolio-alignment.md) and [Dependen
 gem install bundler
 bundle install
 python3 scripts/validate_repo.py
+python3 scripts/extract_mermaid.py
+bash scripts/validate_mermaid.sh
 bundle exec jekyll build
+python3 scripts/check_built_site.py
 ```
 
 ## Scope boundary

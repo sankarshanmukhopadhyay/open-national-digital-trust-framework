@@ -1,0 +1,11 @@
+schema_version: "1.0"
+roles:
+  maintainer: {accountable_for: [scope, architecture, release]}
+  work_packet_lead: {responsible_for: [delivery, evidence, issue_resolution]}
+  reviewer: {consulted_for: [quality, subject_matter, approval_recommendation]}
+  contributor: {responsible_for: [assigned_content]}
+activities:
+  approve_scope: {maintainer: A, work_packet_lead: R, reviewer: C, contributor: I}
+  draft_artifact: {maintainer: A, work_packet_lead: R, reviewer: C, contributor: C}
+  validate_release: {maintainer: A, work_packet_lead: R, reviewer: C, contributor: I}
+  approve_release: {maintainer: AR, work_packet_lead: C, reviewer: C, contributor: I}

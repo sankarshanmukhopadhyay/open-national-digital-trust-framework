@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "profileId": "urn:ondtf:profile:tis:0.2.0",
+  "ondtfVersion": "0.2.0",
+  "tisVersion": "0.12.0",
+  "sourceRepository": "https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas",
+  "artifactRequirements": [
+    {
+      "family": "authority-boundary",
+      "requirement": "required-for-assured-authority"
+    },
+    {
+      "family": "delegation-lineage",
+      "requirement": "required-when-derived"
+    },
+    {
+      "family": "evidence-bundle-manifest",
+      "requirement": "required-for-high-impact"
+    },
+    {
+      "family": "decision-receipt",
+      "requirement": "required-for-reviewable-effects"
+    },
+    {
+      "family": "registry-entry",
+      "requirement": "required-for-recognised-services"
+    },
+    {
+      "family": "conformance-declaration",
+      "requirement": "required-for-formal-claims"
+    }
+  ]
+}

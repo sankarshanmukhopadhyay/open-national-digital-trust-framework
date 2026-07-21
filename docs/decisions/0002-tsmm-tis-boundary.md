@@ -1,6 +1,6 @@
 ---
-layout: default
-title: ADR 0002 — TSMM and TIS boundary
+title: ADR 0002 — TSMM and TIS Boundary
+parent: Architecture Decisions
 nav_order: 2
 ---
 # ADR 0002: Preserve TSMM and TIS authority boundaries

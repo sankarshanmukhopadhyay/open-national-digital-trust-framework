@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "bindingId": "urn:ondtf:binding:tsmm:0.2.0",
+  "ondtfVersion": "0.2.0",
+  "tsmmVersion": "0.23.0",
+  "sourceRepository": "https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model",
+  "treatments": [
+    {
+      "conceptFamily": "entity-role",
+      "treatment": "profile"
+    },
+    {
+      "conceptFamily": "trust-boundary",
+      "treatment": "profile"
+    },
+    {
+      "conceptFamily": "authority-graph",
+      "treatment": "profile"
+    },
+    {
+      "conceptFamily": "decision-receipt",
+      "treatment": "profile"
+    },
+    {
+      "conceptFamily": "effect-centered-trust-decision",
+      "treatment": "adopt"
+    },
+    {
+      "conceptFamily": "affected-party",
+      "treatment": "extend"
+    }
+  ]
+}

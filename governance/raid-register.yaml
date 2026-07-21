@@ -1,0 +1,21 @@
+schema_version: "1.0"
+risks:
+  - id: R-001
+    statement: TSMM or TIS changes may invalidate ONDTF bindings.
+    treatment: Pin reviewed versions and perform compatibility assessment on dependency releases.
+    owner: maintainer
+  - id: R-002
+    statement: National profiles may be mistaken for official government policy.
+    treatment: Apply explicit non-endorsement statements and source traceability.
+    owner: profile-owner
+assumptions:
+  - id: A-001
+    statement: TSMM remains canonical for portfolio trust-system semantics.
+issues: []
+dependencies:
+  - id: D-001
+    project: TSMM
+    version: 0.23.0
+  - id: D-002
+    project: TIS
+    version: 0.12.0

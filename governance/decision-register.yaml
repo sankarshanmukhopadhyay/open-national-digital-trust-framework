@@ -1,0 +1,14 @@
+schema_version: "1.0"
+decisions:
+  - id: ADR-0001
+    title: Jurisdiction-neutral core
+    status: accepted
+    record: docs/decisions/0001-jurisdiction-neutral-core.md
+  - id: ADR-0002
+    title: TSMM and TIS authority boundary
+    status: accepted
+    record: docs/decisions/0002-tsmm-tis-boundary.md
+  - id: ADR-0003
+    title: Complete GitHub Pages publication coverage
+    status: accepted
+    record: docs/decisions/0003-pages-publication-contract.md

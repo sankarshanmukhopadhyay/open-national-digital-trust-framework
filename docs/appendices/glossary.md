@@ -1,9 +1,8 @@
 ---
 title: Glossary
-parent: Open National Digital Trust Framework
-nav_order: 10
+parent: Appendices
+nav_order: 1
 ---
-
 # Glossary
 
 **Assurance:** justified confidence, based on evidence and controls, that a trust claim is suitable for a defined purpose.

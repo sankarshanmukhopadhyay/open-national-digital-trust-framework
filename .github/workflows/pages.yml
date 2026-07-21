@@ -1,24 +1,29 @@
 name: Build and deploy GitHub Pages
-
 on:
   push:
     branches: ["main"]
   workflow_dispatch:
-
 permissions:
   contents: read
   pages: write
   id-token: write
-
 concurrency:
   group: pages
   cancel-in-progress: false
-
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pyyaml
+      - run: python3 scripts/validate_repo.py
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: python3 scripts/extract_mermaid.py && bash scripts/validate_mermaid.sh
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.3'
@@ -28,6 +33,7 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Build site
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+      - run: python3 scripts/check_built_site.py
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./_site

@@ -15,3 +15,10 @@ Substantive changes require an issue, documented rationale, impact analysis, rev
 ## Maturity
 
 The v0.x series is draft work. No material should be represented as governmental policy, regulatory approval, or stable international consensus unless separately adopted by a competent authority.
+
+
+## Canonical portfolio repositories
+
+- [Open National Digital Trust Framework](https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework)
+- [Trust Systems Meta-Model](https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model)
+- [Trust Infrastructure Schemas](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas)

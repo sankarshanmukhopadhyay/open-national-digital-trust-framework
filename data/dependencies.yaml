@@ -1,14 +1,26 @@
-schema_version: "0.1"
-framework: open-national-digital-trust-framework
-framework_version: "0.1.0"
+schema_version: "1.0"
+framework:
+  name: Open National Digital Trust Framework
+  version: "0.2.0"
+  repository: https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework
+  documentation: https://sankarshanmukhopadhyay.github.io/open-national-digital-trust-framework/
 dependencies:
-  - name: trust-systems-meta-model
+  - name: Trust Systems Meta-Model
+    short_name: TSMM
+    version_reviewed: "0.23.0"
+    repository: https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model
+    documentation: https://sankarshanmukhopadhyay.github.io/trust-systems-meta-model/
     role: canonical-semantic-model
-    relationship: informative-at-v0.1.0
-    planned_relationship: normative-profiled-dependency
-    alignment_target: "v0.2.0"
-  - name: trust-infrastructure-schemas
-    role: portable-schema-contracts
-    relationship: informative-at-v0.1.0
-    planned_relationship: normative-profiled-dependency
-    alignment_target: "v0.2.0"
+    relationship: normatively-profiled
+  - name: Trust Infrastructure Schemas
+    short_name: TIS
+    version_reviewed: "0.12.0"
+    repository: https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas
+    documentation: https://sankarshanmukhopadhyay.github.io/trust-infrastructure-schemas/
+    role: portable-machine-readable-contract-layer
+    relationship: normatively-profiled
+compatibility_policy:
+  review_on_minor_release: true
+  prohibit_implicit_version_floating: true
+  record_divergence: true
+  require_cross_repository_impact_assessment: true

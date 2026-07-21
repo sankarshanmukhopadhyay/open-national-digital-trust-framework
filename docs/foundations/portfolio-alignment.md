@@ -6,50 +6,34 @@ nav_order: 2
 ---
 # Portfolio Alignment
 
-## Separation of authority
+## Canonical repositories
 
-| Repository | Canonical responsibility | ONDTF usage |
+| Project | Canonical responsibility | Repository |
 |---|---|---|
-| Trust Systems Meta-Model (TSMM) | Semantic and structural model | Adopt or reference concepts for actors, roles, authority, policy, evidence, decisions, effects, lifecycle, accountability, and conformance |
-| Trust Infrastructure Schemas (TIS) | Portable schema contracts | Reference schemas and validation semantics for trust records, boundaries, lineage, verification, and evidence |
-| ONDTF | National-framework layer | Define governance, sector and jurisdiction profiles, assurance policy, national operations, adoption, and conformance expectations |
+| Trust Systems Meta-Model (TSMM) | Semantic and structural model | [GitHub](https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model) |
+| Trust Infrastructure Schemas (TIS) | Portable machine-readable contracts | [GitHub](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas) |
+| Open National Digital Trust Framework (ONDTF) | National-framework, profiling, assurance-policy, adoption, and conformance layer | [GitHub](https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework) |
 
 ```mermaid
 flowchart TB
-  subgraph Semantic[Meaning]
-    TSMM[TSMM]
-  end
-  subgraph Exchange[Portable representation]
-    TIS[TIS]
-  end
-  subgraph Framework[National framework]
-    ONDTF[ONDTF]
-  end
-  subgraph Adoption[Application]
-    JP[Jurisdiction profile]
-    SP[Sector profile]
-    DEP[Deployment]
-  end
-  TSMM --> TIS
-  TSMM --> ONDTF
+  TSMM["TSMM: canonical meaning"] --> TIS["TIS: portable artefacts"]
+  TSMM --> ONDTF["ONDTF: national framework"]
   TIS --> ONDTF
-  ONDTF --> JP
-  ONDTF --> SP
-  JP --> DEP
+  ONDTF --> JP["Jurisdiction profiles"]
+  ONDTF --> SP["Sector profiles"]
+  ONDTF --> CP["Conformance profiles"]
+  JP --> DEP["Deployments"]
   SP --> DEP
+  CP --> DEP
   TIS --> DEP
 ```
 
-## Reuse classification
+## Reuse classifications
 
-ONDTF classifies external material as:
+- **Adopted:** incorporated into ONDTF and thereafter governed by ONDTF.
+- **Normatively profiled:** remains authoritative in its source repository while ONDTF constrains or requires its use.
+- **Informative:** influences explanation or design without creating a conformance dependency.
+- **Extended:** adds an ONDTF-owned concept while preserving the source concept's meaning.
+- **Excluded:** deliberately outside a profile, with rationale recorded.
 
-- **Adopted:** incorporated and governed within ONDTF;
-- **Normatively referenced:** authoritative in its source repository and required by a profile;
-- **Informative:** used for explanation or design influence without dependency.
-
-A traceability record must identify the classification, source version, ONDTF location, and divergence policy.
-
-## Initial alignment basis
-
-The seed is informed by TSMM's role as the canonical semantic model and TIS's role as the portable schema-contract layer. No claim is made that ONDTF v0.1.0 fully imports either repository. Formal line-by-line alignment is scheduled for v0.2.0.
+The [TSMM semantic crosswalk](tsmm-crosswalk.md), [TIS adoption matrix](tis-adoption.md), and [ownership model](ownership-model.md) provide the v0.2.0 baseline.

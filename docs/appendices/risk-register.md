@@ -1,9 +1,8 @@
 ---
-title: Model Risk Register
-parent: Open National Digital Trust Framework
-nav_order: 12
+title: Risk Register
+parent: Appendices
+nav_order: 3
 ---
-
 # Model Risk Register
 
 | Risk | Cause | Impact | Baseline treatment |

@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.2.0] - 2026-07-21
+
+### Added
+
+- programme charter, integrated workplan, decision rights, and evidence-based quality gates;
+- canonical TSMM v0.23.0 semantic crosswalk and TIS v0.12.0 artefact adoption matrix;
+- ONDTF concept ownership model and canonical information model;
+- machine-readable TSMM binding, TIS profile, programme registers, and information-model inventory;
+- complete documentation site map and project-document publication coverage;
+- Mermaid syntax validation and built-site verification in CI.
+
+### Changed
+
+- corrected canonical links for ONDTF, TSMM, and TIS throughout the framework;
+- strengthened GitHub Pages navigation and publication controls;
+- advanced the repository to the Semantic and Portfolio Alignment Draft.
+
 ## [Unreleased]
 
 ### Fixed

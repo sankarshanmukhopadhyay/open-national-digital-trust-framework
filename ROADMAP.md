@@ -1,6 +1,6 @@
 # Roadmap
 
-## v0.1.0 — Initial Public Draft
+## v0.2.0 — Initial Public Draft
 
 - jurisdiction-neutral ONDTF identity;
 - core architecture and governance map;
@@ -39,3 +39,10 @@
 - versioned jurisdiction and sector profiles;
 - implementer and assessor guidance;
 - release and migration policy.
+
+
+## Canonical portfolio repositories
+
+- [Open National Digital Trust Framework](https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework)
+- [Trust Systems Meta-Model](https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model)
+- [Trust Infrastructure Schemas](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas)

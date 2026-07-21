@@ -1,6 +1,6 @@
 ---
-layout: default
-title: ADR 0001 — Jurisdiction-neutral core
+title: ADR 0001 — Jurisdiction-neutral Core
+parent: Architecture Decisions
 nav_order: 1
 ---
 # ADR 0001: Jurisdiction-neutral core with profiles

@@ -1,9 +1,8 @@
 ---
 title: Normative Language
-parent: Open National Digital Trust Framework
-nav_order: 11
+parent: Appendices
+nav_order: 2
 ---
-
 # Normative Language
 
 The key words **MUST**, **MUST NOT**, **REQUIRED**, **SHOULD**, **SHOULD NOT**, **MAY** and **OPTIONAL** are to be interpreted as normative requirement levels when presented in uppercase.

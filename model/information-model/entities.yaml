@@ -1,0 +1,16 @@
+schema_version: "1.0"
+model_version: "0.2.0"
+entities:
+  - {name: Jurisdiction, owner: ONDTF}
+  - {name: TrustScheme, owner: ONDTF, informed_by: TSMM}
+  - {name: GovernanceAuthority, owner: ONDTF}
+  - {name: Participant, owner: TSMM, treatment: profiled}
+  - {name: AffectedParty, owner: ONDTF, treatment: extension}
+  - {name: AuthorityGrant, owner: TSMM, treatment: profiled}
+  - {name: Delegation, owner: TSMM, treatment: profiled}
+  - {name: Evidence, owner: TSMM-TIS, treatment: profiled}
+  - {name: TrustDecision, owner: TSMM, treatment: adopted}
+  - {name: DecisionReceipt, owner: TIS, treatment: profiled}
+  - {name: AdmittedEffect, owner: TSMM-ONDTF, treatment: adopted}
+  - {name: Challenge, owner: ONDTF}
+  - {name: Remedy, owner: ONDTF}
