@@ -1,0 +1,13 @@
+{
+  "remedyId": "urn:ondtf:example:remedy:001",
+  "challengeRef": "urn:ondtf:example:challenge:001",
+  "outcome": "upheld",
+  "finding": "income evidence was stale for the policy assessment period",
+  "actions": [
+    "withdraw original decision",
+    "re-evaluate application",
+    "issue corrected receipt",
+    "authorise eligible payment"
+  ],
+  "completedAt": "2026-07-18T15:00:00+05:30"
+}

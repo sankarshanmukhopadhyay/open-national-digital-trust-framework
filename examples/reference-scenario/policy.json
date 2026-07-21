@@ -1,0 +1,13 @@
+{
+  "policyId": "urn:ondtf:example:policy:education-benefit-v3",
+  "version": "3.1",
+  "authorityRef": "urn:ondtf:example:authority:neba-2026",
+  "effectiveFrom": "2026-07-01",
+  "rules": [
+    {
+      "id": "RULE-01",
+      "when": "enrolled == true and incomeBand in [low,lower-middle]",
+      "effect": "eligible"
+    }
+  ]
+}

@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+### Added
+
+- Structured threat taxonomy, adversary catalogue, attack-surface catalogue, and 48 stable threat records.
+- Security control framework with eight control families and 40 stable controls.
+- Worked delegated-eligibility reference scenario with ten reusable evidence fixtures and threat-to-control traceability.
+- Machine-readable security catalogues supporting later risk scoring, assurance evidence, and conformance work.
+
 ### Fixed
 
 - Aligned authoritative ONDTF repository metadata with the released `0.4.0` baseline.

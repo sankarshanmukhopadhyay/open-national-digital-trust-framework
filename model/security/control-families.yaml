@@ -1,0 +1,21 @@
+specification: ONDTF
+working_release: 0.5.0
+status: draft
+catalogue: control-families
+families:
+- id: CTL-FAM-01
+  name: Governance and authority integrity
+- id: CTL-FAM-02
+  name: Identity and credential protection
+- id: CTL-FAM-03
+  name: Evidence, registry and status integrity
+- id: CTL-FAM-04
+  name: Policy, decision and effect integrity
+- id: CTL-FAM-05
+  name: Platform and supply-chain security
+- id: CTL-FAM-06
+  name: Monitoring, accountability and redress
+- id: CTL-FAM-07
+  name: Federation and privacy protection
+- id: CTL-FAM-08
+  name: Automated-agent safety and authority

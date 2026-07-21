@@ -1,0 +1,8 @@
+recordId: urn:ondtf:example:authority:neba-2026
+authority: National Education Benefit Authority
+mandateRef: urn:ondtf:example:mandate:education-benefit-act
+scope:
+- define eligibility policy
+- authorise benefit decisions
+validFrom: '2026-01-01'
+status: active

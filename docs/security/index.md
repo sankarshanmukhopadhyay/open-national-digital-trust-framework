@@ -23,8 +23,9 @@ This section establishes the security foundations that later ONDTF security work
 - [trust assumptions](trust-assumptions.md), including assumptions that must not be made implicitly;
 - [protected assets](protected-assets.md), including institutional, semantic, operational, and accountability assets;
 - [security boundaries](security-boundaries.md), including governed boundary states and crossing evidence;
-- the existing [threat model](threat-model.md), which will be expanded incrementally;
-- the existing [baseline controls](controls.md), which will be replaced by a structured control catalogue before v0.5.0.
+- the [threat taxonomy](threat-taxonomy.md), [adversary model](adversary-model.md), [attack surfaces](attack-surfaces.md), and [threat catalogue](threat-catalogue.md);
+- the structured [security control framework](control-framework.md);
+- a [worked reference scenario](../reference-scenario/) that instantiates threats, controls, evidence, decision, challenge, and remedy.
 
 ## Security architecture position
 

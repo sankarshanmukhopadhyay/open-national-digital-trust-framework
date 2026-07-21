@@ -1,0 +1,1363 @@
+specification: ONDTF
+working_release: 0.5.0
+status: draft
+catalogue: controls
+controls:
+- id: CTL-001
+  title: Mandate provenance verification
+  family_ref: CTL-FAM-01
+  objective: Ensure mandate provenance verification is implemented and evidenced for material trust-system operations.
+  threat_refs:
+  - THR-001
+  - THR-004
+  asset_refs:
+  - AST-01
+  - AST-13
+  boundary_refs:
+  - SB-01
+  - SB-20
+  domain_refs:
+  - SEC-DOM-01
+  implementation_guidance:
+  - Define scope and owner
+  - Implement preventative and detective measures
+  - Record exceptions and compensating controls
+  - Test operation at a risk-based cadence
+  expected_evidence:
+  - Approved control design
+  - Configuration or policy artefact
+  - Operating record or test result
+  - Exception and remediation record
+  responsible_functions:
+  - scheme operator
+  - service operator
+  - assurance function
+  assurance_implications:
+  - control design must be reviewed
+  - operating effectiveness must be evidenced
+  informative_mappings: []
+- id: CTL-002
+  title: Governance decision signing and publication
+  family_ref: CTL-FAM-01
+  objective: Ensure governance decision signing and publication is implemented and evidenced for material trust-system operations.
+  threat_refs:
+  - THR-002
+  - THR-007
+  asset_refs:
+  - AST-02
+  - AST-03
+  boundary_refs:
+  - SB-02
+  - SB-06
+  domain_refs:
+  - SEC-DOM-01
+  - SEC-DOM-02
+  implementation_guidance:
+  - Define scope and owner
+  - Implement preventative and detective measures
+  - Record exceptions and compensating controls
+  - Test operation at a risk-based cadence
+  expected_evidence:
+  - Approved control design
+  - Configuration or policy artefact
+  - Operating record or test result
+  - Exception and remediation record
+  responsible_functions:
+  - scheme operator
+  - service operator
+  - assurance function
+  assurance_implications:
+  - control design must be reviewed
+  - operating effectiveness must be evidenced
+  informative_mappings: []
+- id: CTL-003
+  title: Separation of critical governance powers
+  family_ref: CTL-FAM-01
+  objective: Ensure separation of critical governance powers is implemented and evidenced for material trust-system operations.
+  threat_refs:
+  - THR-003
+  - THR-010
+  asset_refs:
+  - AST-15
+  - AST-20
+  boundary_refs:
+  - SB-01
+  - SB-05
+  domain_refs:
+  - SEC-DOM-01
+  - SEC-DOM-03
+  implementation_guidance:
+  - Define scope and owner
+  - Implement preventative and detective measures
+  - Record exceptions and compensating controls
+  - Test operation at a risk-based cadence
+  expected_evidence:
+  - Approved control design
+  - Configuration or policy artefact
+  - Operating record or test result
+  - Exception and remediation record
+  responsible_functions:
+  - scheme operator
+  - service operator
+  - assurance function
+  assurance_implications:
+  - control design must be reviewed
+  - operating effectiveness must be evidenced
+  informative_mappings: []
+- id: CTL-004
+  title: Authority scope encoding
+  family_ref: CTL-FAM-01
+  objective: Ensure authority scope encoding is implemented and evidenced for material trust-system operations.
+  threat_refs:
+  - THR-004
+  - THR-013
+  asset_refs:
+  - AST-06
+  - AST-13
+  boundary_refs:
+  - SB-08
+  - SB-20
+  domain_refs:
+  - SEC-DOM-01
+  - SEC-DOM-05
+  implementation_guidance:
+  - Define scope and owner
+  - Implement preventative and detective measures
+  - Record exceptions and compensating controls
+  - Test operation at a risk-based cadence
+  expected_evidence:
+  - Approved control design
+  - Configuration or policy artefact
+  - Operating record or test result
+  - Exception and remediation record
+  responsible_functions:
+  - scheme operator
+  - service operator
+  - assurance function
+  assurance_implications:
+  - control design must be reviewed
+  - operating effectiveness must be evidenced
+  informative_mappings: []
+- id: CTL-005
+  title: Delegation chain validation
+  family_ref: CTL-FAM-01
+  objective: Ensure delegation chain validation is implemented and evidenced for material trust-system operations.
+  threat_refs:
+  - THR-005
+  - THR-016
+  asset_refs:
+  - AST-03
+  - AST-07
+  boundary_refs:
+  - SB-06
+  - SB-09
+  domain_refs:
+  - SEC-DOM-02
+  - SEC-DOM-05
+  implementation_guidance:
+  - Define scope and owner
+  - Implement preventative and detective measures
+  - Record exceptions and compensating controls
+  - Test operation at a risk-based cadence
+  expected_evidence:
+  - Approved control design
+  - Configuration or policy artefact
+  - Operating record or test result
+  - Exception and remediation record
+  responsible_functions:
+  - scheme operator
+  - service operator
+  - assurance function
+  assurance_implications:
+  - control design must be reviewed
+  - operating effectiveness must be evidenced
+  informative_mappings: []
+- id: CTL-006
+  title: Authority freshness enforcement
+  family_ref: CTL-FAM-01
+  objective: Ensure authority freshness enforcement is implemented and evidenced for material trust-system operations.
+  threat_refs:
+  - THR-006
+  - THR-019
+  asset_refs:
+  - AST-08
+  - AST-21
+  boundary_refs:
+  - SB-10
+  - SB-19
+  domain_refs:
+  - SEC-DOM-05
+  - SEC-DOM-12
+  implementation_guidance:
+  - Define scope and owner
+  - Implement preventative and detective measures
+  - Record exceptions and compensating controls
+  - Test operation at a risk-based cadence
+  expected_evidence:
+  - Approved control design
+  - Configuration or policy artefact
+  - Operating record or test result
+  - Exception and remediation record
+  responsible_functions:
+  - scheme operator
+  - service operator
+  - assurance function
+  assurance_implications:
+  - control design must be reviewed
+  - operating effectiveness must be evidenced
+  informative_mappings: []
+- id: CTL-007
+  title: Phishing-resistant authentication
+  family_ref: CTL-FAM-02
+  objective: Ensure phishing-resistant authentication is implemented and evidenced for material trust-system operations.
+  threat_refs:
+  - THR-007
+  - THR-022
+  asset_refs:
+  - AST-03
+  - AST-05
+  boundary_refs:
+  - SB-06
+  - SB-11
+  domain_refs:
+  - SEC-DOM-02
+  - SEC-DOM-04
+  implementation_guidance:
+  - Define scope and owner
+  - Implement preventative and detective measures
+  - Record exceptions and compensating controls
+  - Test operation at a risk-based cadence
+  expected_evidence:
+  - Approved control design
+  - Configuration or policy artefact
+  - Operating record or test result
+  - Exception and remediation record
+  responsible_functions:
+  - scheme operator
+  - service operator
+  - assurance function
+  assurance_implications:
+  - control design must be reviewed
+  - operating effectiveness must be evidenced
+  informative_mappings: []
+- id: CTL-008
+  title: Hardware-backed key protection
+  family_ref: CTL-FAM-02
+  objective: Ensure hardware-backed key protection is implemented and evidenced for material trust-system operations.
+  threat_refs:
+  - THR-008
+  - THR-025
+  asset_refs:
+  - AST-03
+  - AST-11
+  boundary_refs:
+  - SB-06
+  - SB-13
+  domain_refs:
+  - SEC-DOM-02
+  - SEC-DOM-06
+  implementation_guidance:
+  - Define scope and owner
+  - Implement preventative and detective measures
+  - Record exceptions and compensating controls
+  - Test operation at a risk-based cadence
+  expected_evidence:
+  - Approved control design
+  - Configuration or policy artefact
+  - Operating record or test result
+  - Exception and remediation record
+  responsible_functions:
+  - scheme operator
+  - service operator
+  - assurance function
+  assurance_implications:
+  - control design must be reviewed
+  - operating effectiveness must be evidenced
+  informative_mappings: []
+- id: CTL-009
+  title: Secure recovery and re-binding
+  family_ref: CTL-FAM-02
+  objective: Ensure secure recovery and re-binding is implemented and evidenced for material trust-system operations.
+  threat_refs:
+  - THR-009
+  - THR-028
+  asset_refs:
+  - AST-04
+  - AST-14
+  boundary_refs:
+  - SB-05
+  - SB-14
+  domain_refs:
+  - SEC-DOM-03
+  - SEC-DOM-09
+  implementation_guidance:
+  - Define scope and owner
+  - Implement preventative and detective measures
+  - Record exceptions and compensating controls
+  - Test operation at a risk-based cadence
+  expected_evidence:
+  - Approved control design
+  - Configuration or policy artefact
+  - Operating record or test result
+  - Exception and remediation record
+  responsible_functions:
+  - scheme operator
+  - service operator
+  - assurance function
+  assurance_implications:
+  - control design must be reviewed
+  - operating effectiveness must be evidenced
+  informative_mappings: []
+- id: CTL-010
+  title: Credential audience and nonce binding
+  family_ref: CTL-FAM-02
+  objective: Ensure credential audience and nonce binding is implemented and evidenced for material trust-system operations.
+  threat_refs:
+  - THR-010
+  - THR-031
+  asset_refs:
+  - AST-08
+  - AST-15
+  boundary_refs:
+  - SB-05
+  - SB-10
+  domain_refs:
+  - SEC-DOM-03
+  - SEC-DOM-08
+  implementation_guidance:
+  - Define scope and owner
+  - Implement preventative and detective measures
+  - Record exceptions and compensating controls
+  - Test operation at a risk-based cadence
+  expected_evidence:
+  - Approved control design
+  - Configuration or policy artefact
+  - Operating record or test result
+  - Exception and remediation record
+  responsible_functions:
+  - scheme operator
+  - service operator
+  - assurance function
+  assurance_implications:
+  - control design must be reviewed
+  - operating effectiveness must be evidenced
+  informative_mappings: []
+- id: CTL-011
+  title: Issuer competence verification
+  family_ref: CTL-FAM-02
+  objective: Ensure issuer competence verification is implemented and evidenced for material trust-system operations.
+  threat_refs:
+  - THR-011
+  - THR-034
+  asset_refs:
+  - AST-15
+  - AST-16
+  boundary_refs:
+  - SB-05
+  - SB-17
+  domain_refs:
+  - SEC-DOM-03
+  - SEC-DOM-07
+  implementation_guidance:
+  - Define scope and owner
+  - Implement preventative and detective measures
+  - Record exceptions and compensating controls
+  - Test operation at a risk-based cadence
+  expected_evidence:
+  - Approved control design
+  - Configuration or policy artefact
+  - Operating record or test result
+  - Exception and remediation record
+  responsible_functions:
+  - scheme operator
+  - service operator
+  - assurance function
+  assurance_implications:
+  - control design must be reviewed
+  - operating effectiveness must be evidenced
+  informative_mappings: []
+- id: CTL-012
+  title: Credential lifecycle enforcement
+  family_ref: CTL-FAM-02
+  objective: Ensure credential lifecycle enforcement is implemented and evidenced for material trust-system operations.
+  threat_refs:
+  - THR-012
+  - THR-037
+  asset_refs:
+  - AST-15
+  - AST-19
+  boundary_refs:
+  - SB-05
+  - SB-15
+  domain_refs:
+  - SEC-DOM-03
+  - SEC-DOM-10
+  implementation_guidance:
+  - Define scope and owner
+  - Implement preventative and detective measures
+  - Record exceptions and compensating controls
+  - Test operation at a risk-based cadence
+  expected_evidence:
+  - Approved control design
+  - Configuration or policy artefact
+  - Operating record or test result
+  - Exception and remediation record
+  responsible_functions:
+  - scheme operator
+  - service operator
+  - assurance function
+  assurance_implications:
+  - control design must be reviewed
+  - operating effectiveness must be evidenced
+  informative_mappings: []
+- id: CTL-013
+  title: Evidence provenance validation
+  family_ref: CTL-FAM-03
+  objective: Ensure evidence provenance validation is implemented and evidenced for material trust-system operations.
+  threat_refs:
+  - THR-013
+  - THR-040
+  asset_refs:
+  - AST-06
+  - AST-18
+  boundary_refs:
+  - SB-08
+  domain_refs:
+  - SEC-DOM-05
+  - SEC-DOM-11
+  implementation_guidance:
+  - Define scope and owner
+  - Implement preventative and detective measures
+  - Record exceptions and compensating controls
+  - Test operation at a risk-based cadence
+  expected_evidence:
+  - Approved control design
+  - Configuration or policy artefact
+  - Operating record or test result
+  - Exception and remediation record
+  responsible_functions:
+  - scheme operator
+  - service operator
+  - assurance function
+  assurance_implications:
+  - control design must be reviewed
+  - operating effectiveness must be evidenced
+  informative_mappings: []
+- id: CTL-014
+  title: Registry integrity and non-equivocation
+  family_ref: CTL-FAM-03
+  objective: Ensure registry integrity and non-equivocation is implemented and evidenced for material trust-system operations.
+  threat_refs:
+  - THR-014
+  - THR-043
+  asset_refs:
+  - AST-06
+  - AST-21
+  boundary_refs:
+  - SB-08
+  - SB-19
+  domain_refs:
+  - SEC-DOM-05
+  - SEC-DOM-12
+  implementation_guidance:
+  - Define scope and owner
+  - Implement preventative and detective measures
+  - Record exceptions and compensating controls
+  - Test operation at a risk-based cadence
+  expected_evidence:
+  - Approved control design
+  - Configuration or policy artefact
+  - Operating record or test result
+  - Exception and remediation record
+  responsible_functions:
+  - scheme operator
+  - service operator
+  - assurance function
+  assurance_implications:
+  - control design must be reviewed
+  - operating effectiveness must be evidenced
+  informative_mappings: []
+- id: CTL-015
+  title: Status freshness policy
+  family_ref: CTL-FAM-03
+  objective: Ensure status freshness policy is implemented and evidenced for material trust-system operations.
+  threat_refs:
+  - THR-015
+  - THR-046
+  asset_refs:
+  - AST-07
+  - AST-14
+  boundary_refs:
+  - SB-07
+  - SB-21
+  domain_refs:
+  - SEC-DOM-05
+  - SEC-DOM-09
+  implementation_guidance:
+  - Define scope and owner
+  - Implement preventative and detective measures
+  - Record exceptions and compensating controls
+  - Test operation at a risk-based cadence
+  expected_evidence:
+  - Approved control design
+  - Configuration or policy artefact
+  - Operating record or test result
+  - Exception and remediation record
+  responsible_functions:
+  - scheme operator
+  - service operator
+  - assurance function
+  assurance_implications:
+  - control design must be reviewed
+  - operating effectiveness must be evidenced
+  informative_mappings: []
+- id: CTL-016
+  title: Revocation propagation monitoring
+  family_ref: CTL-FAM-03
+  objective: Ensure revocation propagation monitoring is implemented and evidenced for material trust-system operations.
+  threat_refs:
+  - THR-016
+  - THR-001
+  asset_refs:
+  - AST-01
+  - AST-07
+  boundary_refs:
+  - SB-01
+  - SB-09
+  domain_refs:
+  - SEC-DOM-01
+  - SEC-DOM-05
+  implementation_guidance:
+  - Define scope and owner
+  - Implement preventative and detective measures
+  - Record exceptions and compensating controls
+  - Test operation at a risk-based cadence
+  expected_evidence:
+  - Approved control design
+  - Configuration or policy artefact
+  - Operating record or test result
+  - Exception and remediation record
+  responsible_functions:
+  - scheme operator
+  - service operator
+  - assurance function
+  assurance_implications:
+  - control design must be reviewed
+  - operating effectiveness must be evidenced
+  informative_mappings: []
+- id: CTL-017
+  title: Privacy-preserving status resolution
+  family_ref: CTL-FAM-03
+  objective: Ensure privacy-preserving status resolution is implemented and evidenced for material trust-system operations.
+  threat_refs:
+  - THR-017
+  - THR-004
+  asset_refs:
+  - AST-08
+  - AST-13
+  boundary_refs:
+  - SB-10
+  - SB-20
+  domain_refs:
+  - SEC-DOM-01
+  - SEC-DOM-05
+  implementation_guidance:
+  - Define scope and owner
+  - Implement preventative and detective measures
+  - Record exceptions and compensating controls
+  - Test operation at a risk-based cadence
+  expected_evidence:
+  - Approved control design
+  - Configuration or policy artefact
+  - Operating record or test result
+  - Exception and remediation record
+  responsible_functions:
+  - scheme operator
+  - service operator
+  - assurance function
+  assurance_implications:
+  - control design must be reviewed
+  - operating effectiveness must be evidenced
+  informative_mappings: []
+- id: CTL-018
+  title: Independent source reconciliation
+  family_ref: CTL-FAM-03
+  objective: Ensure independent source reconciliation is implemented and evidenced for material trust-system operations.
+  threat_refs:
+  - THR-018
+  - THR-007
+  asset_refs:
+  - AST-03
+  - AST-08
+  boundary_refs:
+  - SB-06
+  - SB-10
+  domain_refs:
+  - SEC-DOM-02
+  - SEC-DOM-05
+  implementation_guidance:
+  - Define scope and owner
+  - Implement preventative and detective measures
+  - Record exceptions and compensating controls
+  - Test operation at a risk-based cadence
+  expected_evidence:
+  - Approved control design
+  - Configuration or policy artefact
+  - Operating record or test result
+  - Exception and remediation record
+  responsible_functions:
+  - scheme operator
+  - service operator
+  - assurance function
+  assurance_implications:
+  - control design must be reviewed
+  - operating effectiveness must be evidenced
+  informative_mappings: []
+- id: CTL-019
+  title: Signed and versioned policy artefacts
+  family_ref: CTL-FAM-04
+  objective: Ensure signed and versioned policy artefacts is implemented and evidenced for material trust-system operations.
+  threat_refs:
+  - THR-019
+  - THR-010
+  asset_refs:
+  - AST-08
+  - AST-15
+  boundary_refs:
+  - SB-05
+  - SB-10
+  domain_refs:
+  - SEC-DOM-03
+  - SEC-DOM-05
+  implementation_guidance:
+  - Define scope and owner
+  - Implement preventative and detective measures
+  - Record exceptions and compensating controls
+  - Test operation at a risk-based cadence
+  expected_evidence:
+  - Approved control design
+  - Configuration or policy artefact
+  - Operating record or test result
+  - Exception and remediation record
+  responsible_functions:
+  - scheme operator
+  - service operator
+  - assurance function
+  assurance_implications:
+  - control design must be reviewed
+  - operating effectiveness must be evidenced
+  informative_mappings: []
+- id: CTL-020
+  title: Policy rollback protection
+  family_ref: CTL-FAM-04
+  objective: Ensure policy rollback protection is implemented and evidenced for material trust-system operations.
+  threat_refs:
+  - THR-020
+  - THR-013
+  asset_refs:
+  - AST-06
+  - AST-08
+  boundary_refs:
+  - SB-08
+  - SB-10
+  domain_refs:
+  - SEC-DOM-05
+  implementation_guidance:
+  - Define scope and owner
+  - Implement preventative and detective measures
+  - Record exceptions and compensating controls
+  - Test operation at a risk-based cadence
+  expected_evidence:
+  - Approved control design
+  - Configuration or policy artefact
+  - Operating record or test result
+  - Exception and remediation record
+  responsible_functions:
+  - scheme operator
+  - service operator
+  - assurance function
+  assurance_implications:
+  - control design must be reviewed
+  - operating effectiveness must be evidenced
+  informative_mappings: []
+- id: CTL-021
+  title: Decision input integrity checks
+  family_ref: CTL-FAM-04
+  objective: Ensure decision input integrity checks is implemented and evidenced for material trust-system operations.
+  threat_refs:
+  - THR-021
+  - THR-016
+  asset_refs:
+  - AST-05
+  - AST-07
+  boundary_refs:
+  - SB-09
+  - SB-11
+  domain_refs:
+  - SEC-DOM-04
+  - SEC-DOM-05
+  implementation_guidance:
+  - Define scope and owner
+  - Implement preventative and detective measures
+  - Record exceptions and compensating controls
+  - Test operation at a risk-based cadence
+  expected_evidence:
+  - Approved control design
+  - Configuration or policy artefact
+  - Operating record or test result
+  - Exception and remediation record
+  responsible_functions:
+  - scheme operator
+  - service operator
+  - assurance function
+  assurance_implications:
+  - control design must be reviewed
+  - operating effectiveness must be evidenced
+  informative_mappings: []
+- id: CTL-022
+  title: Evidence-before-effect gate
+  family_ref: CTL-FAM-04
+  objective: Ensure evidence-before-effect gate is implemented and evidenced for material trust-system operations.
+  threat_refs:
+  - THR-022
+  - THR-019
+  asset_refs:
+  - AST-05
+  - AST-08
+  boundary_refs:
+  - SB-10
+  - SB-11
+  domain_refs:
+  - SEC-DOM-04
+  - SEC-DOM-05
+  implementation_guidance:
+  - Define scope and owner
+  - Implement preventative and detective measures
+  - Record exceptions and compensating controls
+  - Test operation at a risk-based cadence
+  expected_evidence:
+  - Approved control design
+  - Configuration or policy artefact
+  - Operating record or test result
+  - Exception and remediation record
+  responsible_functions:
+  - scheme operator
+  - service operator
+  - assurance function
+  assurance_implications:
+  - control design must be reviewed
+  - operating effectiveness must be evidenced
+  informative_mappings: []
+- id: CTL-023
+  title: Effect idempotency and replay protection
+  family_ref: CTL-FAM-04
+  objective: Ensure effect idempotency and replay protection is implemented and evidenced for material trust-system operations.
+  threat_refs:
+  - THR-023
+  - THR-022
+  asset_refs:
+  - AST-05
+  - AST-10
+  boundary_refs:
+  - SB-11
+  - SB-12
+  domain_refs:
+  - SEC-DOM-04
+  - SEC-DOM-06
+  implementation_guidance:
+  - Define scope and owner
+  - Implement preventative and detective measures
+  - Record exceptions and compensating controls
+  - Test operation at a risk-based cadence
+  expected_evidence:
+  - Approved control design
+  - Configuration or policy artefact
+  - Operating record or test result
+  - Exception and remediation record
+  responsible_functions:
+  - scheme operator
+  - service operator
+  - assurance function
+  assurance_implications:
+  - control design must be reviewed
+  - operating effectiveness must be evidenced
+  informative_mappings: []
+- id: CTL-024
+  title: Decision receipt generation
+  family_ref: CTL-FAM-04
+  objective: Ensure decision receipt generation is implemented and evidenced for material trust-system operations.
+  threat_refs:
+  - THR-024
+  - THR-025
+  asset_refs:
+  - AST-09
+  - AST-11
+  boundary_refs:
+  - SB-12
+  - SB-13
+  domain_refs:
+  - SEC-DOM-06
+  - SEC-DOM-09
+  implementation_guidance:
+  - Define scope and owner
+  - Implement preventative and detective measures
+  - Record exceptions and compensating controls
+  - Test operation at a risk-based cadence
+  expected_evidence:
+  - Approved control design
+  - Configuration or policy artefact
+  - Operating record or test result
+  - Exception and remediation record
+  responsible_functions:
+  - scheme operator
+  - service operator
+  - assurance function
+  assurance_implications:
+  - control design must be reviewed
+  - operating effectiveness must be evidenced
+  informative_mappings: []
+- id: CTL-025
+  title: Secure software development lifecycle
+  family_ref: CTL-FAM-05
+  objective: Ensure secure software development lifecycle is implemented and evidenced for material trust-system operations.
+  threat_refs:
+  - THR-025
+  - THR-028
+  asset_refs:
+  - AST-11
+  - AST-14
+  boundary_refs:
+  - SB-13
+  - SB-14
+  domain_refs:
+  - SEC-DOM-06
+  - SEC-DOM-09
+  implementation_guidance:
+  - Define scope and owner
+  - Implement preventative and detective measures
+  - Record exceptions and compensating controls
+  - Test operation at a risk-based cadence
+  expected_evidence:
+  - Approved control design
+  - Configuration or policy artefact
+  - Operating record or test result
+  - Exception and remediation record
+  responsible_functions:
+  - scheme operator
+  - service operator
+  - assurance function
+  assurance_implications:
+  - control design must be reviewed
+  - operating effectiveness must be evidenced
+  informative_mappings: []
+- id: CTL-026
+  title: Dependency provenance and verification
+  family_ref: CTL-FAM-05
+  objective: Ensure dependency provenance and verification is implemented and evidenced for material trust-system operations.
+  threat_refs:
+  - THR-026
+  - THR-031
+  asset_refs:
+  - AST-08
+  - AST-11
+  boundary_refs:
+  - SB-10
+  - SB-13
+  domain_refs:
+  - SEC-DOM-06
+  - SEC-DOM-08
+  implementation_guidance:
+  - Define scope and owner
+  - Implement preventative and detective measures
+  - Record exceptions and compensating controls
+  - Test operation at a risk-based cadence
+  expected_evidence:
+  - Approved control design
+  - Configuration or policy artefact
+  - Operating record or test result
+  - Exception and remediation record
+  responsible_functions:
+  - scheme operator
+  - service operator
+  - assurance function
+  assurance_implications:
+  - control design must be reviewed
+  - operating effectiveness must be evidenced
+  informative_mappings: []
+- id: CTL-027
+  title: Protected build and release pipeline
+  family_ref: CTL-FAM-05
+  objective: Ensure protected build and release pipeline is implemented and evidenced for material trust-system operations.
+  threat_refs:
+  - THR-027
+  - THR-034
+  asset_refs:
+  - AST-16
+  - AST-21
+  boundary_refs:
+  - SB-17
+  - SB-19
+  domain_refs:
+  - SEC-DOM-07
+  - SEC-DOM-12
+  implementation_guidance:
+  - Define scope and owner
+  - Implement preventative and detective measures
+  - Record exceptions and compensating controls
+  - Test operation at a risk-based cadence
+  expected_evidence:
+  - Approved control design
+  - Configuration or policy artefact
+  - Operating record or test result
+  - Exception and remediation record
+  responsible_functions:
+  - scheme operator
+  - service operator
+  - assurance function
+  assurance_implications:
+  - control design must be reviewed
+  - operating effectiveness must be evidenced
+  informative_mappings: []
+- id: CTL-028
+  title: Configuration integrity monitoring
+  family_ref: CTL-FAM-05
+  objective: Ensure configuration integrity monitoring is implemented and evidenced for material trust-system operations.
+  threat_refs:
+  - THR-028
+  - THR-037
+  asset_refs:
+  - AST-14
+  - AST-19
+  boundary_refs:
+  - SB-14
+  - SB-15
+  domain_refs:
+  - SEC-DOM-09
+  - SEC-DOM-10
+  implementation_guidance:
+  - Define scope and owner
+  - Implement preventative and detective measures
+  - Record exceptions and compensating controls
+  - Test operation at a risk-based cadence
+  expected_evidence:
+  - Approved control design
+  - Configuration or policy artefact
+  - Operating record or test result
+  - Exception and remediation record
+  responsible_functions:
+  - scheme operator
+  - service operator
+  - assurance function
+  assurance_implications:
+  - control design must be reviewed
+  - operating effectiveness must be evidenced
+  informative_mappings: []
+- id: CTL-029
+  title: Tamper-evident audit logging
+  family_ref: CTL-FAM-06
+  objective: Ensure tamper-evident audit logging is implemented and evidenced for material trust-system operations.
+  threat_refs:
+  - THR-029
+  - THR-040
+  asset_refs:
+  - AST-12
+  - AST-18
+  boundary_refs:
+  - SB-08
+  - SB-12
+  domain_refs:
+  - SEC-DOM-08
+  - SEC-DOM-11
+  implementation_guidance:
+  - Define scope and owner
+  - Implement preventative and detective measures
+  - Record exceptions and compensating controls
+  - Test operation at a risk-based cadence
+  expected_evidence:
+  - Approved control design
+  - Configuration or policy artefact
+  - Operating record or test result
+  - Exception and remediation record
+  responsible_functions:
+  - scheme operator
+  - service operator
+  - assurance function
+  assurance_implications:
+  - control design must be reviewed
+  - operating effectiveness must be evidenced
+  informative_mappings: []
+- id: CTL-030
+  title: Security telemetry and anomaly detection
+  family_ref: CTL-FAM-06
+  objective: Ensure security telemetry and anomaly detection is implemented and evidenced for material trust-system operations.
+  threat_refs:
+  - THR-030
+  - THR-043
+  asset_refs:
+  - AST-17
+  - AST-21
+  boundary_refs:
+  - SB-12
+  - SB-19
+  domain_refs:
+  - SEC-DOM-08
+  - SEC-DOM-12
+  implementation_guidance:
+  - Define scope and owner
+  - Implement preventative and detective measures
+  - Record exceptions and compensating controls
+  - Test operation at a risk-based cadence
+  expected_evidence:
+  - Approved control design
+  - Configuration or policy artefact
+  - Operating record or test result
+  - Exception and remediation record
+  responsible_functions:
+  - scheme operator
+  - service operator
+  - assurance function
+  assurance_implications:
+  - control design must be reviewed
+  - operating effectiveness must be evidenced
+  informative_mappings: []
+- id: CTL-031
+  title: Incident containment and evidence preservation
+  family_ref: CTL-FAM-06
+  objective: Ensure incident containment and evidence preservation is implemented and evidenced for material trust-system
+    operations.
+  threat_refs:
+  - THR-031
+  - THR-046
+  asset_refs:
+  - AST-08
+  - AST-14
+  boundary_refs:
+  - SB-10
+  - SB-21
+  domain_refs:
+  - SEC-DOM-08
+  - SEC-DOM-09
+  implementation_guidance:
+  - Define scope and owner
+  - Implement preventative and detective measures
+  - Record exceptions and compensating controls
+  - Test operation at a risk-based cadence
+  expected_evidence:
+  - Approved control design
+  - Configuration or policy artefact
+  - Operating record or test result
+  - Exception and remediation record
+  responsible_functions:
+  - scheme operator
+  - service operator
+  - assurance function
+  assurance_implications:
+  - control design must be reviewed
+  - operating effectiveness must be evidenced
+  informative_mappings: []
+- id: CTL-032
+  title: Accessible challenge and redress
+  family_ref: CTL-FAM-06
+  objective: Ensure accessible challenge and redress is implemented and evidenced for material trust-system operations.
+  threat_refs:
+  - THR-032
+  - THR-001
+  asset_refs:
+  - AST-01
+  - AST-13
+  boundary_refs:
+  - SB-01
+  - SB-20
+  domain_refs:
+  - SEC-DOM-01
+  - SEC-DOM-08
+  implementation_guidance:
+  - Define scope and owner
+  - Implement preventative and detective measures
+  - Record exceptions and compensating controls
+  - Test operation at a risk-based cadence
+  expected_evidence:
+  - Approved control design
+  - Configuration or policy artefact
+  - Operating record or test result
+  - Exception and remediation record
+  responsible_functions:
+  - scheme operator
+  - service operator
+  - assurance function
+  assurance_implications:
+  - control design must be reviewed
+  - operating effectiveness must be evidenced
+  informative_mappings: []
+- id: CTL-033
+  title: Federation recognition constraints
+  family_ref: CTL-FAM-07
+  objective: Ensure federation recognition constraints is implemented and evidenced for material trust-system operations.
+  threat_refs:
+  - THR-033
+  - THR-004
+  asset_refs:
+  - AST-13
+  - AST-16
+  boundary_refs:
+  - SB-17
+  - SB-20
+  domain_refs:
+  - SEC-DOM-01
+  - SEC-DOM-07
+  implementation_guidance:
+  - Define scope and owner
+  - Implement preventative and detective measures
+  - Record exceptions and compensating controls
+  - Test operation at a risk-based cadence
+  expected_evidence:
+  - Approved control design
+  - Configuration or policy artefact
+  - Operating record or test result
+  - Exception and remediation record
+  responsible_functions:
+  - scheme operator
+  - service operator
+  - assurance function
+  assurance_implications:
+  - control design must be reviewed
+  - operating effectiveness must be evidenced
+  informative_mappings: []
+- id: CTL-034
+  title: Semantic and assurance mapping validation
+  family_ref: CTL-FAM-07
+  objective: Ensure semantic and assurance mapping validation is implemented and evidenced for material trust-system operations.
+  threat_refs:
+  - THR-034
+  - THR-007
+  asset_refs:
+  - AST-03
+  - AST-16
+  boundary_refs:
+  - SB-06
+  - SB-17
+  domain_refs:
+  - SEC-DOM-02
+  - SEC-DOM-07
+  implementation_guidance:
+  - Define scope and owner
+  - Implement preventative and detective measures
+  - Record exceptions and compensating controls
+  - Test operation at a risk-based cadence
+  expected_evidence:
+  - Approved control design
+  - Configuration or policy artefact
+  - Operating record or test result
+  - Exception and remediation record
+  responsible_functions:
+  - scheme operator
+  - service operator
+  - assurance function
+  assurance_implications:
+  - control design must be reviewed
+  - operating effectiveness must be evidenced
+  informative_mappings: []
+- id: CTL-035
+  title: Controlled disclosure and minimisation
+  family_ref: CTL-FAM-07
+  objective: Ensure controlled disclosure and minimisation is implemented and evidenced for material trust-system operations.
+  threat_refs:
+  - THR-035
+  - THR-010
+  asset_refs:
+  - AST-15
+  - AST-16
+  boundary_refs:
+  - SB-05
+  - SB-17
+  domain_refs:
+  - SEC-DOM-03
+  - SEC-DOM-07
+  implementation_guidance:
+  - Define scope and owner
+  - Implement preventative and detective measures
+  - Record exceptions and compensating controls
+  - Test operation at a risk-based cadence
+  expected_evidence:
+  - Approved control design
+  - Configuration or policy artefact
+  - Operating record or test result
+  - Exception and remediation record
+  responsible_functions:
+  - scheme operator
+  - service operator
+  - assurance function
+  assurance_implications:
+  - control design must be reviewed
+  - operating effectiveness must be evidenced
+  informative_mappings: []
+- id: CTL-036
+  title: Correlation resistance
+  family_ref: CTL-FAM-07
+  objective: Ensure correlation resistance is implemented and evidenced for material trust-system operations.
+  threat_refs:
+  - THR-036
+  - THR-013
+  asset_refs:
+  - AST-06
+  - AST-19
+  boundary_refs:
+  - SB-08
+  - SB-15
+  domain_refs:
+  - SEC-DOM-05
+  - SEC-DOM-10
+  implementation_guidance:
+  - Define scope and owner
+  - Implement preventative and detective measures
+  - Record exceptions and compensating controls
+  - Test operation at a risk-based cadence
+  expected_evidence:
+  - Approved control design
+  - Configuration or policy artefact
+  - Operating record or test result
+  - Exception and remediation record
+  responsible_functions:
+  - scheme operator
+  - service operator
+  - assurance function
+  assurance_implications:
+  - control design must be reviewed
+  - operating effectiveness must be evidenced
+  informative_mappings: []
+- id: CTL-037
+  title: Machine-readable agent mandate
+  family_ref: CTL-FAM-08
+  objective: Ensure machine-readable agent mandate is implemented and evidenced for material trust-system operations.
+  threat_refs:
+  - THR-037
+  - THR-016
+  asset_refs:
+  - AST-07
+  - AST-19
+  boundary_refs:
+  - SB-09
+  - SB-15
+  domain_refs:
+  - SEC-DOM-05
+  - SEC-DOM-10
+  implementation_guidance:
+  - Define scope and owner
+  - Implement preventative and detective measures
+  - Record exceptions and compensating controls
+  - Test operation at a risk-based cadence
+  expected_evidence:
+  - Approved control design
+  - Configuration or policy artefact
+  - Operating record or test result
+  - Exception and remediation record
+  responsible_functions:
+  - scheme operator
+  - service operator
+  - assurance function
+  assurance_implications:
+  - control design must be reviewed
+  - operating effectiveness must be evidenced
+  informative_mappings: []
+- id: CTL-038
+  title: Tool-level least authority
+  family_ref: CTL-FAM-08
+  objective: Ensure tool-level least authority is implemented and evidenced for material trust-system operations.
+  threat_refs:
+  - THR-038
+  - THR-019
+  asset_refs:
+  - AST-08
+  - AST-09
+  boundary_refs:
+  - SB-10
+  - SB-15
+  domain_refs:
+  - SEC-DOM-05
+  - SEC-DOM-10
+  implementation_guidance:
+  - Define scope and owner
+  - Implement preventative and detective measures
+  - Record exceptions and compensating controls
+  - Test operation at a risk-based cadence
+  expected_evidence:
+  - Approved control design
+  - Configuration or policy artefact
+  - Operating record or test result
+  - Exception and remediation record
+  responsible_functions:
+  - scheme operator
+  - service operator
+  - assurance function
+  assurance_implications:
+  - control design must be reviewed
+  - operating effectiveness must be evidenced
+  informative_mappings: []
+- id: CTL-039
+  title: Agent action receipt and causal trace
+  family_ref: CTL-FAM-08
+  objective: Ensure agent action receipt and causal trace is implemented and evidenced for material trust-system operations.
+  threat_refs:
+  - THR-039
+  - THR-022
+  asset_refs:
+  - AST-05
+  - AST-18
+  boundary_refs:
+  - SB-10
+  - SB-11
+  domain_refs:
+  - SEC-DOM-04
+  - SEC-DOM-11
+  implementation_guidance:
+  - Define scope and owner
+  - Implement preventative and detective measures
+  - Record exceptions and compensating controls
+  - Test operation at a risk-based cadence
+  expected_evidence:
+  - Approved control design
+  - Configuration or policy artefact
+  - Operating record or test result
+  - Exception and remediation record
+  responsible_functions:
+  - scheme operator
+  - service operator
+  - assurance function
+  assurance_implications:
+  - control design must be reviewed
+  - operating effectiveness must be evidenced
+  informative_mappings: []
+- id: CTL-040
+  title: Human override and safe halt
+  family_ref: CTL-FAM-08
+  objective: Ensure human override and safe halt is implemented and evidenced for material trust-system operations.
+  threat_refs:
+  - THR-040
+  - THR-025
+  asset_refs:
+  - AST-11
+  - AST-18
+  boundary_refs:
+  - SB-08
+  - SB-13
+  domain_refs:
+  - SEC-DOM-06
+  - SEC-DOM-11
+  implementation_guidance:
+  - Define scope and owner
+  - Implement preventative and detective measures
+  - Record exceptions and compensating controls
+  - Test operation at a risk-based cadence
+  expected_evidence:
+  - Approved control design
+  - Configuration or policy artefact
+  - Operating record or test result
+  - Exception and remediation record
+  responsible_functions:
+  - scheme operator
+  - service operator
+  - assurance function
+  assurance_implications:
+  - control design must be reviewed
+  - operating effectiveness must be evidenced
+  informative_mappings: []

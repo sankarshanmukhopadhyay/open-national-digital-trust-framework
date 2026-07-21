@@ -1,0 +1,5 @@
+participantId: urn:ondtf:example:participant:cbs
+name: Civic Benefit Services
+role: registered-delegate
+schemeRef: urn:ondtf:example:scheme:education-benefit
+status: active

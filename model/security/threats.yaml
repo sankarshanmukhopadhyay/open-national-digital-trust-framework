@@ -1,0 +1,2501 @@
+specification: ONDTF
+working_release: 0.5.0
+status: draft
+catalogue: threats
+threats:
+- id: THR-001
+  title: Mandate fabrication
+  description: An adversary causes or exploits mandate fabrication so that a trust-system outcome is no longer authorised,
+    evidence-based, reviewable, or recoverable.
+  category_ref: THCAT-01
+  adversary_refs:
+  - ADV-08
+  asset_refs:
+  - AST-01
+  boundary_refs:
+  - SB-01
+  attack_surface_refs:
+  - AS-01
+  domain_refs:
+  - SEC-DOM-01
+  objective_refs:
+  - SEC-OBJ-02
+  - SEC-OBJ-05
+  - SEC-OBJ-07
+  assumption_refs:
+  - TA-01
+  preconditions:
+  - Relevant access, influence, or dependency exists
+  attack_sequence:
+  - Establish position or influence
+  - Exploit the relevant boundary or surface
+  - Cause an invalid or concealed trust-system state
+  - Seek persistence or suppress review
+  consequences:
+  - Unauthorised or unsafe outcome
+  - Loss of evidence or accountability
+  - Potential harm to affected parties
+  detection_indicators:
+  - Unexpected state transition
+  - Mismatch between authority, evidence, policy, and effect
+  - Anomalous administrative or resolution activity
+  risk_factors:
+    likelihood_factors:
+    - access
+    - capability
+    - exposure
+    - detectability
+    impact_dimensions:
+    - rights
+    - financial
+    - service
+    - privacy
+    - institutional
+    uncertainty: to-be-assessed
+  candidate_control_families:
+  - CTL-FAM-01
+  - CTL-FAM-06
+- id: THR-002
+  title: Governance decision tampering
+  description: An adversary causes or exploits governance decision tampering so that a trust-system outcome is no longer authorised,
+    evidence-based, reviewable, or recoverable.
+  category_ref: THCAT-01
+  adversary_refs:
+  - ADV-04
+  asset_refs:
+  - AST-02
+  boundary_refs:
+  - SB-02
+  attack_surface_refs:
+  - AS-01
+  domain_refs:
+  - SEC-DOM-01
+  objective_refs:
+  - SEC-OBJ-02
+  - SEC-OBJ-05
+  - SEC-OBJ-07
+  assumption_refs:
+  - TA-01
+  preconditions:
+  - Relevant access, influence, or dependency exists
+  attack_sequence:
+  - Establish position or influence
+  - Exploit the relevant boundary or surface
+  - Cause an invalid or concealed trust-system state
+  - Seek persistence or suppress review
+  consequences:
+  - Unauthorised or unsafe outcome
+  - Loss of evidence or accountability
+  - Potential harm to affected parties
+  detection_indicators:
+  - Unexpected state transition
+  - Mismatch between authority, evidence, policy, and effect
+  - Anomalous administrative or resolution activity
+  risk_factors:
+    likelihood_factors:
+    - access
+    - capability
+    - exposure
+    - detectability
+    impact_dimensions:
+    - rights
+    - financial
+    - service
+    - privacy
+    - institutional
+    uncertainty: to-be-assessed
+  candidate_control_families:
+  - CTL-FAM-01
+  - CTL-FAM-06
+- id: THR-003
+  title: Governance capture
+  description: An adversary causes or exploits governance capture so that a trust-system outcome is no longer authorised,
+    evidence-based, reviewable, or recoverable.
+  category_ref: THCAT-01
+  adversary_refs:
+  - ADV-12
+  asset_refs:
+  - AST-20
+  boundary_refs:
+  - SB-01
+  attack_surface_refs:
+  - AS-01
+  domain_refs:
+  - SEC-DOM-01
+  objective_refs:
+  - SEC-OBJ-02
+  - SEC-OBJ-05
+  - SEC-OBJ-07
+  assumption_refs:
+  - TA-01
+  preconditions:
+  - Relevant access, influence, or dependency exists
+  attack_sequence:
+  - Establish position or influence
+  - Exploit the relevant boundary or surface
+  - Cause an invalid or concealed trust-system state
+  - Seek persistence or suppress review
+  consequences:
+  - Unauthorised or unsafe outcome
+  - Loss of evidence or accountability
+  - Potential harm to affected parties
+  detection_indicators:
+  - Unexpected state transition
+  - Mismatch between authority, evidence, policy, and effect
+  - Anomalous administrative or resolution activity
+  risk_factors:
+    likelihood_factors:
+    - access
+    - capability
+    - exposure
+    - detectability
+    impact_dimensions:
+    - rights
+    - financial
+    - service
+    - privacy
+    - institutional
+    uncertainty: to-be-assessed
+  candidate_control_families:
+  - CTL-FAM-01
+  - CTL-FAM-06
+- id: THR-004
+  title: Emergency authority abuse
+  description: An adversary causes or exploits emergency authority abuse so that a trust-system outcome is no longer authorised,
+    evidence-based, reviewable, or recoverable.
+  category_ref: THCAT-01
+  adversary_refs:
+  - ADV-05
+  asset_refs:
+  - AST-13
+  boundary_refs:
+  - SB-20
+  attack_surface_refs:
+  - AS-13
+  domain_refs:
+  - SEC-DOM-01
+  objective_refs:
+  - SEC-OBJ-02
+  - SEC-OBJ-05
+  - SEC-OBJ-07
+  assumption_refs:
+  - TA-01
+  preconditions:
+  - Relevant access, influence, or dependency exists
+  attack_sequence:
+  - Establish position or influence
+  - Exploit the relevant boundary or surface
+  - Cause an invalid or concealed trust-system state
+  - Seek persistence or suppress review
+  consequences:
+  - Unauthorised or unsafe outcome
+  - Loss of evidence or accountability
+  - Potential harm to affected parties
+  detection_indicators:
+  - Unexpected state transition
+  - Mismatch between authority, evidence, policy, and effect
+  - Anomalous administrative or resolution activity
+  risk_factors:
+    likelihood_factors:
+    - access
+    - capability
+    - exposure
+    - detectability
+    impact_dimensions:
+    - rights
+    - financial
+    - service
+    - privacy
+    - institutional
+    uncertainty: to-be-assessed
+  candidate_control_families:
+  - CTL-FAM-01
+  - CTL-FAM-06
+- id: THR-005
+  title: Authority escalation
+  description: An adversary causes or exploits authority escalation so that a trust-system outcome is no longer authorised,
+    evidence-based, reviewable, or recoverable.
+  category_ref: THCAT-02
+  adversary_refs:
+  - ADV-02
+  asset_refs:
+  - AST-03
+  boundary_refs:
+  - SB-06
+  attack_surface_refs:
+  - AS-02
+  domain_refs:
+  - SEC-DOM-02
+  objective_refs:
+  - SEC-OBJ-02
+  - SEC-OBJ-05
+  - SEC-OBJ-07
+  assumption_refs:
+  - TA-01
+  preconditions:
+  - Relevant access, influence, or dependency exists
+  attack_sequence:
+  - Establish position or influence
+  - Exploit the relevant boundary or surface
+  - Cause an invalid or concealed trust-system state
+  - Seek persistence or suppress review
+  consequences:
+  - Unauthorised or unsafe outcome
+  - Loss of evidence or accountability
+  - Potential harm to affected parties
+  detection_indicators:
+  - Unexpected state transition
+  - Mismatch between authority, evidence, policy, and effect
+  - Anomalous administrative or resolution activity
+  risk_factors:
+    likelihood_factors:
+    - access
+    - capability
+    - exposure
+    - detectability
+    impact_dimensions:
+    - rights
+    - financial
+    - service
+    - privacy
+    - institutional
+    uncertainty: to-be-assessed
+  candidate_control_families:
+  - CTL-FAM-01
+  - CTL-FAM-06
+- id: THR-006
+  title: Delegation scope stripping
+  description: An adversary causes or exploits delegation scope stripping so that a trust-system outcome is no longer authorised,
+    evidence-based, reviewable, or recoverable.
+  category_ref: THCAT-02
+  adversary_refs:
+  - ADV-11
+  asset_refs:
+  - AST-21
+  boundary_refs:
+  - SB-19
+  attack_surface_refs:
+  - AS-17
+  domain_refs:
+  - SEC-DOM-12
+  objective_refs:
+  - SEC-OBJ-02
+  - SEC-OBJ-05
+  - SEC-OBJ-07
+  assumption_refs:
+  - TA-01
+  preconditions:
+  - Relevant access, influence, or dependency exists
+  attack_sequence:
+  - Establish position or influence
+  - Exploit the relevant boundary or surface
+  - Cause an invalid or concealed trust-system state
+  - Seek persistence or suppress review
+  consequences:
+  - Unauthorised or unsafe outcome
+  - Loss of evidence or accountability
+  - Potential harm to affected parties
+  detection_indicators:
+  - Unexpected state transition
+  - Mismatch between authority, evidence, policy, and effect
+  - Anomalous administrative or resolution activity
+  risk_factors:
+    likelihood_factors:
+    - access
+    - capability
+    - exposure
+    - detectability
+    impact_dimensions:
+    - rights
+    - financial
+    - service
+    - privacy
+    - institutional
+    uncertainty: to-be-assessed
+  candidate_control_families:
+  - CTL-FAM-01
+  - CTL-FAM-06
+- id: THR-007
+  title: Delegation laundering
+  description: An adversary causes or exploits delegation laundering so that a trust-system outcome is no longer authorised,
+    evidence-based, reviewable, or recoverable.
+  category_ref: THCAT-02
+  adversary_refs:
+  - ADV-12
+  asset_refs:
+  - AST-03
+  boundary_refs:
+  - SB-06
+  attack_surface_refs:
+  - AS-02
+  domain_refs:
+  - SEC-DOM-02
+  objective_refs:
+  - SEC-OBJ-02
+  - SEC-OBJ-05
+  - SEC-OBJ-07
+  assumption_refs:
+  - TA-01
+  preconditions:
+  - Relevant access, influence, or dependency exists
+  attack_sequence:
+  - Establish position or influence
+  - Exploit the relevant boundary or surface
+  - Cause an invalid or concealed trust-system state
+  - Seek persistence or suppress review
+  consequences:
+  - Unauthorised or unsafe outcome
+  - Loss of evidence or accountability
+  - Potential harm to affected parties
+  detection_indicators:
+  - Unexpected state transition
+  - Mismatch between authority, evidence, policy, and effect
+  - Anomalous administrative or resolution activity
+  risk_factors:
+    likelihood_factors:
+    - access
+    - capability
+    - exposure
+    - detectability
+    impact_dimensions:
+    - rights
+    - financial
+    - service
+    - privacy
+    - institutional
+    uncertainty: to-be-assessed
+  candidate_control_families:
+  - CTL-FAM-01
+  - CTL-FAM-06
+- id: THR-008
+  title: Stale authority acceptance
+  description: An adversary causes or exploits stale authority acceptance so that a trust-system outcome is no longer authorised,
+    evidence-based, reviewable, or recoverable.
+  category_ref: THCAT-02
+  adversary_refs:
+  - ADV-03
+  asset_refs:
+  - AST-03
+  boundary_refs:
+  - SB-06
+  attack_surface_refs:
+  - AS-02
+  domain_refs:
+  - SEC-DOM-02
+  objective_refs:
+  - SEC-OBJ-02
+  - SEC-OBJ-05
+  - SEC-OBJ-07
+  assumption_refs:
+  - TA-01
+  preconditions:
+  - Relevant access, influence, or dependency exists
+  attack_sequence:
+  - Establish position or influence
+  - Exploit the relevant boundary or surface
+  - Cause an invalid or concealed trust-system state
+  - Seek persistence or suppress review
+  consequences:
+  - Unauthorised or unsafe outcome
+  - Loss of evidence or accountability
+  - Potential harm to affected parties
+  detection_indicators:
+  - Unexpected state transition
+  - Mismatch between authority, evidence, policy, and effect
+  - Anomalous administrative or resolution activity
+  risk_factors:
+    likelihood_factors:
+    - access
+    - capability
+    - exposure
+    - detectability
+    impact_dimensions:
+    - rights
+    - financial
+    - service
+    - privacy
+    - institutional
+    uncertainty: to-be-assessed
+  candidate_control_families:
+  - CTL-FAM-01
+  - CTL-FAM-06
+- id: THR-009
+  title: Synthetic identity enrolment
+  description: An adversary causes or exploits synthetic identity enrolment so that a trust-system outcome is no longer authorised,
+    evidence-based, reviewable, or recoverable.
+  category_ref: THCAT-03
+  adversary_refs:
+  - ADV-01
+  asset_refs:
+  - AST-04
+  boundary_refs:
+  - SB-05
+  attack_surface_refs:
+  - AS-04
+  domain_refs:
+  - SEC-DOM-03
+  objective_refs:
+  - SEC-OBJ-02
+  - SEC-OBJ-05
+  - SEC-OBJ-07
+  assumption_refs:
+  - TA-01
+  preconditions:
+  - Relevant access, influence, or dependency exists
+  attack_sequence:
+  - Establish position or influence
+  - Exploit the relevant boundary or surface
+  - Cause an invalid or concealed trust-system state
+  - Seek persistence or suppress review
+  consequences:
+  - Unauthorised or unsafe outcome
+  - Loss of evidence or accountability
+  - Potential harm to affected parties
+  detection_indicators:
+  - Unexpected state transition
+  - Mismatch between authority, evidence, policy, and effect
+  - Anomalous administrative or resolution activity
+  risk_factors:
+    likelihood_factors:
+    - access
+    - capability
+    - exposure
+    - detectability
+    impact_dimensions:
+    - rights
+    - financial
+    - service
+    - privacy
+    - institutional
+    uncertainty: to-be-assessed
+  candidate_control_families:
+  - CTL-FAM-01
+  - CTL-FAM-06
+- id: THR-010
+  title: Authenticator phishing
+  description: An adversary causes or exploits authenticator phishing so that a trust-system outcome is no longer authorised,
+    evidence-based, reviewable, or recoverable.
+  category_ref: THCAT-03
+  adversary_refs:
+  - ADV-01
+  asset_refs:
+  - AST-15
+  boundary_refs:
+  - SB-05
+  attack_surface_refs:
+  - AS-04
+  domain_refs:
+  - SEC-DOM-03
+  objective_refs:
+  - SEC-OBJ-02
+  - SEC-OBJ-05
+  - SEC-OBJ-07
+  assumption_refs:
+  - TA-01
+  preconditions:
+  - Relevant access, influence, or dependency exists
+  attack_sequence:
+  - Establish position or influence
+  - Exploit the relevant boundary or surface
+  - Cause an invalid or concealed trust-system state
+  - Seek persistence or suppress review
+  consequences:
+  - Unauthorised or unsafe outcome
+  - Loss of evidence or accountability
+  - Potential harm to affected parties
+  detection_indicators:
+  - Unexpected state transition
+  - Mismatch between authority, evidence, policy, and effect
+  - Anomalous administrative or resolution activity
+  risk_factors:
+    likelihood_factors:
+    - access
+    - capability
+    - exposure
+    - detectability
+    impact_dimensions:
+    - rights
+    - financial
+    - service
+    - privacy
+    - institutional
+    uncertainty: to-be-assessed
+  candidate_control_families:
+  - CTL-FAM-01
+  - CTL-FAM-06
+- id: THR-011
+  title: Biometric injection
+  description: An adversary causes or exploits biometric injection so that a trust-system outcome is no longer authorised,
+    evidence-based, reviewable, or recoverable.
+  category_ref: THCAT-03
+  adversary_refs:
+  - ADV-01
+  asset_refs:
+  - AST-15
+  boundary_refs:
+  - SB-05
+  attack_surface_refs:
+  - AS-04
+  domain_refs:
+  - SEC-DOM-03
+  objective_refs:
+  - SEC-OBJ-02
+  - SEC-OBJ-05
+  - SEC-OBJ-07
+  assumption_refs:
+  - TA-01
+  preconditions:
+  - Relevant access, influence, or dependency exists
+  attack_sequence:
+  - Establish position or influence
+  - Exploit the relevant boundary or surface
+  - Cause an invalid or concealed trust-system state
+  - Seek persistence or suppress review
+  consequences:
+  - Unauthorised or unsafe outcome
+  - Loss of evidence or accountability
+  - Potential harm to affected parties
+  detection_indicators:
+  - Unexpected state transition
+  - Mismatch between authority, evidence, policy, and effect
+  - Anomalous administrative or resolution activity
+  risk_factors:
+    likelihood_factors:
+    - access
+    - capability
+    - exposure
+    - detectability
+    impact_dimensions:
+    - rights
+    - financial
+    - service
+    - privacy
+    - institutional
+    uncertainty: to-be-assessed
+  candidate_control_families:
+  - CTL-FAM-01
+  - CTL-FAM-06
+- id: THR-012
+  title: Account recovery takeover
+  description: An adversary causes or exploits account recovery takeover so that a trust-system outcome is no longer authorised,
+    evidence-based, reviewable, or recoverable.
+  category_ref: THCAT-03
+  adversary_refs:
+  - ADV-01
+  asset_refs:
+  - AST-15
+  boundary_refs:
+  - SB-05
+  attack_surface_refs:
+  - AS-04
+  domain_refs:
+  - SEC-DOM-03
+  objective_refs:
+  - SEC-OBJ-02
+  - SEC-OBJ-05
+  - SEC-OBJ-07
+  assumption_refs:
+  - TA-01
+  preconditions:
+  - Relevant access, influence, or dependency exists
+  attack_sequence:
+  - Establish position or influence
+  - Exploit the relevant boundary or surface
+  - Cause an invalid or concealed trust-system state
+  - Seek persistence or suppress review
+  consequences:
+  - Unauthorised or unsafe outcome
+  - Loss of evidence or accountability
+  - Potential harm to affected parties
+  detection_indicators:
+  - Unexpected state transition
+  - Mismatch between authority, evidence, policy, and effect
+  - Anomalous administrative or resolution activity
+  risk_factors:
+    likelihood_factors:
+    - access
+    - capability
+    - exposure
+    - detectability
+    impact_dimensions:
+    - rights
+    - financial
+    - service
+    - privacy
+    - institutional
+    uncertainty: to-be-assessed
+  candidate_control_families:
+  - CTL-FAM-01
+  - CTL-FAM-06
+- id: THR-013
+  title: Credential forgery
+  description: An adversary causes or exploits credential forgery so that a trust-system outcome is no longer authorised,
+    evidence-based, reviewable, or recoverable.
+  category_ref: THCAT-04
+  adversary_refs:
+  - ADV-01
+  asset_refs:
+  - AST-06
+  boundary_refs:
+  - SB-08
+  attack_surface_refs:
+  - AS-05
+  domain_refs:
+  - SEC-DOM-05
+  objective_refs:
+  - SEC-OBJ-02
+  - SEC-OBJ-05
+  - SEC-OBJ-07
+  assumption_refs:
+  - TA-01
+  preconditions:
+  - Relevant access, influence, or dependency exists
+  attack_sequence:
+  - Establish position or influence
+  - Exploit the relevant boundary or surface
+  - Cause an invalid or concealed trust-system state
+  - Seek persistence or suppress review
+  consequences:
+  - Unauthorised or unsafe outcome
+  - Loss of evidence or accountability
+  - Potential harm to affected parties
+  detection_indicators:
+  - Unexpected state transition
+  - Mismatch between authority, evidence, policy, and effect
+  - Anomalous administrative or resolution activity
+  risk_factors:
+    likelihood_factors:
+    - access
+    - capability
+    - exposure
+    - detectability
+    impact_dimensions:
+    - rights
+    - financial
+    - service
+    - privacy
+    - institutional
+    uncertainty: to-be-assessed
+  candidate_control_families:
+  - CTL-FAM-01
+  - CTL-FAM-06
+- id: THR-014
+  title: Credential replay
+  description: An adversary causes or exploits credential replay so that a trust-system outcome is no longer authorised, evidence-based,
+    reviewable, or recoverable.
+  category_ref: THCAT-04
+  adversary_refs:
+  - ADV-02
+  asset_refs:
+  - AST-06
+  boundary_refs:
+  - SB-08
+  attack_surface_refs:
+  - AS-05
+  domain_refs:
+  - SEC-DOM-05
+  objective_refs:
+  - SEC-OBJ-02
+  - SEC-OBJ-05
+  - SEC-OBJ-07
+  assumption_refs:
+  - TA-01
+  preconditions:
+  - Relevant access, influence, or dependency exists
+  attack_sequence:
+  - Establish position or influence
+  - Exploit the relevant boundary or surface
+  - Cause an invalid or concealed trust-system state
+  - Seek persistence or suppress review
+  consequences:
+  - Unauthorised or unsafe outcome
+  - Loss of evidence or accountability
+  - Potential harm to affected parties
+  detection_indicators:
+  - Unexpected state transition
+  - Mismatch between authority, evidence, policy, and effect
+  - Anomalous administrative or resolution activity
+  risk_factors:
+    likelihood_factors:
+    - access
+    - capability
+    - exposure
+    - detectability
+    impact_dimensions:
+    - rights
+    - financial
+    - service
+    - privacy
+    - institutional
+    uncertainty: to-be-assessed
+  candidate_control_families:
+  - CTL-FAM-01
+  - CTL-FAM-06
+- id: THR-015
+  title: Issuer context confusion
+  description: An adversary causes or exploits issuer context confusion so that a trust-system outcome is no longer authorised,
+    evidence-based, reviewable, or recoverable.
+  category_ref: THCAT-04
+  adversary_refs:
+  - ADV-06
+  asset_refs:
+  - AST-07
+  boundary_refs:
+  - SB-07
+  attack_surface_refs:
+  - AS-06
+  domain_refs:
+  - SEC-DOM-05
+  objective_refs:
+  - SEC-OBJ-02
+  - SEC-OBJ-05
+  - SEC-OBJ-07
+  assumption_refs:
+  - TA-01
+  preconditions:
+  - Relevant access, influence, or dependency exists
+  attack_sequence:
+  - Establish position or influence
+  - Exploit the relevant boundary or surface
+  - Cause an invalid or concealed trust-system state
+  - Seek persistence or suppress review
+  consequences:
+  - Unauthorised or unsafe outcome
+  - Loss of evidence or accountability
+  - Potential harm to affected parties
+  detection_indicators:
+  - Unexpected state transition
+  - Mismatch between authority, evidence, policy, and effect
+  - Anomalous administrative or resolution activity
+  risk_factors:
+    likelihood_factors:
+    - access
+    - capability
+    - exposure
+    - detectability
+    impact_dimensions:
+    - rights
+    - financial
+    - service
+    - privacy
+    - institutional
+    uncertainty: to-be-assessed
+  candidate_control_families:
+  - CTL-FAM-01
+  - CTL-FAM-06
+- id: THR-016
+  title: Evidence provenance substitution
+  description: An adversary causes or exploits evidence provenance substitution so that a trust-system outcome is no longer
+    authorised, evidence-based, reviewable, or recoverable.
+  category_ref: THCAT-04
+  adversary_refs:
+  - ADV-06
+  asset_refs:
+  - AST-07
+  boundary_refs:
+  - SB-09
+  attack_surface_refs:
+  - AS-06
+  domain_refs:
+  - SEC-DOM-05
+  objective_refs:
+  - SEC-OBJ-02
+  - SEC-OBJ-05
+  - SEC-OBJ-07
+  assumption_refs:
+  - TA-01
+  preconditions:
+  - Relevant access, influence, or dependency exists
+  attack_sequence:
+  - Establish position or influence
+  - Exploit the relevant boundary or surface
+  - Cause an invalid or concealed trust-system state
+  - Seek persistence or suppress review
+  consequences:
+  - Unauthorised or unsafe outcome
+  - Loss of evidence or accountability
+  - Potential harm to affected parties
+  detection_indicators:
+  - Unexpected state transition
+  - Mismatch between authority, evidence, policy, and effect
+  - Anomalous administrative or resolution activity
+  risk_factors:
+    likelihood_factors:
+    - access
+    - capability
+    - exposure
+    - detectability
+    impact_dimensions:
+    - rights
+    - financial
+    - service
+    - privacy
+    - institutional
+    uncertainty: to-be-assessed
+  candidate_control_families:
+  - CTL-FAM-01
+  - CTL-FAM-06
+- id: THR-017
+  title: Registry poisoning
+  description: An adversary causes or exploits registry poisoning so that a trust-system outcome is no longer authorised,
+    evidence-based, reviewable, or recoverable.
+  category_ref: THCAT-05
+  adversary_refs:
+  - ADV-07
+  asset_refs:
+  - AST-08
+  boundary_refs:
+  - SB-10
+  attack_surface_refs:
+  - AS-07
+  domain_refs:
+  - SEC-DOM-05
+  objective_refs:
+  - SEC-OBJ-02
+  - SEC-OBJ-05
+  - SEC-OBJ-07
+  assumption_refs:
+  - TA-01
+  preconditions:
+  - Relevant access, influence, or dependency exists
+  attack_sequence:
+  - Establish position or influence
+  - Exploit the relevant boundary or surface
+  - Cause an invalid or concealed trust-system state
+  - Seek persistence or suppress review
+  consequences:
+  - Unauthorised or unsafe outcome
+  - Loss of evidence or accountability
+  - Potential harm to affected parties
+  detection_indicators:
+  - Unexpected state transition
+  - Mismatch between authority, evidence, policy, and effect
+  - Anomalous administrative or resolution activity
+  risk_factors:
+    likelihood_factors:
+    - access
+    - capability
+    - exposure
+    - detectability
+    impact_dimensions:
+    - rights
+    - financial
+    - service
+    - privacy
+    - institutional
+    uncertainty: to-be-assessed
+  candidate_control_families:
+  - CTL-FAM-01
+  - CTL-FAM-06
+- id: THR-018
+  title: Registry equivocation
+  description: An adversary causes or exploits registry equivocation so that a trust-system outcome is no longer authorised,
+    evidence-based, reviewable, or recoverable.
+  category_ref: THCAT-05
+  adversary_refs:
+  - ADV-07
+  asset_refs:
+  - AST-08
+  boundary_refs:
+  - SB-10
+  attack_surface_refs:
+  - AS-07
+  domain_refs:
+  - SEC-DOM-05
+  objective_refs:
+  - SEC-OBJ-02
+  - SEC-OBJ-05
+  - SEC-OBJ-07
+  assumption_refs:
+  - TA-01
+  preconditions:
+  - Relevant access, influence, or dependency exists
+  attack_sequence:
+  - Establish position or influence
+  - Exploit the relevant boundary or surface
+  - Cause an invalid or concealed trust-system state
+  - Seek persistence or suppress review
+  consequences:
+  - Unauthorised or unsafe outcome
+  - Loss of evidence or accountability
+  - Potential harm to affected parties
+  detection_indicators:
+  - Unexpected state transition
+  - Mismatch between authority, evidence, policy, and effect
+  - Anomalous administrative or resolution activity
+  risk_factors:
+    likelihood_factors:
+    - access
+    - capability
+    - exposure
+    - detectability
+    impact_dimensions:
+    - rights
+    - financial
+    - service
+    - privacy
+    - institutional
+    uncertainty: to-be-assessed
+  candidate_control_families:
+  - CTL-FAM-01
+  - CTL-FAM-06
+- id: THR-019
+  title: Revocation suppression
+  description: An adversary causes or exploits revocation suppression so that a trust-system outcome is no longer authorised,
+    evidence-based, reviewable, or recoverable.
+  category_ref: THCAT-05
+  adversary_refs:
+  - ADV-07
+  asset_refs:
+  - AST-08
+  boundary_refs:
+  - SB-10
+  attack_surface_refs:
+  - AS-08
+  domain_refs:
+  - SEC-DOM-05
+  objective_refs:
+  - SEC-OBJ-02
+  - SEC-OBJ-05
+  - SEC-OBJ-07
+  assumption_refs:
+  - TA-01
+  preconditions:
+  - Relevant access, influence, or dependency exists
+  attack_sequence:
+  - Establish position or influence
+  - Exploit the relevant boundary or surface
+  - Cause an invalid or concealed trust-system state
+  - Seek persistence or suppress review
+  consequences:
+  - Unauthorised or unsafe outcome
+  - Loss of evidence or accountability
+  - Potential harm to affected parties
+  detection_indicators:
+  - Unexpected state transition
+  - Mismatch between authority, evidence, policy, and effect
+  - Anomalous administrative or resolution activity
+  risk_factors:
+    likelihood_factors:
+    - access
+    - capability
+    - exposure
+    - detectability
+    impact_dimensions:
+    - rights
+    - financial
+    - service
+    - privacy
+    - institutional
+    uncertainty: to-be-assessed
+  candidate_control_families:
+  - CTL-FAM-01
+  - CTL-FAM-06
+- id: THR-020
+  title: Status freshness rollback
+  description: An adversary causes or exploits status freshness rollback so that a trust-system outcome is no longer authorised,
+    evidence-based, reviewable, or recoverable.
+  category_ref: THCAT-05
+  adversary_refs:
+  - ADV-07
+  asset_refs:
+  - AST-08
+  boundary_refs:
+  - SB-10
+  attack_surface_refs:
+  - AS-08
+  domain_refs:
+  - SEC-DOM-05
+  objective_refs:
+  - SEC-OBJ-02
+  - SEC-OBJ-05
+  - SEC-OBJ-07
+  assumption_refs:
+  - TA-01
+  preconditions:
+  - Relevant access, influence, or dependency exists
+  attack_sequence:
+  - Establish position or influence
+  - Exploit the relevant boundary or surface
+  - Cause an invalid or concealed trust-system state
+  - Seek persistence or suppress review
+  consequences:
+  - Unauthorised or unsafe outcome
+  - Loss of evidence or accountability
+  - Potential harm to affected parties
+  detection_indicators:
+  - Unexpected state transition
+  - Mismatch between authority, evidence, policy, and effect
+  - Anomalous administrative or resolution activity
+  risk_factors:
+    likelihood_factors:
+    - access
+    - capability
+    - exposure
+    - detectability
+    impact_dimensions:
+    - rights
+    - financial
+    - service
+    - privacy
+    - institutional
+    uncertainty: to-be-assessed
+  candidate_control_families:
+  - CTL-FAM-01
+  - CTL-FAM-06
+- id: THR-021
+  title: Policy rollback
+  description: An adversary causes or exploits policy rollback so that a trust-system outcome is no longer authorised, evidence-based,
+    reviewable, or recoverable.
+  category_ref: THCAT-06
+  adversary_refs:
+  - ADV-05
+  asset_refs:
+  - AST-05
+  boundary_refs:
+  - SB-11
+  attack_surface_refs:
+  - AS-09
+  domain_refs:
+  - SEC-DOM-04
+  objective_refs:
+  - SEC-OBJ-02
+  - SEC-OBJ-05
+  - SEC-OBJ-07
+  assumption_refs:
+  - TA-01
+  preconditions:
+  - Relevant access, influence, or dependency exists
+  attack_sequence:
+  - Establish position or influence
+  - Exploit the relevant boundary or surface
+  - Cause an invalid or concealed trust-system state
+  - Seek persistence or suppress review
+  consequences:
+  - Unauthorised or unsafe outcome
+  - Loss of evidence or accountability
+  - Potential harm to affected parties
+  detection_indicators:
+  - Unexpected state transition
+  - Mismatch between authority, evidence, policy, and effect
+  - Anomalous administrative or resolution activity
+  risk_factors:
+    likelihood_factors:
+    - access
+    - capability
+    - exposure
+    - detectability
+    impact_dimensions:
+    - rights
+    - financial
+    - service
+    - privacy
+    - institutional
+    uncertainty: to-be-assessed
+  candidate_control_families:
+  - CTL-FAM-01
+  - CTL-FAM-06
+- id: THR-022
+  title: Policy context mismatch
+  description: An adversary causes or exploits policy context mismatch so that a trust-system outcome is no longer authorised,
+    evidence-based, reviewable, or recoverable.
+  category_ref: THCAT-06
+  adversary_refs:
+  - ADV-08
+  asset_refs:
+  - AST-05
+  boundary_refs:
+  - SB-11
+  attack_surface_refs:
+  - AS-09
+  domain_refs:
+  - SEC-DOM-04
+  objective_refs:
+  - SEC-OBJ-02
+  - SEC-OBJ-05
+  - SEC-OBJ-07
+  assumption_refs:
+  - TA-01
+  preconditions:
+  - Relevant access, influence, or dependency exists
+  attack_sequence:
+  - Establish position or influence
+  - Exploit the relevant boundary or surface
+  - Cause an invalid or concealed trust-system state
+  - Seek persistence or suppress review
+  consequences:
+  - Unauthorised or unsafe outcome
+  - Loss of evidence or accountability
+  - Potential harm to affected parties
+  detection_indicators:
+  - Unexpected state transition
+  - Mismatch between authority, evidence, policy, and effect
+  - Anomalous administrative or resolution activity
+  risk_factors:
+    likelihood_factors:
+    - access
+    - capability
+    - exposure
+    - detectability
+    impact_dimensions:
+    - rights
+    - financial
+    - service
+    - privacy
+    - institutional
+    uncertainty: to-be-assessed
+  candidate_control_families:
+  - CTL-FAM-01
+  - CTL-FAM-06
+- id: THR-023
+  title: Decision input manipulation
+  description: An adversary causes or exploits decision input manipulation so that a trust-system outcome is no longer authorised,
+    evidence-based, reviewable, or recoverable.
+  category_ref: THCAT-06
+  adversary_refs:
+  - ADV-04
+  asset_refs:
+  - AST-10
+  boundary_refs:
+  - SB-12
+  attack_surface_refs:
+  - AS-10
+  domain_refs:
+  - SEC-DOM-06
+  objective_refs:
+  - SEC-OBJ-02
+  - SEC-OBJ-05
+  - SEC-OBJ-07
+  assumption_refs:
+  - TA-01
+  preconditions:
+  - Relevant access, influence, or dependency exists
+  attack_sequence:
+  - Establish position or influence
+  - Exploit the relevant boundary or surface
+  - Cause an invalid or concealed trust-system state
+  - Seek persistence or suppress review
+  consequences:
+  - Unauthorised or unsafe outcome
+  - Loss of evidence or accountability
+  - Potential harm to affected parties
+  detection_indicators:
+  - Unexpected state transition
+  - Mismatch between authority, evidence, policy, and effect
+  - Anomalous administrative or resolution activity
+  risk_factors:
+    likelihood_factors:
+    - access
+    - capability
+    - exposure
+    - detectability
+    impact_dimensions:
+    - rights
+    - financial
+    - service
+    - privacy
+    - institutional
+    uncertainty: to-be-assessed
+  candidate_control_families:
+  - CTL-FAM-01
+  - CTL-FAM-06
+- id: THR-024
+  title: Assurance label inflation
+  description: An adversary causes or exploits assurance label inflation so that a trust-system outcome is no longer authorised,
+    evidence-based, reviewable, or recoverable.
+  category_ref: THCAT-06
+  adversary_refs:
+  - ADV-08
+  asset_refs:
+  - AST-09
+  boundary_refs:
+  - SB-12
+  attack_surface_refs:
+  - AS-10
+  domain_refs:
+  - SEC-DOM-09
+  objective_refs:
+  - SEC-OBJ-02
+  - SEC-OBJ-05
+  - SEC-OBJ-07
+  assumption_refs:
+  - TA-01
+  preconditions:
+  - Relevant access, influence, or dependency exists
+  attack_sequence:
+  - Establish position or influence
+  - Exploit the relevant boundary or surface
+  - Cause an invalid or concealed trust-system state
+  - Seek persistence or suppress review
+  consequences:
+  - Unauthorised or unsafe outcome
+  - Loss of evidence or accountability
+  - Potential harm to affected parties
+  detection_indicators:
+  - Unexpected state transition
+  - Mismatch between authority, evidence, policy, and effect
+  - Anomalous administrative or resolution activity
+  risk_factors:
+    likelihood_factors:
+    - access
+    - capability
+    - exposure
+    - detectability
+    impact_dimensions:
+    - rights
+    - financial
+    - service
+    - privacy
+    - institutional
+    uncertainty: to-be-assessed
+  candidate_control_families:
+  - CTL-FAM-01
+  - CTL-FAM-06
+- id: THR-025
+  title: Effect substitution
+  description: An adversary causes or exploits effect substitution so that a trust-system outcome is no longer authorised,
+    evidence-based, reviewable, or recoverable.
+  category_ref: THCAT-07
+  adversary_refs:
+  - ADV-04
+  asset_refs:
+  - AST-11
+  boundary_refs:
+  - SB-13
+  attack_surface_refs:
+  - AS-11
+  domain_refs:
+  - SEC-DOM-06
+  objective_refs:
+  - SEC-OBJ-02
+  - SEC-OBJ-05
+  - SEC-OBJ-07
+  assumption_refs:
+  - TA-01
+  preconditions:
+  - Relevant access, influence, or dependency exists
+  attack_sequence:
+  - Establish position or influence
+  - Exploit the relevant boundary or surface
+  - Cause an invalid or concealed trust-system state
+  - Seek persistence or suppress review
+  consequences:
+  - Unauthorised or unsafe outcome
+  - Loss of evidence or accountability
+  - Potential harm to affected parties
+  detection_indicators:
+  - Unexpected state transition
+  - Mismatch between authority, evidence, policy, and effect
+  - Anomalous administrative or resolution activity
+  risk_factors:
+    likelihood_factors:
+    - access
+    - capability
+    - exposure
+    - detectability
+    impact_dimensions:
+    - rights
+    - financial
+    - service
+    - privacy
+    - institutional
+    uncertainty: to-be-assessed
+  candidate_control_families:
+  - CTL-FAM-01
+  - CTL-FAM-06
+- id: THR-026
+  title: Effect replay
+  description: An adversary causes or exploits effect replay so that a trust-system outcome is no longer authorised, evidence-based,
+    reviewable, or recoverable.
+  category_ref: THCAT-07
+  adversary_refs:
+  - ADV-02
+  asset_refs:
+  - AST-11
+  boundary_refs:
+  - SB-13
+  attack_surface_refs:
+  - AS-11
+  domain_refs:
+  - SEC-DOM-06
+  objective_refs:
+  - SEC-OBJ-02
+  - SEC-OBJ-05
+  - SEC-OBJ-07
+  assumption_refs:
+  - TA-01
+  preconditions:
+  - Relevant access, influence, or dependency exists
+  attack_sequence:
+  - Establish position or influence
+  - Exploit the relevant boundary or surface
+  - Cause an invalid or concealed trust-system state
+  - Seek persistence or suppress review
+  consequences:
+  - Unauthorised or unsafe outcome
+  - Loss of evidence or accountability
+  - Potential harm to affected parties
+  detection_indicators:
+  - Unexpected state transition
+  - Mismatch between authority, evidence, policy, and effect
+  - Anomalous administrative or resolution activity
+  risk_factors:
+    likelihood_factors:
+    - access
+    - capability
+    - exposure
+    - detectability
+    impact_dimensions:
+    - rights
+    - financial
+    - service
+    - privacy
+    - institutional
+    uncertainty: to-be-assessed
+  candidate_control_families:
+  - CTL-FAM-01
+  - CTL-FAM-06
+- id: THR-027
+  title: Unauthorised downstream action
+  description: An adversary causes or exploits unauthorised downstream action so that a trust-system outcome is no longer
+    authorised, evidence-based, reviewable, or recoverable.
+  category_ref: THCAT-07
+  adversary_refs:
+  - ADV-11
+  asset_refs:
+  - AST-21
+  boundary_refs:
+  - SB-19
+  attack_surface_refs:
+  - AS-17
+  domain_refs:
+  - SEC-DOM-12
+  objective_refs:
+  - SEC-OBJ-02
+  - SEC-OBJ-05
+  - SEC-OBJ-07
+  assumption_refs:
+  - TA-01
+  preconditions:
+  - Relevant access, influence, or dependency exists
+  attack_sequence:
+  - Establish position or influence
+  - Exploit the relevant boundary or surface
+  - Cause an invalid or concealed trust-system state
+  - Seek persistence or suppress review
+  consequences:
+  - Unauthorised or unsafe outcome
+  - Loss of evidence or accountability
+  - Potential harm to affected parties
+  detection_indicators:
+  - Unexpected state transition
+  - Mismatch between authority, evidence, policy, and effect
+  - Anomalous administrative or resolution activity
+  risk_factors:
+    likelihood_factors:
+    - access
+    - capability
+    - exposure
+    - detectability
+    impact_dimensions:
+    - rights
+    - financial
+    - service
+    - privacy
+    - institutional
+    uncertainty: to-be-assessed
+  candidate_control_families:
+  - CTL-FAM-01
+  - CTL-FAM-06
+- id: THR-028
+  title: Affected-party invisibility
+  description: An adversary causes or exploits affected-party invisibility so that a trust-system outcome is no longer authorised,
+    evidence-based, reviewable, or recoverable.
+  category_ref: THCAT-07
+  adversary_refs:
+  - ADV-08
+  asset_refs:
+  - AST-14
+  boundary_refs:
+  - SB-14
+  attack_surface_refs:
+  - AS-11
+  domain_refs:
+  - SEC-DOM-09
+  objective_refs:
+  - SEC-OBJ-02
+  - SEC-OBJ-05
+  - SEC-OBJ-07
+  assumption_refs:
+  - TA-01
+  preconditions:
+  - Relevant access, influence, or dependency exists
+  attack_sequence:
+  - Establish position or influence
+  - Exploit the relevant boundary or surface
+  - Cause an invalid or concealed trust-system state
+  - Seek persistence or suppress review
+  consequences:
+  - Unauthorised or unsafe outcome
+  - Loss of evidence or accountability
+  - Potential harm to affected parties
+  detection_indicators:
+  - Unexpected state transition
+  - Mismatch between authority, evidence, policy, and effect
+  - Anomalous administrative or resolution activity
+  risk_factors:
+    likelihood_factors:
+    - access
+    - capability
+    - exposure
+    - detectability
+    impact_dimensions:
+    - rights
+    - financial
+    - service
+    - privacy
+    - institutional
+    uncertainty: to-be-assessed
+  candidate_control_families:
+  - CTL-FAM-01
+  - CTL-FAM-06
+- id: THR-029
+  title: Audit log tampering
+  description: An adversary causes or exploits audit log tampering so that a trust-system outcome is no longer authorised,
+    evidence-based, reviewable, or recoverable.
+  category_ref: THCAT-08
+  adversary_refs:
+  - ADV-05
+  asset_refs:
+  - AST-12
+  boundary_refs:
+  - SB-12
+  attack_surface_refs:
+  - AS-12
+  domain_refs:
+  - SEC-DOM-08
+  objective_refs:
+  - SEC-OBJ-02
+  - SEC-OBJ-05
+  - SEC-OBJ-07
+  assumption_refs:
+  - TA-01
+  preconditions:
+  - Relevant access, influence, or dependency exists
+  attack_sequence:
+  - Establish position or influence
+  - Exploit the relevant boundary or surface
+  - Cause an invalid or concealed trust-system state
+  - Seek persistence or suppress review
+  consequences:
+  - Unauthorised or unsafe outcome
+  - Loss of evidence or accountability
+  - Potential harm to affected parties
+  detection_indicators:
+  - Unexpected state transition
+  - Mismatch between authority, evidence, policy, and effect
+  - Anomalous administrative or resolution activity
+  risk_factors:
+    likelihood_factors:
+    - access
+    - capability
+    - exposure
+    - detectability
+    impact_dimensions:
+    - rights
+    - financial
+    - service
+    - privacy
+    - institutional
+    uncertainty: to-be-assessed
+  candidate_control_families:
+  - CTL-FAM-01
+  - CTL-FAM-06
+- id: THR-030
+  title: Telemetry suppression
+  description: An adversary causes or exploits telemetry suppression so that a trust-system outcome is no longer authorised,
+    evidence-based, reviewable, or recoverable.
+  category_ref: THCAT-08
+  adversary_refs:
+  - ADV-05
+  asset_refs:
+  - AST-17
+  boundary_refs:
+  - SB-12
+  attack_surface_refs:
+  - AS-12
+  domain_refs:
+  - SEC-DOM-08
+  objective_refs:
+  - SEC-OBJ-02
+  - SEC-OBJ-05
+  - SEC-OBJ-07
+  assumption_refs:
+  - TA-01
+  preconditions:
+  - Relevant access, influence, or dependency exists
+  attack_sequence:
+  - Establish position or influence
+  - Exploit the relevant boundary or surface
+  - Cause an invalid or concealed trust-system state
+  - Seek persistence or suppress review
+  consequences:
+  - Unauthorised or unsafe outcome
+  - Loss of evidence or accountability
+  - Potential harm to affected parties
+  detection_indicators:
+  - Unexpected state transition
+  - Mismatch between authority, evidence, policy, and effect
+  - Anomalous administrative or resolution activity
+  risk_factors:
+    likelihood_factors:
+    - access
+    - capability
+    - exposure
+    - detectability
+    impact_dimensions:
+    - rights
+    - financial
+    - service
+    - privacy
+    - institutional
+    uncertainty: to-be-assessed
+  candidate_control_families:
+  - CTL-FAM-01
+  - CTL-FAM-06
+- id: THR-031
+  title: Denial of trust resolution
+  description: An adversary causes or exploits denial of trust resolution so that a trust-system outcome is no longer authorised,
+    evidence-based, reviewable, or recoverable.
+  category_ref: THCAT-08
+  adversary_refs:
+  - ADV-01
+  asset_refs:
+  - AST-08
+  boundary_refs:
+  - SB-10
+  attack_surface_refs:
+  - AS-07
+  domain_refs:
+  - SEC-DOM-08
+  objective_refs:
+  - SEC-OBJ-02
+  - SEC-OBJ-05
+  - SEC-OBJ-07
+  assumption_refs:
+  - TA-01
+  preconditions:
+  - Relevant access, influence, or dependency exists
+  attack_sequence:
+  - Establish position or influence
+  - Exploit the relevant boundary or surface
+  - Cause an invalid or concealed trust-system state
+  - Seek persistence or suppress review
+  consequences:
+  - Unauthorised or unsafe outcome
+  - Loss of evidence or accountability
+  - Potential harm to affected parties
+  detection_indicators:
+  - Unexpected state transition
+  - Mismatch between authority, evidence, policy, and effect
+  - Anomalous administrative or resolution activity
+  risk_factors:
+    likelihood_factors:
+    - access
+    - capability
+    - exposure
+    - detectability
+    impact_dimensions:
+    - rights
+    - financial
+    - service
+    - privacy
+    - institutional
+    uncertainty: to-be-assessed
+  candidate_control_families:
+  - CTL-FAM-01
+  - CTL-FAM-06
+- id: THR-032
+  title: Recovery state manipulation
+  description: An adversary causes or exploits recovery state manipulation so that a trust-system outcome is no longer authorised,
+    evidence-based, reviewable, or recoverable.
+  category_ref: THCAT-08
+  adversary_refs:
+  - ADV-05
+  asset_refs:
+  - AST-13
+  boundary_refs:
+  - SB-20
+  attack_surface_refs:
+  - AS-13
+  domain_refs:
+  - SEC-DOM-08
+  objective_refs:
+  - SEC-OBJ-02
+  - SEC-OBJ-05
+  - SEC-OBJ-07
+  assumption_refs:
+  - TA-01
+  preconditions:
+  - Relevant access, influence, or dependency exists
+  attack_sequence:
+  - Establish position or influence
+  - Exploit the relevant boundary or surface
+  - Cause an invalid or concealed trust-system state
+  - Seek persistence or suppress review
+  consequences:
+  - Unauthorised or unsafe outcome
+  - Loss of evidence or accountability
+  - Potential harm to affected parties
+  detection_indicators:
+  - Unexpected state transition
+  - Mismatch between authority, evidence, policy, and effect
+  - Anomalous administrative or resolution activity
+  risk_factors:
+    likelihood_factors:
+    - access
+    - capability
+    - exposure
+    - detectability
+    impact_dimensions:
+    - rights
+    - financial
+    - service
+    - privacy
+    - institutional
+    uncertainty: to-be-assessed
+  candidate_control_families:
+  - CTL-FAM-01
+  - CTL-FAM-06
+- id: THR-033
+  title: Dependency substitution
+  description: An adversary causes or exploits dependency substitution so that a trust-system outcome is no longer authorised,
+    evidence-based, reviewable, or recoverable.
+  category_ref: THCAT-09
+  adversary_refs:
+  - ADV-10
+  asset_refs:
+  - AST-16
+  boundary_refs:
+  - SB-17
+  attack_surface_refs:
+  - AS-16
+  domain_refs:
+  - SEC-DOM-07
+  objective_refs:
+  - SEC-OBJ-02
+  - SEC-OBJ-05
+  - SEC-OBJ-07
+  assumption_refs:
+  - TA-01
+  preconditions:
+  - Relevant access, influence, or dependency exists
+  attack_sequence:
+  - Establish position or influence
+  - Exploit the relevant boundary or surface
+  - Cause an invalid or concealed trust-system state
+  - Seek persistence or suppress review
+  consequences:
+  - Unauthorised or unsafe outcome
+  - Loss of evidence or accountability
+  - Potential harm to affected parties
+  detection_indicators:
+  - Unexpected state transition
+  - Mismatch between authority, evidence, policy, and effect
+  - Anomalous administrative or resolution activity
+  risk_factors:
+    likelihood_factors:
+    - access
+    - capability
+    - exposure
+    - detectability
+    impact_dimensions:
+    - rights
+    - financial
+    - service
+    - privacy
+    - institutional
+    uncertainty: to-be-assessed
+  candidate_control_families:
+  - CTL-FAM-01
+  - CTL-FAM-06
+- id: THR-034
+  title: Build pipeline compromise
+  description: An adversary causes or exploits build pipeline compromise so that a trust-system outcome is no longer authorised,
+    evidence-based, reviewable, or recoverable.
+  category_ref: THCAT-09
+  adversary_refs:
+  - ADV-10
+  asset_refs:
+  - AST-16
+  boundary_refs:
+  - SB-17
+  attack_surface_refs:
+  - AS-16
+  domain_refs:
+  - SEC-DOM-07
+  objective_refs:
+  - SEC-OBJ-02
+  - SEC-OBJ-05
+  - SEC-OBJ-07
+  assumption_refs:
+  - TA-01
+  preconditions:
+  - Relevant access, influence, or dependency exists
+  attack_sequence:
+  - Establish position or influence
+  - Exploit the relevant boundary or surface
+  - Cause an invalid or concealed trust-system state
+  - Seek persistence or suppress review
+  consequences:
+  - Unauthorised or unsafe outcome
+  - Loss of evidence or accountability
+  - Potential harm to affected parties
+  detection_indicators:
+  - Unexpected state transition
+  - Mismatch between authority, evidence, policy, and effect
+  - Anomalous administrative or resolution activity
+  risk_factors:
+    likelihood_factors:
+    - access
+    - capability
+    - exposure
+    - detectability
+    impact_dimensions:
+    - rights
+    - financial
+    - service
+    - privacy
+    - institutional
+    uncertainty: to-be-assessed
+  candidate_control_families:
+  - CTL-FAM-01
+  - CTL-FAM-06
+- id: THR-035
+  title: Malicious update propagation
+  description: An adversary causes or exploits malicious update propagation so that a trust-system outcome is no longer authorised,
+    evidence-based, reviewable, or recoverable.
+  category_ref: THCAT-09
+  adversary_refs:
+  - ADV-10
+  asset_refs:
+  - AST-16
+  boundary_refs:
+  - SB-17
+  attack_surface_refs:
+  - AS-16
+  domain_refs:
+  - SEC-DOM-07
+  objective_refs:
+  - SEC-OBJ-02
+  - SEC-OBJ-05
+  - SEC-OBJ-07
+  assumption_refs:
+  - TA-01
+  preconditions:
+  - Relevant access, influence, or dependency exists
+  attack_sequence:
+  - Establish position or influence
+  - Exploit the relevant boundary or surface
+  - Cause an invalid or concealed trust-system state
+  - Seek persistence or suppress review
+  consequences:
+  - Unauthorised or unsafe outcome
+  - Loss of evidence or accountability
+  - Potential harm to affected parties
+  detection_indicators:
+  - Unexpected state transition
+  - Mismatch between authority, evidence, policy, and effect
+  - Anomalous administrative or resolution activity
+  risk_factors:
+    likelihood_factors:
+    - access
+    - capability
+    - exposure
+    - detectability
+    impact_dimensions:
+    - rights
+    - financial
+    - service
+    - privacy
+    - institutional
+    uncertainty: to-be-assessed
+  candidate_control_families:
+  - CTL-FAM-01
+  - CTL-FAM-06
+- id: THR-036
+  title: Federation laundering
+  description: An adversary causes or exploits federation laundering so that a trust-system outcome is no longer authorised,
+    evidence-based, reviewable, or recoverable.
+  category_ref: THCAT-10
+  adversary_refs:
+  - ADV-09
+  asset_refs:
+  - AST-19
+  boundary_refs:
+  - SB-15
+  attack_surface_refs:
+  - AS-14
+  domain_refs:
+  - SEC-DOM-10
+  objective_refs:
+  - SEC-OBJ-02
+  - SEC-OBJ-05
+  - SEC-OBJ-07
+  assumption_refs:
+  - TA-01
+  preconditions:
+  - Relevant access, influence, or dependency exists
+  attack_sequence:
+  - Establish position or influence
+  - Exploit the relevant boundary or surface
+  - Cause an invalid or concealed trust-system state
+  - Seek persistence or suppress review
+  consequences:
+  - Unauthorised or unsafe outcome
+  - Loss of evidence or accountability
+  - Potential harm to affected parties
+  detection_indicators:
+  - Unexpected state transition
+  - Mismatch between authority, evidence, policy, and effect
+  - Anomalous administrative or resolution activity
+  risk_factors:
+    likelihood_factors:
+    - access
+    - capability
+    - exposure
+    - detectability
+    impact_dimensions:
+    - rights
+    - financial
+    - service
+    - privacy
+    - institutional
+    uncertainty: to-be-assessed
+  candidate_control_families:
+  - CTL-FAM-01
+  - CTL-FAM-06
+- id: THR-037
+  title: Cross-domain semantic substitution
+  description: An adversary causes or exploits cross-domain semantic substitution so that a trust-system outcome is no longer
+    authorised, evidence-based, reviewable, or recoverable.
+  category_ref: THCAT-10
+  adversary_refs:
+  - ADV-09
+  asset_refs:
+  - AST-19
+  boundary_refs:
+  - SB-15
+  attack_surface_refs:
+  - AS-14
+  domain_refs:
+  - SEC-DOM-10
+  objective_refs:
+  - SEC-OBJ-02
+  - SEC-OBJ-05
+  - SEC-OBJ-07
+  assumption_refs:
+  - TA-01
+  preconditions:
+  - Relevant access, influence, or dependency exists
+  attack_sequence:
+  - Establish position or influence
+  - Exploit the relevant boundary or surface
+  - Cause an invalid or concealed trust-system state
+  - Seek persistence or suppress review
+  consequences:
+  - Unauthorised or unsafe outcome
+  - Loss of evidence or accountability
+  - Potential harm to affected parties
+  detection_indicators:
+  - Unexpected state transition
+  - Mismatch between authority, evidence, policy, and effect
+  - Anomalous administrative or resolution activity
+  risk_factors:
+    likelihood_factors:
+    - access
+    - capability
+    - exposure
+    - detectability
+    impact_dimensions:
+    - rights
+    - financial
+    - service
+    - privacy
+    - institutional
+    uncertainty: to-be-assessed
+  candidate_control_families:
+  - CTL-FAM-01
+  - CTL-FAM-06
+- id: THR-038
+  title: Foreign assurance transitivity
+  description: An adversary causes or exploits foreign assurance transitivity so that a trust-system outcome is no longer
+    authorised, evidence-based, reviewable, or recoverable.
+  category_ref: THCAT-10
+  adversary_refs:
+  - ADV-09
+  asset_refs:
+  - AST-09
+  boundary_refs:
+  - SB-15
+  attack_surface_refs:
+  - AS-14
+  domain_refs:
+  - SEC-DOM-10
+  objective_refs:
+  - SEC-OBJ-02
+  - SEC-OBJ-05
+  - SEC-OBJ-07
+  assumption_refs:
+  - TA-01
+  preconditions:
+  - Relevant access, influence, or dependency exists
+  attack_sequence:
+  - Establish position or influence
+  - Exploit the relevant boundary or surface
+  - Cause an invalid or concealed trust-system state
+  - Seek persistence or suppress review
+  consequences:
+  - Unauthorised or unsafe outcome
+  - Loss of evidence or accountability
+  - Potential harm to affected parties
+  detection_indicators:
+  - Unexpected state transition
+  - Mismatch between authority, evidence, policy, and effect
+  - Anomalous administrative or resolution activity
+  risk_factors:
+    likelihood_factors:
+    - access
+    - capability
+    - exposure
+    - detectability
+    impact_dimensions:
+    - rights
+    - financial
+    - service
+    - privacy
+    - institutional
+    uncertainty: to-be-assessed
+  candidate_control_families:
+  - CTL-FAM-01
+  - CTL-FAM-06
+- id: THR-039
+  title: Correlation through status checks
+  description: An adversary causes or exploits correlation through status checks so that a trust-system outcome is no longer
+    authorised, evidence-based, reviewable, or recoverable.
+  category_ref: THCAT-11
+  adversary_refs:
+  - ADV-07
+  asset_refs:
+  - AST-18
+  boundary_refs:
+  - SB-10
+  attack_surface_refs:
+  - AS-08
+  domain_refs:
+  - SEC-DOM-11
+  objective_refs:
+  - SEC-OBJ-02
+  - SEC-OBJ-05
+  - SEC-OBJ-07
+  assumption_refs:
+  - TA-01
+  preconditions:
+  - Relevant access, influence, or dependency exists
+  attack_sequence:
+  - Establish position or influence
+  - Exploit the relevant boundary or surface
+  - Cause an invalid or concealed trust-system state
+  - Seek persistence or suppress review
+  consequences:
+  - Unauthorised or unsafe outcome
+  - Loss of evidence or accountability
+  - Potential harm to affected parties
+  detection_indicators:
+  - Unexpected state transition
+  - Mismatch between authority, evidence, policy, and effect
+  - Anomalous administrative or resolution activity
+  risk_factors:
+    likelihood_factors:
+    - access
+    - capability
+    - exposure
+    - detectability
+    impact_dimensions:
+    - rights
+    - financial
+    - service
+    - privacy
+    - institutional
+    uncertainty: to-be-assessed
+  candidate_control_families:
+  - CTL-FAM-01
+  - CTL-FAM-06
+- id: THR-040
+  title: Over-collection at verification
+  description: An adversary causes or exploits over-collection at verification so that a trust-system outcome is no longer
+    authorised, evidence-based, reviewable, or recoverable.
+  category_ref: THCAT-11
+  adversary_refs:
+  - ADV-02
+  asset_refs:
+  - AST-18
+  boundary_refs:
+  - SB-08
+  attack_surface_refs:
+  - AS-05
+  domain_refs:
+  - SEC-DOM-11
+  objective_refs:
+  - SEC-OBJ-02
+  - SEC-OBJ-05
+  - SEC-OBJ-07
+  assumption_refs:
+  - TA-01
+  preconditions:
+  - Relevant access, influence, or dependency exists
+  attack_sequence:
+  - Establish position or influence
+  - Exploit the relevant boundary or surface
+  - Cause an invalid or concealed trust-system state
+  - Seek persistence or suppress review
+  consequences:
+  - Unauthorised or unsafe outcome
+  - Loss of evidence or accountability
+  - Potential harm to affected parties
+  detection_indicators:
+  - Unexpected state transition
+  - Mismatch between authority, evidence, policy, and effect
+  - Anomalous administrative or resolution activity
+  risk_factors:
+    likelihood_factors:
+    - access
+    - capability
+    - exposure
+    - detectability
+    impact_dimensions:
+    - rights
+    - financial
+    - service
+    - privacy
+    - institutional
+    uncertainty: to-be-assessed
+  candidate_control_families:
+  - CTL-FAM-01
+  - CTL-FAM-06
+- id: THR-041
+  title: Public disclosure re-identification
+  description: An adversary causes or exploits public disclosure re-identification so that a trust-system outcome is no longer
+    authorised, evidence-based, reviewable, or recoverable.
+  category_ref: THCAT-11
+  adversary_refs:
+  - ADV-14
+  asset_refs:
+  - AST-18
+  boundary_refs:
+  - SB-22
+  attack_surface_refs:
+  - AS-18
+  domain_refs:
+  - SEC-DOM-11
+  objective_refs:
+  - SEC-OBJ-02
+  - SEC-OBJ-05
+  - SEC-OBJ-07
+  assumption_refs:
+  - TA-01
+  preconditions:
+  - Relevant access, influence, or dependency exists
+  attack_sequence:
+  - Establish position or influence
+  - Exploit the relevant boundary or surface
+  - Cause an invalid or concealed trust-system state
+  - Seek persistence or suppress review
+  consequences:
+  - Unauthorised or unsafe outcome
+  - Loss of evidence or accountability
+  - Potential harm to affected parties
+  detection_indicators:
+  - Unexpected state transition
+  - Mismatch between authority, evidence, policy, and effect
+  - Anomalous administrative or resolution activity
+  risk_factors:
+    likelihood_factors:
+    - access
+    - capability
+    - exposure
+    - detectability
+    impact_dimensions:
+    - rights
+    - financial
+    - service
+    - privacy
+    - institutional
+    uncertainty: to-be-assessed
+  candidate_control_families:
+  - CTL-FAM-01
+  - CTL-FAM-06
+- id: THR-042
+  title: Agent mandate drift
+  description: An adversary causes or exploits agent mandate drift so that a trust-system outcome is no longer authorised,
+    evidence-based, reviewable, or recoverable.
+  category_ref: THCAT-12
+  adversary_refs:
+  - ADV-11
+  asset_refs:
+  - AST-21
+  boundary_refs:
+  - SB-19
+  attack_surface_refs:
+  - AS-17
+  domain_refs:
+  - SEC-DOM-12
+  objective_refs:
+  - SEC-OBJ-02
+  - SEC-OBJ-05
+  - SEC-OBJ-07
+  assumption_refs:
+  - TA-01
+  preconditions:
+  - Relevant access, influence, or dependency exists
+  attack_sequence:
+  - Establish position or influence
+  - Exploit the relevant boundary or surface
+  - Cause an invalid or concealed trust-system state
+  - Seek persistence or suppress review
+  consequences:
+  - Unauthorised or unsafe outcome
+  - Loss of evidence or accountability
+  - Potential harm to affected parties
+  detection_indicators:
+  - Unexpected state transition
+  - Mismatch between authority, evidence, policy, and effect
+  - Anomalous administrative or resolution activity
+  risk_factors:
+    likelihood_factors:
+    - access
+    - capability
+    - exposure
+    - detectability
+    impact_dimensions:
+    - rights
+    - financial
+    - service
+    - privacy
+    - institutional
+    uncertainty: to-be-assessed
+  candidate_control_families:
+  - CTL-FAM-01
+  - CTL-FAM-06
+- id: THR-043
+  title: Prompt or instruction injection
+  description: An adversary causes or exploits prompt or instruction injection so that a trust-system outcome is no longer
+    authorised, evidence-based, reviewable, or recoverable.
+  category_ref: THCAT-12
+  adversary_refs:
+  - ADV-01
+  asset_refs:
+  - AST-21
+  boundary_refs:
+  - SB-19
+  attack_surface_refs:
+  - AS-17
+  domain_refs:
+  - SEC-DOM-12
+  objective_refs:
+  - SEC-OBJ-02
+  - SEC-OBJ-05
+  - SEC-OBJ-07
+  assumption_refs:
+  - TA-01
+  preconditions:
+  - Relevant access, influence, or dependency exists
+  attack_sequence:
+  - Establish position or influence
+  - Exploit the relevant boundary or surface
+  - Cause an invalid or concealed trust-system state
+  - Seek persistence or suppress review
+  consequences:
+  - Unauthorised or unsafe outcome
+  - Loss of evidence or accountability
+  - Potential harm to affected parties
+  detection_indicators:
+  - Unexpected state transition
+  - Mismatch between authority, evidence, policy, and effect
+  - Anomalous administrative or resolution activity
+  risk_factors:
+    likelihood_factors:
+    - access
+    - capability
+    - exposure
+    - detectability
+    impact_dimensions:
+    - rights
+    - financial
+    - service
+    - privacy
+    - institutional
+    uncertainty: to-be-assessed
+  candidate_control_families:
+  - CTL-FAM-01
+  - CTL-FAM-06
+- id: THR-044
+  title: Tool invocation outside scope
+  description: An adversary causes or exploits tool invocation outside scope so that a trust-system outcome is no longer authorised,
+    evidence-based, reviewable, or recoverable.
+  category_ref: THCAT-12
+  adversary_refs:
+  - ADV-11
+  asset_refs:
+  - AST-21
+  boundary_refs:
+  - SB-19
+  attack_surface_refs:
+  - AS-17
+  domain_refs:
+  - SEC-DOM-12
+  objective_refs:
+  - SEC-OBJ-02
+  - SEC-OBJ-05
+  - SEC-OBJ-07
+  assumption_refs:
+  - TA-01
+  preconditions:
+  - Relevant access, influence, or dependency exists
+  attack_sequence:
+  - Establish position or influence
+  - Exploit the relevant boundary or surface
+  - Cause an invalid or concealed trust-system state
+  - Seek persistence or suppress review
+  consequences:
+  - Unauthorised or unsafe outcome
+  - Loss of evidence or accountability
+  - Potential harm to affected parties
+  detection_indicators:
+  - Unexpected state transition
+  - Mismatch between authority, evidence, policy, and effect
+  - Anomalous administrative or resolution activity
+  risk_factors:
+    likelihood_factors:
+    - access
+    - capability
+    - exposure
+    - detectability
+    impact_dimensions:
+    - rights
+    - financial
+    - service
+    - privacy
+    - institutional
+    uncertainty: to-be-assessed
+  candidate_control_families:
+  - CTL-FAM-01
+  - CTL-FAM-06
+- id: THR-045
+  title: Decision receipt suppression
+  description: An adversary causes or exploits decision receipt suppression so that a trust-system outcome is no longer authorised,
+    evidence-based, reviewable, or recoverable.
+  category_ref: THCAT-13
+  adversary_refs:
+  - ADV-04
+  asset_refs:
+  - AST-12
+  boundary_refs:
+  - SB-21
+  attack_surface_refs:
+  - AS-15
+  domain_refs:
+  - SEC-DOM-09
+  objective_refs:
+  - SEC-OBJ-02
+  - SEC-OBJ-05
+  - SEC-OBJ-07
+  assumption_refs:
+  - TA-01
+  preconditions:
+  - Relevant access, influence, or dependency exists
+  attack_sequence:
+  - Establish position or influence
+  - Exploit the relevant boundary or surface
+  - Cause an invalid or concealed trust-system state
+  - Seek persistence or suppress review
+  consequences:
+  - Unauthorised or unsafe outcome
+  - Loss of evidence or accountability
+  - Potential harm to affected parties
+  detection_indicators:
+  - Unexpected state transition
+  - Mismatch between authority, evidence, policy, and effect
+  - Anomalous administrative or resolution activity
+  risk_factors:
+    likelihood_factors:
+    - access
+    - capability
+    - exposure
+    - detectability
+    impact_dimensions:
+    - rights
+    - financial
+    - service
+    - privacy
+    - institutional
+    uncertainty: to-be-assessed
+  candidate_control_families:
+  - CTL-FAM-01
+  - CTL-FAM-06
+- id: THR-046
+  title: Grievance obstruction
+  description: An adversary causes or exploits grievance obstruction so that a trust-system outcome is no longer authorised,
+    evidence-based, reviewable, or recoverable.
+  category_ref: THCAT-13
+  adversary_refs:
+  - ADV-08
+  asset_refs:
+  - AST-14
+  boundary_refs:
+  - SB-21
+  attack_surface_refs:
+  - AS-15
+  domain_refs:
+  - SEC-DOM-09
+  objective_refs:
+  - SEC-OBJ-02
+  - SEC-OBJ-05
+  - SEC-OBJ-07
+  assumption_refs:
+  - TA-01
+  preconditions:
+  - Relevant access, influence, or dependency exists
+  attack_sequence:
+  - Establish position or influence
+  - Exploit the relevant boundary or surface
+  - Cause an invalid or concealed trust-system state
+  - Seek persistence or suppress review
+  consequences:
+  - Unauthorised or unsafe outcome
+  - Loss of evidence or accountability
+  - Potential harm to affected parties
+  detection_indicators:
+  - Unexpected state transition
+  - Mismatch between authority, evidence, policy, and effect
+  - Anomalous administrative or resolution activity
+  risk_factors:
+    likelihood_factors:
+    - access
+    - capability
+    - exposure
+    - detectability
+    impact_dimensions:
+    - rights
+    - financial
+    - service
+    - privacy
+    - institutional
+    uncertainty: to-be-assessed
+  candidate_control_families:
+  - CTL-FAM-01
+  - CTL-FAM-06
+- id: THR-047
+  title: Selective remedy enforcement
+  description: An adversary causes or exploits selective remedy enforcement so that a trust-system outcome is no longer authorised,
+    evidence-based, reviewable, or recoverable.
+  category_ref: THCAT-13
+  adversary_refs:
+  - ADV-08
+  asset_refs:
+  - AST-14
+  boundary_refs:
+  - SB-21
+  attack_surface_refs:
+  - AS-15
+  domain_refs:
+  - SEC-DOM-09
+  objective_refs:
+  - SEC-OBJ-02
+  - SEC-OBJ-05
+  - SEC-OBJ-07
+  assumption_refs:
+  - TA-01
+  preconditions:
+  - Relevant access, influence, or dependency exists
+  attack_sequence:
+  - Establish position or influence
+  - Exploit the relevant boundary or surface
+  - Cause an invalid or concealed trust-system state
+  - Seek persistence or suppress review
+  consequences:
+  - Unauthorised or unsafe outcome
+  - Loss of evidence or accountability
+  - Potential harm to affected parties
+  detection_indicators:
+  - Unexpected state transition
+  - Mismatch between authority, evidence, policy, and effect
+  - Anomalous administrative or resolution activity
+  risk_factors:
+    likelihood_factors:
+    - access
+    - capability
+    - exposure
+    - detectability
+    impact_dimensions:
+    - rights
+    - financial
+    - service
+    - privacy
+    - institutional
+    uncertainty: to-be-assessed
+  candidate_control_families:
+  - CTL-FAM-01
+  - CTL-FAM-06
+- id: THR-048
+  title: Critical service concentration failure
+  description: An adversary causes or exploits critical service concentration failure so that a trust-system outcome is no
+    longer authorised, evidence-based, reviewable, or recoverable.
+  category_ref: THCAT-14
+  adversary_refs:
+  - ADV-14
+  asset_refs:
+  - AST-20
+  boundary_refs:
+  - SB-18
+  attack_surface_refs:
+  - AS-07
+  domain_refs:
+  - SEC-DOM-08
+  objective_refs:
+  - SEC-OBJ-02
+  - SEC-OBJ-05
+  - SEC-OBJ-07
+  assumption_refs:
+  - TA-01
+  preconditions:
+  - Relevant access, influence, or dependency exists
+  attack_sequence:
+  - Establish position or influence
+  - Exploit the relevant boundary or surface
+  - Cause an invalid or concealed trust-system state
+  - Seek persistence or suppress review
+  consequences:
+  - Unauthorised or unsafe outcome
+  - Loss of evidence or accountability
+  - Potential harm to affected parties
+  detection_indicators:
+  - Unexpected state transition
+  - Mismatch between authority, evidence, policy, and effect
+  - Anomalous administrative or resolution activity
+  risk_factors:
+    likelihood_factors:
+    - access
+    - capability
+    - exposure
+    - detectability
+    impact_dimensions:
+    - rights
+    - financial
+    - service
+    - privacy
+    - institutional
+    uncertainty: to-be-assessed
+  candidate_control_families:
+  - CTL-FAM-01
+  - CTL-FAM-06

@@ -1,0 +1,117 @@
+specification: ONDTF
+working_release: 0.5.0
+status: draft
+catalogue: adversaries
+adversaries:
+- id: ADV-01
+  name: Unauthenticated external attacker
+  position: outside
+  motivation: fraud, disruption or reconnaissance
+  capabilities:
+  - access or influence appropriate to position
+  persistence: variable
+  detectability: context-dependent
+- id: ADV-02
+  name: Malicious authenticated participant
+  position: participant
+  motivation: benefit, exclusion or evasion
+  capabilities:
+  - access or influence appropriate to position
+  persistence: variable
+  detectability: context-dependent
+- id: ADV-03
+  name: Compromised participant
+  position: participant
+  motivation: controlled by another actor
+  capabilities:
+  - access or influence appropriate to position
+  persistence: variable
+  detectability: context-dependent
+- id: ADV-04
+  name: Malicious insider
+  position: organisation
+  motivation: abuse of legitimate access
+  capabilities:
+  - access or influence appropriate to position
+  persistence: variable
+  detectability: context-dependent
+- id: ADV-05
+  name: Privileged administrator
+  position: control plane
+  motivation: covert or overt privilege abuse
+  capabilities:
+  - access or influence appropriate to position
+  persistence: variable
+  detectability: context-dependent
+- id: ADV-06
+  name: Compromised issuer or evidence provider
+  position: evidence plane
+  motivation: false or manipulated assertions
+  capabilities:
+  - access or influence appropriate to position
+  persistence: variable
+  detectability: context-dependent
+- id: ADV-07
+  name: Compromised registry or resolver
+  position: trust resolution
+  motivation: status or recognition manipulation
+  capabilities:
+  - access or influence appropriate to position
+  persistence: variable
+  detectability: context-dependent
+- id: ADV-08
+  name: Negligent or captured scheme operator
+  position: governance plane
+  motivation: institutional capture or operational neglect
+  capabilities:
+  - access or influence appropriate to position
+  persistence: variable
+  detectability: context-dependent
+- id: ADV-09
+  name: Foreign or federated trust domain
+  position: federation boundary
+  motivation: semantic or assurance mismatch
+  capabilities:
+  - access or influence appropriate to position
+  persistence: variable
+  detectability: context-dependent
+- id: ADV-10
+  name: Compromised software supplier
+  position: supply chain
+  motivation: persistent ecosystem access
+  capabilities:
+  - access or influence appropriate to position
+  persistence: variable
+  detectability: context-dependent
+- id: ADV-11
+  name: Autonomous agent outside mandate
+  position: agent execution
+  motivation: goal drift or manipulated execution
+  capabilities:
+  - access or influence appropriate to position
+  persistence: variable
+  detectability: context-dependent
+- id: ADV-12
+  name: Colluding ecosystem participants
+  position: multiple positions
+  motivation: laundering authority or evidence
+  capabilities:
+  - access or influence appropriate to position
+  persistence: variable
+  detectability: context-dependent
+- id: ADV-13
+  name: Coercive principal or intermediary
+  position: delegation relationship
+  motivation: abuse of another party
+  capabilities:
+  - access or influence appropriate to position
+  persistence: variable
+  detectability: context-dependent
+- id: ADV-14
+  name: State-level or systemic adversary
+  position: ecosystem
+  motivation: strategic disruption or surveillance
+  capabilities:
+  - access or influence appropriate to position
+  persistence: variable
+  detectability: context-dependent

@@ -1,0 +1,17 @@
+{
+  "receiptId": "urn:ondtf:example:receipt:decision-001",
+  "subject": "urn:ondtf:example:person:asha-rao",
+  "delegate": "urn:ondtf:example:participant:cbs",
+  "policyRef": "urn:ondtf:example:policy:education-benefit-v3",
+  "evidenceRefs": [
+    "urn:ondtf:example:credential:enrolment-001",
+    "urn:ondtf:example:evidence:income-001"
+  ],
+  "decision": "ineligible",
+  "reasonCodes": [
+    "INCOME-BAND-NOT-ELIGIBLE"
+  ],
+  "effectStatus": "not-executed",
+  "challengeEndpoint": "urn:ondtf:example:service:review-office",
+  "decidedAt": "2026-07-15T10:04:12+05:30"
+}

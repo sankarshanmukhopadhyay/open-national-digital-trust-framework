@@ -1,0 +1,59 @@
+specification: ONDTF
+working_release: 0.5.0
+status: draft
+catalogue: attack-surfaces
+attack_surfaces:
+- id: AS-01
+  name: Governance decision process
+  primary_boundary_ref: SB-01
+- id: AS-02
+  name: Authority issuance and delegation
+  primary_boundary_ref: SB-06
+- id: AS-03
+  name: Privileged administration interface
+  primary_boundary_ref: SB-04
+- id: AS-04
+  name: Participant onboarding and enrolment
+  primary_boundary_ref: SB-05
+- id: AS-05
+  name: Credential issuance and presentation
+  primary_boundary_ref: SB-07
+- id: AS-06
+  name: Evidence ingestion and provenance
+  primary_boundary_ref: SB-09
+- id: AS-07
+  name: Registry publication and resolution
+  primary_boundary_ref: SB-10
+- id: AS-08
+  name: Status and revocation propagation
+  primary_boundary_ref: SB-10
+- id: AS-09
+  name: Policy authoring and distribution
+  primary_boundary_ref: SB-11
+- id: AS-10
+  name: Decision service and rule evaluation
+  primary_boundary_ref: SB-12
+- id: AS-11
+  name: Effect execution interface
+  primary_boundary_ref: SB-13
+- id: AS-12
+  name: Audit logging and telemetry
+  primary_boundary_ref: SB-12
+- id: AS-13
+  name: Incident and emergency control
+  primary_boundary_ref: SB-20
+- id: AS-14
+  name: Federation gateway
+  primary_boundary_ref: SB-15
+- id: AS-15
+  name: Challenge, appeal and redress channel
+  primary_boundary_ref: SB-21
+- id: AS-16
+  name: Software build and dependency chain
+  primary_boundary_ref: SB-17
+- id: AS-17
+  name: Automated-agent tool interface
+  primary_boundary_ref: SB-19
+- id: AS-18
+  name: Public transparency and disclosure surface
+  primary_boundary_ref: SB-22

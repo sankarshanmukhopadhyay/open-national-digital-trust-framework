@@ -1,0 +1,8 @@
+{
+  "requestId": "urn:ondtf:example:resolution:001",
+  "source": "urn:ondtf:example:registry:learning",
+  "recognitionStatus": "recognised",
+  "credentialStatus": "valid",
+  "observedAt": "2026-07-15T10:03:00+05:30",
+  "freshnessSeconds": 30
+}

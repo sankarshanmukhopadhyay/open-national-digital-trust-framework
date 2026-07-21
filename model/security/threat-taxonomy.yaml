@@ -1,0 +1,33 @@
+specification: ONDTF
+working_release: 0.5.0
+status: draft
+catalogue: threat-taxonomy
+categories:
+- id: THCAT-01
+  name: Governance and mandate threats
+- id: THCAT-02
+  name: Authority and delegation threats
+- id: THCAT-03
+  name: Identity and authenticator threats
+- id: THCAT-04
+  name: Credential and evidence threats
+- id: THCAT-05
+  name: Registry and status threats
+- id: THCAT-06
+  name: Policy and decision threats
+- id: THCAT-07
+  name: Effect and execution threats
+- id: THCAT-08
+  name: Operations and resilience threats
+- id: THCAT-09
+  name: Supply-chain threats
+- id: THCAT-10
+  name: Federation threats
+- id: THCAT-11
+  name: Privacy and disclosure threats
+- id: THCAT-12
+  name: Automated-agent threats
+- id: THCAT-13
+  name: Accountability and redress threats
+- id: THCAT-14
+  name: Systemic and concentration threats

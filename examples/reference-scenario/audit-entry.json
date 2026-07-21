@@ -1,0 +1,9 @@
+{
+  "eventId": "urn:ondtf:example:audit:001",
+  "eventType": "decision-issued",
+  "actor": "urn:ondtf:example:service:decision",
+  "authorityRef": "urn:ondtf:example:authority:neba-2026",
+  "receiptRef": "urn:ondtf:example:receipt:decision-001",
+  "timestamp": "2026-07-15T10:04:13+05:30",
+  "integrity": "tamper-evident"
+}

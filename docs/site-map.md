@@ -98,3 +98,12 @@ Machine-readable bindings, model records, governance registers, and validation e
 - [Cross-domain recognition]({{ '/docs/workflows/cross-domain-recognition.html' | relative_url }})
 - [Conformance declaration]({{ '/docs/workflows/conformance-declaration.html' | relative_url }})
 - [Diagram catalogue]({{ '/docs/diagrams/' | relative_url }})
+
+
+## Worked reference scenario
+
+- [Scenario overview]({{ '/docs/reference-scenario/scenario-overview.html' | relative_url }})
+- [End-to-end walkthrough]({{ '/docs/reference-scenario/end-to-end-walkthrough.html' | relative_url }})
+- [Threat and control trace]({{ '/docs/reference-scenario/threat-control-trace.html' | relative_url }})
+- [Evidence package]({{ '/docs/reference-scenario/evidence-package.html' | relative_url }})
+- [Implementation lessons]({{ '/docs/reference-scenario/implementation-lessons.html' | relative_url }})

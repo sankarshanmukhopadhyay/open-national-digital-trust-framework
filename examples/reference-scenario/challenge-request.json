@@ -1,0 +1,12 @@
+{
+  "challengeId": "urn:ondtf:example:challenge:001",
+  "claimant": "urn:ondtf:example:person:asha-rao",
+  "decisionReceiptRef": "urn:ondtf:example:receipt:decision-001",
+  "grounds": [
+    "income evidence used the wrong assessment period"
+  ],
+  "requestedRemedy": [
+    "re-evaluate with current income evidence"
+  ],
+  "submittedAt": "2026-07-16T09:30:00+05:30"
+}

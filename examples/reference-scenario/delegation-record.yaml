@@ -1,0 +1,11 @@
+delegationId: urn:ondtf:example:delegation:asha-cbs-01
+principal: urn:ondtf:example:person:asha-rao
+delegate: urn:ondtf:example:participant:cbs
+actions:
+- submit-application
+- receive-status
+prohibitedActions:
+- change-payment-destination
+- waive-challenge-rights
+validUntil: '2026-12-31'
+status: active
