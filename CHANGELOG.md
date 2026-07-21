@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased
+
+### Fixed
+
+- Configure Mermaid CLI to launch Chromium with GitHub Actions-compatible no-sandbox arguments, resolving diagram-render validation failures on Ubuntu runners.
+- Move documentation workflows to Node.js 24 to avoid the GitHub Actions Node.js 20 deprecation path.
+
 ## [0.2.0] - 2026-07-21
 
 ### Added
