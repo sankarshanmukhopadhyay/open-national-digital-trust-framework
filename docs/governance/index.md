@@ -22,9 +22,9 @@ flowchart TB
   TC1 --> P1[Issuers, Verifiers, Wallets, Registries]
   TC2 --> P2[Participants]
   TC3 --> P3[Participants]
-  IA[Independent Assurance and Appeals] -.oversight.-> NTC
-  IA -.oversight.-> SA1
-  IA -.oversight.-> SA2
+  IA[Independent Assurance and Appeals] -.->|oversight| NTC
+  IA -.->|oversight| SA1
+  IA -.->|oversight| SA2
 ```
 
 ## National-level functions

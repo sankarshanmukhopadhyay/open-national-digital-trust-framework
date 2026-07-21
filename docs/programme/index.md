@@ -11,8 +11,8 @@ This section defines how ONDTF is developed as a controlled, multi-release stand
 
 The programme will mature ONDTF from an initial seed into a candidate specification that is:
 
-- semantically aligned with [TSMM](https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model);
-- operationally connected to [TIS](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas);
+- capable of optional semantic alignment with [TSMM](https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model);
+- capable of optional artefact compatibility with [TIS](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas);
 - jurisdiction-neutral at its core;
 - profileable for countries and sectors;
 - testable through conformance artefacts; and

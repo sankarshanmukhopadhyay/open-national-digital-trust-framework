@@ -5,14 +5,14 @@
 - jurisdiction-neutral ONDTF identity;
 - core architecture and governance map;
 - initial India-profile skeleton;
-- explicit TSMM/TIS relationship;
+- framework independence with optional TSMM/TIS compatibility;
 - GitHub Pages and Mermaid rendering;
 - repository validation and contribution hygiene.
 
 ## v0.2.0 — Semantic Alignment Draft
 
-- TSMM concept inventory and traceability matrix;
-- TIS schema inventory and dependency manifest;
+- optional TSMM compatibility crosswalk;
+- optional TIS compatibility profile and reference registry;
 - canonical terminology and information model;
 - formal scope and conformance targets;
 - architecture decision record set.
@@ -21,7 +21,7 @@
 
 - normative governance, security, assurance, operations, and profile requirements;
 - complete India profile and at least three sector profiles;
-- machine-readable profile and dependency schemas;
+- machine-readable profile and optional compatibility schemas;
 - reference APIs, examples, and negative tests;
 - public review disposition log.
 

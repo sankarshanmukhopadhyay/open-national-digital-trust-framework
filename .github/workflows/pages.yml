@@ -23,7 +23,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
-      - run: python3 scripts/extract_mermaid.py && bash scripts/validate_mermaid.sh
+      - run: python3 scripts/check_mermaid_source.py && python3 scripts/extract_mermaid.py && bash scripts/validate_mermaid.sh
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.3'

@@ -5,12 +5,12 @@ nav_order: 2
 ---
 # ADR 0002: Preserve TSMM and TIS authority boundaries
 
-**Status:** Accepted for v0.1.0
+**Status:** Superseded by [ADR 0004](0004-framework-independence.md)
 
-## Decision
+## Original decision
 
-ONDTF uses TSMM as a semantic foundation and TIS as a portable schema-contract foundation. It does not copy their complete contents or claim ownership of their canonical artefacts.
+ONDTF used TSMM as a semantic foundation and TIS as a portable schema-contract foundation while preserving their independent authority.
 
-## Consequences
+## Supersession
 
-Normative dependencies require pinned versions and traceability. ONDTF may adopt selected concepts when national-framework stability requires independent governance, but such adoption must be explicit.
+Experience during the v0.2.0 alignment work showed that describing either project as a foundation could be understood as making it a prerequisite for ONDTF adoption. ADR 0004 replaces that coupling with a self-contained ONDTF core and optional compatibility profiles.

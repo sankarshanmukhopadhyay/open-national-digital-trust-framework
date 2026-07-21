@@ -26,6 +26,15 @@
 
 ## [Unreleased]
 
+### Changed
+
+- Made the ONDTF core self-contained and implementation-neutral.
+- Reclassified TSMM and TIS as optional compatible reference resources.
+- Added outcome-based conformance and explicit profile dependency rules.
+- Added ADR 0004 documenting the framework-independence decision.
+- Corrected labelled dotted-edge syntax in Mermaid diagrams.
+- Hardened browser-side Mermaid rendering and error reporting.
+
 ### Fixed
 
 - Replaced the legacy `github-pages` and remote-theme dependency chain with a current Jekyll 4 and Just the Docs toolchain.

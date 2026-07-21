@@ -9,8 +9,8 @@ nav_order: 4
 
 | Decision class | Accountable authority | Required consultation |
 |---|---|---|
-| ONDTF core semantics | ONDTF maintainer | TSMM maintainers or recorded crosswalk review |
-| TIS artefact use | ONDTF maintainer | TIS maintainers or recorded schema review |
+| ONDTF core semantics | ONDTF maintainer | ONDTF reviewers; external maintainers consulted only for claimed compatibility |
+| TIS artefact use | ONDTF maintainer | ONDTF reviewers; external maintainers consulted only for claimed compatibility |
 | Jurisdiction profile | Profile owner | Legal, policy, security, privacy, and sector stakeholders |
 | Sector profile | Sector profile owner | Sector regulators, operators, affected-party representatives |
 | Candidate release | ONDTF maintainer | Architecture, security, assurance, implementation, and publication reviewers |

@@ -10,7 +10,7 @@ nav_order: 2
 | Milestone | Work packets | Principal outputs | Release |
 |---|---|---|---|
 | M0 Mobilisation | WP0.1 canonical links; WP0.2 programme controls | Dependency register, charter, RACI, quality gates | v0.1.1 |
-| M1 Alignment | WP1.1 TSMM crosswalk; WP1.2 TIS inventory; WP1.3 information model | Bindings, ownership matrix, canonical information model | v0.2.0 |
+| M1 Alignment | WP1.1 ONDTF vocabulary; WP1.2 optional compatibility mappings; WP1.3 information model | Bindings, ownership matrix, canonical information model | v0.2.0 |
 | M2 Operating model | WP2.1 target operating model; WP2.2 governance; WP2.3 ecosystem | Institutional model, processes, capability map | v0.3.0 |
 | M3 Architecture | WP3.1 architecture; WP3.2 workflows; WP3.3 federation | Architecture views, interfaces, workflow specifications | v0.4.0 |
 | M4 Risk and assurance | WP4.1 threats; WP4.2 privacy; WP4.3 assurance; WP4.4 operations | Control framework, evidence model, operational model | v0.5.0 |
@@ -22,9 +22,9 @@ nav_order: 2
 
 ```mermaid
 flowchart TB
-  WP01["WP0.1 Links"] --> WP11["WP1.1 TSMM crosswalk"]
+  WP01["WP0.1 Links"] --> WP11["WP1.1 ONDTF vocabulary"]
   WP02["WP0.2 Controls"] --> WP11
-  WP01 --> WP12["WP1.2 TIS inventory"]
+  WP01 --> WP12["WP1.2 compatibility mappings"]
   WP11 --> WP13["WP1.3 Information model"]
   WP12 --> WP13
   WP13 --> WP21["WP2.1 Operating model"]

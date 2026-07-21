@@ -19,7 +19,7 @@ flowchart TB
   E[Effects, receipts, audit, and accountability]
   D[Challenge, revocation, remediation, and redress]
   G --> A --> P --> I --> R --> C --> V --> S --> E --> D
-  D -. governance feedback .-> G
+  D -.->|governance feedback| G
 ```
 
 The stack is logical, not a mandatory deployment topology. A service may implement several layers, but profiles must preserve separation of responsibility and evidence.

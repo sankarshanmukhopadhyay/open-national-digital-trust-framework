@@ -11,16 +11,16 @@ The ONDTF enhancement programme will produce an open, implementation-neutral fra
 
 ## Objectives
 
-1. Establish a canonical semantic and information baseline.
+1. Establish a self-contained ONDTF semantic and information baseline.
 2. Define a national digital trust target operating model and reference architecture.
 3. Specify governance, security, privacy, assurance, operations, and redress requirements.
 4. Create reusable jurisdiction and sector profile methods.
-5. Produce implementer guidance, machine-readable bindings, and conformance evidence.
+5. Produce implementer guidance, optional compatibility profiles, and conformance evidence.
 6. Maintain complete, accessible, and validated GitHub Pages publication coverage.
 
 ## Scope boundaries
 
-ONDTF owns national framework policy, institutional architecture, assurance policy, adoption, profiling, and national conformance requirements. It does not replace TSMM semantics or duplicate TIS schema contracts.
+ONDTF independently owns its core vocabulary, national framework policy, institutional architecture, assurance policy, adoption, profiling, and conformance requirements. TSMM and TIS may be referenced through optional compatibility profiles.
 
 ## Success measures
 
@@ -36,4 +36,4 @@ ONDTF owns national framework policy, institutional architecture, assurance poli
 
 ## Governance
 
-Release gates require documented evidence, review disposition, and approval by the repository maintainer. Material semantic divergence from TSMM or machine-readable divergence from TIS must be recorded before merge.
+Release gates require documented evidence, review disposition, and approval by the repository maintainer. A profile claiming compatibility with an external model or schema must record material divergence before merge.

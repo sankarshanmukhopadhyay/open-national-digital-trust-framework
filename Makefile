@@ -1,6 +1,7 @@
 .PHONY: validate site candidate-check
 validate:
 	python3 scripts/validate_repo.py
+	python3 scripts/check_mermaid_source.py
 	python3 scripts/extract_mermaid.py
 	bash scripts/validate_mermaid.sh
 site:

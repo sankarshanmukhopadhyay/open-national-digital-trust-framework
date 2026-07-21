@@ -35,28 +35,31 @@ ONDTF supplies that missing governance and architecture layer.
 | India material | Illustrative jurisdiction profile under `profiles/india/` |
 | Validation | `python3 scripts/validate_repo.py` |
 
-## Architecture relationship
+## Framework independence and optional compatibility
 
-ONDTF draws on, but does not duplicate or subsume, two portfolio foundations:
+ONDTF is self-contained at the framework level, implementation-neutral at the architecture level, and extensible through jurisdiction, sector, and technical profiles. Core adoption does not require any particular external meta-model, schema suite, protocol, registry product, or software stack.
 
-- **[Trust Systems Meta-Model (TSMM)](https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model):** canonical semantic and structural concepts for actors, roles, authority, policy, evidence, decisions, effects, lifecycle, accountability, and conformance.
-- **[Trust Infrastructure Schemas (TIS)](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas):** portable machine-readable contracts for exchanging and validating trust infrastructure records and evidence.
+Two related projects provide optional implementation accelerators:
 
-ONDTF owns the national-framework layer: governance, adoption, assurance expectations, sector and jurisdiction profiling, operational coordination, and conformance policy.
+- **[Trust Systems Meta-Model (TSMM)](https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model):** a compatible reference meta-model that may be used for deeper semantic formalisation.
+- **[Trust Infrastructure Schemas (TIS)](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas):** a compatible schema suite that may be selected by an implementation or profile for portable machine-readable artefacts.
 
 ```mermaid
-flowchart LR
-    TSMM[TSMM\nCanonical semantics] --> ONDTF[ONDTF\nNational framework]
-    TSMM --> TIS[TIS\nPortable schema contracts]
-    TIS --> ONDTF
-    ONDTF --> JP[Jurisdiction profiles]
-    ONDTF --> SP[Sector profiles]
-    JP --> IMPL[Implementations]
-    SP --> IMPL
-    TIS --> IMPL
+flowchart TB
+    CORE[ONDTF core requirements]
+    PROFILE[Jurisdiction or sector profile]
+    IMPL[Conforming implementation]
+    TSMM[Optional TSMM alignment]
+    TIS[Optional TIS schema profile]
+    ALT[Alternative compatible models and schemas]
+    CORE --> PROFILE
+    PROFILE --> IMPL
+    TSMM -.-> IMPL
+    TIS -.-> IMPL
+    ALT -.-> IMPL
 ```
 
-See [Portfolio alignment](docs/foundations/portfolio-alignment.md) and [Dependency policy](docs/foundations/dependency-policy.md).
+See [Framework independence](docs/foundations/framework-independence.md), [Portfolio alignment](docs/foundations/portfolio-alignment.md), and [Dependency policy](docs/foundations/dependency-policy.md).
 
 ## Start here
 

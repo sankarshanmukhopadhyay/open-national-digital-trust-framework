@@ -6,7 +6,7 @@ has_children: true
 ---
 # Foundations
 
-This section defines the purpose, boundaries, principles, and source-model relationships of ONDTF.
+This section defines the purpose, boundaries, principles, and framework-independence and optional compatibility relationships of ONDTF.
 
 ONDTF separates four concerns that are frequently collapsed:
 

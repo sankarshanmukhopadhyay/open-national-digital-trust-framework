@@ -3,9 +3,9 @@ title: TIS Artefact Adoption
 parent: Foundations
 nav_order: 4
 ---
-# TIS Artefact Adoption
+# TIS Compatibility Profile
 
-ONDTF uses [TIS v0.12.0](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas) as the portable machine-readable contract layer. ONDTF specifies when an artefact is required and how a national or sector profile constrains it; TIS remains authoritative for the artefact structure.
+[TIS v0.12.0](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas) provides an optional compatible suite of machine-readable artefacts. ONDTF core does not require TIS. A named profile may select or constrain TIS where that choice serves an explicit interoperability need.
 
 | TIS artefact family | ONDTF baseline treatment | Intended use |
 |---|---|---|
@@ -23,4 +23,4 @@ ONDTF uses [TIS v0.12.0](https://github.com/sankarshanmukhopadhyay/trust-infrast
 
 ## Composition rule
 
-A profile may constrain a TIS artefact by making optional properties mandatory, narrowing enumerations, setting freshness requirements, or requiring linked artefacts. It must not silently change TIS semantics.
+A profile that selects TIS may constrain an artefact by making optional properties mandatory, narrowing enumerations, setting freshness requirements, or requiring linked artefacts. Such a profile must identify its TIS version and must not silently change TIS semantics.

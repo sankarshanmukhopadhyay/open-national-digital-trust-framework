@@ -8,7 +8,7 @@ Version 0.2.0 is suitable for architecture review, terminology review, issue cre
 
 ## Next milestone
 
-Version 0.2.0 will perform formal TSMM/TIS alignment, produce a traceability matrix and information model, and define the first normative conformance targets.
+Version 0.2.0 establishes a self-contained ONDTF information model, optional TSMM and TIS compatibility resources, and the first framework-level conformance targets.
 
 
 ## Canonical portfolio repositories

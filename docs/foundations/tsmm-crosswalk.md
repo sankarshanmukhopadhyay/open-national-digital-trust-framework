@@ -5,7 +5,7 @@ nav_order: 3
 ---
 # TSMM Semantic Crosswalk
 
-This crosswalk records how ONDTF uses [TSMM v0.23.0](https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model). It is a semantic alignment baseline, not a wholesale import of TSMM.
+This informative crosswalk records how ONDTF concepts may align with [TSMM v0.23.0](https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model). It is a compatibility aid, not a core dependency or prerequisite for ONDTF adoption.
 
 | TSMM concept family | ONDTF use | Classification | ONDTF location |
 |---|---|---|---|
@@ -16,7 +16,7 @@ This crosswalk records how ONDTF uses [TSMM v0.23.0](https://github.com/sankarsh
 | Policy and runtime governance envelope | Bind interaction to applicable rules, duties, and context | Normatively profiled | Policy evaluation workflows |
 | Interaction context and task | Describe the bounded transaction or activity | Adopted with national profile extensions | Information model |
 | Evidence artefact and lifecycle | Establish provenance, freshness, and evaluation basis | Normatively profiled | Assurance and evidence model |
-| Decision receipt | Record decision basis, authority, evidence, and admitted effect | Normatively profiled | Decision records and TIS profile |
+| Decision receipt | Record decision basis, authority, evidence, and admitted effect | Compatible reference | Decision records |
 | Effect-centred trust decision | Evaluate whether a consequential effect may be admitted | Adopted | Trust model |
 | Discovery governance | Govern service and participant discovery | Normatively profiled | Registry and federation architecture |
 | Capability negotiation | Match requested activity to authorised capability | Normatively profiled | Implementation workflows |
@@ -26,7 +26,7 @@ This crosswalk records how ONDTF uses [TSMM v0.23.0](https://github.com/sankarsh
 
 ## Alignment rule
 
-ONDTF must not assign a meaning to a TSMM term that conflicts with the reviewed TSMM version. Any necessary divergence must be recorded in the divergence register and accompanied by migration impact.
+Where an ONDTF profile claims TSMM compatibility, differences must be recorded. ONDTF core terminology remains independently governed.
 
 ```mermaid
 flowchart LR

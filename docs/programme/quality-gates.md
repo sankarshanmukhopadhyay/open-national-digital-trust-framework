@@ -8,7 +8,7 @@ nav_order: 3
 | Gate | Decision | Minimum evidence |
 |---|---|---|
 | G0 Mobilisation | Programme may proceed | Charter, scope, links, dependency register, RACI |
-| G1 Semantic baseline | Terms and ownership are stable enough for design | TSMM crosswalk, TIS inventory, divergence register, information model |
+| G1 Semantic baseline | Terms and ownership are stable enough for design | self-contained vocabulary, optional compatibility crosswalks, divergence register, information model |
 | G2 Operating model | Institutional design is coherent | Capability map, decision rights, process catalogue, stakeholder model |
 | G3 Architecture baseline | Solution-neutral architecture is coherent | Architecture views, trust boundaries, workflows, interface catalogue |
 | G4 Risk and assurance | Risks and controls are sufficiently treated | Threat model, privacy model, control catalogue, evidence expectations |

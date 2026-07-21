@@ -1,28 +1,28 @@
 ---
 title: Concept Ownership Model
 parent: Foundations
-nav_order: 5
+nav_order: 6
 ---
 # Concept Ownership Model
 
-| Concept or artefact | Canonical owner | ONDTF responsibility |
+| Concept or artefact | Authority | ONDTF treatment |
 |---|---|---|
-| Trust-system semantics | TSMM | Select, profile, and trace use in national contexts |
-| Authority graph semantics | TSMM | Define national institutional application and mandatory evidence |
-| Portable schema identifiers and fields | TIS | Select required artefacts and define profile constraints |
-| National institutional roles | ONDTF | Define role, mandate, accountability, and operating relationship |
-| Jurisdiction profile | ONDTF/profile authority | Map law, institutions, infrastructure, and national variance |
-| Sector profile | ONDTF/profile authority | Define sector actors, risks, workflows, controls, and assurance |
-| National conformance policy | ONDTF | Define claim classes, evidence, assessment, and publication |
-| Deployment implementation | Implementer | Demonstrate declared profile conformance and operational assurance |
+| ONDTF core vocabulary | ONDTF | Defined independently for framework adoption and conformance |
+| National institutional architecture | ONDTF and adopting profile authority | Defines mandates, accountability, operating relationships, and safeguards |
+| Jurisdiction profile | Profile authority | Maps law, institutions, infrastructure, and national variance |
+| Sector profile | Profile authority | Defines sector actors, risks, workflows, controls, and assurance |
+| National conformance policy | ONDTF or profile authority | Defines claim classes, evidence, assessment, and publication |
+| TSMM concepts | TSMM | Optional compatible reference and semantic crosswalk |
+| TIS artefacts | TIS | Optional compatible schema and artefact profile |
+| Alternative models and schemas | Their respective authorities | Permitted where equivalent ONDTF outcomes are demonstrated |
+| Deployment implementation | Implementer | Demonstrates declared profile conformance and operational assurance |
 
 ```mermaid
 flowchart TB
-  S["Semantics"] -->|owned by| TSMM
-  A["Artefact contracts"] -->|owned by| TIS
-  N["National governance and profiles"] -->|owned by| ONDTF
-  D["Deployment"] -->|owned by| IMP["Implementer"]
-  TSMM --> N
-  TIS --> N
-  N --> D
+  O[ONDTF core outcomes] --> P[Profile requirements]
+  P --> D[Deployment]
+  T1[TSMM reference] -.-> D
+  T2[TIS reference] -.-> D
+  A[Alternative compatible resources] -.-> D
+  D --> E[Conformance evidence]
 ```

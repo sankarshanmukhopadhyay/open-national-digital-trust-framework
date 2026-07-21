@@ -31,8 +31,8 @@ flowchart TB
   V --> PS
   V --> EV
   GA --> TR
-  AS -.assessment.-> I
-  AS -.assessment.-> V
+  AS -.->|assessment| I
+  AS -.->|assessment| V
   RD --> EV
 ```
 

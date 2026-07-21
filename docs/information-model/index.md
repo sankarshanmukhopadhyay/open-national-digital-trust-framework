@@ -5,7 +5,7 @@ has_children: true
 ---
 # Information Model
 
-The ONDTF information model connects TSMM semantics, ONDTF institutional concepts, and TIS artefacts. It provides a stable vocabulary for architecture, profiles, controls, and conformance.
+The ONDTF information model provides a self-contained vocabulary for architecture, profiles, controls, and conformance. Optional crosswalks connect it to TSMM, TIS, and other compatible resources. It provides a stable vocabulary for architecture, profiles, controls, and conformance.
 
 ```mermaid
 flowchart LR

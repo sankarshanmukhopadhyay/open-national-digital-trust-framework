@@ -6,7 +6,7 @@ ONDTF is maintained as an open specification project.
 
 This repository owns the jurisdiction-neutral national-framework architecture, profile method, governance expectations, assurance policy, adoption guidance, and ONDTF conformance definitions.
 
-It does not own the canonical TSMM semantic model or canonical TIS schema contracts. Dependencies on those projects must be explicit and versioned.
+It maintains an independent core vocabulary and does not require TSMM, TIS, or any other external project for core adoption. Any optional compatibility claim or profile dependency must be explicit and versioned.
 
 ## Decision process
 
