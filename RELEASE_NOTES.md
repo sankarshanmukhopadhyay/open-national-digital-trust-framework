@@ -1,5 +1,34 @@
 # Release notes
 
+## v0.4.0 — Reference Architecture and Information Architecture Draft
+
+This release converts the ONDTF core capabilities and target operating model into a deployment-neutral reference architecture. It introduces architecture principles, layered and plane models, viewpoints, logical components, services, trust boundaries, federation, resilience, canonical information semantics and governed workflows.
+
+### Reference architecture
+
+- establishes twelve architecture principles;
+- defines thirteen architectural layers and six cross-cutting planes;
+- introduces policy, governance, implementation, assurance, affected-party and federation viewpoints;
+- defines eighteen logical components and eighteen protocol-neutral services;
+- establishes a catalogue of twenty canonical interactions;
+- defines trust-boundary crossing and cross-domain recognition requirements;
+- adds safe-failure, resilience and deployment-neutrality guidance.
+
+### Information architecture and workflows
+
+- defines twenty-eight canonical entities and core relationships;
+- introduces lifecycle, decision-state, identifier, provenance and information-governance rules;
+- adds ten detailed canonical workflows from scheme establishment through conformance declaration;
+- publishes machine-readable architecture, component, service, boundary, interaction and entity catalogues.
+
+### Publication quality
+
+All new pages are included in GitHub Pages navigation and site-map coverage. Mermaid diagrams are source-validated, extracted and rendered with the pinned CLI in CI before the site build.
+
+### Release status
+
+This is an initial public draft and not a candidate or stable specification. The architecture is sufficiently substantive to establish a minor-version baseline for later security, assurance, profile and conformance work.
+
 ## v0.3.0 — Core Specification and Operating Model Draft
 
 This release moves ONDTF from repository and semantic foundations into its first coordinated specification baseline. It defines what an adopting national digital trust framework is expected to achieve while preserving implementation and technology independence.

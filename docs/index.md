@@ -58,3 +58,10 @@ flowchart LR
 ## Release posture
 
 Version 0.3.0 establishes the first coordinated core specification and national digital trust target operating model. It introduces an outcome-oriented capability model, a normative requirement baseline, scoped conformance, institutional functions, governance lifecycles, operational redress, and staged maturity. It remains a public draft and does not yet claim complete reference interfaces, sector profiles, or production certification.
+
+## Architecture baseline
+
+- [Reference Architecture](architecture/index.md)
+- [Information Architecture](information-model/index.md)
+- [Canonical workflows](workflows/index.md)
+- [Diagram catalogue](diagrams/index.md)

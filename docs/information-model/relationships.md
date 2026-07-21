@@ -1,42 +1,38 @@
 ---
-title: Relationships and Cardinality
-parent: Information Model
+layout: default
+title: Relationships and Cardinalities
+parent: Information Architecture
 nav_order: 2
 ---
-# Relationships and Cardinality
+
+# Relationships and cardinalities
+
+## Core relationships
+
+| Source | Relationship | Target | Cardinality | Constraint |
+|---|---|---|---|---|
+| Jurisdiction | recognises | Trust Scheme | one-to-many | recognition may be conditional |
+| Trust Scheme | governed by | Governance Authority | one-to-many | at least one accountable authority |
+| Trust Scheme | admits | Participant | one-to-many | admission is role-specific |
+| Participant | holds | Role | many-to-many | current status required |
+| Governance Authority | issues | Authority Grant | one-to-many | grant must be versioned |
+| Authority Grant | permits | Delegation | one-to-many | delegation cannot exceed source authority |
+| Policy | governs | Trust Decision | one-to-many | effective version must be recorded |
+| Evidence | supports | Claim | many-to-many | semantic relevance must be declared |
+| Trust Decision | admits | Admitted Effect | one-to-zero-or-one | no effect without admission where required |
+| Trust Decision | recorded by | Decision Receipt | one-to-one | receipt may be distributed |
+| Challenge | contests | Evidence, Status or Decision | many-to-one | target must be identifiable |
+| Remedy | resolves | Challenge or Incident | many-to-one | completion evidence required |
+| Recognition Arrangement | maps | Trust Domains | one-to-many | mapping is bounded and revocable |
+
+## Authority-chain invariant
 
 ```mermaid
-classDiagram
-  class Jurisdiction
-  class TrustScheme
-  class GovernanceAuthority
-  class Participant
-  class AuthorityGrant
-  class Delegation
-  class InteractionContext
-  class Policy
-  class Evidence
-  class TrustDecision
-  class DecisionReceipt
-  class AdmittedEffect
-  class Challenge
-  class Remedy
-
-  Jurisdiction "1" --> "0..*" TrustScheme : profiles
-  TrustScheme "1" --> "1..*" GovernanceAuthority : governedBy
-  TrustScheme "1" --> "0..*" Participant : admits
-  GovernanceAuthority "1" --> "0..*" AuthorityGrant : issues
-  AuthorityGrant "1" --> "0..*" Delegation : permits
-  Participant "1..*" --> "0..*" InteractionContext : participatesIn
-  InteractionContext "1" --> "1..*" Policy : governedBy
-  InteractionContext "1" --> "0..*" Evidence : evaluates
-  InteractionContext "1" --> "1" TrustDecision : produces
-  TrustDecision "1" --> "1" DecisionReceipt : recordedBy
-  TrustDecision "1" --> "0..1" AdmittedEffect : permits
-  AdmittedEffect "0..1" --> "0..*" Challenge : contestedBy
-  Challenge "1" --> "0..*" Remedy : resolvedBy
+flowchart LR
+  M[Mandate] --> G[Authority Grant]
+  G --> D1[Delegation 1]
+  D1 --> D2[Delegation 2]
+  D2 --> A[Action]
 ```
 
-## Relationship rules
-
-An admitted effect must be attributable to one trust decision. A trust decision must reference the applicable interaction context, policy basis, evaluating authority, and evidence set. Derived authority must preserve an unbroken lineage to a valid root authority. A challenge must remain linked to the challenged decision or effect even when the original artefact is superseded.
+Each link MUST be current, accepted where required, and no broader in action, purpose, subject, geography, time or onward-delegation rights than its parent.

@@ -1,0 +1,56 @@
+version: 0.4.0
+services:
+- id: ARC-S01
+  name: Participant resolution
+  outcome: Resolve identity, role and standing
+- id: ARC-S02
+  name: Authority resolution
+  outcome: Resolve current mandate and constraints
+- id: ARC-S03
+  name: Delegation validation
+  outcome: Validate delegation chain and attenuation
+- id: ARC-S04
+  name: Policy discovery
+  outcome: Locate authoritative applicable policy
+- id: ARC-S05
+  name: Policy evaluation
+  outcome: Evaluate permissions, duties and prohibitions
+- id: ARC-S06
+  name: Evidence verification
+  outcome: Validate integrity, provenance and semantic fitness
+- id: ARC-S07
+  name: Registry discovery
+  outcome: Locate authoritative registries
+- id: ARC-S08
+  name: Status resolution
+  outcome: Obtain current lifecycle status
+- id: ARC-S09
+  name: Assurance evaluation
+  outcome: Evaluate confidence and residual risk
+- id: ARC-S10
+  name: Trust decision
+  outcome: Admit, deny, defer or condition an effect
+- id: ARC-S11
+  name: Effect execution
+  outcome: Execute an admitted effect
+- id: ARC-S12
+  name: Decision receipt
+  outcome: Create attributable and reviewable record
+- id: ARC-S13
+  name: Evidence preservation
+  outcome: Preserve evidence under retention policy
+- id: ARC-S14
+  name: Incident notification
+  outcome: Report and route trust incidents
+- id: ARC-S15
+  name: Challenge submission
+  outcome: Submit and acknowledge challenge
+- id: ARC-S16
+  name: Remedy tracking
+  outcome: Track correction and remedy execution
+- id: ARC-S17
+  name: Recognition resolution
+  outcome: Evaluate cross-domain recognition
+- id: ARC-S18
+  name: Conformance declaration
+  outcome: Publish scoped conformance evidence

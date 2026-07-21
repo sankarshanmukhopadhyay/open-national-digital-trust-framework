@@ -1,6 +1,6 @@
 ---
 title: Identifiers and Provenance
-parent: Information Model
+parent: Information Architecture
 nav_order: 4
 ---
 # Identifiers and Provenance

@@ -1,6 +1,6 @@
 ---
 title: Actor and Role Model
-parent: Architecture
+parent: Reference Architecture
 nav_order: 2
 ---
 

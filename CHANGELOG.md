@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.4.0] - 2026-07-21
+
+### Added
+- deployment-neutral reference architecture and architecture principles
+- architecture viewpoints, logical component and service catalogues
+- trust-boundary, federation, resilience and deployment-neutrality specifications
+- expanded canonical information architecture and lifecycle models
+- ten canonical end-to-end workflows
+- machine-readable architecture and information-model catalogues
+- dedicated diagram catalogue and authoring rules
+
+
 ## [0.3.0] - 2026-07-21
 
 ### Added

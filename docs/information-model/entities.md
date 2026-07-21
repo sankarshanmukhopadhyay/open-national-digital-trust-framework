@@ -1,6 +1,6 @@
 ---
 title: Core Entities
-parent: Information Model
+parent: Information Architecture
 nav_order: 1
 ---
 # Core Entities

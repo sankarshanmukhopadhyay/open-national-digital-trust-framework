@@ -1,12 +1,16 @@
 project: Open National Digital Trust Framework
 short_name: ONDTF
-version: 0.3.0
+version: 0.4.0
 maturity: Initial Public Draft
-release_label: Core Specification and Operating Model Draft
+release_label: Reference Architecture and Information Architecture Draft
 canonical_repository: https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework
 dependencies:
-  TSMM: {version_reviewed: 0.23.0, repository: https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model}
-  TIS: {version_reviewed: 0.12.0, repository: https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas}
+  TSMM:
+    version_reviewed: 0.23.0
+    repository: https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model
+  TIS:
+    version_reviewed: 0.12.0
+    repository: https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas
 quality:
   pages_publication_coverage_required: true
   mermaid_validation_required: true

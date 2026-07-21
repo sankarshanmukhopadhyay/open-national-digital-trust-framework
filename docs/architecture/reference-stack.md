@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Reference Trust Stack
-parent: Architecture
+parent: Reference Architecture
 nav_order: 5
 ---
 # Reference Trust Stack

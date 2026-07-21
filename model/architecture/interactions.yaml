@@ -1,0 +1,42 @@
+version: 0.4.0
+interactions:
+- id: INT-01
+  name: Establish trust scheme
+- id: INT-02
+  name: Admit participant
+- id: INT-03
+  name: Recognise evidence provider
+- id: INT-04
+  name: Grant authority
+- id: INT-05
+  name: Delegate authority
+- id: INT-06
+  name: Issue evidence
+- id: INT-07
+  name: Present evidence
+- id: INT-08
+  name: Resolve trust
+- id: INT-09
+  name: Admit effect
+- id: INT-10
+  name: Change status
+- id: INT-11
+  name: Suspend participant
+- id: INT-12
+  name: Change policy
+- id: INT-13
+  name: Invoke emergency authority
+- id: INT-14
+  name: Report incident
+- id: INT-15
+  name: Submit challenge
+- id: INT-16
+  name: Execute remedy
+- id: INT-17
+  name: Establish recognition
+- id: INT-18
+  name: Withdraw recognition
+- id: INT-19
+  name: Declare conformance
+- id: INT-20
+  name: Retire trust scheme

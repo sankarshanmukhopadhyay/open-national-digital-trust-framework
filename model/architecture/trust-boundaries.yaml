@@ -1,0 +1,22 @@
+version: 0.4.0
+boundaries:
+- id: TB-01
+  name: Mandate to operator
+- id: TB-02
+  name: Regulator to participant
+- id: TB-03
+  name: Scheme to participant
+- id: TB-04
+  name: Evidence provider to verifier
+- id: TB-05
+  name: Principal to delegate
+- id: TB-06
+  name: Decision to execution
+- id: TB-07
+  name: Domestic to foreign domain
+- id: TB-08
+  name: Automated agent to affected party
+- id: TB-09
+  name: Evidence producer to store
+- id: TB-10
+  name: Operator to assurance provider

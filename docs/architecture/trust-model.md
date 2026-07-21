@@ -1,6 +1,6 @@
 ---
 title: Trust Model
-parent: Architecture
+parent: Reference Architecture
 nav_order: 1
 ---
 

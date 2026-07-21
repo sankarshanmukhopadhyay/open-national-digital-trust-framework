@@ -1,0 +1,92 @@
+version: 0.4.0
+components:
+- id: ARC-C01
+  name: Governance Authority
+  responsibility: Owns or exercises the mandate to establish and change a trust scheme.
+  inputs: governance record, policy mandate
+  outputs: approved policy, delegation, public notice
+- id: ARC-C02
+  name: Trust Scheme Operator
+  responsibility: Runs shared scheme processes under delegated authority.
+  inputs: approved rules, participant records
+  outputs: operational state, reports, incidents
+- id: ARC-C03
+  name: Participant Registry
+  responsibility: Publishes participant standing and role status.
+  inputs: admission decisions, status events
+  outputs: current registry record
+- id: ARC-C04
+  name: Authority Registry
+  responsibility: Publishes authority grants, limits and revocation state.
+  inputs: authority instruments
+  outputs: authority resolution data
+- id: ARC-C05
+  name: Policy Registry
+  responsibility: Publishes authoritative policy versions and effective dates.
+  inputs: approved policy
+  outputs: policy artefact and provenance
+- id: ARC-C06
+  name: Evidence Provider
+  responsibility: Produces claims or evidence under a defined authority.
+  inputs: source data, mandate
+  outputs: signed or otherwise protected evidence
+- id: ARC-C07
+  name: Evidence Holder
+  responsibility: Controls or presents evidence where the model supports possession.
+  inputs: evidence artefact
+  outputs: presentation or consent signal
+- id: ARC-C08
+  name: Verifier
+  responsibility: Validates evidence and status against a declared policy context.
+  inputs: presentation, registries, policy
+  outputs: verification result
+- id: ARC-C09
+  name: Trust Resolution Service
+  responsibility: Coordinates identity, authority, policy, status and assurance resolution.
+  inputs: interaction context
+  outputs: resolution result with reasons
+- id: ARC-C10
+  name: Assurance Service
+  responsibility: Evaluates whether controls and evidence satisfy required confidence.
+  inputs: control evidence, assessment scope
+  outputs: assurance assertion and limitations
+- id: ARC-C11
+  name: Decision Service
+  responsibility: Admits, denies, conditions or defers a proposed effect.
+  inputs: resolution and assurance results
+  outputs: trust decision
+- id: ARC-C12
+  name: Effect Executor
+  responsibility: Executes only an admitted effect and records execution state.
+  inputs: authorised decision
+  outputs: effect result
+- id: ARC-C13
+  name: Decision Receipt Service
+  responsibility: Creates tamper-evident decision records.
+  inputs: decision basis and outcome
+  outputs: decision receipt
+- id: ARC-C14
+  name: Evidence Store
+  responsibility: Preserves evidence with retention, access and integrity controls.
+  inputs: evidence package
+  outputs: retrievable evidence and provenance
+- id: ARC-C15
+  name: Incident Management Service
+  responsibility: Coordinates detection, containment, notification and recovery.
+  inputs: alerts and reports
+  outputs: incident record and actions
+- id: ARC-C16
+  name: Challenge and Redress Service
+  responsibility: Receives challenges, manages review and tracks remedy.
+  inputs: challenge and evidence
+  outputs: review decision and remedy status
+- id: ARC-C17
+  name: Conformance Service
+  responsibility: Publishes scoped declarations and assessment evidence.
+  inputs: test and assessment results
+  outputs: conformance declaration
+- id: ARC-C18
+  name: Federation Gateway
+  responsibility: Mediates recognition and evidence exchange across domains.
+  inputs: recognition agreement and mapping
+  outputs: bounded cross-domain result

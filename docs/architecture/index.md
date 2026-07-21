@@ -1,52 +1,45 @@
 ---
-title: Architecture
+layout: default
+title: Reference Architecture
 parent: Open National Digital Trust Framework
 nav_order: 2
 has_children: true
 ---
 
-# National Digital Trust Architecture
+# ONDTF Reference Architecture
 
-The architecture separates concerns that are frequently collapsed into a single identity platform. Each layer has a distinct purpose, governance surface, threat model and assurance obligation.
+The ONDTF reference architecture translates the core capabilities and target operating model into a deployment-neutral system of responsibilities, services, information exchanges, controls and evidence obligations. It specifies **what must be separated, resolved, evaluated, recorded and governed** without prescribing a particular product, protocol, ledger, credential format or organisational topology.
+
+The architecture is designed for jurisdictions that need to coordinate public authorities, sector regulators, private operators, trust-service providers, communities and affected parties while preserving constitutional, legal and institutional differences.
 
 ```mermaid
 flowchart TB
-  G[Governance and Legitimacy] --> A[Authority and Delegation]
-  A --> I[Identity and Actor Binding]
-  I --> C[Credentials and Claims]
-  C --> P[Presentation and Proof]
-  P --> V[Verification and Policy Decision]
-  V --> E[Evidence and Audit]
-  E --> R[Redress and Remedy]
-  T[Trust Registries and Resolution] --- G
-  T --- A
-  T --- C
-  S[Security and Assurance] --- I
-  S --- P
-  S --- V
-  O[Operations and Resilience] --- E
-  X[Cross-border and Cross-sector Federation] --- T
+  GP[Governance plane] --> CP[Control plane]
+  CP --> DP[Decision and service plane]
+  DP --> EP[Evidence plane]
+  EP --> RP[Redress plane]
+  AP[Assurance plane] --> GP
+  AP --> CP
+  AP --> DP
+  AP --> EP
+  FP[Federation plane] --> GP
+  FP --> CP
+  FP --> DP
 ```
 
-## Architectural objectives
+## Architecture publication set
 
-The architecture MUST support multiple sectors and governance authorities without requiring shared operational control. It MUST allow more than one credential format, identifier method, trust-registry implementation and wallet provider. It MUST nevertheless define common interoperability and conformance requirements.
+- [Architecture principles](principles.md)
+- [Layered reference architecture](layered-reference-architecture.md)
+- [Architecture viewpoints](viewpoints.md)
+- [Component catalogue](component-catalogue.md)
+- [Service catalogue](service-catalogue.md)
+- [Interaction catalogue](interaction-catalogue.md)
+- [Trust boundaries](trust-boundaries.md)
+- [Federation architecture](federation.md)
+- [Failure containment and resilience](resilience.md)
+- [Deployment neutrality](deployment-neutrality.md)
 
-## Layer model
+## Normative posture
 
-| Layer | Purpose | Primary question |
-|---|---|---|
-| Governance | Establish legitimacy and decision rights | Who sets the rules? |
-| Authority | Express mandates and delegation | Who may do what, for whom and within what limits? |
-| Identity | Bind actors to identifiers and authenticators | Which actor is participating? |
-| Credential | Carry signed claims and attestations | What has an authorised issuer asserted? |
-| Proof | Minimise and bind disclosures | What must be demonstrated now? |
-| Verification | Evaluate evidence against policy | Is the requested action acceptable? |
-| Registry | Resolve authoritative standing | Which governance and issuer records apply? |
-| Assurance | Establish confidence and residual risk | How much reliance is justified? |
-| Evidence | Preserve accountable transaction records | What happened and why? |
-| Redress | Correct outcomes and allocate responsibility | How can an affected party challenge harm? |
-
-## Deployment topology
-
-The architecture supports centralised, federated, distributed and hybrid deployments. No component is required to use a blockchain or distributed ledger. Trust anchors may be expressed through PKI, controlled identifiers, trust lists, registries, DIDs or equivalent mechanisms, provided the applicable profile defines resolution and governance semantics.
+The architecture uses normative language where a separation, capability, evidence obligation or control is necessary for ONDTF conformance. Component names are logical responsibilities rather than mandatory deployable products. A single system may perform several compatible responsibilities, but an adopter MUST demonstrate that required separation of duties, independent review, evidence integrity and conflict-of-interest controls remain effective.

@@ -52,3 +52,40 @@ Machine-readable bindings, model records, governance registers, and validation e
 - [Oversight and transparency](operating-model/oversight-transparency.md)
 - [Challenge and redress operations](operating-model/challenge-redress.md)
 - [Capability maturity](operating-model/capability-maturity.md)
+
+## Reference architecture
+
+- [Architecture principles](architecture/principles.md)
+- [Layered reference architecture](architecture/layered-reference-architecture.md)
+- [Architecture viewpoints](architecture/viewpoints.md)
+- [Component catalogue](architecture/component-catalogue.md)
+- [Service catalogue](architecture/service-catalogue.md)
+- [Interaction catalogue](architecture/interaction-catalogue.md)
+- [Trust boundaries](architecture/trust-boundaries.md)
+- [Federation architecture](architecture/federation.md)
+- [Failure containment and resilience](architecture/resilience.md)
+- [Deployment neutrality](architecture/deployment-neutrality.md)
+
+## Information architecture
+
+- [Canonical entity catalogue](information-model/canonical-entities.md)
+- [Relationships and cardinalities](information-model/relationships.md)
+- [Lifecycle and state models](information-model/state-models.md)
+- [Identifiers and references](information-model/identifiers.md)
+- [Provenance and integrity](information-model/provenance.md)
+- [Information governance](information-model/information-governance.md)
+
+## Canonical workflows
+
+- [Workflow catalogue](workflows/index.md)
+- [Trust-scheme establishment](workflows/scheme-establishment.md)
+- [Participant onboarding](workflows/participant-onboarding.md)
+- [Authority grant and delegation](workflows/authority-delegation.md)
+- [Trust resolution and effect admission](workflows/trust-resolution.md)
+- [Status change and suspension](workflows/status-change.md)
+- [Policy change and emergency authority](workflows/policy-change.md)
+- [Incident response](workflows/incident-response.md)
+- [Challenge, appeal and remedy](workflows/challenge-redress.md)
+- [Cross-domain recognition](workflows/cross-domain-recognition.md)
+- [Conformance declaration](workflows/conformance-declaration.md)
+- [Diagram catalogue](diagrams/index.md)

@@ -1,6 +1,6 @@
 ---
 title: Lifecycle and State
-parent: Information Model
+parent: Information Architecture
 nav_order: 3
 ---
 # Lifecycle and State

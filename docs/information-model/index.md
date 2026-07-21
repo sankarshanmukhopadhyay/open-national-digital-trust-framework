@@ -1,26 +1,36 @@
 ---
-title: Information Model
-nav_order: 5
+layout: default
+title: Information Architecture
+parent: Open National Digital Trust Framework
+nav_order: 3
 has_children: true
 ---
-# Information Model
 
-The ONDTF information model provides a self-contained vocabulary for architecture, profiles, controls, and conformance. Optional crosswalks connect it to TSMM, TIS, and other compatible resources. It provides a stable vocabulary for architecture, profiles, controls, and conformance.
+# ONDTF Information Architecture
+
+The information architecture defines the minimum semantics needed to govern and interoperate across trust domains. It is deliberately independent of a particular schema language or data model. Profiles may bind these concepts to JSON, XML, RDF, relational models or other representations.
 
 ```mermaid
-flowchart LR
-  J["Jurisdiction"] --> S["Trust scheme"]
-  S --> GA["Governance authority"]
-  GA --> AG["Authority grant"]
-  AG --> P["Participant"]
-  P --> IC["Interaction context"]
-  IC --> PO["Policy"]
-  IC --> EV["Evidence"]
-  PO --> TD["Trust decision"]
-  EV --> TD
-  TD --> EF["Admitted effect"]
-  TD --> DR["Decision receipt"]
-  EF --> CH["Challenge and remedy"]
+classDiagram
+  Jurisdiction "1" --> "0..*" TrustScheme
+  TrustScheme "1" --> "1..*" GovernanceAuthority
+  TrustScheme "1" --> "0..*" Participant
+  GovernanceAuthority "1" --> "0..*" AuthorityGrant
+  AuthorityGrant "1" --> "0..*" Delegation
+  Participant "1" --> "0..*" Evidence
+  Policy "1" --> "0..*" TrustDecision
+  Evidence "0..*" --> "0..*" TrustDecision
+  TrustDecision "1" --> "0..1" AdmittedEffect
+  TrustDecision "1" --> "1" DecisionReceipt
+  TrustDecision "0..1" --> "0..*" Challenge
+  Challenge "0..1" --> "0..*" Remedy
 ```
 
-See [entities](entities.md), [relationships](relationships.md), [lifecycle](lifecycle.md), and [identifier and provenance rules](identifiers-provenance.md).
+## Publication set
+
+- [Canonical entity catalogue](canonical-entities.md)
+- [Relationships and cardinalities](relationships.md)
+- [Lifecycle and state models](state-models.md)
+- [Identifiers and references](identifiers.md)
+- [Provenance and integrity](provenance.md)
+- [Information governance](information-governance.md)

@@ -23,6 +23,10 @@
 - trust-scheme and participant lifecycles;
 - policy change, oversight, transparency, redress, and maturity guidance.
 
+## v0.4.0 — Reference Architecture and Information Architecture Draft
+
+Delivered architecture principles, layers, planes, components, services, interactions, trust boundaries, federation, resilience, information semantics and canonical workflows.
+
 ## v0.5.0 — Feature-Complete Draft
 
 - complete reference and information architecture;

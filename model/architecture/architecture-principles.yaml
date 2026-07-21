@@ -1,0 +1,26 @@
+version: 0.4.0
+principles:
+- id: AP-01
+  title: Legitimacy precedes technical trust
+- id: AP-02
+  title: Authority is explicit, bounded and reviewable
+- id: AP-03
+  title: Evidence before effect
+- id: AP-04
+  title: Governance, operation and assurance are separable
+- id: AP-05
+  title: Trust boundaries are declared
+- id: AP-06
+  title: Policy is traceable to authority
+- id: AP-07
+  title: Data minimisation is architectural
+- id: AP-08
+  title: Accountability survives automation
+- id: AP-09
+  title: Redress is a first-class capability
+- id: AP-10
+  title: Federation does not imply equivalence
+- id: AP-11
+  title: Profiles specialise the core
+- id: AP-12
+  title: Conformance is observable

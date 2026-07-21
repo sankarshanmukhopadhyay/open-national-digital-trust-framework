@@ -1,16 +1,96 @@
-schema_version: "1.0"
-model_version: "0.3.0"
+version: 0.4.0
 entities:
-  - {name: Jurisdiction, owner: ONDTF}
-  - {name: TrustScheme, owner: ONDTF, informed_by: TSMM}
-  - {name: GovernanceAuthority, owner: ONDTF}
-  - {name: Participant, owner: TSMM, treatment: profiled}
-  - {name: AffectedParty, owner: ONDTF, treatment: extension}
-  - {name: AuthorityGrant, owner: TSMM, treatment: profiled}
-  - {name: Delegation, owner: TSMM, treatment: profiled}
-  - {name: Evidence, owner: TSMM-TIS, treatment: profiled}
-  - {name: TrustDecision, owner: TSMM, treatment: adopted}
-  - {name: DecisionReceipt, owner: TIS, treatment: profiled}
-  - {name: AdmittedEffect, owner: TSMM-ONDTF, treatment: adopted}
-  - {name: Challenge, owner: ONDTF}
-  - {name: Remedy, owner: ONDTF}
+- id: IM-JUR
+  name: Jurisdiction
+  definition: A legal or administrative domain within which authority and obligations
+    are recognised.
+- id: IM-SEC
+  name: Sector
+  definition: A governed domain of activity with shared policy, risk or regulatory
+    characteristics.
+- id: IM-SCH
+  name: Trust Scheme
+  definition: A governed arrangement that defines participants, rules, services, evidence
+    and oversight for a stated purpose.
+- id: IM-GOV
+  name: Governance Authority
+  definition: An entity authorised to establish or change governance rules.
+- id: IM-ACT
+  name: Accountable Authority
+  definition: The entity answerable for a decision, capability or outcome.
+- id: IM-OPA
+  name: Operating Authority
+  definition: The entity authorised to operate a service or process.
+- id: IM-ASA
+  name: Assurance Authority
+  definition: The entity authorised to evaluate or attest control effectiveness.
+- id: IM-PAR
+  name: Participant
+  definition: An actor admitted to one or more roles in a trust scheme.
+- id: IM-AFP
+  name: Affected Party
+  definition: A person or entity whose rights, interests or circumstances may be materially
+    affected.
+- id: IM-ROL
+  name: Role
+  definition: A named set of permissions, duties and eligibility conditions.
+- id: IM-AGR
+  name: Authority Grant
+  definition: An authoritative instrument granting bounded authority.
+- id: IM-DEL
+  name: Delegation
+  definition: A constrained transfer of exercisable authority from a principal to
+    a delegate.
+- id: IM-POL
+  name: Policy
+  definition: An authoritative expression of permissions, duties, prohibitions and
+    decision conditions.
+- id: IM-CRE
+  name: Credential
+  definition: A protected set of claims issued by an authorised evidence provider.
+- id: IM-CLM
+  name: Claim
+  definition: A statement about an entity, event, role, status or relationship.
+- id: IM-EVD
+  name: Evidence
+  definition: Information used to support or refute a claim, authority, status or
+    decision.
+- id: IM-REG
+  name: Registry Record
+  definition: An authoritative published record of standing, role, status or relationship.
+- id: IM-STA
+  name: Status Record
+  definition: A time-bounded assertion about lifecycle state.
+- id: IM-ASR
+  name: Assurance Assertion
+  definition: A scoped statement about confidence supported by assessment evidence.
+- id: IM-DEC
+  name: Trust Decision
+  definition: A contextual determination to admit, deny, defer or condition an effect.
+- id: IM-RCP
+  name: Decision Receipt
+  definition: A reviewable record of the basis, outcome and attribution of a trust
+    decision.
+- id: IM-EFF
+  name: Admitted Effect
+  definition: A state change or action authorised by a trust decision.
+- id: IM-INC
+  name: Incident
+  definition: An event that compromises or threatens trust objectives.
+- id: IM-CHA
+  name: Challenge
+  definition: A request to correct, review or contest evidence, status, authority
+    or decision.
+- id: IM-APL
+  name: Appeal
+  definition: A formal review of a prior challenge or decision by a higher or independent
+    authority.
+- id: IM-REM
+  name: Remedy
+  definition: An authorised corrective, compensatory or restorative action.
+- id: IM-CON
+  name: Conformance Declaration
+  definition: A scoped assertion of conformity to a named ONDTF profile and version.
+- id: IM-MRA
+  name: Recognition Arrangement
+  definition: A governed agreement for bounded cross-domain recognition.

@@ -1,6 +1,6 @@
 ---
 title: Trust Lifecycle
-parent: Architecture
+parent: Reference Architecture
 nav_order: 3
 ---
 
