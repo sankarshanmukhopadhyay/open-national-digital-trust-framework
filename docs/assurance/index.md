@@ -1,21 +1,37 @@
 ---
 layout: default
-title: Assurance
+title: Assurance, Risk and Resilience
 nav_order: 7
 has_children: true
 ---
-# Assurance Framework
 
-Assurance is the disciplined basis for relying on identity, authority, evidence, controls, services, and governance outcomes.
+# Operational assurance, risk and resilience
+
+ONDTF assurance is the governed process by which claims about authority, controls, services and outcomes are supported by evidence, evaluated against explicit criteria, and kept current during operation. It is not a one-time certification and it is not a universal trust score.
 
 ```mermaid
 flowchart LR
-  C[Claim] --> E[Evidence]
-  E --> V[Validation]
-  V --> A[Assurance conclusion]
-  A --> D[Decision use]
+  R[Risk context] --> C[Controls]
+  C --> E[Evidence]
+  E --> A[Assurance evaluation]
+  A --> D[Operational decision]
   D --> M[Monitoring]
-  M --> E
+  M --> I{Material change or incident?}
+  I -->|No| M
+  I -->|Yes| T[Response and recovery]
+  T --> R
 ```
 
-The framework distinguishes identity assurance, authority assurance, evidence assurance, service assurance, governance assurance, and operational assurance.
+## Publication set
+
+- [Risk Management Method](risk-management.md)
+- [Assurance Evidence Model](evidence-model.md)
+- [Assurance Evaluation and Conclusions](evaluation.md)
+- [Conformance and Assessment](conformance-assessment.md)
+- [Continuous Assurance and Trust Observability](continuous-assurance.md)
+- [Operational Resilience](operational-resilience.md)
+- [Exceptions, Waivers and Risk Acceptance](exceptions-waivers.md)
+- [Metrics and Reporting](metrics-reporting.md)
+- [Assurance Levels](levels.md)
+
+The companion [Standards and Specifications Register](../standards/references.md) identifies the external sources used to ground the method.

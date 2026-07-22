@@ -1,6 +1,20 @@
 # Changelog
 
-## Unreleased
+## [Unreleased]
+
+### Added
+
+- operational risk methodology, assurance evidence model, evaluation conclusions and conformance assessment workflow;
+- continuous assurance, trust observability, resilience, exception handling and metrics guidance;
+- machine-readable risk, conformance, standards-register and NIST CSF mapping artefacts;
+- standards reference policy and initial alignment with ISO 31000, ISO/IEC 27001, ISO/IEC 27002, ISO/IEC 27005, NIST CSF 2.0, NIST SP 800-53, NIST SP 800-37 and ISO/IEC 17000-series concepts.
+
+### Fixed
+
+- replaced the duplicate custom Mermaid browser runtime with the native Just the Docs Mermaid integration;
+- pinned Just the Docs to the current 0.12 release line and added native Mermaid configuration;
+- strengthened built-site validation to verify Mermaid runtime inclusion and reject legacy render-error placeholders.
+
 
 ### Added
 

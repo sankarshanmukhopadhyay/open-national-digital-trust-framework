@@ -33,3 +33,11 @@ A national ecosystem SHOULD support at least:
 - ISO mdoc for mobile identity documents and proximity use cases.
 
 Interoperability MUST be achieved through explicit national profiles, protocol support and conformance testing, not by claiming that all formats are equivalent.
+
+
+## Reference governance
+
+- [Standards and Specifications Register](references.md)
+- [Standards Alignment Method](alignment-method.md)
+- [NIST CSF 2.0 Mapping](nist-csf-mapping.md)
+- [Security and Risk Control Alignment](iso-nist-control-alignment.md)

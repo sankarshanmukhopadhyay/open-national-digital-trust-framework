@@ -1,0 +1,18 @@
+schema_id: ondtf-conformance-assertion-schema
+version: 0.1.0
+status: draft
+required_fields:
+- assertion_id
+- ondtf_version
+- profiles
+- conformance_class
+- assessed_boundary
+- requirements
+- assessment_method
+- assessor
+- evidence_cutoff
+- findings
+- exceptions
+- conclusion
+- valid_until
+- reassessment_triggers

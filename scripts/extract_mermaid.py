@@ -6,7 +6,7 @@ out=root/'artifacts'/'mermaid'
 if out.exists(): shutil.rmtree(out)
 out.mkdir(parents=True)
 count=0
-for p in list((root/'docs').rglob('*.md'))+list((root/'profiles').rglob('*.md')):
+for p in list((root/'docs').rglob('*.md'))+list((root/'profiles').rglob('*.md'))+[root/'README.md']:
     text=p.read_text(encoding='utf-8')
     for i,block in enumerate(re.findall(r'```mermaid\s*\n(.*?)\n```', text, re.S),1):
         count+=1

@@ -1,0 +1,41 @@
+schema_id: ondtf-risk-register-schema
+version: 0.1.0
+status: draft
+required_fields:
+- risk_id
+- title
+- statement
+- assets
+- affected_parties
+- threat_ids
+- boundary_ids
+- likelihood
+- impact
+- inherent_rating
+- control_ids
+- control_effectiveness
+- residual_rating
+- uncertainty
+- owner
+- acceptance_authority
+- review_date
+- triggers
+scales:
+  likelihood:
+    min: 1
+    max: 5
+  impact:
+    min: 1
+    max: 5
+  control_effectiveness:
+    values:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+  uncertainty:
+    values:
+    - low
+    - medium
+    - high

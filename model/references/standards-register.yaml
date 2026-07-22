@@ -1,0 +1,110 @@
+register_id: ondtf-standards-register
+version: 0.1.0
+last_updated: '2026-07-22'
+references:
+- id: ISO-31000-2018
+  publisher: ISO
+  title: ISO 31000:2018 Risk management - Guidelines
+  status: published
+  class: foundational
+  areas:
+  - risk-management
+  canonical_url: https://www.iso.org/standard/65694.html
+  last_reviewed: '2026-07-22'
+- id: ISO-IEC-27001-2022
+  publisher: ISO/IEC
+  title: ISO/IEC 27001:2022 Information security management systems - Requirements
+  status: published
+  class: informative-mapping
+  areas:
+  - security-management
+  canonical_url: https://www.iso.org/standard/27001
+  last_reviewed: '2026-07-22'
+- id: ISO-IEC-27002-2022
+  publisher: ISO/IEC
+  title: ISO/IEC 27002:2022 Information security controls
+  status: published
+  class: informative-mapping
+  areas:
+  - security-controls
+  canonical_url: https://www.iso.org/standard/75652.html
+  last_reviewed: '2026-07-22'
+- id: ISO-IEC-27005-2022
+  publisher: ISO/IEC
+  title: ISO/IEC 27005:2022 Guidance on managing information security risks
+  status: published
+  class: foundational
+  areas:
+  - risk-management
+  canonical_url: https://www.iso.org/standard/80585.html
+  last_reviewed: '2026-07-22'
+- id: NIST-CSF-2.0
+  publisher: NIST
+  title: The NIST Cybersecurity Framework 2.0
+  status: published
+  class: informative-mapping
+  areas:
+  - cybersecurity
+  - governance
+  - resilience
+  canonical_url: https://www.nist.gov/cyberframework
+  last_reviewed: '2026-07-22'
+- id: NIST-SP-800-53-R5
+  publisher: NIST
+  title: Security and Privacy Controls for Information Systems and Organizations
+  status: published
+  class: informative-mapping
+  areas:
+  - security-controls
+  - privacy-controls
+  canonical_url: https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final
+  last_reviewed: '2026-07-22'
+- id: NIST-SP-800-37-R2
+  publisher: NIST
+  title: Risk Management Framework for Information Systems and Organizations
+  status: published
+  class: foundational
+  areas:
+  - risk-management
+  - continuous-monitoring
+  canonical_url: https://csrc.nist.gov/pubs/sp/800/37/r2/final
+  last_reviewed: '2026-07-22'
+- id: ISO-IEC-17000-2020
+  publisher: ISO/IEC
+  title: ISO/IEC 17000:2020 Conformity assessment - Vocabulary and general principles
+  status: published
+  class: foundational
+  areas:
+  - conformity-assessment
+  canonical_url: https://www.iso.org/standard/73029.html
+  last_reviewed: '2026-07-22'
+- id: ISO-IEC-17020-2012
+  publisher: ISO/IEC
+  title: ISO/IEC 17020:2012 Requirements for the operation of various types of bodies
+    performing inspection
+  status: published
+  class: informative-mapping
+  areas:
+  - assessment-independence
+  canonical_url: https://www.iso.org/standard/52994.html
+  last_reviewed: '2026-07-22'
+- id: ISO-IEC-17065-2012
+  publisher: ISO/IEC
+  title: ISO/IEC 17065:2012 Requirements for bodies certifying products, processes
+    and services
+  status: published
+  class: informative-mapping
+  areas:
+  - certification
+  canonical_url: https://www.iso.org/standard/46568.html
+  last_reviewed: '2026-07-22'
+- id: ISO-IEC-17025-2017
+  publisher: ISO/IEC
+  title: ISO/IEC 17025:2017 General requirements for the competence of testing and
+    calibration laboratories
+  status: published
+  class: informative-mapping
+  areas:
+  - testing-competence
+  canonical_url: https://www.iso.org/standard/66912.html
+  last_reviewed: '2026-07-22'

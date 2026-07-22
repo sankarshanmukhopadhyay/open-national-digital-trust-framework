@@ -35,3 +35,8 @@ flowchart LR
   I --> R
   I --> N[Notifications]
 ```
+
+
+## Operational assurance integration
+
+Operational monitoring, incident handling and service continuity feed the [Continuous Assurance and Trust Observability](../assurance/continuous-assurance.md) and [Operational Resilience](../assurance/operational-resilience.md) processes.

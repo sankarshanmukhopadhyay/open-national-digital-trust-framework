@@ -117,3 +117,20 @@ Machine-readable bindings, model records, governance registers, and validation e
 - [Canonical Reading Order](documentation/reading-order.md)
 - [Framework Map](documentation/framework-map.md)
 - [Concept Dependency Map](documentation/concept-dependency-map.md)
+
+
+## Operational assurance, risk, resilience and standards alignment
+
+- [Assurance, Risk and Resilience]({{ '/docs/assurance/' | relative_url }})
+- [Risk Management Method]({{ '/docs/assurance/risk-management.html' | relative_url }})
+- [Assurance Evidence Model]({{ '/docs/assurance/evidence-model.html' | relative_url }})
+- [Assurance Evaluation]({{ '/docs/assurance/evaluation.html' | relative_url }})
+- [Conformance and Assessment]({{ '/docs/assurance/conformance-assessment.html' | relative_url }})
+- [Continuous Assurance]({{ '/docs/assurance/continuous-assurance.html' | relative_url }})
+- [Operational Resilience]({{ '/docs/assurance/operational-resilience.html' | relative_url }})
+- [Exceptions and Waivers]({{ '/docs/assurance/exceptions-waivers.html' | relative_url }})
+- [Metrics and Reporting]({{ '/docs/assurance/metrics-reporting.html' | relative_url }})
+- [Standards and Specifications Register]({{ '/docs/standards/references.html' | relative_url }})
+- [Standards Alignment Method]({{ '/docs/standards/alignment-method.html' | relative_url }})
+- [NIST CSF 2.0 Mapping]({{ '/docs/standards/nist-csf-mapping.html' | relative_url }})
+- [Security and Risk Control Alignment]({{ '/docs/standards/iso-nist-control-alignment.html' | relative_url }})

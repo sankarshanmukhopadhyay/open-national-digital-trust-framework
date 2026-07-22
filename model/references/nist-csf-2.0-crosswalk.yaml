@@ -1,0 +1,38 @@
+mapping_id: ondtf-nist-csf-2.0
+status: informative
+relations:
+- function: GOVERN
+  ondtf_areas:
+  - governance
+  - risk acceptance
+  - standards alignment
+  - oversight
+- function: IDENTIFY
+  ondtf_areas:
+  - assets
+  - boundaries
+  - dependencies
+  - threat and risk assessment
+- function: PROTECT
+  ondtf_areas:
+  - controls
+  - authority validation
+  - evidence integrity
+- function: DETECT
+  ondtf_areas:
+  - continuous assurance
+  - monitoring
+  - status and anomaly detection
+- function: RESPOND
+  ondtf_areas:
+  - incident response
+  - escalation
+  - communications
+  - containment
+- function: RECOVER
+  ondtf_areas:
+  - resilience
+  - reconciliation
+  - restoration
+  - remedy
+  - reassessment
