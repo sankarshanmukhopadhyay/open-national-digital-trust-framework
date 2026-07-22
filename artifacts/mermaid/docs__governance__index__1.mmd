@@ -1,0 +1,13 @@
+flowchart TB
+  NTC[National Digital Trust Council] --> SA1[Sector Trust Authority]
+  NTC --> SA2[State or Regional Trust Authority]
+  NTC --> CB[Cross-border Coordination Function]
+  SA1 --> TC1[Trust Community]
+  SA1 --> TC2[Trust Community]
+  SA2 --> TC3[Trust Community]
+  TC1 --> P1[Issuers, Verifiers, Wallets, Registries]
+  TC2 --> P2[Participants]
+  TC3 --> P3[Participants]
+  IA[Independent Assurance and Appeals] -.->|oversight| NTC
+  IA -.->|oversight| SA1
+  IA -.->|oversight| SA2

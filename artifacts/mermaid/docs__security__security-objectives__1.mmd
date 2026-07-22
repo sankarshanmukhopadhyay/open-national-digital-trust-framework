@@ -1,0 +1,14 @@
+flowchart LR
+  G[SEC-OBJ-01 Governance integrity] --> A[SEC-OBJ-02 Authority integrity]
+  A --> P[SEC-OBJ-03 Policy integrity]
+  P --> D[SEC-OBJ-05 Decision integrity]
+  E[SEC-OBJ-04 Evidence integrity] --> D
+  D --> X[SEC-OBJ-06 Effect integrity]
+  X --> C[SEC-OBJ-07 Accountability integrity]
+  B[SEC-OBJ-08 Boundary security] --> E
+  B --> D
+  S[SEC-OBJ-09 Service resilience] --> X
+  K[SEC-OBJ-10 Compromise containment] --> S
+  R[SEC-OBJ-11 Recovery integrity] --> S
+  H[SEC-OBJ-12 Human and public-interest protection] --> D
+  H --> C

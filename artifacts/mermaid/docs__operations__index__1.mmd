@@ -1,0 +1,9 @@
+flowchart LR
+  S[Source system] --> E[Signed trust event]
+  E --> B[Event broker]
+  B --> R[Registry update]
+  B --> M[Monitoring]
+  B --> A[Audit evidence]
+  M --> I[Incident response]
+  I --> R
+  I --> N[Notifications]
