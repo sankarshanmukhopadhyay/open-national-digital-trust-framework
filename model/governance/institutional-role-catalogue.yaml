@@ -1,0 +1,87 @@
+specification: ONDTF
+version: 0.6.0-draft
+status: draft
+roles:
+  - id: ROLE-GA
+    title: Governing Authority
+    purpose: Holds accountability for mandate, public purpose, scope, framework approval and institutional legitimacy.
+    authority_source: Legal, policy, contractual or governance mandate recognised by the adopting jurisdiction or scheme.
+    appoints_or_recognises: [ROLE-FA, ROLE-PA, ROLE-SA, ROLE-AA, ROLE-CAR, ROLE-IO, ROLE-ICA]
+    minimum_evidence: [constituting mandate, approved framework profile, decision-rights register, accountability report]
+  - id: ROLE-FA
+    title: Framework Administrator
+    purpose: Maintains controlled framework publications, registers, consultations and authorised changes.
+    authority_source: Delegation or designation from the Governing Authority.
+    accountable_to: ROLE-GA
+    minimum_evidence: [delegation instrument, controlled-document register, publication log, change records]
+  - id: ROLE-PA
+    title: Profile Authority
+    purpose: Develops, approves and maintains jurisdiction, sector, technology or recognition profiles within delegated scope.
+    authority_source: Designation by the Governing Authority or competent sector authority.
+    accountable_to: ROLE-GA
+    minimum_evidence: [profile mandate, profile manifest, dependency register, review records]
+  - id: ROLE-SA
+    title: Supervisory Authority
+    purpose: Conducts risk-based continuing supervision and acts on material nonconformity or harm within its competence.
+    authority_source: Applicable law or explicit scheme mandate.
+    accountable_to: ROLE-GA
+    minimum_evidence: [supervision plan, investigation records, enforcement or remediation decisions, public status notices]
+  - id: ROLE-AA
+    title: Accreditation Authority
+    purpose: Determines competence and impartiality of conformity assessment bodies for defined scopes.
+    authority_source: Applicable accreditation law, public designation or recognised scheme mandate.
+    accountable_to: ROLE-GA
+    minimum_evidence: [accreditation scheme, competence criteria, accreditation decisions, surveillance records]
+  - id: ROLE-CAB
+    title: Conformity Assessment Body
+    purpose: Evaluates organisations, services or implementations against identified requirements.
+    authority_source: Accreditation, recognition or scheme designation.
+    accountable_to: ROLE-AA
+    minimum_evidence: [assessment scope, assessor competence records, assessment report, nonconformity records]
+  - id: ROLE-ASR
+    title: Assessor
+    purpose: Performs defined evaluation activities and records evidence and findings.
+    authority_source: Appointment under a conformity assessment body or approved assessment scheme.
+    accountable_to: ROLE-CAB
+    minimum_evidence: [competence record, conflict declaration, work papers, signed findings]
+  - id: ROLE-RTO
+    title: Registry or Trust-list Operator
+    purpose: Publishes governed discovery and status information with provenance and freshness.
+    authority_source: Designation by the Framework Administrator, Profile Authority or competent authority.
+    accountable_to: ROLE-FA
+    minimum_evidence: [operating mandate, change log, status history, continuity and security evidence]
+  - id: ROLE-SP
+    title: Service Provider
+    purpose: Delivers a trust service within an admitted and governed scope.
+    authority_source: Admission, approval, licence, recognition or contract under the applicable profile.
+    accountable_to: ROLE-SA
+    minimum_evidence: [admission decision, service scope, controls, incident records, continuing-conformance evidence]
+  - id: ROLE-RP
+    title: Relying Party
+    purpose: Evaluates evidence, authority, policy and risk before admitting an effect.
+    authority_source: Applicable law, contract, policy and organisational mandate.
+    accountable_to: ROLE-GA
+    minimum_evidence: [reliance policy, decision records, exception records, affected-party procedures]
+  - id: ROLE-AP
+    title: Affected Party
+    purpose: Person or organisation whose rights, interests or opportunities may be materially affected by a trust decision or effect.
+    authority_source: Standing derived from the effect, applicable rights or scheme rules rather than participant membership.
+    minimum_evidence: [notice, challenge record, appeal record, remedy record]
+  - id: ROLE-CAR
+    title: Complaints Appeals and Remedy Body
+    purpose: Receives complaints, conducts or coordinates independent review, and orders or tracks remedy within its authority.
+    authority_source: Applicable law or designation by the Governing Authority with protected independence.
+    accountable_to: ROLE-IO
+    minimum_evidence: [procedure, case records, decisions, remedy completion evidence, systemic recommendations]
+  - id: ROLE-ICA
+    title: Incident Coordination Authority
+    purpose: Coordinates material incident reporting, cross-entity response, evidence preservation and recovery.
+    authority_source: Applicable law, national incident mandate or scheme designation.
+    accountable_to: ROLE-SA
+    minimum_evidence: [incident mandate, response plans, exercise records, incident reports]
+  - id: ROLE-IO
+    title: Independent Oversight
+    purpose: Examines systemic legitimacy, rights, concentration, transparency and institutional effectiveness.
+    authority_source: Statute, independent charter or governance arrangement protected from operational direction.
+    accountable_to: public_or_constituting_authority
+    minimum_evidence: [oversight charter, review reports, recommendations, follow-up records]

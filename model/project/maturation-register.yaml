@@ -184,16 +184,17 @@ issues:
     patterns: [EPA-016]
     status: open
   - id: URI-08
-    title: No complete role-specific normative obligations catalogue
+    title: Role-specific normative obligations catalogue requires release review
     category: normative
     risk: high
-    disposition: planned
+    disposition: draft_implemented
     target_release: v0.6.0
     owner_role: Core Specification Workstream
     closure_evidence: Traceable SHALL/SHOULD requirements assigned to defined roles with testable evidence expectations.
+    evidence_available: [model/normative/requirement-catalogue.yaml, model/normative/requirement-schema.json, docs/normative/requirements-traceability.md]
     programmes: [MPR-01]
     patterns: [EPA-004, EPA-005]
-    status: open
+    status: evidence_available
   - id: URI-09
     title: No fully specified accreditation and certification operating model
     category: conformance
@@ -217,16 +218,17 @@ issues:
     patterns: [EPA-002, EPA-005]
     status: open
   - id: URI-11
-    title: No operational institutional-governance profile for national deployment
+    title: Institutional-governance operating model requires profile validation
     category: governance
     risk: high
-    disposition: planned
+    disposition: draft_implemented
     target_release: v0.6.0
     owner_role: Governance Workstream
     closure_evidence: Worked institutional profile assigning governing, administrative, supervisory, assessment, appeal and incident functions.
+    evidence_available: [model/governance/institutional-role-catalogue.yaml, model/governance/responsibility-assignment.yaml, docs/governance/institutional-operating-model.md]
     programmes: [MPR-01]
     patterns: [EPA-003, EPA-004]
-    status: open
+    status: evidence_available
   - id: URI-12
     title: No complete sector-profile construction and validation method
     category: profiles
@@ -382,7 +384,7 @@ patterns:
     source_families: [EFF-03]
     destination: core
     target_release: v0.6.0
-    adoption_status: candidate
+    adoption_status: in_progress
     mapped_concepts: [ControlDocument, Policy, DecisionRight, ChangeRecord]
     rationale: Make governance artefacts versioned, owned, reviewable and traceable.
     safeguards: Avoid importing external nomenclature where ONDTF concepts already exist.
@@ -392,7 +394,7 @@ patterns:
     source_families: [EFF-02, EFF-03, EFF-05]
     destination: core
     target_release: v0.6.0
-    adoption_status: candidate
+    adoption_status: evidence_available
     mapped_concepts: [Role, Duty, Requirement, EvidenceExpectation]
     rationale: Convert architectural functions into testable responsibilities.
     safeguards: Distinguish universal obligations from profile-specific legal duties.

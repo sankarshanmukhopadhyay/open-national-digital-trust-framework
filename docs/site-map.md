@@ -162,3 +162,20 @@ Machine-readable bindings, model records, governance registers, and validation e
 
 - [Foundational Principles]({{ '/docs/project/foundational-principles.html' | relative_url }})
 - [Capability Matrix]({{ '/docs/project/capability-matrix.html' | relative_url }})
+
+## v0.6.0 normative and institutional foundation
+
+- [Normative Architecture]({{ site.baseurl }}/docs/normative/)
+- [Requirements Conventions]({{ site.baseurl }}/docs/normative/requirements-conventions.html)
+- [Applicability and Scoping]({{ site.baseurl }}/docs/normative/applicability-and-scoping.html)
+- [Profile Requirement Inheritance]({{ site.baseurl }}/docs/normative/profile-requirement-inheritance.html)
+- [Exceptions and Risk Acceptance]({{ site.baseurl }}/docs/normative/exceptions-and-risk-acceptance.html)
+- [Requirements Traceability]({{ site.baseurl }}/docs/normative/requirements-traceability.html)
+- [Institutional Operating Model]({{ site.baseurl }}/docs/governance/institutional-operating-model.html)
+- [Governing Authority]({{ site.baseurl }}/docs/governance/governing-authority.html)
+- [Framework Administration]({{ site.baseurl }}/docs/governance/administrative-authority.html)
+- [Supervision and Regulatory Roles]({{ site.baseurl }}/docs/governance/supervisory-and-regulatory-roles.html)
+- [Accreditation and Assessment Roles]({{ site.baseurl }}/docs/governance/accreditation-and-assessment-roles.html)
+- [Registry and Trust-list Operators]({{ site.baseurl }}/docs/governance/registry-and-trust-list-operators.html)
+- [Appeals Redress and Oversight]({{ site.baseurl }}/docs/governance/appeals-redress-and-oversight.html)
+- [Separation of Duties]({{ site.baseurl }}/docs/governance/separation-of-duties.html)

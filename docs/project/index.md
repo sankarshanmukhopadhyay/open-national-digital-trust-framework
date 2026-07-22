@@ -9,6 +9,11 @@ has_children: true
 
 This section makes the repository's maturity, boundaries and future direction visible on GitHub Pages. It complements the canonical governance and release documents maintained at the repository root.
 
+## v0.6.0 operationalisation work
+
+- [Normative Architecture](../normative/index.md)
+- [Institutional Operating Model](../governance/institutional-operating-model.md)
+
 ## v0.5.0 release and project status
 
 - [Feature Completeness](feature-completeness.md)

@@ -7,7 +7,7 @@ nav_order: 4
 
 # Normative requirements
 
-This draft establishes the first coordinated normative baseline. The machine-readable register is maintained in `model/requirements/core-requirements.yaml`.
+This page preserves the v0.5.0 coordinated baseline for continuity. The v0.6.0 operationalisation work now maintains the canonical expanded catalogue in `model/normative/requirement-catalogue.yaml`, governed by the [Normative Architecture](../normative/index.md). The earlier `model/requirements/core-requirements.yaml` remains a compatibility snapshot and must not be treated as the complete v0.6.0 requirement inventory.
 
 ## Governance and scope
 

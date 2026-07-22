@@ -1,0 +1,69 @@
+specification: ONDTF
+version: 0.6.0-draft
+status: draft
+legend:
+  A: Accountable for the outcome and final decision
+  R: Responsible for performing or coordinating the work
+  C: Consulted before or during the decision
+  I: Informed of the decision or outcome
+assignments:
+  - activity: Approve framework purpose and scope
+    accountable: ROLE-GA
+    responsible: [ROLE-FA]
+    consulted: [ROLE-PA, ROLE-SA, ROLE-IO, ROLE-AP]
+    informed: [ROLE-AA, ROLE-RTO, ROLE-SP, ROLE-RP]
+  - activity: Publish and maintain controlled framework documents
+    accountable: ROLE-FA
+    responsible: [ROLE-FA]
+    consulted: [ROLE-GA, ROLE-PA]
+    informed: [ROLE-SA, ROLE-AA, ROLE-CAB, ROLE-RTO, ROLE-SP, ROLE-RP]
+  - activity: Approve and maintain a profile
+    accountable: ROLE-PA
+    responsible: [ROLE-PA]
+    consulted: [ROLE-GA, ROLE-SA, ROLE-AA, ROLE-RTO, ROLE-SP, ROLE-RP, ROLE-CAR]
+    informed: [ROLE-FA, ROLE-IO, ROLE-AP]
+  - activity: Accredit or recognise an assessment body
+    accountable: ROLE-AA
+    responsible: [ROLE-AA]
+    consulted: [ROLE-SA, ROLE-IO]
+    informed: [ROLE-GA, ROLE-FA, ROLE-CAB]
+  - activity: Assess provider or service conformance
+    accountable: ROLE-CAB
+    responsible: [ROLE-ASR]
+    consulted: [ROLE-SP, ROLE-SA]
+    informed: [ROLE-AA, ROLE-FA]
+  - activity: Admit a provider or service
+    accountable: ROLE-SA
+    responsible: [ROLE-FA]
+    consulted: [ROLE-CAB, ROLE-PA, ROLE-RTO]
+    informed: [ROLE-GA, ROLE-SP, ROLE-RP, ROLE-CAR]
+  - activity: Publish provider or service status
+    accountable: ROLE-FA
+    responsible: [ROLE-RTO]
+    consulted: [ROLE-SA, ROLE-SP]
+    informed: [ROLE-RP, ROLE-CAR, ROLE-AP]
+  - activity: Decide a relying-party effect
+    accountable: ROLE-RP
+    responsible: [ROLE-RP]
+    consulted: [ROLE-SP]
+    informed: [ROLE-AP]
+  - activity: Coordinate a material incident
+    accountable: ROLE-ICA
+    responsible: [ROLE-ICA, ROLE-SP, ROLE-RTO]
+    consulted: [ROLE-SA, ROLE-FA, ROLE-CAR]
+    informed: [ROLE-GA, ROLE-IO, ROLE-RP, ROLE-AP]
+  - activity: Approve a material requirement exception
+    accountable: ROLE-GA
+    responsible: [ROLE-FA]
+    consulted: [ROLE-SA, ROLE-CAB, ROLE-CAR, ROLE-IO]
+    informed: [ROLE-PA, ROLE-SP, ROLE-RP]
+  - activity: Determine an independent appeal
+    accountable: ROLE-CAR
+    responsible: [ROLE-CAR]
+    consulted: [ROLE-AP, ROLE-SP, ROLE-RP, ROLE-SA]
+    informed: [ROLE-GA, ROLE-IO]
+  - activity: Review systemic effectiveness and concentration risk
+    accountable: ROLE-IO
+    responsible: [ROLE-IO]
+    consulted: [ROLE-GA, ROLE-SA, ROLE-CAR, ROLE-AP]
+    informed: [ROLE-FA, ROLE-PA, ROLE-AA, ROLE-SP, ROLE-RP]

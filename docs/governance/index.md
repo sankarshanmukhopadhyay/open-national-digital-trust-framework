@@ -55,3 +55,14 @@ Every recognised trust scheme MUST publish machine-readable and human-readable v
 - audit and transparency obligations;
 - complaints, appeals and remedies;
 - change management and versioning.
+
+## Institutional operating model
+
+- [Institutional Operating Model](institutional-operating-model.md)
+- [Governing Authority](governing-authority.md)
+- [Framework Administration](administrative-authority.md)
+- [Supervision and Regulatory Roles](supervisory-and-regulatory-roles.md)
+- [Accreditation and Assessment Roles](accreditation-and-assessment-roles.md)
+- [Registry and Trust-list Operators](registry-and-trust-list-operators.md)
+- [Appeals, Redress and Oversight](appeals-redress-and-oversight.md)
+- [Separation of Duties](separation-of-duties.md)

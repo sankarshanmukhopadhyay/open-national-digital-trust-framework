@@ -1,0 +1,322 @@
+specification: ONDTF
+version: 0.6.0-draft
+status: draft
+requirements:
+  - id: ONDTF-GOV-001
+    domain: governance
+    force: MUST
+    statement: Identify and publish the legal, policy, contractual or institutional mandate under which the adoption operates.
+    applicability: [core, institutional]
+    assessed_object: ONDTF adoption
+    accountable_role: ROLE-GA
+    responsible_roles: [ROLE-FA]
+    evidence: [Published mandate, Scope statement]
+    capabilities: [CAP-01]
+    status: draft
+    introduced: v0.6.0
+  - id: ONDTF-GOV-002
+    domain: governance
+    force: MUST
+    statement: Identify the bodies accountable for governance, administration, supervision, assessment, review and remedy.
+    applicability: [core, institutional]
+    assessed_object: institutional operating model
+    accountable_role: ROLE-GA
+    responsible_roles: [ROLE-FA]
+    evidence: [Institutional role catalogue, Responsibility assignment]
+    capabilities: [CAP-01]
+    status: draft
+    introduced: v0.6.0
+  - id: ONDTF-GOV-003
+    domain: governance
+    force: MUST
+    statement: Publish the interactions, participants, services, effects and exclusions within the adoption scope.
+    applicability: [core, profile]
+    assessed_object: framework or profile scope
+    accountable_role: ROLE-GA
+    responsible_roles: [ROLE-FA, ROLE-PA]
+    evidence: [Scope and non-goals statement, Profile manifest]
+    status: draft
+    introduced: v0.6.0
+  - id: ONDTF-GOV-004
+    domain: governance
+    force: MUST
+    statement: Document decision rights, delegations, escalation paths and conflicts of interest for institutional functions.
+    applicability: [institutional]
+    assessed_object: institutional operating model
+    accountable_role: ROLE-GA
+    responsible_roles: [ROLE-FA]
+    evidence: [Decision-rights matrix, Delegation register, Conflict register]
+    status: draft
+    introduced: v0.6.0
+  - id: ONDTF-GOV-005
+    domain: governance
+    force: MUST
+    statement: Version, approve, communicate and assign effective dates to material governance changes.
+    applicability: [institutional, profile]
+    assessed_object: controlled governance documents
+    accountable_role: ROLE-FA
+    responsible_roles: [ROLE-FA, ROLE-PA]
+    evidence: [Change record, Approval record, Publication notice]
+    status: draft
+    introduced: v0.6.0
+  - id: ONDTF-GOV-006
+    domain: governance
+    force: MUST
+    statement: Bound emergency authority by purpose, scope, duration, evidence, review and termination conditions.
+    applicability: [institutional, scheme]
+    assessed_object: emergency authority arrangement
+    accountable_role: ROLE-GA
+    responsible_roles: [ROLE-SA, ROLE-ICA]
+    evidence: [Emergency authority policy, Exercise or invocation record, Independent review]
+    status: draft
+    introduced: v0.6.0
+  - id: ONDTF-ROL-001
+    domain: institutional_roles
+    force: MUST
+    statement: Define every institutional function before allocating it to one or more named bodies.
+    applicability: [institutional]
+    assessed_object: role allocation
+    accountable_role: ROLE-GA
+    responsible_roles: [ROLE-FA]
+    evidence: [Institutional function map, Role allocation decision]
+    status: draft
+    introduced: v0.6.0
+  - id: ONDTF-ROL-002
+    domain: institutional_roles
+    force: MUST
+    statement: Record the authority source, scope, accountability and minimum evidence obligations of each assigned role.
+    applicability: [institutional]
+    assessed_object: assigned institutional role
+    accountable_role: ROLE-GA
+    responsible_roles: [ROLE-FA]
+    evidence: [Role catalogue, Appointment or designation instrument]
+    status: draft
+    introduced: v0.6.0
+  - id: ONDTF-ROL-003
+    domain: institutional_roles
+    force: MUST
+    statement: Assess concentration and conflict risks whenever one body performs two or more institutional roles.
+    applicability: [institutional]
+    assessed_object: combined role allocation
+    accountable_role: ROLE-GA
+    responsible_roles: [ROLE-FA, ROLE-IO]
+    evidence: [Concentration assessment, Conflict treatment plan]
+    status: draft
+    introduced: v0.6.0
+  - id: ONDTF-ROL-004
+    domain: institutional_roles
+    force: MUST
+    statement: Preserve an independent review path for material admission, suspension, enforcement, appeal and remedy decisions.
+    applicability: [institutional, scheme, affected-party]
+    assessed_object: review arrangement
+    accountable_role: ROLE-GA
+    responsible_roles: [ROLE-CAR, ROLE-IO]
+    evidence: [Appeal procedure, Independence safeguards, Case records]
+    status: draft
+    introduced: v0.6.0
+  - id: ONDTF-ROL-005
+    domain: institutional_roles
+    force: MUST_NOT
+    statement: Permit an operating body to be the sole assessor and final appeals body for its own material conformance decisions.
+    applicability: [institutional, scheme]
+    assessed_object: separation-of-duties arrangement
+    accountable_role: ROLE-GA
+    responsible_roles: [ROLE-AA, ROLE-CAR]
+    evidence: [Responsibility assignment, Independence controls]
+    status: draft
+    introduced: v0.6.0
+  - id: ONDTF-ROL-006
+    domain: institutional_roles
+    force: MUST
+    statement: Define referral and lead-authority rules where supervisory or regulatory competence overlaps.
+    applicability: [institutional]
+    assessed_object: supervisory coordination arrangement
+    accountable_role: ROLE-SA
+    responsible_roles: [ROLE-SA, ROLE-FA]
+    evidence: [Coordination protocol, Referral records]
+    status: draft
+    introduced: v0.6.0
+  - id: ONDTF-ROL-007
+    domain: institutional_roles
+    force: MUST
+    statement: Give affected parties standing to access complaint, challenge and remedy processes without requiring scheme membership.
+    applicability: [institutional, affected-party]
+    assessed_object: affected-party procedure
+    accountable_role: ROLE-CAR
+    responsible_roles: [ROLE-CAR, ROLE-SP, ROLE-RP]
+    evidence: [Published eligibility rules, Accessible procedures, Case records]
+    status: draft
+    introduced: v0.6.0
+  - id: ONDTF-ROL-008
+    domain: institutional_roles
+    force: SHOULD
+    statement: Include independent and affected-party perspectives in periodic review of framework effectiveness and institutional legitimacy.
+    applicability: [institutional]
+    assessed_object: governance review process
+    accountable_role: ROLE-IO
+    responsible_roles: [ROLE-IO, ROLE-FA]
+    evidence: [Review terms, Participation records, Published findings]
+    status: draft
+    introduced: v0.6.0
+  - id: ONDTF-AUT-001
+    domain: authority
+    force: MUST_NOT
+    statement: Admit a consequential action solely because the actor or system is authenticated.
+    applicability: [core, interaction]
+    assessed_object: consequential decision policy
+    accountable_role: ROLE-RP
+    responsible_roles: [ROLE-RP]
+    evidence: [Decision policy, Decision records]
+    capabilities: [CAP-04]
+    status: draft
+    introduced: v0.6.0
+  - id: ONDTF-AUT-002
+    domain: authority
+    force: MUST
+    statement: Evaluate scope, purpose, domain, time, conditions and revocation status when determining applicable authority.
+    applicability: [interaction]
+    assessed_object: authority evaluation
+    accountable_role: ROLE-RP
+    responsible_roles: [ROLE-RP]
+    evidence: [Authority policy, Evaluation record]
+    capabilities: [CAP-04, CAP-05]
+    status: draft
+    introduced: v0.6.0
+  - id: ONDTF-AUT-003
+    domain: delegation
+    force: MUST_NOT
+    statement: Permit delegated authority to exceed the authority held by the delegating party.
+    applicability: [interaction, service]
+    assessed_object: delegation mechanism
+    accountable_role: ROLE-SP
+    responsible_roles: [ROLE-SP, ROLE-RP]
+    evidence: [Delegation constraints, Negative tests]
+    capabilities: [CAP-05]
+    status: draft
+    introduced: v0.6.0
+  - id: ONDTF-EVI-001
+    domain: evidence
+    force: MUST
+    statement: Evaluate consequential evidence for source attribution, integrity, relevance and freshness.
+    applicability: [interaction]
+    assessed_object: evidence evaluation
+    accountable_role: ROLE-RP
+    responsible_roles: [ROLE-RP]
+    evidence: [Evidence policy, Decision record]
+    capabilities: [CAP-07]
+    status: draft
+    introduced: v0.6.0
+  - id: ONDTF-EVI-003
+    domain: registries
+    force: MUST
+    statement: Publish the governing authority, scope, update policy, effective time and provenance of registry or status information.
+    applicability: [service, implementation]
+    assessed_object: registry or trust-list service
+    accountable_role: ROLE-FA
+    responsible_roles: [ROLE-RTO]
+    evidence: [Registry governance statement, Status history, Change log]
+    status: draft
+    introduced: v0.6.0
+  - id: ONDTF-DEC-003
+    domain: accountability
+    force: MUST
+    statement: Produce or reference a reviewable record sufficient to establish the basis and responsible authority for a consequential decision.
+    applicability: [interaction]
+    assessed_object: consequential decision
+    accountable_role: ROLE-RP
+    responsible_roles: [ROLE-RP]
+    evidence: [Decision record, Preserved evidence reference]
+    capabilities: [CAP-11]
+    status: draft
+    introduced: v0.6.0
+  - id: ONDTF-SPR-001
+    domain: security_privacy
+    force: MUST
+    statement: Maintain a threat, privacy and risk model proportionate to the covered effects and institutional powers.
+    applicability: [core, institutional, service]
+    assessed_object: adoption risk model
+    accountable_role: ROLE-GA
+    responsible_roles: [ROLE-SA, ROLE-SP, ROLE-RTO]
+    evidence: [Threat model, Privacy assessment, Risk register]
+    status: draft
+    introduced: v0.6.0
+  - id: ONDTF-INC-001
+    domain: incident
+    force: MUST
+    statement: Define detection, containment, evidence preservation, recovery, notification and coordination responsibilities for material incidents.
+    applicability: [institutional, service]
+    assessed_object: incident arrangement
+    accountable_role: ROLE-ICA
+    responsible_roles: [ROLE-ICA, ROLE-SP, ROLE-RTO]
+    evidence: [Incident plan, Exercise record, Incident report]
+    status: draft
+    introduced: v0.6.0
+  - id: ONDTF-RED-001
+    domain: redress
+    force: MUST
+    statement: Provide affected parties an accessible route to correction, challenge, independent review and effective remedy for consequential decisions.
+    applicability: [affected-party, interaction]
+    assessed_object: redress system
+    accountable_role: ROLE-CAR
+    responsible_roles: [ROLE-CAR, ROLE-SP, ROLE-RP]
+    evidence: [Published procedure, Case record, Remedy completion record]
+    capabilities: [CAP-13]
+    status: draft
+    introduced: v0.6.0
+  - id: ONDTF-CON-001
+    domain: conformance
+    force: MUST
+    statement: Scope a conformance claim by ONDTF version, profile, assessed object, organisational boundary, applicable requirements, evidence cut-off and approved exceptions.
+    applicability: [core, profile, provider, service, implementation]
+    assessed_object: conformance claim
+    accountable_role: ROLE-CAB
+    responsible_roles: [ROLE-ASR, ROLE-CAB]
+    evidence: [Conformance declaration, Assessment record]
+    capabilities: [CAP-15]
+    status: draft
+    introduced: v0.6.0
+  - id: ONDTF-CON-002
+    domain: independence
+    force: MUST_NOT
+    statement: Require a particular external meta-model, schema, protocol, registry implementation or product for core conformance.
+    applicability: [core, profile]
+    assessed_object: core conformance policy
+    accountable_role: ROLE-GA
+    responsible_roles: [ROLE-FA, ROLE-PA]
+    evidence: [Core conformance policy, Profile dependency declarations]
+    capabilities: [CAP-15]
+    status: draft
+    introduced: v0.6.0
+  - id: ONDTF-CON-003
+    domain: conformance
+    force: MUST
+    statement: Identify the exact version, selected scope, constraints and maintenance responsibility for every normative external dependency.
+    applicability: [profile]
+    assessed_object: profile dependency
+    accountable_role: ROLE-PA
+    responsible_roles: [ROLE-PA]
+    evidence: [Profile manifest, Dependency register]
+    status: draft
+    introduced: v0.6.0
+  - id: ONDTF-MNT-001
+    domain: maintenance
+    force: MUST
+    statement: Preserve stable identifiers and lifecycle status for active, deprecated, withdrawn and superseded requirements.
+    applicability: [core, profile]
+    assessed_object: requirement catalogue
+    accountable_role: ROLE-FA
+    responsible_roles: [ROLE-FA]
+    evidence: [Requirement catalogue, Change history]
+    status: draft
+    introduced: v0.6.0
+  - id: ONDTF-MNT-002
+    domain: maintenance
+    force: MUST
+    statement: Perform change-impact analysis across profiles, roles, controls, evidence, tests and conformance claims for every material normative change.
+    applicability: [core, profile, institutional]
+    assessed_object: normative change
+    accountable_role: ROLE-FA
+    responsible_roles: [ROLE-FA, ROLE-PA]
+    evidence: [Change-impact record, Migration plan]
+    status: draft
+    introduced: v0.6.0

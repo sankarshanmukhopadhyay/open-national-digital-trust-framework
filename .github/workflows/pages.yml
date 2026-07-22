@@ -19,7 +19,7 @@ jobs:
         with:
           python-version: '3.12'
       - run: pip install pyyaml
-      - run: python3 scripts/validate_repo.py && python3 scripts/validate_assurance_references.py && python3 scripts/validate_data_privacy_rights.py && python3 scripts/validate_integration.py && python3 scripts/validate_maturation.py
+      - run: python3 scripts/validate_repo.py && python3 scripts/validate_assurance_references.py && python3 scripts/validate_data_privacy_rights.py && python3 scripts/validate_integration.py && python3 scripts/validate_maturation.py && python3 scripts/validate_normative_governance.py
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
