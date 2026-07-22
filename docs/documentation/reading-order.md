@@ -18,7 +18,7 @@ The canonical order for acquiring comprehensive knowledge is:
 8. Assurance and conformance
 9. Operations and implementation
 10. Worked reference scenario
-11. Sector and jurisdiction profiles
+11. Guided construction and profiles
 12. Programme, decisions, and appendices
 
 This is a **learning dependency order**, not a hierarchy of normative force. Normative status is determined by each document's stated posture and the use of normative language.
@@ -34,5 +34,5 @@ flowchart TD
   S --> Q[Assurance and conformance]
   Q --> OP[Operations and implementation]
   OP --> R[Worked reference scenario]
-  R --> P[Sector and jurisdiction profiles]
+  R --> P[Guided construction and profiles]
 ```

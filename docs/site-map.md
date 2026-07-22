@@ -31,6 +31,10 @@ This page provides publication coverage for the complete documentation set.
 - [Implementation]({{ '/docs/implementation/' | relative_url }})
 - [International interoperability]({{ '/docs/international/' | relative_url }})
 - [Adoption]({{ '/docs/adoption/' | relative_url }})
+  - [Guided Framework Construction]({{ '/docs/adoption/guided-framework-construction.html' | relative_url }})
+  - [Construction Stages]({{ '/docs/adoption/construction-stages.html' | relative_url }})
+  - [Contradiction and Completeness]({{ '/docs/adoption/contradiction-and-completeness.html' | relative_url }})
+  - [Generated Artefacts]({{ '/docs/adoption/generated-artefacts.html' | relative_url }})
 - [Programme management]({{ '/docs/programme/' | relative_url }})
 - [Appendices]({{ '/docs/appendices/' | relative_url }})
 - [Project governance and release files]({{ '/docs/project/' | relative_url }})
@@ -141,7 +145,7 @@ Machine-readable bindings, model records, governance registers, and validation e
 - [Data Security](data-security/)
 - [Privacy](privacy/)
 - [Rights and Redress](rights/)
-- [Jurisdiction Profiles](../profiles/)
+- [Profiles](../profiles/)
 
 ## Project readiness
 

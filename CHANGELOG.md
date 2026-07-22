@@ -4,6 +4,12 @@
 
 ### Added
 
+- Governed profile architecture covering jurisdiction, sector, technology, recognition, and operational profiles.
+- ONDTF Guided Framework Construction with staged questions, patterns, contradiction rules, completeness gates, response schema, generated artefact model, and workshop guidance.
+- Controlled dependency, external adoption, profile change, and document maintenance models.
+- Framework construction learning path with sequenced navigation.
+- Automated profile and adoption validation integrated into repository quality checks.
+
 - A multidimensional assurance model covering identity, authority, delegation, evidence, execution, operations, status and freshness, privacy, and remedy readiness without collapsing them into a universal trust score.
 - Machine-readable assurance dimensions, levels, composition rules and assurance-claim schema.
 - An operational affected-party, notice, challenge, appeal, remedy, accessibility and alternative-channel publication set with machine-readable evidence records.

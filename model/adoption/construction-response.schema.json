@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ONDTF Guided Construction Response",
+  "type": "object",
+  "required": [
+    "framework_id",
+    "responses",
+    "generated_at"
+  ],
+  "properties": {
+    "framework_id": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "responses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "question_id",
+          "state",
+          "value",
+          "provenance"
+        ],
+        "properties": {
+          "question_id": {
+            "type": "string"
+          },
+          "state": {
+            "enum": [
+              "selected",
+              "inherited",
+              "profile_controlled",
+              "provisional",
+              "unresolved",
+              "review_required",
+              "not_applicable"
+            ]
+          },
+          "value": {},
+          "provenance": {
+            "type": "object",
+            "required": [
+              "recorded_by",
+              "recorded_at"
+            ],
+            "properties": {
+              "recorded_by": {
+                "type": "string"
+              },
+              "recorded_at": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "authority_reference": {
+                "type": "string"
+              },
+              "evidence": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "reviews": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "type",
+                "status"
+              ],
+              "properties": {
+                "type": {
+                  "type": "string"
+                },
+                "status": {
+                  "enum": [
+                    "pending",
+                    "approved",
+                    "rejected",
+                    "not_required"
+                  ]
+                },
+                "reviewer": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

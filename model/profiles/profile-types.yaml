@@ -1,0 +1,15 @@
+version: 1
+profile_types:
+  - id: jurisdiction
+    purpose: Apply ONDTF within a defined legal and institutional context.
+  - id: sector
+    purpose: Specialise ONDTF for a bounded field, risk class, or regulated activity.
+  - id: technology
+    purpose: Select technical mechanisms while preserving core governance semantics.
+  - id: recognition
+    purpose: Define acceptance, equivalence, conditions, and suspension across frameworks.
+  - id: operational
+    purpose: Define deployment-specific operating processes, service levels, and evidence.
+composition:
+  default_precedence: [core, jurisdiction, sector, recognition, technology, operational]
+  conflict_outcomes: [compatible, stricter_wins, conditional, unresolved, prohibited]

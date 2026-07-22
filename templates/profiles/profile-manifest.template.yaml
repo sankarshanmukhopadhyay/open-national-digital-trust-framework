@@ -1,0 +1,20 @@
+id: PROFILE-ID
+title: Profile title
+version: 0.1.0
+status: draft
+profile_types:
+  - jurisdiction
+authority:
+  owner_role: ROLE-GA
+  approval_basis: Describe the legal, contractual, or institutional basis.
+scope:
+  included: []
+  excluded: []
+  affected_parties: []
+parent_profiles: []
+core_requirement_treatment: []
+dependencies: []
+unresolved_decisions: []
+review:
+  owner: ROLE-PA
+  next_review: 2027-01-01

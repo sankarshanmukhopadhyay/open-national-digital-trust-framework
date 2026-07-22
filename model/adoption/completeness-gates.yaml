@@ -1,0 +1,39 @@
+version: 1
+stage_gates:
+  - stage: 1
+    required_questions: [GFC-SCP-001, GFC-SCP-002]
+    blocking_reviews: [governance, stakeholder]
+  - stage: 2
+    required_questions: [GFC-AUT-001, GFC-AUT-002]
+    blocking_reviews: [legal, governance]
+  - stage: 3
+    required_questions: [GFC-ROL-001]
+    blocking_reviews: [governance]
+  - stage: 4
+    required_questions: [GFC-LCY-001]
+    blocking_reviews: [operations]
+  - stage: 5
+    required_questions: [GFC-ASR-001, GFC-ASR-002]
+    blocking_reviews: [assurance, risk]
+  - stage: 6
+    required_questions: [GFC-CON-001]
+    blocking_reviews: [assurance]
+  - stage: 7
+    required_questions: [GFC-TEC-001]
+    blocking_reviews: [technical, security]
+  - stage: 8
+    required_questions: [GFC-RGT-001]
+    blocking_reviews: [rights, accessibility]
+  - stage: 9
+    required_questions: [GFC-RSK-001]
+    blocking_reviews: [security, risk]
+  - stage: 10
+    required_questions: [GFC-REC-001]
+    conditional_questions: [GFC-REC-002]
+    blocking_reviews: [legal, governance]
+  - stage: 11
+    required_questions: [GFC-MNT-001, GFC-MNT-002]
+    blocking_reviews: [governance, operations]
+package_gate:
+  required_outputs: [profile, roles, requirements, assurance, conformance, dependencies, risk_register, decision_register, review_register]
+  blocking_conditions: [critical_contradiction, unresolved_authority, unresolved_rights_path, prohibited_profile_composition]

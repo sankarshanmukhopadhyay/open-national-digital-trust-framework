@@ -1,0 +1,218 @@
+version: 1
+stages:
+- id: 1
+  title: Purpose and boundary
+- id: 2
+  title: Authority and legitimacy
+- id: 3
+  title: Roles and responsibilities
+- id: 4
+  title: Participation and lifecycle
+- id: 5
+  title: Assurance
+- id: 6
+  title: Conformance and accreditation
+- id: 7
+  title: Technology and registries
+- id: 8
+  title: Rights accessibility and remedy
+- id: 9
+  title: Risk and adversarial conditions
+- id: 10
+  title: Recognition and interoperability
+- id: 11
+  title: Maintenance and evolution
+questions:
+- id: GFC-SCP-001
+  stage: 1
+  prompt: What problem and public or institutional outcome is the DTF intended to
+    address?
+  response_type: long_text
+  required: true
+  maps_to:
+  - profile.scope.purpose
+  review:
+  - governance
+  - stakeholder
+- id: GFC-SCP-002
+  stage: 1
+  prompt: Which services, transactions, actors, affected parties, harms, and exclusions
+    are in scope?
+  response_type: structured
+  required: true
+  maps_to:
+  - profile.scope
+  review:
+  - governance
+  - risk
+  - stakeholder
+- id: GFC-AUT-001
+  stage: 2
+  prompt: What is the legal, regulatory, contractual, or institutional source of authority
+    for the DTF?
+  response_type: structured
+  required: true
+  maps_to:
+  - profile.authority.approval_basis
+  review:
+  - legal
+  - governance
+- id: GFC-AUT-002
+  stage: 2
+  prompt: Who may approve, amend, suspend, and retire the DTF?
+  response_type: role_assignment
+  required: true
+  maps_to:
+  - profile.authority
+  - roles
+  review:
+  - legal
+  - governance
+- id: GFC-ROL-001
+  stage: 3
+  prompt: Which institutional and participant roles are required, and which role combinations
+    are prohibited?
+  response_type: role_matrix
+  required: true
+  maps_to:
+  - roles
+  - separation_of_duties
+  review:
+  - governance
+  - assurance
+- id: GFC-LCY-001
+  stage: 4
+  prompt: Which provider and service lifecycle pattern applies?
+  response_type: pattern_select
+  required: true
+  maps_to:
+  - lifecycle
+  review:
+  - operations
+  - governance
+  options:
+  - PAT-LCY-001
+  - PAT-LCY-002
+- id: GFC-ASR-001
+  stage: 5
+  prompt: Which assurance dimensions are material for each use case?
+  response_type: matrix
+  required: true
+  maps_to:
+  - assurance.dimensions
+  review:
+  - assurance
+  - risk
+- id: GFC-ASR-002
+  stage: 5
+  prompt: What minimum level and critical non-compensable floor applies to each use
+    case?
+  response_type: matrix
+  required: true
+  maps_to:
+  - assurance.levels
+  - assurance.critical_floors
+  review:
+  - assurance
+  - risk
+- id: GFC-CON-001
+  stage: 6
+  prompt: Which conformance and accreditation pattern applies?
+  response_type: pattern_select
+  required: true
+  maps_to:
+  - conformance
+  review:
+  - assurance
+  - governance
+  options:
+  - PAT-CON-001
+  - PAT-CON-002
+  - PAT-CON-003
+- id: GFC-TEC-001
+  stage: 7
+  prompt: Which identifiers, credentials, protocols, registries, status mechanisms,
+    and cryptographic dependencies are permitted?
+  response_type: dependency_list
+  required: true
+  maps_to:
+  - dependencies
+  review:
+  - technical
+  - security
+  - privacy
+- id: GFC-RGT-001
+  stage: 8
+  prompt: Which affected-party classes, notice, explanation, challenge, appeal, remedy,
+    accessibility, and alternative-channel obligations apply?
+  response_type: structured
+  required: true
+  maps_to:
+  - rights
+  review:
+  - rights
+  - accessibility
+  - legal
+  - stakeholder
+- id: GFC-RSK-001
+  stage: 9
+  prompt: Which adversarial conditions, collusion risks, systemic dependencies, and
+    emergency scenarios must be addressed?
+  response_type: risk_register
+  required: true
+  maps_to:
+  - risk_register
+  review:
+  - security
+  - risk
+  - operations
+- id: GFC-REC-001
+  stage: 10
+  prompt: Will the DTF recognise external frameworks, providers, credentials, or assurance
+    results?
+  response_type: boolean
+  required: true
+  maps_to:
+  - recognition.enabled
+  review:
+  - legal
+  - governance
+  - assurance
+- id: GFC-REC-002
+  stage: 10
+  prompt: What recognition basis, conditions, liability, evidence, suspension, and
+    remedy model applies?
+  response_type: structured
+  required: true
+  maps_to:
+  - recognition
+  review:
+  - legal
+  - governance
+  - assurance
+  depends_on:
+  - question: GFC-REC-001
+    equals: true
+- id: GFC-MNT-001
+  stage: 11
+  prompt: Who owns each controlled document and dependency, and what review and change
+    triggers apply?
+  response_type: structured
+  required: true
+  maps_to:
+  - maintenance
+  review:
+  - governance
+  - operations
+- id: GFC-MNT-002
+  stage: 11
+  prompt: What migration, compatibility, emergency-change, deprecation, and retirement
+    rules apply?
+  response_type: structured
+  required: true
+  maps_to:
+  - maintenance.change_control
+  review:
+  - governance
+  - technical
+  - operations

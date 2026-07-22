@@ -1,0 +1,17 @@
+version: 1
+adoptions:
+  - id: ADOPT-EXAMPLE-001
+    title: Example pattern adoption
+    source_family: external-framework
+    source_reference: Replace with authoritative reference
+    source_version: Replace with version or date
+    capability: Describe the abstract capability being adopted
+    ondtf_mapping: []
+    destination_profiles: []
+    status: identified
+    normative_effect: informative
+    safeguards: []
+    evidence_required: []
+    review_owner: ROLE-PA
+    review_triggers: [source-change, evidence-failure, profile-change]
+    retirement_conditions: []

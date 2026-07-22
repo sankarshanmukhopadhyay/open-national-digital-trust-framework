@@ -1,19 +1,37 @@
 ---
 layout: default
 title: Profile Methodology
-parent: Jurisdiction Profiles
+parent: Profiles
 nav_order: 2
 ---
+# Profile construction methodology
 
+A profile is constructed through controlled selection, specialisation, addition, and documented non-applicability. It is not produced by copying the core specification and editing prose.
 
-# Jurisdiction profile methodology
+## Construction sequence
 
-A profile SHALL identify scope, applicable authorities, legal instruments, institutional roles, mandatory requirements, optional guidance, sector overlays, data and privacy rules, assurance expectations, cross-border conditions, exceptions, evidence, unresolved questions, and review cycle.
+1. Establish purpose, scope, affected parties, harms, and exclusions.
+2. Identify authority, institutional roles, decision rights, and oversight.
+3. Select applicable ONDTF requirements and preserve their identifiers.
+4. Add profile requirements where the context demands greater specificity.
+5. Select assurance dimensions, levels, evidence, and failure outcomes.
+6. Define provider lifecycle, conformance, surveillance, and public status.
+7. Select technical and registry dependencies through controlled adoption records.
+8. Operationalise notice, challenge, appeal, remedy, accessibility, and alternatives.
+9. Define recognition, interoperability, maintenance, and migration.
+10. Validate contradictions, unresolved decisions, evidence gaps, and review gates.
 
-Profiles distinguish:
+## Permitted treatment of core requirements
 
-- **core ONDTF requirement**, unchanged by jurisdiction;
-- **profile requirement**, selected for the jurisdiction or sector;
-- **legal mapping**, an informative interpretation requiring competent review;
-- **implementation note**, a practical option rather than a universal rule;
-- **open issue**, an unresolved dependency or ambiguity.
+| Treatment | Meaning | Allowed |
+|---|---|---|
+| inherit | Apply unchanged | Yes |
+| specialise | Add context without reducing the core obligation | Yes |
+| strengthen | Impose a higher threshold | Yes |
+| mark not applicable | Exclude with reason, authority, evidence, and review | Conditionally |
+| weaken | Reduce a mandatory obligation | No |
+| silently omit | Remove without a decision record | No |
+
+Every profile decision must be attributable to an authorised role and linked to the requirement, evidence, and review consequences it creates.
+
+[Previous: Profile Types](profile-types.md) · [Next: Profile Package Template](profile-template.md)

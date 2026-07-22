@@ -1,0 +1,13 @@
+version: 1
+dependencies:
+  - id: DEP-EXAMPLE-001
+    title: Example external specification
+    type: technical-specification
+    source: Replace with authoritative source
+    version: Replace with selected version
+    status: candidate
+    normative_effect: informative
+    affected_requirements: []
+    review_triggers: [new-major-version, security-advisory, legal-change, interoperability-failure]
+    owner_role: ROLE-PA
+    migration_required: false

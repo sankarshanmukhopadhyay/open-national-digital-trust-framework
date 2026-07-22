@@ -1,0 +1,18 @@
+version: 1
+change_classes:
+  - id: editorial
+    approval: document-owner
+    reassessment: false
+  - id: clarifying
+    approval: profile-authority
+    reassessment: risk-based
+  - id: compatible
+    approval: profile-authority
+    reassessment: affected-scope
+  - id: breaking
+    approval: governing-authority
+    reassessment: required
+  - id: emergency
+    approval: emergency-authority
+    reassessment: required-after-stabilisation
+mandatory_change_fields: [change_id, class, rationale, authority, affected_profiles, affected_participants, effective_date, transition, evidence, review]

@@ -8,6 +8,7 @@ validate:
 	python3 scripts/validate_normative_governance.py
 	python3 scripts/validate_operations_conformance.py
 	python3 scripts/validate_assurance_rights.py
+	python3 scripts/validate_profile_adoption.py
 	python3 scripts/validate_release.py
 	python3 scripts/check_mermaid_source.py
 	python3 scripts/extract_mermaid.py

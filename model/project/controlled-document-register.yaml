@@ -1,0 +1,27 @@
+version: 1
+documents:
+  - id: CD-CORE-001
+    path: docs/core-specification/index.md
+    title: Core specification
+    owner_role: ROLE-GA
+    normative_status: mixed
+    review_cycle: annual
+    change_authority: ROLE-GA
+    state: active
+  - id: CD-PROFILE-001
+    path: profiles/profile-methodology.md
+    title: Profile construction methodology
+    owner_role: ROLE-PA
+    normative_status: normative
+    review_cycle: annual
+    change_authority: ROLE-GA
+    state: active
+  - id: CD-ADOPTION-001
+    path: docs/adoption/guided-framework-construction.md
+    title: Guided Framework Construction
+    owner_role: ROLE-PA
+    normative_status: informative
+    review_cycle: annual
+    change_authority: ROLE-PA
+    state: active
+required_fields: [id, path, title, owner_role, normative_status, review_cycle, change_authority, state]

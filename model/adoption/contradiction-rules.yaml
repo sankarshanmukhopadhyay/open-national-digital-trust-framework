@@ -1,0 +1,37 @@
+version: 1
+rules:
+  - id: CR-AUTH-001
+    severity: critical
+    when: framework_is_binding AND authority_basis_missing
+    message: A binding framework requires an identified and reviewable source of authority.
+    review: [legal, governance]
+  - id: CR-CON-001
+    severity: critical
+    when: independent_assurance_claimed AND final_decision_controlled_by_provider
+    message: Independent assurance cannot rely on a provider-controlled final conformance decision.
+    review: [assurance, governance]
+  - id: CR-ROLE-001
+    severity: material
+    when: same_entity_governs_accredits_assesses_and_hears_appeals AND mitigation_missing
+    message: Concentrated incompatible duties require separation or documented independent safeguards.
+    review: [governance, assurance]
+  - id: CR-ASR-001
+    severity: material
+    when: high_assurance_required AND evidence_or_freshness_or_surveillance_missing
+    message: High assurance requires evidence, freshness, and surveillance semantics.
+    review: [assurance, risk]
+  - id: CR-REG-001
+    severity: material
+    when: registry_authoritative AND outage_or_staleness_semantics_missing
+    message: An authoritative registry requires explicit outage and stale-status decision rules.
+    review: [technical, operations, risk]
+  - id: CR-RGT-001
+    severity: critical
+    when: adverse_effects_permitted AND challenge_or_independent_review_missing
+    message: Consequential adverse effects require challenge and independent review pathways.
+    review: [rights, legal, governance]
+  - id: CR-REC-001
+    severity: material
+    when: external_recognition_enabled AND suspension_or_liability_or_remedy_missing
+    message: Recognition requires suspension, liability, and remedy coordination.
+    review: [legal, governance, assurance]

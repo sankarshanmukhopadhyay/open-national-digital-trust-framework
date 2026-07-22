@@ -1,0 +1,158 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ONDTF Profile Manifest",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "version",
+    "status",
+    "profile_types",
+    "authority",
+    "scope",
+    "core_requirement_treatment",
+    "review"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Z0-9][A-Z0-9._-]+$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 3
+    },
+    "version": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "draft",
+        "consultation",
+        "approved",
+        "active",
+        "suspended",
+        "superseded",
+        "retired"
+      ]
+    },
+    "profile_types": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "jurisdiction",
+          "sector",
+          "technology",
+          "recognition",
+          "operational"
+        ]
+      }
+    },
+    "authority": {
+      "type": "object",
+      "required": [
+        "owner_role",
+        "approval_basis"
+      ],
+      "properties": {
+        "owner_role": {
+          "type": "string"
+        },
+        "approval_basis": {
+          "type": "string"
+        }
+      }
+    },
+    "scope": {
+      "type": "object",
+      "required": [
+        "included",
+        "excluded",
+        "affected_parties"
+      ],
+      "properties": {
+        "included": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "excluded": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "affected_parties": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "parent_profiles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "core_requirement_treatment": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "requirement_id",
+          "treatment"
+        ],
+        "properties": {
+          "requirement_id": {
+            "type": "string"
+          },
+          "treatment": {
+            "enum": [
+              "inherit",
+              "specialise",
+              "strengthen",
+              "not_applicable"
+            ]
+          },
+          "rationale": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "dependencies": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "unresolved_decisions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "review": {
+      "type": "object",
+      "required": [
+        "owner",
+        "next_review"
+      ],
+      "properties": {
+        "owner": {
+          "type": "string"
+        },
+        "next_review": {
+          "type": "string",
+          "format": "date"
+        }
+      }
+    }
+  },
+  "additionalProperties": true
+}

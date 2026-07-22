@@ -25,6 +25,7 @@ Use this section when you want to **understand the framework in a deliberate seq
 | [Implementation path](implementation.md) | Delivery teams and operators | 3–4 hours | Move from framework decisions to an implementable programme |
 | [Assurance and assessment path](assurance.md) | Auditors, assessors, accreditation teams | 2–3 hours | Understand assurance claims, evidence, conformance, and continuous review |
 | [Jurisdiction profile path](jurisdiction.md) | National programme teams | 2–3 hours | Understand how to specialise ONDTF without weakening the core |
+| [Framework construction path](framework-construction.md) | DTF design and facilitation teams | 3–5 hours | Construct and validate a governed DTF profile package |
 
 ## How to use the site
 
@@ -45,6 +46,7 @@ flowchart LR
   ROLE --> IM[Implementation]
   ROLE --> AS[Assurance]
   ROLE --> JP[Jurisdiction profile]
+  ROLE --> FC[Framework construction]
   EP --> REF[Reference documentation]
   AR --> REF
   GV --> REF
@@ -52,4 +54,5 @@ flowchart LR
   IM --> REF
   AS --> REF
   JP --> REF
+  FC --> REF
 ```

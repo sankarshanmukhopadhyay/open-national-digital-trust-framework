@@ -1,0 +1,52 @@
+version: 1
+patterns:
+  - id: PAT-GOV-001
+    category: governance
+    title: Central accountable authority
+    consequences: [clear final accountability, concentration-risk-controls-required, independent-oversight-required]
+    required_follow_up: [GFC-AUT-001, GFC-AUT-002, GFC-ROL-001]
+  - id: PAT-GOV-002
+    category: governance
+    title: Federated authority with common core
+    consequences: [shared-core-required, profile-authorities-required, conflict-resolution-required]
+    required_follow_up: [GFC-AUT-002, GFC-ROL-001]
+  - id: PAT-LCY-001
+    category: lifecycle
+    title: Approval before activation
+    consequences: [assessment-before-public-status, explicit-activation-decision]
+    required_follow_up: [GFC-CON-001]
+  - id: PAT-LCY-002
+    category: lifecycle
+    title: Supervised provisional activation
+    consequences: [restricted-scope, heightened-surveillance, automatic-expiry]
+    required_follow_up: [GFC-CON-001]
+  - id: PAT-CON-001
+    category: conformance
+    title: Supervised self-declaration
+    consequences: [public-evidence, audit-rights, risk-limited-scope]
+    required_follow_up: []
+  - id: PAT-CON-002
+    category: conformance
+    title: Independent assessment
+    consequences: [assessor-independence, separate-final-decision]
+    required_follow_up: []
+  - id: PAT-CON-003
+    category: conformance
+    title: Accredited certification
+    consequences: [accreditation-authority, assessor-surveillance, certificate-lifecycle]
+    required_follow_up: []
+  - id: PAT-REG-001
+    category: registry
+    title: Authoritative central register
+    consequences: [availability-controls, freshness-semantics, independent-oversight]
+    required_follow_up: [GFC-TEC-001]
+  - id: PAT-REG-002
+    category: registry
+    title: Federated authoritative registers
+    consequences: [common-status-semantics, federation-governance, conflict-resolution]
+    required_follow_up: [GFC-TEC-001]
+  - id: PAT-REC-001
+    category: recognition
+    title: Conditional equivalence recognition
+    consequences: [equivalence-criteria, continuous-review, rapid-suspension, remedy-coordination]
+    required_follow_up: [GFC-REC-002]
