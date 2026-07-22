@@ -1,8 +1,14 @@
 schema_version: 1.0.0
-framework_version_reviewed: 0.5.0
-target_release: 0.5.0
+framework_version: 0.5.0
 release_label: Feature Complete Draft
+release_date: '2026-07-22'
 status: release_payload_complete
+statistics:
+  published_pages: 190
+  mermaid_diagrams: 96
+  registered_standards_and_instruments: 46
+  machine_readable_artefacts: 56
+  repository_scripts: 10
 capability_domains:
   core_specification: complete
   governance_and_authority: complete
@@ -23,10 +29,11 @@ quality_gates:
   mermaid_render_validation: required
   jekyll_build_validation: required
   built_site_link_validation: required
-release_actions_pending:
-- verify_pages_deployment
-- create_release_tag_and_github_release
-known_issues_register: docs/project/unresolved-issues.md
-readiness_checklist: docs/project/v0.5-readiness-checklist.md
-integration_review: docs/project/integration-review.md
-release_date: '2026-07-22'
+post_merge_actions:
+- verify_github_pages_deployment
+- create_tag_v0.5.0
+- publish_github_release
+known_limitations: docs/project/known-limitations.md
+unresolved_issues: docs/project/unresolved-issues.md
+release_notes: release/RELEASE-NOTES-v0.5.0.md
+document_inventory: release/DOCUMENT-INVENTORY-v0.5.0.md

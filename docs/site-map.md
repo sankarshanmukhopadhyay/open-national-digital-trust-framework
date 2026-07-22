@@ -154,3 +154,6 @@ Machine-readable bindings, model records, governance registers, and validation e
 - [Feature Completion Integration Review]({{ '/docs/project/integration-review.html' | relative_url }})
 - [Unresolved Issues Register]({{ '/docs/project/unresolved-issues.html' | relative_url }})
 - [Standards Register]({{ '/docs/standards/references.html' | relative_url }})
+
+- [Foundational Principles]({{ '/docs/project/foundational-principles.html' | relative_url }})
+- [Capability Matrix]({{ '/docs/project/capability-matrix.html' | relative_url }})

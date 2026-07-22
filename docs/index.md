@@ -75,4 +75,4 @@ flowchart LR
 
 ## Current posture
 
-ONDTF remains an active public draft. The repository now contains the v0.4.0 reference and information architecture plus unreleased security, threat, control, and reference-scenario foundations being developed toward the next planned release. No new release is created by documentation-experience commits.
+ONDTF v0.5.0 is the Feature Complete Draft. It establishes the complete planned architectural baseline while remaining open to implementation evidence, interoperability testing, external review, and editorial refinement before candidate-specification status.

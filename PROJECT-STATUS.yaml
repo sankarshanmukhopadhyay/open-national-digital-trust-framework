@@ -1,8 +1,8 @@
 project: Open National Digital Trust Framework
 short_name: ONDTF
-version: 0.4.0
-maturity: Initial Public Draft
-release_label: Reference Architecture and Information Architecture Draft
+version: 0.5.0
+maturity: Feature Complete Draft
+release_label: Feature Complete Draft
 canonical_repository: https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework
 dependencies:
   TSMM:
@@ -16,3 +16,4 @@ quality:
   mermaid_validation_required: true
   local_link_validation_required: true
   built_site_check_required: true
+release_date: '2026-07-22'

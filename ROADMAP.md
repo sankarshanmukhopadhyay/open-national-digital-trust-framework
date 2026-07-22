@@ -1,54 +1,34 @@
 # Roadmap
 
-## v0.1.0 — Initial Public Draft
+## Released baselines
 
-- jurisdiction-neutral ONDTF identity;
-- initial architecture, governance, assurance, and profile structure;
-- GitHub Pages and repository hygiene.
+- **v0.1.0 — Initial Public Draft:** project identity, initial architecture, governance, assurance, profiles, Pages, and repository hygiene.
+- **v0.2.0 — Semantic and Framework Independence Draft:** self-contained information baseline, optional compatibility, programme controls, and validated publication pipeline.
+- **v0.3.0 — Core Specification and Operating Model Draft:** normative requirements, capability model, institutional functions, lifecycles, oversight, redress, and maturity.
+- **v0.4.0 — Reference Architecture and Information Architecture Draft:** deployment-neutral architecture, information semantics, trust boundaries, federation, resilience, and workflows.
+- **v0.5.0 — Feature Complete Draft:** complete planned architectural baseline across governance, authority, security, assurance, data protection, privacy, rights, profiles, implementation guidance, and standards alignment.
 
-## v0.2.0 — Semantic and Framework Independence Draft
+## Forward path
 
-- self-contained ONDTF information baseline;
-- framework independence and optional external compatibility;
-- programme controls and architecture decisions;
-- validated GitHub Pages and Mermaid publication pipeline.
+### v0.6.x — Implementation refinement
 
-## v0.3.0 — Core Specification and Operating Model Draft
+Resolve ambiguity and defects found through implementer use, strengthen examples, improve operational guidance, and refine evidence semantics without adding new foundational domains.
 
-- core scope, non-goals, and conceptual baseline;
-- outcome-oriented capability model;
-- first normative requirement register;
-- scoped and technology-neutral conformance model;
-- institutional function and decision-rights model;
-- trust-scheme and participant lifecycles;
-- policy change, oversight, transparency, redress, and maturity guidance.
+### v0.7.x — Deployment experience
 
-## v0.4.0 — Reference Architecture and Information Architecture Draft
+Document pilot deployments, deployment patterns, operating assumptions, implementation FAQs, and evidence from practical adoption.
 
-Delivered architecture principles, layers, planes, components, services, interactions, trust boundaries, federation, resilience, information semantics and canonical workflows.
+### v0.8.x — Interoperability and conformance
 
-## v0.5.0 — Feature-Complete Draft
+Strengthen cross-profile validation, executable assertions, negative tests, assessor guidance, and evidence portability.
 
-- complete reference and information architecture;
-- normative security, privacy, assurance, operations, and interoperability requirements;
-- profile method and priority jurisdiction and sector profiles;
-- reference APIs, examples, and negative tests;
-- public review disposition log.
+### v0.9.0 — Candidate Specification
 
-## v0.9.0 — Candidate Specification
+Freeze the architectural model and terminology except for evidence-driven corrections; demonstrate independent implementation experience; complete privacy, security, legal, accessibility, and adversarial review.
 
-- stable semantics and profile method;
-- interoperability and conformance suite;
-- implementation evidence from multiple independent pilots;
-- completed privacy, security, legal, accessibility, and adversarial reviews.
+### v1.0.0 — Stable Initial Release
 
-## v1.0.0 — Stable Initial Release
-
-- approved governance process;
-- stable normative core;
-- versioned jurisdiction and sector profiles;
-- implementer and assessor guidance;
-- release and migration policy.
+Publish the stable normative core, approved governance and migration process, versioned profiles, and implementer and assessor guidance supported by operational evidence.
 
 ## Canonical portfolio repositories
 

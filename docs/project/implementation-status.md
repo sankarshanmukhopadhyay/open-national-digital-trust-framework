@@ -7,7 +7,7 @@ nav_order: 6
 
 # Implementation status
 
-ONDTF is a specification and governance framework with reference artefacts. It is not represented as a production implementation.
+ONDTF v0.5.0 is a feature-complete specification and governance framework with reference artefacts. It is not represented as a production implementation or independently certified deployment.
 
 | Artefact type | Status | Appropriate use |
 |---|---|---|

@@ -9,9 +9,11 @@ has_children: true
 
 This section makes the repository's maturity, boundaries and future direction visible on GitHub Pages. It complements the canonical governance and release documents maintained at the repository root.
 
-## Read before v0.5.0
+## v0.5.0 release and project status
 
 - [Feature Completeness](feature-completeness.md)
+- [Foundational Principles](foundational-principles.md)
+- [Capability Matrix](capability-matrix.md)
 - [Known Limitations](known-limitations.md)
 - [Design Decisions](design-decisions.md)
 - [Future Work](future-work.md)

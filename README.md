@@ -1,8 +1,8 @@
 # Open National Digital Trust Framework (ONDTF)
 
 [![Documentation](https://img.shields.io/badge/docs-GitHub%20Pages-blue)](https://sankarshanmukhopadhyay.github.io/open-national-digital-trust-framework/)
-[![Status](https://img.shields.io/badge/status-initial%20public%20draft-orange)](RELEASE_NOTES.md)
-[![Version](https://img.shields.io/badge/version-v0.4.0-green)](CHANGELOG.md)
+[![Status](https://img.shields.io/badge/status-feature%20complete%20draft-blue)](RELEASE_NOTES.md)
+[![Version](https://img.shields.io/badge/version-v0.5.0-green)](CHANGELOG.md)
 
 The **Open National Digital Trust Framework (ONDTF)** is a jurisdiction-neutral, multi-sector reference framework for governing, implementing, assuring, and interoperating digital trust infrastructure.
 
@@ -27,9 +27,9 @@ ONDTF supplies that missing governance and architecture layer.
 | Attribute | Value |
 |---|---|
 | Portfolio role | Jurisdiction-neutral national framework |
-| Lifecycle | Active initial public draft |
-| Current version | v0.4.0 |
-| Stability | Experimental; architecture under review |
+| Lifecycle | Active feature-complete public draft |
+| Current version | v0.5.0 |
+| Stability | Feature-complete draft; implementation validation under way |
 | Primary artefact | Framework, reference architecture, and profile method |
 | Normative posture | Normative requirements are explicitly labelled |
 | India material | Illustrative jurisdiction profile under `profiles/india/` |
@@ -93,4 +93,4 @@ Documentation is licensed under [CC BY-NC-SA 4.0](LICENSE). Code and executable 
 
 ## Current release
 
-**v0.4.0 — Reference Architecture and Information Architecture Draft** adds the deployment-neutral architecture, information semantics, trust-boundary model and canonical workflows that later assurance, profiles and conformance work will use.
+**v0.5.0 — Feature Complete Draft** establishes the complete ONDTF architectural baseline across governance, authority, security, assurance, data protection, privacy, rights, interoperability, jurisdiction profiling, implementation guidance, and standards alignment. Subsequent releases focus on implementation evidence, refinement, and conformance rather than adding new foundational domains.

@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+No unreleased changes.
+
+## [0.5.0] - 2026-07-22
+
 ### Added
 
 - Project readiness pages covering feature completeness, known limitations, design decisions, future work and implementation status.

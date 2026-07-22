@@ -29,4 +29,8 @@ This page records the capability domains expected to be present before ONDTF can
 
 ## Feature-complete gate
 
-The v0.5.0 readiness review MUST confirm that each domain is discoverable, internally consistent, linked to its machine-readable artefacts where applicable, and represented in the implementation and conformance material. Open defects and unvalidated assumptions MUST be carried into the known-limitations and future-work registers rather than hidden by the feature-complete label.
+The v0.5.0 readiness review confirmed that each domain is discoverable, internally consistent, linked to its machine-readable artefacts where applicable, and represented in the implementation and conformance material. Open defects and unvalidated assumptions MUST be carried into the known-limitations and future-work registers rather than hidden by the feature-complete label.
+
+## Release determination
+
+The integration review concluded that every planned foundational domain is present and discoverable. v0.5.0 therefore establishes the feature-complete architectural baseline. Remaining work concerns implementation evidence, interoperability testing, refinement, and external review.
