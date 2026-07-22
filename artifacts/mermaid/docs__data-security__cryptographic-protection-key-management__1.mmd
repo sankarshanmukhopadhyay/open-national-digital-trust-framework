@@ -1,0 +1,11 @@
+flowchart LR
+  P[Policy and approved algorithms] --> G[Generate]
+  G --> D[Distribute or provision]
+  D --> U[Use]
+  U --> R[Rotate]
+  R --> V[Revoke]
+  V --> X[Destroy]
+  M[Monitoring and inventory] -.-> G
+  M -.-> U
+  M -.-> R
+  M -.-> V

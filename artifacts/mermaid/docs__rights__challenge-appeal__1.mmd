@@ -1,0 +1,12 @@
+stateDiagram-v2
+  [*] --> Submitted
+  Submitted --> AdmissibilityReview
+  AdmissibilityReview --> Investigation: accepted
+  AdmissibilityReview --> Closed: out of scope with reasons
+  Investigation --> InterimProtection: risk of continuing harm
+  InterimProtection --> Determination
+  Investigation --> Determination
+  Determination --> Remedy
+  Determination --> Appeal: eligible appeal
+  Appeal --> Remedy
+  Remedy --> Closed

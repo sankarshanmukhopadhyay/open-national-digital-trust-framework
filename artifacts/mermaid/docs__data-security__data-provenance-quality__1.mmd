@@ -1,0 +1,8 @@
+flowchart LR
+  S[Source] --> V[Validation]
+  V --> T[Transformation]
+  T --> U[Use in decision]
+  U --> R[Receipt]
+  S -. provenance .-> R
+  V -. evidence .-> R
+  T -. version .-> R

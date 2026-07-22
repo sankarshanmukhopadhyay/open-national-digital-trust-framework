@@ -17,6 +17,10 @@ aux_links:
 aux_links_new_tab: true
 plugins:
 - jekyll-seo-tag
+- jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
 exclude:
 - scripts
 - tests

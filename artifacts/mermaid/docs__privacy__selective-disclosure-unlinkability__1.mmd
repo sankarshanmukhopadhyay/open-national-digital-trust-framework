@@ -1,0 +1,6 @@
+flowchart LR
+  C[Credential or evidence source] --> P[Holder-controlled presentation]
+  P --> M[Minimum attributes or predicates]
+  M --> V[Verifier]
+  V --> D[Decision]
+  I[Pairwise or context-specific identifiers] -. reduce correlation .-> P

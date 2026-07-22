@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+### Fixed
+
+- Enabled `jekyll-relative-links` so Markdown source links are rewritten to generated HTML routes on GitHub Pages instead of producing `.md` 404s.
+- Extended built-site validation to verify publication coverage, reject rendered `.md` links, and resolve internal links across the generated site.
+
 ### Added
 
 - data-security architecture covering classification, lifecycle, cryptographic protection, provenance, retention, breach response, and third-party governance;
