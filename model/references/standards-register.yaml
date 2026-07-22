@@ -108,3 +108,82 @@ references:
   - testing-competence
   canonical_url: https://www.iso.org/standard/66912.html
   last_reviewed: '2026-07-22'
+- id: ISO-IEC-29100-2024
+  publisher: ISO/IEC
+  title: ISO/IEC 29100:2024 Information technology - Security techniques - Privacy
+    framework
+  status: published
+  class: foundational
+  areas:
+  - privacy-architecture
+  canonical_url: https://www.iso.org/standard/85938.html
+  last_reviewed: '2026-07-22'
+- id: ISO-IEC-27701-2025
+  publisher: ISO/IEC
+  title: ISO/IEC 27701:2025 Privacy information management systems - Requirements
+    and guidance
+  status: published
+  class: informative-mapping
+  areas:
+  - privacy-management
+  canonical_url: https://www.iso.org/standard/27701
+  last_reviewed: '2026-07-22'
+- id: ISO-IEC-29134-2023
+  publisher: ISO/IEC
+  title: ISO/IEC 29134:2023 Guidelines for privacy impact assessment
+  status: published
+  class: foundational
+  areas:
+  - privacy-impact-assessment
+  canonical_url: https://www.iso.org/standard/82233.html
+  last_reviewed: '2026-07-22'
+- id: ISO-IEC-27561-2024
+  publisher: ISO/IEC
+  title: ISO/IEC 27561:2024 Privacy operationalisation model and method for engineering
+  status: published
+  class: informative-mapping
+  areas:
+  - privacy-engineering
+  canonical_url: https://www.iso.org/standard/80394.html
+  last_reviewed: '2026-07-22'
+- id: NIST-PRIVACY-FRAMEWORK-1.0
+  publisher: NIST
+  title: NIST Privacy Framework Version 1.0
+  status: published
+  class: informative-mapping
+  areas:
+  - privacy-risk
+  - privacy-controls
+  canonical_url: https://www.nist.gov/privacy-framework
+  last_reviewed: '2026-07-22'
+- id: INDIA-DPDP-ACT-2023
+  publisher: Government of India
+  title: Digital Personal Data Protection Act, 2023
+  status: published
+  class: jurisdiction-profile
+  areas:
+  - india
+  - data-protection
+  canonical_url: https://www.meity.gov.in/data-protection-framework
+  last_reviewed: '2026-07-22'
+- id: INDIA-DPDP-RULES-2025
+  publisher: Government of India
+  title: Digital Personal Data Protection Rules, 2025
+  status: published
+  class: jurisdiction-profile
+  areas:
+  - india
+  - data-protection
+  canonical_url: https://www.meity.gov.in/documents/act-and-policies/digital-personal-data-protection-rules-2025-gDOxUjMtQWa
+  last_reviewed: '2026-07-22'
+- id: INDIA-CERT-IN-DIRECTIONS-2022
+  publisher: CERT-In
+  title: Directions under section 70B of the Information Technology Act, 2000 dated
+    28 April 2022
+  status: published
+  class: jurisdiction-profile
+  areas:
+  - india
+  - incident-response
+  canonical_url: https://cert-in.org.in/Directions70B.jsp
+  last_reviewed: '2026-07-22'

@@ -1,0 +1,73 @@
+catalogue_id: ondtf-privacy-threats
+version: 0.1.0
+threats:
+- id: PRIV-T-01
+  name: Over-collection
+  principles:
+  - PRIV-P-01
+  - PRIV-P-04
+  control_refs:
+  - PRIV-C-01
+- id: PRIV-T-02
+  name: Secondary use
+  principles:
+  - PRIV-P-01
+  - PRIV-P-04
+  control_refs:
+  - PRIV-C-02
+- id: PRIV-T-03
+  name: Cross-context correlation
+  principles:
+  - PRIV-P-01
+  - PRIV-P-04
+  control_refs:
+  - PRIV-C-03
+- id: PRIV-T-04
+  name: Status-query surveillance
+  principles:
+  - PRIV-P-01
+  - PRIV-P-04
+  control_refs:
+  - PRIV-C-04
+- id: PRIV-T-05
+  name: Issuer-verifier collusion
+  principles:
+  - PRIV-P-01
+  - PRIV-P-04
+  control_refs:
+  - PRIV-C-05
+- id: PRIV-T-06
+  name: Compelled disclosure
+  principles:
+  - PRIV-P-01
+  - PRIV-P-04
+  control_refs:
+  - PRIV-C-06
+- id: PRIV-T-07
+  name: Opaque inference
+  principles:
+  - PRIV-P-01
+  - PRIV-P-04
+  control_refs:
+  - PRIV-C-07
+- id: PRIV-T-08
+  name: Excessive retention
+  principles:
+  - PRIV-P-01
+  - PRIV-P-04
+  control_refs:
+  - PRIV-C-08
+- id: PRIV-T-09
+  name: Bystander exposure
+  principles:
+  - PRIV-P-01
+  - PRIV-P-04
+  control_refs:
+  - PRIV-C-09
+- id: PRIV-T-10
+  name: Unreviewable automated effect
+  principles:
+  - PRIV-P-01
+  - PRIV-P-04
+  control_refs:
+  - PRIV-C-10

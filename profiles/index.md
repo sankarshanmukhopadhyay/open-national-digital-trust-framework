@@ -1,22 +1,29 @@
 ---
 layout: default
 title: Jurisdiction Profiles
-nav_order: 11
+nav_order: 14
 has_children: true
+permalink: /profiles/
 ---
-# Jurisdiction Profiles
+# Jurisdiction profiles
 
-A jurisdiction profile specialises ONDTF for a legal and institutional environment without changing the core semantics.
+A jurisdiction profile specialises ONDTF for a defined legal, institutional, sectoral, and operational context without weakening the jurisdiction-neutral core.
 
-A conforming profile identifies:
+```mermaid
+flowchart LR
+  C[ONDTF core] --> P[Profile method]
+  L[Applicable law and institutions] --> P
+  S[Sector and risk context] --> P
+  P --> R[Profile requirements]
+  P --> M[Mappings and implementation notes]
+  P --> G[Gaps, exceptions and review status]
+```
 
-- competent authorities and governance structure;
-- applicable law and regulatory boundaries;
-- recognised identity, credential, signature, and evidence mechanisms;
-- trust registries and authoritative sources;
-- sector overlays;
-- assurance and accreditation requirements;
-- privacy, data-protection, and localisation constraints;
-- incident, appeal, and redress routes;
-- cross-border recognition rules;
-- declared deviations from ONDTF.
+## Profile documents
+
+- [Profile Methodology](profile-methodology.md)
+- [Profile Template](profile-template.md)
+- [India Profile](india/)
+- [Cross-border Recognition](cross-border.md)
+
+A profile is not legal advice. Legal mappings SHALL state their source, date, status, scope, and review owner.

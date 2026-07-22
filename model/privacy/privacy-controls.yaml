@@ -1,0 +1,63 @@
+catalogue_id: ondtf-privacy-controls
+version: 0.1.0
+controls:
+- id: PRIV-C-01
+  name: Purpose register
+  evidence:
+  - design
+  - implementation
+  - operation
+- id: PRIV-C-02
+  name: Necessity assessment
+  evidence:
+  - design
+  - implementation
+  - operation
+- id: PRIV-C-03
+  name: Proportionality review
+  evidence:
+  - design
+  - implementation
+  - operation
+- id: PRIV-C-04
+  name: Data minimisation
+  evidence:
+  - design
+  - implementation
+  - operation
+- id: PRIV-C-05
+  name: Quality correction
+  evidence:
+  - design
+  - implementation
+  - operation
+- id: PRIV-C-06
+  name: Use enforcement
+  evidence:
+  - design
+  - implementation
+  - operation
+- id: PRIV-C-07
+  name: Transparent notice
+  evidence:
+  - design
+  - implementation
+  - operation
+- id: PRIV-C-08
+  name: Participation workflow
+  evidence:
+  - design
+  - implementation
+  - operation
+- id: PRIV-C-09
+  name: Privacy security safeguards
+  evidence:
+  - design
+  - implementation
+  - operation
+- id: PRIV-C-10
+  name: Accountability evidence
+  evidence:
+  - design
+  - implementation
+  - operation

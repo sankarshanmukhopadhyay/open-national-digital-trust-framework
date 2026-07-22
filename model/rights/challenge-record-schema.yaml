@@ -1,0 +1,12 @@
+schema_id: ondtf-challenge-record
+version: 0.1.0
+required:
+- challenge_id
+- submitted_at
+- affected_parties
+- scope
+- status
+- evidence
+- decision
+- responsible_authority
+properties: {}

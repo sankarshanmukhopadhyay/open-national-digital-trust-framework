@@ -1,0 +1,11 @@
+schema_id: ondtf-data-provenance
+version: 0.1.0
+required:
+- record_id
+- source
+- authority
+- created_at
+- transformations
+- validation
+- current_status
+properties: {}

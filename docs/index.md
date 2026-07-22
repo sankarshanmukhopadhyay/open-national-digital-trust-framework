@@ -64,6 +64,9 @@ flowchart LR
 | [Governance](governance/index.md) | Authorities, communities, delegation, decisions, oversight, and redress |
 | [Canonical workflows](workflows/index.md) | End-to-end lifecycle and trust-resolution flows |
 | [Security](security/index.md) | Assets, assumptions, boundaries, adversaries, threats, and controls |
+| [Data Security](data-security/index.md) | Data classification, lifecycle protection, provenance, retention, and breach response |
+| [Privacy](privacy/index.md) | Purpose, minimisation, unlinkability, impact assessment, threats, and controls |
+| [Rights and Redress](rights/index.md) | Affected parties, transparency, challenge, appeal, remedy, and accountability |
 | [Assurance](assurance/index.md) | Assurance levels, evidence, assessment, and conformance |
 | [Implementation](implementation/index.md) | Deployment patterns, implementation sequence, and reference interfaces |
 | [Worked reference scenario](reference-scenario/index.md) | Instantiated artefacts and end-to-end traceability |

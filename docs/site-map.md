@@ -134,3 +134,11 @@ Machine-readable bindings, model records, governance registers, and validation e
 - [Standards Alignment Method]({{ '/docs/standards/alignment-method.html' | relative_url }})
 - [NIST CSF 2.0 Mapping]({{ '/docs/standards/nist-csf-mapping.html' | relative_url }})
 - [Security and Risk Control Alignment]({{ '/docs/standards/iso-nist-control-alignment.html' | relative_url }})
+
+
+## Data, privacy and rights
+
+- [Data Security](data-security/)
+- [Privacy](privacy/)
+- [Rights and Redress](rights/)
+- [Jurisdiction Profiles](../profiles/)

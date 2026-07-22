@@ -2,6 +2,7 @@
 validate:
 	python3 scripts/validate_repo.py
 	python3 scripts/validate_assurance_references.py
+	python3 scripts/validate_data_privacy_rights.py
 	python3 scripts/check_mermaid_source.py
 	python3 scripts/extract_mermaid.py
 	bash scripts/validate_mermaid.sh

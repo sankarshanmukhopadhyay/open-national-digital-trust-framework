@@ -4,6 +4,12 @@
 
 ### Added
 
+- data-security architecture covering classification, lifecycle, cryptographic protection, provenance, retention, breach response, and third-party governance;
+- privacy architecture covering purpose, minimisation, selective disclosure, unlinkability, registry-query privacy, impact assessment, threats, and controls;
+- affected-party, transparency, challenge, appeal, remedy, and accountability guidance;
+- jurisdiction-profile methodology, template, cross-border model, and an updated informative India profile;
+- machine-readable privacy, data-security, rights, and impact-assessment artefacts with repository validation;
+- standards-register entries for current privacy engineering and India-profile sources.
 - operational risk methodology, assurance evidence model, evaluation conclusions and conformance assessment workflow;
 - continuous assurance, trust observability, resilience, exception handling and metrics guidance;
 - machine-readable risk, conformance, standards-register and NIST CSF mapping artefacts;

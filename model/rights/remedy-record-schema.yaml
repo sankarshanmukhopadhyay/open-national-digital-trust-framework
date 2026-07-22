@@ -1,0 +1,12 @@
+schema_id: ondtf-remedy-record
+version: 0.1.0
+required:
+- remedy_id
+- submitted_at
+- affected_parties
+- scope
+- status
+- evidence
+- decision
+- responsible_authority
+properties: {}

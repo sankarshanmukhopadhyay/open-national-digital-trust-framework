@@ -1,0 +1,13 @@
+catalogue_id: ondtf-data-classification
+version: 0.1.0
+levels:
+- id: DATA-PUBLIC
+  name: Public trust metadata
+- id: DATA-CONTROLLED
+  name: Controlled operational data
+- id: DATA-SENSITIVE
+  name: Sensitive trust data
+- id: DATA-RESTRICTED
+  name: Restricted personal data
+- id: DATA-CRITICAL
+  name: Critical authority data

@@ -1,0 +1,11 @@
+schema_id: ondtf-retention-policy
+version: 0.1.0
+required:
+- policy_id
+- data_class
+- trigger
+- duration
+- owner
+- destruction_method
+- evidence
+properties: {}

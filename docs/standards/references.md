@@ -38,3 +38,8 @@ The canonical machine-readable register is `model/references/standards-register.
 ## Citation policy
 
 References MUST identify the publisher, title, edition or version, publication status, canonical source and date last reviewed. Drafts MUST be marked as drafts. Withdrawn or superseded documents MUST remain traceable when historical mappings depend on them, but MUST NOT be represented as current.
+
+
+## Data security, privacy and jurisdiction references
+
+The register now also includes ISO/IEC 29100:2024, ISO/IEC 27701:2025, ISO/IEC 29134:2023, ISO/IEC 27561:2024, the NIST Privacy Framework 1.0, and initial India-profile sources. Jurisdiction sources are classified as profile material rather than universal ONDTF requirements.

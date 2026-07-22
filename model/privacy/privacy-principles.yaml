@@ -1,0 +1,39 @@
+catalogue_id: ondtf-privacy-principles
+version: 0.1.0
+principles:
+- id: PRIV-P-01
+  name: Purpose legitimacy
+  evidence_required: true
+- id: PRIV-P-02
+  name: Necessity
+  evidence_required: true
+- id: PRIV-P-03
+  name: Proportionality
+  evidence_required: true
+- id: PRIV-P-04
+  name: Data minimisation
+  evidence_required: true
+- id: PRIV-P-05
+  name: Accuracy and quality
+  evidence_required: true
+- id: PRIV-P-06
+  name: Use limitation
+  evidence_required: true
+- id: PRIV-P-07
+  name: Transparency
+  evidence_required: true
+- id: PRIV-P-08
+  name: Individual participation
+  evidence_required: true
+- id: PRIV-P-09
+  name: Security safeguards
+  evidence_required: true
+- id: PRIV-P-10
+  name: Accountability
+  evidence_required: true
+- id: PRIV-P-11
+  name: Retention limitation
+  evidence_required: true
+- id: PRIV-P-12
+  name: Contestability
+  evidence_required: true

@@ -53,7 +53,7 @@ Security controls MUST preserve the meaning and legitimacy of this chain. Protec
 Security, privacy, and assurance are related but distinct:
 
 - **Security** protects the system and its trust decisions against unauthorised, deceptive, unsafe, or disruptive action.
-- **Privacy** constrains how information about people, organisations, relationships, and activity may be collected, disclosed, correlated, retained, and used.
+- [**Privacy**](../privacy/) constrains how information about people, organisations, relationships, and activity may be collected, disclosed, correlated, retained, and used.
 - **Assurance** establishes the justified confidence that a stated property, control, or outcome is true within a declared scope and time.
 
 No one of these substitutes for the others. A secure system can still be privacy-invasive. A privacy-preserving system can still admit an unauthorised action. An independently assessed system can still operate outside the scope that was assessed.

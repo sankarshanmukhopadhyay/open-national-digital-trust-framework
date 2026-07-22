@@ -114,16 +114,49 @@
     title: Canonical Workflows
     url: /docs/workflows/
   next:
+    title: Data Security
+    url: /docs/data-security/
+- path: docs/data-security/index.md
+  title: Data Security
+  url: /docs/data-security/
+  track: Canonical framework
+  position: 12
+  previous:
+    title: Security Architecture
+    url: /docs/security/
+  next:
+    title: Privacy
+    url: /docs/privacy/
+- path: docs/privacy/index.md
+  title: Privacy
+  url: /docs/privacy/
+  track: Canonical framework
+  position: 13
+  previous:
+    title: Data Security
+    url: /docs/data-security/
+  next:
+    title: Rights and Redress
+    url: /docs/rights/
+- path: docs/rights/index.md
+  title: Rights and Redress
+  url: /docs/rights/
+  track: Canonical framework
+  position: 14
+  previous:
+    title: Privacy
+    url: /docs/privacy/
+  next:
     title: Assurance
     url: /docs/assurance/
 - path: docs/assurance/index.md
   title: Assurance
   url: /docs/assurance/
   track: Canonical framework
-  position: 12
+  position: 15
   previous:
-    title: Security Architecture
-    url: /docs/security/
+    title: Rights and Redress
+    url: /docs/rights/
   next:
     title: Implementation Guide
     url: /docs/implementation/
@@ -131,7 +164,7 @@
   title: Implementation Guide
   url: /docs/implementation/
   track: Canonical framework
-  position: 13
+  position: 16
   previous:
     title: Assurance
     url: /docs/assurance/
@@ -142,7 +175,7 @@
   title: Worked Reference Scenario
   url: /docs/reference-scenario/
   track: Canonical framework
-  position: 14
+  position: 17
   previous:
     title: Implementation Guide
     url: /docs/implementation/
@@ -153,7 +186,7 @@
   title: Jurisdiction Profiles
   url: /profiles/
   track: Canonical framework
-  position: 15
+  position: 18
   previous:
     title: Worked Reference Scenario
     url: /docs/reference-scenario/
@@ -164,7 +197,7 @@
   title: Adoption
   url: /docs/adoption/
   track: Canonical framework
-  position: 16
+  position: 19
   previous:
     title: Jurisdiction Profiles
     url: /profiles/
