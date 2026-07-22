@@ -4,6 +4,9 @@
 
 ### Fixed
 
+- Corrected built-site publication checks so pages with explicit permalinks are validated against their actual generated routes.
+- Published machine-readable `model/` artefacts referenced from documentation pages, preventing broken YAML links in the generated site.
+- Replaced repository-root Markdown links on the project page with canonical GitHub links, avoiding unresolved `.md` routes in GitHub Pages.
 - Enabled `jekyll-relative-links` so Markdown source links are rewritten to generated HTML routes on GitHub Pages instead of producing `.md` 404s.
 - Extended built-site validation to verify publication coverage, reject rendered `.md` links, and resolve internal links across the generated site.
 

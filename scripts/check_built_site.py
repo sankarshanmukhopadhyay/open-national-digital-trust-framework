@@ -89,6 +89,27 @@ def load_baseurl() -> str:
 
 
 def source_output(source: Path, site: Path) -> Path:
+    """Return the generated output path, respecting a page's explicit permalink."""
+    text = source.read_text(encoding="utf-8", errors="ignore")
+    permalink = None
+    if text.startswith("---"):
+        match = re.match(r"\A---\s*\n(.*?)\n---\s*(?:\n|\Z)", text, re.DOTALL)
+        if match:
+            front_matter = yaml.safe_load(match.group(1)) or {}
+            permalink = front_matter.get("permalink")
+
+    if permalink:
+        route = str(permalink).split("#", 1)[0].split("?", 1)[0].strip()
+        route = route.lstrip("/")
+        if not route:
+            return site / "index.html"
+        target = site / route
+        if route.endswith("/"):
+            return target / "index.html"
+        if target.suffix:
+            return target
+        return target / "index.html"
+
     rel = source.as_posix()
     return site / (rel[:-3] + ".html")
 

@@ -32,7 +32,6 @@ exclude:
 - Makefile
 - artifacts
 - bindings
-- model
 - governance
 - data
 - '*.zip'
