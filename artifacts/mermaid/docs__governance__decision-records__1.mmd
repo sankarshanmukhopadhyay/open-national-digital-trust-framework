@@ -1,0 +1,12 @@
+sequenceDiagram
+  participant P as Proposer
+  participant A as Competent authority
+  participant R as Reviewers
+  participant G as Governance registry
+  participant I as Implementers
+  P->>A: Submit proposal and impact assessment
+  A->>R: Request review
+  R-->>A: Findings, dissent, conditions
+  A->>G: Publish signed decision record
+  G-->>I: Current policy and effective date
+  I->>G: Implementation evidence

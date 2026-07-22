@@ -1,0 +1,13 @@
+stateDiagram-v2
+  [*] --> Proposed
+  Proposed --> Assessed
+  Assessed --> Approved
+  Approved --> Operational
+  Operational --> Restricted
+  Restricted --> Operational
+  Operational --> Suspended
+  Suspended --> Operational
+  Suspended --> Retired
+  Operational --> Retired
+  Retired --> Archived
+  Archived --> [*]

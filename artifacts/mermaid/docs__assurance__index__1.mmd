@@ -1,0 +1,10 @@
+flowchart LR
+  R[Risk context] --> C[Controls]
+  C --> E[Evidence]
+  E --> A[Assurance evaluation]
+  A --> D[Operational decision]
+  D --> M[Monitoring]
+  M --> I{Material change or incident?}
+  I -->|No| M
+  I -->|Yes| T[Response and recovery]
+  T --> R

@@ -21,6 +21,11 @@ This section makes the repository's maturity, boundaries and future direction vi
 - [v0.5.0 Readiness Checklist](v0.5-readiness-checklist.md)
 - [Feature Completion Integration Review](integration-review.md)
 - [Unresolved Issues Register](unresolved-issues.md)
+- [External Framework Pattern Adoption](external-framework-pattern-adoption.md)
+- [Maturation Governance](maturation-governance.md)
+- [Maturation Release Gates](release-gates.md)
+- [Implementation Evidence Programme](implementation-evidence.md)
+- [Maturation and Adoption Roadmap](adoption-roadmap.md)
 
 ## Canonical repository documents
 

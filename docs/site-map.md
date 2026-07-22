@@ -153,6 +153,11 @@ Machine-readable bindings, model records, governance registers, and validation e
 - [v0.5.0 Readiness Checklist]({{ '/docs/project/v0.5-readiness-checklist.html' | relative_url }})
 - [Feature Completion Integration Review]({{ '/docs/project/integration-review.html' | relative_url }})
 - [Unresolved Issues Register]({{ '/docs/project/unresolved-issues.html' | relative_url }})
+- [External Framework Pattern Adoption]({{ '/docs/project/external-framework-pattern-adoption.html' | relative_url }})
+- [Maturation Governance]({{ '/docs/project/maturation-governance.html' | relative_url }})
+- [Maturation Release Gates]({{ '/docs/project/release-gates.html' | relative_url }})
+- [Implementation Evidence Programme]({{ '/docs/project/implementation-evidence.html' | relative_url }})
+- [Maturation and Adoption Roadmap]({{ '/docs/project/adoption-roadmap.html' | relative_url }})
 - [Standards Register]({{ '/docs/standards/references.html' | relative_url }})
 
 - [Foundational Principles]({{ '/docs/project/foundational-principles.html' | relative_url }})

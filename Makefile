@@ -4,6 +4,7 @@ validate:
 	python3 scripts/validate_assurance_references.py
 	python3 scripts/validate_data_privacy_rights.py
 	python3 scripts/validate_integration.py
+	python3 scripts/validate_maturation.py
 	python3 scripts/validate_release.py
 	python3 scripts/check_mermaid_source.py
 	python3 scripts/extract_mermaid.py

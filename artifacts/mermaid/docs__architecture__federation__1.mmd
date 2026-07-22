@@ -1,0 +1,8 @@
+flowchart LR
+  A[Trust Domain A] --> RA[Recognition Agreement]
+  B[Trust Domain B] --> RA
+  RA --> M[Semantic and assurance mappings]
+  M --> G[Federation Gateway]
+  G --> D{Local policy decision}
+  D -->|recognised| U[Bounded use]
+  D -->|not recognised| N[Deny or seek additional evidence]

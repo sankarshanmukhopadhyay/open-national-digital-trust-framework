@@ -1,0 +1,11 @@
+sequenceDiagram
+  participant A as Authorised Authority
+  participant S as Status Service
+  participant N as Notification Service
+  participant R as Relying Systems
+  A->>S: Signed status event and effective time
+  S->>S: Validate authority and prior state
+  S->>N: Publish change notification
+  N-->>R: Status update or invalidation signal
+  R->>S: Resolve current state
+  S-->>R: State, reason class and freshness

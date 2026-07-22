@@ -1,0 +1,16 @@
+stateDiagram-v2
+  [*] --> Proposed
+  Proposed --> Evaluating
+  Evaluating --> Admitted
+  Evaluating --> Denied
+  Evaluating --> Deferred
+  Evaluating --> Conditioned
+  Conditioned --> Admitted: obligations satisfied
+  Conditioned --> Denied: obligations failed
+  Admitted --> Executed
+  Admitted --> Expired
+  Executed --> Challenged
+  Denied --> Challenged
+  Challenged --> Upheld
+  Challenged --> Corrected
+  Corrected --> Remedied

@@ -1,0 +1,9 @@
+flowchart TD
+  A[Application] --> I[Identity and role validation]
+  I --> U[Authority and eligibility checks]
+  U --> R[Risk and assurance assessment]
+  R --> D{Admission decision}
+  D -->|Admit| P[Publish participant and role status]
+  D -->|Condition| C[Record obligations and deadline]
+  D -->|Deny| N[Notify reasons and challenge route]
+  C --> P

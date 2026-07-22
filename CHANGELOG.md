@@ -2,7 +2,17 @@
 
 ## [Unreleased]
 
-No unreleased changes.
+### Added
+
+- A canonical maturation register connecting known limitations, unresolved issues, maturation programmes, external-framework adoption patterns, release gates and required evidence.
+- An external-framework pattern adoption strategy with source taxonomy, adoption principles, candidate pattern catalogue, decision lifecycle and release mapping.
+- Maturation governance, release-gate, implementation-evidence and adoption-roadmap pages.
+- Automated maturation validation integrated into local and GitHub Actions quality gates.
+
+### Changed
+
+- Transformed Known Limitations, Future Work and the Unresolved Issues Register into coordinated human-readable views of the canonical maturation register.
+
 
 ## [0.5.0] - 2026-07-22
 

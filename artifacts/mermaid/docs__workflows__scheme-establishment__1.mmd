@@ -1,0 +1,11 @@
+sequenceDiagram
+  participant M as Mandating Authority
+  participant G as Governance Authority
+  participant A as Assurance Function
+  participant P as Public Register
+  M->>G: Issue mandate and scope
+  G->>G: Define rules, roles and decision rights
+  G->>A: Request readiness assessment
+  A-->>G: Findings and limitations
+  G->>G: Approve scheme and residual risks
+  G->>P: Publish governance record and effective date

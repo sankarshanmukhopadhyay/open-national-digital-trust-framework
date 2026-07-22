@@ -1,0 +1,10 @@
+flowchart TD
+  C[Context and impact assessment] --> T[Threat and trust-assumption analysis]
+  T --> D[Security design and control selection]
+  D --> V[Verification and independent assessment]
+  V --> O[Authorised operation]
+  O --> M[Monitoring and evidence collection]
+  M --> R{Material change or incident?}
+  R -->|No| O
+  R -->|Yes| C2[Contain, reassess and update]
+  C2 --> D

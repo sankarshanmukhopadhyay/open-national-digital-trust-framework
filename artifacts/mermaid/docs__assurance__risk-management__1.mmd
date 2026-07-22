@@ -1,0 +1,13 @@
+flowchart TD
+  S[Establish scope and decision context] --> A[Identify assets, parties and dependencies]
+  A --> T[Identify threats and failure modes]
+  T --> I[Estimate likelihood and impact]
+  I --> C[Select controls and owners]
+  C --> E[Collect effectiveness evidence]
+  E --> R[Determine residual risk]
+  R --> D{Within approved tolerance?}
+  D -->|Yes| O[Authorise with monitoring conditions]
+  D -->|No| M[Mitigate, transfer, avoid or defer]
+  O --> V[Monitor indicators and change]
+  M --> V
+  V --> S

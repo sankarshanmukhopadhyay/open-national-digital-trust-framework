@@ -1,0 +1,15 @@
+flowchart TB
+  ONDTF[ONDTF core]
+  JP[Jurisdiction profiles]
+  SP[Sector profiles]
+  DEP[Deployments]
+  TSMM[Optional TSMM compatibility]
+  TIS[Optional TIS compatibility]
+  OTHER[Other compatible standards and models]
+  ONDTF --> JP
+  ONDTF --> SP
+  JP --> DEP
+  SP --> DEP
+  TSMM -.-> DEP
+  TIS -.-> DEP
+  OTHER -.-> DEP

@@ -1,0 +1,531 @@
+schema_version: 1.0
+framework_version: 0.5.0
+status: active
+last_reviewed: 2026-07-22
+purpose: >-
+  Canonical register connecting disclosed framework boundaries, unresolved maturity
+  issues, maturation programmes, external-framework patterns, release gates and
+  required evidence for the path from v0.5.0 to Candidate Specification status.
+
+boundary_types:
+  enduring: A deliberate framework boundary that should remain visible and is not expected to disappear.
+  reducible: A maturity constraint that can be reduced through implementation, evidence or review.
+  maintained: A continuing governance risk requiring periodic review and change control.
+
+limitations:
+  - id: LIM-01
+    title: Independent implementation evidence remains limited
+    type: reducible
+    consequence: Claims of portability, implementability and interoperability remain provisional.
+    mitigation: Use reference artefacts as design guidance and record implementation deviations.
+    linked_issues: [URI-01]
+  - id: LIM-02
+    title: Standards mappings are informative unless selected by a profile
+    type: enduring
+    consequence: A mapping alone does not create a normative dependency or conformance obligation.
+    mitigation: Profiles must identify selected standards, editions, options and precedence rules.
+    linked_issues: [URI-07, URI-19]
+  - id: LIM-03
+    title: Jurisdiction profiles are implementation aids, not legal advice
+    type: enduring
+    consequence: Adoption without competent local review may misstate legal effect or institutional authority.
+    mitigation: Apply the jurisdiction-profile assurance stages and record legal cut-off dates.
+    linked_issues: [URI-03]
+  - id: LIM-04
+    title: Quantitative thresholds require contextual calibration
+    type: reducible
+    consequence: Default values may not represent sector risk, operational conditions or acceptable uncertainty.
+    mitigation: Treat thresholds as profile-governed parameters and retain source evidence and confidence ranges.
+    linked_issues: [URI-02]
+  - id: LIM-05
+    title: Reference schemas and fixtures are not production software
+    type: enduring
+    consequence: Repository artefacts do not establish security, availability or implementation fitness.
+    mitigation: Classify artefacts by maturity and validate production implementations independently.
+    linked_issues: [URI-04]
+  - id: LIM-06
+    title: Cross-border recognition depends on external legal and institutional arrangements
+    type: enduring
+    consequence: Technical compatibility does not create recognition, liability allocation or legal effect.
+    mitigation: Use recognition profiles that record authority, scope, equivalence, exclusions and dispute handling.
+    linked_issues: [URI-16]
+  - id: LIM-07
+    title: Cryptographic and protocol choices remain profile-dependent
+    type: enduring
+    consequence: Core conformance does not imply protocol or cryptographic interoperability.
+    mitigation: Technology profiles must declare versions, suites, status mechanisms and transition rules.
+    linked_issues: [URI-05, URI-12]
+  - id: LIM-08
+    title: Repository validation is not implementation or scheme conformance
+    type: enduring
+    consequence: Passing repository checks cannot support a provider, product or organisational conformance claim.
+    mitigation: Use an adopted assessment scheme with evidence, assessor competence and lifecycle controls.
+    linked_issues: [URI-04, URI-09]
+  - id: LIM-09
+    title: Standards and regulatory sources change over time
+    type: maintained
+    consequence: Profiles and mappings may become stale or materially inaccurate.
+    mitigation: Operate the reference-maintenance policy and trigger impact review when sources change.
+    linked_issues: [URI-07, URI-18]
+
+programmes:
+  - id: MPR-01
+    title: Normative and role architecture
+    objective: Convert architectural responsibilities into precise role-specific obligations and institutional decision rights.
+    target_releases: [v0.6.0]
+    linked_issues: [URI-08, URI-10, URI-11]
+  - id: MPR-02
+    title: Conformance and accreditation
+    objective: Define assessment claims, evidence, assessor competence, certification lifecycle and supervisory controls.
+    target_releases: [v0.6.0, v0.7.0]
+    linked_issues: [URI-04, URI-09]
+  - id: MPR-03
+    title: Profiles and external-framework adoption
+    objective: Provide disciplined jurisdiction, sector and technology profiling and adopt proven external patterns without importing incompatible assumptions.
+    target_releases: [v0.6.0, v0.7.0, v0.8.0]
+    linked_issues: [URI-03, URI-07, URI-12, URI-16, URI-19]
+  - id: MPR-04
+    title: Implementation and interoperability
+    objective: Accumulate independent implementation evidence, executable fixtures and cross-implementation results.
+    target_releases: [v0.7.0, v0.8.0]
+    linked_issues: [URI-01, URI-04]
+  - id: MPR-05
+    title: Evidence and quantitative calibration
+    objective: Calibrate assurance thresholds, metrics, scale, recovery and operational risk parameters from evidence.
+    target_releases: [v0.7.0, v0.8.0]
+    linked_issues: [URI-02, URI-13, URI-14]
+  - id: MPR-06
+    title: Rights, accessibility and remedy validation
+    objective: Validate inclusion, affected-party journeys, challenge, appeal and remedy in operational scenarios.
+    target_releases: [v0.6.0, v0.7.0, v0.8.0]
+    linked_issues: [URI-06, URI-17]
+  - id: MPR-07
+    title: Candidate-specification governance
+    objective: Establish issue closure, traceability, normative stability, independent review and controlled change.
+    target_releases: [v0.9.0]
+    linked_issues: [URI-15, URI-18]
+
+issues:
+  - id: URI-01
+    title: No multi-implementation interoperability evidence
+    category: implementation
+    risk: high
+    disposition: accepted_for_feature_complete_draft
+    target_release: v0.8.0
+    owner_role: Implementation and Interoperability Workstream
+    closure_evidence: At least two independent profile implementations and documented cross-implementation test results.
+    programmes: [MPR-04]
+    patterns: [EPA-013, EPA-014]
+    status: open
+  - id: URI-02
+    title: Quantitative thresholds require empirical calibration
+    category: assurance
+    risk: medium
+    disposition: profile_governed
+    target_release: v0.8.0
+    owner_role: Assurance and Evidence Workstream
+    closure_evidence: Pilot data, incident evidence, confidence ranges and sector review for any proposed defaults.
+    programmes: [MPR-05]
+    patterns: [EPA-006, EPA-015]
+    status: open
+  - id: URI-03
+    title: Jurisdiction profiles require competent current legal review
+    category: jurisdiction
+    risk: high
+    disposition: informative_only
+    target_release: v0.7.0
+    owner_role: Jurisdiction Profile Maintainer
+    closure_evidence: One profile carrying documented expert and competent legal review with cut-off date and unresolved questions.
+    programmes: [MPR-03]
+    patterns: [EPA-003, EPA-009]
+    status: open
+  - id: URI-04
+    title: Reference catalogues are not a complete conformance suite
+    category: conformance
+    risk: high
+    disposition: accepted_for_feature_complete_draft
+    target_release: v0.7.0
+    owner_role: Conformance Workstream
+    closure_evidence: Executable positive, negative, boundary and lifecycle assertions used against an independent implementation.
+    programmes: [MPR-02, MPR-04]
+    patterns: [EPA-001, EPA-002, EPA-013]
+    status: open
+  - id: URI-05
+    title: Privacy-preserving status and cross-domain resolution patterns need comparison
+    category: privacy
+    risk: medium
+    disposition: profile_dependent
+    target_release: v0.7.0
+    owner_role: Privacy Engineering Workstream
+    closure_evidence: Comparative analysis and test cases covering correlation, query leakage, freshness, caching and offline verification.
+    programmes: [MPR-03]
+    patterns: [EPA-011, EPA-012]
+    status: open
+  - id: URI-06
+    title: Accessibility is not validated across downstream implementation patterns
+    category: accessibility
+    risk: high
+    disposition: explicit_implementation_obligation
+    target_release: v0.7.0
+    owner_role: Rights and Inclusion Workstream
+    closure_evidence: Accessibility assessment of pilot journeys, assisted-use paths, recovery and non-smartphone alternatives.
+    programmes: [MPR-06]
+    patterns: [EPA-010]
+    status: open
+  - id: URI-07
+    title: Standards and regulatory instruments may change after publication
+    category: maintenance
+    risk: medium
+    disposition: monitored
+    target_release: v0.6.0
+    owner_role: Reference Register Maintainer
+    closure_evidence: Approved review cadence, source-change triggers, impact classification and migration procedure.
+    programmes: [MPR-03]
+    patterns: [EPA-016]
+    status: open
+  - id: URI-08
+    title: No complete role-specific normative obligations catalogue
+    category: normative
+    risk: high
+    disposition: planned
+    target_release: v0.6.0
+    owner_role: Core Specification Workstream
+    closure_evidence: Traceable SHALL/SHOULD requirements assigned to defined roles with testable evidence expectations.
+    programmes: [MPR-01]
+    patterns: [EPA-004, EPA-005]
+    status: open
+  - id: URI-09
+    title: No fully specified accreditation and certification operating model
+    category: conformance
+    risk: high
+    disposition: planned
+    target_release: v0.6.0
+    owner_role: Conformance and Accreditation Workstream
+    closure_evidence: Defined scheme owner, assessor competence, assessment lifecycle, surveillance, suspension, withdrawal and appeals.
+    programmes: [MPR-02]
+    patterns: [EPA-001, EPA-002, EPA-003]
+    status: open
+  - id: URI-10
+    title: No complete provider lifecycle
+    category: operations
+    risk: high
+    disposition: planned
+    target_release: v0.6.0
+    owner_role: Operating Model Workstream
+    closure_evidence: Admission, activation, monitoring, change, suspension, revocation, exit and continuity workflows with decision rights.
+    programmes: [MPR-01]
+    patterns: [EPA-002, EPA-005]
+    status: open
+  - id: URI-11
+    title: No operational institutional-governance profile for national deployment
+    category: governance
+    risk: high
+    disposition: planned
+    target_release: v0.6.0
+    owner_role: Governance Workstream
+    closure_evidence: Worked institutional profile assigning governing, administrative, supervisory, assessment, appeal and incident functions.
+    programmes: [MPR-01]
+    patterns: [EPA-003, EPA-004]
+    status: open
+  - id: URI-12
+    title: No complete sector-profile construction and validation method
+    category: profiles
+    risk: medium
+    disposition: planned
+    target_release: v0.6.0
+    owner_role: Profile Architecture Workstream
+    closure_evidence: Profile template, dependency rules, validation checklist, precedence model and one worked sector profile.
+    programmes: [MPR-03]
+    patterns: [EPA-007, EPA-008, EPA-011]
+    status: open
+  - id: URI-13
+    title: Performance, scale and recovery requirements lack tested baselines
+    category: resilience
+    risk: medium
+    disposition: evidence_required
+    target_release: v0.8.0
+    owner_role: Operations and Resilience Workstream
+    closure_evidence: Reproducible workload, failure, recovery and dependency-degradation tests with profile-specific baselines.
+    programmes: [MPR-05]
+    patterns: [EPA-014, EPA-015]
+    status: open
+  - id: URI-14
+    title: Adversarial exercises and incident simulations have not been executed
+    category: security
+    risk: high
+    disposition: evidence_required
+    target_release: v0.7.0
+    owner_role: Security and Resilience Workstream
+    closure_evidence: Recorded tabletop and technical exercises covering authority abuse, revocation lag, compromise and recovery.
+    programmes: [MPR-05]
+    patterns: [EPA-015]
+    status: open
+  - id: URI-15
+    title: Internationalisation and terminology require cross-jurisdiction validation
+    category: editorial
+    risk: medium
+    disposition: planned
+    target_release: v0.9.0
+    owner_role: Specification Editorial Workstream
+    closure_evidence: Terminology review across multiple jurisdictions and documented resolution of material semantic conflicts.
+    programmes: [MPR-07]
+    patterns: [EPA-007]
+    status: open
+  - id: URI-16
+    title: No assurance-equivalence model for cross-framework recognition
+    category: recognition
+    risk: high
+    disposition: planned
+    target_release: v0.8.0
+    owner_role: Recognition and Interoperability Workstream
+    closure_evidence: Recognition profile with equivalence criteria, exclusions, liability, status, suspension and dispute handling.
+    programmes: [MPR-03]
+    patterns: [EPA-003, EPA-009]
+    status: open
+  - id: URI-17
+    title: No end-to-end pilot of challenge, appeal and remedy
+    category: rights
+    risk: high
+    disposition: evidence_required
+    target_release: v0.7.0
+    owner_role: Rights and Redress Workstream
+    closure_evidence: Pilot demonstrating notice, evidence access, challenge, independent review, remedy and outcome traceability.
+    programmes: [MPR-06]
+    patterns: [EPA-010]
+    status: open
+  - id: URI-18
+    title: No complete maintenance model for standards, profiles and controlled documents
+    category: governance
+    risk: medium
+    disposition: planned
+    target_release: v0.6.0
+    owner_role: Change Control Authority
+    closure_evidence: Controlled-document inventory, ownership, cadence, emergency change path, deprecation and migration rules.
+    programmes: [MPR-07]
+    patterns: [EPA-004, EPA-016]
+    status: open
+  - id: URI-19
+    title: No formal process for importing proven external-framework patterns
+    category: architecture
+    risk: medium
+    disposition: addressed_by_strategy
+    target_release: v0.6.0
+    owner_role: Architecture and Profile Workstream
+    closure_evidence: Pattern-adoption strategy, catalogue, decision criteria, traceability and at least one completed adoption decision.
+    programmes: [MPR-03]
+    patterns: [EPA-001, EPA-002, EPA-003, EPA-004, EPA-005, EPA-006, EPA-007, EPA-008, EPA-009, EPA-010, EPA-011, EPA-012, EPA-013, EPA-014, EPA-015, EPA-016]
+    status: in_progress
+
+external_framework_families:
+  - id: EFF-01
+    name: Regulatory trust-service frameworks
+    examples: [eIDAS and the EU Digital Identity Framework]
+    use: Legal effect, supervision, qualified status and cross-border recognition patterns.
+  - id: EFF-02
+    name: National digital identity trust frameworks
+    examples: [UK Digital Verification Services Trust Framework, Australian Digital ID framework, New Zealand Digital Identity Services Trust Framework]
+    use: Provider obligations, accreditation, registers, trustmarks, monitoring and enforcement.
+  - id: EFF-03
+    name: Modular trust-framework and governance metamodels
+    examples: [Pan-Canadian Trust Framework, Trust Over IP governance specifications]
+    use: Modular components, controlled documents, role separation and reusable governance structure.
+  - id: EFF-04
+    name: Assurance, risk and management-system standards
+    examples: [NIST SP 800-63, NIST CSF, ISO IEC 27001, ISO IEC 42001, ISACA DTEF]
+    use: Assurance levels, risk treatment, controls, auditability and management-system discipline.
+  - id: EFF-05
+    name: Sector operational frameworks
+    examples: [Open Banking UK, Australian Consumer Data Right, FDX, Brazilian Open Finance]
+    use: Participant certification, API security, consent, service levels and incident obligations.
+  - id: EFF-06
+    name: Digital public infrastructure ecosystems
+    examples: [India Stack, e-Estonia, Singapore NDI, Bhutan NDI, gov.br]
+    use: Scale, integration, recovery, ecosystem operations and public-service delivery patterns.
+  - id: EFF-07
+    name: Technical interoperability specifications
+    examples: [W3C VC and DID, OpenID protocols, FIDO2, ISO mdoc, ETSI trusted lists]
+    use: Credential, authentication, federation, cryptographic and status interoperability selected by profiles.
+
+patterns:
+  - id: EPA-001
+    title: Independent conformity assessment
+    source_families: [EFF-02, EFF-04]
+    destination: core
+    target_release: v0.6.0
+    adoption_status: candidate
+    mapped_concepts: [ConformanceClaim, EvidenceBundle, Assessor, AssuranceConclusion]
+    rationale: Separate self-assertion from independently evaluated conformance.
+    safeguards: Preserve scheme-specific competence and legal requirements in profiles.
+    evidence_required: Assessment lifecycle and one worked evidence-to-conclusion example.
+  - id: EPA-002
+    title: Provider accreditation and certification lifecycle
+    source_families: [EFF-02, EFF-05]
+    destination: profile
+    target_release: v0.6.0
+    adoption_status: candidate
+    mapped_concepts: [Participant, Service, Status, Suspension, Withdrawal]
+    rationale: Make admission, surveillance, suspension and exit explicit.
+    safeguards: Do not imply statutory accreditation without an authorised scheme owner.
+    evidence_required: Worked provider lifecycle and decision-right allocation.
+  - id: EPA-003
+    title: Supervisory authority, public register and recognition status
+    source_families: [EFF-01, EFF-02]
+    destination: profile
+    target_release: v0.6.0
+    adoption_status: candidate
+    mapped_concepts: [GoverningAuthority, SupervisoryAuthority, TrustRegistry, RecognitionDecision]
+    rationale: Connect governance decisions to publicly resolvable status and accountability.
+    safeguards: Keep legal effect, liability and enforcement jurisdiction-specific.
+    evidence_required: Institutional profile and registry/status workflow.
+  - id: EPA-004
+    title: Controlled governance document set
+    source_families: [EFF-03]
+    destination: core
+    target_release: v0.6.0
+    adoption_status: candidate
+    mapped_concepts: [ControlDocument, Policy, DecisionRight, ChangeRecord]
+    rationale: Make governance artefacts versioned, owned, reviewable and traceable.
+    safeguards: Avoid importing external nomenclature where ONDTF concepts already exist.
+    evidence_required: Controlled-document catalogue and change-control procedure.
+  - id: EPA-005
+    title: Role-specific normative obligations
+    source_families: [EFF-02, EFF-03, EFF-05]
+    destination: core
+    target_release: v0.6.0
+    adoption_status: candidate
+    mapped_concepts: [Role, Duty, Requirement, EvidenceExpectation]
+    rationale: Convert architectural functions into testable responsibilities.
+    safeguards: Distinguish universal obligations from profile-specific legal duties.
+    evidence_required: Normative obligation catalogue with traceability.
+  - id: EPA-006
+    title: Multi-dimensional assurance levels
+    source_families: [EFF-04]
+    destination: core
+    target_release: v0.6.0
+    adoption_status: candidate
+    mapped_concepts: [IdentityAssurance, AuthorityAssurance, DelegationAssurance, OperationalAssurance, RemedyReadiness]
+    rationale: Avoid collapsing different assurance questions into one trust score.
+    safeguards: Do not transplant thresholds without contextual calibration.
+    evidence_required: Dimension definitions, level criteria and profile-selection rules.
+  - id: EPA-007
+    title: Modular profile construction
+    source_families: [EFF-03]
+    destination: core
+    target_release: v0.6.0
+    adoption_status: candidate
+    mapped_concepts: [JurisdictionProfile, SectorProfile, TechnologyProfile, Dependency]
+    rationale: Allow selective adoption without fragmenting the core architecture.
+    safeguards: Define precedence, conflict resolution and version compatibility.
+    evidence_required: Profile template and validation checklist.
+  - id: EPA-008
+    title: Sector participant and service obligations
+    source_families: [EFF-05]
+    destination: profile
+    target_release: v0.6.0
+    adoption_status: candidate
+    mapped_concepts: [ParticipantRole, ServiceLevel, ConsentRecord, IncidentObligation]
+    rationale: Make ONDTF usable in regulated operational ecosystems.
+    safeguards: Reference existing sector protocols rather than duplicating them.
+    evidence_required: One worked sector profile.
+  - id: EPA-009
+    title: Cross-framework recognition profile
+    source_families: [EFF-01, EFF-03, EFF-07]
+    destination: profile
+    target_release: v0.8.0
+    adoption_status: candidate
+    mapped_concepts: [RecognitionDecision, Equivalence, Scope, Exclusion, Liability]
+    rationale: Express how assurance from another framework is accepted without asserting universal equivalence.
+    safeguards: Require legal basis, scope, status, suspension and dispute handling.
+    evidence_required: Bilateral or multi-framework recognition example.
+  - id: EPA-010
+    title: Accessible challenge, appeal and remedy operations
+    source_families: [EFF-01, EFF-02]
+    destination: core
+    target_release: v0.6.0
+    adoption_status: candidate
+    mapped_concepts: [AffectedParty, Notice, Challenge, Appeal, Remedy]
+    rationale: Treat redress as part of the trust system rather than an external complaint channel.
+    safeguards: Preserve procedural rights and local legal remedies in jurisdiction profiles.
+    evidence_required: End-to-end pilot journey and accessibility review.
+  - id: EPA-011
+    title: Consent and authorisation evidence for data exchange
+    source_families: [EFF-05, EFF-06]
+    destination: profile
+    target_release: v0.6.0
+    adoption_status: candidate
+    mapped_concepts: [AuthorityGrant, ConsentRecord, Purpose, DataAccessDecision]
+    rationale: Connect consent and authorisation to scope, evidence, expiry and revocation.
+    safeguards: Do not treat consent as the only lawful basis or as blanket authority.
+    evidence_required: Sector-specific transaction flow and revocation test.
+  - id: EPA-012
+    title: Privacy-preserving status and registry resolution
+    source_families: [EFF-07]
+    destination: implementation_guidance
+    target_release: v0.7.0
+    adoption_status: evaluate
+    mapped_concepts: [Status, RegistryQuery, CorrelationRisk, Freshness]
+    rationale: Balance status freshness and interoperability against query leakage and correlation.
+    safeguards: Evaluate multiple mechanisms and avoid universal protocol selection in the core.
+    evidence_required: Comparative privacy and performance evaluation.
+  - id: EPA-013
+    title: Executable conformance fixtures
+    source_families: [EFF-04, EFF-05, EFF-07]
+    destination: implementation_guidance
+    target_release: v0.7.0
+    adoption_status: candidate
+    mapped_concepts: [Assertion, TestVector, EvidenceBundle, ConformanceResult]
+    rationale: Make requirements falsifiable across implementations.
+    safeguards: Separate repository integrity tests from implementation and scheme conformance.
+    evidence_required: Positive, negative, boundary and lifecycle tests.
+  - id: EPA-014
+    title: Interoperability and scale test events
+    source_families: [EFF-05, EFF-06, EFF-07]
+    destination: implementation_guidance
+    target_release: v0.8.0
+    adoption_status: candidate
+    mapped_concepts: [InteroperabilityResult, PerformanceEvidence, RecoveryEvidence]
+    rationale: Replace assumed interoperability with independently observed results.
+    safeguards: Publish workload, topology, versions, failures and limitations.
+    evidence_required: Multi-implementation test report.
+  - id: EPA-015
+    title: Continuous assurance and operational exercise evidence
+    source_families: [EFF-04, EFF-06]
+    destination: core
+    target_release: v0.7.0
+    adoption_status: candidate
+    mapped_concepts: [Metric, Incident, Exercise, ResidualRisk, AssuranceConclusion]
+    rationale: Extend trust beyond point-in-time certification.
+    safeguards: Keep thresholds profile-specific and preserve uncertainty.
+    evidence_required: Tabletop, technical exercise and operational metric evidence.
+  - id: EPA-016
+    title: Reference and controlled-document maintenance
+    source_families: [EFF-01, EFF-03, EFF-04]
+    destination: core
+    target_release: v0.6.0
+    adoption_status: candidate
+    mapped_concepts: [ReferenceRegister, ControlDocument, ChangeTrigger, Migration]
+    rationale: Prevent standards, mappings and profiles from silently becoming stale.
+    safeguards: Require human impact review for substantive source changes.
+    evidence_required: Review cadence, source-change trigger and migration procedure.
+
+release_gates:
+  - release: v0.6.0
+    name: Operational Framework Draft
+    required_programmes: [MPR-01, MPR-02, MPR-03]
+    required_issue_progress: [URI-07, URI-08, URI-09, URI-10, URI-11, URI-12, URI-18, URI-19]
+    gate: Core role obligations, operating model, conformance architecture, profile kit and external-pattern governance are published and internally traceable.
+  - release: v0.7.0
+    name: Implementation and Evaluation Draft
+    required_programmes: [MPR-02, MPR-04, MPR-06]
+    required_issue_progress: [URI-03, URI-04, URI-05, URI-06, URI-14, URI-17]
+    gate: At least one independent implementation, executable baseline tests, exercise evidence and reviewed user journeys are available.
+  - release: v0.8.0
+    name: Interoperability and Recognition Draft
+    required_programmes: [MPR-03, MPR-04, MPR-05]
+    required_issue_progress: [URI-01, URI-02, URI-13, URI-16]
+    gate: Multi-implementation results, calibrated evidence, tested recovery and a recognition profile are available.
+  - release: v0.9.0
+    name: Candidate Specification
+    required_programmes: [MPR-07]
+    required_issue_progress: [URI-15]
+    gate: Normative language is stable, high-severity issues are closed or formally accepted, traceability is complete, independent implementations exist and change control is credible.

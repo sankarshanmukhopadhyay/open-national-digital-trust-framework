@@ -1,0 +1,12 @@
+flowchart LR
+  S[External source] --> P[Identify proven pattern]
+  P --> A[Abstract transferable capability]
+  A --> M[Map to ONDTF concepts]
+  M --> D{Destination}
+  D -->|Core| C[Jurisdiction-neutral requirement]
+  D -->|Profile| R[Jurisdiction, sector or technology rule]
+  D -->|Guidance| I[Implementation pattern or fixture]
+  C --> E[Evidence and review]
+  R --> E
+  I --> E
+  E --> N[Normative adoption or documented rejection]
