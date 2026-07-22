@@ -1,0 +1,34 @@
+schema_version: 1.0.0
+framework_version_reviewed: 0.4.0
+target_release: 0.5.0
+release_label: Feature Complete Draft
+status: ready_for_release_commit
+capability_domains:
+  core_specification: complete
+  governance_and_authority: complete
+  architecture_and_information: complete
+  security_and_controls: complete
+  assurance_risk_and_resilience: complete
+  data_security_and_privacy: complete
+  rights_and_redress: complete
+  profiles_and_interoperability: complete_for_draft
+  reference_scenario: complete_for_draft
+  documentation_experience: complete
+quality_gates:
+  repository_validation: required
+  integration_validation: required
+  standards_reference_validation: required
+  data_privacy_rights_validation: required
+  mermaid_source_validation: required
+  mermaid_render_validation: required
+  jekyll_build_validation: required
+  built_site_link_validation: required
+release_actions_pending:
+  - update_version_bearing_files
+  - update_maturity_label
+  - finalise_changelog_and_release_notes
+  - verify_pages_deployment
+  - create_release_tag
+known_issues_register: docs/project/unresolved-issues.md
+readiness_checklist: docs/project/v0.5-readiness-checklist.md
+integration_review: docs/project/integration-review.md

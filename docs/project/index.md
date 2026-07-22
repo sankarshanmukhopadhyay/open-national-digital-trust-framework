@@ -16,6 +16,9 @@ This section makes the repository's maturity, boundaries and future direction vi
 - [Design Decisions](design-decisions.md)
 - [Future Work](future-work.md)
 - [Implementation Status](implementation-status.md)
+- [v0.5.0 Readiness Checklist](v0.5-readiness-checklist.md)
+- [Feature Completion Integration Review](integration-review.md)
+- [Unresolved Issues Register](unresolved-issues.md)
 
 ## Canonical repository documents
 

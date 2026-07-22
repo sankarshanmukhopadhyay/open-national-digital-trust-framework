@@ -24,11 +24,35 @@ Each citation MUST identify a stable register identifier. Drafts and candidate p
 
 ## Complete register
 
-| Identifier | Publisher | Publication | Status | ONDTF use | Class |
-|---|---|---|---|---|---|
+<div class="ondtf-table-scroll" role="region" aria-label="Complete ONDTF standards register" tabindex="0">
+<table class="ondtf-reference-table">
+  <thead>
+    <tr>
+      <th scope="col">Identifier</th>
+      <th scope="col">Publisher</th>
+      <th scope="col">Publication</th>
+      <th scope="col">Status</th>
+      <th scope="col">ONDTF use</th>
+      <th scope="col">Class</th>
+    </tr>
+  </thead>
+  <tbody>
 {% assign sorted_refs = site.data.standards_register.references | sort: "id" %}
-{% for ref in sorted_refs %}<a id="ref-{{ ref.id }}"></a>| `{{ ref.id }}` | {{ ref.publisher }} | [{{ ref.title }}]({{ ref.canonical_url }}) | {{ ref.status }} | {{ ref.ondtf_use }} | {{ ref.class }} |
+{% for ref in sorted_refs %}
+    <tr id="ref-{{ ref.id }}">
+      <td><code>{{ ref.id }}</code></td>
+      <td>{{ ref.publisher }}</td>
+      <td><a href="{{ ref.canonical_url }}">{{ ref.title }}</a></td>
+      <td>{{ ref.status }}</td>
+      <td>{{ ref.ondtf_use }}</td>
+      <td>{{ ref.class }}</td>
+    </tr>
 {% endfor %}
+  </tbody>
+</table>
+</div>
+
+The table is horizontally scrollable on narrow screens. Each row has a stable anchor of the form `#ref-IDENTIFIER`, which is the canonical target for citations elsewhere in ONDTF.
 
 ## Maintenance
 

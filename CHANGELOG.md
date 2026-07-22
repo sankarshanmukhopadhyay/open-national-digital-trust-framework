@@ -1,12 +1,19 @@
 # Changelog
 
+## [Unreleased]
+
 ### Added
 
 - Project readiness pages covering feature completeness, known limitations, design decisions, future work and implementation status.
 - A single comprehensive standards, specifications, guidelines and jurisdictional instruments register with stable citation identifiers.
 - Citation validation and a Jekyll data mirror used to render the maintained register on GitHub Pages.
+- A v0.5.0 readiness checklist, feature-completion integration review, unresolved-issues register, and machine-readable release-readiness record.
+- Repository integration validation for readiness records, standards citation anchors, project-page discoverability, changelog structure, and the responsive standards register.
 
-## [Unreleased]
+### Changed
+
+- Rebuilt the standards register as an accessible, responsive HTML table with stable row anchors and narrow-screen scrolling.
+- Consolidated feature-completion status, release boundaries, known limitations, and post-v0.5.0 evidence needs into the project documentation set.
 
 ### Fixed
 
