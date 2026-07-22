@@ -17,3 +17,7 @@ flowchart LR
   S4 --> S5[Test conformance and redress]
   S5 --> S6[Federate and scale]
 ```
+
+## Framework construction
+
+- [Guided Construction Readiness](guided-construction-readiness.md)

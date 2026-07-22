@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ONDTF Nonconformity",
+  "type": "object",
+  "required": [
+    "id",
+    "requirement_id",
+    "severity",
+    "evidence",
+    "owner",
+    "due_at",
+    "status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "requirement_id": {
+      "type": "string"
+    },
+    "severity": {
+      "enum": [
+        "observation",
+        "minor",
+        "major",
+        "critical"
+      ]
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "owner": {
+      "type": "string"
+    },
+    "due_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "status": {
+      "enum": [
+        "open",
+        "contained",
+        "corrective_action",
+        "verification",
+        "closed",
+        "overdue"
+      ]
+    },
+    "corrective_action": {
+      "type": "string"
+    },
+    "effectiveness_evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

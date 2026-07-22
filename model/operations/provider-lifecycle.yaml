@@ -1,0 +1,118 @@
+schema_version: '1.0'
+status: draft
+purpose: Governed provider lifecycle and transition contract.
+states:
+- id: prospective
+  public: false
+- id: applicant
+  public: false
+- id: assessed
+  public: false
+- id: approved
+  public: false
+- id: active
+  public: true
+- id: restricted
+  public: true
+- id: suspended
+  public: true
+- id: exiting
+  public: true
+- id: withdrawn
+  public: true
+- id: archived
+  public: true
+- id: rejected
+  public: false
+transitions:
+- id: PLT-001
+  from: prospective
+  to: applicant
+  decision_role: ROLE-FA
+  trigger: application accepted
+  evidence:
+  - application_record
+- id: PLT-002
+  from: applicant
+  to: assessed
+  decision_role: ROLE-CAB
+  trigger: assessment completed
+  evidence:
+  - assessment_record
+- id: PLT-003
+  from: assessed
+  to: approved
+  decision_role: ROLE-SA
+  trigger: positive decision
+  evidence:
+  - approval_decision
+- id: PLT-004
+  from: assessed
+  to: rejected
+  decision_role: ROLE-SA
+  trigger: negative decision
+  evidence:
+  - rejection_decision
+- id: PLT-005
+  from: approved
+  to: active
+  decision_role: ROLE-FA
+  trigger: activation conditions met
+  evidence:
+  - register_entry
+  - endpoint_validation
+- id: PLT-006
+  from: active
+  to: restricted
+  decision_role: ROLE-SA
+  trigger: proportionate operating condition
+  evidence:
+  - status_decision
+- id: PLT-007
+  from: restricted
+  to: active
+  decision_role: ROLE-SA
+  trigger: conditions cleared
+  evidence:
+  - reinstatement_decision
+- id: PLT-008
+  from: active
+  to: suspended
+  decision_role: ROLE-SA
+  trigger: material risk or nonconformity
+  evidence:
+  - suspension_decision
+- id: PLT-009
+  from: suspended
+  to: active
+  decision_role: ROLE-SA
+  trigger: reinstatement criteria met
+  evidence:
+  - reinstatement_decision
+- id: PLT-010
+  from: suspended
+  to: withdrawn
+  decision_role: ROLE-SA
+  trigger: withdrawal decision
+  evidence:
+  - withdrawal_decision
+- id: PLT-011
+  from: active
+  to: exiting
+  decision_role: ROLE-FA
+  trigger: voluntary or directed exit
+  evidence:
+  - exit_plan
+- id: PLT-012
+  from: exiting
+  to: archived
+  decision_role: ROLE-FA
+  trigger: continuity and retention complete
+  evidence:
+  - closure_record
+construction_mapping:
+- GFC-LIF-001
+- GFC-LIF-002
+- GFC-LIF-003
+- GFC-LIF-004
+- GFC-LIF-005

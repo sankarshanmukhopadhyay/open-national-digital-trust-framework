@@ -6,6 +6,7 @@ validate:
 	python3 scripts/validate_integration.py
 	python3 scripts/validate_maturation.py
 	python3 scripts/validate_normative_governance.py
+	python3 scripts/validate_operations_conformance.py
 	python3 scripts/validate_release.py
 	python3 scripts/check_mermaid_source.py
 	python3 scripts/extract_mermaid.py

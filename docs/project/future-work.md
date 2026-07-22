@@ -42,3 +42,7 @@ Add multi-implementation interoperability results, tested performance and recove
 Require stable normative language, multiple independent implementations, closure or formal acceptance of high-severity issues, complete traceability, independent review and credible change control.
 
 See [Maturation Release Gates](release-gates.md), [Implementation Evidence Programme](implementation-evidence.md) and [Maturation and Adoption Roadmap](adoption-roadmap.md).
+
+## Guided framework construction preparation
+
+Commit 2 exposes provider-lifecycle and conformance decision points through `model/adoption/construction-input-contract.yaml`. Commit 4 will convert these and later assurance/profile inputs into an adaptive guided construction flow.

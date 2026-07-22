@@ -42,3 +42,7 @@ Detailed closure evidence, linked programmes, candidate patterns and current dis
 An issue may remain open at release only where its impact is disclosed and it does not invalidate the release claim. Issues affecting safety, internal consistency, publication integrity or truthful conformance claims must block release unless governed through an explicit exception and risk-acceptance record.
 
 See [Maturation Governance](maturation-governance.md) for status and closure rules and [External Framework Pattern Adoption](external-framework-pattern-adoption.md) for the patterns being evaluated against these gaps.
+
+## Commit 2 evidence
+
+URI-09 and URI-10 now have draft evidence available. They remain open for worked-profile validation and release review rather than being treated as fully closed.

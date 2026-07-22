@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ONDTF Assessment Record",
+  "type": "object",
+  "required": [
+    "assessment_id",
+    "assessed_object",
+    "scheme",
+    "requirements",
+    "assessor",
+    "started_at",
+    "findings",
+    "evidence_references"
+  ],
+  "properties": {
+    "assessment_id": {
+      "type": "string"
+    },
+    "assessed_object": {
+      "type": "string"
+    },
+    "scheme": {
+      "type": "string"
+    },
+    "requirements": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "assessor": {
+      "type": "string"
+    },
+    "started_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "completed_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "requirement_id",
+          "result"
+        ],
+        "properties": {
+          "requirement_id": {
+            "type": "string"
+          },
+          "result": {
+            "enum": [
+              "conformant",
+              "nonconformant",
+              "not_applicable",
+              "not_tested"
+            ]
+          },
+          "rationale": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "evidence_references": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

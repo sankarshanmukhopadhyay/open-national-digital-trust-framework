@@ -1,0 +1,37 @@
+schema_version: '1.0'
+status: draft
+scheme:
+  id: ONDTF-CONFORMANCE-BASE
+  owner_role: ROLE-GA
+  administrator_role: ROLE-FA
+  assessment_roles:
+  - ROLE-CAB
+  - ROLE-ASR
+  decision_role: ROLE-SA
+  accreditation_role: ROLE-AA
+  claim_layers:
+  - artefact
+  - implementation
+  - operational
+  assessment_methods:
+  - document_review
+  - interview
+  - observation
+  - sampling
+  - technical_test
+  - continuous_evidence
+  required_controls:
+  - competence
+  - independence
+  - evidence_traceability
+  - decision_separation
+  - surveillance
+  - nonconformity
+  - appeal
+  - public_status
+  construction_mapping:
+  - GFC-CON-001
+  - GFC-CON-002
+  - GFC-CON-003
+  - GFC-CON-004
+  - GFC-CON-005

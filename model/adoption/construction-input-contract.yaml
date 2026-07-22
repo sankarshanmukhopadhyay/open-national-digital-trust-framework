@@ -1,0 +1,110 @@
+schema_version: '0.1'
+status: preparatory
+target_capability: ONDTF Guided Framework Construction (Commit 4)
+decision_points:
+- id: GFC-LIF-001
+  section: provider_lifecycle
+  prompt: Who has authority to admit and activate providers?
+  response_type: role_reference
+  required: true
+  maps_to:
+  - provider_lifecycle.transitions.PLT-003.decision_role
+  - provider_lifecycle.transitions.PLT-005.decision_role
+  review:
+  - governance
+  - legal
+- id: GFC-LIF-002
+  section: provider_lifecycle
+  prompt: What provider and service scope may be approved?
+  response_type: structured_scope
+  required: true
+  maps_to:
+  - conformance_claim.scope
+  review:
+  - governance
+  - technical
+- id: GFC-LIF-003
+  section: provider_lifecycle
+  prompt: Which changes require notification, review or reassessment?
+  response_type: multi_select_with_additions
+  required: true
+  maps_to:
+  - material_change_policy
+  review:
+  - technical
+  - risk
+- id: GFC-LIF-004
+  section: provider_lifecycle
+  prompt: What grounds and maximum propagation times apply to restriction, suspension and withdrawal?
+  response_type: structured_policy
+  required: true
+  maps_to:
+  - status_policy
+  review:
+  - governance
+  - rights
+  - technical
+- id: GFC-LIF-005
+  section: provider_lifecycle
+  prompt: What continuity and exit obligations protect participants and affected parties?
+  response_type: structured_policy
+  required: true
+  maps_to:
+  - exit_policy
+  review:
+  - operations
+  - rights
+- id: GFC-CON-001
+  section: conformance
+  prompt: Which conformance claim layers will the DTF support?
+  response_type: multi_select
+  required: true
+  allowed:
+  - artefact
+  - implementation
+  - operational
+  maps_to:
+  - assessment_scheme.claim_layers
+  review:
+  - assurance
+- id: GFC-CON-002
+  section: conformance
+  prompt: Which assessment methods are permitted for each claim layer?
+  response_type: matrix
+  required: true
+  maps_to:
+  - conformance_claim.assessment_method
+  review:
+  - assurance
+  - governance
+- id: GFC-CON-003
+  section: conformance
+  prompt: Must assessment bodies or assessors be accredited?
+  response_type: conditional_boolean
+  required: true
+  maps_to:
+  - assessment_scheme.accreditation
+  review:
+  - governance
+- id: GFC-CON-004
+  section: conformance
+  prompt: What evidence, validity and surveillance rules apply?
+  response_type: structured_policy
+  required: true
+  maps_to:
+  - assessment_scheme.evidence
+  - assessment_scheme.surveillance
+  review:
+  - assurance
+  - operations
+- id: GFC-CON-005
+  section: conformance
+  prompt: Who makes final decisions and hears appeals?
+  response_type: role_pair
+  required: true
+  maps_to:
+  - assessment_scheme.decision_role
+  - assessment_scheme.appeal_role
+  review:
+  - governance
+  - rights

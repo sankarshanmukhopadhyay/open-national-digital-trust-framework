@@ -1,0 +1,24 @@
+schema_version: '1.0'
+states:
+- draft
+- issued
+- active
+- restricted
+- suspended
+- expired
+- withdrawn
+- superseded
+authoritative_fields:
+- claim_id
+- assessed_object
+- scope
+- profile
+- status
+- effective_time
+- expiry_time
+- status_authority
+- status_endpoint
+terminal_states:
+- expired
+- withdrawn
+- superseded

@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ONDTF Conformance Claim",
+  "type": "object",
+  "required": [
+    "claim_id",
+    "claim_layer",
+    "claimant",
+    "assessed_object",
+    "scope",
+    "profile",
+    "assessment_method",
+    "decision_authority",
+    "issued_at",
+    "status"
+  ],
+  "properties": {
+    "claim_id": {
+      "type": "string"
+    },
+    "claim_layer": {
+      "enum": [
+        "artefact",
+        "implementation",
+        "operational"
+      ]
+    },
+    "claimant": {
+      "type": "string"
+    },
+    "assessed_object": {
+      "type": "string"
+    },
+    "scope": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "profile": {
+      "type": "string"
+    },
+    "assessment_method": {
+      "enum": [
+        "self_declaration",
+        "second_party",
+        "independent_assessment",
+        "accredited_certification",
+        "authority_approval"
+      ]
+    },
+    "assessor": {
+      "type": "string"
+    },
+    "decision_authority": {
+      "type": "string"
+    },
+    "issued_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "expires_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "status": {
+      "enum": [
+        "draft",
+        "issued",
+        "active",
+        "restricted",
+        "suspended",
+        "expired",
+        "withdrawn",
+        "superseded"
+      ]
+    },
+    "evidence_references": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "restrictions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}
