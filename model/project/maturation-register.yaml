@@ -3,7 +3,8 @@ framework_version: 0.5.0
 status: active
 last_reviewed: '2026-07-22'
 purpose: Canonical register connecting disclosed framework boundaries, unresolved maturity issues, maturation programmes,
-  external-framework patterns, release gates and required evidence for the path from v0.5.0 to Candidate Specification status.
+  external-framework patterns, release gates and required evidence for the path from v0.5.0 to Candidate Specification
+  status.
 boundary_types:
   enduring: A deliberate framework boundary that should remain visible and is not expected to disappear.
   reducible: A maturity constraint that can be reduced through implementation, evidence or review.
@@ -79,7 +80,8 @@ limitations:
 programmes:
 - id: MPR-01
   title: Normative and role architecture
-  objective: Convert architectural responsibilities into precise role-specific obligations and institutional decision rights.
+  objective: Convert architectural responsibilities into precise role-specific obligations and institutional decision
+    rights.
   target_releases:
   - v0.6.0
   linked_issues:
@@ -97,8 +99,8 @@ programmes:
   - URI-09
 - id: MPR-03
   title: Profiles and external-framework adoption
-  objective: Provide disciplined jurisdiction, sector and technology profiling and adopt proven external patterns without
-    importing incompatible assumptions.
+  objective: Provide disciplined jurisdiction, sector and technology profiling and adopt proven external patterns
+    without importing incompatible assumptions.
   target_releases:
   - v0.6.0
   - v0.7.0
@@ -182,7 +184,8 @@ issues:
   disposition: informative_only
   target_release: v0.7.0
   owner_role: Jurisdiction Profile Maintainer
-  closure_evidence: One profile carrying documented expert and competent legal review with cut-off date and unresolved questions.
+  closure_evidence: One profile carrying documented expert and competent legal review with cut-off date and unresolved
+    questions.
   programmes:
   - MPR-03
   patterns:
@@ -196,7 +199,8 @@ issues:
   disposition: accepted_for_feature_complete_draft
   target_release: v0.7.0
   owner_role: Conformance Workstream
-  closure_evidence: Executable positive, negative, boundary and lifecycle assertions used against an independent implementation.
+  closure_evidence: Executable positive, negative, boundary and lifecycle assertions used against an independent
+    implementation.
   programmes:
   - MPR-02
   - MPR-04
@@ -212,8 +216,8 @@ issues:
   disposition: profile_dependent
   target_release: v0.7.0
   owner_role: Privacy Engineering Workstream
-  closure_evidence: Comparative analysis and test cases covering correlation, query leakage, freshness, caching and offline
-    verification.
+  closure_evidence: Comparative analysis and test cases covering correlation, query leakage, freshness, caching
+    and offline verification.
   programmes:
   - MPR-03
   patterns:
@@ -227,12 +231,22 @@ issues:
   disposition: explicit_implementation_obligation
   target_release: v0.7.0
   owner_role: Rights and Inclusion Workstream
-  closure_evidence: Accessibility assessment of pilot journeys, assisted-use paths, recovery and non-smartphone alternatives.
+  closure_evidence: Accessibility assessment of pilot journeys, assisted-use paths, recovery and non-smartphone
+    alternatives.
   programmes:
   - MPR-06
   patterns:
   - EPA-010
-  status: open
+  status: evidence_available
+  draft_evidence:
+  - docs/rights/affected-party-operating-model.md
+  - docs/rights/notice-and-explanation.md
+  - docs/rights/challenge-and-correction.md
+  - docs/rights/appeal-and-independent-review.md
+  - docs/rights/remedy-execution.md
+  - docs/rights/accessibility-and-assisted-use.md
+  - docs/rights/rights-evidence.md
+  - model/rights/accessibility-evidence.schema.json
 - id: URI-07
   title: Standards and regulatory instruments may change after publication
   category: maintenance
@@ -291,8 +305,8 @@ issues:
   disposition: draft_implemented
   target_release: v0.6.0
   owner_role: Operating Model Workstream
-  closure_evidence: Admission, activation, monitoring, change, suspension, revocation, exit and continuity workflows with
-    decision rights.
+  closure_evidence: Admission, activation, monitoring, change, suspension, revocation, exit and continuity workflows
+    with decision rights.
   programmes:
   - MPR-01
   patterns:
@@ -309,8 +323,8 @@ issues:
   disposition: draft_implemented
   target_release: v0.6.0
   owner_role: Governance Workstream
-  closure_evidence: Worked institutional profile assigning governing, administrative, supervisory, assessment, appeal and
-    incident functions.
+  closure_evidence: Worked institutional profile assigning governing, administrative, supervisory, assessment, appeal
+    and incident functions.
   evidence_available:
   - model/governance/institutional-role-catalogue.yaml
   - model/governance/responsibility-assignment.yaml
@@ -328,7 +342,8 @@ issues:
   disposition: planned
   target_release: v0.6.0
   owner_role: Profile Architecture Workstream
-  closure_evidence: Profile template, dependency rules, validation checklist, precedence model and one worked sector profile.
+  closure_evidence: Profile template, dependency rules, validation checklist, precedence model and one worked sector
+    profile.
   programmes:
   - MPR-03
   patterns:
@@ -343,7 +358,8 @@ issues:
   disposition: evidence_required
   target_release: v0.8.0
   owner_role: Operations and Resilience Workstream
-  closure_evidence: Reproducible workload, failure, recovery and dependency-degradation tests with profile-specific baselines.
+  closure_evidence: Reproducible workload, failure, recovery and dependency-degradation tests with profile-specific
+    baselines.
   programmes:
   - MPR-05
   patterns:
@@ -357,7 +373,8 @@ issues:
   disposition: evidence_required
   target_release: v0.7.0
   owner_role: Security and Resilience Workstream
-  closure_evidence: Recorded tabletop and technical exercises covering authority abuse, revocation lag, compromise and recovery.
+  closure_evidence: Recorded tabletop and technical exercises covering authority abuse, revocation lag, compromise
+    and recovery.
   programmes:
   - MPR-05
   patterns:
@@ -370,7 +387,8 @@ issues:
   disposition: planned
   target_release: v0.9.0
   owner_role: Specification Editorial Workstream
-  closure_evidence: Terminology review across multiple jurisdictions and documented resolution of material semantic conflicts.
+  closure_evidence: Terminology review across multiple jurisdictions and documented resolution of material semantic
+    conflicts.
   programmes:
   - MPR-07
   patterns:
@@ -383,7 +401,8 @@ issues:
   disposition: planned
   target_release: v0.8.0
   owner_role: Recognition and Interoperability Workstream
-  closure_evidence: Recognition profile with equivalence criteria, exclusions, liability, status, suspension and dispute handling.
+  closure_evidence: Recognition profile with equivalence criteria, exclusions, liability, status, suspension and
+    dispute handling.
   programmes:
   - MPR-03
   patterns:
@@ -397,12 +416,22 @@ issues:
   disposition: evidence_required
   target_release: v0.7.0
   owner_role: Rights and Redress Workstream
-  closure_evidence: Pilot demonstrating notice, evidence access, challenge, independent review, remedy and outcome traceability.
+  closure_evidence: Pilot demonstrating notice, evidence access, challenge, independent review, remedy and outcome
+    traceability.
   programmes:
   - MPR-06
   patterns:
   - EPA-010
-  status: open
+  status: evidence_available
+  draft_evidence:
+  - docs/rights/affected-party-operating-model.md
+  - docs/rights/notice-and-explanation.md
+  - docs/rights/challenge-and-correction.md
+  - docs/rights/appeal-and-independent-review.md
+  - docs/rights/remedy-execution.md
+  - docs/rights/accessibility-and-assisted-use.md
+  - docs/rights/rights-evidence.md
+  - model/rights/accessibility-evidence.schema.json
 - id: URI-18
   title: No complete maintenance model for standards, profiles and controlled documents
   category: governance
@@ -410,7 +439,8 @@ issues:
   disposition: planned
   target_release: v0.6.0
   owner_role: Change Control Authority
-  closure_evidence: Controlled-document inventory, ownership, cadence, emergency change path, deprecation and migration rules.
+  closure_evidence: Controlled-document inventory, ownership, cadence, emergency change path, deprecation and migration
+    rules.
   programmes:
   - MPR-07
   patterns:
@@ -424,8 +454,8 @@ issues:
   disposition: addressed_by_strategy
   target_release: v0.6.0
   owner_role: Architecture and Profile Workstream
-  closure_evidence: Pattern-adoption strategy, catalogue, decision criteria, traceability and at least one completed adoption
-    decision.
+  closure_evidence: Pattern-adoption strategy, catalogue, decision criteria, traceability and at least one completed
+    adoption decision.
   programmes:
   - MPR-03
   patterns:
@@ -646,6 +676,7 @@ patterns:
   rationale: Express how assurance from another framework is accepted without asserting universal equivalence.
   safeguards: Require legal basis, scope, status, suspension and dispute handling.
   evidence_required: Bilateral or multi-framework recognition example.
+  status: evidence_available
 - id: EPA-010
   title: Accessible challenge, appeal and remedy operations
   source_families:
@@ -777,8 +808,8 @@ release_gates:
   - URI-12
   - URI-18
   - URI-19
-  gate: Core role obligations, operating model, conformance architecture, profile kit and external-pattern governance are
-    published and internally traceable.
+  gate: Core role obligations, operating model, conformance architecture, profile kit and external-pattern governance
+    are published and internally traceable.
 - release: v0.7.0
   name: Implementation and Evaluation Draft
   required_programmes:
@@ -792,8 +823,8 @@ release_gates:
   - URI-06
   - URI-14
   - URI-17
-  gate: At least one independent implementation, executable baseline tests, exercise evidence and reviewed user journeys are
-    available.
+  gate: At least one independent implementation, executable baseline tests, exercise evidence and reviewed user
+    journeys are available.
 - release: v0.8.0
   name: Interoperability and Recognition Draft
   required_programmes:
@@ -812,5 +843,5 @@ release_gates:
   - MPR-07
   required_issue_progress:
   - URI-15
-  gate: Normative language is stable, high-severity issues are closed or formally accepted, traceability is complete, independent
-    implementations exist and change control is credible.
+  gate: Normative language is stable, high-severity issues are closed or formally accepted, traceability is complete,
+    independent implementations exist and change control is credible.

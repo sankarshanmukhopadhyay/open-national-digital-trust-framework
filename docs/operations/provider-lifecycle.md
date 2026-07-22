@@ -55,4 +55,4 @@ Provider approval MUST be scoped. It does not authorise services, jurisdictions,
 
 ## Guided-construction hooks
 
-The lifecycle model exposes decision points that the ONDTF Guided Framework Construction flow can ask adopters to resolve, including admission authority, evidence thresholds, validity periods, change triggers, suspension grounds, continuity obligations and appeal routes. These hooks are declared in `model/adoption/construction-input-contract.yaml` and do not yet constitute the Commit 4 questionnaire.
+The lifecycle model exposes decision points that the ONDTF Guided Framework Construction flow can ask adopters to resolve, including admission authority, evidence thresholds, validity periods, change triggers, suspension grounds, continuity obligations and appeal routes. These hooks are declared in `model/adoption/construction-input-contract.yaml` and do not themselves constitute the adaptive guided-construction flow.

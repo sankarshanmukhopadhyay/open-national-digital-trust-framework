@@ -4,6 +4,11 @@
 
 ### Added
 
+- A multidimensional assurance model covering identity, authority, delegation, evidence, execution, operations, status and freshness, privacy, and remedy readiness without collapsing them into a universal trust score.
+- Machine-readable assurance dimensions, levels, composition rules and assurance-claim schema.
+- An operational affected-party, notice, challenge, appeal, remedy, accessibility and alternative-channel publication set with machine-readable evidence records.
+- Assurance and rights decision inputs for ONDTF Guided Framework Construction, plus automated validation that rejects internal delivery-stage terminology.
+
 - A canonical maturation register connecting known limitations, unresolved issues, maturation programmes, external-framework adoption patterns, release gates and required evidence.
 - An external-framework pattern adoption strategy with source taxonomy, adoption principles, candidate pattern catalogue, decision lifecycle and release mapping.
 - Maturation governance, release-gate, implementation-evidence and adoption-roadmap pages.

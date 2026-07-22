@@ -1,0 +1,12 @@
+flowchart TB
+    CORE[ONDTF core requirements]
+    PROFILE[Jurisdiction or sector profile]
+    IMPL[Conforming implementation]
+    TSMM[Optional TSMM alignment]
+    TIS[Optional TIS schema profile]
+    ALT[Alternative compatible models and schemas]
+    CORE --> PROFILE
+    PROFILE --> IMPL
+    TSMM -.-> IMPL
+    TIS -.-> IMPL
+    ALT -.-> IMPL

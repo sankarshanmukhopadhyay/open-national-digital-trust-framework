@@ -1,0 +1,8 @@
+flowchart TD
+  X[Boundary crossing requested] --> I[Identify originating and receiving domains]
+  I --> A[Resolve authority and applicable policy]
+  A --> S[Validate semantics, status and assurance]
+  S --> R{Requirements satisfied?}
+  R -->|Yes| B[Bind result to context and purpose]
+  R -->|No| D[Deny or defer]
+  B --> E[Create boundary-crossing evidence]

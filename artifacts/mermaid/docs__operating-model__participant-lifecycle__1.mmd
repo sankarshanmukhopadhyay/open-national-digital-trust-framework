@@ -1,0 +1,15 @@
+stateDiagram-v2
+  [*] --> Applicant
+  Applicant --> Admitted
+  Applicant --> Rejected
+  Admitted --> Active
+  Active --> Monitored
+  Monitored --> Active
+  Active --> Restricted
+  Restricted --> Active
+  Active --> Suspended
+  Suspended --> Active
+  Suspended --> Removed
+  Active --> Exited
+  Removed --> Archived
+  Exited --> Archived

@@ -45,4 +45,4 @@ See [Maturation Release Gates](release-gates.md), [Implementation Evidence Progr
 
 ## Guided framework construction preparation
 
-Commit 2 exposes provider-lifecycle and conformance decision points through `model/adoption/construction-input-contract.yaml`. Commit 4 will convert these and later assurance/profile inputs into an adaptive guided construction flow.
+Provider-lifecycle and conformance decision points are exposed through `model/adoption/construction-input-contract.yaml`. The Guided Framework Construction capability will combine these with assurance, rights and profile decisions in an adaptive construction flow.

@@ -1,0 +1,13 @@
+flowchart LR
+  S[Scheme definition] --> A[Application]
+  A --> P[Assessment plan]
+  P --> E[Evidence collection and testing]
+  E --> F[Findings]
+  F --> D[Independent decision]
+  D --> C[Certificate or claim]
+  C --> R[Public status]
+  R --> V[Surveillance]
+  V -->|maintained| R
+  V -->|nonconformity| N[Remediation or restriction]
+  N -->|resolved| R
+  N -->|unresolved| W[Suspension or withdrawal]

@@ -1,0 +1,15 @@
+flowchart TB
+  LEG[Competent public or scheme mandate] --> GA[Governing Authority]
+  GA --> FA[Framework Administrator]
+  GA --> PA[Profile Authority]
+  GA --> SA[Supervisory Authority]
+  GA --> AA[Accreditation Authority]
+  AA --> CAB[Conformity Assessment Bodies]
+  FA --> REG[Registry or Trust-list Operator]
+  PA --> SP[Service Providers]
+  SP --> RP[Relying Parties]
+  AP[Affected Parties] --> CAR[Complaints, Appeals and Remedy Body]
+  CAR -. independent review .-> GA
+  IOC[Incident Coordination Authority] -. response coordination .-> SA
+  IO[Independent Oversight] -. scrutiny .-> GA
+  IO -. scrutiny .-> SA

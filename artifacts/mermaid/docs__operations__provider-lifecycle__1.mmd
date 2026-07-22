@@ -1,0 +1,18 @@
+stateDiagram-v2
+  [*] --> Prospective
+  Prospective --> Applicant: application accepted
+  Applicant --> Assessed: assessment completed
+  Assessed --> Approved: positive decision
+  Assessed --> Rejected: negative decision
+  Approved --> Active: registration and activation
+  Active --> Restricted: conditions imposed
+  Restricted --> Active: conditions cleared
+  Active --> Suspended: material risk or nonconformity
+  Restricted --> Suspended: escalation
+  Suspended --> Active: reinstatement
+  Suspended --> Withdrawn: withdrawal decision
+  Active --> Exiting: voluntary or directed exit
+  Exiting --> Archived: continuity and retention complete
+  Rejected --> [*]
+  Withdrawn --> Archived
+  Archived --> [*]

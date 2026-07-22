@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ONDTF Remedy Record",
+  "type": "object",
+  "required": [
+    "record_id",
+    "profile_id",
+    "affected_party_reference",
+    "created_at",
+    "remedy_type",
+    "responsible_role",
+    "status"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string"
+    },
+    "profile_id": {
+      "type": "string"
+    },
+    "affected_party_reference": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "status": {
+      "type": "string"
+    },
+    "remedy_type": {
+      "type": "string"
+    },
+    "responsible_role": {
+      "type": "string"
+    },
+    "required_actions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "propagation_targets": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "completed_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "completion_evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "residual_harm": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,41 @@
+schema_version: '1.0'
+status: draft
+levels:
+- id: AL-0
+  title: Not established
+  meaning: No supportable conclusion is available.
+  minimum_evidence: None or insufficient.
+  permitted_outcome: Do not rely on the dimension.
+- id: AL-1
+  title: Basic
+  meaning: A limited conclusion is supported for low-consequence contexts.
+  minimum_evidence: Documented source and basic integrity or procedural checks.
+  permitted_outcome: Use only where the profile permits low-consequence reliance.
+- id: AL-2
+  title: Substantial
+  meaning: Multiple controls and evidence sources support the conclusion with managed
+    uncertainty.
+  minimum_evidence: Defined criteria, provenance, freshness and review.
+  permitted_outcome: Use for material decisions within profile constraints.
+- id: AL-3
+  title: High
+  meaning: Strong independent or technically verifiable evidence supports the conclusion
+    and lifecycle monitoring is active.
+  minimum_evidence: Independent assessment or equivalent, continuous status and tested
+    response.
+  permitted_outcome: Use for high-consequence decisions where all critical dimensions
+    meet their thresholds.
+composition:
+  method: critical_dimension_floor
+  prohibits:
+  - universal_trust_score
+  - unbounded_reuse
+  - averaging_away_critical_failure
+  required_fields:
+  - use_case
+  - required_dimensions
+  - minimum_levels
+  - critical_dimensions
+  - freshness
+  - failure_action
+  - exception_authority

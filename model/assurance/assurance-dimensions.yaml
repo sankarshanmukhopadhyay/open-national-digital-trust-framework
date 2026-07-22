@@ -1,0 +1,99 @@
+schema_version: '1.0'
+status: draft
+dimensions:
+- id: ASD-ID
+  title: Identity assurance
+  criticality: profile_governed
+  question: Is the relevant subject established to the required degree?
+  evidence_examples:
+  - identity proofing record
+  - binding evidence
+  - recovery record
+  non_substitutable_for:
+  - ASD-AUT
+  - ASD-DEL
+- id: ASD-AUT
+  title: Authority assurance
+  criticality: critical
+  question: Does the actor possess valid authority for this action and context?
+  evidence_examples:
+  - authority source
+  - role appointment
+  - scope and conditions
+  - status evidence
+  non_substitutable_for:
+  - ASD-DEL
+  - ASD-EXE
+- id: ASD-DEL
+  title: Delegation assurance
+  criticality: profile_governed
+  question: Is delegated authority valid, scoped, current and traceable?
+  evidence_examples:
+  - delegation instrument
+  - delegator authority
+  - acceptance
+  - revocation status
+  non_substitutable_for:
+  - ASD-AUT
+- id: ASD-EVD
+  title: Evidence assurance
+  criticality: critical
+  question: Is evidence authentic, relevant, sufficient and current?
+  evidence_examples:
+  - provenance
+  - integrity proof
+  - source competence
+  - freshness
+  non_substitutable_for: []
+- id: ASD-EXE
+  title: Execution assurance
+  criticality: profile_governed
+  question: Did the action remain within mandate, policy and runtime constraints?
+  evidence_examples:
+  - policy decision
+  - decision receipt
+  - execution log
+  - exception record
+  non_substitutable_for:
+  - ASD-AUT
+- id: ASD-OPS
+  title: Operational assurance
+  criticality: profile_governed
+  question: Can the service operate securely, reliably and recoverably?
+  evidence_examples:
+  - control assessment
+  - resilience test
+  - incident evidence
+  - continuity exercise
+  non_substitutable_for: []
+- id: ASD-STA
+  title: Status and freshness assurance
+  criticality: critical
+  question: Are lifecycle status and time-sensitive facts sufficiently current?
+  evidence_examples:
+  - status response
+  - cache age
+  - trust-list publication
+  - revocation event
+  non_substitutable_for: []
+- id: ASD-PRI
+  title: Privacy assurance
+  criticality: profile_governed
+  question: Are data use and disclosure proportionate and controlled?
+  evidence_examples:
+  - privacy impact assessment
+  - data-flow evidence
+  - minimisation test
+  - retention record
+  non_substitutable_for: []
+- id: ASD-REM
+  title: Remedy readiness assurance
+  criticality: critical_for_adverse_effects
+  question: Can affected parties obtain explanation, challenge, review and effective
+    remedy?
+  evidence_examples:
+  - notice evidence
+  - challenge record
+  - appeal record
+  - remedy completion
+  non_substitutable_for: []

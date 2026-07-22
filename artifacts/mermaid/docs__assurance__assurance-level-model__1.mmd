@@ -1,0 +1,8 @@
+flowchart LR
+  C[Decision context] --> D[Required dimensions]
+  D --> E[Evidence and freshness]
+  E --> L[Dimension-level conclusions]
+  L --> P[Profile composition rule]
+  P --> O{Decision supported?}
+  O -->|Yes| R[Reasoned assurance conclusion]
+  O -->|No| G[Gap, escalation or refusal]

@@ -1,6 +1,6 @@
 schema_version: '0.1'
 status: preparatory
-target_capability: ONDTF Guided Framework Construction (Commit 4)
+target_capability: ONDTF Guided Framework Construction
 decision_points:
 - id: GFC-LIF-001
   section: provider_lifecycle
@@ -35,7 +35,8 @@ decision_points:
   - risk
 - id: GFC-LIF-004
   section: provider_lifecycle
-  prompt: What grounds and maximum propagation times apply to restriction, suspension and withdrawal?
+  prompt: What grounds and maximum propagation times apply to restriction, suspension
+    and withdrawal?
   response_type: structured_policy
   required: true
   maps_to:
@@ -108,3 +109,111 @@ decision_points:
   review:
   - governance
   - rights
+- id: GFC-ASR-001
+  section: assurance
+  prompt: Which assurance dimensions are required for each use case?
+  response_type: use_case_dimension_matrix
+  required: true
+  maps_to:
+  - assurance_profile.required_dimensions
+  review:
+  - assurance
+  - risk
+- id: GFC-ASR-002
+  section: assurance
+  prompt: What minimum level applies to each required dimension?
+  response_type: dimension_level_matrix
+  required: true
+  maps_to:
+  - assurance_profile.minimum_levels
+  review:
+  - assurance
+- id: GFC-ASR-003
+  section: assurance
+  prompt: Which dimensions are critical and cannot be compensated by other evidence?
+  response_type: multi_select_by_use_case
+  required: true
+  maps_to:
+  - assurance_profile.critical_dimensions
+  review:
+  - assurance
+  - governance
+- id: GFC-ASR-004
+  section: assurance
+  prompt: What evidence, freshness and uncertainty rules apply to each dimension?
+  response_type: structured_matrix
+  required: true
+  maps_to:
+  - assurance_profile.evidence_rules
+  - assurance_profile.freshness
+  review:
+  - assurance
+  - technical
+- id: GFC-ASR-005
+  section: assurance
+  prompt: What outcome applies when a critical dimension is not established?
+  response_type: conditional_policy
+  required: true
+  maps_to:
+  - assurance_profile.failure_action
+  review:
+  - risk
+  - operations
+  - rights
+- id: GFC-RGT-001
+  section: rights
+  prompt: Which affected-party classes and material harms must the framework recognise?
+  response_type: structured_catalogue
+  required: true
+  maps_to:
+  - rights_profile.affected_parties
+  - rights_profile.harms
+  review:
+  - rights
+  - governance
+- id: GFC-RGT-002
+  section: rights
+  prompt: What notice and explanation must accompany material or adverse decisions?
+  response_type: structured_policy
+  required: true
+  maps_to:
+  - rights_profile.notice
+  - rights_profile.explanation
+  review:
+  - rights
+  - legal
+- id: GFC-RGT-003
+  section: rights
+  prompt: How can evidence and decisions be challenged and corrected?
+  response_type: process_definition
+  required: true
+  maps_to:
+  - rights_profile.challenge
+  - rights_profile.correction
+  review:
+  - rights
+  - operations
+- id: GFC-RGT-004
+  section: rights
+  prompt: Who provides independent appeal and what powers does that body possess?
+  response_type: role_and_power_definition
+  required: true
+  maps_to:
+  - rights_profile.appeal
+  review:
+  - governance
+  - rights
+  - legal
+- id: GFC-RGT-005
+  section: rights
+  prompt: Which remedies, accessibility measures and alternative channels are mandatory?
+  response_type: structured_policy
+  required: true
+  maps_to:
+  - rights_profile.remedy
+  - rights_profile.accessibility
+  - rights_profile.alternatives
+  review:
+  - rights
+  - accessibility
+  - operations

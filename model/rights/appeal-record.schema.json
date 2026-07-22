@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ONDTF Appeal Record",
+  "type": "object",
+  "required": [
+    "record_id",
+    "profile_id",
+    "affected_party_reference",
+    "created_at",
+    "original_decision",
+    "review_body",
+    "status"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string"
+    },
+    "profile_id": {
+      "type": "string"
+    },
+    "affected_party_reference": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "status": {
+      "type": "string"
+    },
+    "original_decision": {
+      "type": "string"
+    },
+    "review_body": {
+      "type": "string"
+    },
+    "independence_basis": {
+      "type": "string"
+    },
+    "review_standard": {
+      "type": "string"
+    },
+    "outcome": {
+      "type": "string"
+    },
+    "further_escalation": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

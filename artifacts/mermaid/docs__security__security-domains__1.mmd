@@ -1,0 +1,19 @@
+flowchart TD
+  G[SEC-DOM-01 Governance] --> A[SEC-DOM-02 Authority]
+  A --> I[SEC-DOM-03 Identity and credentials]
+  A --> P[SEC-DOM-04 Policy]
+  I --> E[SEC-DOM-05 Evidence and status]
+  P --> D[SEC-DOM-06 Decision and effect]
+  E --> D
+  T[SEC-DOM-07 Platform and supply chain] -.->|supports| I
+  T -.->|supports| E
+  T -.->|supports| D
+  O[SEC-DOM-08 Operations and resilience] -.->|observes and contains| T
+  D --> R[SEC-DOM-09 Accountability and redress]
+  F[SEC-DOM-10 Federation] --> E
+  F --> D
+  V[SEC-DOM-11 Privacy and disclosure] -.->|constrains| I
+  V -.->|constrains| E
+  V -.->|constrains| R
+  AG[SEC-DOM-12 Automated agents] --> D
+  AG --> R

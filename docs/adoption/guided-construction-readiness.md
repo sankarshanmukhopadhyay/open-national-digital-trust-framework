@@ -7,7 +7,7 @@ nav_order: 8
 
 # Guided construction readiness
 
-Commit 2 prepares the provider-lifecycle and conformance models for the planned **ONDTF Guided Framework Construction** capability in Commit 4. It does not yet implement the full adaptive question flow.
+The provider-lifecycle and conformance models expose stable decision inputs for the planned **ONDTF Guided Framework Construction** capability. The adaptive question flow is specified separately from these domain models.
 
 ## Construction contract
 
@@ -41,3 +41,8 @@ flowchart LR
   E --> O
   G --> O
 ```
+
+## Assurance and rights inputs
+
+The construction input contract now includes structured decisions for assurance dimensions, minimum levels, critical non-compensable conditions, evidence and freshness, affected-party classes, notice, challenge, independent appeal, remedy, accessibility and alternative channels. These inputs are designed to generate both human-readable DTF sections and machine-readable profile artefacts.
+

@@ -1,0 +1,9 @@
+stateDiagram-v2
+  [*] --> Normal
+  Normal --> Degraded: dependency failure
+  Degraded --> Restricted: assurance below threshold
+  Restricted --> Recovery: dependency restored
+  Degraded --> Recovery: dependency restored
+  Recovery --> Normal: reconciliation complete
+  Restricted --> Suspended: unsafe to continue
+  Suspended --> Recovery: authorised restart

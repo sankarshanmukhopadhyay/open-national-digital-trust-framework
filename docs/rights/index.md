@@ -29,3 +29,14 @@ flowchart LR
 - [Transparency, Notice and Explanation](transparency-explanation.md)
 - [Challenge, Grievance and Appeal](challenge-appeal.md)
 - [Remedies and Accountability](remedies-accountability.md)
+
+## Operational rights publications
+
+- [Affected-Party Operating Model](affected-party-operating-model.md)
+- [Notice and Explanation](notice-and-explanation.md)
+- [Challenge and Correction](challenge-and-correction.md)
+- [Appeal and Independent Review](appeal-and-independent-review.md)
+- [Remedy Execution](remedy-execution.md)
+- [Accessibility and Assisted Use](accessibility-and-assisted-use.md)
+- [Exclusion and Alternative Channels](exclusion-and-alternative-channels.md)
+- [Rights Evidence](rights-evidence.md)

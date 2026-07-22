@@ -1,0 +1,9 @@
+flowchart TD
+  U[Use case and harm model] --> R[Required assurance dimensions]
+  R --> M[Minimum levels and critical dimensions]
+  M --> V[Evaluate evidence and freshness]
+  V --> C{All critical conditions met?}
+  C -->|No| X[Refuse, defer, degrade or escalate]
+  C -->|Yes| Q{Residual uncertainty acceptable?}
+  Q -->|No| X
+  Q -->|Yes| A[Context-bounded assurance conclusion]

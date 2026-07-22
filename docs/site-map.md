@@ -179,3 +179,10 @@ Machine-readable bindings, model records, governance registers, and validation e
 - [Registry and Trust-list Operators]({{ site.baseurl }}/docs/governance/registry-and-trust-list-operators.html)
 - [Appeals Redress and Oversight]({{ site.baseurl }}/docs/governance/appeals-redress-and-oversight.html)
 - [Separation of Duties]({{ site.baseurl }}/docs/governance/separation-of-duties.html)
+
+## Assurance and rights operationalisation
+
+- [Assurance Level Model](assurance/assurance-level-model.md)
+- [Assurance Composition](assurance/assurance-composition.md)
+- [Affected Party Operating Model](rights/affected-party-operating-model.md)
+- [Rights Evidence](rights/rights-evidence.md)

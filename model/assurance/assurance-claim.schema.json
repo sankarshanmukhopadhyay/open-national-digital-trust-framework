@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ondtf.example/model/assurance/assurance-claim.schema.json",
+  "title": "ONDTF Assurance Claim",
+  "type": "object",
+  "required": [
+    "claim_id",
+    "profile_id",
+    "decision_context",
+    "evaluated_at",
+    "dimensions",
+    "composition_result"
+  ],
+  "properties": {
+    "claim_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "profile_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "decision_context": {
+      "type": "object",
+      "required": [
+        "purpose",
+        "subject",
+        "action"
+      ],
+      "properties": {
+        "purpose": {
+          "type": "string"
+        },
+        "subject": {
+          "type": "string"
+        },
+        "action": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "evaluated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "expires_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "dimensions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "dimension_id",
+          "level_id",
+          "evidence",
+          "freshness",
+          "conclusion"
+        ],
+        "properties": {
+          "dimension_id": {
+            "type": "string",
+            "pattern": "^ASD-[A-Z]{3}$"
+          },
+          "level_id": {
+            "type": "string",
+            "pattern": "^AL-[0-3]$"
+          },
+          "evidence": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
+          "freshness": {
+            "type": "string"
+          },
+          "conclusion": {
+            "type": "string"
+          },
+          "uncertainty": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "composition_result": {
+      "type": "object",
+      "required": [
+        "rule_id",
+        "outcome",
+        "critical_failures"
+      ],
+      "properties": {
+        "rule_id": {
+          "type": "string"
+        },
+        "outcome": {
+          "enum": [
+            "supported",
+            "not_supported",
+            "deferred",
+            "exception"
+          ]
+        },
+        "critical_failures": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "residual_uncertainty": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "exception_record": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

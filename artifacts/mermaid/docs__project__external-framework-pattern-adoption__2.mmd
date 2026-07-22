@@ -1,0 +1,12 @@
+stateDiagram-v2
+  [*] --> Identified
+  Identified --> Evaluate
+  Evaluate --> Candidate
+  Evaluate --> Rejected
+  Candidate --> Pilot
+  Pilot --> Adopted
+  Pilot --> Deferred
+  Adopted --> Deprecated
+  Deferred --> Evaluate
+  Deprecated --> [*]
+  Rejected --> [*]

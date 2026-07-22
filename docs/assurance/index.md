@@ -35,3 +35,16 @@ flowchart LR
 - [Assurance Levels](levels.md)
 
 The companion [Standards and Specifications Register](../standards/references.md) identifies the external sources used to ground the method.
+
+## Multidimensional assurance publications
+
+- [Multidimensional Assurance Model](assurance-level-model.md)
+- [Identity Assurance](identity-assurance.md)
+- [Authority Assurance](authority-assurance.md)
+- [Delegation Assurance](delegation-assurance.md)
+- [Evidence Assurance](evidence-assurance.md)
+- [Execution Assurance](execution-assurance.md)
+- [Status and Freshness Assurance](status-freshness-assurance.md)
+- [Privacy Assurance](privacy-assurance.md)
+- [Remedy Readiness Assurance](remedy-readiness-assurance.md)
+- [Assurance Composition](assurance-composition.md)

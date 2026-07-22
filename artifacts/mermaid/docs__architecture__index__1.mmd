@@ -1,0 +1,12 @@
+flowchart TB
+  GP[Governance plane] --> CP[Control plane]
+  CP --> DP[Decision and service plane]
+  DP --> EP[Evidence plane]
+  EP --> RP[Redress plane]
+  AP[Assurance plane] --> GP
+  AP --> CP
+  AP --> DP
+  AP --> EP
+  FP[Federation plane] --> GP
+  FP --> CP
+  FP --> DP

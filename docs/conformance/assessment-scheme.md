@@ -24,4 +24,4 @@ An assessment scheme defines how conformance is evaluated and maintained.
 - complaints and appeals;
 - change control and transition periods.
 
-The machine-readable scheme in `model/conformance/assessment-scheme.yaml` exposes fields that Commit 4's Guided Framework Construction flow can populate from adopter decisions.
+The machine-readable scheme in `model/conformance/assessment-scheme.yaml` exposes fields that the Guided Framework Construction flow can populate from adopter decisions.

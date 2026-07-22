@@ -43,6 +43,6 @@ An issue may remain open at release only where its impact is disclosed and it do
 
 See [Maturation Governance](maturation-governance.md) for status and closure rules and [External Framework Pattern Adoption](external-framework-pattern-adoption.md) for the patterns being evaluated against these gaps.
 
-## Commit 2 evidence
+## Available operational evidence
 
 URI-09 and URI-10 now have draft evidence available. They remain open for worked-profile validation and release review rather than being treated as fully closed.

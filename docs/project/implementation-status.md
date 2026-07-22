@@ -20,6 +20,6 @@ ONDTF v0.5.0 is a feature-complete specification and governance framework with r
 
 Implementers are encouraged to report ambiguity, conflicting requirements, missing evidence semantics, interoperability problems and operational assumptions. Implementation feedback should distinguish framework defects from profile choices and deployment-specific constraints.
 
-## Commit 2 operationalisation
+## Current operationalisation
 
 The provider and service lifecycle, assessment scheme, conformance claim model, surveillance, nonconformity, public status and appeals architecture now have coordinated human-readable and machine-readable drafts.
