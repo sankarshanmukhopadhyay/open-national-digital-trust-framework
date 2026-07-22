@@ -30,4 +30,4 @@ flowchart LR
 - [Privacy Impact Assessment](privacy-impact-assessment.md)
 - [Privacy Threats and Controls](privacy-threats-controls.md)
 
-The framework is informed by ISO/IEC 29100:2024, ISO/IEC 27701:2025, ISO/IEC 29134:2023, ISO/IEC 27561:2024, and the NIST Privacy Framework. These are informative sources and do not create automatic conformity claims.
+The framework is informed by [ISO/IEC 29100:2024](../standards/references.md#ref-ISO-IEC-29100-2024), [ISO/IEC 27701:2025](../standards/references.md#ref-ISO-IEC-27701-2025), [ISO/IEC 29134:2023](../standards/references.md#ref-ISO-IEC-29134-2023), [ISO/IEC 27561:2024](../standards/references.md#ref-ISO-IEC-27561-2024), and [the NIST Privacy Framework](../standards/references.md#ref-NIST-PRIVACY-FRAMEWORK-1.0). These are informative sources and do not create automatic conformity claims.

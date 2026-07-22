@@ -1,5 +1,11 @@
 # Changelog
 
+### Added
+
+- Project readiness pages covering feature completeness, known limitations, design decisions, future work and implementation status.
+- A single comprehensive standards, specifications, guidelines and jurisdictional instruments register with stable citation identifiers.
+- Citation validation and a Jekyll data mirror used to render the maintained register on GitHub Pages.
+
 ## [Unreleased]
 
 ### Fixed

@@ -1,7 +1,0 @@
-flowchart TD
-  D[Proposed architecture decision] --> P{Consistent with all applicable principles?}
-  P -->|Yes| T[Trace to requirements and controls]
-  P -->|No| E{Profile-authorised exception?}
-  E -->|No| R[Reject or redesign]
-  E -->|Yes| X[Record exception, rationale, risk and compensating controls]
-  X --> T

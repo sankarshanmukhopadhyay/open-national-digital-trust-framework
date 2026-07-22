@@ -72,6 +72,6 @@ A control is not considered effective merely because it is documented. A conform
 
 ## Informative external grounding
 
-ONDTF controls may be mapped to external control frameworks. Such mappings MUST state whether the relationship is equivalent, partial, narrower, broader, or merely informed by. Initial informative sources include NIST SP 800-53, ISO/IEC 27001, NIST SP 800-30, the NIST Cybersecurity Framework, MITRE ATT&CK, and OWASP guidance. No equivalence is claimed by naming a source.
+ONDTF controls may be mapped to external control frameworks. Such mappings MUST state whether the relationship is equivalent, partial, narrower, broader, or merely informed by. Initial informative sources include [NIST SP 800-53](../standards/references.md#ref-NIST-SP-800-53-R5), [ISO/IEC 27001](../standards/references.md#ref-ISO-IEC-27001-2022), [NIST SP 800-30](../standards/references.md#ref-NIST-SP-800-30-R1), [the NIST Cybersecurity Framework](../standards/references.md#ref-NIST-CSF-2.0), [MITRE ATT&CK](../standards/references.md#ref-MITRE-ATTACK-ENTERPRISE), and [OWASP guidance](../standards/references.md#ref-OWASP-ASVS-5.0). No equivalence is claimed by naming a source.
 
 The machine-readable sources are [`control-families.yaml`](../../model/security/control-families.yaml) and [`controls.yaml`](../../model/security/controls.yaml).

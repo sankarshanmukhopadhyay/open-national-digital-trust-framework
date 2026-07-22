@@ -7,7 +7,7 @@ nav_order: 1
 
 # Risk management method
 
-ONDTF adopters MUST operate a repeatable risk process that connects protected assets, threat events, affected parties, controls, residual exposure and accountable acceptance decisions. The method is compatible with ISO 31000, ISO/IEC 27005 and NIST risk-management concepts, but ONDTF does not claim conformance to those standards merely by using this method.
+ONDTF adopters MUST operate a repeatable risk process that connects protected assets, threat events, affected parties, controls, residual exposure and accountable acceptance decisions. The method is compatible with [ISO 31000](../standards/references.md#ref-ISO-31000-2018), [ISO/IEC 27005](../standards/references.md#ref-ISO-IEC-27005-2022) and [NIST risk-management concepts](../standards/references.md#ref-NIST-SP-800-37-R2), but ONDTF does not claim conformance to those standards merely by using this method.
 
 ## Risk statement
 

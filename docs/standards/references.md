@@ -1,45 +1,35 @@
 ---
 layout: default
-title: Standards and Specifications Register
+title: Standards, Specifications and Guidelines Register
 parent: Standards Profile
 nav_order: 3
 ---
 
-# Standards and specifications register
+# Standards, specifications and guidelines register
 
-ONDTF references established standards to ground terminology, controls, protocols and assessment practices. A citation does not by itself create an ONDTF conformance dependency.
+This is the single maintained catalogue of external standards, specifications, guidelines and jurisdictional instruments referenced by ONDTF. The machine-readable source is [`model/references/standards-register.yaml`]({{ '/model/references/standards-register.yaml' | relative_url }}). Pages citing an external reference SHOULD link to the corresponding entry here rather than duplicating version and status information.
 
 ## Reference classes
 
 | Class | Meaning |
 |---|---|
-| Foundational | informs ONDTF concepts or methods across profiles |
-| Profile-dependent | becomes required only when selected by an adoption profile |
-| Informative mapping | supports comparison and traceability without asserting equivalence or certification |
+| Foundational | Informs ONDTF concepts or methods across profiles. |
+| Profile-dependent | Becomes required only when selected by an adoption or interoperability profile. |
+| Informative mapping | Supports comparison and traceability without asserting equivalence, certification or conformance. |
+| Jurisdiction profile | Applies only where selected by a jurisdiction profile and subject to current legal review. |
 
-The canonical machine-readable register is `model/references/standards-register.yaml`.
+## Citation rule
 
-## Initial standards landscape
+Each citation MUST identify a stable register identifier. Drafts and candidate publications MUST be described using their actual publication status. A mapping to an external publication does not make that publication universally normative for ONDTF and does not establish certification or regulatory compliance.
 
-| Identifier | Area | ONDTF use | Class |
-|---|---|---|---|
-| ISO 31000:2018 | risk management | principles and lifecycle | Foundational |
-| ISO/IEC 27001:2022 | information security management | management-system alignment | Informative mapping |
-| ISO/IEC 27002:2022 | security controls | control design reference | Informative mapping |
-| ISO/IEC 27005:2022 | information security risk | risk method reference | Foundational |
-| NIST CSF 2.0 | cybersecurity outcomes | Govern-to-Recover outcome mapping | Informative mapping |
-| NIST SP 800-53 Rev. 5 | security and privacy controls | detailed control crosswalk | Informative mapping |
-| NIST SP 800-37 Rev. 2 | lifecycle risk management | continuous monitoring and authorisation concepts | Foundational |
-| ISO/IEC 17000:2020 | conformity assessment vocabulary | assessment terminology | Foundational |
-| ISO/IEC 17020:2012 | inspection bodies | assessor independence concepts | Informative mapping |
-| ISO/IEC 17065:2012 | product, process and service certification | certification scheme concepts | Informative mapping |
-| ISO/IEC 17025:2017 | testing and calibration laboratories | test competence concepts | Informative mapping |
+## Complete register
 
-## Citation policy
+| Identifier | Publisher | Publication | Status | ONDTF use | Class |
+|---|---|---|---|---|---|
+{% assign sorted_refs = site.data.standards_register.references | sort: "id" %}
+{% for ref in sorted_refs %}<a id="ref-{{ ref.id }}"></a>| `{{ ref.id }}` | {{ ref.publisher }} | [{{ ref.title }}]({{ ref.canonical_url }}) | {{ ref.status }} | {{ ref.ondtf_use }} | {{ ref.class }} |
+{% endfor %}
 
-References MUST identify the publisher, title, edition or version, publication status, canonical source and date last reviewed. Drafts MUST be marked as drafts. Withdrawn or superseded documents MUST remain traceable when historical mappings depend on them, but MUST NOT be represented as current.
+## Maintenance
 
-
-## Data security, privacy and jurisdiction references
-
-The register now also includes ISO/IEC 29100:2024, ISO/IEC 27701:2025, ISO/IEC 29134:2023, ISO/IEC 27561:2024, the NIST Privacy Framework 1.0, and initial India-profile sources. Jurisdiction sources are classified as profile material rather than universal ONDTF requirements.
+The register MUST be reviewed before each minor or major ONDTF release. Review includes publication status, edition, canonical URL, supersession, ONDTF usage and classification. Historical references MAY remain when required for traceability, but MUST be marked as superseded or withdrawn and MUST NOT be presented as current.

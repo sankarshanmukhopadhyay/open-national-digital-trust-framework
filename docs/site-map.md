@@ -142,3 +142,12 @@ Machine-readable bindings, model records, governance registers, and validation e
 - [Privacy](privacy/)
 - [Rights and Redress](rights/)
 - [Jurisdiction Profiles](../profiles/)
+
+## Project readiness
+
+- [Feature Completeness]({{ '/docs/project/feature-completeness.html' | relative_url }})
+- [Known Limitations]({{ '/docs/project/known-limitations.html' | relative_url }})
+- [Design Decisions]({{ '/docs/project/design-decisions.html' | relative_url }})
+- [Future Work]({{ '/docs/project/future-work.html' | relative_url }})
+- [Implementation Status]({{ '/docs/project/implementation-status.html' | relative_url }})
+- [Standards Register]({{ '/docs/standards/references.html' | relative_url }})
