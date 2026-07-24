@@ -17,6 +17,7 @@ The release also introduces Guided Framework Construction as a governed adaptati
 - affected-party notice, explanation, correction, appeal, accessibility and remedy;
 - governed jurisdiction, sector, technology, recognition and operational profiles;
 - controlled-document, standards-reference and profile maintenance;
+- governed sectoral standards adoption, including controlled taxonomies, bounded adoption modes and illustrative public-services and financial-services mappings;
 - formal external-framework pattern adoption;
 - machine-readable Guided Framework Construction;
 - a validated fictional Essential Services Access DTF worked profile.
@@ -27,8 +28,13 @@ The release closes URI-07, URI-08, URI-09, URI-10, URI-11, URI-12, URI-18 and UR
 
 ## Release boundary
 
-Operational Framework Draft means that the operating architecture is complete enough for structured review, profiling and implementation planning. It does not mean that ONDTF is production-certified, legally approved for a jurisdiction, empirically calibrated for every sector or independently demonstrated across multiple implementations.
+Operational Framework Draft means that the operating architecture is complete enough for structured review, profiling and implementation planning. It does not mean that ONDTF is production-certified, legally approved for a jurisdiction, approved by sector authorities, empirically calibrated for every sector or independently demonstrated across multiple implementations.
 
 ## Upgrade guidance
 
 Adopters of v0.5.0 should review the normative catalogue, role assignments, provider lifecycle, conformance model, assurance dimensions, rights and remedy model, profile architecture and maintenance controls. Existing profiles should be re-expressed using the profile manifest and guided-construction decision semantics where practical.
+
+
+## Sectoral standards-adoption foundation
+
+v0.6.0 introduces the machine-readable and documentary foundation for sector-specific standards adoption. It separates discovery and relevance from formal adoption, requires bounded scope and evidence, and provides illustrative mappings for public services and financial services. These examples are not approved sector profiles or legal determinations. Competent review and pilot conversion are scheduled for v0.7.0.

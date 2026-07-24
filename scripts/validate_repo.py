@@ -120,3 +120,5 @@ except FileNotFoundError:
 if errors:
     print('\n'.join(errors)); sys.exit(1)
 print(f'ONDTF repository validation passed: {len(pages)} published Markdown pages checked.')
+
+# Sector standards validation is also run independently by the Makefile.

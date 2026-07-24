@@ -1,0 +1,37 @@
+taxonomy_id: ondtf-sector-taxonomy
+version: 0.1.0
+status: operational-draft
+last_updated: '2026-07-24'
+sectors:
+  - id: public-services
+    title: Public Services and Benefits
+    description: Government and delegated public services, entitlements, benefits and essential-service access.
+    sub_sectors: [civil-registration, social-protection, taxation, licensing, essential-services]
+  - id: financial-services
+    title: Financial Services
+    description: Banking, payments, insurance, securities, lending and regulated financial-market services.
+    sub_sectors: [retail-banking, payments, insurance, securities, lending]
+  - id: healthcare
+    title: Healthcare and Social Care
+    description: Care delivery, professional authority, health information and social-care coordination.
+    sub_sectors: [clinical-care, pharmacy, health-insurance, public-health, social-care]
+  - id: education-workforce
+    title: Education and Workforce
+    description: Education, qualifications, professional standing, employment and workforce mobility.
+    sub_sectors: [school-education, higher-education, vocational-training, professional-licensing, employment]
+  - id: telecommunications-platforms
+    title: Telecommunications and Digital Platforms
+    description: Connectivity, subscriber services, online platforms and communications infrastructure.
+    sub_sectors: [telecommunications, internet-access, digital-platforms, messaging]
+  - id: travel-border
+    title: Travel, Migration and Border Processes
+    description: Travel documents, visas, migration status, carriers and border-control processes.
+    sub_sectors: [travel-documents, visas, migration, carriers, border-control]
+  - id: trade-logistics
+    title: Trade, Logistics and Supply Chains
+    description: Cross-border trade, customs, logistics, provenance and supply-chain coordination.
+    sub_sectors: [customs, logistics, product-provenance, trade-finance, supply-chain]
+  - id: media-content
+    title: Media, Content and Intellectual Property
+    description: Content provenance, rights, licensing, publishing, advertising and media distribution.
+    sub_sectors: [news-media, entertainment, advertising, intellectual-property, content-platforms]

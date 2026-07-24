@@ -54,6 +54,10 @@ Each citation MUST identify a stable register identifier. Drafts and candidate p
 
 The table is horizontally scrollable on narrow screens. Each row has a stable anchor of the form `#ref-IDENTIFIER`, which is the canonical target for citations elsewhere in ONDTF.
 
+## Sectoral views
+
+Sector-specific relevance and adoption decisions are maintained separately from publication metadata. See the [Sectoral Standards Adoption Strategy](sectoral-adoption-strategy.md). Sector mappings must reference the stable identifiers in this register and must distinguish illustrative mapping, candidate adoption and approved profile dependency.
+
 ## Maintenance
 
 The register MUST be reviewed before each minor or major ONDTF release. Review includes publication status, edition, canonical URL, supersession, ONDTF usage and classification. Historical references MAY remain when required for traceability, but MUST be marked as superseded or withdrawn and MUST NOT be presented as current.

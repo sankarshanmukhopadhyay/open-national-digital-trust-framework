@@ -12,19 +12,19 @@
 
 ### v0.6.x — Implementation refinement
 
-Resolve ambiguity and defects found through implementer use, strengthen examples, improve operational guidance, and refine evidence semantics without adding new foundational domains.
+Complete the Operational Framework Draft, including governed profile construction, operational evidence, and a sectoral standards-adoption foundation that separates relevance, mapping and formal adoption.
 
 ### v0.7.x — Deployment experience
 
-Document pilot deployments, deployment patterns, operating assumptions, implementation FAQs, and evidence from practical adoption.
+Document independent implementation and sector pilots, including reviewed public-services and financial-services adoption propositions, deployment patterns, operating assumptions and practical evidence.
 
 ### v0.8.x — Interoperability and conformance
 
-Strengthen cross-profile validation, executable assertions, negative tests, assessor guidance, and evidence portability.
+Strengthen cross-profile and cross-sector validation, executable assertions, negative tests, recognition, assessor guidance and evidence portability.
 
 ### v0.9.0 — Candidate Specification
 
-Freeze the architectural model and terminology except for evidence-driven corrections; demonstrate independent implementation experience; complete privacy, security, legal, accessibility, and adversarial review.
+Freeze the architectural model, terminology and sectoral adoption governance except for evidence-driven corrections; demonstrate independent implementation experience; complete privacy, security, legal, accessibility and adversarial review.
 
 ### v1.0.0 — Stable Initial Release
 
@@ -35,3 +35,7 @@ Publish the stable normative core, approved governance and migration process, ve
 - [Open National Digital Trust Framework](https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework)
 - [Trust Systems Meta-Model](https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model)
 - [Trust Infrastructure Schemas](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas)
+
+## Detailed delivery plan
+
+The evidence-gated work packages, release gates, sectoral standards-adoption sequence and commit plan are maintained in [`docs/project/detailed-delivery-roadmap.md`](docs/project/detailed-delivery-roadmap.md).

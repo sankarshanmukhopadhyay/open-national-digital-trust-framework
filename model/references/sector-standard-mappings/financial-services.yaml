@@ -1,0 +1,31 @@
+sector_id: financial-services
+version: 0.1.0
+status: illustrative
+authority: UNASSIGNED-SECTOR-PROFILE-AUTHORITY
+standards:
+  - standard_id: NIST-SP-800-63-4
+    disposition: mapped
+    adoption_mode: capability-adoption
+    relevance: [customer-onboarding, authentication, account-recovery, federation]
+    selected_scope: [identity-proofing, authentication, authenticator-lifecycle]
+    excluded_scope: [unmodified-us-federal-agency-policy]
+    rationale: Provides reusable identity-assurance capabilities subject to reconciliation with customer-identification, strong-authentication, fraud, accessibility and sector-supervision obligations.
+    evidence_required: [assurance-level-rationale, authentication-test-results, recovery-and-rebinding-procedure, fraud-control-assessment]
+    conflicts: [customer-identification-rules, sector-authentication-rules]
+    review:
+      owner: ROLE-STANDARDS-CURATOR
+      next_review: null
+      triggers: [new-edition, regulatory-change, material-fraud-pattern]
+  - standard_id: ISO-IEC-27001-2022
+    disposition: mapped
+    adoption_mode: informative-reference
+    relevance: [security-management, operational-governance]
+    selected_scope: [information-security-management-alignment]
+    excluded_scope: [automatic-ondtf-conformance, automatic-sector-compliance]
+    rationale: Supports security-management alignment but does not by itself establish transaction authority, evidence admissibility, customer remedy or sector-profile conformance.
+    evidence_required: [control-crosswalk, scope-statement, residual-gap-record]
+    conflicts: []
+    review:
+      owner: ROLE-STANDARDS-CURATOR
+      next_review: null
+      triggers: [new-edition, certification-scope-change, material-incident]

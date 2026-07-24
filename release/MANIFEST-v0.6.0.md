@@ -18,3 +18,14 @@
 - `model/conformance/assessment-scheme.yaml`
 - `model/adoption/question-catalogue.yaml`
 - `model/project/maturation-register.yaml`
+
+
+## Sectoral standards-adoption foundation
+- `model/references/sector-taxonomy.yaml`
+- `model/references/adoption-taxonomy.yaml`
+- `model/references/sector-standard-mapping.schema.json`
+- `model/references/sector-standard-mappings/public-services.yaml`
+- `model/references/sector-standard-mappings/financial-services.yaml`
+- `docs/standards/sectoral-adoption-strategy.md`
+- `docs/project/detailed-delivery-roadmap.md`
+- `scripts/validate_sector_standards.py`

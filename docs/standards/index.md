@@ -32,5 +32,6 @@ A national ecosystem SHOULD support the credential formats required by its use c
 
 - [Standards, Specifications and Guidelines Register](references.md)
 - [Standards Alignment Method](alignment-method.md)
+- [Sectoral Standards Adoption Strategy](sectoral-adoption-strategy.md)
 - [NIST CSF 2.0 Mapping](nist-csf-mapping.md)
 - [Security and Risk Control Alignment](iso-nist-control-alignment.md)

@@ -38,6 +38,7 @@ This page provides publication coverage for the complete documentation set.
 - [Programme management]({{ '/docs/programme/' | relative_url }})
 - [Appendices]({{ '/docs/appendices/' | relative_url }})
 - [Project governance and release files]({{ '/docs/project/' | relative_url }})
+  - [Detailed Delivery Roadmap to v0.9.0]({{ '/docs/project/detailed-delivery-roadmap.html' | relative_url }})
 
 ## Machine-readable companion artefacts
 
@@ -136,6 +137,7 @@ Machine-readable bindings, model records, governance registers, and validation e
 - [Metrics and Reporting]({{ '/docs/assurance/metrics-reporting.html' | relative_url }})
 - [Standards and Specifications Register]({{ '/docs/standards/references.html' | relative_url }})
 - [Standards Alignment Method]({{ '/docs/standards/alignment-method.html' | relative_url }})
+- [Sectoral Standards Adoption Strategy]({{ '/docs/standards/sectoral-adoption-strategy.html' | relative_url }})
 - [NIST CSF 2.0 Mapping]({{ '/docs/standards/nist-csf-mapping.html' | relative_url }})
 - [Security and Risk Control Alignment]({{ '/docs/standards/iso-nist-control-alignment.html' | relative_url }})
 

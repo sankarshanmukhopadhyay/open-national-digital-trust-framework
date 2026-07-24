@@ -32,6 +32,8 @@ This section makes the repository's maturity, boundaries and future direction vi
 - [Maturation Release Gates](release-gates.md)
 - [Implementation Evidence Programme](implementation-evidence.md)
 - [Maturation and Adoption Roadmap](adoption-roadmap.md)
+- [Detailed Delivery Roadmap to v0.9.0](detailed-delivery-roadmap.md)
+- [Sectoral Standards Adoption Strategy](../standards/sectoral-adoption-strategy.md)
 
 ## Canonical repository documents
 

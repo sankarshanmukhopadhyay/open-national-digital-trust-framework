@@ -1,0 +1,24 @@
+taxonomy_id: ondtf-standards-adoption-taxonomy
+version: 0.1.0
+status: operational-draft
+last_updated: '2026-07-24'
+adoption_states:
+  - id: discovered
+    meaning: Potentially relevant and awaiting structured assessment.
+  - id: mapped
+    meaning: Relevant capabilities, lifecycle functions and gaps have been identified.
+  - id: candidate
+    meaning: Proposed for bounded adoption and awaiting authorised decision or pilot evidence.
+  - id: adopted
+    meaning: Formally approved for a defined profile, scope and version.
+  - id: retired
+    meaning: No longer approved for new implementations; migration or historical traceability applies.
+adoption_modes:
+  - id: informative-reference
+    meaning: Used for context, comparison or guidance without normative dependency.
+  - id: capability-adoption
+    meaning: Selected capabilities or outcomes are adopted without wholesale document adoption.
+  - id: partial-normative-adoption
+    meaning: Identified clauses, profiles or requirements become normative within a named profile.
+  - id: normative-profile-dependency
+    meaning: The external publication and version are a required dependency of a named profile.

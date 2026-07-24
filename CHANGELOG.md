@@ -5,6 +5,14 @@
 ## [0.6.0] - 2026-07-24
 
 ### Added
+
+- governed sectoral standards-adoption foundation with controlled sector and adoption taxonomies;
+- machine-readable sector-standard mapping schema and illustrative public-services and financial-services mappings;
+- sectoral adoption strategy and integrated detailed delivery roadmap through v0.9.0;
+- validation for sector, standard, disposition and adoption-mode references.
+
+
+### Added
 - Role-specific normative requirement catalogue and institutional operating model.
 - Complete provider and service lifecycle with machine-readable states and transitions.
 - Conformance, accreditation, certification, surveillance and appeal architecture.

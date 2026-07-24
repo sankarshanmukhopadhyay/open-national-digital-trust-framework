@@ -1,0 +1,31 @@
+sector_id: public-services
+version: 0.1.0
+status: illustrative
+authority: UNASSIGNED-SECTOR-PROFILE-AUTHORITY
+standards:
+  - standard_id: NIST-SP-800-63-4
+    disposition: mapped
+    adoption_mode: capability-adoption
+    relevance: [identity-proofing, authentication, federation, account-recovery]
+    selected_scope: [identity-proofing, authenticator-management, authentication, federation]
+    excluded_scope: [unmodified-us-federal-agency-policy]
+    rationale: Provides mature identity-assurance capabilities that may be adapted where public-service authority, accessibility, exclusion and alternative-channel obligations are separately addressed.
+    evidence_required: [assurance-selection-rationale, authentication-testing, recovery-procedure, accessibility-assessment]
+    conflicts: [jurisdiction-identity-law, essential-service-access-obligations]
+    review:
+      owner: ROLE-STANDARDS-CURATOR
+      next_review: null
+      triggers: [new-edition, jurisdiction-profile-change, pilot-finding]
+  - standard_id: ISO-IEC-29134-2023
+    disposition: mapped
+    adoption_mode: capability-adoption
+    relevance: [privacy-impact-assessment, affected-party-risk]
+    selected_scope: [privacy-impact-assessment-method]
+    excluded_scope: [claim-of-legal-compliance]
+    rationale: Supports structured privacy-impact assessment while ONDTF retains separate requirements for authority, rights, remedy, accessibility and public-law review.
+    evidence_required: [completed-impact-assessment, risk-treatment-record, affected-party-review]
+    conflicts: []
+    review:
+      owner: ROLE-STANDARDS-CURATOR
+      next_review: null
+      triggers: [new-edition, material-service-change, privacy-law-change]
