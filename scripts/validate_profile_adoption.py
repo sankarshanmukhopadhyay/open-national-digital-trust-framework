@@ -89,6 +89,8 @@ required_docs = [
     "docs/adoption/workshop-guide.md",
     "docs/adoption/guided-construction-model.md",
     "docs/learning/framework-construction.md",
+    "examples/worked-profile/index.md",
+    "examples/worked-profile/validation-report.md",
 ]
 for rel in required_docs:
     if not (root / rel).exists():

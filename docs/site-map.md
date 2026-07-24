@@ -190,3 +190,5 @@ Machine-readable bindings, model records, governance registers, and validation e
 - [Assurance Composition](assurance/assurance-composition.md)
 - [Affected Party Operating Model](rights/affected-party-operating-model.md)
 - [Rights Evidence](rights/rights-evidence.md)
+
+- [Worked operational profile](../examples/worked-profile/)

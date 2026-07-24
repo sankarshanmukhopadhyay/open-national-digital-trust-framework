@@ -1,0 +1,21 @@
+roles:
+- id: governing-authority
+  accountable_for:
+  - approval
+  - amendment
+  - retirement
+- id: framework-administrator
+  responsible_for:
+  - controlled documents
+  - publication
+- id: supervisory-authority
+  accountable_for:
+  - emergency restriction
+  - supervision
+- id: assessment-body
+  independent_from:
+  - service-provider
+- id: remedy-body
+  independent_from:
+  - registry-operator
+  - original-decision-maker

@@ -36,6 +36,7 @@ flowchart LR
 
 - [India profile](india/)
 - [Cross-border recognition](cross-border.md)
+- [Worked operational profile](../examples/worked-profile/)
 
 {: .important }
 A profile is not legal advice, certification, accreditation, or governmental endorsement. Legal mappings require competent review and must record source, date, status, scope, and review owner.

@@ -1,0 +1,6 @@
+pattern: PAT-CON-003
+assessment: accredited-independent
+surveillance:
+- annual
+- event-triggered
+public_status_required: true

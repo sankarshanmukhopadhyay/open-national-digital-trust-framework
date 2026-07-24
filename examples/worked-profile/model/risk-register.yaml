@@ -1,0 +1,13 @@
+risks:
+- id: ESA-R-001
+  risk: stale status
+  severity: high
+  control: bounded freshness and fail-safe outcome
+- id: ESA-R-002
+  risk: issuer compromise
+  severity: critical
+  control: suspension and evidence-path isolation
+- id: ESA-R-003
+  risk: remedy obstruction
+  severity: high
+  control: complaint ageing and oversight escalation

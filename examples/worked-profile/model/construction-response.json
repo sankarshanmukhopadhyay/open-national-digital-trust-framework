@@ -1,0 +1,618 @@
+{
+  "framework_id": "ESA-DTF-WORKED-PROFILE",
+  "generated_at": "2026-07-24T00:00:00Z",
+  "responses": [
+    {
+      "question_id": "GFC-SCP-001",
+      "state": "selected",
+      "value": {
+        "purpose": "Enable people to access essential public and regulated services using verifiable evidence while preserving contestability, accessibility and institutional accountability.",
+        "outcomes": [
+          "reduced documentary friction",
+          "traceable authority",
+          "timely correction and remedy"
+        ]
+      },
+      "provenance": {
+        "recorded_by": "Worked Profile Design Team",
+        "recorded_at": "2026-07-24T00:00:00Z",
+        "authority_reference": "ESA-DTF-CHARTER-DRAFT-001",
+        "evidence": [
+          "examples/worked-profile/decision-register.md"
+        ]
+      },
+      "reviews": [
+        {
+          "type": "governance",
+          "status": "approved",
+          "reviewer": "Worked-profile governance reviewer"
+        },
+        {
+          "type": "stakeholder",
+          "status": "approved",
+          "reviewer": "Worked-profile stakeholder reviewer"
+        }
+      ]
+    },
+    {
+      "question_id": "GFC-SCP-002",
+      "state": "selected",
+      "value": {
+        "services": [
+          "benefit eligibility confirmation",
+          "regulated utility onboarding",
+          "assisted service access"
+        ],
+        "actors": [
+          "governing authority",
+          "service providers",
+          "credential issuers",
+          "verification services",
+          "relying service operators"
+        ],
+        "affected_parties": [
+          "applicants",
+          "beneficiaries",
+          "authorised representatives",
+          "people wrongly matched or excluded"
+        ],
+        "harms": [
+          "wrongful denial",
+          "unlawful disclosure",
+          "authority misuse",
+          "stale-status reliance"
+        ],
+        "exclusions": [
+          "law-enforcement identification",
+          "general population surveillance",
+          "automated final eligibility determination"
+        ]
+      },
+      "provenance": {
+        "recorded_by": "Worked Profile Design Team",
+        "recorded_at": "2026-07-24T00:00:00Z",
+        "authority_reference": "ESA-DTF-CHARTER-DRAFT-001",
+        "evidence": [
+          "examples/worked-profile/decision-register.md"
+        ]
+      },
+      "reviews": [
+        {
+          "type": "governance",
+          "status": "approved",
+          "reviewer": "Worked-profile governance reviewer"
+        },
+        {
+          "type": "risk",
+          "status": "approved",
+          "reviewer": "Worked-profile risk reviewer"
+        },
+        {
+          "type": "stakeholder",
+          "status": "approved",
+          "reviewer": "Worked-profile stakeholder reviewer"
+        }
+      ]
+    },
+    {
+      "question_id": "GFC-AUT-001",
+      "state": "review_required",
+      "value": {
+        "basis": "Illustrative statutory and administrative mandate; adopter must replace with jurisdiction-specific authority.",
+        "status": "worked-example only"
+      },
+      "provenance": {
+        "recorded_by": "Worked Profile Design Team",
+        "recorded_at": "2026-07-24T00:00:00Z",
+        "authority_reference": "ESA-DTF-CHARTER-DRAFT-001",
+        "evidence": [
+          "examples/worked-profile/decision-register.md"
+        ]
+      },
+      "reviews": [
+        {
+          "type": "legal",
+          "status": "approved",
+          "reviewer": "Worked-profile legal reviewer"
+        },
+        {
+          "type": "governance",
+          "status": "approved",
+          "reviewer": "Worked-profile governance reviewer"
+        }
+      ]
+    },
+    {
+      "question_id": "GFC-AUT-002",
+      "state": "selected",
+      "value": {
+        "approve": "Governing Authority",
+        "amend": "Governing Authority after consultation",
+        "suspend": "Supervisory Authority for emergency controls",
+        "retire": "Governing Authority",
+        "independent_oversight": "Independent Oversight Body"
+      },
+      "provenance": {
+        "recorded_by": "Worked Profile Design Team",
+        "recorded_at": "2026-07-24T00:00:00Z",
+        "authority_reference": "ESA-DTF-CHARTER-DRAFT-001",
+        "evidence": [
+          "examples/worked-profile/decision-register.md"
+        ]
+      },
+      "reviews": [
+        {
+          "type": "legal",
+          "status": "approved",
+          "reviewer": "Worked-profile legal reviewer"
+        },
+        {
+          "type": "governance",
+          "status": "approved",
+          "reviewer": "Worked-profile governance reviewer"
+        }
+      ]
+    },
+    {
+      "question_id": "GFC-ROL-001",
+      "state": "selected",
+      "value": {
+        "required_roles": [
+          "Governing Authority",
+          "Framework Administrator",
+          "Supervisory Authority",
+          "Conformity Assessment Body",
+          "Registry / Trust-list Operator",
+          "Service Provider",
+          "Complaints, Appeals and Remedy Body",
+          "Independent Oversight"
+        ],
+        "prohibited_combinations": [
+          [
+            "Service Provider",
+            "Conformity Assessment Body"
+          ],
+          [
+            "Registry / Trust-list Operator",
+            "Complaints, Appeals and Remedy Body"
+          ]
+        ]
+      },
+      "provenance": {
+        "recorded_by": "Worked Profile Design Team",
+        "recorded_at": "2026-07-24T00:00:00Z",
+        "authority_reference": "ESA-DTF-CHARTER-DRAFT-001",
+        "evidence": [
+          "examples/worked-profile/decision-register.md"
+        ]
+      },
+      "reviews": [
+        {
+          "type": "governance",
+          "status": "approved",
+          "reviewer": "Worked-profile governance reviewer"
+        },
+        {
+          "type": "assurance",
+          "status": "approved",
+          "reviewer": "Worked-profile assurance reviewer"
+        }
+      ]
+    },
+    {
+      "question_id": "GFC-LCY-001",
+      "state": "selected",
+      "value": {
+        "pattern": "PAT-LCY-002",
+        "rationale": "Admission plus ongoing surveillance is required for services capable of causing material exclusion or rights impacts."
+      },
+      "provenance": {
+        "recorded_by": "Worked Profile Design Team",
+        "recorded_at": "2026-07-24T00:00:00Z",
+        "authority_reference": "ESA-DTF-CHARTER-DRAFT-001",
+        "evidence": [
+          "examples/worked-profile/decision-register.md"
+        ]
+      },
+      "reviews": [
+        {
+          "type": "operations",
+          "status": "approved",
+          "reviewer": "Worked-profile operations reviewer"
+        },
+        {
+          "type": "governance",
+          "status": "approved",
+          "reviewer": "Worked-profile governance reviewer"
+        }
+      ]
+    },
+    {
+      "question_id": "GFC-ASR-001",
+      "state": "selected",
+      "value": {
+        "dimensions": [
+          "identity",
+          "authority",
+          "delegation",
+          "evidence",
+          "execution",
+          "operational",
+          "status_freshness",
+          "privacy",
+          "remedy_readiness"
+        ],
+        "use_cases": [
+          "essential-service access",
+          "authorised-representative action"
+        ]
+      },
+      "provenance": {
+        "recorded_by": "Worked Profile Design Team",
+        "recorded_at": "2026-07-24T00:00:00Z",
+        "authority_reference": "ESA-DTF-CHARTER-DRAFT-001",
+        "evidence": [
+          "examples/worked-profile/decision-register.md"
+        ]
+      },
+      "reviews": [
+        {
+          "type": "assurance",
+          "status": "approved",
+          "reviewer": "Worked-profile assurance reviewer"
+        },
+        {
+          "type": "risk",
+          "status": "approved",
+          "reviewer": "Worked-profile risk reviewer"
+        }
+      ]
+    },
+    {
+      "question_id": "GFC-ASR-002",
+      "state": "selected",
+      "value": {
+        "minimum_level": "AL-2",
+        "high_risk_level": "AL-3",
+        "critical_floors": [
+          "authority",
+          "status_freshness",
+          "privacy",
+          "remedy_readiness"
+        ],
+        "non_compensable": true
+      },
+      "provenance": {
+        "recorded_by": "Worked Profile Design Team",
+        "recorded_at": "2026-07-24T00:00:00Z",
+        "authority_reference": "ESA-DTF-CHARTER-DRAFT-001",
+        "evidence": [
+          "examples/worked-profile/decision-register.md"
+        ]
+      },
+      "reviews": [
+        {
+          "type": "assurance",
+          "status": "approved",
+          "reviewer": "Worked-profile assurance reviewer"
+        },
+        {
+          "type": "risk",
+          "status": "approved",
+          "reviewer": "Worked-profile risk reviewer"
+        }
+      ]
+    },
+    {
+      "question_id": "GFC-CON-001",
+      "state": "selected",
+      "value": {
+        "pattern": "PAT-CON-003",
+        "assessment": "accredited independent assessment",
+        "surveillance": "annual plus event-triggered"
+      },
+      "provenance": {
+        "recorded_by": "Worked Profile Design Team",
+        "recorded_at": "2026-07-24T00:00:00Z",
+        "authority_reference": "ESA-DTF-CHARTER-DRAFT-001",
+        "evidence": [
+          "examples/worked-profile/decision-register.md"
+        ]
+      },
+      "reviews": [
+        {
+          "type": "assurance",
+          "status": "approved",
+          "reviewer": "Worked-profile assurance reviewer"
+        },
+        {
+          "type": "governance",
+          "status": "approved",
+          "reviewer": "Worked-profile governance reviewer"
+        }
+      ]
+    },
+    {
+      "question_id": "GFC-TEC-001",
+      "state": "profile_controlled",
+      "value": {
+        "principles": [
+          "technology neutral core",
+          "cryptographic agility",
+          "authoritative status checking",
+          "offline use only with bounded freshness"
+        ],
+        "dependencies": [
+          "identifier profile",
+          "credential profile",
+          "status service profile",
+          "audit evidence profile"
+        ]
+      },
+      "provenance": {
+        "recorded_by": "Worked Profile Design Team",
+        "recorded_at": "2026-07-24T00:00:00Z",
+        "authority_reference": "ESA-DTF-CHARTER-DRAFT-001",
+        "evidence": [
+          "examples/worked-profile/decision-register.md"
+        ]
+      },
+      "reviews": [
+        {
+          "type": "technical",
+          "status": "approved",
+          "reviewer": "Worked-profile technical reviewer"
+        },
+        {
+          "type": "security",
+          "status": "approved",
+          "reviewer": "Worked-profile security reviewer"
+        },
+        {
+          "type": "privacy",
+          "status": "approved",
+          "reviewer": "Worked-profile privacy reviewer"
+        }
+      ]
+    },
+    {
+      "question_id": "GFC-RGT-001",
+      "state": "selected",
+      "value": {
+        "notice": "before evidence use and after adverse outcome",
+        "explanation": "reason, evidence source, policy basis and challenge route",
+        "challenge_sla_days": 10,
+        "appeal_independent": true,
+        "remedies": [
+          "correction",
+          "reconsideration",
+          "restoration of access",
+          "downstream correction notice"
+        ],
+        "accessibility": [
+          "WCAG-aligned digital channel",
+          "assisted and non-digital channel",
+          "authorised representation"
+        ]
+      },
+      "provenance": {
+        "recorded_by": "Worked Profile Design Team",
+        "recorded_at": "2026-07-24T00:00:00Z",
+        "authority_reference": "ESA-DTF-CHARTER-DRAFT-001",
+        "evidence": [
+          "examples/worked-profile/decision-register.md"
+        ]
+      },
+      "reviews": [
+        {
+          "type": "rights",
+          "status": "approved",
+          "reviewer": "Worked-profile rights reviewer"
+        },
+        {
+          "type": "accessibility",
+          "status": "approved",
+          "reviewer": "Worked-profile accessibility reviewer"
+        },
+        {
+          "type": "legal",
+          "status": "approved",
+          "reviewer": "Worked-profile legal reviewer"
+        },
+        {
+          "type": "stakeholder",
+          "status": "approved",
+          "reviewer": "Worked-profile stakeholder reviewer"
+        }
+      ]
+    },
+    {
+      "question_id": "GFC-RSK-001",
+      "state": "selected",
+      "value": {
+        "priority_risks": [
+          "stale status",
+          "issuer compromise",
+          "provider collusion",
+          "wrongful correlation",
+          "delegation misuse",
+          "registry outage",
+          "remedy obstruction"
+        ],
+        "emergency_scenarios": [
+          "registry integrity failure",
+          "systemic false denial",
+          "credential issuer compromise"
+        ]
+      },
+      "provenance": {
+        "recorded_by": "Worked Profile Design Team",
+        "recorded_at": "2026-07-24T00:00:00Z",
+        "authority_reference": "ESA-DTF-CHARTER-DRAFT-001",
+        "evidence": [
+          "examples/worked-profile/decision-register.md"
+        ]
+      },
+      "reviews": [
+        {
+          "type": "security",
+          "status": "approved",
+          "reviewer": "Worked-profile security reviewer"
+        },
+        {
+          "type": "risk",
+          "status": "approved",
+          "reviewer": "Worked-profile risk reviewer"
+        },
+        {
+          "type": "operations",
+          "status": "approved",
+          "reviewer": "Worked-profile operations reviewer"
+        }
+      ]
+    },
+    {
+      "question_id": "GFC-REC-001",
+      "state": "selected",
+      "value": true,
+      "provenance": {
+        "recorded_by": "Worked Profile Design Team",
+        "recorded_at": "2026-07-24T00:00:00Z",
+        "authority_reference": "ESA-DTF-CHARTER-DRAFT-001",
+        "evidence": [
+          "examples/worked-profile/decision-register.md"
+        ]
+      },
+      "reviews": [
+        {
+          "type": "legal",
+          "status": "approved",
+          "reviewer": "Worked-profile legal reviewer"
+        },
+        {
+          "type": "governance",
+          "status": "approved",
+          "reviewer": "Worked-profile governance reviewer"
+        },
+        {
+          "type": "assurance",
+          "status": "approved",
+          "reviewer": "Worked-profile assurance reviewer"
+        }
+      ]
+    },
+    {
+      "question_id": "GFC-REC-002",
+      "state": "selected",
+      "value": {
+        "model": "conditional equivalence",
+        "scope": "profile-by-profile",
+        "conditions": [
+          "documented authority",
+          "comparable assurance",
+          "status availability",
+          "rights and remedy compatibility"
+        ],
+        "suspension": "immediate for material integrity or remedy failure"
+      },
+      "provenance": {
+        "recorded_by": "Worked Profile Design Team",
+        "recorded_at": "2026-07-24T00:00:00Z",
+        "authority_reference": "ESA-DTF-CHARTER-DRAFT-001",
+        "evidence": [
+          "examples/worked-profile/decision-register.md"
+        ]
+      },
+      "reviews": [
+        {
+          "type": "legal",
+          "status": "approved",
+          "reviewer": "Worked-profile legal reviewer"
+        },
+        {
+          "type": "governance",
+          "status": "approved",
+          "reviewer": "Worked-profile governance reviewer"
+        },
+        {
+          "type": "assurance",
+          "status": "approved",
+          "reviewer": "Worked-profile assurance reviewer"
+        }
+      ]
+    },
+    {
+      "question_id": "GFC-MNT-001",
+      "state": "selected",
+      "value": {
+        "controlled_document_owner": "Framework Administrator",
+        "review_frequency": "annual",
+        "event_triggers": [
+          "law change",
+          "material incident",
+          "dependency change",
+          "assurance failure"
+        ]
+      },
+      "provenance": {
+        "recorded_by": "Worked Profile Design Team",
+        "recorded_at": "2026-07-24T00:00:00Z",
+        "authority_reference": "ESA-DTF-CHARTER-DRAFT-001",
+        "evidence": [
+          "examples/worked-profile/decision-register.md"
+        ]
+      },
+      "reviews": [
+        {
+          "type": "governance",
+          "status": "approved",
+          "reviewer": "Worked-profile governance reviewer"
+        },
+        {
+          "type": "operations",
+          "status": "approved",
+          "reviewer": "Worked-profile operations reviewer"
+        }
+      ]
+    },
+    {
+      "question_id": "GFC-MNT-002",
+      "state": "selected",
+      "value": {
+        "breaking_change_notice_days": 180,
+        "emergency_change": "immediate with retrospective review within 30 days",
+        "deprecation_period_days": 365,
+        "retirement_requires": [
+          "migration plan",
+          "rights impact review",
+          "public notice"
+        ]
+      },
+      "provenance": {
+        "recorded_by": "Worked Profile Design Team",
+        "recorded_at": "2026-07-24T00:00:00Z",
+        "authority_reference": "ESA-DTF-CHARTER-DRAFT-001",
+        "evidence": [
+          "examples/worked-profile/decision-register.md"
+        ]
+      },
+      "reviews": [
+        {
+          "type": "governance",
+          "status": "approved",
+          "reviewer": "Worked-profile governance reviewer"
+        },
+        {
+          "type": "technical",
+          "status": "approved",
+          "reviewer": "Worked-profile technical reviewer"
+        },
+        {
+          "type": "operations",
+          "status": "approved",
+          "reviewer": "Worked-profile operations reviewer"
+        }
+      ]
+    }
+  ]
+}

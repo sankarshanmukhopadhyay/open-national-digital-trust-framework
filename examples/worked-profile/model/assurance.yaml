@@ -1,0 +1,8 @@
+baseline_level: AL-2
+high_risk_level: AL-3
+critical_dimensions:
+- authority
+- status_freshness
+- privacy
+- remedy_readiness
+composition: critical-dimension-floor

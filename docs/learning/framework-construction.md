@@ -26,3 +26,8 @@ nav_order: 9
 | 9 | [Workshop Guide](../adoption/workshop-guide.md) | prepare facilitated decision-making |
 
 Use the generated package as a draft governance instrument. It becomes authoritative only through the approval route established by the adopting institution.
+
+
+## Apply the learning path
+
+After completing the conceptual sequence, inspect the [worked operational profile](../../examples/worked-profile/). Compare each guided answer with the generated operating model, machine-readable registers and validation result. The example intentionally retains one deployment-blocking authority qualification so that learners can see the difference between structural completeness and legitimate adoption.

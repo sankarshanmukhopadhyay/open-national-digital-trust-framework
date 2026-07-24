@@ -37,4 +37,6 @@ dtf-profile/
 
 Every generated section must expose its status, source decisions, inherited requirements, unresolved matters, and required reviews. Generation does not convert a provisional answer into an approved governance decision.
 
+A complete example is available in the [worked operational profile](../../examples/worked-profile/). It shows how responses, review qualifications, narrative pages and governed model artefacts remain traceable as one package.
+
 [Previous: Contradiction and Completeness](contradiction-and-completeness.md) · [Next: Workshop Guide](workshop-guide.md)

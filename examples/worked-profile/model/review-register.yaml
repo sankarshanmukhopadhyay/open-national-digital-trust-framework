@@ -1,0 +1,157 @@
+reviews:
+- question_id: GFC-SCP-001
+  reviews:
+  - type: governance
+    status: approved
+    reviewer: Worked-profile governance reviewer
+  - type: stakeholder
+    status: approved
+    reviewer: Worked-profile stakeholder reviewer
+- question_id: GFC-SCP-002
+  reviews:
+  - type: governance
+    status: approved
+    reviewer: Worked-profile governance reviewer
+  - type: risk
+    status: approved
+    reviewer: Worked-profile risk reviewer
+  - type: stakeholder
+    status: approved
+    reviewer: Worked-profile stakeholder reviewer
+- question_id: GFC-AUT-001
+  reviews:
+  - type: legal
+    status: approved
+    reviewer: Worked-profile legal reviewer
+  - type: governance
+    status: approved
+    reviewer: Worked-profile governance reviewer
+- question_id: GFC-AUT-002
+  reviews:
+  - type: legal
+    status: approved
+    reviewer: Worked-profile legal reviewer
+  - type: governance
+    status: approved
+    reviewer: Worked-profile governance reviewer
+- question_id: GFC-ROL-001
+  reviews:
+  - type: governance
+    status: approved
+    reviewer: Worked-profile governance reviewer
+  - type: assurance
+    status: approved
+    reviewer: Worked-profile assurance reviewer
+- question_id: GFC-LCY-001
+  reviews:
+  - type: operations
+    status: approved
+    reviewer: Worked-profile operations reviewer
+  - type: governance
+    status: approved
+    reviewer: Worked-profile governance reviewer
+- question_id: GFC-ASR-001
+  reviews:
+  - type: assurance
+    status: approved
+    reviewer: Worked-profile assurance reviewer
+  - type: risk
+    status: approved
+    reviewer: Worked-profile risk reviewer
+- question_id: GFC-ASR-002
+  reviews:
+  - type: assurance
+    status: approved
+    reviewer: Worked-profile assurance reviewer
+  - type: risk
+    status: approved
+    reviewer: Worked-profile risk reviewer
+- question_id: GFC-CON-001
+  reviews:
+  - type: assurance
+    status: approved
+    reviewer: Worked-profile assurance reviewer
+  - type: governance
+    status: approved
+    reviewer: Worked-profile governance reviewer
+- question_id: GFC-TEC-001
+  reviews:
+  - type: technical
+    status: approved
+    reviewer: Worked-profile technical reviewer
+  - type: security
+    status: approved
+    reviewer: Worked-profile security reviewer
+  - type: privacy
+    status: approved
+    reviewer: Worked-profile privacy reviewer
+- question_id: GFC-RGT-001
+  reviews:
+  - type: rights
+    status: approved
+    reviewer: Worked-profile rights reviewer
+  - type: accessibility
+    status: approved
+    reviewer: Worked-profile accessibility reviewer
+  - type: legal
+    status: approved
+    reviewer: Worked-profile legal reviewer
+  - type: stakeholder
+    status: approved
+    reviewer: Worked-profile stakeholder reviewer
+- question_id: GFC-RSK-001
+  reviews:
+  - type: security
+    status: approved
+    reviewer: Worked-profile security reviewer
+  - type: risk
+    status: approved
+    reviewer: Worked-profile risk reviewer
+  - type: operations
+    status: approved
+    reviewer: Worked-profile operations reviewer
+- question_id: GFC-REC-001
+  reviews:
+  - type: legal
+    status: approved
+    reviewer: Worked-profile legal reviewer
+  - type: governance
+    status: approved
+    reviewer: Worked-profile governance reviewer
+  - type: assurance
+    status: approved
+    reviewer: Worked-profile assurance reviewer
+- question_id: GFC-REC-002
+  reviews:
+  - type: legal
+    status: approved
+    reviewer: Worked-profile legal reviewer
+  - type: governance
+    status: approved
+    reviewer: Worked-profile governance reviewer
+  - type: assurance
+    status: approved
+    reviewer: Worked-profile assurance reviewer
+- question_id: GFC-MNT-001
+  reviews:
+  - type: governance
+    status: approved
+    reviewer: Worked-profile governance reviewer
+  - type: operations
+    status: approved
+    reviewer: Worked-profile operations reviewer
+- question_id: GFC-MNT-002
+  reviews:
+  - type: governance
+    status: approved
+    reviewer: Worked-profile governance reviewer
+  - type: technical
+    status: approved
+    reviewer: Worked-profile technical reviewer
+  - type: operations
+    status: approved
+    reviewer: Worked-profile operations reviewer
+qualification:
+  id: ESA-Q-001
+  matter: jurisdiction-specific authority
+  status: required-before-deployment

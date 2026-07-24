@@ -1,0 +1,27 @@
+profile_id: ESA-DTF-WORKED-PROFILE
+title: Essential Services Access DTF
+profile_type: operational
+version: 0.1.0
+status: illustrative
+authority:
+  basis: illustrative; adopter replacement required
+  review_state: review_required
+scope:
+  services:
+  - benefit eligibility confirmation
+  - regulated utility onboarding
+  - assisted service access
+  exclusions:
+  - law-enforcement identification
+  - population surveillance
+  - automated final eligibility determination
+inherits:
+- ONDTF-core
+models:
+  construction_response: construction-response.json
+  roles: roles.yaml
+  assurance: assurance.yaml
+  conformance: conformance.yaml
+  risk_register: risk-register.yaml
+  decision_register: decision-register.yaml
+  review_register: review-register.yaml
