@@ -1,7 +1,10 @@
 flowchart LR
-  C[ONDTF core] --> P[Profile method]
-  L[Applicable law and institutions] --> P
-  S[Sector and risk context] --> P
-  P --> R[Profile requirements]
-  P --> M[Mappings and implementation notes]
-  P --> G[Gaps, exceptions and review status]
+  C[ONDTF core] --> M[Profile method]
+  J[Jurisdiction context] --> M
+  S[Sector and risk context] --> M
+  T[Technology choices] --> M
+  X[Recognition relationships] --> M
+  M --> P[Governed profile package]
+  P --> H[Human-readable specification]
+  P --> R[Machine-readable manifest]
+  P --> E[Evidence and review obligations]

@@ -9,12 +9,12 @@ has_children: true
 
 This section makes the repository's maturity, boundaries and future direction visible on GitHub Pages. It complements the canonical governance and release documents maintained at the repository root.
 
-## v0.6.0 operationalisation work
+## v0.6.0 Operational Framework Draft
 
 - [Normative Architecture](../normative/index.md)
 - [Institutional Operating Model](../governance/institutional-operating-model.md)
 
-## v0.5.0 release and project status
+## Current release and project status
 
 - [Feature Completeness](feature-completeness.md)
 - [Foundational Principles](foundational-principles.md)
@@ -23,7 +23,8 @@ This section makes the repository's maturity, boundaries and future direction vi
 - [Design Decisions](design-decisions.md)
 - [Future Work](future-work.md)
 - [Implementation Status](implementation-status.md)
-- [v0.5.0 Readiness Checklist](v0.5-readiness-checklist.md)
+- [v0.6.0 Readiness Checklist](v0.6-readiness-checklist.md)
+- [v0.5.0 Readiness Checklist (historical)](v0.5-readiness-checklist.md)
 - [Feature Completion Integration Review](integration-review.md)
 - [Unresolved Issues Register](unresolved-issues.md)
 - [External Framework Pattern Adoption](external-framework-pattern-adoption.md)

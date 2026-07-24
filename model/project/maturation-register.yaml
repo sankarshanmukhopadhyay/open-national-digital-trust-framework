@@ -1,10 +1,10 @@
 schema_version: 1.0
-framework_version: 0.5.0
+framework_version: 0.6.0
 status: active
-last_reviewed: '2026-07-22'
+last_reviewed: '2026-07-24'
 purpose: Canonical register connecting disclosed framework boundaries, unresolved maturity issues, maturation programmes,
-  external-framework patterns, release gates and required evidence for the path from v0.5.0 to Candidate Specification
-  status.
+  external-framework patterns, release gates and required evidence for the path from the v0.6.0 Operational Framework
+  Draft to Candidate Specification status.
 boundary_types:
   enduring: A deliberate framework boundary that should remain visible and is not expected to disappear.
   reducible: A maturity constraint that can be reduced through implementation, evidence or review.
@@ -88,6 +88,7 @@ programmes:
   - URI-08
   - URI-10
   - URI-11
+  status: completed_for_v0.6.0
 - id: MPR-02
   title: Conformance and accreditation
   objective: Define assessment claims, evidence, assessor competence, certification lifecycle and supervisory controls.
@@ -97,6 +98,7 @@ programmes:
   linked_issues:
   - URI-04
   - URI-09
+  status: active_next_evidence_phase
 - id: MPR-03
   title: Profiles and external-framework adoption
   objective: Provide disciplined jurisdiction, sector and technology profiling and adopt proven external patterns
@@ -111,6 +113,7 @@ programmes:
   - URI-12
   - URI-16
   - URI-19
+  status: active_next_evidence_phase
 - id: MPR-04
   title: Implementation and interoperability
   objective: Accumulate independent implementation evidence, executable fixtures and cross-implementation results.
@@ -120,6 +123,7 @@ programmes:
   linked_issues:
   - URI-01
   - URI-04
+  status: planned
 - id: MPR-05
   title: Evidence and quantitative calibration
   objective: Calibrate assurance thresholds, metrics, scale, recovery and operational risk parameters from evidence.
@@ -130,6 +134,7 @@ programmes:
   - URI-02
   - URI-13
   - URI-14
+  status: planned
 - id: MPR-06
   title: Rights, accessibility and remedy validation
   objective: Validate inclusion, affected-party journeys, challenge, appeal and remedy in operational scenarios.
@@ -140,6 +145,7 @@ programmes:
   linked_issues:
   - URI-06
   - URI-17
+  status: active_next_evidence_phase
 - id: MPR-07
   title: Candidate-specification governance
   objective: Establish issue closure, traceability, normative stability, independent review and controlled change.
@@ -148,6 +154,7 @@ programmes:
   linked_issues:
   - URI-15
   - URI-18
+  status: planned
 issues:
 - id: URI-01
   title: No multi-implementation interoperability evidence
@@ -228,7 +235,7 @@ issues:
   title: Accessibility is not validated across downstream implementation patterns
   category: accessibility
   risk: high
-  disposition: explicit_implementation_obligation
+  disposition: operating_model_complete_pilot_evidence_required
   target_release: v0.7.0
   owner_role: Rights and Inclusion Workstream
   closure_evidence: Accessibility assessment of pilot journeys, assisted-use paths, recovery and non-smartphone
@@ -251,7 +258,7 @@ issues:
   title: Standards and regulatory instruments may change after publication
   category: maintenance
   risk: medium
-  disposition: monitored
+  disposition: resolved_in_v0.6.0
   target_release: v0.6.0
   owner_role: Reference Register Maintainer
   closure_evidence: Approved review cadence, source-change triggers, impact classification and migration procedure.
@@ -259,12 +266,18 @@ issues:
   - MPR-03
   patterns:
   - EPA-016
-  status: open
+  status: closed
+  closed_in: v0.6.0
+  closure_date: '2026-07-24'
+  closure_evidence_artifacts:
+  - docs/project/reference-maintenance-policy.md
+  - docs/project/standards-change-impact.md
+  - model/project/controlled-document-register.yaml
 - id: URI-08
   title: Role-specific normative obligations catalogue requires release review
   category: normative
   risk: high
-  disposition: draft_implemented
+  disposition: resolved_in_v0.6.0
   target_release: v0.6.0
   owner_role: Core Specification Workstream
   closure_evidence: Traceable SHALL/SHOULD requirements assigned to defined roles with testable evidence expectations.
@@ -277,12 +290,18 @@ issues:
   patterns:
   - EPA-004
   - EPA-005
-  status: evidence_available
+  status: closed
+  closed_in: v0.6.0
+  closure_date: '2026-07-24'
+  closure_evidence_artifacts:
+  - model/normative/requirement-catalogue.yaml
+  - model/normative/requirement-schema.json
+  - docs/normative/requirements-traceability.md
 - id: URI-09
   title: No fully specified accreditation and certification operating model
   category: conformance
   risk: high
-  disposition: draft_implemented
+  disposition: resolved_in_v0.6.0
   target_release: v0.6.0
   owner_role: Conformance and Accreditation Workstream
   closure_evidence: Defined scheme owner, assessor competence, assessment lifecycle, surveillance, suspension, withdrawal
@@ -293,16 +312,23 @@ issues:
   - EPA-001
   - EPA-002
   - EPA-003
-  status: evidence_available
+  status: closed
   evidence_available:
   - docs/conformance/index.md
   - model/conformance/assessment-scheme.yaml
   - model/conformance/conformance-claim.schema.json
+  closed_in: v0.6.0
+  closure_date: '2026-07-24'
+  closure_evidence_artifacts:
+  - docs/conformance/index.md
+  - model/conformance/assessment-scheme.yaml
+  - model/conformance/conformance-claim.schema.json
+  - model/conformance/certificate-status.yaml
 - id: URI-10
   title: No complete provider lifecycle
   category: operations
   risk: high
-  disposition: draft_implemented
+  disposition: resolved_in_v0.6.0
   target_release: v0.6.0
   owner_role: Operating Model Workstream
   closure_evidence: Admission, activation, monitoring, change, suspension, revocation, exit and continuity workflows
@@ -312,15 +338,20 @@ issues:
   patterns:
   - EPA-002
   - EPA-005
-  status: evidence_available
+  status: closed
   evidence_available:
+  - docs/operations/provider-lifecycle.md
+  - model/operations/provider-lifecycle.yaml
+  closed_in: v0.6.0
+  closure_date: '2026-07-24'
+  closure_evidence_artifacts:
   - docs/operations/provider-lifecycle.md
   - model/operations/provider-lifecycle.yaml
 - id: URI-11
   title: Institutional-governance operating model requires profile validation
   category: governance
   risk: high
-  disposition: draft_implemented
+  disposition: resolved_in_v0.6.0
   target_release: v0.6.0
   owner_role: Governance Workstream
   closure_evidence: Worked institutional profile assigning governing, administrative, supervisory, assessment, appeal
@@ -334,12 +365,19 @@ issues:
   patterns:
   - EPA-003
   - EPA-004
-  status: evidence_available
+  status: closed
+  closed_in: v0.6.0
+  closure_date: '2026-07-24'
+  closure_evidence_artifacts:
+  - docs/governance/institutional-operating-model.md
+  - model/governance/institutional-role-catalogue.yaml
+  - model/governance/responsibility-assignment.yaml
+  - examples/worked-profile/model/roles.yaml
 - id: URI-12
   title: No complete sector-profile construction and validation method
   category: profiles
   risk: medium
-  disposition: planned
+  disposition: resolved_in_v0.6.0
   target_release: v0.6.0
   owner_role: Profile Architecture Workstream
   closure_evidence: Profile template, dependency rules, validation checklist, precedence model and one worked sector
@@ -350,7 +388,15 @@ issues:
   - EPA-007
   - EPA-008
   - EPA-011
-  status: open
+  status: closed
+  closed_in: v0.6.0
+  closure_date: '2026-07-24'
+  closure_evidence_artifacts:
+  - profiles/profile-methodology.md
+  - profiles/profile-template.md
+  - profiles/profile-validation.md
+  - model/profiles/profile-manifest.schema.json
+  - examples/worked-profile/model/profile.yaml
 - id: URI-13
   title: Performance, scale and recovery requirements lack tested baselines
   category: resilience
@@ -413,7 +459,7 @@ issues:
   title: No end-to-end pilot of challenge, appeal and remedy
   category: rights
   risk: high
-  disposition: evidence_required
+  disposition: operating_model_complete_pilot_evidence_required
   target_release: v0.7.0
   owner_role: Rights and Redress Workstream
   closure_evidence: Pilot demonstrating notice, evidence access, challenge, independent review, remedy and outcome
@@ -436,7 +482,7 @@ issues:
   title: No complete maintenance model for standards, profiles and controlled documents
   category: governance
   risk: medium
-  disposition: planned
+  disposition: resolved_in_v0.6.0
   target_release: v0.6.0
   owner_role: Change Control Authority
   closure_evidence: Controlled-document inventory, ownership, cadence, emergency change path, deprecation and migration
@@ -446,12 +492,19 @@ issues:
   patterns:
   - EPA-004
   - EPA-016
-  status: open
+  status: closed
+  closed_in: v0.6.0
+  closure_date: '2026-07-24'
+  closure_evidence_artifacts:
+  - docs/project/controlled-document-governance.md
+  - docs/project/profile-maintenance-policy.md
+  - docs/project/reference-maintenance-policy.md
+  - model/project/controlled-document-register.yaml
 - id: URI-19
   title: No formal process for importing proven external-framework patterns
   category: architecture
   risk: medium
-  disposition: addressed_by_strategy
+  disposition: resolved_in_v0.6.0
   target_release: v0.6.0
   owner_role: Architecture and Profile Workstream
   closure_evidence: Pattern-adoption strategy, catalogue, decision criteria, traceability and at least one completed
@@ -475,7 +528,13 @@ issues:
   - EPA-014
   - EPA-015
   - EPA-016
-  status: in_progress
+  status: closed
+  closed_in: v0.6.0
+  closure_date: '2026-07-24'
+  closure_evidence_artifacts:
+  - docs/project/external-framework-pattern-adoption.md
+  - model/project/maturation-register.yaml
+  - model/profiles/external-adoption-register.yaml
 external_framework_families:
 - id: EFF-01
   name: Regulatory trust-service frameworks
@@ -810,6 +869,12 @@ release_gates:
   - URI-19
   gate: Core role obligations, operating model, conformance architecture, profile kit and external-pattern governance
     are published and internally traceable.
+  status: satisfied
+  reviewed_on: '2026-07-24'
+  evidence:
+  - examples/worked-profile/
+  - model/releases/v0.6.0.yaml
+  - release/RELEASE-NOTES-v0.6.0.md
 - release: v0.7.0
   name: Implementation and Evaluation Draft
   required_programmes:

@@ -9,40 +9,43 @@ nav_order: 5
 
 ## Purpose
 
-Work after v0.5.0 prioritises maturation rather than adding new foundational domains. This page is the programme view of the canonical [`maturation-register.yaml`](../../model/project/maturation-register.yaml). Each programme links to explicit unresolved issues, release gates and required evidence.
+Following v0.6.0, ONDTF moves from operational architecture into implementation evidence, evaluation and interoperability. Foundational framework domains are present. Future work therefore concentrates on proving that the framework can be implemented, tested, compared and governed under real operating conditions.
 
-## Maturation programmes
+## Programme status after v0.6.0
 
-| Programme | Objective | Releases | Principal issues |
+| Programme | v0.6.0 disposition | Next objective | Target |
 |---|---|---|---|
-| MPR-01: Normative and role architecture | Convert architectural responsibilities into precise role-specific obligations and institutional decision rights. | v0.6.0 | URI-08, URI-10, URI-11 |
-| MPR-02: Conformance and accreditation | Define claims, evidence, assessor competence, certification lifecycle and supervisory controls. | v0.6.0–v0.7.0 | URI-04, URI-09 |
-| MPR-03: Profiles and external-framework adoption | Build disciplined jurisdiction, sector and technology profiles and adopt proven patterns without incompatible assumptions. | v0.6.0–v0.8.0 | URI-03, URI-07, URI-12, URI-16, URI-19 |
-| MPR-04: Implementation and interoperability | Accumulate independent implementation evidence, executable fixtures and cross-implementation results. | v0.7.0–v0.8.0 | URI-01, URI-04 |
-| MPR-05: Evidence and quantitative calibration | Calibrate assurance thresholds, metrics, scale, recovery and operational risk parameters. | v0.7.0–v0.8.0 | URI-02, URI-13, URI-14 |
-| MPR-06: Rights, accessibility and remedy validation | Validate inclusion, affected-party journeys, challenge, appeal and remedy. | v0.6.0–v0.8.0 | URI-06, URI-17 |
-| MPR-07: Candidate-specification governance | Establish issue closure, traceability, normative stability, independent review and controlled change. | v0.9.0 | URI-15, URI-18 |
+| MPR-01: Normative and role architecture | Completed for this release | Maintain traceability and incorporate review findings without destabilising role semantics. | Continuous |
+| MPR-02: Conformance and accreditation | Operating model complete | Produce executable positive, negative, boundary and lifecycle conformance fixtures and exercise them against an independent implementation. | v0.7.0 |
+| MPR-03: Profiles and external-framework adoption | Construction and adoption method complete | Obtain competent jurisdiction review, compare privacy-preserving status patterns and prepare recognition profiles. | v0.7.0–v0.8.0 |
+| MPR-04: Implementation and interoperability | Planned | Establish at least two independent implementations, implementation reports and cross-implementation test evidence. | v0.7.0–v0.8.0 |
+| MPR-05: Evidence and quantitative calibration | Planned | Run adversarial exercises and develop evidence-backed performance, recovery and assurance parameters. | v0.7.0–v0.8.0 |
+| MPR-06: Rights, accessibility and remedy validation | Operating model complete; pilot evidence pending | Exercise affected-party journeys, assisted-use paths, challenge, independent appeal and remedy execution. | v0.7.0 |
+| MPR-07: Candidate-specification governance | Maintenance component complete | Complete terminology validation, issue closure, independent review and normative stability controls. | v0.9.0 |
 
-## Release sequence
+## v0.7.0: Implementation and Evaluation Draft
 
-### v0.6.0: Operational Framework Draft
+The next release should prioritise evidence over architectural expansion:
 
-Publish role-specific normative obligations, the institutional operating model, provider lifecycle, conformance and accreditation architecture, profile construction kit, assurance dimensions, controlled-document maintenance and the first completed external-pattern adoption decisions.
+1. publish an implementation evidence template and at least one independently produced implementation report;
+2. create executable conformance fixtures for success, failure, boundary, lifecycle and appeal conditions;
+3. run a documented adversarial tabletop and at least one technical incident simulation;
+4. perform accessibility review across representative smartphone, assisted-use and non-smartphone journeys;
+5. conduct an end-to-end challenge, independent appeal and remedy pilot;
+6. compare privacy-preserving status, revocation, caching and cross-domain resolution patterns;
+7. subject at least one jurisdiction profile to competent current legal review;
+8. add measurable but profile-governed evaluation criteria without presenting unvalidated thresholds as universal defaults.
 
-### v0.7.0: Implementation and Evaluation Draft
+## v0.8.0: Interoperability and Recognition Draft
 
-Add independent implementation evidence, executable conformance fixtures, privacy-pattern comparisons, accessibility and remedy journeys, adversarial exercises and initial quantitative calibration.
+The release should add multi-implementation interoperability results, tested performance and recovery baselines, cross-framework recognition profiles, assurance-equivalence analysis, dependency-degradation exercises and profile compatibility evidence.
 
-### v0.8.0: Interoperability and Recognition Draft
+## v0.9.0: Candidate Specification
 
-Add multi-implementation interoperability results, tested performance and recovery baselines, cross-framework recognition profiles, assurance-equivalence analysis and profile compatibility evidence.
+Candidate status should require stable normative language, complete traceability, multiple independent implementations, closure or explicit risk acceptance for high-severity issues, cross-jurisdiction terminology review, independent specification review and credible controlled-change governance.
 
-### v0.9.0: Candidate Specification
+## Guided Framework Construction maturation
 
-Require stable normative language, multiple independent implementations, closure or formal acceptance of high-severity issues, complete traceability, independent review and credible change control.
+The v0.6.0 release includes the guided question catalogue, patterns, contradiction rules, completeness gates, response schema and worked generated profile. Future work should add a reference generator, richer conditional branching, reproducible generation receipts, profile-diff tooling and usability evidence from facilitated adoption workshops. Generated output must continue to distinguish inherited defaults, adopter decisions, unresolved questions and decisions requiring legal, technical or stakeholder review.
 
 See [Maturation Release Gates](release-gates.md), [Implementation Evidence Programme](implementation-evidence.md) and [Maturation and Adoption Roadmap](adoption-roadmap.md).
-
-## Guided framework construction preparation
-
-Provider-lifecycle and conformance decision points are exposed through `model/adoption/construction-input-contract.yaml`. The Guided Framework Construction capability will combine these with assurance, rights and profile decisions in an adaptive construction flow.

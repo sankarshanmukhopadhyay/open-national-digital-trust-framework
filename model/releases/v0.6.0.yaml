@@ -1,0 +1,43 @@
+schema_version: 1.0.0
+framework_version: 0.6.0
+release_label: Operational Framework Draft
+release_date: '2026-07-24'
+status: release_payload_complete
+statistics:
+  published_pages: 289
+  mermaid_diagrams: 115
+  machine_readable_artefacts: 95
+  repository_scripts: 16
+capability_domains:
+  normative_and_role_architecture: complete_for_draft
+  provider_lifecycle: complete_for_draft
+  conformance_and_accreditation: complete_for_draft
+  assurance_and_rights: complete_for_draft
+  profiles_and_guided_construction: complete_for_draft
+  maintenance_and_pattern_adoption: complete_for_draft
+  worked_operational_profile: validated
+  independent_implementation_evidence: planned_for_v0.7.0
+closed_issues:
+- URI-07
+- URI-08
+- URI-09
+- URI-10
+- URI-11
+- URI-12
+- URI-18
+- URI-19
+quality_gates:
+  repository_validation: required
+  integration_validation: required
+  mermaid_source_validation: required
+  mermaid_render_validation: required
+  jekyll_build_validation: required
+  built_site_link_validation: required
+post_merge_actions:
+- verify_github_pages_deployment
+- create_tag_v0.6.0
+- publish_github_release
+known_limitations: docs/project/known-limitations.md
+unresolved_issues: docs/project/unresolved-issues.md
+release_notes: release/RELEASE-NOTES-v0.6.0.md
+document_inventory: release/DOCUMENT-INVENTORY-v0.6.0.md

@@ -1,0 +1,9 @@
+flowchart LR
+  QC[Question catalogue] --> UI[Guided interface]
+  PC[Pattern catalogue] --> UI
+  UI --> RESP[Response record]
+  RESP --> CR[Contradiction rules]
+  RESP --> CG[Completeness gates]
+  CR --> GEN[Profile generator]
+  CG --> GEN
+  GEN --> PKG[DTF profile package]

@@ -1,0 +1,7 @@
+flowchart LR
+  A[Profile A] --> C[Composition check]
+  B[Profile B] --> C
+  C --> OK[Compatible]
+  C --> COND[Conditional]
+  C --> BLOCK[Unresolved or prohibited]
+  COND --> REC[Recorded control and authority]

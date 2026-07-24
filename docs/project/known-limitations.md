@@ -9,30 +9,36 @@ nav_order: 3
 
 ## Purpose
 
-This page describes what ONDTF deliberately does not yet claim or provide. It is a coordinated view of the canonical [`maturation-register.yaml`](../../model/project/maturation-register.yaml), not a separate backlog. Some limitations are permanent framework boundaries; others can be reduced through implementation evidence; a third group requires continuing maintenance.
+This page states the boundaries that remain after the v0.6.0 Operational Framework Draft. It is a release view of the canonical [`maturation-register.yaml`](../../model/project/maturation-register.yaml), not an independent backlog. Closed maturity issues have been removed from the active limitation narrative, while enduring framework boundaries remain visible because operational maturity does not make them disappear.
 
 | Type | Meaning |
 |---|---|
-| **Enduring** | A deliberate boundary that should remain visible and is not expected to disappear. |
+| **Enduring** | A deliberate boundary that remains true even when implementation guidance is mature. |
 | **Reducible** | A maturity constraint that can be reduced through implementation, evidence or review. |
-| **Maintained** | A continuing governance risk requiring periodic review and change control. |
+| **Maintained** | A continuing governance risk controlled through review cadence and change management. |
 
-## Current limitations
+## Active limitations at v0.6.0
 
 | ID | Limitation | Type | Practical consequence | Related issue |
 |---|---|---|---|---|
-| LIM-01 | Independent implementation evidence remains limited | Reducible | Portability, implementability and interoperability claims remain provisional. | URI-01 |
-| LIM-02 | Standards mappings are informative unless selected by a profile | Enduring | A mapping alone does not create a normative dependency or conformance obligation. | URI-07, URI-19 |
-| LIM-03 | Jurisdiction profiles are implementation aids, not legal advice | Enduring | Adoption without competent local review may misstate legal effect or authority. | URI-03 |
-| LIM-04 | Quantitative thresholds require contextual calibration | Reducible | Default values may not represent sector risk or operational conditions. | URI-02 |
-| LIM-05 | Reference schemas and fixtures are not production software | Enduring | Repository artefacts do not establish security, availability or fitness. | URI-04 |
-| LIM-06 | Cross-border recognition depends on external legal and institutional arrangements | Enduring | Technical compatibility does not create legal recognition or liability allocation. | URI-16 |
-| LIM-07 | Cryptographic and protocol choices remain profile-dependent | Enduring | Core conformance does not imply protocol interoperability. | URI-05, URI-12 |
-| LIM-08 | Repository validation is not implementation or scheme conformance | Enduring | Passing repository checks cannot support a provider or organisational conformance claim. | URI-04, URI-09 |
-| LIM-09 | Standards and regulatory sources change over time | Maintained | Profiles and mappings may become stale or materially inaccurate. | URI-07, URI-18 |
+| LIM-01 | Independent implementation evidence remains limited | Reducible | Portability, implementability and interoperability claims remain provisional until independently exercised. | URI-01 |
+| LIM-02 | Standards mappings are informative unless selected by a profile | Enduring | A mapping alone does not create a normative dependency or conformance obligation. | URI-07, URI-19 closed; boundary retained |
+| LIM-03 | Jurisdiction profiles are implementation aids, not legal advice | Enduring | Adoption without competent current local review may misstate legal effect or authority. | URI-03 |
+| LIM-04 | Quantitative thresholds require contextual calibration | Reducible | Default values may not represent sector risk, scale or operational conditions. | URI-02 |
+| LIM-05 | Reference schemas, validators and fixtures are not production software | Enduring | Repository artefacts do not establish security, availability, certification or fitness for deployment. | URI-04 |
+| LIM-06 | Cross-border recognition depends on external legal and institutional arrangements | Enduring | Technical compatibility cannot create legal recognition, liability allocation or reciprocal supervision. | URI-16 |
+| LIM-07 | Cryptographic and protocol choices remain profile-dependent | Enduring | Core conformance does not imply protocol or cryptographic interoperability. | URI-05 |
+| LIM-08 | Repository validation is not implementation or scheme conformance | Enduring | Passing repository checks cannot support a provider, product or organisational conformance claim. | URI-04 |
+| LIM-09 | Standards and regulatory sources change over time | Maintained | Profiles and mappings can become stale; the v0.6.0 maintenance model controls rather than eliminates this risk. | URI-07 and URI-18 closed |
 
-## How limitations are treated
+## Limitations materially reduced in this release
 
-A reducible limitation must link to a tracked issue with an owner, target release and closure evidence. An enduring limitation remains disclosed even after associated operating guidance is mature. A maintained limitation remains subject to review cadence, source-change triggers and migration procedures.
+v0.6.0 resolves the previously open architectural gaps concerning role-specific normative obligations, provider lifecycle, institutional operating roles, accreditation and certification, profile construction, controlled-document maintenance, standards-change handling and external-pattern adoption. These matters are now governed by published documentation, machine-readable catalogues and worked-profile validation.
 
-Mitigations, issue ownership and closure criteria are maintained in the [Unresolved Issues Register](unresolved-issues.md). Planned resolution work is grouped in [Future Work](future-work.md). Proven external patterns that may address a limitation are governed through [External Framework Pattern Adoption](external-framework-pattern-adoption.md).
+The release does **not** convert design evidence into deployment evidence. Accessibility, challenge, appeal and remedy now have complete operating models, but their end-to-end effectiveness still requires pilot validation. The same distinction applies to performance, adversarial exercises and cross-implementation interoperability.
+
+## Treatment and release use
+
+A reducible limitation must link to an owned issue, target release and closure evidence. An enduring limitation remains disclosed even after related guidance matures. A maintained limitation remains subject to source-change triggers, review cadence and migration procedures.
+
+See the [Unresolved Issues Register](unresolved-issues.md), [Future Work](future-work.md), [Implementation Evidence Programme](implementation-evidence.md) and [v0.6.0 Readiness Checklist](v0.6-readiness-checklist.md).

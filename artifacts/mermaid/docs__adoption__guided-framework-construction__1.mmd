@@ -1,0 +1,10 @@
+flowchart LR
+  Q[Question] --> D[Decision record]
+  D --> R[Requirements]
+  D --> A[Responsible authority]
+  D --> E[Evidence obligation]
+  D --> K[Risk and review gate]
+  R --> P[Generated DTF package]
+  A --> P
+  E --> P
+  K --> P

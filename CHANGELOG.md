@@ -2,28 +2,22 @@
 
 ## [Unreleased]
 
+## [0.6.0] - 2026-07-24
+
 ### Added
-
-- Governed profile architecture covering jurisdiction, sector, technology, recognition, and operational profiles.
-- ONDTF Guided Framework Construction with staged questions, patterns, contradiction rules, completeness gates, response schema, generated artefact model, and workshop guidance.
-- Controlled dependency, external adoption, profile change, and document maintenance models.
-- Framework construction learning path with sequenced navigation.
-- Automated profile and adoption validation integrated into repository quality checks.
-
-- A multidimensional assurance model covering identity, authority, delegation, evidence, execution, operations, status and freshness, privacy, and remedy readiness without collapsing them into a universal trust score.
-- Machine-readable assurance dimensions, levels, composition rules and assurance-claim schema.
-- An operational affected-party, notice, challenge, appeal, remedy, accessibility and alternative-channel publication set with machine-readable evidence records.
-- Assurance and rights decision inputs for ONDTF Guided Framework Construction, plus automated validation that rejects internal delivery-stage terminology.
-
-- A canonical maturation register connecting known limitations, unresolved issues, maturation programmes, external-framework adoption patterns, release gates and required evidence.
-- An external-framework pattern adoption strategy with source taxonomy, adoption principles, candidate pattern catalogue, decision lifecycle and release mapping.
-- Maturation governance, release-gate, implementation-evidence and adoption-roadmap pages.
-- Automated maturation validation integrated into local and GitHub Actions quality gates.
+- Role-specific normative requirement catalogue and institutional operating model.
+- Complete provider and service lifecycle with machine-readable states and transitions.
+- Conformance, accreditation, certification, surveillance and appeal architecture.
+- Multidimensional assurance model and operational affected-party rights and remedy.
+- Governed profile architecture, controlled-document maintenance and external-pattern adoption.
+- Guided Framework Construction question catalogue, patterns, contradiction rules and completeness gates.
+- A validated worked operational profile demonstrating generated DTF artefacts and unresolved-decision handling.
 
 ### Changed
-
-- Transformed Known Limitations, Future Work and the Unresolved Issues Register into coordinated human-readable views of the canonical maturation register.
-
+- Advanced project maturity from Feature Complete Draft to Operational Framework Draft.
+- Reconciled known limitations, future work and unresolved issues with delivered v0.6.0 evidence.
+- Closed URI-07, URI-08, URI-09, URI-10, URI-11, URI-12, URI-18 and URI-19.
+- Narrowed accessibility and remedy issues to external pilot-validation requirements.
 
 ## [0.5.0] - 2026-07-22
 

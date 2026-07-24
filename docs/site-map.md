@@ -155,6 +155,7 @@ Machine-readable bindings, model records, governance registers, and validation e
 - [Future Work]({{ '/docs/project/future-work.html' | relative_url }})
 - [Implementation Status]({{ '/docs/project/implementation-status.html' | relative_url }})
 - [v0.5.0 Readiness Checklist]({{ '/docs/project/v0.5-readiness-checklist.html' | relative_url }})
+- [v0.6.0 Readiness Checklist]({{ site.baseurl }}/docs/project/v0.6-readiness-checklist.html)
 - [Feature Completion Integration Review]({{ '/docs/project/integration-review.html' | relative_url }})
 - [Unresolved Issues Register]({{ '/docs/project/unresolved-issues.html' | relative_url }})
 - [External Framework Pattern Adoption]({{ '/docs/project/external-framework-pattern-adoption.html' | relative_url }})
