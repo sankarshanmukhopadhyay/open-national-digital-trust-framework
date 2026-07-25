@@ -3,6 +3,11 @@
   "bindingId": "urn:ondtf:binding:tsmm:0.2.0",
   "ondtfVersion": "0.2.0",
   "tsmmVersion": "0.23.0",
+  "reviewStatus": {
+    "status": "stale",
+    "note": "Concept-treatment mappings below were last verified against ONDTF v0.2.0 and have not been re-reviewed against the current core requirements catalogue. Do not treat as current compatibility evidence until re-reviewed.",
+    "trackedIssue": "URI-20"
+  },
   "sourceRepository": "https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model",
   "treatments": [
     {

@@ -2,6 +2,25 @@
 
 ## [Unreleased]
 
+### Fixed
+
+- corrected a license inconsistency across `README.md` and `CITATION.cff`, which
+  declared CC BY-NC-SA 4.0 while `LICENSE` has always been CC BY 4.0; `LICENSE`
+  is confirmed as canonical and the other two files now match it;
+- added a machine-checked license-consistency assertion to
+  `scripts/validate_repo.py` so `LICENSE`, `README.md`, and `CITATION.cff`
+  cannot silently disagree on the declared license again.
+- disclosed that the TSMM and TIS cross-repo compatibility bindings
+  (`bindings/tsmm/ondtf-tsmm-binding.json`, `bindings/tis/ondtf-tis-profile.json`)
+  have not been re-reviewed since ONDTF v0.2.0, despite the framework now
+  being at v0.6.0; `ondtfVersion` was **not** silently advanced, since that
+  would assert a re-review that has not happened. Tracked as `URI-20` in
+  `model/project/maturation-register.yaml`, target release v0.7.0.
+- added a machine-checked guard to `scripts/validate_repo.py` requiring every
+  binding's `ondtfVersion` to either match the current `VERSION`, or declare
+  a `reviewStatus.trackedIssue` that resolves to an open issue in the
+  maturation register — undisclosed cross-repo version drift now fails CI.
+
 ## [0.6.0] - 2026-07-24
 
 ### Added

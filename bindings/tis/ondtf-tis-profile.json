@@ -3,6 +3,11 @@
   "profileId": "urn:ondtf:profile:tis:0.2.0",
   "ondtfVersion": "0.2.0",
   "tisVersion": "0.12.0",
+  "reviewStatus": {
+    "status": "stale",
+    "note": "Artefact requirement mappings below were last verified against ONDTF v0.2.0 and have not been re-reviewed against the current core requirements catalogue. Do not treat as current compatibility evidence until re-reviewed.",
+    "trackedIssue": "URI-20"
+  },
   "sourceRepository": "https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas",
   "artifactRequirements": [
     {

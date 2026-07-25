@@ -89,7 +89,7 @@ ONDTF does **not** define a national identity system, mandate a credential forma
 
 ## Licensing
 
-Documentation is licensed under [CC BY-NC-SA 4.0](LICENSE). Code and executable examples may be separately licensed in later releases.
+Documentation is licensed under [CC BY 4.0](LICENSE). Code and executable examples may be separately licensed in later releases.
 
 ## Current release
 

@@ -113,6 +113,7 @@ programmes:
   - URI-12
   - URI-16
   - URI-19
+  - URI-20
   status: active_next_evidence_phase
 - id: MPR-04
   title: Implementation and interoperability
@@ -535,6 +536,19 @@ issues:
   - docs/project/external-framework-pattern-adoption.md
   - model/project/maturation-register.yaml
   - model/profiles/external-adoption-register.yaml
+- id: URI-20
+  title: Cross-repo compatibility bindings (TSMM, TIS) are unreviewed since ONDTF v0.2.0
+  category: interoperability
+  risk: medium
+  disposition: accepted_pending_review
+  target_release: v0.7.0
+  owner_role: Architecture and Profile Workstream
+  closure_evidence: TSMM and TIS binding files re-reviewed against the current core requirements catalogue, with
+    ondtfVersion advanced only to the version under which the treatments were actually re-verified, and the review
+    recorded in bindings/tsmm/ondtf-tsmm-binding.json and bindings/tis/ondtf-tis-profile.json.
+  programmes:
+  - MPR-03
+  status: open
 external_framework_families:
 - id: EFF-01
   name: Regulatory trust-service frameworks

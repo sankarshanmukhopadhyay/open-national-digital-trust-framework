@@ -26,6 +26,7 @@ This page records the maturity questions that remain after v0.6.0. Closure requi
 | URI-15 | Internationalisation and terminology require cross-jurisdiction validation | Medium | v0.9.0 | Specification Editorial Workstream | Open |
 | URI-16 | No assurance-equivalence model for cross-framework recognition | High | v0.8.0 | Recognition and Interoperability Workstream | Open |
 | URI-17 | No end-to-end pilot of challenge, appeal and remedy | High | v0.7.0 | Rights and Redress Workstream | Evidence Available |
+| URI-20 | Cross-repo compatibility bindings (TSMM, TIS) are unreviewed since ONDTF v0.2.0 | Medium | v0.7.0 | Architecture and Profile Workstream | Open |
 
 ## Issues closed in v0.6.0
 

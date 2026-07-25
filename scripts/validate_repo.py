@@ -6,6 +6,58 @@ errors=[]
 required=['README.md','LICENSE','ROADMAP.md','GOVERNANCE.md','CONTRIBUTING.md','SECURITY.md','CHANGELOG.md','RELEASE_NOTES.md','_config.yml','docs/index.md','docs/site-map.md','profiles/index.md','VERSION','PROJECT-STATUS.yaml']
 for f in required:
     if not (root/f).exists(): errors.append(f'Missing required file: {f}')
+
+# License consistency: LICENSE is the canonical source of truth. README.md's
+# licensing statement and CITATION.cff's license field must name the same
+# license, so the three cannot silently drift out of agreement again.
+license_text = (root/'LICENSE').read_text(encoding='utf-8')
+if 'Creative Commons Attribution' not in license_text or '4.0' not in license_text:
+    canonical_license = None
+    errors.append('Could not determine canonical license from LICENSE file text')
+else:
+    suffix = ''
+    if 'NonCommercial' in license_text: suffix += '-NC'
+    if 'ShareAlike' in license_text: suffix += '-SA'
+    canonical_license = f'CC BY{suffix} 4.0'
+
+if canonical_license is not None:
+    readme_text = (root/'README.md').read_text(encoding='utf-8')
+    if canonical_license not in readme_text:
+        errors.append(f"README.md licensing statement does not match LICENSE ('{canonical_license}' not found in README.md)")
+    citation_text = (root/'CITATION.cff').read_text(encoding='utf-8')
+    citation_slug = canonical_license.replace(' ', '-')
+    m = re.search(r'^license:\s*(\S+)', citation_text, re.M)
+    if not m:
+        errors.append('CITATION.cff has no license field')
+    elif m.group(1) != citation_slug:
+        errors.append(f"CITATION.cff license field '{m.group(1)}' does not match LICENSE ('{citation_slug}' expected)")
+
+# Cross-repo binding staleness: bindings/*.json declare the ONDTF version they
+# were last reviewed against. A binding may legitimately lag the current
+# release, but only if that staleness is disclosed via reviewStatus and
+# tracked as an open issue in the maturation register — silent drift is not
+# permitted.
+current_version = (root/'VERSION').read_text(encoding='utf-8').strip()
+try:
+    maturation = yaml.safe_load((root/'model/project/maturation-register.yaml').read_text(encoding='utf-8')) or {}
+    open_issue_ids = {i.get('id') for i in (maturation.get('issues') or []) if i.get('status') in ('open', 'in_progress', 'evidence_available')}
+except Exception as exc:
+    errors.append(f'Unable to read maturation register for binding staleness check: {exc}')
+    open_issue_ids = set()
+for binding_path in sorted((root/'bindings').rglob('*.json')):
+    try:
+        binding = json.loads(binding_path.read_text(encoding='utf-8'))
+    except Exception as exc:
+        errors.append(f'Invalid JSON {binding_path.relative_to(root)}: {exc}')
+        continue
+    ondtf_v = binding.get('ondtfVersion')
+    if ondtf_v and ondtf_v != current_version:
+        tracked = (binding.get('reviewStatus') or {}).get('trackedIssue')
+        if not tracked:
+            errors.append(f"{binding_path.relative_to(root)}: ondtfVersion '{ondtf_v}' is stale against current VERSION '{current_version}' and has no reviewStatus.trackedIssue")
+        elif tracked not in open_issue_ids:
+            errors.append(f"{binding_path.relative_to(root)}: reviewStatus.trackedIssue '{tracked}' is not an open issue in model/project/maturation-register.yaml")
+
 pages=[]
 for p in list((root/'docs').rglob('*.md'))+list((root/'profiles').rglob('*.md')):
     text=p.read_text(encoding='utf-8')
