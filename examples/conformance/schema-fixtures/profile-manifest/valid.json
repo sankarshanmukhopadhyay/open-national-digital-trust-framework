@@ -1,0 +1,34 @@
+{
+  "id": "ONDTF-TEST",
+  "title": "title",
+  "version": "version",
+  "status": "draft",
+  "profile_types": [
+    "jurisdiction"
+  ],
+  "authority": {
+    "owner_role": "owner-role",
+    "approval_basis": "approval-basis"
+  },
+  "scope": {
+    "included": [
+      "included"
+    ],
+    "excluded": [
+      "excluded"
+    ],
+    "affected_parties": [
+      "affected-parties"
+    ]
+  },
+  "core_requirement_treatment": [
+    {
+      "requirement_id": "requirement-id",
+      "treatment": "inherit"
+    }
+  ],
+  "review": {
+    "owner": "test-owner",
+    "next_review": "2026-07-25"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "sector_id": "sector-id",
+  "version": "0.6.0",
+  "status": "illustrative",
+  "authority": "authority",
+  "standards": [
+    {
+      "standard_id": "standard-id",
+      "disposition": "discovered",
+      "adoption_mode": "informative-reference",
+      "selected_scope": [
+        "selected-scope"
+      ],
+      "rationale": "rationalexxxxxxxxxxx",
+      "evidence_required": [
+        "evidence-required"
+      ],
+      "review": {
+        "owner": "test-owner",
+        "triggers": [
+          "triggers"
+        ]
+      }
+    }
+  ]
+}

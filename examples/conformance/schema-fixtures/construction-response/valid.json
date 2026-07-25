@@ -1,0 +1,15 @@
+{
+  "framework_id": "framework-id",
+  "responses": [
+    {
+      "question_id": "question-id",
+      "state": "selected",
+      "value": "value",
+      "provenance": {
+        "recorded_by": "recorded-by",
+        "recorded_at": "2026-07-25T00:00:00Z"
+      }
+    }
+  ],
+  "generated_at": "2026-07-25T00:00:00Z"
+}

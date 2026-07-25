@@ -1,6 +1,13 @@
 # Changelog
 
 ## [Unreleased]
+### Added
+
+- Machine-enforced JSON Schema Draft 2020-12 validation across all 12 ONDTF schemas.
+- Positive and expected-failure fixtures for every registered schema.
+- Machine-readable schema validation evidence and CI artifact publication.
+- Pinned validation dependencies and an authoritative schema-instance manifest.
+
 
 ### Added
 

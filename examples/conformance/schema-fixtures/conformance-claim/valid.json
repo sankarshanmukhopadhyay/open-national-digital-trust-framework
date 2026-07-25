@@ -1,0 +1,14 @@
+{
+  "claim_id": "claim-id",
+  "claim_layer": "artefact",
+  "claimant": "claimant",
+  "assessed_object": "assessed-object",
+  "scope": [
+    "scope"
+  ],
+  "profile": "profile",
+  "assessment_method": "self_declaration",
+  "decision_authority": "decision-authority",
+  "issued_at": "2026-07-25T00:00:00Z",
+  "status": "draft"
+}

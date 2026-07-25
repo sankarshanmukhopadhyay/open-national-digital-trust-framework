@@ -1,0 +1,139 @@
+schema_version: '1.0'
+description: Authoritative mapping of ONDTF schemas to valid instances and expected-failure fixtures.
+validations:
+- schema: model/adoption/construction-response.schema.json
+  instances:
+  - examples/conformance/schema-fixtures/construction-response/valid.json
+  - examples/worked-profile/model/construction-response.json
+  negative_fixtures:
+  - instance: examples/conformance/schema-fixtures/construction-response/missing-required-field.json
+    expected_validator: required
+    rationale: Omits required property framework_id.
+- schema: model/assurance/assurance-claim.schema.json
+  instances:
+  - examples/conformance/schema-fixtures/assurance-claim/valid.json
+  negative_fixtures:
+  - instance: examples/conformance/schema-fixtures/assurance-claim/missing-required-field.json
+    expected_validator: required
+    rationale: Omits required property claim_id.
+- schema: model/conformance/assessment-record.schema.json
+  instances:
+  - examples/conformance/schema-fixtures/assessment-record/valid.json
+  negative_fixtures:
+  - instance: examples/conformance/schema-fixtures/assessment-record/missing-required-field.json
+    expected_validator: required
+    rationale: Omits required property assessment_id.
+- schema: model/conformance/conformance-claim.schema.json
+  instances:
+  - examples/conformance/schema-fixtures/conformance-claim/valid.json
+  negative_fixtures:
+  - instance: examples/conformance/schema-fixtures/conformance-claim/missing-required-field.json
+    expected_validator: required
+    rationale: Omits required property claim_id.
+- schema: model/conformance/nonconformity.schema.json
+  instances:
+  - examples/conformance/schema-fixtures/nonconformity/valid.json
+  negative_fixtures:
+  - instance: examples/conformance/schema-fixtures/nonconformity/missing-required-field.json
+    expected_validator: required
+    rationale: Omits required property id.
+- schema: model/profiles/profile-manifest.schema.json
+  instances:
+  - examples/conformance/schema-fixtures/profile-manifest/valid.json
+  negative_fixtures:
+  - instance: examples/conformance/schema-fixtures/profile-manifest/missing-required-field.json
+    expected_validator: required
+    rationale: Omits required property id.
+- schema: model/references/sector-standard-mapping.schema.json
+  instances:
+  - examples/conformance/schema-fixtures/sector-standard-mapping/valid.json
+  negative_fixtures:
+  - instance: examples/conformance/schema-fixtures/sector-standard-mapping/missing-required-field.json
+    expected_validator: required
+    rationale: Omits required property sector_id.
+- schema: model/rights/accessibility-evidence.schema.json
+  instances:
+  - examples/conformance/schema-fixtures/accessibility-evidence/valid.json
+  negative_fixtures:
+  - instance: examples/conformance/schema-fixtures/accessibility-evidence/missing-required-field.json
+    expected_validator: required
+    rationale: Omits required property record_id.
+- schema: model/rights/appeal-record.schema.json
+  instances:
+  - examples/conformance/schema-fixtures/appeal-record/valid.json
+  negative_fixtures:
+  - instance: examples/conformance/schema-fixtures/appeal-record/missing-required-field.json
+    expected_validator: required
+    rationale: Omits required property record_id.
+- schema: model/rights/challenge-record.schema.json
+  instances:
+  - examples/conformance/schema-fixtures/challenge-record/valid.json
+  negative_fixtures:
+  - instance: examples/conformance/schema-fixtures/challenge-record/missing-required-field.json
+    expected_validator: required
+    rationale: Omits required property record_id.
+- schema: model/rights/remedy-record.schema.json
+  instances:
+  - examples/conformance/schema-fixtures/remedy-record/valid.json
+  negative_fixtures:
+  - instance: examples/conformance/schema-fixtures/remedy-record/missing-required-field.json
+    expected_validator: required
+    rationale: Omits required property record_id.
+- schema: model/terminology/schema/term.schema.json
+  instances:
+  - examples/conformance/schema-fixtures/term/valid.json
+  - model/terminology/terms/accountability.yaml
+  - model/terminology/terms/accreditation.yaml
+  - model/terminology/terms/actor.yaml
+  - model/terminology/terms/administering-authority.yaml
+  - model/terminology/terms/appeal.yaml
+  - model/terminology/terms/assurance-level.yaml
+  - model/terminology/terms/assurance.yaml
+  - model/terminology/terms/audit.yaml
+  - model/terminology/terms/authority.yaml
+  - model/terminology/terms/certification.yaml
+  - model/terminology/terms/challenge.yaml
+  - model/terminology/terms/claim.yaml
+  - model/terminology/terms/conformance.yaml
+  - model/terminology/terms/conformity-assessment.yaml
+  - model/terminology/terms/control.yaml
+  - model/terminology/terms/credential.yaml
+  - model/terminology/terms/decision-record.yaml
+  - model/terminology/terms/delegated-authority.yaml
+  - model/terminology/terms/delegation.yaml
+  - model/terminology/terms/digital-trust-infrastructure.yaml
+  - model/terminology/terms/digital-trust.yaml
+  - model/terminology/terms/evaluation.yaml
+  - model/terminology/terms/evidence.yaml
+  - model/terminology/terms/governance-authority.yaml
+  - model/terminology/terms/governance-framework.yaml
+  - model/terminology/terms/implementation-profile.yaml
+  - model/terminology/terms/interoperability.yaml
+  - model/terminology/terms/issuer.yaml
+  - model/terminology/terms/mandate.yaml
+  - model/terminology/terms/normative-requirement.yaml
+  - model/terminology/terms/participant.yaml
+  - model/terminology/terms/policy.yaml
+  - model/terminology/terms/profile.yaml
+  - model/terminology/terms/recognition.yaml
+  - model/terminology/terms/redress.yaml
+  - model/terminology/terms/relying-party.yaml
+  - model/terminology/terms/residual-risk.yaml
+  - model/terminology/terms/review.yaml
+  - model/terminology/terms/revocation.yaml
+  - model/terminology/terms/risk.yaml
+  - model/terminology/terms/role.yaml
+  - model/terminology/terms/scope-of-authority.yaml
+  - model/terminology/terms/sector-profile.yaml
+  - model/terminology/terms/status.yaml
+  - model/terminology/terms/suspension.yaml
+  - model/terminology/terms/trust-community.yaml
+  - model/terminology/terms/trust-decision.yaml
+  - model/terminology/terms/trust-registry.yaml
+  - model/terminology/terms/trust-service.yaml
+  - model/terminology/terms/verification.yaml
+  - model/terminology/terms/withdrawal.yaml
+  negative_fixtures:
+  - instance: examples/conformance/schema-fixtures/term/missing-required-field.json
+    expected_validator: required
+    rationale: Omits required property schema_version.

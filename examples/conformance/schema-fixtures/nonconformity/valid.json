@@ -1,0 +1,11 @@
+{
+  "id": "TEST-001",
+  "requirement_id": "requirement-id",
+  "severity": "observation",
+  "evidence": [
+    "evidence"
+  ],
+  "owner": "test-owner",
+  "due_at": "2026-07-25T00:00:00Z",
+  "status": "open"
+}

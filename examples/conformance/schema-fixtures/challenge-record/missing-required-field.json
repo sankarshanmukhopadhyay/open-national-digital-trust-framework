@@ -1,0 +1,9 @@
+{
+  "profile_id": "profile-id",
+  "affected_party_reference": "affected-party-reference",
+  "created_at": "2026-07-25T00:00:00Z",
+  "grounds": [
+    "grounds"
+  ],
+  "status": "status"
+}

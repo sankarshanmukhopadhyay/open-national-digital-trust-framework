@@ -1,0 +1,12 @@
+{
+  "profile_id": "profile-id",
+  "created_at": "2026-07-25T00:00:00Z",
+  "journey": "journey",
+  "methods": [
+    "methods"
+  ],
+  "findings": [
+    "findings"
+  ],
+  "status": "status"
+}

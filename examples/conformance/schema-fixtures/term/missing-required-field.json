@@ -1,0 +1,13 @@
+{
+  "id": "test-value",
+  "term": "Test term",
+  "definition": "A valid test definition.",
+  "status": "proposed",
+  "classification": "core",
+  "normative": true,
+  "owner": "test-owner",
+  "lifecycle": {
+    "introduced_in": "introduced-in",
+    "review_status": "draft"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "assessment_id": "assessment-id",
+  "assessed_object": "assessed-object",
+  "scheme": "scheme",
+  "requirements": [
+    "requirements"
+  ],
+  "assessor": "assessor",
+  "started_at": "2026-07-25T00:00:00Z",
+  "findings": [
+    {
+      "requirement_id": "requirement-id",
+      "result": "conformant"
+    }
+  ],
+  "evidence_references": [
+    "evidence-references"
+  ]
+}

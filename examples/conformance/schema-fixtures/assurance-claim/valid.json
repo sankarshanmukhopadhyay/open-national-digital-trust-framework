@@ -1,0 +1,28 @@
+{
+  "claim_id": "claim-id",
+  "profile_id": "profile-id",
+  "decision_context": {
+    "purpose": "purpose",
+    "subject": "subject",
+    "action": "action"
+  },
+  "evaluated_at": "2026-07-25T00:00:00Z",
+  "dimensions": [
+    {
+      "dimension_id": "ASD-GOV",
+      "level_id": "AL-1",
+      "evidence": [
+        "evidence"
+      ],
+      "freshness": "freshness",
+      "conclusion": "conclusion"
+    }
+  ],
+  "composition_result": {
+    "rule_id": "rule-id",
+    "outcome": "supported",
+    "critical_failures": [
+      "critical-failures"
+    ]
+  }
+}

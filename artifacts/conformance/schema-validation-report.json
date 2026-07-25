@@ -1,0 +1,675 @@
+{
+  "schema_version": "1.0",
+  "manifest": "model/conformance/schema-instance-manifest.yaml",
+  "summary": {
+    "checks": 76,
+    "passed": 76,
+    "failed": 0
+  },
+  "results": [
+    {
+      "schema": "model/adoption/construction-response.schema.json",
+      "instance": "examples/conformance/schema-fixtures/construction-response/valid.json",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/adoption/construction-response.schema.json",
+      "instance": "examples/worked-profile/model/construction-response.json",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/adoption/construction-response.schema.json",
+      "instance": "examples/conformance/schema-fixtures/construction-response/missing-required-field.json",
+      "expected": "fail",
+      "actual": "fail",
+      "expected_validator": "required",
+      "observed_validators": [
+        "required"
+      ],
+      "errors": [
+        {
+          "path": "",
+          "schema_path": "required",
+          "validator": "required",
+          "message": "'framework_id' is a required property"
+        }
+      ]
+    },
+    {
+      "schema": "model/assurance/assurance-claim.schema.json",
+      "instance": "examples/conformance/schema-fixtures/assurance-claim/valid.json",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/assurance/assurance-claim.schema.json",
+      "instance": "examples/conformance/schema-fixtures/assurance-claim/missing-required-field.json",
+      "expected": "fail",
+      "actual": "fail",
+      "expected_validator": "required",
+      "observed_validators": [
+        "required"
+      ],
+      "errors": [
+        {
+          "path": "",
+          "schema_path": "required",
+          "validator": "required",
+          "message": "'claim_id' is a required property"
+        }
+      ]
+    },
+    {
+      "schema": "model/conformance/assessment-record.schema.json",
+      "instance": "examples/conformance/schema-fixtures/assessment-record/valid.json",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/conformance/assessment-record.schema.json",
+      "instance": "examples/conformance/schema-fixtures/assessment-record/missing-required-field.json",
+      "expected": "fail",
+      "actual": "fail",
+      "expected_validator": "required",
+      "observed_validators": [
+        "required"
+      ],
+      "errors": [
+        {
+          "path": "",
+          "schema_path": "required",
+          "validator": "required",
+          "message": "'assessment_id' is a required property"
+        }
+      ]
+    },
+    {
+      "schema": "model/conformance/conformance-claim.schema.json",
+      "instance": "examples/conformance/schema-fixtures/conformance-claim/valid.json",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/conformance/conformance-claim.schema.json",
+      "instance": "examples/conformance/schema-fixtures/conformance-claim/missing-required-field.json",
+      "expected": "fail",
+      "actual": "fail",
+      "expected_validator": "required",
+      "observed_validators": [
+        "required"
+      ],
+      "errors": [
+        {
+          "path": "",
+          "schema_path": "required",
+          "validator": "required",
+          "message": "'claim_id' is a required property"
+        }
+      ]
+    },
+    {
+      "schema": "model/conformance/nonconformity.schema.json",
+      "instance": "examples/conformance/schema-fixtures/nonconformity/valid.json",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/conformance/nonconformity.schema.json",
+      "instance": "examples/conformance/schema-fixtures/nonconformity/missing-required-field.json",
+      "expected": "fail",
+      "actual": "fail",
+      "expected_validator": "required",
+      "observed_validators": [
+        "required"
+      ],
+      "errors": [
+        {
+          "path": "",
+          "schema_path": "required",
+          "validator": "required",
+          "message": "'id' is a required property"
+        }
+      ]
+    },
+    {
+      "schema": "model/profiles/profile-manifest.schema.json",
+      "instance": "examples/conformance/schema-fixtures/profile-manifest/valid.json",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/profiles/profile-manifest.schema.json",
+      "instance": "examples/conformance/schema-fixtures/profile-manifest/missing-required-field.json",
+      "expected": "fail",
+      "actual": "fail",
+      "expected_validator": "required",
+      "observed_validators": [
+        "required"
+      ],
+      "errors": [
+        {
+          "path": "",
+          "schema_path": "required",
+          "validator": "required",
+          "message": "'id' is a required property"
+        }
+      ]
+    },
+    {
+      "schema": "model/references/sector-standard-mapping.schema.json",
+      "instance": "examples/conformance/schema-fixtures/sector-standard-mapping/valid.json",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/references/sector-standard-mapping.schema.json",
+      "instance": "examples/conformance/schema-fixtures/sector-standard-mapping/missing-required-field.json",
+      "expected": "fail",
+      "actual": "fail",
+      "expected_validator": "required",
+      "observed_validators": [
+        "required"
+      ],
+      "errors": [
+        {
+          "path": "",
+          "schema_path": "required",
+          "validator": "required",
+          "message": "'sector_id' is a required property"
+        }
+      ]
+    },
+    {
+      "schema": "model/rights/accessibility-evidence.schema.json",
+      "instance": "examples/conformance/schema-fixtures/accessibility-evidence/valid.json",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/rights/accessibility-evidence.schema.json",
+      "instance": "examples/conformance/schema-fixtures/accessibility-evidence/missing-required-field.json",
+      "expected": "fail",
+      "actual": "fail",
+      "expected_validator": "required",
+      "observed_validators": [
+        "required"
+      ],
+      "errors": [
+        {
+          "path": "",
+          "schema_path": "required",
+          "validator": "required",
+          "message": "'record_id' is a required property"
+        }
+      ]
+    },
+    {
+      "schema": "model/rights/appeal-record.schema.json",
+      "instance": "examples/conformance/schema-fixtures/appeal-record/valid.json",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/rights/appeal-record.schema.json",
+      "instance": "examples/conformance/schema-fixtures/appeal-record/missing-required-field.json",
+      "expected": "fail",
+      "actual": "fail",
+      "expected_validator": "required",
+      "observed_validators": [
+        "required"
+      ],
+      "errors": [
+        {
+          "path": "",
+          "schema_path": "required",
+          "validator": "required",
+          "message": "'record_id' is a required property"
+        }
+      ]
+    },
+    {
+      "schema": "model/rights/challenge-record.schema.json",
+      "instance": "examples/conformance/schema-fixtures/challenge-record/valid.json",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/rights/challenge-record.schema.json",
+      "instance": "examples/conformance/schema-fixtures/challenge-record/missing-required-field.json",
+      "expected": "fail",
+      "actual": "fail",
+      "expected_validator": "required",
+      "observed_validators": [
+        "required"
+      ],
+      "errors": [
+        {
+          "path": "",
+          "schema_path": "required",
+          "validator": "required",
+          "message": "'record_id' is a required property"
+        }
+      ]
+    },
+    {
+      "schema": "model/rights/remedy-record.schema.json",
+      "instance": "examples/conformance/schema-fixtures/remedy-record/valid.json",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/rights/remedy-record.schema.json",
+      "instance": "examples/conformance/schema-fixtures/remedy-record/missing-required-field.json",
+      "expected": "fail",
+      "actual": "fail",
+      "expected_validator": "required",
+      "observed_validators": [
+        "required"
+      ],
+      "errors": [
+        {
+          "path": "",
+          "schema_path": "required",
+          "validator": "required",
+          "message": "'record_id' is a required property"
+        }
+      ]
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "examples/conformance/schema-fixtures/term/valid.json",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/accountability.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/accreditation.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/actor.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/administering-authority.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/appeal.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/assurance-level.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/assurance.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/audit.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/authority.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/certification.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/challenge.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/claim.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/conformance.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/conformity-assessment.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/control.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/credential.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/decision-record.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/delegated-authority.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/delegation.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/digital-trust-infrastructure.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/digital-trust.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/evaluation.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/evidence.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/governance-authority.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/governance-framework.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/implementation-profile.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/interoperability.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/issuer.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/mandate.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/normative-requirement.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/participant.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/policy.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/profile.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/recognition.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/redress.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/relying-party.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/residual-risk.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/review.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/revocation.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/risk.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/role.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/scope-of-authority.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/sector-profile.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/status.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/suspension.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/trust-community.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/trust-decision.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/trust-registry.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/trust-service.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/verification.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "model/terminology/terms/withdrawal.yaml",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/terminology/schema/term.schema.json",
+      "instance": "examples/conformance/schema-fixtures/term/missing-required-field.json",
+      "expected": "fail",
+      "actual": "fail",
+      "expected_validator": "required",
+      "observed_validators": [
+        "required"
+      ],
+      "errors": [
+        {
+          "path": "",
+          "schema_path": "required",
+          "validator": "required",
+          "message": "'schema_version' is a required property"
+        }
+      ]
+    }
+  ]
+}
