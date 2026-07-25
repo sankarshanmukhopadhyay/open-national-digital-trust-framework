@@ -1,0 +1,92 @@
+schema_version: '1.0'
+vocabulary: CTWG Glossary
+version: 1.4.1
+authority: informative
+policy: A mapping records semantic relationship; it does not import CTWG authority
+  into ONDTF.
+mappings:
+- ondtf_term: accountability
+  external_term: accountability
+  relationship: related
+  review_status: approved
+  rationale: Conceptually relevant input; ONDTF definition is independently governed.
+- ondtf_term: accreditation
+  external_term: accreditation
+  relationship: related
+  review_status: approved
+  rationale: Conceptually relevant input; ONDTF definition is independently governed.
+- ondtf_term: assurance
+  external_term: assurance
+  relationship: related
+  review_status: approved
+  rationale: Conceptually relevant input; ONDTF definition is independently governed.
+- ondtf_term: authority
+  external_term: authority
+  relationship: related
+  review_status: approved
+  rationale: Conceptually relevant input; ONDTF definition is independently governed.
+- ondtf_term: certification
+  external_term: certification
+  relationship: related
+  review_status: approved
+  rationale: Conceptually relevant input; ONDTF definition is independently governed.
+- ondtf_term: conformance
+  external_term: conformance
+  relationship: related
+  review_status: approved
+  rationale: Conceptually relevant input; ONDTF definition is independently governed.
+- ondtf_term: credential
+  external_term: credential
+  relationship: related
+  review_status: approved
+  rationale: Conceptually relevant input; ONDTF definition is independently governed.
+- ondtf_term: delegation
+  external_term: delegation
+  relationship: related
+  review_status: approved
+  rationale: Conceptually relevant input; ONDTF definition is independently governed.
+- ondtf_term: digital-trust
+  external_term: digital-trust
+  relationship: related
+  review_status: approved
+  rationale: Conceptually relevant input; ONDTF definition is independently governed.
+- ondtf_term: evidence
+  external_term: evidence
+  relationship: related
+  review_status: approved
+  rationale: Conceptually relevant input; ONDTF definition is independently governed.
+- ondtf_term: governance-framework
+  external_term: governance-framework
+  relationship: related
+  review_status: approved
+  rationale: Conceptually relevant input; ONDTF definition is independently governed.
+- ondtf_term: interoperability
+  external_term: interoperability
+  relationship: related
+  review_status: approved
+  rationale: Conceptually relevant input; ONDTF definition is independently governed.
+- ondtf_term: relying-party
+  external_term: relying-party
+  relationship: related
+  review_status: approved
+  rationale: Conceptually relevant input; ONDTF definition is independently governed.
+- ondtf_term: revocation
+  external_term: revocation
+  relationship: related
+  review_status: approved
+  rationale: Conceptually relevant input; ONDTF definition is independently governed.
+- ondtf_term: trust-community
+  external_term: trust-community
+  relationship: related
+  review_status: approved
+  rationale: Conceptually relevant input; ONDTF definition is independently governed.
+- ondtf_term: trust-registry
+  external_term: trust-registry
+  relationship: related
+  review_status: approved
+  rationale: Conceptually relevant input; ONDTF definition is independently governed.
+- ondtf_term: verification
+  external_term: verification
+  relationship: related
+  review_status: approved
+  rationale: Conceptually relevant input; ONDTF definition is independently governed.

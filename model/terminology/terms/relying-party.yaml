@@ -1,0 +1,29 @@
+schema_version: '1.0'
+id: relying-party
+term: Relying party
+definition: An actor that uses a verified claim, status, or trust decision as an input to its own decision or action.
+status: active
+classification: core
+normative: true
+owner: Specification Editorial Workstream
+aliases: []
+see_also:
+- verification
+- trust-decision
+- credential
+scope_note: This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.
+sources:
+- id: ondtf-existing-usage
+  relationship: derived
+  normative: true
+external_mappings:
+- vocabulary: CTWG Glossary
+  term: relying-party
+  relationship: related
+  version: 1.4.1
+  normative: false
+  note: Informative mapping only; ONDTF retains independent semantic authority.
+lifecycle:
+  introduced_in: 0.6.0
+  last_reviewed_in: 0.6.0
+  review_status: approved

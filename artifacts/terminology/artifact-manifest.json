@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "framework_version": "0.6.0",
+  "artifacts": [
+    {
+      "path": "artifacts/terminology/ctwg-crosswalk.json",
+      "sha256": "de3f26d1732e05e456cab664c5caee34d4aef1f9aa6814e92856b997f3a0428b"
+    },
+    {
+      "path": "artifacts/terminology/ondtf-glossary.json",
+      "sha256": "a54c50887c4c59795c1690d80511d22e9328769005f3eb1bfe5f6152823680ca"
+    },
+    {
+      "path": "artifacts/terminology/ondtf-glossary.jsonld",
+      "sha256": "adc172e5c3468a8752db0903af2c65056a98dc96625b8eace6f19e130a0d84e3"
+    },
+    {
+      "path": "artifacts/terminology/term-inventory.json",
+      "sha256": "328f379be2496eb8c87f8350adff88f1fc323120ebbcea114473bda687c62497"
+    },
+    {
+      "path": "artifacts/terminology/terminology-quality-report.json",
+      "sha256": "7c484f7a6f9263bde0ffe2c6b97cd5d30429f0c76fda6a6aa74adc9b257dd270"
+    }
+  ]
+}

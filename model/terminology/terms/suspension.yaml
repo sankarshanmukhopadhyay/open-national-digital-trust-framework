@@ -1,0 +1,22 @@
+schema_version: '1.0'
+id: suspension
+term: Suspension
+definition: A temporary restriction on the validity or exercise of an authority, credential, status, permission, or participation right pending review or resolution.
+status: active
+classification: governance
+normative: true
+owner: Specification Editorial Workstream
+aliases: []
+see_also:
+- revocation
+- review
+- status
+scope_note: This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.
+sources:
+- id: ondtf-existing-usage
+  relationship: derived
+  normative: true
+lifecycle:
+  introduced_in: 0.6.0
+  last_reviewed_in: 0.6.0
+  review_status: approved

@@ -1,0 +1,29 @@
+schema_version: '1.0'
+id: governance-framework
+term: Governance framework
+definition: The rules, roles, decision rights, controls, processes, and accountability mechanisms governing a trust ecosystem or scheme.
+status: active
+classification: governance
+normative: true
+owner: Specification Editorial Workstream
+aliases: []
+see_also:
+- governance-authority
+- policy
+- trust-community
+scope_note: This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.
+sources:
+- id: ondtf-existing-usage
+  relationship: derived
+  normative: true
+external_mappings:
+- vocabulary: CTWG Glossary
+  term: governance-framework
+  relationship: related
+  version: 1.4.1
+  normative: false
+  note: Informative mapping only; ONDTF retains independent semantic authority.
+lifecycle:
+  introduced_in: 0.6.0
+  last_reviewed_in: 0.6.0
+  review_status: approved

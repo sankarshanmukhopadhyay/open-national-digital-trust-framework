@@ -1,0 +1,32 @@
+schema_version: '1.0'
+classifications:
+- core
+- governance
+- architecture
+- assurance
+- profile
+- rights
+- privacy
+- security
+- legal-regulatory
+- operational
+- descriptive
+statuses:
+- proposed
+- active
+- deprecated
+- retired
+mapping_relationships:
+- equivalent
+- adapted
+- broader-than
+- narrower-than
+- related
+- conflicting
+- not-mapped
+review_statuses:
+- draft
+- editorial-review
+- domain-review
+- approved
+- deprecated

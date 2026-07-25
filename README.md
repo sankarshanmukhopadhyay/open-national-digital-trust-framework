@@ -71,6 +71,8 @@ For a guided introduction, use the rendered documentation:
 
 The GitHub Pages site provides sidebar reference navigation, breadcrumbs, search, and explicit Previous/Next links for the canonical guided sequence.
 
+The [ONDTF Controlled Vocabulary](docs/terminology/index.md) provides governed, machine-readable definitions used across specifications, profiles, conformance, and release governance.
+
 ## Ten-minute validation
 
 ```bash

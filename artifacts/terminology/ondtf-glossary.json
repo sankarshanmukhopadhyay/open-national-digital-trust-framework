@@ -1,0 +1,1662 @@
+{
+  "schema_version": "1.0",
+  "framework": "ONDTF",
+  "framework_version": "0.6.0",
+  "authority": "ONDTF",
+  "terms": [
+    {
+      "schema_version": "1.0",
+      "id": "accountability",
+      "term": "Accountability",
+      "definition": "An obligation to explain and justify the exercise of authority, accept review, and bear defined consequences for outcomes or failures.",
+      "status": "active",
+      "classification": "governance",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [
+        "responsibility"
+      ],
+      "see_also": [
+        "authority",
+        "evidence",
+        "redress"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "external_mappings": [
+        {
+          "vocabulary": "CTWG Glossary",
+          "term": "accountability",
+          "relationship": "related",
+          "version": "1.4.1",
+          "normative": false,
+          "note": "Informative mapping only; ONDTF retains independent semantic authority."
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "accreditation",
+      "term": "Accreditation",
+      "definition": "A formal determination by an authorised body that a conformity assessment body is competent to perform specified assessment activities.",
+      "status": "active",
+      "classification": "assurance",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [],
+      "see_also": [
+        "certification",
+        "conformity-assessment",
+        "assurance"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "external_mappings": [
+        {
+          "vocabulary": "CTWG Glossary",
+          "term": "accreditation",
+          "relationship": "related",
+          "version": "1.4.1",
+          "normative": false,
+          "note": "Informative mapping only; ONDTF retains independent semantic authority."
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "actor",
+      "term": "Actor",
+      "definition": "A person, organisation, system, service, or agent that performs a role or participates in a governed digital trust interaction.",
+      "status": "active",
+      "classification": "core",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [],
+      "see_also": [
+        "role",
+        "participant"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "administering-authority",
+      "term": "Administering authority",
+      "definition": "The body accountable for operating or overseeing a trust scheme, registry, service, or framework within an explicitly delegated mandate.",
+      "status": "active",
+      "classification": "governance",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [],
+      "see_also": [
+        "governance-authority",
+        "authority",
+        "mandate"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "appeal",
+      "term": "Appeal",
+      "definition": "A formal request for an authorised body to reconsider a decision through a defined review process.",
+      "status": "active",
+      "classification": "rights",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [],
+      "see_also": [
+        "challenge",
+        "redress",
+        "review"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "assurance-level",
+      "term": "Assurance level",
+      "definition": "A defined degree of confidence associated with specified requirements, evidence, assessment methods, and residual risk.",
+      "status": "active",
+      "classification": "assurance",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [],
+      "see_also": [
+        "assurance",
+        "risk",
+        "conformance"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "assurance",
+      "term": "Assurance",
+      "definition": "Justified confidence, based on evidence and controls, that a claim, actor, service, process, or system is suitable for a defined purpose and risk context.",
+      "status": "active",
+      "classification": "assurance",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [],
+      "see_also": [
+        "assurance-level",
+        "evidence",
+        "control"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "external_mappings": [
+        {
+          "vocabulary": "CTWG Glossary",
+          "term": "assurance",
+          "relationship": "related",
+          "version": "1.4.1",
+          "normative": false,
+          "note": "Informative mapping only; ONDTF retains independent semantic authority."
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "audit",
+      "term": "Audit",
+      "definition": "A systematic, independent, and documented examination used to determine whether specified requirements and controls are implemented and evidenced.",
+      "status": "active",
+      "classification": "assurance",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [],
+      "see_also": [
+        "evidence",
+        "control",
+        "conformance"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "authority",
+      "term": "Authority",
+      "definition": "Legitimate and bounded permission to perform an action, exercise a power, make a decision, or represent another actor.",
+      "status": "active",
+      "classification": "governance",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [],
+      "see_also": [
+        "delegation",
+        "mandate",
+        "scope-of-authority"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "external_mappings": [
+        {
+          "vocabulary": "CTWG Glossary",
+          "term": "authority",
+          "relationship": "related",
+          "version": "1.4.1",
+          "normative": false,
+          "note": "Informative mapping only; ONDTF retains independent semantic authority."
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "certification",
+      "term": "Certification",
+      "definition": "A formal third-party attestation that a product, service, process, system, or person conforms to specified requirements.",
+      "status": "active",
+      "classification": "assurance",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [],
+      "see_also": [
+        "accreditation",
+        "conformity-assessment",
+        "conformance"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "external_mappings": [
+        {
+          "vocabulary": "CTWG Glossary",
+          "term": "certification",
+          "relationship": "related",
+          "version": "1.4.1",
+          "normative": false,
+          "note": "Informative mapping only; ONDTF retains independent semantic authority."
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "challenge",
+      "term": "Challenge",
+      "definition": "A process through which an affected party may contest a claim, action, status, or decision and require it to be reviewed.",
+      "status": "active",
+      "classification": "rights",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [],
+      "see_also": [
+        "appeal",
+        "redress",
+        "decision-record"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "claim",
+      "term": "Claim",
+      "definition": "A statement about a subject that may be asserted, evidenced, verified, challenged, or relied upon.",
+      "status": "active",
+      "classification": "core",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [],
+      "see_also": [
+        "credential",
+        "evidence",
+        "verification"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "conformance",
+      "term": "Conformance",
+      "definition": "The condition of satisfying specified requirements for a declared implementation, profile, process, or system.",
+      "status": "active",
+      "classification": "assurance",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [],
+      "see_also": [
+        "conformity-assessment",
+        "certification",
+        "profile"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "external_mappings": [
+        {
+          "vocabulary": "CTWG Glossary",
+          "term": "conformance",
+          "relationship": "related",
+          "version": "1.4.1",
+          "normative": false,
+          "note": "Informative mapping only; ONDTF retains independent semantic authority."
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "conformity-assessment",
+      "term": "Conformity assessment",
+      "definition": "A process for demonstrating whether specified requirements relating to a product, service, process, system, person, or body have been fulfilled.",
+      "status": "active",
+      "classification": "assurance",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [],
+      "see_also": [
+        "conformance",
+        "certification",
+        "accreditation"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "control",
+      "term": "Control",
+      "definition": "A policy, process, organisational measure, or technical mechanism designed to modify risk or enforce a requirement.",
+      "status": "active",
+      "classification": "assurance",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [],
+      "see_also": [
+        "risk",
+        "evidence",
+        "assurance"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "credential",
+      "term": "Credential",
+      "definition": "An integrity-protected set of claims issued by an authorised actor under defined governance and lifecycle rules.",
+      "status": "active",
+      "classification": "core",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [],
+      "see_also": [
+        "claim",
+        "issuer",
+        "verification"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "external_mappings": [
+        {
+          "vocabulary": "CTWG Glossary",
+          "term": "credential",
+          "relationship": "related",
+          "version": "1.4.1",
+          "normative": false,
+          "note": "Informative mapping only; ONDTF retains independent semantic authority."
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "decision-record",
+      "term": "Decision record",
+      "definition": "A durable evidence artefact that identifies a decision, its authority, inputs, applicable rules, outcome, time, and review or redress route.",
+      "status": "active",
+      "classification": "governance",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [
+        "decision receipt"
+      ],
+      "see_also": [
+        "evidence",
+        "trust-decision",
+        "accountability"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "delegated-authority",
+      "term": "Delegated authority",
+      "definition": "Authority exercised by one actor on behalf of another under an explicit, bounded, reviewable, and revocable grant.",
+      "status": "active",
+      "classification": "governance",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [],
+      "see_also": [
+        "delegation",
+        "authority",
+        "revocation"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "delegation",
+      "term": "Delegation",
+      "definition": "The governed act of granting another actor permission to exercise specified authority within defined scope, duration, conditions, and revocation rules.",
+      "status": "active",
+      "classification": "governance",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [],
+      "see_also": [
+        "delegated-authority",
+        "mandate",
+        "revocation"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "external_mappings": [
+        {
+          "vocabulary": "CTWG Glossary",
+          "term": "delegation",
+          "relationship": "related",
+          "version": "1.4.1",
+          "normative": false,
+          "note": "Informative mapping only; ONDTF retains independent semantic authority."
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "digital-trust-infrastructure",
+      "term": "Digital trust infrastructure",
+      "definition": "The institutional, governance, information, technical, operational, and assurance capabilities that enable trustworthy digital interactions at scale.",
+      "status": "active",
+      "classification": "architecture",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [
+        "trust infrastructure"
+      ],
+      "see_also": [
+        "digital-trust",
+        "trust-service",
+        "trust-registry"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "digital-trust",
+      "term": "Digital trust",
+      "definition": "A context-specific condition in which a digital actor, claim, service, system, or action can be relied upon for a defined purpose and risk level.",
+      "status": "active",
+      "classification": "core",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [],
+      "see_also": [
+        "trust-decision",
+        "assurance",
+        "digital-trust-infrastructure"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "external_mappings": [
+        {
+          "vocabulary": "CTWG Glossary",
+          "term": "digital-trust",
+          "relationship": "related",
+          "version": "1.4.1",
+          "normative": false,
+          "note": "Informative mapping only; ONDTF retains independent semantic authority."
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "evaluation",
+      "term": "Evaluation",
+      "definition": "A structured determination of the extent to which specified requirements, criteria, or objectives are satisfied.",
+      "status": "active",
+      "classification": "assurance",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [],
+      "see_also": [
+        "assurance",
+        "conformity-assessment",
+        "evidence"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "evidence",
+      "term": "Evidence",
+      "definition": "Information or an artefact that can be examined to support or challenge a claim, decision, control, status, or assurance conclusion.",
+      "status": "active",
+      "classification": "assurance",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [],
+      "see_also": [
+        "assurance",
+        "decision-record",
+        "audit"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "external_mappings": [
+        {
+          "vocabulary": "CTWG Glossary",
+          "term": "evidence",
+          "relationship": "related",
+          "version": "1.4.1",
+          "normative": false,
+          "note": "Informative mapping only; ONDTF retains independent semantic authority."
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "governance-authority",
+      "term": "Governance authority",
+      "definition": "The body or role legitimately empowered to establish, approve, change, enforce, or retire governance rules within a defined scope.",
+      "status": "active",
+      "classification": "governance",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [],
+      "see_also": [
+        "authority",
+        "governance-framework",
+        "administering-authority"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "governance-framework",
+      "term": "Governance framework",
+      "definition": "The rules, roles, decision rights, controls, processes, and accountability mechanisms governing a trust ecosystem or scheme.",
+      "status": "active",
+      "classification": "governance",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [],
+      "see_also": [
+        "governance-authority",
+        "policy",
+        "trust-community"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "external_mappings": [
+        {
+          "vocabulary": "CTWG Glossary",
+          "term": "governance-framework",
+          "relationship": "related",
+          "version": "1.4.1",
+          "normative": false,
+          "note": "Informative mapping only; ONDTF retains independent semantic authority."
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "implementation-profile",
+      "term": "Implementation profile",
+      "definition": "A profile that selects, constrains, or extends framework requirements for a defined implementation context.",
+      "status": "active",
+      "classification": "profile",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [],
+      "see_also": [
+        "profile",
+        "sector-profile",
+        "conformance"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "interoperability",
+      "term": "Interoperability",
+      "definition": "The ability of independently governed systems or communities to exchange and use information, services, and evidence while preserving meaning and policy constraints.",
+      "status": "active",
+      "classification": "architecture",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [],
+      "see_also": [
+        "recognition",
+        "profile",
+        "digital-trust-infrastructure"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "external_mappings": [
+        {
+          "vocabulary": "CTWG Glossary",
+          "term": "interoperability",
+          "relationship": "related",
+          "version": "1.4.1",
+          "normative": false,
+          "note": "Informative mapping only; ONDTF retains independent semantic authority."
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "issuer",
+      "term": "Issuer",
+      "definition": "An authorised actor that creates and issues a credential or other integrity-protected assertion under defined governance rules.",
+      "status": "active",
+      "classification": "core",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [],
+      "see_also": [
+        "credential",
+        "authority",
+        "claim"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "mandate",
+      "term": "Mandate",
+      "definition": "The legal, policy, contractual, or governance basis that establishes an actor’s authority, purpose, scope, and constraints.",
+      "status": "active",
+      "classification": "governance",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [],
+      "see_also": [
+        "authority",
+        "delegation",
+        "scope-of-authority"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "normative-requirement",
+      "term": "Normative requirement",
+      "definition": "A requirement expressed using defined normative language that is subject to conformance assessment.",
+      "status": "active",
+      "classification": "core",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [],
+      "see_also": [
+        "conformance",
+        "profile",
+        "policy"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "participant",
+      "term": "Participant",
+      "definition": "An actor admitted to or operating within a trust community, scheme, service, or framework under defined rules.",
+      "status": "active",
+      "classification": "core",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [],
+      "see_also": [
+        "actor",
+        "trust-community",
+        "role"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "policy",
+      "term": "Policy",
+      "definition": "An authoritative statement of objectives, rules, constraints, or decision criteria governing behaviour and outcomes.",
+      "status": "active",
+      "classification": "governance",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [],
+      "see_also": [
+        "governance-framework",
+        "control",
+        "normative-requirement"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "profile",
+      "term": "Profile",
+      "definition": "A governed selection, constraint, interpretation, or extension of framework requirements for a defined jurisdiction, sector, use case, or implementation context.",
+      "status": "active",
+      "classification": "profile",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [],
+      "see_also": [
+        "implementation-profile",
+        "sector-profile",
+        "conformance"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "recognition",
+      "term": "Recognition",
+      "definition": "A governed determination that another authority, scheme, credential, assessment, or status may be relied upon for a defined purpose and scope.",
+      "status": "active",
+      "classification": "governance",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [],
+      "see_also": [
+        "interoperability",
+        "authority",
+        "trust-decision"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "redress",
+      "term": "Redress",
+      "definition": "A governed means through which an affected party may obtain review, correction, remedy, restoration, or compensation for an adverse action or decision.",
+      "status": "active",
+      "classification": "rights",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [],
+      "see_also": [
+        "appeal",
+        "challenge",
+        "accountability"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "relying-party",
+      "term": "Relying party",
+      "definition": "An actor that uses a verified claim, status, or trust decision as an input to its own decision or action.",
+      "status": "active",
+      "classification": "core",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [],
+      "see_also": [
+        "verification",
+        "trust-decision",
+        "credential"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "external_mappings": [
+        {
+          "vocabulary": "CTWG Glossary",
+          "term": "relying-party",
+          "relationship": "related",
+          "version": "1.4.1",
+          "normative": false,
+          "note": "Informative mapping only; ONDTF retains independent semantic authority."
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "residual-risk",
+      "term": "Residual risk",
+      "definition": "Risk remaining after applicable controls and treatments have been implemented.",
+      "status": "active",
+      "classification": "assurance",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [],
+      "see_also": [
+        "risk",
+        "control",
+        "assurance"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "review",
+      "term": "Review",
+      "definition": "A structured reconsideration or examination of a decision, status, control, definition, or implementation by an authorised party.",
+      "status": "active",
+      "classification": "governance",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [],
+      "see_also": [
+        "appeal",
+        "evidence",
+        "accountability"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "revocation",
+      "term": "Revocation",
+      "definition": "The authoritative withdrawal of a previously granted authority, credential, status, permission, or recognition so that it is no longer valid for future reliance.",
+      "status": "active",
+      "classification": "governance",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [],
+      "see_also": [
+        "suspension",
+        "delegation",
+        "credential"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "external_mappings": [
+        {
+          "vocabulary": "CTWG Glossary",
+          "term": "revocation",
+          "relationship": "related",
+          "version": "1.4.1",
+          "normative": false,
+          "note": "Informative mapping only; ONDTF retains independent semantic authority."
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "risk",
+      "term": "Risk",
+      "definition": "The effect of uncertainty on objectives, expressed through the likelihood and consequence of events or conditions.",
+      "status": "active",
+      "classification": "assurance",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [],
+      "see_also": [
+        "control",
+        "assurance-level",
+        "residual-risk"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "role",
+      "term": "Role",
+      "definition": "A named set of responsibilities, permissions, constraints, and expected behaviours assigned to an actor within a governed context.",
+      "status": "active",
+      "classification": "governance",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [],
+      "see_also": [
+        "actor",
+        "authority",
+        "participant"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "scope-of-authority",
+      "term": "Scope of authority",
+      "definition": "The defined actions, resources, purposes, contexts, conditions, and duration within which authority may legitimately be exercised.",
+      "status": "active",
+      "classification": "governance",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [],
+      "see_also": [
+        "authority",
+        "mandate",
+        "delegation"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "sector-profile",
+      "term": "Sector profile",
+      "definition": "A governed profile that applies ONDTF requirements to the risks, institutions, standards, and operating conditions of a defined sector.",
+      "status": "active",
+      "classification": "profile",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [],
+      "see_also": [
+        "profile",
+        "implementation-profile",
+        "conformance"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "status",
+      "term": "Status",
+      "definition": "A governed state assigned to an actor, credential, authority, service, assessment, or other framework object at a particular time.",
+      "status": "active",
+      "classification": "core",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [],
+      "see_also": [
+        "suspension",
+        "revocation",
+        "evidence"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "suspension",
+      "term": "Suspension",
+      "definition": "A temporary restriction on the validity or exercise of an authority, credential, status, permission, or participation right pending review or resolution.",
+      "status": "active",
+      "classification": "governance",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [],
+      "see_also": [
+        "revocation",
+        "review",
+        "status"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "trust-community",
+      "term": "Trust community",
+      "definition": "A governed set of participants that recognise common rules, roles, credentials, evidence, and assurance arrangements.",
+      "status": "active",
+      "classification": "core",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [],
+      "see_also": [
+        "governance-framework",
+        "participant",
+        "recognition"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "external_mappings": [
+        {
+          "vocabulary": "CTWG Glossary",
+          "term": "trust-community",
+          "relationship": "related",
+          "version": "1.4.1",
+          "normative": false,
+          "note": "Informative mapping only; ONDTF retains independent semantic authority."
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "trust-decision",
+      "term": "Trust decision",
+      "definition": "A context-specific determination that a claim, actor, service, status, or action is acceptable for a defined purpose, policy, and risk level.",
+      "status": "active",
+      "classification": "core",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [],
+      "see_also": [
+        "digital-trust",
+        "evidence",
+        "relying-party"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "trust-registry",
+      "term": "Trust registry",
+      "definition": "A governed service that publishes authoritative information about participants, roles, permissions, schemas, policies, status, or trust-framework membership.",
+      "status": "active",
+      "classification": "architecture",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [],
+      "see_also": [
+        "trust-service",
+        "recognition",
+        "authority"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "external_mappings": [
+        {
+          "vocabulary": "CTWG Glossary",
+          "term": "trust-registry",
+          "relationship": "related",
+          "version": "1.4.1",
+          "normative": false,
+          "note": "Informative mapping only; ONDTF retains independent semantic authority."
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "trust-service",
+      "term": "Trust service",
+      "definition": "A governed service that performs a function supporting digital trust, such as issuance, verification, status, registry, assurance, or evidence exchange.",
+      "status": "active",
+      "classification": "architecture",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [],
+      "see_also": [
+        "digital-trust-infrastructure",
+        "trust-registry",
+        "assurance"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "verification",
+      "term": "Verification",
+      "definition": "The process of checking the integrity, authenticity, status, and applicable constraints of a claim, credential, evidence artefact, or assertion.",
+      "status": "active",
+      "classification": "assurance",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [],
+      "see_also": [
+        "credential",
+        "relying-party",
+        "evidence"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "external_mappings": [
+        {
+          "vocabulary": "CTWG Glossary",
+          "term": "verification",
+          "relationship": "related",
+          "version": "1.4.1",
+          "normative": false,
+          "note": "Informative mapping only; ONDTF retains independent semantic authority."
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "withdrawal",
+      "term": "Withdrawal",
+      "definition": "The formal removal of an approval, recognition, declaration, or participation status by the actor entitled to remove it.",
+      "status": "active",
+      "classification": "governance",
+      "normative": true,
+      "owner": "Specification Editorial Workstream",
+      "aliases": [],
+      "see_also": [
+        "revocation",
+        "suspension",
+        "recognition"
+      ],
+      "scope_note": "This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.",
+      "sources": [
+        {
+          "id": "ondtf-existing-usage",
+          "relationship": "derived",
+          "normative": true
+        }
+      ],
+      "lifecycle": {
+        "introduced_in": "0.6.0",
+        "last_reviewed_in": "0.6.0",
+        "review_status": "approved"
+      }
+    }
+  ]
+}

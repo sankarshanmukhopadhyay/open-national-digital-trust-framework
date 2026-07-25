@@ -1,0 +1,29 @@
+schema_version: '1.0'
+id: assurance
+term: Assurance
+definition: Justified confidence, based on evidence and controls, that a claim, actor, service, process, or system is suitable for a defined purpose and risk context.
+status: active
+classification: assurance
+normative: true
+owner: Specification Editorial Workstream
+aliases: []
+see_also:
+- assurance-level
+- evidence
+- control
+scope_note: This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.
+sources:
+- id: ondtf-existing-usage
+  relationship: derived
+  normative: true
+external_mappings:
+- vocabulary: CTWG Glossary
+  term: assurance
+  relationship: related
+  version: 1.4.1
+  normative: false
+  note: Informative mapping only; ONDTF retains independent semantic authority.
+lifecycle:
+  introduced_in: 0.6.0
+  last_reviewed_in: 0.6.0
+  review_status: approved

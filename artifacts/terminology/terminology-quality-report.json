@@ -1,0 +1,10 @@
+{
+  "schema_version": "1.0",
+  "term_count": 51,
+  "active_terms": 51,
+  "normative_terms": 51,
+  "terms_with_external_mappings": 17,
+  "terms_with_related_terms": 51,
+  "structural_checks": "Run scripts/validate_terminology.py for authoritative results.",
+  "semantic_assurance_limit": "Automated checks do not establish semantic equivalence or jurisdictional neutrality."
+}

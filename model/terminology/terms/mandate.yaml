@@ -1,0 +1,22 @@
+schema_version: '1.0'
+id: mandate
+term: Mandate
+definition: "The legal, policy, contractual, or governance basis that establishes an actor\u2019s authority, purpose, scope, and constraints."
+status: active
+classification: governance
+normative: true
+owner: Specification Editorial Workstream
+aliases: []
+see_also:
+- authority
+- delegation
+- scope-of-authority
+scope_note: This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.
+sources:
+- id: ondtf-existing-usage
+  relationship: derived
+  normative: true
+lifecycle:
+  introduced_in: 0.6.0
+  last_reviewed_in: 0.6.0
+  review_status: approved

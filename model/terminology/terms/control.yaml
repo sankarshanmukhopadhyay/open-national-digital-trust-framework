@@ -1,0 +1,22 @@
+schema_version: '1.0'
+id: control
+term: Control
+definition: A policy, process, organisational measure, or technical mechanism designed to modify risk or enforce a requirement.
+status: active
+classification: assurance
+normative: true
+owner: Specification Editorial Workstream
+aliases: []
+see_also:
+- risk
+- evidence
+- assurance
+scope_note: This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.
+sources:
+- id: ondtf-existing-usage
+  relationship: derived
+  normative: true
+lifecycle:
+  introduced_in: 0.6.0
+  last_reviewed_in: 0.6.0
+  review_status: approved

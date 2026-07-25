@@ -1,0 +1,22 @@
+schema_version: '1.0'
+id: conformity-assessment
+term: Conformity assessment
+definition: A process for demonstrating whether specified requirements relating to a product, service, process, system, person, or body have been fulfilled.
+status: active
+classification: assurance
+normative: true
+owner: Specification Editorial Workstream
+aliases: []
+see_also:
+- conformance
+- certification
+- accreditation
+scope_note: This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.
+sources:
+- id: ondtf-existing-usage
+  relationship: derived
+  normative: true
+lifecycle:
+  introduced_in: 0.6.0
+  last_reviewed_in: 0.6.0
+  review_status: approved

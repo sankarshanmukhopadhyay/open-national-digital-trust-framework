@@ -1,0 +1,22 @@
+schema_version: '1.0'
+id: withdrawal
+term: Withdrawal
+definition: The formal removal of an approval, recognition, declaration, or participation status by the actor entitled to remove it.
+status: active
+classification: governance
+normative: true
+owner: Specification Editorial Workstream
+aliases: []
+see_also:
+- revocation
+- suspension
+- recognition
+scope_note: This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.
+sources:
+- id: ondtf-existing-usage
+  relationship: derived
+  normative: true
+lifecycle:
+  introduced_in: 0.6.0
+  last_reviewed_in: 0.6.0
+  review_status: approved

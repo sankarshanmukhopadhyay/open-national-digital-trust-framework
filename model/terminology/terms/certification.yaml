@@ -1,0 +1,29 @@
+schema_version: '1.0'
+id: certification
+term: Certification
+definition: A formal third-party attestation that a product, service, process, system, or person conforms to specified requirements.
+status: active
+classification: assurance
+normative: true
+owner: Specification Editorial Workstream
+aliases: []
+see_also:
+- accreditation
+- conformity-assessment
+- conformance
+scope_note: This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.
+sources:
+- id: ondtf-existing-usage
+  relationship: derived
+  normative: true
+external_mappings:
+- vocabulary: CTWG Glossary
+  term: certification
+  relationship: related
+  version: 1.4.1
+  normative: false
+  note: Informative mapping only; ONDTF retains independent semantic authority.
+lifecycle:
+  introduced_in: 0.6.0
+  last_reviewed_in: 0.6.0
+  review_status: approved

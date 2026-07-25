@@ -1,0 +1,22 @@
+schema_version: '1.0'
+id: trust-decision
+term: Trust decision
+definition: A context-specific determination that a claim, actor, service, status, or action is acceptable for a defined purpose, policy, and risk level.
+status: active
+classification: core
+normative: true
+owner: Specification Editorial Workstream
+aliases: []
+see_also:
+- digital-trust
+- evidence
+- relying-party
+scope_note: This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.
+sources:
+- id: ondtf-existing-usage
+  relationship: derived
+  normative: true
+lifecycle:
+  introduced_in: 0.6.0
+  last_reviewed_in: 0.6.0
+  review_status: approved

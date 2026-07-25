@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sankarshanmukhopadhyay.github.io/open-national-digital-trust-framework/model/terminology/schema/term.schema.json",
+  "title": "ONDTF controlled vocabulary term",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "id",
+    "term",
+    "definition",
+    "status",
+    "classification",
+    "normative",
+    "owner",
+    "lifecycle"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "term": {
+      "type": "string",
+      "minLength": 2
+    },
+    "definition": {
+      "type": "string",
+      "minLength": 20
+    },
+    "status": {
+      "enum": [
+        "proposed",
+        "active",
+        "deprecated",
+        "retired"
+      ]
+    },
+    "classification": {
+      "enum": [
+        "core",
+        "governance",
+        "architecture",
+        "assurance",
+        "profile",
+        "rights",
+        "privacy",
+        "security",
+        "legal-regulatory",
+        "operational",
+        "descriptive"
+      ]
+    },
+    "normative": {
+      "type": "boolean"
+    },
+    "owner": {
+      "type": "string"
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "see_also": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "scope_note": {
+      "type": "string"
+    },
+    "sources": {
+      "type": "array"
+    },
+    "external_mappings": {
+      "type": "array"
+    },
+    "lifecycle": {
+      "type": "object",
+      "required": [
+        "introduced_in",
+        "review_status"
+      ],
+      "properties": {
+        "introduced_in": {
+          "type": "string"
+        },
+        "last_reviewed_in": {
+          "type": "string"
+        },
+        "review_status": {
+          "enum": [
+            "draft",
+            "editorial-review",
+            "domain-review",
+            "approved",
+            "deprecated"
+          ]
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

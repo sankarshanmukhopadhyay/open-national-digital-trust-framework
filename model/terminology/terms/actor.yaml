@@ -1,0 +1,21 @@
+schema_version: '1.0'
+id: actor
+term: Actor
+definition: A person, organisation, system, service, or agent that performs a role or participates in a governed digital trust interaction.
+status: active
+classification: core
+normative: true
+owner: Specification Editorial Workstream
+aliases: []
+see_also:
+- role
+- participant
+scope_note: This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.
+sources:
+- id: ondtf-existing-usage
+  relationship: derived
+  normative: true
+lifecycle:
+  introduced_in: 0.6.0
+  last_reviewed_in: 0.6.0
+  review_status: approved

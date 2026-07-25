@@ -1,0 +1,22 @@
+schema_version: '1.0'
+id: participant
+term: Participant
+definition: An actor admitted to or operating within a trust community, scheme, service, or framework under defined rules.
+status: active
+classification: core
+normative: true
+owner: Specification Editorial Workstream
+aliases: []
+see_also:
+- actor
+- trust-community
+- role
+scope_note: This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.
+sources:
+- id: ondtf-existing-usage
+  relationship: derived
+  normative: true
+lifecycle:
+  introduced_in: 0.6.0
+  last_reviewed_in: 0.6.0
+  review_status: approved

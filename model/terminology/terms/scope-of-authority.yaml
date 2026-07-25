@@ -1,0 +1,22 @@
+schema_version: '1.0'
+id: scope-of-authority
+term: Scope of authority
+definition: The defined actions, resources, purposes, contexts, conditions, and duration within which authority may legitimately be exercised.
+status: active
+classification: governance
+normative: true
+owner: Specification Editorial Workstream
+aliases: []
+see_also:
+- authority
+- mandate
+- delegation
+scope_note: This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.
+sources:
+- id: ondtf-existing-usage
+  relationship: derived
+  normative: true
+lifecycle:
+  introduced_in: 0.6.0
+  last_reviewed_in: 0.6.0
+  review_status: approved

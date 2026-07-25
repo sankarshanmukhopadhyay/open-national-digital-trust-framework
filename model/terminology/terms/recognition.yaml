@@ -1,0 +1,22 @@
+schema_version: '1.0'
+id: recognition
+term: Recognition
+definition: A governed determination that another authority, scheme, credential, assessment, or status may be relied upon for a defined purpose and scope.
+status: active
+classification: governance
+normative: true
+owner: Specification Editorial Workstream
+aliases: []
+see_also:
+- interoperability
+- authority
+- trust-decision
+scope_note: This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.
+sources:
+- id: ondtf-existing-usage
+  relationship: derived
+  normative: true
+lifecycle:
+  introduced_in: 0.6.0
+  last_reviewed_in: 0.6.0
+  review_status: approved

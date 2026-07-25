@@ -1,0 +1,23 @@
+schema_version: '1.0'
+id: digital-trust-infrastructure
+term: Digital trust infrastructure
+definition: The institutional, governance, information, technical, operational, and assurance capabilities that enable trustworthy digital interactions at scale.
+status: active
+classification: architecture
+normative: true
+owner: Specification Editorial Workstream
+aliases:
+- trust infrastructure
+see_also:
+- digital-trust
+- trust-service
+- trust-registry
+scope_note: This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.
+sources:
+- id: ondtf-existing-usage
+  relationship: derived
+  normative: true
+lifecycle:
+  introduced_in: 0.6.0
+  last_reviewed_in: 0.6.0
+  review_status: approved

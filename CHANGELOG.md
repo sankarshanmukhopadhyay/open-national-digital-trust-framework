@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+### Added
+
+- established a governed ONDTF Controlled Vocabulary with 51 authoritative structured term records;
+- added lifecycle, ownership, provenance, aliases, related-term links, and normative-status metadata;
+- added an informative, version-pinned CTWG Glossary crosswalk without transferring semantic authority;
+- generated GitHub Pages term pages and JSON, JSON-LD, inventory, crosswalk, manifest, and quality-report artefacts;
+- integrated terminology validation and deterministic artefact generation into repository validation;
+- recorded the vocabulary authority and change-control model in ADR-0006.
+
 ### Fixed
 
 - corrected a license inconsistency across `README.md` and `CITATION.cff`, which

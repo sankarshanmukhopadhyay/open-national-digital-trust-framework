@@ -5,18 +5,6 @@ nav_order: 1
 ---
 # Glossary
 
-**Assurance:** justified confidence, based on evidence and controls, that a trust claim is suitable for a defined purpose.
+ONDTF terminology is now maintained through the governed [ONDTF Controlled Vocabulary](../terminology/index.md). The controlled vocabulary provides authoritative definitions, structured source records, lifecycle metadata, related terms, external mappings, and machine-readable publication artefacts.
 
-**Authority:** legitimate permission to perform an action, exercise a power or represent another actor.
-
-**Credential:** a signed or otherwise integrity-protected set of claims issued under a governance framework.
-
-**Digital trust:** a context-specific condition in which a digital actor, claim, service or action can be relied upon for a defined purpose and risk level.
-
-**Governance framework:** the rules, roles, decision rights, controls and accountability mechanisms governing a trust ecosystem.
-
-**Relying party:** an actor that uses a trust decision or verified claim to make a decision.
-
-**Trust community:** a governed set of participants that recognise common rules, credentials and assurance arrangements.
-
-**Trust registry:** a service that publishes authoritative information about participants, roles, permissions, schemas, policies or trust-framework membership.
+This page remains at its original location to preserve existing links.

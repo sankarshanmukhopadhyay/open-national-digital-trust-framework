@@ -1,0 +1,22 @@
+schema_version: '1.0'
+id: profile
+term: Profile
+definition: A governed selection, constraint, interpretation, or extension of framework requirements for a defined jurisdiction, sector, use case, or implementation context.
+status: active
+classification: profile
+normative: true
+owner: Specification Editorial Workstream
+aliases: []
+see_also:
+- implementation-profile
+- sector-profile
+- conformance
+scope_note: This definition is authoritative within ONDTF. Applicability outside ONDTF requires an explicit mapping or adoption decision.
+sources:
+- id: ondtf-existing-usage
+  relationship: derived
+  normative: true
+lifecycle:
+  introduced_in: 0.6.0
+  last_reviewed_in: 0.6.0
+  review_status: approved

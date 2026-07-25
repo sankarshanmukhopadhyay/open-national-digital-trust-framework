@@ -1,5 +1,9 @@
-.PHONY: validate site candidate-check
+.PHONY: terminology validate site candidate-check
+terminology:
+	python3 scripts/build_terminology.py
+	python3 scripts/validate_terminology.py
 validate:
+	python3 scripts/validate_terminology.py
 	python3 scripts/validate_repo.py
 	python3 scripts/validate_assurance_references.py
 	python3 scripts/validate_data_privacy_rights.py

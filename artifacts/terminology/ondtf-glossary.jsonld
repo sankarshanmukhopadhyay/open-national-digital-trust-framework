@@ -1,0 +1,633 @@
+{
+  "@context": {
+    "ondtf": "https://sankarshanmukhopadhyay.github.io/open-national-digital-trust-framework/terms/",
+    "id": "@id",
+    "type": "@type",
+    "term": "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "definition": "http://www.w3.org/2004/02/skos/core#definition",
+    "aliases": "http://www.w3.org/2004/02/skos/core#altLabel",
+    "see_also": {
+      "@id": "http://www.w3.org/2004/02/skos/core#related",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "id": "ondtf:accountability",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Accountability",
+      "definition": "An obligation to explain and justify the exercise of authority, accept review, and bear defined consequences for outcomes or failures.",
+      "aliases": [
+        "responsibility"
+      ],
+      "see_also": [
+        "ondtf:authority",
+        "ondtf:evidence",
+        "ondtf:redress"
+      ]
+    },
+    {
+      "id": "ondtf:accreditation",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Accreditation",
+      "definition": "A formal determination by an authorised body that a conformity assessment body is competent to perform specified assessment activities.",
+      "aliases": [],
+      "see_also": [
+        "ondtf:certification",
+        "ondtf:conformity-assessment",
+        "ondtf:assurance"
+      ]
+    },
+    {
+      "id": "ondtf:actor",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Actor",
+      "definition": "A person, organisation, system, service, or agent that performs a role or participates in a governed digital trust interaction.",
+      "aliases": [],
+      "see_also": [
+        "ondtf:role",
+        "ondtf:participant"
+      ]
+    },
+    {
+      "id": "ondtf:administering-authority",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Administering authority",
+      "definition": "The body accountable for operating or overseeing a trust scheme, registry, service, or framework within an explicitly delegated mandate.",
+      "aliases": [],
+      "see_also": [
+        "ondtf:governance-authority",
+        "ondtf:authority",
+        "ondtf:mandate"
+      ]
+    },
+    {
+      "id": "ondtf:appeal",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Appeal",
+      "definition": "A formal request for an authorised body to reconsider a decision through a defined review process.",
+      "aliases": [],
+      "see_also": [
+        "ondtf:challenge",
+        "ondtf:redress",
+        "ondtf:review"
+      ]
+    },
+    {
+      "id": "ondtf:assurance-level",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Assurance level",
+      "definition": "A defined degree of confidence associated with specified requirements, evidence, assessment methods, and residual risk.",
+      "aliases": [],
+      "see_also": [
+        "ondtf:assurance",
+        "ondtf:risk",
+        "ondtf:conformance"
+      ]
+    },
+    {
+      "id": "ondtf:assurance",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Assurance",
+      "definition": "Justified confidence, based on evidence and controls, that a claim, actor, service, process, or system is suitable for a defined purpose and risk context.",
+      "aliases": [],
+      "see_also": [
+        "ondtf:assurance-level",
+        "ondtf:evidence",
+        "ondtf:control"
+      ]
+    },
+    {
+      "id": "ondtf:audit",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Audit",
+      "definition": "A systematic, independent, and documented examination used to determine whether specified requirements and controls are implemented and evidenced.",
+      "aliases": [],
+      "see_also": [
+        "ondtf:evidence",
+        "ondtf:control",
+        "ondtf:conformance"
+      ]
+    },
+    {
+      "id": "ondtf:authority",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Authority",
+      "definition": "Legitimate and bounded permission to perform an action, exercise a power, make a decision, or represent another actor.",
+      "aliases": [],
+      "see_also": [
+        "ondtf:delegation",
+        "ondtf:mandate",
+        "ondtf:scope-of-authority"
+      ]
+    },
+    {
+      "id": "ondtf:certification",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Certification",
+      "definition": "A formal third-party attestation that a product, service, process, system, or person conforms to specified requirements.",
+      "aliases": [],
+      "see_also": [
+        "ondtf:accreditation",
+        "ondtf:conformity-assessment",
+        "ondtf:conformance"
+      ]
+    },
+    {
+      "id": "ondtf:challenge",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Challenge",
+      "definition": "A process through which an affected party may contest a claim, action, status, or decision and require it to be reviewed.",
+      "aliases": [],
+      "see_also": [
+        "ondtf:appeal",
+        "ondtf:redress",
+        "ondtf:decision-record"
+      ]
+    },
+    {
+      "id": "ondtf:claim",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Claim",
+      "definition": "A statement about a subject that may be asserted, evidenced, verified, challenged, or relied upon.",
+      "aliases": [],
+      "see_also": [
+        "ondtf:credential",
+        "ondtf:evidence",
+        "ondtf:verification"
+      ]
+    },
+    {
+      "id": "ondtf:conformance",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Conformance",
+      "definition": "The condition of satisfying specified requirements for a declared implementation, profile, process, or system.",
+      "aliases": [],
+      "see_also": [
+        "ondtf:conformity-assessment",
+        "ondtf:certification",
+        "ondtf:profile"
+      ]
+    },
+    {
+      "id": "ondtf:conformity-assessment",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Conformity assessment",
+      "definition": "A process for demonstrating whether specified requirements relating to a product, service, process, system, person, or body have been fulfilled.",
+      "aliases": [],
+      "see_also": [
+        "ondtf:conformance",
+        "ondtf:certification",
+        "ondtf:accreditation"
+      ]
+    },
+    {
+      "id": "ondtf:control",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Control",
+      "definition": "A policy, process, organisational measure, or technical mechanism designed to modify risk or enforce a requirement.",
+      "aliases": [],
+      "see_also": [
+        "ondtf:risk",
+        "ondtf:evidence",
+        "ondtf:assurance"
+      ]
+    },
+    {
+      "id": "ondtf:credential",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Credential",
+      "definition": "An integrity-protected set of claims issued by an authorised actor under defined governance and lifecycle rules.",
+      "aliases": [],
+      "see_also": [
+        "ondtf:claim",
+        "ondtf:issuer",
+        "ondtf:verification"
+      ]
+    },
+    {
+      "id": "ondtf:decision-record",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Decision record",
+      "definition": "A durable evidence artefact that identifies a decision, its authority, inputs, applicable rules, outcome, time, and review or redress route.",
+      "aliases": [
+        "decision receipt"
+      ],
+      "see_also": [
+        "ondtf:evidence",
+        "ondtf:trust-decision",
+        "ondtf:accountability"
+      ]
+    },
+    {
+      "id": "ondtf:delegated-authority",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Delegated authority",
+      "definition": "Authority exercised by one actor on behalf of another under an explicit, bounded, reviewable, and revocable grant.",
+      "aliases": [],
+      "see_also": [
+        "ondtf:delegation",
+        "ondtf:authority",
+        "ondtf:revocation"
+      ]
+    },
+    {
+      "id": "ondtf:delegation",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Delegation",
+      "definition": "The governed act of granting another actor permission to exercise specified authority within defined scope, duration, conditions, and revocation rules.",
+      "aliases": [],
+      "see_also": [
+        "ondtf:delegated-authority",
+        "ondtf:mandate",
+        "ondtf:revocation"
+      ]
+    },
+    {
+      "id": "ondtf:digital-trust-infrastructure",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Digital trust infrastructure",
+      "definition": "The institutional, governance, information, technical, operational, and assurance capabilities that enable trustworthy digital interactions at scale.",
+      "aliases": [
+        "trust infrastructure"
+      ],
+      "see_also": [
+        "ondtf:digital-trust",
+        "ondtf:trust-service",
+        "ondtf:trust-registry"
+      ]
+    },
+    {
+      "id": "ondtf:digital-trust",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Digital trust",
+      "definition": "A context-specific condition in which a digital actor, claim, service, system, or action can be relied upon for a defined purpose and risk level.",
+      "aliases": [],
+      "see_also": [
+        "ondtf:trust-decision",
+        "ondtf:assurance",
+        "ondtf:digital-trust-infrastructure"
+      ]
+    },
+    {
+      "id": "ondtf:evaluation",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Evaluation",
+      "definition": "A structured determination of the extent to which specified requirements, criteria, or objectives are satisfied.",
+      "aliases": [],
+      "see_also": [
+        "ondtf:assurance",
+        "ondtf:conformity-assessment",
+        "ondtf:evidence"
+      ]
+    },
+    {
+      "id": "ondtf:evidence",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Evidence",
+      "definition": "Information or an artefact that can be examined to support or challenge a claim, decision, control, status, or assurance conclusion.",
+      "aliases": [],
+      "see_also": [
+        "ondtf:assurance",
+        "ondtf:decision-record",
+        "ondtf:audit"
+      ]
+    },
+    {
+      "id": "ondtf:governance-authority",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Governance authority",
+      "definition": "The body or role legitimately empowered to establish, approve, change, enforce, or retire governance rules within a defined scope.",
+      "aliases": [],
+      "see_also": [
+        "ondtf:authority",
+        "ondtf:governance-framework",
+        "ondtf:administering-authority"
+      ]
+    },
+    {
+      "id": "ondtf:governance-framework",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Governance framework",
+      "definition": "The rules, roles, decision rights, controls, processes, and accountability mechanisms governing a trust ecosystem or scheme.",
+      "aliases": [],
+      "see_also": [
+        "ondtf:governance-authority",
+        "ondtf:policy",
+        "ondtf:trust-community"
+      ]
+    },
+    {
+      "id": "ondtf:implementation-profile",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Implementation profile",
+      "definition": "A profile that selects, constrains, or extends framework requirements for a defined implementation context.",
+      "aliases": [],
+      "see_also": [
+        "ondtf:profile",
+        "ondtf:sector-profile",
+        "ondtf:conformance"
+      ]
+    },
+    {
+      "id": "ondtf:interoperability",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Interoperability",
+      "definition": "The ability of independently governed systems or communities to exchange and use information, services, and evidence while preserving meaning and policy constraints.",
+      "aliases": [],
+      "see_also": [
+        "ondtf:recognition",
+        "ondtf:profile",
+        "ondtf:digital-trust-infrastructure"
+      ]
+    },
+    {
+      "id": "ondtf:issuer",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Issuer",
+      "definition": "An authorised actor that creates and issues a credential or other integrity-protected assertion under defined governance rules.",
+      "aliases": [],
+      "see_also": [
+        "ondtf:credential",
+        "ondtf:authority",
+        "ondtf:claim"
+      ]
+    },
+    {
+      "id": "ondtf:mandate",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Mandate",
+      "definition": "The legal, policy, contractual, or governance basis that establishes an actor’s authority, purpose, scope, and constraints.",
+      "aliases": [],
+      "see_also": [
+        "ondtf:authority",
+        "ondtf:delegation",
+        "ondtf:scope-of-authority"
+      ]
+    },
+    {
+      "id": "ondtf:normative-requirement",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Normative requirement",
+      "definition": "A requirement expressed using defined normative language that is subject to conformance assessment.",
+      "aliases": [],
+      "see_also": [
+        "ondtf:conformance",
+        "ondtf:profile",
+        "ondtf:policy"
+      ]
+    },
+    {
+      "id": "ondtf:participant",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Participant",
+      "definition": "An actor admitted to or operating within a trust community, scheme, service, or framework under defined rules.",
+      "aliases": [],
+      "see_also": [
+        "ondtf:actor",
+        "ondtf:trust-community",
+        "ondtf:role"
+      ]
+    },
+    {
+      "id": "ondtf:policy",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Policy",
+      "definition": "An authoritative statement of objectives, rules, constraints, or decision criteria governing behaviour and outcomes.",
+      "aliases": [],
+      "see_also": [
+        "ondtf:governance-framework",
+        "ondtf:control",
+        "ondtf:normative-requirement"
+      ]
+    },
+    {
+      "id": "ondtf:profile",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Profile",
+      "definition": "A governed selection, constraint, interpretation, or extension of framework requirements for a defined jurisdiction, sector, use case, or implementation context.",
+      "aliases": [],
+      "see_also": [
+        "ondtf:implementation-profile",
+        "ondtf:sector-profile",
+        "ondtf:conformance"
+      ]
+    },
+    {
+      "id": "ondtf:recognition",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Recognition",
+      "definition": "A governed determination that another authority, scheme, credential, assessment, or status may be relied upon for a defined purpose and scope.",
+      "aliases": [],
+      "see_also": [
+        "ondtf:interoperability",
+        "ondtf:authority",
+        "ondtf:trust-decision"
+      ]
+    },
+    {
+      "id": "ondtf:redress",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Redress",
+      "definition": "A governed means through which an affected party may obtain review, correction, remedy, restoration, or compensation for an adverse action or decision.",
+      "aliases": [],
+      "see_also": [
+        "ondtf:appeal",
+        "ondtf:challenge",
+        "ondtf:accountability"
+      ]
+    },
+    {
+      "id": "ondtf:relying-party",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Relying party",
+      "definition": "An actor that uses a verified claim, status, or trust decision as an input to its own decision or action.",
+      "aliases": [],
+      "see_also": [
+        "ondtf:verification",
+        "ondtf:trust-decision",
+        "ondtf:credential"
+      ]
+    },
+    {
+      "id": "ondtf:residual-risk",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Residual risk",
+      "definition": "Risk remaining after applicable controls and treatments have been implemented.",
+      "aliases": [],
+      "see_also": [
+        "ondtf:risk",
+        "ondtf:control",
+        "ondtf:assurance"
+      ]
+    },
+    {
+      "id": "ondtf:review",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Review",
+      "definition": "A structured reconsideration or examination of a decision, status, control, definition, or implementation by an authorised party.",
+      "aliases": [],
+      "see_also": [
+        "ondtf:appeal",
+        "ondtf:evidence",
+        "ondtf:accountability"
+      ]
+    },
+    {
+      "id": "ondtf:revocation",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Revocation",
+      "definition": "The authoritative withdrawal of a previously granted authority, credential, status, permission, or recognition so that it is no longer valid for future reliance.",
+      "aliases": [],
+      "see_also": [
+        "ondtf:suspension",
+        "ondtf:delegation",
+        "ondtf:credential"
+      ]
+    },
+    {
+      "id": "ondtf:risk",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Risk",
+      "definition": "The effect of uncertainty on objectives, expressed through the likelihood and consequence of events or conditions.",
+      "aliases": [],
+      "see_also": [
+        "ondtf:control",
+        "ondtf:assurance-level",
+        "ondtf:residual-risk"
+      ]
+    },
+    {
+      "id": "ondtf:role",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Role",
+      "definition": "A named set of responsibilities, permissions, constraints, and expected behaviours assigned to an actor within a governed context.",
+      "aliases": [],
+      "see_also": [
+        "ondtf:actor",
+        "ondtf:authority",
+        "ondtf:participant"
+      ]
+    },
+    {
+      "id": "ondtf:scope-of-authority",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Scope of authority",
+      "definition": "The defined actions, resources, purposes, contexts, conditions, and duration within which authority may legitimately be exercised.",
+      "aliases": [],
+      "see_also": [
+        "ondtf:authority",
+        "ondtf:mandate",
+        "ondtf:delegation"
+      ]
+    },
+    {
+      "id": "ondtf:sector-profile",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Sector profile",
+      "definition": "A governed profile that applies ONDTF requirements to the risks, institutions, standards, and operating conditions of a defined sector.",
+      "aliases": [],
+      "see_also": [
+        "ondtf:profile",
+        "ondtf:implementation-profile",
+        "ondtf:conformance"
+      ]
+    },
+    {
+      "id": "ondtf:status",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Status",
+      "definition": "A governed state assigned to an actor, credential, authority, service, assessment, or other framework object at a particular time.",
+      "aliases": [],
+      "see_also": [
+        "ondtf:suspension",
+        "ondtf:revocation",
+        "ondtf:evidence"
+      ]
+    },
+    {
+      "id": "ondtf:suspension",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Suspension",
+      "definition": "A temporary restriction on the validity or exercise of an authority, credential, status, permission, or participation right pending review or resolution.",
+      "aliases": [],
+      "see_also": [
+        "ondtf:revocation",
+        "ondtf:review",
+        "ondtf:status"
+      ]
+    },
+    {
+      "id": "ondtf:trust-community",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Trust community",
+      "definition": "A governed set of participants that recognise common rules, roles, credentials, evidence, and assurance arrangements.",
+      "aliases": [],
+      "see_also": [
+        "ondtf:governance-framework",
+        "ondtf:participant",
+        "ondtf:recognition"
+      ]
+    },
+    {
+      "id": "ondtf:trust-decision",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Trust decision",
+      "definition": "A context-specific determination that a claim, actor, service, status, or action is acceptable for a defined purpose, policy, and risk level.",
+      "aliases": [],
+      "see_also": [
+        "ondtf:digital-trust",
+        "ondtf:evidence",
+        "ondtf:relying-party"
+      ]
+    },
+    {
+      "id": "ondtf:trust-registry",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Trust registry",
+      "definition": "A governed service that publishes authoritative information about participants, roles, permissions, schemas, policies, status, or trust-framework membership.",
+      "aliases": [],
+      "see_also": [
+        "ondtf:trust-service",
+        "ondtf:recognition",
+        "ondtf:authority"
+      ]
+    },
+    {
+      "id": "ondtf:trust-service",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Trust service",
+      "definition": "A governed service that performs a function supporting digital trust, such as issuance, verification, status, registry, assurance, or evidence exchange.",
+      "aliases": [],
+      "see_also": [
+        "ondtf:digital-trust-infrastructure",
+        "ondtf:trust-registry",
+        "ondtf:assurance"
+      ]
+    },
+    {
+      "id": "ondtf:verification",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Verification",
+      "definition": "The process of checking the integrity, authenticity, status, and applicable constraints of a claim, credential, evidence artefact, or assertion.",
+      "aliases": [],
+      "see_also": [
+        "ondtf:credential",
+        "ondtf:relying-party",
+        "ondtf:evidence"
+      ]
+    },
+    {
+      "id": "ondtf:withdrawal",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "term": "Withdrawal",
+      "definition": "The formal removal of an approval, recognition, declaration, or participation status by the actor entitled to remove it.",
+      "aliases": [],
+      "see_also": [
+        "ondtf:revocation",
+        "ondtf:suspension",
+        "ondtf:recognition"
+      ]
+    }
+  ]
+}
