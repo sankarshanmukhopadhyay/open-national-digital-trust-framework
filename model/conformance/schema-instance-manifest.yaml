@@ -1,5 +1,6 @@
 schema_version: '1.0'
-description: Authoritative mapping of ONDTF schemas to valid instances and expected-failure fixtures.
+description: Authoritative mapping of ONDTF schemas to valid instances and expected-failure
+  fixtures.
 validations:
 - schema: model/adoption/construction-response.schema.json
   instances:
@@ -137,3 +138,24 @@ validations:
   - instance: examples/conformance/schema-fixtures/term/missing-required-field.json
     expected_validator: required
     rationale: Omits required property schema_version.
+- schema: model/assurance/assurance-profile.schema.json
+  instances:
+  - examples/conformance/schema-fixtures/assurance-profile/valid.json
+  negative_fixtures:
+  - instance: examples/conformance/schema-fixtures/assurance-profile/invalid-enum.json
+    expected_validator: enum
+    rationale: Rejects an undefined Decision Impact Class.
+- schema: model/assurance/assurance-conclusion.schema.json
+  instances:
+  - examples/conformance/schema-fixtures/assurance-conclusion/valid.json
+  negative_fixtures:
+  - instance: examples/conformance/schema-fixtures/assurance-conclusion/invalid-enum.json
+    expected_validator: enum
+    rationale: Rejects an undefined Evaluation Rigour Class.
+- schema: model/assurance/assurance-evidence.schema.json
+  instances:
+  - examples/conformance/schema-fixtures/assurance-evidence/valid.json
+  negative_fixtures:
+  - instance: examples/conformance/schema-fixtures/assurance-evidence/invalid-enum.json
+    expected_validator: enum
+    rationale: Rejects an undefined assurance evidence type.

@@ -124,5 +124,7 @@
       "type": "string"
     }
   },
-  "additionalProperties": false
+  "additionalProperties": false,
+  "deprecated": true,
+  "description": "Deprecated compatibility schema. New implementations use assurance-profile.schema.json, assurance-conclusion.schema.json and assurance-evidence.schema.json."
 }

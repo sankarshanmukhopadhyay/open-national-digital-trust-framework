@@ -1,0 +1,133 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ondtf.example/model/assurance/assurance-conclusion.schema.json",
+  "title": "ONDTF Assurance Conclusion",
+  "type": "object",
+  "required": [
+    "conclusion_id",
+    "profile_id",
+    "evaluated_at",
+    "valid_until",
+    "evaluation_rigour",
+    "dimensions",
+    "state",
+    "blocking_dimensions",
+    "reassessment_triggers"
+  ],
+  "properties": {
+    "conclusion_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "profile_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evaluated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "valid_until": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "evaluation_rigour": {
+      "enum": [
+        "ER-0",
+        "ER-1",
+        "ER-2",
+        "ER-3",
+        "ER-4",
+        "ER-5"
+      ]
+    },
+    "dimensions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "dimension_id",
+          "required_level",
+          "achieved_level",
+          "result",
+          "evidence_refs"
+        ],
+        "properties": {
+          "dimension_id": {
+            "pattern": "^ASD-[A-Z]{2,3}$"
+          },
+          "required_level": {
+            "enum": [
+              "ARL-NA",
+              "ARL-B",
+              "ARL-S",
+              "ARL-H",
+              "ARL-C"
+            ]
+          },
+          "achieved_level": {
+            "enum": [
+              "ARL-NA",
+              "ARL-B",
+              "ARL-S",
+              "ARL-H",
+              "ARL-C"
+            ]
+          },
+          "result": {
+            "enum": [
+              "met",
+              "not_met",
+              "indeterminate",
+              "not_applicable"
+            ]
+          },
+          "evidence_refs": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
+          "uncertainty": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "state": {
+      "enum": [
+        "supported",
+        "supported_with_conditions",
+        "degraded",
+        "suspended",
+        "withdrawn",
+        "not_supported",
+        "indeterminate"
+      ]
+    },
+    "blocking_dimensions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^ASD-[A-Z]{2,3}$"
+      }
+    },
+    "reassessment_triggers": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "conditions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

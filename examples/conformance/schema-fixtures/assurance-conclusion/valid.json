@@ -1,0 +1,34 @@
+{
+  "conclusion_id": "AC-001",
+  "profile_id": "AP-DELEGATED-BENEFIT",
+  "evaluated_at": "2026-07-25T00:00:00Z",
+  "valid_until": "2026-08-25T00:00:00Z",
+  "evaluation_rigour": "ER-3",
+  "dimensions": [
+    {
+      "dimension_id": "ASD-ID",
+      "required_level": "ARL-S",
+      "achieved_level": "ARL-H",
+      "result": "met",
+      "evidence_refs": [
+        "E-ID-1"
+      ]
+    },
+    {
+      "dimension_id": "ASD-DEL",
+      "required_level": "ARL-H",
+      "achieved_level": "ARL-B",
+      "result": "not_met",
+      "evidence_refs": [
+        "E-DEL-1"
+      ]
+    }
+  ],
+  "state": "not_supported",
+  "blocking_dimensions": [
+    "ASD-DEL"
+  ],
+  "reassessment_triggers": [
+    "delegation-status-change"
+  ]
+}

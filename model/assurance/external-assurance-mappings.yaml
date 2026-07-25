@@ -1,0 +1,68 @@
+schema_version: '1.0'
+status: approved
+authority: ONDTF mappings are informative and do not create equivalence, certification, accreditation or legal recognition.
+mappings:
+- id: MAP-NIST-800-63-4
+  source: NIST SP 800-63-4
+  source_scope: Identity proofing, authentication and federation assurance through IAL, AAL and FAL.
+  ondtf_scope:
+  - ASD-ID
+  - ASD-EVD
+  - ASD-STA
+  relationship: bounded_mapping
+  exclusions:
+  - authority
+  - delegation
+  - execution
+  - remedy_readiness
+- id: MAP-NIST-CSF-2
+  source: NIST Cybersecurity Framework 2.0
+  source_scope: Cybersecurity risk outcomes, organisational profiles and implementation tiers.
+  ondtf_scope:
+  - ASD-OPS
+  - ASD-EVD
+  relationship: design_pattern
+  exclusions:
+  - identity_assurance_equivalence
+  - transaction_authority
+- id: MAP-NIST-AI-RMF-1
+  source: NIST AI Risk Management Framework 1.0
+  source_scope: Govern, Map, Measure and Manage outcomes for AI risk and trustworthiness.
+  ondtf_scope:
+  - ASD-EVD
+  - ASD-EXE
+  - ASD-OPS
+  - ASD-PRI
+  - ASD-REM
+  relationship: design_pattern
+  exclusions:
+  - automatic_assurance_level_conversion
+- id: MAP-EIDAS-LOA
+  source: eIDAS electronic identification assurance levels
+  source_scope: Low, substantial and high assurance for electronic identification schemes.
+  ondtf_scope:
+  - ASD-ID
+  relationship: informative_mapping
+  exclusions:
+  - delegation
+  - service_governance
+  - remedy_readiness
+- id: MAP-FIDO-CERT
+  source: FIDO authenticator certification levels
+  source_scope: Authenticator security and resistance to defined attack classes.
+  ondtf_scope:
+  - ASD-ID
+  - ASD-OPS
+  relationship: component_evidence
+  exclusions:
+  - whole_service_assurance
+  - authority
+  - transaction_legitimacy
+- id: MAP-ISO-17000
+  source: ISO/IEC 17000 series
+  source_scope: Conformity-assessment vocabulary, competence, impartiality and scheme governance.
+  ondtf_scope:
+  - evaluation_rigour
+  relationship: foundational
+  exclusions:
+  - automatic_control_effectiveness

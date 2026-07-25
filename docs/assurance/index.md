@@ -48,3 +48,13 @@ The companion [Standards and Specifications Register](../standards/references.md
 - [Privacy Assurance](privacy-assurance.md)
 - [Remedy Readiness Assurance](remedy-readiness-assurance.md)
 - [Assurance Composition](assurance-composition.md)
+
+## Risk-based assurance profile publications
+
+- [Assurance Taxonomy](assurance-taxonomy.md)
+- [Decision Impact Classification](impact-classification.md)
+- [Evaluation Rigour](evaluation-rigour.md)
+- [External Assurance Mappings](external-assurance-mappings.md)
+- [Assurance State and Validity](assurance-state-and-validity.md)
+- [AI-enabled System Assurance](ai-enabled-system-assurance.md)
+- [Assurance Profile Authoring](assurance-profile-authoring.md)

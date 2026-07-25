@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ondtf.example/model/assurance/assurance-profile.schema.json",
+  "title": "ONDTF Assurance Profile",
+  "type": "object",
+  "required": [
+    "profile_id",
+    "ondtf_version",
+    "decision_context",
+    "impact_class",
+    "dimension_requirements",
+    "composition_rule"
+  ],
+  "properties": {
+    "profile_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "ondtf_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "decision_context": {
+      "type": "object",
+      "required": [
+        "purpose",
+        "subject",
+        "action",
+        "affected_parties"
+      ],
+      "properties": {
+        "purpose": {
+          "type": "string",
+          "minLength": 1
+        },
+        "subject": {
+          "type": "string",
+          "minLength": 1
+        },
+        "action": {
+          "type": "string",
+          "minLength": 1
+        },
+        "affected_parties": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "impact_class": {
+      "enum": [
+        "DIC-0",
+        "DIC-1",
+        "DIC-2",
+        "DIC-3"
+      ]
+    },
+    "dimension_requirements": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "dimension_id",
+          "required_level",
+          "critical",
+          "freshness_rule"
+        ],
+        "properties": {
+          "dimension_id": {
+            "pattern": "^ASD-[A-Z]{2,3}$"
+          },
+          "required_level": {
+            "enum": [
+              "ARL-NA",
+              "ARL-B",
+              "ARL-S",
+              "ARL-H",
+              "ARL-C"
+            ]
+          },
+          "critical": {
+            "type": "boolean"
+          },
+          "freshness_rule": {
+            "type": "string",
+            "minLength": 1
+          },
+          "failure_action": {
+            "enum": [
+              "refuse",
+              "defer",
+              "degrade",
+              "escalate"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "composition_rule": {
+      "type": "object",
+      "required": [
+        "method",
+        "prohibits_compensation"
+      ],
+      "properties": {
+        "method": {
+          "const": "critical_dimension_floor"
+        },
+        "prohibits_compensation": {
+          "const": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "external_mappings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

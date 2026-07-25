@@ -1,0 +1,37 @@
+{
+  "profile_id": "AP-DELEGATED-BENEFIT",
+  "ondtf_version": "0.6.0",
+  "decision_context": {
+    "purpose": "Approve delegated benefit",
+    "subject": "applicant",
+    "action": "approve",
+    "affected_parties": [
+      "applicant",
+      "delegate"
+    ]
+  },
+  "impact_class": "DIC-3",
+  "dimension_requirements": [
+    {
+      "dimension_id": "ASD-ID",
+      "required_level": "ARL-S",
+      "critical": true,
+      "freshness_rule": "24h",
+      "failure_action": "refuse"
+    },
+    {
+      "dimension_id": "ASD-DEL",
+      "required_level": "ARL-H",
+      "critical": true,
+      "freshness_rule": "transaction-time",
+      "failure_action": "refuse"
+    }
+  ],
+  "composition_rule": {
+    "method": "critical_dimension_floor",
+    "prohibits_compensation": true
+  },
+  "external_mappings": [
+    "MAP-NIST-800-63-4"
+  ]
+}

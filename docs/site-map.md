@@ -194,6 +194,14 @@ Machine-readable bindings, model records, governance registers, and validation e
 
 - [Assurance Level Model](assurance/assurance-level-model.md)
 - [Assurance Composition](assurance/assurance-composition.md)
+- [Assurance Requirements and Impact](assurance/levels.md)
+- [Assurance Taxonomy](assurance/assurance-taxonomy.md)
+- [Decision Impact Classification](assurance/impact-classification.md)
+- [Evaluation Rigour](assurance/evaluation-rigour.md)
+- [External Assurance Mappings](assurance/external-assurance-mappings.md)
+- [Assurance State and Validity](assurance/assurance-state-and-validity.md)
+- [AI-enabled System Assurance](assurance/ai-enabled-system-assurance.md)
+- [Assurance Profile Authoring](assurance/assurance-profile-authoring.md)
 - [Affected Party Operating Model](rights/affected-party-operating-model.md)
 - [Rights Evidence](rights/rights-evidence.md)
 

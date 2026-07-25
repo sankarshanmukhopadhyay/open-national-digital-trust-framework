@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ondtf.example/model/assurance/assurance-evidence.schema.json",
+  "title": "ONDTF Assurance Evidence",
+  "type": "object",
+  "required": [
+    "evidence_id",
+    "dimension_id",
+    "evidence_type",
+    "source",
+    "collected_at",
+    "valid_until",
+    "integrity",
+    "scope"
+  ],
+  "properties": {
+    "evidence_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "dimension_id": {
+      "pattern": "^ASD-[A-Z]{2,3}$"
+    },
+    "evidence_type": {
+      "enum": [
+        "document",
+        "test_result",
+        "attestation",
+        "certification",
+        "telemetry",
+        "decision_record",
+        "status_response"
+      ]
+    },
+    "source": {
+      "type": "string",
+      "minLength": 1
+    },
+    "collected_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "valid_until": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "integrity": {
+      "type": "object",
+      "required": [
+        "method",
+        "reference"
+      ],
+      "properties": {
+        "method": {
+          "type": "string"
+        },
+        "reference": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "scope": {
+      "type": "string",
+      "minLength": 1
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "external_scheme": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

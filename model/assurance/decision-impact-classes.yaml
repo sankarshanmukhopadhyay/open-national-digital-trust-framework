@@ -1,0 +1,20 @@
+schema_version: '1.0'
+status: approved
+classes:
+- id: DIC-0
+  title: Non-consequential
+  meaning: No material reliance or consequential effect is expected.
+  required_analysis: Document why no material harm pathway exists.
+- id: DIC-1
+  title: Limited
+  meaning: Failure may cause limited, readily reversible individual or organisational impact.
+  required_analysis: Identify affected parties, reversibility and bounded exposure.
+- id: DIC-2
+  title: Material
+  meaning: Failure may cause material financial, legal, service-access, privacy or operational impact.
+  required_analysis: Identify material harms, affected rights, dependencies and recovery obligations.
+- id: DIC-3
+  title: Severe or systemic
+  meaning: Failure may cause severe individual, societal, safety, rights or systemic impact.
+  required_analysis: Address systemic dependencies, independent oversight, continuity, remedy and public-interest consequences.
+selection_rule: Profiles MUST derive the class from a documented harm and risk assessment; the class is not an assurance result.

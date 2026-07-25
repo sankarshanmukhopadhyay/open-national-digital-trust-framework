@@ -1,0 +1,23 @@
+schema_version: '1.0'
+status: approved
+states:
+- id: supported
+  meaning: All critical requirements are met within scope and validity.
+- id: supported_with_conditions
+  meaning: Reliance is permitted only under explicit conditions and time bounds.
+- id: degraded
+  meaning: Confidence has reduced and reliance must be constrained pending reassessment.
+- id: suspended
+  meaning: Reliance is temporarily prohibited.
+- id: withdrawn
+  meaning: The assurance conclusion is no longer valid.
+- id: not_supported
+  meaning: One or more blocking requirements are not met.
+- id: indeterminate
+  meaning: Available evidence cannot support a reliable conclusion.
+transitions_require:
+- accountable_authority
+- reason_code
+- effective_time
+- evidence_reference
+- review_or_reassessment_trigger

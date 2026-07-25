@@ -2,8 +2,8 @@
   "schema_version": "1.0",
   "manifest": "model/conformance/schema-instance-manifest.yaml",
   "summary": {
-    "checks": 76,
-    "passed": 76,
+    "checks": 82,
+    "passed": 82,
     "failed": 0
   },
   "results": [
@@ -668,6 +668,81 @@
           "schema_path": "required",
           "validator": "required",
           "message": "'schema_version' is a required property"
+        }
+      ]
+    },
+    {
+      "schema": "model/assurance/assurance-profile.schema.json",
+      "instance": "examples/conformance/schema-fixtures/assurance-profile/valid.json",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/assurance/assurance-profile.schema.json",
+      "instance": "examples/conformance/schema-fixtures/assurance-profile/invalid-enum.json",
+      "expected": "fail",
+      "actual": "fail",
+      "expected_validator": "enum",
+      "observed_validators": [
+        "enum"
+      ],
+      "errors": [
+        {
+          "path": "impact_class",
+          "schema_path": "properties/impact_class/enum",
+          "validator": "enum",
+          "message": "'INVALID' is not one of ['DIC-0', 'DIC-1', 'DIC-2', 'DIC-3']"
+        }
+      ]
+    },
+    {
+      "schema": "model/assurance/assurance-conclusion.schema.json",
+      "instance": "examples/conformance/schema-fixtures/assurance-conclusion/valid.json",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/assurance/assurance-conclusion.schema.json",
+      "instance": "examples/conformance/schema-fixtures/assurance-conclusion/invalid-enum.json",
+      "expected": "fail",
+      "actual": "fail",
+      "expected_validator": "enum",
+      "observed_validators": [
+        "enum"
+      ],
+      "errors": [
+        {
+          "path": "evaluation_rigour",
+          "schema_path": "properties/evaluation_rigour/enum",
+          "validator": "enum",
+          "message": "'INVALID' is not one of ['ER-0', 'ER-1', 'ER-2', 'ER-3', 'ER-4', 'ER-5']"
+        }
+      ]
+    },
+    {
+      "schema": "model/assurance/assurance-evidence.schema.json",
+      "instance": "examples/conformance/schema-fixtures/assurance-evidence/valid.json",
+      "expected": "pass",
+      "actual": "pass",
+      "errors": []
+    },
+    {
+      "schema": "model/assurance/assurance-evidence.schema.json",
+      "instance": "examples/conformance/schema-fixtures/assurance-evidence/invalid-enum.json",
+      "expected": "fail",
+      "actual": "fail",
+      "expected_validator": "enum",
+      "observed_validators": [
+        "enum"
+      ],
+      "errors": [
+        {
+          "path": "evidence_type",
+          "schema_path": "properties/evidence_type/enum",
+          "validator": "enum",
+          "message": "'INVALID' is not one of ['document', 'test_result', 'attestation', 'certification', 'telemetry', 'decision_record', 'status_response']"
         }
       ]
     }

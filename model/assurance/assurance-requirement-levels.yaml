@@ -1,0 +1,30 @@
+schema_version: '1.0'
+status: approved
+levels:
+- id: ARL-NA
+  title: Not applicable
+  meaning: The profile demonstrates that the dimension is irrelevant to the decision context.
+  minimum_basis: Documented exclusion rationale and review authority.
+- id: ARL-B
+  title: Basic
+  meaning: Documented controls and first-party evidence support limited reliance.
+  minimum_basis: Defined criteria, accountable owner, evidence provenance and review.
+- id: ARL-S
+  title: Substantial
+  meaning: Tested controls, traceable evidence and defined monitoring support material reliance.
+  minimum_basis: Reproducible tests, freshness rules, change control and managed residual uncertainty.
+- id: ARL-H
+  title: High
+  meaning: Independent evaluation, adversarial testing and strong lifecycle controls support high-consequence reliance.
+  minimum_basis: Competent independent assessment, non-compensating composition and tested response.
+- id: ARL-C
+  title: Critical
+  meaning: Continuous or near-continuous evidence and systemic safeguards support severe or systemic contexts.
+  minimum_basis: Independent oversight, dependency assurance, continuous status, tested recovery and effective remedy.
+composition:
+  method: critical_dimension_floor
+  prohibits:
+  - universal_trust_score
+  - arithmetic_averaging
+  - compensation_for_critical_failure
+  - unbounded_reuse

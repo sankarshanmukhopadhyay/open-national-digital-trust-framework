@@ -1,0 +1,22 @@
+schema_version: '1.0'
+status: approved
+classes:
+- id: ER-0
+  title: Unassessed assertion
+  basis: No structured assessment evidence.
+- id: ER-1
+  title: First-party self-assessment
+  basis: Documented assessment by the implementer or operator.
+- id: ER-2
+  title: Reproducible internal evaluation
+  basis: Structured internal testing with repeatable evidence and separation from implementation where practicable.
+- id: ER-3
+  title: Competent independent assessment
+  basis: Independent evaluation with disclosed competence, method, scope and limitations.
+- id: ER-4
+  title: Authorised or accredited assessment with surveillance
+  basis: Evaluation under a governed conformity-assessment scheme with competence and surveillance controls.
+- id: ER-5
+  title: Continuous evidence with independent oversight
+  basis: Continuous or near-continuous evidence, governed thresholds and independent oversight of state changes.
+rule: Evaluation rigour describes confidence in the assessment process; it does not replace dimension requirements or achieved results.

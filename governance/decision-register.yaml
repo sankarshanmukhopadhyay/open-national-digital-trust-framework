@@ -24,3 +24,7 @@ decisions:
   title: Governed controlled vocabulary
   status: accepted
   record: docs/decisions/0006-governed-controlled-vocabulary.md
+- id: ADR-0007
+  title: Multidimensional risk-based assurance
+  status: accepted
+  record: docs/decisions/0007-multidimensional-risk-based-assurance.md

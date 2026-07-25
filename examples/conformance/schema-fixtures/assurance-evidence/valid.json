@@ -1,0 +1,16 @@
+{
+  "evidence_id": "E-ID-1",
+  "dimension_id": "ASD-ID",
+  "evidence_type": "test_result",
+  "source": "identity-proofing-service",
+  "collected_at": "2026-07-25T00:00:00Z",
+  "valid_until": "2026-08-25T00:00:00Z",
+  "integrity": {
+    "method": "sha256",
+    "reference": "abc123"
+  },
+  "scope": "identity proofing for profile AP-DELEGATED-BENEFIT",
+  "limitations": [
+    "Does not establish authority"
+  ]
+}

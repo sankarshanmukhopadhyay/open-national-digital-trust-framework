@@ -4,25 +4,19 @@ title: Assurance Composition
 parent: Assurance, Risk and Resilience
 nav_order: 19
 ---
-
 # Assurance composition
 
-Assurance composition determines how dimension-level conclusions support a particular use case. The profile defines required dimensions, minimum levels, critical dimensions, dependency rules, freshness and the action to take when evidence is incomplete.
+Assurance composition applies a critical-dimension floor. The profile identifies required dimensions, minimum requirements, criticality, freshness, failure actions and exception authority.
+
+A dimension marked critical blocks a supported conclusion when its achieved result is below requirement, stale, indeterminate or unsupported. Arithmetic averaging and compensation across dimensions are prohibited.
 
 ```mermaid
 flowchart TD
-  U[Use case and harm model] --> R[Required assurance dimensions]
-  R --> M[Minimum levels and critical dimensions]
-  M --> V[Evaluate evidence and freshness]
-  V --> C{All critical conditions met?}
-  C -->|No| X[Refuse, defer, degrade or escalate]
+  U[Use case and harm model] --> R[Impact class and dimension requirements]
+  R --> V[Evaluate evidence, freshness and rigour]
+  V --> C{Every critical condition met?}
+  C -->|No| X[Refuse, defer, degrade, suspend or escalate]
   C -->|Yes| Q{Residual uncertainty acceptable?}
   Q -->|No| X
   Q -->|Yes| A[Context-bounded assurance conclusion]
 ```
-
-## Composition rules
-
-A composition rule must identify critical dimensions whose failure cannot be offset, permissible dependencies, evidence precedence, uncertainty treatment and exception authority. The rule should use a weakest-critical-link approach rather than averaging levels.
-
-The machine-readable representation is defined in `model/assurance/assurance-levels.yaml` and `model/assurance/assurance-claim.schema.json`.
