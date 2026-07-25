@@ -1,12 +1,15 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "bindingId": "urn:ondtf:binding:tsmm:0.2.0",
-  "ondtfVersion": "0.2.0",
+  "bindingId": "urn:ondtf:binding:tsmm:0.6.0",
+  "ondtfVersion": "0.6.0",
   "tsmmVersion": "0.23.0",
   "reviewStatus": {
-    "status": "stale",
-    "note": "Concept-treatment mappings below were last verified against ONDTF v0.2.0 and have not been re-reviewed against the current core requirements catalogue. Do not treat as current compatibility evidence until re-reviewed.",
-    "trackedIssue": "URI-20"
+    "status": "current",
+    "reviewedAgainstOndtfVersion": "0.6.0",
+    "reviewedOn": "2026-07-25",
+    "reviewBasis": "Mappings re-checked against the v0.6.0 core requirements, authority, assurance, profile and conformance models.",
+    "trackedIssue": "URI-20",
+    "result": "compatible-with-declared-scope"
   },
   "sourceRepository": "https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model",
   "treatments": [

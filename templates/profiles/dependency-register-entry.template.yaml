@@ -1,0 +1,16 @@
+# Non-authoritative authoring template. Do not place this record in the live register until all values are resolved and reviewed.
+id: DEP-YYYY-NNN
+title: <dependency title>
+type: technical-specification
+source: <authoritative source URI>
+version: <selected version>
+status: candidate
+normative_effect: informative
+affected_requirements: []
+review_triggers:
+  - new-major-version
+  - security-advisory
+  - legal-change
+  - interoperability-failure
+owner_role: ROLE-PA
+migration_required: false

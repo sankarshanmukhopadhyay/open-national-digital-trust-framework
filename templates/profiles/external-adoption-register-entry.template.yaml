@@ -1,0 +1,19 @@
+# Non-authoritative authoring template. Do not place this record in the live register until all values are resolved and reviewed.
+id: ADOPT-YYYY-NNN
+title: <adopted pattern title>
+source_family: external-framework
+source_reference: <authoritative source URI>
+source_version: <version or publication date>
+capability: <bounded capability being adopted>
+ondtf_mapping: []
+destination_profiles: []
+status: identified
+normative_effect: informative
+safeguards: []
+evidence_required: []
+review_owner: ROLE-PA
+review_triggers:
+  - source-change
+  - evidence-failure
+  - profile-change
+retirement_conditions: []

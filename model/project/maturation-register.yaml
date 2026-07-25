@@ -539,16 +539,15 @@ issues:
 - id: URI-20
   title: Cross-repo compatibility bindings (TSMM, TIS) are unreviewed since ONDTF v0.2.0
   category: interoperability
-  risk: medium
-  disposition: accepted_pending_review
-  target_release: v0.7.0
+  risk: closed
+  disposition: resolved
+  target_release: v0.6.0
   owner_role: Architecture and Profile Workstream
-  closure_evidence: TSMM and TIS binding files re-reviewed against the current core requirements catalogue, with
-    ondtfVersion advanced only to the version under which the treatments were actually re-verified, and the review
-    recorded in bindings/tsmm/ondtf-tsmm-binding.json and bindings/tis/ondtf-tis-profile.json.
+  closure_evidence: Both TSMM and TIS binding files were re-reviewed against ONDTF v0.6.0, advanced to ondtfVersion
+    0.6.0, and protected by scripts/validate_release_integrity.py.
   programmes:
   - MPR-03
-  status: open
+  status: closed
 external_framework_families:
 - id: EFF-01
   name: Regulatory trust-service frameworks

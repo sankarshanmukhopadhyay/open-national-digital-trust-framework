@@ -3,6 +3,7 @@ terminology:
 	python3 scripts/build_terminology.py
 	python3 scripts/validate_terminology.py
 validate:
+	python3 scripts/validate_release_integrity.py
 	python3 scripts/validate_terminology.py
 	python3 scripts/validate_repo.py
 	python3 scripts/validate_assurance_references.py

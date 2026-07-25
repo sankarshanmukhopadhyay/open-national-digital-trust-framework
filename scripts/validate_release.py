@@ -5,7 +5,7 @@ root=Path(__file__).resolve().parents[1]
 errors=[]
 version=(root/'VERSION').read_text().strip()
 if version!='0.6.0': errors.append(f'VERSION is {version}, expected 0.6.0')
-required=['PROJECT-STATUS.yaml','CITATION.cff','model/releases/v0.6.0.yaml','release/RELEASE-NOTES-v0.6.0.md','release/MANIFEST-v0.6.0.md','release/CHECKLIST-v0.6.0.md','release/DOCUMENT-INVENTORY-v0.6.0.md','docs/project/v0.6-readiness-checklist.md']
+required=['scripts/validate_release_integrity.py','PROJECT-STATUS.yaml','CITATION.cff','model/releases/v0.6.0.yaml','release/RELEASE-NOTES-v0.6.0.md','release/MANIFEST-v0.6.0.md','release/CHECKLIST-v0.6.0.md','release/DOCUMENT-INVENTORY-v0.6.0.md','docs/project/v0.6-readiness-checklist.md']
 for f in required:
     if not (root/f).exists(): errors.append(f'Missing {f}')
 for f in ['PROJECT-STATUS.yaml','CITATION.cff','model/releases/v0.6.0.yaml']:
