@@ -1,0 +1,8 @@
+id: EVD-COMPAT-TSMM-001
+reviewed_for: v0.7.0
+binding: bindings/tsmm/ondtf-tsmm-binding.json
+status: reviewed
+classification: compatible_with_review_notes
+notes:
+  - Binding remains informative and must not override current ONDTF normative requirements.
+  - Identifier and lifecycle references are subject to repository validation.

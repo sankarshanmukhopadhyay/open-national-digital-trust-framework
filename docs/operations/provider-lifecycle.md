@@ -56,3 +56,55 @@ Provider approval MUST be scoped. It does not authorise services, jurisdictions,
 ## Guided-construction hooks
 
 The lifecycle model exposes decision points that the ONDTF Guided Framework Construction flow can ask adopters to resolve, including admission authority, evidence thresholds, validity periods, change triggers, suspension grounds, continuity obligations and appeal routes. These hooks are declared in `model/adoption/construction-input-contract.yaml` and do not themselves constitute the adaptive guided-construction flow.
+
+## Three complementary views
+
+The following views answer different implementation questions and remain subordinate to the canonical lifecycle model in `model/operations/provider-lifecycle.yaml`.
+
+### Flow view — what happens?
+```mermaid
+flowchart TD
+  P[Prospective] --> A[Application accepted]
+  A --> AS[Assessment]
+  AS --> D{Decision}
+  D -->|positive| AP[Approved]
+  D -->|negative| RJ[Rejected]
+  AP --> AC[Active]
+  AC -->|material risk| SU[Suspended]
+  SU -->|criteria met| AC
+  SU -->|withdrawal decision| WD[Withdrawn]
+```
+
+### State view — what states are valid?
+```mermaid
+stateDiagram-v2
+  prospective --> applicant: PLT-001
+  applicant --> assessed: PLT-002
+  assessed --> approved: PLT-003
+  assessed --> rejected: PLT-004
+  approved --> active: PLT-005
+  active --> restricted: PLT-006
+  restricted --> active: PLT-007
+  active --> suspended: PLT-008
+  suspended --> active: PLT-009
+  suspended --> withdrawn: PLT-010
+  active --> exiting: PLT-011
+  exiting --> archived: PLT-012
+```
+
+### Swimlane view — who acts?
+```mermaid
+sequenceDiagram
+  participant P as Provider
+  participant FA as ROLE-FA
+  participant CAB as ROLE-CAB
+  participant SA as ROLE-SA
+  participant R as Registry
+  P->>FA: Submit application
+  FA->>CAB: Request assessment
+  CAB-->>SA: Assessment evidence
+  SA-->>FA: Approval or rejection decision
+  FA->>R: Publish activation when conditions pass
+  SA->>R: Publish restriction or suspension decision
+  R-->>P: Effective status
+```

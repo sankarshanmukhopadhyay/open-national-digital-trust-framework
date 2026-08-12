@@ -23,3 +23,7 @@ All Mermaid diagrams in published Markdown are extracted and rendered with Merma
 The reference architecture includes plane, layer, viewpoint, component-separation, interaction, trust-boundary, federation and resilience diagrams. The information architecture includes class, relationship, lifecycle and provenance diagrams. Canonical workflows include sequence, flow and state diagrams.
 
 Rendered SVG artefacts are retained by CI to support diagnosis of browser-side rendering differences.
+
+## v0.7.0 complementary-view convention
+
+Important governed workflows SHOULD use complementary **flow**, **state**, and **swimlane/sequence** views when each contributes distinct information. Flow diagrams explain decision paths, state diagrams define lawful state transitions, and swimlane/sequence diagrams expose actor responsibility and authority. Diagrams are informative views of canonical models and must not create obligations that do not exist in normative text or machine-readable sources.

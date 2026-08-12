@@ -1,0 +1,14 @@
+schema_version: '1.0'
+jurisdiction: India
+profile: profiles/india/index.md
+release: v0.7.0
+status: competent-review-required
+legal_cut_off_date: null
+reviewer:
+  role: Jurisdiction Profile Maintainer
+  competence_basis: null
+classification: informative_only
+unresolved_questions:
+  - Confirm current legal sources, commencement dates and authority hierarchy through competent review.
+  - Record binding, advisory and uncertain mappings before any legal adequacy claim.
+release_disposition: URI-03 remains open until competent external review evidence is recorded; no review is fabricated by this repository release.

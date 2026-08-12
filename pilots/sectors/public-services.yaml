@@ -1,0 +1,7 @@
+id: PILOT-SEC-001
+sector: public-services
+status: candidate-review
+source_mapping: model/references/sector-standard-mappings/public-services.yaml
+objective: Exercise the governed adoption method from relevance mapping to candidate authority decision.
+evidence_required: [competent-sector-review, capability-gap-matrix, candidate-adoption-record, conflict-register]
+claim_boundary: No regulator or sector-authority approval is implied.

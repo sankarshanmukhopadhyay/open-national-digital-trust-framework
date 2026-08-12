@@ -1,0 +1,8 @@
+id: EVD-COMPAT-TIS-001
+reviewed_for: v0.7.0
+binding: bindings/tis/ondtf-tis-profile.json
+status: reviewed
+classification: compatible_with_review_notes
+notes:
+  - Binding remains informative and technology-neutral core semantics take precedence.
+  - Profile-selected TIS constructs must preserve ONDTF authority, status and evidence distinctions.

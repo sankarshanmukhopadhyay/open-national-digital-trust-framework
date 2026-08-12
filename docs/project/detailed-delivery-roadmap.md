@@ -432,6 +432,10 @@ The release may be published only when:
 
 # Part II — v0.7.0 Implementation and Evaluation Draft
 
+> **v0.7.0 implementation note (12 August 2026):** The release delivers the executable reference implementation, conformance/evidence foundation, clean-room implementation simulation, identifier-resolution layer and visual documentation standard. External independent implementation, competent jurisdiction review and fully executed adversarial exercises remain evidence gaps and are explicitly carried forward rather than treated as silently satisfied gates. See `release/DEVIATION-REGISTER-v0.7.0.md`.
+
+
+
 ## 10. Release objective
 
 `v0.7.0` should establish that independent implementers and assessors can use ONDTF artefacts without relying on unstated knowledge held by the original authors.

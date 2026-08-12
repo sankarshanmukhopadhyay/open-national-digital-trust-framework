@@ -1,6 +1,23 @@
 # Changelog
 
 ## [Unreleased]
+
+## [0.7.0] - 2026-08-12
+
+### Added
+- model-driven reference implementation and executable lifecycle/authority tests;
+- stable conformance assertion and evidence inventory foundations;
+- clean-room implementation simulation, rights/remedy journeys and adversarial scenarios;
+- generated repository-wide Identifier Registry with published automatic identifier linking;
+- complementary flow, state and swimlane/sequence views for critical governed workflows;
+- implementation and assessor guidance plus v0.7 release evidence/deviation inventories.
+
+### Changed
+- advanced project maturity to Implementation and Evaluation Draft;
+- re-reviewed TSMM and TIS bindings against ONDTF v0.7.0;
+- narrowed URI-03, URI-04 and URI-14 where external evidence is still required rather than claiming unsupported closure.
+
+
 ### Added
 
 - Machine-enforced JSON Schema Draft 2020-12 validation across all 12 ONDTF schemas.

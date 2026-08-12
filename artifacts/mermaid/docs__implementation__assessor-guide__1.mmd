@@ -1,0 +1,11 @@
+flowchart TD
+  SC[Determine scope and conformance class] --> AP[Resolve applicable requirements]
+  AP --> EV[Collect evidence]
+  EV --> EX{Assertion class?}
+  EX -->|Machine-executable| T[Run test]
+  EX -->|Assessor-verifiable| V[Inspect controlled evidence]
+  EX -->|Judgement-dependent| J[Record structured judgement and rationale]
+  T --> RR[Result record]
+  V --> RR
+  J --> RR
+  RR --> DC[Scoped decision or finding]

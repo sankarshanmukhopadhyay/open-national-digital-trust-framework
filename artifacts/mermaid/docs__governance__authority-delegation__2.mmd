@@ -1,0 +1,11 @@
+flowchart TD
+  I[Authenticated actor] --> A[Locate authority evidence]
+  A --> S{Scope permits action?}
+  S -->|no| D[Deny]
+  S -->|yes| T{Time and conditions valid?}
+  T -->|no| D
+  T -->|yes| R{Revoked or suspended?}
+  R -->|yes| D
+  R -->|no| P[Permit or constrain]
+  P --> RC[Decision receipt]
+  D --> RC

@@ -1,0 +1,13 @@
+stateDiagram-v2
+  prospective --> applicant: PLT-001
+  applicant --> assessed: PLT-002
+  assessed --> approved: PLT-003
+  assessed --> rejected: PLT-004
+  approved --> active: PLT-005
+  active --> restricted: PLT-006
+  restricted --> active: PLT-007
+  active --> suspended: PLT-008
+  suspended --> active: PLT-009
+  suspended --> withdrawn: PLT-010
+  active --> exiting: PLT-011
+  exiting --> archived: PLT-012

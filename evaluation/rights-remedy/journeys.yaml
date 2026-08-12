@@ -1,0 +1,18 @@
+schema_version: '1.0'
+journeys:
+  - id: JRN-RGT-001
+    title: Incorrect evidence causes an adverse outcome
+    stages: [notice, evidence-access, challenge, correction, downstream-propagation, closure]
+    requirements: [ONDTF-ROL-007]
+  - id: JRN-RGT-002
+    title: Non-participant harmed by delegated action
+    stages: [notice, standing, challenge, independent-review, remedy, closure]
+    requirements: [ONDTF-ROL-004, ONDTF-ROL-007]
+  - id: JRN-RGT-003
+    title: Accessibility barrier blocks digital challenge
+    stages: [barrier-detected, assisted-channel, challenge, decision, remedy]
+    requirements: [ONDTF-ROL-007]
+  - id: JRN-RGT-004
+    title: Delegated AI action disputed by affected party
+    stages: [notice, authority-chain-disclosure, challenge, review, correction-or-remedy, audit]
+    requirements: [ONDTF-AUT-002, ONDTF-AUT-003, ONDTF-ROL-007]

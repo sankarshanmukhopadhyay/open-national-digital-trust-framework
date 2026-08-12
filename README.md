@@ -2,7 +2,7 @@
 
 [![Documentation](https://img.shields.io/badge/docs-GitHub%20Pages-blue)](https://sankarshanmukhopadhyay.github.io/open-national-digital-trust-framework/)
 [![Status](https://img.shields.io/badge/status-feature%20complete%20draft-blue)](RELEASE_NOTES.md)
-[![Version](https://img.shields.io/badge/version-v0.6.0-green)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-v0.7.0-green)](CHANGELOG.md)
 
 The **Open National Digital Trust Framework (ONDTF)** is a jurisdiction-neutral, multi-sector reference framework for governing, implementing, assuring, and interoperating digital trust infrastructure.
 
@@ -28,7 +28,7 @@ ONDTF supplies that missing governance and architecture layer.
 |---|---|
 | Portfolio role | Jurisdiction-neutral national framework |
 | Lifecycle | Active feature-complete public draft |
-| Current version | v0.6.0 |
+| Current version | v0.7.0 |
 | Stability | Feature-complete draft; implementation validation under way |
 | Primary artefact | Framework, reference architecture, and profile method |
 | Normative posture | Normative requirements are explicitly labelled |
@@ -95,4 +95,4 @@ Documentation is licensed under [CC BY 4.0](LICENSE). Code and executable exampl
 
 ## Current release
 
-**v0.6.0 — Operational Framework Draft** adds role-specific normative obligations, institutional decision rights, provider lifecycle, conformance and accreditation, multidimensional assurance, operational rights and remedy, governed profiles, controlled maintenance, Guided Framework Construction and a validated worked operational profile. Subsequent releases focus on independent implementation evidence, evaluation, interoperability and recognition.
+**v0.7.0 — Implementation and Evaluation Draft** adds an executable reference implementation, stable conformance assertions, evidence records, a clean-room implementation simulation, adversarial and rights/remedy evaluation artefacts, repository-wide identifier resolution, and complementary flow/state/swimlane documentation. External independent implementation and competent jurisdiction review remain explicitly disclosed evidence gaps; v0.8.0 focuses on interoperability, recognition and empirical calibration.

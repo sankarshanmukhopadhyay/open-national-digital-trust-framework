@@ -1,7 +1,7 @@
 schema_version: 1.0
-framework_version: 0.6.0
+framework_version: 0.7.0
 status: active
-last_reviewed: '2026-07-24'
+last_reviewed: '2026-08-12'
 purpose: Canonical register connecting disclosed framework boundaries, unresolved maturity issues, maturation programmes,
   external-framework patterns, release gates and required evidence for the path from the v0.6.0 Operational Framework
   Draft to Candidate Specification status.
@@ -124,7 +124,7 @@ programmes:
   linked_issues:
   - URI-01
   - URI-04
-  status: planned
+  status: implementation_foundation_delivered_external_independence_pending
 - id: MPR-05
   title: Evidence and quantitative calibration
   objective: Calibrate assurance thresholds, metrics, scale, recovery and operational risk parameters from evidence.
@@ -135,7 +135,7 @@ programmes:
   - URI-02
   - URI-13
   - URI-14
-  status: planned
+  status: adversarial_foundation_delivered_calibration_pending
 - id: MPR-06
   title: Rights, accessibility and remedy validation
   objective: Validate inclusion, affected-party journeys, challenge, appeal and remedy in operational scenarios.
@@ -146,7 +146,7 @@ programmes:
   linked_issues:
   - URI-06
   - URI-17
-  status: active_next_evidence_phase
+  status: evaluation_harness_delivered_external_pilot_pending
 - id: MPR-07
   title: Candidate-specification governance
   objective: Establish issue closure, traceability, normative stability, independent review and controlled change.
@@ -189,8 +189,8 @@ issues:
   title: Jurisdiction profiles require competent current legal review
   category: jurisdiction
   risk: high
-  disposition: informative_only
-  target_release: v0.7.0
+  disposition: competent_external_review_pending
+  target_release: v0.8.0
   owner_role: Jurisdiction Profile Maintainer
   closure_evidence: One profile carrying documented expert and competent legal review with cut-off date and unresolved
     questions.
@@ -200,12 +200,15 @@ issues:
   - EPA-003
   - EPA-009
   status: open
+  v0_7_evidence:
+  - pilots/jurisdiction/india-review-record.yaml
+  v0_7_note: Release does not fabricate competent legal review; issue is narrowed and formally carried forward.
 - id: URI-04
   title: Reference catalogues are not a complete conformance suite
   category: conformance
   risk: high
-  disposition: accepted_for_feature_complete_draft
-  target_release: v0.7.0
+  disposition: executable_foundation_complete_external_independence_pending
+  target_release: v0.8.0
   owner_role: Conformance Workstream
   closure_evidence: Executable positive, negative, boundary and lifecycle assertions used against an independent
     implementation.
@@ -216,7 +219,11 @@ issues:
   - EPA-001
   - EPA-002
   - EPA-013
-  status: open
+  status: evidence_available
+  v0_7_evidence:
+  - conformance/assertions.yaml
+  - reference-implementation/tests/run_tests.py
+  - pilots/implementation-01/implementation/checker.py
 - id: URI-05
   title: Privacy-preserving status and cross-domain resolution patterns need comparison
   category: privacy
@@ -417,8 +424,8 @@ issues:
   title: Adversarial exercises and incident simulations have not been executed
   category: security
   risk: high
-  disposition: evidence_required
-  target_release: v0.7.0
+  disposition: scenario_foundation_complete_executed_exercise_evidence_pending
+  target_release: v0.8.0
   owner_role: Security and Resilience Workstream
   closure_evidence: Recorded tabletop and technical exercises covering authority abuse, revocation lag, compromise
     and recovery.
@@ -426,7 +433,9 @@ issues:
   - MPR-05
   patterns:
   - EPA-015
-  status: open
+  status: evidence_available
+  v0_7_evidence:
+  - exercises/adversarial/scenarios.yaml
 - id: URI-15
   title: Internationalisation and terminology require cross-jurisdiction validation
   category: editorial
@@ -543,8 +552,8 @@ issues:
   disposition: resolved
   target_release: v0.6.0
   owner_role: Architecture and Profile Workstream
-  closure_evidence: Both TSMM and TIS binding files were re-reviewed against ONDTF v0.6.0, advanced to ondtfVersion
-    0.6.0, and protected by scripts/validate_release_integrity.py.
+  closure_evidence: TSMM and TIS binding files are re-reviewed at every release by release-integrity validation;
+    both are current against ONDTF v0.7.0.
   programmes:
   - MPR-03
   status: closed

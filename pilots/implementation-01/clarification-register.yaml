@@ -1,0 +1,14 @@
+schema_version: '1.0'
+clarifications:
+  - id: CLAR-001
+    question: Does provider suspension apply to the provider as a whole or only to a specifically scoped service?
+    classification: specification-ambiguity
+    disposition: clarified_by_profile_scope
+    resolution: Suspension records must identify their governed object and scope; consumers must not infer broader effect than the record states.
+    documentation_target: docs/operations/suspension-restriction-and-withdrawal.md
+  - id: CLAR-002
+    question: Is a repository validation pass sufficient evidence for provider conformance?
+    classification: documentation-gap
+    disposition: clarified
+    resolution: No. Repository validation and implementation or scheme conformance are distinct assurance claims.
+    documentation_target: docs/implementation/conformance.md

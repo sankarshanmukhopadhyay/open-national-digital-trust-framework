@@ -1,0 +1,28 @@
+schema_version: '1.0'
+release: v0.7.0
+records:
+  - id: EVD-0001
+    title: Reference implementation lifecycle and authority test run
+    class: implementation
+    release: v0.7.0
+    status: collected
+    source:
+      type: test-run
+      location: reference-implementation/tests/run_tests.py
+    supports:
+      requirements: [ONDTF-AUT-001, ONDTF-AUT-002, ONDTF-AUT-003]
+      issues: [URI-04]
+    limitations:
+      - Reference implementation evidence is not independent implementation evidence.
+  - id: EVD-0002
+    title: Executable conformance foundation
+    class: conformance
+    release: v0.7.0
+    status: collected
+    source:
+      type: assertion-catalogue
+      location: conformance/assertions.yaml
+    supports:
+      issues: [URI-04, URI-14]
+    limitations:
+      - Coverage is a v0.7.0 foundation and does not claim v0.9.0 candidate-suite completeness.

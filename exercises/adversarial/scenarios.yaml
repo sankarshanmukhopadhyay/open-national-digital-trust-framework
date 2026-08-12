@@ -1,0 +1,18 @@
+schema_version: '1.0'
+scenarios:
+  - id: ADV-001
+    title: Unauthorised lifecycle transition
+    control_expectation: Reject a transition when the acting role is not the canonical decision role.
+    tests: [CT-OPS-001]
+  - id: ADV-002
+    title: Revoked authority replay
+    control_expectation: Reject an otherwise authentic authority record after effective revocation.
+    tests: [CT-AUT-002]
+  - id: ADV-003
+    title: Profile downgrade attempt
+    control_expectation: Reject silent weakening of mandatory core obligations.
+    tests: []
+  - id: ADV-004
+    title: Challenge suppression
+    control_expectation: Preserve affected-party standing and review evidence.
+    tests: [CT-RGT-001]

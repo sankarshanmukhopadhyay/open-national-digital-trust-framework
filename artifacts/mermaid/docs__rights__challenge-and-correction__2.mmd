@@ -1,0 +1,11 @@
+stateDiagram-v2
+  [*] --> submitted
+  submitted --> under_review
+  under_review --> corrected
+  under_review --> upheld
+  upheld --> appealed
+  appealed --> reversed
+  appealed --> confirmed
+  corrected --> closed
+  reversed --> remedy_pending
+  remedy_pending --> closed

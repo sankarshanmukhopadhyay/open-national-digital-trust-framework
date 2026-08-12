@@ -1,0 +1,2650 @@
+schema_version: '1.0'
+generated: true
+identifier_classes:
+- ONDTF
+- ROLE
+- URI
+- IM
+- PLT
+- CT
+- ADV
+- JRN
+- CLAR
+- CAP
+- THR
+- CTL
+- SB
+- AST
+- THCAT
+- SEC
+- EPA
+- RS
+- INT
+- AS
+- AP
+- TA
+- TB
+- ADR
+- LIM
+- MPR
+- EVD
+identifiers:
+- id: ADR-0001
+  label: Jurisdiction-neutral core
+  sources:
+  - CHANGELOG.md
+  - governance/decision-register.yaml
+- id: ADR-0002
+  label: TSMM and TIS authority boundary
+  sources:
+  - governance/decision-register.yaml
+- id: ADR-0003
+  label: Complete GitHub Pages publication coverage
+  sources:
+  - CHANGELOG.md
+  - governance/decision-register.yaml
+- id: ADR-0004
+  label: Keep ONDTF independent of optional technical foundations
+  sources:
+  - CHANGELOG.md
+  - governance/decision-register.yaml
+- id: ADR-0005
+  label: Release thresholds
+  sources:
+  - CHANGELOG.md
+  - governance/decision-register.yaml
+- id: ADR-0006
+  label: Governed controlled vocabulary
+  sources:
+  - CHANGELOG.md
+  - governance/decision-register.yaml
+- id: ADR-0007
+  label: Multidimensional risk-based assurance
+  sources:
+  - docs/decisions/0007-multidimensional-risk-based-assurance.md
+  - governance/decision-register.yaml
+- id: ADV-001
+  label: Unauthorised lifecycle transition
+  sources:
+  - exercises/adversarial/scenarios.yaml
+- id: ADV-002
+  label: Revoked authority replay
+  sources:
+  - exercises/adversarial/scenarios.yaml
+- id: ADV-003
+  label: Profile downgrade attempt
+  sources:
+  - exercises/adversarial/scenarios.yaml
+- id: ADV-004
+  label: Challenge suppression
+  sources:
+  - exercises/adversarial/scenarios.yaml
+- id: ADV-01
+  label: Unauthenticated external attacker
+  sources:
+  - docs/security/adversary-model.md
+  - docs/security/threat-catalogue.md
+  - model/security/adversaries.yaml
+  - model/security/threats.yaml
+- id: ADV-02
+  label: Malicious authenticated participant
+  sources:
+  - docs/security/adversary-model.md
+  - docs/security/threat-catalogue.md
+  - model/security/adversaries.yaml
+  - model/security/threats.yaml
+- id: ADV-03
+  label: Compromised participant
+  sources:
+  - docs/security/adversary-model.md
+  - docs/security/threat-catalogue.md
+  - model/security/adversaries.yaml
+  - model/security/threats.yaml
+- id: ADV-04
+  label: Malicious insider
+  sources:
+  - docs/security/adversary-model.md
+  - docs/security/threat-catalogue.md
+  - model/security/adversaries.yaml
+  - model/security/threats.yaml
+- id: ADV-05
+  label: Privileged administrator
+  sources:
+  - docs/security/adversary-model.md
+  - docs/security/threat-catalogue.md
+  - model/security/adversaries.yaml
+  - model/security/threats.yaml
+- id: ADV-06
+  label: Compromised issuer or evidence provider
+  sources:
+  - docs/security/adversary-model.md
+  - docs/security/threat-catalogue.md
+  - model/security/adversaries.yaml
+  - model/security/threats.yaml
+- id: ADV-07
+  label: Compromised registry or resolver
+  sources:
+  - docs/security/adversary-model.md
+  - docs/security/threat-catalogue.md
+  - model/security/adversaries.yaml
+  - model/security/threats.yaml
+- id: ADV-08
+  label: Negligent or captured scheme operator
+  sources:
+  - docs/security/adversary-model.md
+  - docs/security/threat-catalogue.md
+  - model/security/adversaries.yaml
+  - model/security/threats.yaml
+- id: ADV-09
+  label: Foreign or federated trust domain
+  sources:
+  - docs/security/adversary-model.md
+  - docs/security/threat-catalogue.md
+  - model/security/adversaries.yaml
+  - model/security/threats.yaml
+- id: ADV-10
+  label: Compromised software supplier
+  sources:
+  - docs/security/adversary-model.md
+  - docs/security/threat-catalogue.md
+  - model/security/adversaries.yaml
+  - model/security/threats.yaml
+- id: ADV-11
+  label: Autonomous agent outside mandate
+  sources:
+  - docs/security/adversary-model.md
+  - docs/security/threat-catalogue.md
+  - model/security/adversaries.yaml
+  - model/security/threats.yaml
+- id: ADV-12
+  label: Colluding ecosystem participants
+  sources:
+  - docs/security/adversary-model.md
+  - docs/security/threat-catalogue.md
+  - model/security/adversaries.yaml
+  - model/security/threats.yaml
+- id: ADV-13
+  label: Coercive principal or intermediary
+  sources:
+  - docs/security/adversary-model.md
+  - model/security/adversaries.yaml
+- id: ADV-14
+  label: State-level or systemic adversary
+  sources:
+  - docs/security/adversary-model.md
+  - docs/security/threat-catalogue.md
+  - model/security/adversaries.yaml
+  - model/security/threats.yaml
+- id: AP-01
+  label: Legitimacy precedes technical trust
+  sources:
+  - docs/architecture/principles.md
+  - model/architecture/architecture-principles.yaml
+- id: AP-02
+  label: Authority is explicit, bounded and reviewable
+  sources:
+  - docs/architecture/principles.md
+  - model/architecture/architecture-principles.yaml
+- id: AP-03
+  label: Evidence before effect
+  sources:
+  - docs/architecture/principles.md
+  - model/architecture/architecture-principles.yaml
+- id: AP-04
+  label: Governance, operation and assurance are separable
+  sources:
+  - docs/architecture/principles.md
+  - model/architecture/architecture-principles.yaml
+- id: AP-05
+  label: Trust boundaries are declared
+  sources:
+  - docs/architecture/principles.md
+  - model/architecture/architecture-principles.yaml
+- id: AP-06
+  label: Policy is traceable to authority
+  sources:
+  - docs/architecture/principles.md
+  - model/architecture/architecture-principles.yaml
+- id: AP-07
+  label: Data minimisation is architectural
+  sources:
+  - docs/architecture/principles.md
+  - model/architecture/architecture-principles.yaml
+- id: AP-08
+  label: Accountability survives automation
+  sources:
+  - docs/architecture/principles.md
+  - model/architecture/architecture-principles.yaml
+- id: AP-09
+  label: Redress is a first-class capability
+  sources:
+  - docs/architecture/principles.md
+  - model/architecture/architecture-principles.yaml
+- id: AP-10
+  label: Federation does not imply equivalence
+  sources:
+  - docs/architecture/principles.md
+  - model/architecture/architecture-principles.yaml
+- id: AP-11
+  label: Profiles specialise the core
+  sources:
+  - docs/architecture/principles.md
+  - model/architecture/architecture-principles.yaml
+- id: AP-12
+  label: Conformance is observable
+  sources:
+  - docs/architecture/principles.md
+  - model/architecture/architecture-principles.yaml
+- id: AS-01
+  label: Governance decision process
+  sources:
+  - docs/security/attack-surfaces.md
+  - model/security/attack-surfaces.yaml
+  - model/security/threats.yaml
+- id: AS-02
+  label: Authority issuance and delegation
+  sources:
+  - docs/security/attack-surfaces.md
+  - model/security/attack-surfaces.yaml
+  - model/security/threats.yaml
+- id: AS-03
+  label: Privileged administration interface
+  sources:
+  - docs/security/attack-surfaces.md
+  - model/security/attack-surfaces.yaml
+- id: AS-04
+  label: Participant onboarding and enrolment
+  sources:
+  - docs/security/attack-surfaces.md
+  - model/security/attack-surfaces.yaml
+  - model/security/threats.yaml
+- id: AS-05
+  label: Credential issuance and presentation
+  sources:
+  - docs/security/attack-surfaces.md
+  - model/security/attack-surfaces.yaml
+  - model/security/threats.yaml
+- id: AS-06
+  label: Evidence ingestion and provenance
+  sources:
+  - docs/security/attack-surfaces.md
+  - model/security/attack-surfaces.yaml
+  - model/security/threats.yaml
+- id: AS-07
+  label: Registry publication and resolution
+  sources:
+  - docs/security/attack-surfaces.md
+  - model/security/attack-surfaces.yaml
+  - model/security/threats.yaml
+- id: AS-08
+  label: Status and revocation propagation
+  sources:
+  - docs/security/attack-surfaces.md
+  - model/security/attack-surfaces.yaml
+  - model/security/threats.yaml
+- id: AS-09
+  label: Policy authoring and distribution
+  sources:
+  - docs/security/attack-surfaces.md
+  - model/security/attack-surfaces.yaml
+  - model/security/threats.yaml
+- id: AS-10
+  label: Decision service and rule evaluation
+  sources:
+  - docs/security/attack-surfaces.md
+  - model/security/attack-surfaces.yaml
+  - model/security/threats.yaml
+- id: AS-11
+  label: Effect execution interface
+  sources:
+  - docs/security/attack-surfaces.md
+  - model/security/attack-surfaces.yaml
+  - model/security/threats.yaml
+- id: AS-12
+  label: Audit logging and telemetry
+  sources:
+  - docs/security/attack-surfaces.md
+  - model/security/attack-surfaces.yaml
+  - model/security/threats.yaml
+- id: AS-13
+  label: Incident and emergency control
+  sources:
+  - docs/security/attack-surfaces.md
+  - model/security/attack-surfaces.yaml
+  - model/security/threats.yaml
+- id: AS-14
+  label: Federation gateway
+  sources:
+  - docs/security/attack-surfaces.md
+  - model/security/attack-surfaces.yaml
+  - model/security/threats.yaml
+- id: AS-15
+  label: Challenge, appeal and redress channel
+  sources:
+  - docs/security/attack-surfaces.md
+  - model/security/attack-surfaces.yaml
+  - model/security/threats.yaml
+- id: AS-16
+  label: Software build and dependency chain
+  sources:
+  - docs/security/attack-surfaces.md
+  - model/security/attack-surfaces.yaml
+  - model/security/threats.yaml
+- id: AS-17
+  label: Automated-agent tool interface
+  sources:
+  - docs/security/attack-surfaces.md
+  - model/security/attack-surfaces.yaml
+  - model/security/threats.yaml
+- id: AS-18
+  label: Public transparency and disclosure surface
+  sources:
+  - docs/security/attack-surfaces.md
+  - model/security/attack-surfaces.yaml
+  - model/security/threats.yaml
+- id: AST-01
+  label: Mandate and legitimacy records
+  sources:
+  - docs/security/protected-assets.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/protected-assets.yaml
+  - model/security/security-boundaries.yaml
+  - model/security/threats.yaml
+- id: AST-02
+  label: Governance decisions
+  sources:
+  - docs/security/protected-assets.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/protected-assets.yaml
+  - model/security/security-boundaries.yaml
+  - model/security/threats.yaml
+- id: AST-03
+  label: Authority and privilege records
+  sources:
+  - docs/security/protected-assets.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/protected-assets.yaml
+  - model/security/security-boundaries.yaml
+  - model/security/threats.yaml
+- id: AST-04
+  label: Participant and role records
+  sources:
+  - docs/security/protected-assets.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/protected-assets.yaml
+  - model/security/security-boundaries.yaml
+  - model/security/threats.yaml
+- id: AST-05
+  label: Policies duties and prohibitions
+  sources:
+  - docs/security/protected-assets.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/protected-assets.yaml
+  - model/security/security-boundaries.yaml
+  - model/security/threats.yaml
+- id: AST-06
+  label: Credentials claims and attestations
+  sources:
+  - docs/security/protected-assets.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/protected-assets.yaml
+  - model/security/security-boundaries.yaml
+  - model/security/threats.yaml
+- id: AST-07
+  label: Evidence and provenance
+  sources:
+  - docs/security/protected-assets.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/protected-assets.yaml
+  - model/security/security-boundaries.yaml
+  - model/security/threats.yaml
+- id: AST-08
+  label: Registries directories and status data
+  sources:
+  - docs/security/protected-assets.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/protected-assets.yaml
+  - model/security/security-boundaries.yaml
+  - model/security/threats.yaml
+- id: AST-09
+  label: Assurance assertions
+  sources:
+  - docs/security/protected-assets.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/protected-assets.yaml
+  - model/security/security-boundaries.yaml
+  - model/security/threats.yaml
+- id: AST-10
+  label: Trust decisions
+  sources:
+  - docs/security/protected-assets.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/protected-assets.yaml
+  - model/security/security-boundaries.yaml
+  - model/security/threats.yaml
+- id: AST-11
+  label: Effects and execution authorisations
+  sources:
+  - docs/security/protected-assets.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/protected-assets.yaml
+  - model/security/security-boundaries.yaml
+  - model/security/threats.yaml
+- id: AST-12
+  label: Decision receipts and audit trails
+  sources:
+  - docs/security/protected-assets.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/protected-assets.yaml
+  - model/security/security-boundaries.yaml
+  - model/security/threats.yaml
+- id: AST-13
+  label: Incident and recovery records
+  sources:
+  - docs/security/protected-assets.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/protected-assets.yaml
+  - model/security/security-boundaries.yaml
+  - model/security/threats.yaml
+- id: AST-14
+  label: Challenge appeal and remedy records
+  sources:
+  - docs/security/protected-assets.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/protected-assets.yaml
+  - model/security/security-boundaries.yaml
+  - model/security/threats.yaml
+- id: AST-15
+  label: Cryptographic and authentication material
+  sources:
+  - docs/security/protected-assets.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/protected-assets.yaml
+  - model/security/security-boundaries.yaml
+  - model/security/threats.yaml
+- id: AST-16
+  label: Software configuration and policy code
+  sources:
+  - docs/security/protected-assets.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/protected-assets.yaml
+  - model/security/security-boundaries.yaml
+  - model/security/threats.yaml
+- id: AST-17
+  label: Operational telemetry and service state
+  sources:
+  - docs/security/protected-assets.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/protected-assets.yaml
+  - model/security/security-boundaries.yaml
+  - model/security/threats.yaml
+- id: AST-18
+  label: Personal organisational and relationship information
+  sources:
+  - docs/security/protected-assets.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/protected-assets.yaml
+  - model/security/security-boundaries.yaml
+  - model/security/threats.yaml
+- id: AST-19
+  label: Federation and recognition mappings
+  sources:
+  - docs/security/protected-assets.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/protected-assets.yaml
+  - model/security/security-boundaries.yaml
+  - model/security/threats.yaml
+- id: AST-20
+  label: Public trust and institutional continuity
+  sources:
+  - docs/security/protected-assets.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/protected-assets.yaml
+  - model/security/security-boundaries.yaml
+  - model/security/threats.yaml
+- id: AST-21
+  label: Automated-agent mandates and tool-invocation records
+  sources:
+  - CHANGELOG.md
+  - docs/security/protected-assets.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/protected-assets.yaml
+  - model/security/security-boundaries.yaml
+  - model/security/threats.yaml
+- id: CAP-01
+  label: Governance establishment
+  sources:
+  - docs/core-specification/capability-model.md
+  - model/normative/requirement-catalogue.yaml
+  - model/requirements/core-requirements.yaml
+- id: CAP-02
+  label: Participant governance
+  sources:
+  - docs/core-specification/capability-model.md
+- id: CAP-03
+  label: Identity and role resolution
+  sources:
+  - docs/core-specification/capability-model.md
+- id: CAP-04
+  label: Authority resolution
+  sources:
+  - docs/core-specification/capability-model.md
+  - model/normative/requirement-catalogue.yaml
+  - model/requirements/core-requirements.yaml
+- id: CAP-05
+  label: Delegation control
+  sources:
+  - docs/core-specification/capability-model.md
+  - model/normative/requirement-catalogue.yaml
+  - model/requirements/core-requirements.yaml
+- id: CAP-06
+  label: Policy evaluation
+  sources:
+  - docs/core-specification/capability-model.md
+- id: CAP-07
+  label: Evidence management
+  sources:
+  - docs/core-specification/capability-model.md
+  - model/normative/requirement-catalogue.yaml
+  - model/requirements/core-requirements.yaml
+- id: CAP-08
+  label: Registry and status resolution
+  sources:
+  - docs/core-specification/capability-model.md
+- id: CAP-09
+  label: Assurance evaluation
+  sources:
+  - docs/core-specification/capability-model.md
+  - model/requirements/core-requirements.yaml
+- id: CAP-10
+  label: Effect admission
+  sources:
+  - docs/core-specification/capability-model.md
+- id: CAP-11
+  label: Decision accountability
+  sources:
+  - docs/core-specification/capability-model.md
+  - model/normative/requirement-catalogue.yaml
+  - model/requirements/core-requirements.yaml
+- id: CAP-12
+  label: Incident response
+  sources:
+  - docs/core-specification/capability-model.md
+- id: CAP-13
+  label: Challenge and redress
+  sources:
+  - docs/core-specification/capability-model.md
+  - model/normative/requirement-catalogue.yaml
+  - model/requirements/core-requirements.yaml
+- id: CAP-14
+  label: Interoperability
+  sources:
+  - docs/core-specification/capability-model.md
+- id: CAP-15
+  label: Conformance evidence
+  sources:
+  - docs/core-specification/capability-model.md
+  - model/normative/requirement-catalogue.yaml
+  - model/requirements/core-requirements.yaml
+- id: CLAR-001
+  label: ''
+  sources:
+  - docs/implementation/pilot-findings.md
+  - pilots/implementation-01/clarification-register.yaml
+- id: CLAR-002
+  label: ''
+  sources:
+  - docs/implementation/pilot-findings.md
+  - pilots/implementation-01/clarification-register.yaml
+- id: CT-AUT-001
+  label: Authentication alone cannot establish authority
+  sources:
+  - conformance/assertions.yaml
+- id: CT-AUT-002
+  label: Authority scope and validity are evaluated
+  sources:
+  - conformance/assertions.yaml
+  - exercises/adversarial/scenarios.yaml
+- id: CT-AUT-003
+  label: Delegation cannot exceed principal authority
+  sources:
+  - conformance/assertions.yaml
+- id: CT-GOV-001
+  label: Emergency authority records purpose scope duration evidence and review
+  sources:
+  - conformance/assertions.yaml
+- id: CT-OPS-001
+  label: Suspended provider cannot perform an active operation
+  sources:
+  - conformance/assertions.yaml
+  - exercises/adversarial/scenarios.yaml
+- id: CT-RGT-001
+  label: Affected party can access challenge without scheme membership
+  sources:
+  - conformance/assertions.yaml
+  - exercises/adversarial/scenarios.yaml
+- id: CTL-001
+  label: Mandate provenance verification
+  sources:
+  - docs/reference-scenario/end-to-end-walkthrough.md
+  - docs/reference-scenario/threat-control-trace.md
+  - docs/security/control-framework.md
+  - model/security/controls.yaml
+- id: CTL-002
+  label: Governance decision signing and publication
+  sources:
+  - docs/security/control-framework.md
+  - model/security/controls.yaml
+- id: CTL-003
+  label: Separation of critical governance powers
+  sources:
+  - docs/security/control-framework.md
+  - model/security/controls.yaml
+- id: CTL-004
+  label: Authority scope encoding
+  sources:
+  - docs/security/control-framework.md
+  - model/security/controls.yaml
+- id: CTL-005
+  label: Delegation chain validation
+  sources:
+  - docs/reference-scenario/end-to-end-walkthrough.md
+  - docs/reference-scenario/threat-control-trace.md
+  - docs/security/control-framework.md
+  - model/security/controls.yaml
+- id: CTL-006
+  label: Authority freshness enforcement
+  sources:
+  - docs/security/control-framework.md
+  - model/security/controls.yaml
+- id: CTL-007
+  label: Phishing-resistant authentication
+  sources:
+  - docs/reference-scenario/end-to-end-walkthrough.md
+  - docs/reference-scenario/threat-control-trace.md
+  - docs/security/control-framework.md
+  - model/security/controls.yaml
+- id: CTL-008
+  label: Hardware-backed key protection
+  sources:
+  - docs/security/control-framework.md
+  - model/security/controls.yaml
+- id: CTL-009
+  label: Secure recovery and re-binding
+  sources:
+  - docs/security/control-framework.md
+  - model/security/controls.yaml
+- id: CTL-010
+  label: Credential audience and nonce binding
+  sources:
+  - docs/reference-scenario/end-to-end-walkthrough.md
+  - docs/reference-scenario/threat-control-trace.md
+  - docs/security/control-framework.md
+  - model/security/controls.yaml
+- id: CTL-011
+  label: Issuer competence verification
+  sources:
+  - docs/security/control-framework.md
+  - model/security/controls.yaml
+- id: CTL-012
+  label: Credential lifecycle enforcement
+  sources:
+  - docs/security/control-framework.md
+  - model/security/controls.yaml
+- id: CTL-013
+  label: Evidence provenance validation
+  sources:
+  - docs/security/control-framework.md
+  - model/security/controls.yaml
+- id: CTL-014
+  label: Registry integrity and non-equivocation
+  sources:
+  - docs/security/control-framework.md
+  - model/security/controls.yaml
+- id: CTL-015
+  label: Status freshness policy
+  sources:
+  - docs/reference-scenario/end-to-end-walkthrough.md
+  - docs/reference-scenario/threat-control-trace.md
+  - docs/security/control-framework.md
+  - model/security/controls.yaml
+- id: CTL-016
+  label: Revocation propagation monitoring
+  sources:
+  - docs/security/control-framework.md
+  - model/security/controls.yaml
+- id: CTL-017
+  label: Privacy-preserving status resolution
+  sources:
+  - docs/security/control-framework.md
+  - model/security/controls.yaml
+- id: CTL-018
+  label: Independent source reconciliation
+  sources:
+  - docs/security/control-framework.md
+  - model/security/controls.yaml
+- id: CTL-019
+  label: Signed and versioned policy artefacts
+  sources:
+  - docs/reference-scenario/end-to-end-walkthrough.md
+  - docs/reference-scenario/threat-control-trace.md
+  - docs/security/control-framework.md
+  - model/security/controls.yaml
+- id: CTL-020
+  label: Policy rollback protection
+  sources:
+  - docs/security/control-framework.md
+  - model/security/controls.yaml
+- id: CTL-021
+  label: Decision input integrity checks
+  sources:
+  - docs/security/control-framework.md
+  - model/security/controls.yaml
+- id: CTL-022
+  label: Evidence-before-effect gate
+  sources:
+  - docs/reference-scenario/end-to-end-walkthrough.md
+  - docs/reference-scenario/threat-control-trace.md
+  - docs/security/control-framework.md
+  - model/security/controls.yaml
+- id: CTL-023
+  label: Effect idempotency and replay protection
+  sources:
+  - docs/security/control-framework.md
+  - model/security/controls.yaml
+- id: CTL-024
+  label: Decision receipt generation
+  sources:
+  - docs/security/control-framework.md
+  - model/security/controls.yaml
+- id: CTL-025
+  label: Secure software development lifecycle
+  sources:
+  - docs/security/control-framework.md
+  - model/security/controls.yaml
+- id: CTL-026
+  label: Dependency provenance and verification
+  sources:
+  - docs/security/control-framework.md
+  - model/security/controls.yaml
+- id: CTL-027
+  label: Protected build and release pipeline
+  sources:
+  - docs/security/control-framework.md
+  - model/security/controls.yaml
+- id: CTL-028
+  label: Configuration integrity monitoring
+  sources:
+  - docs/security/control-framework.md
+  - model/security/controls.yaml
+- id: CTL-029
+  label: Tamper-evident audit logging
+  sources:
+  - docs/reference-scenario/end-to-end-walkthrough.md
+  - docs/reference-scenario/threat-control-trace.md
+  - docs/security/control-framework.md
+  - model/security/controls.yaml
+- id: CTL-030
+  label: Security telemetry and anomaly detection
+  sources:
+  - docs/security/control-framework.md
+  - model/security/controls.yaml
+- id: CTL-031
+  label: Incident containment and evidence preservation
+  sources:
+  - docs/security/control-framework.md
+  - model/security/controls.yaml
+- id: CTL-032
+  label: Accessible challenge and redress
+  sources:
+  - docs/reference-scenario/end-to-end-walkthrough.md
+  - docs/reference-scenario/threat-control-trace.md
+  - docs/security/control-framework.md
+  - model/security/controls.yaml
+- id: CTL-033
+  label: Federation recognition constraints
+  sources:
+  - docs/security/control-framework.md
+  - model/security/controls.yaml
+- id: CTL-034
+  label: Semantic and assurance mapping validation
+  sources:
+  - docs/security/control-framework.md
+  - model/security/controls.yaml
+- id: CTL-035
+  label: Controlled disclosure and minimisation
+  sources:
+  - docs/security/control-framework.md
+  - model/security/controls.yaml
+- id: CTL-036
+  label: Correlation resistance
+  sources:
+  - docs/security/control-framework.md
+  - model/security/controls.yaml
+- id: CTL-037
+  label: Machine-readable agent mandate
+  sources:
+  - docs/security/control-framework.md
+  - model/security/controls.yaml
+- id: CTL-038
+  label: Tool-level least authority
+  sources:
+  - docs/security/control-framework.md
+  - model/security/controls.yaml
+- id: CTL-039
+  label: Agent action receipt and causal trace
+  sources:
+  - docs/security/control-framework.md
+  - model/security/controls.yaml
+- id: CTL-040
+  label: Human override and safe halt
+  sources:
+  - docs/security/control-framework.md
+  - model/security/controls.yaml
+- id: EPA-001
+  label: Independent conformity assessment
+  sources:
+  - docs/project/external-framework-pattern-adoption.md
+  - model/project/maturation-register.yaml
+- id: EPA-002
+  label: Provider accreditation and certification lifecycle
+  sources:
+  - docs/project/external-framework-pattern-adoption.md
+  - model/project/maturation-register.yaml
+- id: EPA-003
+  label: Supervisory authority, public register and recognition status
+  sources:
+  - docs/project/external-framework-pattern-adoption.md
+  - model/project/maturation-register.yaml
+- id: EPA-004
+  label: Controlled governance document set
+  sources:
+  - docs/project/external-framework-pattern-adoption.md
+  - model/project/maturation-register.yaml
+- id: EPA-005
+  label: Role-specific normative obligations
+  sources:
+  - docs/project/external-framework-pattern-adoption.md
+  - model/project/maturation-register.yaml
+- id: EPA-006
+  label: Multi-dimensional assurance levels
+  sources:
+  - docs/project/external-framework-pattern-adoption.md
+  - model/project/maturation-register.yaml
+- id: EPA-007
+  label: Modular profile construction
+  sources:
+  - docs/project/external-framework-pattern-adoption.md
+  - model/project/maturation-register.yaml
+- id: EPA-008
+  label: Sector participant and service obligations
+  sources:
+  - docs/project/external-framework-pattern-adoption.md
+  - model/project/maturation-register.yaml
+- id: EPA-009
+  label: Cross-framework recognition profile
+  sources:
+  - docs/project/external-framework-pattern-adoption.md
+  - model/project/maturation-register.yaml
+- id: EPA-010
+  label: Accessible challenge, appeal and remedy operations
+  sources:
+  - docs/project/external-framework-pattern-adoption.md
+  - model/project/maturation-register.yaml
+- id: EPA-011
+  label: Consent and authorisation evidence for data exchange
+  sources:
+  - docs/project/external-framework-pattern-adoption.md
+  - model/project/maturation-register.yaml
+- id: EPA-012
+  label: Privacy-preserving status and registry resolution
+  sources:
+  - docs/project/external-framework-pattern-adoption.md
+  - model/project/maturation-register.yaml
+- id: EPA-013
+  label: Executable conformance fixtures
+  sources:
+  - docs/project/external-framework-pattern-adoption.md
+  - model/project/maturation-register.yaml
+- id: EPA-014
+  label: Interoperability and scale test events
+  sources:
+  - docs/project/external-framework-pattern-adoption.md
+  - model/project/maturation-register.yaml
+- id: EPA-015
+  label: Continuous assurance and operational exercise evidence
+  sources:
+  - docs/project/external-framework-pattern-adoption.md
+  - model/project/maturation-register.yaml
+- id: EPA-016
+  label: Reference and controlled-document maintenance
+  sources:
+  - docs/project/external-framework-pattern-adoption.md
+  - model/project/maturation-register.yaml
+- id: EVD-0001
+  label: implementation
+  sources:
+  - docs/project/detailed-delivery-roadmap.md
+  - model/evidence/evidence-inventory.yaml
+  - release/EVIDENCE-INVENTORY-v0.7.0.md
+- id: EVD-0002
+  label: conformance
+  sources:
+  - model/evidence/evidence-inventory.yaml
+  - release/EVIDENCE-INVENTORY-v0.7.0.md
+- id: IM-ACT
+  label: Accountable Authority
+  sources:
+  - docs/information-model/canonical-entities.md
+  - model/information-model/entities.yaml
+- id: IM-AFP
+  label: Affected Party
+  sources:
+  - docs/information-model/canonical-entities.md
+  - model/information-model/entities.yaml
+- id: IM-AGR
+  label: Authority Grant
+  sources:
+  - docs/information-model/canonical-entities.md
+  - model/information-model/entities.yaml
+- id: IM-APL
+  label: Appeal
+  sources:
+  - docs/information-model/canonical-entities.md
+  - model/information-model/entities.yaml
+- id: IM-ASA
+  label: Assurance Authority
+  sources:
+  - docs/information-model/canonical-entities.md
+  - model/information-model/entities.yaml
+- id: IM-ASR
+  label: Assurance Assertion
+  sources:
+  - docs/information-model/canonical-entities.md
+  - model/information-model/entities.yaml
+- id: IM-CHA
+  label: Challenge
+  sources:
+  - docs/information-model/canonical-entities.md
+  - model/information-model/entities.yaml
+- id: IM-CLM
+  label: Claim
+  sources:
+  - docs/information-model/canonical-entities.md
+  - model/information-model/entities.yaml
+- id: IM-CON
+  label: Conformance Declaration
+  sources:
+  - docs/information-model/canonical-entities.md
+  - model/information-model/entities.yaml
+- id: IM-CRE
+  label: Credential
+  sources:
+  - docs/information-model/canonical-entities.md
+  - model/information-model/entities.yaml
+- id: IM-DEC
+  label: Trust Decision
+  sources:
+  - docs/information-model/canonical-entities.md
+  - model/information-model/entities.yaml
+- id: IM-DEL
+  label: Delegation
+  sources:
+  - docs/information-model/canonical-entities.md
+  - model/information-model/entities.yaml
+- id: IM-EFF
+  label: Admitted Effect
+  sources:
+  - docs/information-model/canonical-entities.md
+  - model/information-model/entities.yaml
+- id: IM-EVD
+  label: Evidence
+  sources:
+  - docs/information-model/canonical-entities.md
+  - model/information-model/entities.yaml
+- id: IM-GOV
+  label: Governance Authority
+  sources:
+  - docs/information-model/canonical-entities.md
+  - model/information-model/entities.yaml
+- id: IM-INC
+  label: Incident
+  sources:
+  - docs/information-model/canonical-entities.md
+  - model/information-model/entities.yaml
+- id: IM-JUR
+  label: Jurisdiction
+  sources:
+  - docs/information-model/canonical-entities.md
+  - model/information-model/entities.yaml
+- id: IM-MRA
+  label: Recognition Arrangement
+  sources:
+  - docs/information-model/canonical-entities.md
+  - model/information-model/entities.yaml
+- id: IM-OPA
+  label: Operating Authority
+  sources:
+  - docs/information-model/canonical-entities.md
+  - model/information-model/entities.yaml
+- id: IM-PAR
+  label: Participant
+  sources:
+  - docs/information-model/canonical-entities.md
+  - model/information-model/entities.yaml
+- id: IM-POL
+  label: Policy
+  sources:
+  - docs/information-model/canonical-entities.md
+  - model/information-model/entities.yaml
+- id: IM-RCP
+  label: Decision Receipt
+  sources:
+  - docs/information-model/canonical-entities.md
+  - model/information-model/entities.yaml
+- id: IM-REG
+  label: Registry Record
+  sources:
+  - docs/information-model/canonical-entities.md
+  - model/information-model/entities.yaml
+- id: IM-REM
+  label: Remedy
+  sources:
+  - docs/information-model/canonical-entities.md
+  - model/information-model/entities.yaml
+- id: IM-ROL
+  label: Role
+  sources:
+  - docs/information-model/canonical-entities.md
+  - model/information-model/entities.yaml
+- id: IM-SCH
+  label: Trust Scheme
+  sources:
+  - docs/information-model/canonical-entities.md
+  - model/information-model/entities.yaml
+- id: IM-SEC
+  label: Sector
+  sources:
+  - docs/information-model/canonical-entities.md
+  - model/information-model/entities.yaml
+- id: IM-STA
+  label: Status Record
+  sources:
+  - docs/information-model/canonical-entities.md
+  - model/information-model/entities.yaml
+- id: INT-01
+  label: Establish trust scheme
+  sources:
+  - docs/architecture/interaction-catalogue.md
+  - model/architecture/interactions.yaml
+- id: INT-02
+  label: Admit participant
+  sources:
+  - docs/architecture/interaction-catalogue.md
+  - model/architecture/interactions.yaml
+- id: INT-03
+  label: Recognise evidence provider
+  sources:
+  - docs/architecture/interaction-catalogue.md
+  - model/architecture/interactions.yaml
+- id: INT-04
+  label: Grant authority
+  sources:
+  - docs/architecture/interaction-catalogue.md
+  - model/architecture/interactions.yaml
+- id: INT-05
+  label: Delegate authority
+  sources:
+  - docs/architecture/interaction-catalogue.md
+  - model/architecture/interactions.yaml
+- id: INT-06
+  label: Issue evidence
+  sources:
+  - docs/architecture/interaction-catalogue.md
+  - model/architecture/interactions.yaml
+- id: INT-07
+  label: Present evidence
+  sources:
+  - docs/architecture/interaction-catalogue.md
+  - model/architecture/interactions.yaml
+- id: INT-08
+  label: Resolve trust
+  sources:
+  - docs/architecture/interaction-catalogue.md
+  - model/architecture/interactions.yaml
+- id: INT-09
+  label: Admit effect
+  sources:
+  - docs/architecture/interaction-catalogue.md
+  - model/architecture/interactions.yaml
+- id: INT-10
+  label: Change status
+  sources:
+  - docs/architecture/interaction-catalogue.md
+  - model/architecture/interactions.yaml
+- id: INT-11
+  label: Suspend participant
+  sources:
+  - docs/architecture/interaction-catalogue.md
+  - model/architecture/interactions.yaml
+- id: INT-12
+  label: Change policy
+  sources:
+  - docs/architecture/interaction-catalogue.md
+  - model/architecture/interactions.yaml
+- id: INT-13
+  label: Invoke emergency authority
+  sources:
+  - docs/architecture/interaction-catalogue.md
+  - model/architecture/interactions.yaml
+- id: INT-14
+  label: Report incident
+  sources:
+  - docs/architecture/interaction-catalogue.md
+  - model/architecture/interactions.yaml
+- id: INT-15
+  label: Submit challenge
+  sources:
+  - docs/architecture/interaction-catalogue.md
+  - model/architecture/interactions.yaml
+- id: INT-16
+  label: Execute remedy
+  sources:
+  - docs/architecture/interaction-catalogue.md
+  - model/architecture/interactions.yaml
+- id: INT-17
+  label: Establish recognition
+  sources:
+  - docs/architecture/interaction-catalogue.md
+  - model/architecture/interactions.yaml
+- id: INT-18
+  label: Withdraw recognition
+  sources:
+  - docs/architecture/interaction-catalogue.md
+  - model/architecture/interactions.yaml
+- id: INT-19
+  label: Declare conformance
+  sources:
+  - docs/architecture/interaction-catalogue.md
+  - model/architecture/interactions.yaml
+- id: INT-20
+  label: Retire trust scheme
+  sources:
+  - docs/architecture/interaction-catalogue.md
+  - model/architecture/interactions.yaml
+- id: JRN-RGT-001
+  label: Incorrect evidence causes an adverse outcome
+  sources:
+  - evaluation/rights-remedy/journeys.yaml
+- id: JRN-RGT-002
+  label: Non-participant harmed by delegated action
+  sources:
+  - evaluation/rights-remedy/journeys.yaml
+- id: JRN-RGT-003
+  label: Accessibility barrier blocks digital challenge
+  sources:
+  - evaluation/rights-remedy/journeys.yaml
+- id: JRN-RGT-004
+  label: Delegated AI action disputed by affected party
+  sources:
+  - evaluation/rights-remedy/journeys.yaml
+- id: LIM-01
+  label: Independent implementation evidence remains limited
+  sources:
+  - docs/project/known-limitations.md
+  - model/project/maturation-register.yaml
+- id: LIM-02
+  label: Standards mappings are informative unless selected by a profile
+  sources:
+  - docs/project/known-limitations.md
+  - model/project/maturation-register.yaml
+- id: LIM-03
+  label: Jurisdiction profiles are implementation aids, not legal advice
+  sources:
+  - docs/project/known-limitations.md
+  - model/project/maturation-register.yaml
+- id: LIM-04
+  label: Quantitative thresholds require contextual calibration
+  sources:
+  - docs/project/known-limitations.md
+  - model/project/maturation-register.yaml
+- id: LIM-05
+  label: Reference schemas and fixtures are not production software
+  sources:
+  - docs/project/known-limitations.md
+  - model/project/maturation-register.yaml
+- id: LIM-06
+  label: Cross-border recognition depends on external legal and institutional arrangements
+  sources:
+  - docs/project/known-limitations.md
+  - model/project/maturation-register.yaml
+- id: LIM-07
+  label: Cryptographic and protocol choices remain profile-dependent
+  sources:
+  - docs/project/known-limitations.md
+  - model/project/maturation-register.yaml
+- id: LIM-08
+  label: Repository validation is not implementation or scheme conformance
+  sources:
+  - docs/project/known-limitations.md
+  - model/project/maturation-register.yaml
+- id: LIM-09
+  label: Standards and regulatory sources change over time
+  sources:
+  - docs/project/known-limitations.md
+  - model/project/maturation-register.yaml
+- id: MPR-01
+  label: Normative and role architecture
+  sources:
+  - docs/project/future-work.md
+  - model/project/maturation-register.yaml
+- id: MPR-02
+  label: Conformance and accreditation
+  sources:
+  - docs/project/future-work.md
+  - model/project/maturation-register.yaml
+- id: MPR-03
+  label: Profiles and external-framework adoption
+  sources:
+  - docs/project/future-work.md
+  - model/project/maturation-register.yaml
+- id: MPR-04
+  label: Implementation and interoperability
+  sources:
+  - docs/project/future-work.md
+  - model/project/maturation-register.yaml
+- id: MPR-05
+  label: Evidence and quantitative calibration
+  sources:
+  - docs/project/future-work.md
+  - model/project/maturation-register.yaml
+- id: MPR-06
+  label: Rights, accessibility and remedy validation
+  sources:
+  - docs/project/future-work.md
+  - model/project/maturation-register.yaml
+- id: MPR-07
+  label: Candidate-specification governance
+  sources:
+  - docs/project/future-work.md
+  - model/project/maturation-register.yaml
+- id: ONDTF-ASR-001
+  label: Scope assurance claims by subject, controls, evidence basis, assessment, and freshness.
+  sources:
+  - docs/core-specification/normative-requirements.md
+  - model/requirements/core-requirements.yaml
+- id: ONDTF-ASR-002
+  label: ''
+  sources:
+  - docs/core-specification/normative-requirements.md
+- id: ONDTF-AUT-001
+  label: Admit a consequential action solely because the actor or system is authenticated.
+  sources:
+  - conformance/assertions.yaml
+  - docs/core-specification/normative-requirements.md
+  - model/evidence/evidence-inventory.yaml
+  - model/normative/requirement-catalogue.yaml
+  - model/requirements/core-requirements.yaml
+- id: ONDTF-AUT-002
+  label: Evaluate scope, purpose, domain, time, conditions and revocation status when determining applicable authority.
+  sources:
+  - conformance/assertions.yaml
+  - docs/core-specification/normative-requirements.md
+  - docs/governance/authority-delegation.md
+  - docs/implementation/getting-started.md
+  - evaluation/rights-remedy/journeys.yaml
+  - model/evidence/evidence-inventory.yaml
+  - model/normative/requirement-catalogue.yaml
+- id: ONDTF-AUT-003
+  label: Permit delegated authority to exceed the authority held by the delegating party.
+  sources:
+  - conformance/assertions.yaml
+  - docs/core-specification/normative-requirements.md
+  - docs/governance/authority-delegation.md
+  - evaluation/rights-remedy/journeys.yaml
+  - model/evidence/evidence-inventory.yaml
+  - model/normative/requirement-catalogue.yaml
+  - model/requirements/core-requirements.yaml
+- id: ONDTF-AUT-004
+  label: ''
+  sources:
+  - docs/core-specification/normative-requirements.md
+- id: ONDTF-AUT-005
+  label: ''
+  sources:
+  - docs/core-specification/normative-requirements.md
+- id: ONDTF-AUT-006
+  label: ''
+  sources:
+  - docs/core-specification/normative-requirements.md
+- id: ONDTF-CON-001
+  label: Scope a conformance claim by ONDTF version, profile, assessed object, organisational boundary, applicable requirements,
+    evidence cut-off and approved exceptions.
+  sources:
+  - docs/core-specification/normative-requirements.md
+  - model/normative/requirement-catalogue.yaml
+  - model/requirements/core-requirements.yaml
+- id: ONDTF-CON-002
+  label: Require a particular external meta-model, schema, protocol, registry implementation or product for core conformance.
+  sources:
+  - docs/core-specification/normative-requirements.md
+  - model/normative/requirement-catalogue.yaml
+  - model/requirements/core-requirements.yaml
+- id: ONDTF-CON-003
+  label: Identify the exact version, selected scope, constraints and maintenance responsibility for every normative external
+    dependency.
+  sources:
+  - docs/core-specification/normative-requirements.md
+  - model/normative/requirement-catalogue.yaml
+- id: ONDTF-DEC-001
+  label: ''
+  sources:
+  - docs/core-specification/normative-requirements.md
+- id: ONDTF-DEC-002
+  label: ''
+  sources:
+  - docs/core-specification/normative-requirements.md
+- id: ONDTF-DEC-003
+  label: Produce or reference a reviewable record sufficient to establish the basis and responsible authority for a consequential
+    decision.
+  sources:
+  - docs/core-specification/normative-requirements.md
+  - model/normative/requirement-catalogue.yaml
+  - model/requirements/core-requirements.yaml
+- id: ONDTF-DEC-004
+  label: ''
+  sources:
+  - docs/core-specification/normative-requirements.md
+- id: ONDTF-DEC-005
+  label: ''
+  sources:
+  - docs/core-specification/normative-requirements.md
+- id: ONDTF-EVI-001
+  label: Evaluate consequential evidence for source attribution, integrity, relevance and freshness.
+  sources:
+  - docs/core-specification/normative-requirements.md
+  - model/normative/requirement-catalogue.yaml
+  - model/requirements/core-requirements.yaml
+- id: ONDTF-EVI-002
+  label: ''
+  sources:
+  - docs/core-specification/normative-requirements.md
+- id: ONDTF-EVI-003
+  label: Publish the governing authority, scope, update policy, effective time and provenance of registry or status information.
+  sources:
+  - docs/core-specification/normative-requirements.md
+  - model/normative/requirement-catalogue.yaml
+- id: ONDTF-EVI-004
+  label: ''
+  sources:
+  - docs/core-specification/normative-requirements.md
+- id: ONDTF-GOV-001
+  label: Identify and publish the legal, policy, contractual or institutional mandate under which the adoption operates.
+  sources:
+  - docs/core-specification/normative-requirements.md
+  - model/normative/requirement-catalogue.yaml
+  - model/requirements/core-requirements.yaml
+- id: ONDTF-GOV-002
+  label: Identify the bodies accountable for governance, administration, supervision, assessment, review and remedy.
+  sources:
+  - docs/core-specification/normative-requirements.md
+  - model/normative/requirement-catalogue.yaml
+  - model/requirements/core-requirements.yaml
+- id: ONDTF-GOV-003
+  label: Publish the interactions, participants, services, effects and exclusions within the adoption scope.
+  sources:
+  - docs/core-specification/normative-requirements.md
+  - model/normative/requirement-catalogue.yaml
+- id: ONDTF-GOV-004
+  label: Document decision rights, delegations, escalation paths and conflicts of interest for institutional functions.
+  sources:
+  - docs/core-specification/normative-requirements.md
+  - model/normative/requirement-catalogue.yaml
+- id: ONDTF-GOV-005
+  label: Version, approve, communicate and assign effective dates to material governance changes.
+  sources:
+  - docs/core-specification/normative-requirements.md
+  - model/normative/requirement-catalogue.yaml
+- id: ONDTF-GOV-006
+  label: Bound emergency authority by purpose, scope, duration, evidence, review and termination conditions.
+  sources:
+  - conformance/assertions.yaml
+  - docs/core-specification/normative-requirements.md
+  - model/normative/requirement-catalogue.yaml
+- id: ONDTF-INC-001
+  label: Define detection, containment, evidence preservation, recovery, notification and coordination responsibilities for
+    material incidents.
+  sources:
+  - docs/core-specification/normative-requirements.md
+  - model/normative/requirement-catalogue.yaml
+- id: ONDTF-INT-001
+  label: ''
+  sources:
+  - docs/core-specification/normative-requirements.md
+- id: ONDTF-INT-002
+  label: ''
+  sources:
+  - docs/core-specification/normative-requirements.md
+- id: ONDTF-MNT-001
+  label: Preserve stable identifiers and lifecycle status for active, deprecated, withdrawn and superseded requirements.
+  sources:
+  - model/normative/requirement-catalogue.yaml
+- id: ONDTF-MNT-002
+  label: Perform change-impact analysis across profiles, roles, controls, evidence, tests and conformance claims for every
+    material normative change.
+  sources:
+  - model/normative/requirement-catalogue.yaml
+- id: ONDTF-RED-001
+  label: Provide affected parties an accessible route to correction, challenge, independent review and effective remedy for
+    consequential decisions.
+  sources:
+  - docs/core-specification/normative-requirements.md
+  - model/normative/requirement-catalogue.yaml
+  - model/requirements/core-requirements.yaml
+- id: ONDTF-RED-002
+  label: ''
+  sources:
+  - docs/core-specification/normative-requirements.md
+- id: ONDTF-ROL-001
+  label: Define every institutional function before allocating it to one or more named bodies.
+  sources:
+  - model/normative/requirement-catalogue.yaml
+- id: ONDTF-ROL-002
+  label: Record the authority source, scope, accountability and minimum evidence obligations of each assigned role.
+  sources:
+  - model/normative/requirement-catalogue.yaml
+- id: ONDTF-ROL-003
+  label: Assess concentration and conflict risks whenever one body performs two or more institutional roles.
+  sources:
+  - model/normative/requirement-catalogue.yaml
+- id: ONDTF-ROL-004
+  label: Preserve an independent review path for material admission, suspension, enforcement, appeal and remedy decisions.
+  sources:
+  - evaluation/rights-remedy/journeys.yaml
+  - model/normative/requirement-catalogue.yaml
+- id: ONDTF-ROL-005
+  label: Permit an operating body to be the sole assessor and final appeals body for its own material conformance decisions.
+  sources:
+  - model/normative/requirement-catalogue.yaml
+- id: ONDTF-ROL-006
+  label: Define referral and lead-authority rules where supervisory or regulatory competence overlaps.
+  sources:
+  - model/normative/requirement-catalogue.yaml
+- id: ONDTF-ROL-007
+  label: Give affected parties standing to access complaint, challenge and remedy processes without requiring scheme membership.
+  sources:
+  - conformance/assertions.yaml
+  - evaluation/rights-remedy/journeys.yaml
+  - model/normative/requirement-catalogue.yaml
+- id: ONDTF-ROL-008
+  label: Include independent and affected-party perspectives in periodic review of framework effectiveness and institutional
+    legitimacy.
+  sources:
+  - model/normative/requirement-catalogue.yaml
+- id: ONDTF-SPR-001
+  label: Maintain a threat, privacy and risk model proportionate to the covered effects and institutional powers.
+  sources:
+  - docs/core-specification/normative-requirements.md
+  - model/normative/requirement-catalogue.yaml
+- id: ONDTF-SPR-002
+  label: ''
+  sources:
+  - docs/core-specification/normative-requirements.md
+- id: ONDTF-SPR-003
+  label: ''
+  sources:
+  - docs/core-specification/normative-requirements.md
+- id: PLT-001
+  label: ''
+  sources:
+  - docs/operations/provider-lifecycle.md
+  - model/operations/provider-lifecycle.yaml
+- id: PLT-002
+  label: ''
+  sources:
+  - docs/operations/provider-lifecycle.md
+  - model/operations/provider-lifecycle.yaml
+- id: PLT-003
+  label: ''
+  sources:
+  - docs/operations/provider-lifecycle.md
+  - model/adoption/construction-input-contract.yaml
+  - model/operations/provider-lifecycle.yaml
+- id: PLT-004
+  label: ''
+  sources:
+  - docs/operations/provider-lifecycle.md
+  - model/operations/provider-lifecycle.yaml
+- id: PLT-005
+  label: ''
+  sources:
+  - docs/operations/provider-lifecycle.md
+  - model/adoption/construction-input-contract.yaml
+  - model/operations/provider-lifecycle.yaml
+- id: PLT-006
+  label: ''
+  sources:
+  - docs/operations/provider-lifecycle.md
+  - model/operations/provider-lifecycle.yaml
+- id: PLT-007
+  label: ''
+  sources:
+  - docs/operations/provider-lifecycle.md
+  - model/operations/provider-lifecycle.yaml
+- id: PLT-008
+  label: ''
+  sources:
+  - docs/implementation/getting-started.md
+  - docs/operations/provider-lifecycle.md
+  - model/operations/provider-lifecycle.yaml
+- id: PLT-009
+  label: ''
+  sources:
+  - docs/operations/provider-lifecycle.md
+  - model/operations/provider-lifecycle.yaml
+- id: PLT-010
+  label: ''
+  sources:
+  - docs/operations/provider-lifecycle.md
+  - model/operations/provider-lifecycle.yaml
+- id: PLT-011
+  label: ''
+  sources:
+  - docs/operations/provider-lifecycle.md
+  - model/operations/provider-lifecycle.yaml
+- id: PLT-012
+  label: ''
+  sources:
+  - docs/operations/provider-lifecycle.md
+  - model/operations/provider-lifecycle.yaml
+- id: ROLE-001
+  label: ''
+  sources:
+  - model/adoption/contradiction-rules.yaml
+- id: ROLE-AA
+  label: Accreditation Authority
+  sources:
+  - docs/conformance/assessment-decision.md
+  - model/conformance/assessment-scheme.yaml
+  - model/governance/institutional-role-catalogue.yaml
+  - model/governance/responsibility-assignment.yaml
+  - model/normative/requirement-catalogue.yaml
+- id: ROLE-AP
+  label: Affected Party
+  sources:
+  - model/governance/institutional-role-catalogue.yaml
+  - model/governance/responsibility-assignment.yaml
+- id: ROLE-ASR
+  label: Assessor
+  sources:
+  - model/conformance/assessment-scheme.yaml
+  - model/governance/institutional-role-catalogue.yaml
+  - model/governance/responsibility-assignment.yaml
+  - model/normative/requirement-catalogue.yaml
+- id: ROLE-CAB
+  label: Conformity Assessment Body
+  sources:
+  - docs/conformance/assessment-decision.md
+  - docs/operations/provider-lifecycle.md
+  - model/conformance/assessment-scheme.yaml
+  - model/governance/institutional-role-catalogue.yaml
+  - model/governance/responsibility-assignment.yaml
+  - model/normative/requirement-catalogue.yaml
+  - model/operations/provider-lifecycle.yaml
+- id: ROLE-CAR
+  label: Complaints Appeals and Remedy Body
+  sources:
+  - docs/conformance/assessment-decision.md
+  - docs/rights/challenge-and-correction.md
+  - model/governance/institutional-role-catalogue.yaml
+  - model/governance/responsibility-assignment.yaml
+  - model/normative/requirement-catalogue.yaml
+- id: ROLE-FA
+  label: Framework Administrator
+  sources:
+  - docs/operations/provider-lifecycle.md
+  - model/conformance/assessment-scheme.yaml
+  - model/governance/institutional-role-catalogue.yaml
+  - model/governance/responsibility-assignment.yaml
+  - model/normative/requirement-catalogue.yaml
+  - model/operations/provider-lifecycle.yaml
+- id: ROLE-GA
+  label: Governing Authority
+  sources:
+  - model/conformance/assessment-scheme.yaml
+  - model/governance/institutional-role-catalogue.yaml
+  - model/governance/responsibility-assignment.yaml
+  - model/normative/requirement-catalogue.yaml
+  - model/project/controlled-document-register.yaml
+  - templates/profiles/profile-manifest.template.yaml
+- id: ROLE-ICA
+  label: Incident Coordination Authority
+  sources:
+  - model/governance/institutional-role-catalogue.yaml
+  - model/governance/responsibility-assignment.yaml
+  - model/normative/requirement-catalogue.yaml
+- id: ROLE-IO
+  label: Independent Oversight
+  sources:
+  - model/governance/institutional-role-catalogue.yaml
+  - model/governance/responsibility-assignment.yaml
+  - model/normative/requirement-catalogue.yaml
+- id: ROLE-PA
+  label: Profile Authority
+  sources:
+  - model/governance/institutional-role-catalogue.yaml
+  - model/governance/responsibility-assignment.yaml
+  - model/normative/requirement-catalogue.yaml
+  - model/project/controlled-document-register.yaml
+  - templates/profiles/dependency-register-entry.template.yaml
+  - templates/profiles/external-adoption-register-entry.template.yaml
+  - templates/profiles/profile-manifest.template.yaml
+- id: ROLE-RP
+  label: Relying Party
+  sources:
+  - docs/governance/authority-delegation.md
+  - docs/rights/challenge-and-correction.md
+  - model/governance/institutional-role-catalogue.yaml
+  - model/governance/responsibility-assignment.yaml
+  - model/normative/requirement-catalogue.yaml
+- id: ROLE-RTO
+  label: Registry or Trust-list Operator
+  sources:
+  - model/governance/institutional-role-catalogue.yaml
+  - model/governance/responsibility-assignment.yaml
+  - model/normative/requirement-catalogue.yaml
+- id: ROLE-SA
+  label: Supervisory Authority
+  sources:
+  - docs/implementation/getting-started.md
+  - docs/operations/provider-lifecycle.md
+  - model/conformance/assessment-scheme.yaml
+  - model/governance/institutional-role-catalogue.yaml
+  - model/governance/responsibility-assignment.yaml
+  - model/normative/requirement-catalogue.yaml
+  - model/operations/provider-lifecycle.yaml
+- id: ROLE-SP
+  label: Service Provider
+  sources:
+  - docs/rights/challenge-and-correction.md
+  - model/governance/institutional-role-catalogue.yaml
+  - model/governance/responsibility-assignment.yaml
+  - model/normative/requirement-catalogue.yaml
+- id: ROLE-STANDARDS
+  label: ''
+  sources:
+  - model/references/sector-standard-mappings/financial-services.yaml
+  - model/references/sector-standard-mappings/public-services.yaml
+- id: SB-01
+  label: Mandate to governing authority
+  sources:
+  - docs/security/attack-surfaces.md
+  - docs/security/security-boundaries.md
+  - docs/security/threat-catalogue.md
+  - model/security/attack-surfaces.yaml
+  - model/security/controls.yaml
+  - model/security/security-boundaries.yaml
+  - model/security/threats.yaml
+- id: SB-02
+  label: Governing authority to scheme operator
+  sources:
+  - docs/security/security-boundaries.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/security-boundaries.yaml
+  - model/security/threats.yaml
+- id: SB-03
+  label: Scheme operator to technical operator
+  sources:
+  - docs/security/security-boundaries.md
+  - model/security/security-boundaries.yaml
+- id: SB-04
+  label: Administrator to privileged service
+  sources:
+  - docs/security/attack-surfaces.md
+  - docs/security/security-boundaries.md
+  - model/security/attack-surfaces.yaml
+  - model/security/security-boundaries.yaml
+- id: SB-05
+  label: Participant to trust scheme
+  sources:
+  - docs/security/attack-surfaces.md
+  - docs/security/security-boundaries.md
+  - docs/security/threat-catalogue.md
+  - model/security/attack-surfaces.yaml
+  - model/security/controls.yaml
+  - model/security/security-boundaries.yaml
+  - model/security/threats.yaml
+- id: SB-06
+  label: Principal to delegate
+  sources:
+  - docs/security/attack-surfaces.md
+  - docs/security/security-boundaries.md
+  - docs/security/threat-catalogue.md
+  - model/security/attack-surfaces.yaml
+  - model/security/controls.yaml
+  - model/security/security-boundaries.yaml
+  - model/security/threats.yaml
+- id: SB-07
+  label: Issuer to holder or subject
+  sources:
+  - docs/security/attack-surfaces.md
+  - docs/security/security-boundaries.md
+  - docs/security/threat-catalogue.md
+  - model/security/attack-surfaces.yaml
+  - model/security/controls.yaml
+  - model/security/security-boundaries.yaml
+  - model/security/threats.yaml
+- id: SB-08
+  label: Holder to verifier
+  sources:
+  - docs/security/security-boundaries.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/security-boundaries.yaml
+  - model/security/threats.yaml
+- id: SB-09
+  label: Evidence source to verifier
+  sources:
+  - docs/security/attack-surfaces.md
+  - docs/security/security-boundaries.md
+  - docs/security/threat-catalogue.md
+  - model/security/attack-surfaces.yaml
+  - model/security/controls.yaml
+  - model/security/security-boundaries.yaml
+  - model/security/threats.yaml
+- id: SB-10
+  label: Registry or status service to resolver
+  sources:
+  - docs/security/attack-surfaces.md
+  - docs/security/security-boundaries.md
+  - docs/security/threat-catalogue.md
+  - model/security/attack-surfaces.yaml
+  - model/security/controls.yaml
+  - model/security/security-boundaries.yaml
+  - model/security/threats.yaml
+- id: SB-11
+  label: Policy authority to policy engine
+  sources:
+  - docs/security/attack-surfaces.md
+  - docs/security/security-boundaries.md
+  - docs/security/threat-catalogue.md
+  - model/security/attack-surfaces.yaml
+  - model/security/controls.yaml
+  - model/security/security-boundaries.yaml
+  - model/security/threats.yaml
+- id: SB-12
+  label: Verifier or resolver to decision service
+  sources:
+  - docs/security/attack-surfaces.md
+  - docs/security/security-boundaries.md
+  - docs/security/threat-catalogue.md
+  - model/security/attack-surfaces.yaml
+  - model/security/controls.yaml
+  - model/security/security-boundaries.yaml
+  - model/security/threats.yaml
+- id: SB-13
+  label: Decision service to effect executor
+  sources:
+  - docs/security/attack-surfaces.md
+  - docs/security/security-boundaries.md
+  - docs/security/threat-catalogue.md
+  - model/security/attack-surfaces.yaml
+  - model/security/controls.yaml
+  - model/security/security-boundaries.yaml
+  - model/security/threats.yaml
+- id: SB-14
+  label: Effect executor to affected party
+  sources:
+  - docs/security/security-boundaries.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/security-boundaries.yaml
+  - model/security/threats.yaml
+- id: SB-15
+  label: Production service to evidence store
+  sources:
+  - docs/security/attack-surfaces.md
+  - docs/security/security-boundaries.md
+  - docs/security/threat-catalogue.md
+  - model/security/attack-surfaces.yaml
+  - model/security/controls.yaml
+  - model/security/security-boundaries.yaml
+  - model/security/threats.yaml
+- id: SB-16
+  label: Operator to assessor or auditor
+  sources:
+  - docs/security/security-boundaries.md
+  - model/security/security-boundaries.yaml
+- id: SB-17
+  label: Domestic domain to foreign domain
+  sources:
+  - docs/security/attack-surfaces.md
+  - docs/security/security-boundaries.md
+  - docs/security/threat-catalogue.md
+  - model/security/attack-surfaces.yaml
+  - model/security/controls.yaml
+  - model/security/security-boundaries.yaml
+  - model/security/threats.yaml
+- id: SB-18
+  label: Primary service to external dependency
+  sources:
+  - docs/security/security-boundaries.md
+  - docs/security/threat-catalogue.md
+  - model/security/security-boundaries.yaml
+  - model/security/threats.yaml
+- id: SB-19
+  label: Automated agent to tool or downstream agent
+  sources:
+  - CHANGELOG.md
+  - docs/security/attack-surfaces.md
+  - docs/security/security-boundaries.md
+  - docs/security/threat-catalogue.md
+  - model/security/attack-surfaces.yaml
+  - model/security/controls.yaml
+  - model/security/security-boundaries.yaml
+  - model/security/threats.yaml
+- id: SB-20
+  label: Incident authority to emergency control
+  sources:
+  - docs/security/attack-surfaces.md
+  - docs/security/security-boundaries.md
+  - docs/security/threat-catalogue.md
+  - model/security/attack-surfaces.yaml
+  - model/security/controls.yaml
+  - model/security/security-boundaries.yaml
+  - model/security/threats.yaml
+- id: SB-21
+  label: Trust system to challenge and redress function
+  sources:
+  - docs/security/attack-surfaces.md
+  - docs/security/security-boundaries.md
+  - docs/security/threat-catalogue.md
+  - model/security/attack-surfaces.yaml
+  - model/security/controls.yaml
+  - model/security/security-boundaries.yaml
+  - model/security/threats.yaml
+- id: SB-22
+  label: Public transparency surface to society
+  sources:
+  - docs/security/attack-surfaces.md
+  - docs/security/security-boundaries.md
+  - docs/security/threat-catalogue.md
+  - model/security/attack-surfaces.yaml
+  - model/security/security-boundaries.yaml
+  - model/security/threats.yaml
+- id: SEC-001
+  label: ''
+  sources:
+  - pilots/sectors/public-services.yaml
+- id: SEC-002
+  label: ''
+  sources:
+  - pilots/sectors/financial-services.yaml
+- id: TA-01
+  label: Governance authority is legitimate and current
+  sources:
+  - docs/security/trust-assumptions.md
+  - model/security/security-foundations.yaml
+  - model/security/threats.yaml
+- id: TA-02
+  label: Administrative privilege is exercised as authorised
+  sources:
+  - docs/security/trust-assumptions.md
+  - model/security/security-foundations.yaml
+- id: TA-03
+  label: Issuers and evidence providers remain competent and uncompromised
+  sources:
+  - docs/security/trust-assumptions.md
+  - model/security/security-foundations.yaml
+- id: TA-04
+  label: Registries and status services are sufficiently current
+  sources:
+  - docs/security/trust-assumptions.md
+  - model/security/security-foundations.yaml
+- id: TA-05
+  label: Policy evaluation matches authorised policy intent
+  sources:
+  - docs/security/trust-assumptions.md
+  - model/security/security-foundations.yaml
+- id: TA-06
+  label: Cryptographic protection remains suitable
+  sources:
+  - docs/security/trust-assumptions.md
+  - model/security/security-foundations.yaml
+- id: TA-07
+  label: Technical dependencies do not exceed their declared role
+  sources:
+  - docs/security/trust-assumptions.md
+  - model/security/security-foundations.yaml
+- id: TA-08
+  label: External domains mean what the recognition mapping says they mean
+  sources:
+  - docs/security/trust-assumptions.md
+  - model/security/security-foundations.yaml
+- id: TA-09
+  label: Decision evidence remains available and trustworthy
+  sources:
+  - docs/security/trust-assumptions.md
+  - model/security/security-foundations.yaml
+- id: TA-10
+  label: Affected parties can use the redress mechanism
+  sources:
+  - docs/security/trust-assumptions.md
+  - model/security/security-foundations.yaml
+- id: TA-11
+  label: Automated agents remain within mandate
+  sources:
+  - docs/security/trust-assumptions.md
+  - model/security/security-foundations.yaml
+- id: TA-12
+  label: Security controls do not create disproportionate harm
+  sources:
+  - docs/security/trust-assumptions.md
+  - model/security/security-foundations.yaml
+- id: TB-01
+  label: Mandate to operator
+  sources:
+  - docs/architecture/trust-boundaries.md
+  - model/architecture/trust-boundaries.yaml
+- id: TB-02
+  label: Regulator to participant
+  sources:
+  - docs/architecture/trust-boundaries.md
+  - model/architecture/trust-boundaries.yaml
+- id: TB-03
+  label: Scheme to participant
+  sources:
+  - docs/architecture/trust-boundaries.md
+  - model/architecture/trust-boundaries.yaml
+- id: TB-04
+  label: Evidence provider to verifier
+  sources:
+  - docs/architecture/trust-boundaries.md
+  - model/architecture/trust-boundaries.yaml
+- id: TB-05
+  label: Principal to delegate
+  sources:
+  - docs/architecture/trust-boundaries.md
+  - model/architecture/trust-boundaries.yaml
+- id: TB-06
+  label: Decision to execution
+  sources:
+  - docs/architecture/trust-boundaries.md
+  - model/architecture/trust-boundaries.yaml
+- id: TB-07
+  label: Domestic to foreign domain
+  sources:
+  - docs/architecture/trust-boundaries.md
+  - model/architecture/trust-boundaries.yaml
+- id: TB-08
+  label: Automated agent to affected party
+  sources:
+  - docs/architecture/trust-boundaries.md
+  - model/architecture/trust-boundaries.yaml
+- id: TB-09
+  label: Evidence producer to store
+  sources:
+  - docs/architecture/trust-boundaries.md
+  - model/architecture/trust-boundaries.yaml
+- id: TB-10
+  label: Operator to assurance provider
+  sources:
+  - docs/architecture/trust-boundaries.md
+  - model/architecture/trust-boundaries.yaml
+- id: THCAT-01
+  label: Governance and mandate threats
+  sources:
+  - docs/security/threat-catalogue.md
+  - docs/security/threat-taxonomy.md
+  - model/security/threat-taxonomy.yaml
+  - model/security/threats.yaml
+- id: THCAT-02
+  label: Authority and delegation threats
+  sources:
+  - docs/security/threat-catalogue.md
+  - docs/security/threat-taxonomy.md
+  - model/security/threat-taxonomy.yaml
+  - model/security/threats.yaml
+- id: THCAT-03
+  label: Identity and authenticator threats
+  sources:
+  - docs/security/threat-catalogue.md
+  - docs/security/threat-taxonomy.md
+  - model/security/threat-taxonomy.yaml
+  - model/security/threats.yaml
+- id: THCAT-04
+  label: Credential and evidence threats
+  sources:
+  - docs/security/threat-catalogue.md
+  - docs/security/threat-taxonomy.md
+  - model/security/threat-taxonomy.yaml
+  - model/security/threats.yaml
+- id: THCAT-05
+  label: Registry and status threats
+  sources:
+  - docs/security/threat-catalogue.md
+  - docs/security/threat-taxonomy.md
+  - model/security/threat-taxonomy.yaml
+  - model/security/threats.yaml
+- id: THCAT-06
+  label: Policy and decision threats
+  sources:
+  - docs/security/threat-catalogue.md
+  - docs/security/threat-taxonomy.md
+  - model/security/threat-taxonomy.yaml
+  - model/security/threats.yaml
+- id: THCAT-07
+  label: Effect and execution threats
+  sources:
+  - docs/security/threat-catalogue.md
+  - docs/security/threat-taxonomy.md
+  - model/security/threat-taxonomy.yaml
+  - model/security/threats.yaml
+- id: THCAT-08
+  label: Operations and resilience threats
+  sources:
+  - docs/security/threat-catalogue.md
+  - docs/security/threat-taxonomy.md
+  - model/security/threat-taxonomy.yaml
+  - model/security/threats.yaml
+- id: THCAT-09
+  label: Supply-chain threats
+  sources:
+  - docs/security/threat-catalogue.md
+  - docs/security/threat-taxonomy.md
+  - model/security/threat-taxonomy.yaml
+  - model/security/threats.yaml
+- id: THCAT-10
+  label: Federation threats
+  sources:
+  - docs/security/threat-catalogue.md
+  - docs/security/threat-taxonomy.md
+  - model/security/threat-taxonomy.yaml
+  - model/security/threats.yaml
+- id: THCAT-11
+  label: Privacy and disclosure threats
+  sources:
+  - docs/security/threat-catalogue.md
+  - docs/security/threat-taxonomy.md
+  - model/security/threat-taxonomy.yaml
+  - model/security/threats.yaml
+- id: THCAT-12
+  label: Automated-agent threats
+  sources:
+  - docs/security/threat-catalogue.md
+  - docs/security/threat-taxonomy.md
+  - model/security/threat-taxonomy.yaml
+  - model/security/threats.yaml
+- id: THCAT-13
+  label: Accountability and redress threats
+  sources:
+  - docs/security/threat-catalogue.md
+  - docs/security/threat-taxonomy.md
+  - model/security/threat-taxonomy.yaml
+  - model/security/threats.yaml
+- id: THCAT-14
+  label: Systemic and concentration threats
+  sources:
+  - docs/security/threat-catalogue.md
+  - docs/security/threat-taxonomy.md
+  - model/security/threat-taxonomy.yaml
+  - model/security/threats.yaml
+- id: THR-001
+  label: Mandate fabrication
+  sources:
+  - docs/reference-scenario/end-to-end-walkthrough.md
+  - docs/reference-scenario/threat-control-trace.md
+  - docs/security/control-framework.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/threats.yaml
+- id: THR-002
+  label: Governance decision tampering
+  sources:
+  - docs/security/control-framework.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/threats.yaml
+- id: THR-003
+  label: Governance capture
+  sources:
+  - docs/security/control-framework.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/threats.yaml
+- id: THR-004
+  label: Emergency authority abuse
+  sources:
+  - docs/security/control-framework.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/threats.yaml
+- id: THR-005
+  label: Authority escalation
+  sources:
+  - docs/security/control-framework.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/threats.yaml
+- id: THR-006
+  label: Delegation scope stripping
+  sources:
+  - docs/reference-scenario/end-to-end-walkthrough.md
+  - docs/reference-scenario/threat-control-trace.md
+  - docs/security/control-framework.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/threats.yaml
+- id: THR-007
+  label: Delegation laundering
+  sources:
+  - docs/security/control-framework.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/threats.yaml
+- id: THR-008
+  label: Stale authority acceptance
+  sources:
+  - docs/security/control-framework.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/threats.yaml
+- id: THR-009
+  label: Synthetic identity enrolment
+  sources:
+  - docs/reference-scenario/end-to-end-walkthrough.md
+  - docs/reference-scenario/threat-control-trace.md
+  - docs/security/control-framework.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/threats.yaml
+- id: THR-010
+  label: Authenticator phishing
+  sources:
+  - docs/security/control-framework.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/threats.yaml
+- id: THR-011
+  label: Biometric injection
+  sources:
+  - docs/security/control-framework.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/threats.yaml
+- id: THR-012
+  label: Account recovery takeover
+  sources:
+  - docs/security/control-framework.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/threats.yaml
+- id: THR-013
+  label: Credential forgery
+  sources:
+  - docs/reference-scenario/end-to-end-walkthrough.md
+  - docs/reference-scenario/threat-control-trace.md
+  - docs/security/control-framework.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/threats.yaml
+- id: THR-014
+  label: Credential replay
+  sources:
+  - docs/security/control-framework.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/threats.yaml
+- id: THR-015
+  label: Issuer context confusion
+  sources:
+  - docs/security/control-framework.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/threats.yaml
+- id: THR-016
+  label: Evidence provenance substitution
+  sources:
+  - docs/security/control-framework.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/threats.yaml
+- id: THR-017
+  label: Registry poisoning
+  sources:
+  - docs/reference-scenario/end-to-end-walkthrough.md
+  - docs/reference-scenario/threat-control-trace.md
+  - docs/security/control-framework.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/threats.yaml
+- id: THR-018
+  label: Registry equivocation
+  sources:
+  - docs/security/control-framework.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/threats.yaml
+- id: THR-019
+  label: Revocation suppression
+  sources:
+  - docs/security/control-framework.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/threats.yaml
+- id: THR-020
+  label: Status freshness rollback
+  sources:
+  - docs/security/control-framework.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/threats.yaml
+- id: THR-021
+  label: Policy rollback
+  sources:
+  - docs/reference-scenario/end-to-end-walkthrough.md
+  - docs/reference-scenario/threat-control-trace.md
+  - docs/security/control-framework.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/threats.yaml
+- id: THR-022
+  label: Policy context mismatch
+  sources:
+  - docs/security/control-framework.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/threats.yaml
+- id: THR-023
+  label: Decision input manipulation
+  sources:
+  - docs/reference-scenario/end-to-end-walkthrough.md
+  - docs/reference-scenario/threat-control-trace.md
+  - docs/security/control-framework.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/threats.yaml
+- id: THR-024
+  label: Assurance label inflation
+  sources:
+  - docs/security/control-framework.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/threats.yaml
+- id: THR-025
+  label: Effect substitution
+  sources:
+  - docs/security/control-framework.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/threats.yaml
+- id: THR-026
+  label: Effect replay
+  sources:
+  - docs/security/control-framework.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/threats.yaml
+- id: THR-027
+  label: Unauthorised downstream action
+  sources:
+  - docs/security/control-framework.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/threats.yaml
+- id: THR-028
+  label: Affected-party invisibility
+  sources:
+  - docs/security/control-framework.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/threats.yaml
+- id: THR-029
+  label: Audit log tampering
+  sources:
+  - docs/reference-scenario/end-to-end-walkthrough.md
+  - docs/reference-scenario/threat-control-trace.md
+  - docs/security/control-framework.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/threats.yaml
+- id: THR-030
+  label: Telemetry suppression
+  sources:
+  - docs/security/control-framework.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/threats.yaml
+- id: THR-031
+  label: Denial of trust resolution
+  sources:
+  - docs/security/control-framework.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/threats.yaml
+- id: THR-032
+  label: Recovery state manipulation
+  sources:
+  - docs/security/control-framework.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/threats.yaml
+- id: THR-033
+  label: Dependency substitution
+  sources:
+  - docs/security/control-framework.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/threats.yaml
+- id: THR-034
+  label: Build pipeline compromise
+  sources:
+  - docs/security/control-framework.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/threats.yaml
+- id: THR-035
+  label: Malicious update propagation
+  sources:
+  - docs/security/control-framework.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/threats.yaml
+- id: THR-036
+  label: Federation laundering
+  sources:
+  - docs/security/control-framework.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/threats.yaml
+- id: THR-037
+  label: Cross-domain semantic substitution
+  sources:
+  - docs/security/control-framework.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/threats.yaml
+- id: THR-038
+  label: Foreign assurance transitivity
+  sources:
+  - docs/security/control-framework.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/threats.yaml
+- id: THR-039
+  label: Correlation through status checks
+  sources:
+  - docs/security/control-framework.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/threats.yaml
+- id: THR-040
+  label: Over-collection at verification
+  sources:
+  - docs/security/control-framework.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/threats.yaml
+- id: THR-041
+  label: Public disclosure re-identification
+  sources:
+  - docs/security/threat-catalogue.md
+  - model/security/threats.yaml
+- id: THR-042
+  label: Agent mandate drift
+  sources:
+  - docs/security/threat-catalogue.md
+  - model/security/threats.yaml
+- id: THR-043
+  label: Prompt or instruction injection
+  sources:
+  - docs/security/control-framework.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/threats.yaml
+- id: THR-044
+  label: Tool invocation outside scope
+  sources:
+  - docs/security/threat-catalogue.md
+  - model/security/threats.yaml
+- id: THR-045
+  label: Decision receipt suppression
+  sources:
+  - docs/security/threat-catalogue.md
+  - model/security/threats.yaml
+- id: THR-046
+  label: Grievance obstruction
+  sources:
+  - docs/reference-scenario/end-to-end-walkthrough.md
+  - docs/reference-scenario/threat-control-trace.md
+  - docs/security/control-framework.md
+  - docs/security/threat-catalogue.md
+  - model/security/controls.yaml
+  - model/security/threats.yaml
+- id: THR-047
+  label: Selective remedy enforcement
+  sources:
+  - docs/reference-scenario/end-to-end-walkthrough.md
+  - docs/reference-scenario/threat-control-trace.md
+  - docs/security/threat-catalogue.md
+  - model/security/threats.yaml
+- id: THR-048
+  label: Critical service concentration failure
+  sources:
+  - docs/security/threat-catalogue.md
+  - model/security/threats.yaml
+- id: URI-01
+  label: No multi-implementation interoperability evidence
+  sources:
+  - docs/project/detailed-delivery-roadmap.md
+  - docs/project/known-limitations.md
+  - docs/project/unresolved-issues.md
+  - model/project/maturation-register.yaml
+- id: URI-02
+  label: Quantitative thresholds require empirical calibration
+  sources:
+  - docs/project/detailed-delivery-roadmap.md
+  - docs/project/known-limitations.md
+  - docs/project/unresolved-issues.md
+  - model/project/maturation-register.yaml
+- id: URI-03
+  label: Jurisdiction profiles require competent current legal review
+  sources:
+  - CHANGELOG.md
+  - docs/project/detailed-delivery-roadmap.md
+  - docs/project/known-limitations.md
+  - docs/project/unresolved-issues.md
+  - docs/project/v0.7-readiness-checklist.md
+  - model/project/maturation-register.yaml
+  - pilots/jurisdiction/india-review-record.yaml
+  - release/RELEASE-NOTES-v0.7.0.md
+- id: URI-04
+  label: Reference catalogues are not a complete conformance suite
+  sources:
+  - CHANGELOG.md
+  - docs/implementation/getting-started.md
+  - docs/project/detailed-delivery-roadmap.md
+  - docs/project/known-limitations.md
+  - docs/project/unresolved-issues.md
+  - docs/project/v0.7-readiness-checklist.md
+  - model/evidence/evidence-inventory.yaml
+  - model/project/maturation-register.yaml
+  - release/RELEASE-NOTES-v0.7.0.md
+- id: URI-05
+  label: Privacy-preserving status and cross-domain resolution patterns need comparison
+  sources:
+  - docs/project/detailed-delivery-roadmap.md
+  - docs/project/known-limitations.md
+  - docs/project/unresolved-issues.md
+  - model/project/maturation-register.yaml
+- id: URI-06
+  label: Accessibility is not validated across downstream implementation patterns
+  sources:
+  - RELEASE_NOTES.md
+  - docs/project/detailed-delivery-roadmap.md
+  - docs/project/unresolved-issues.md
+  - docs/project/v0.6-readiness-checklist.md
+  - model/project/maturation-register.yaml
+  - release/RELEASE-NOTES-v0.6.0.md
+- id: URI-07
+  label: Standards and regulatory instruments may change after publication
+  sources:
+  - CHANGELOG.md
+  - RELEASE_NOTES.md
+  - docs/project/detailed-delivery-roadmap.md
+  - docs/project/external-framework-pattern-adoption.md
+  - docs/project/known-limitations.md
+  - docs/project/unresolved-issues.md
+  - docs/project/v0.6-readiness-checklist.md
+  - model/project/maturation-register.yaml
+  - model/releases/v0.6.0.yaml
+  - release/RELEASE-NOTES-v0.6.0.md
+- id: URI-08
+  label: Role-specific normative obligations catalogue requires release review
+  sources:
+  - CHANGELOG.md
+  - RELEASE_NOTES.md
+  - docs/project/detailed-delivery-roadmap.md
+  - docs/project/unresolved-issues.md
+  - docs/project/v0.6-readiness-checklist.md
+  - model/project/maturation-register.yaml
+  - model/releases/v0.6.0.yaml
+  - release/RELEASE-NOTES-v0.6.0.md
+- id: URI-09
+  label: No fully specified accreditation and certification operating model
+  sources:
+  - CHANGELOG.md
+  - RELEASE_NOTES.md
+  - docs/project/detailed-delivery-roadmap.md
+  - docs/project/unresolved-issues.md
+  - docs/project/v0.6-readiness-checklist.md
+  - model/project/maturation-register.yaml
+  - model/releases/v0.6.0.yaml
+  - release/RELEASE-NOTES-v0.6.0.md
+- id: URI-10
+  label: No complete provider lifecycle
+  sources:
+  - CHANGELOG.md
+  - RELEASE_NOTES.md
+  - docs/project/detailed-delivery-roadmap.md
+  - docs/project/unresolved-issues.md
+  - docs/project/v0.6-readiness-checklist.md
+  - model/project/maturation-register.yaml
+  - model/releases/v0.6.0.yaml
+  - release/RELEASE-NOTES-v0.6.0.md
+- id: URI-11
+  label: Institutional-governance operating model requires profile validation
+  sources:
+  - CHANGELOG.md
+  - RELEASE_NOTES.md
+  - docs/project/detailed-delivery-roadmap.md
+  - docs/project/unresolved-issues.md
+  - docs/project/v0.6-readiness-checklist.md
+  - model/project/maturation-register.yaml
+  - model/releases/v0.6.0.yaml
+  - release/RELEASE-NOTES-v0.6.0.md
+- id: URI-12
+  label: No complete sector-profile construction and validation method
+  sources:
+  - CHANGELOG.md
+  - RELEASE_NOTES.md
+  - docs/project/detailed-delivery-roadmap.md
+  - docs/project/external-framework-pattern-adoption.md
+  - docs/project/unresolved-issues.md
+  - docs/project/v0.6-readiness-checklist.md
+  - model/project/maturation-register.yaml
+  - model/releases/v0.6.0.yaml
+  - release/RELEASE-NOTES-v0.6.0.md
+- id: URI-13
+  label: Performance, scale and recovery requirements lack tested baselines
+  sources:
+  - docs/project/detailed-delivery-roadmap.md
+  - docs/project/unresolved-issues.md
+  - model/project/maturation-register.yaml
+- id: URI-14
+  label: Adversarial exercises and incident simulations have not been executed
+  sources:
+  - CHANGELOG.md
+  - docs/project/detailed-delivery-roadmap.md
+  - docs/project/unresolved-issues.md
+  - docs/project/v0.7-readiness-checklist.md
+  - model/evidence/evidence-inventory.yaml
+  - model/project/maturation-register.yaml
+  - release/RELEASE-NOTES-v0.7.0.md
+- id: URI-15
+  label: Internationalisation and terminology require cross-jurisdiction validation
+  sources:
+  - docs/project/detailed-delivery-roadmap.md
+  - docs/project/unresolved-issues.md
+  - model/project/maturation-register.yaml
+- id: URI-16
+  label: No assurance-equivalence model for cross-framework recognition
+  sources:
+  - docs/project/detailed-delivery-roadmap.md
+  - docs/project/known-limitations.md
+  - docs/project/unresolved-issues.md
+  - model/project/maturation-register.yaml
+- id: URI-17
+  label: No end-to-end pilot of challenge, appeal and remedy
+  sources:
+  - RELEASE_NOTES.md
+  - docs/project/detailed-delivery-roadmap.md
+  - docs/project/unresolved-issues.md
+  - docs/project/v0.6-readiness-checklist.md
+  - model/project/maturation-register.yaml
+  - release/RELEASE-NOTES-v0.6.0.md
+- id: URI-18
+  label: No complete maintenance model for standards, profiles and controlled documents
+  sources:
+  - CHANGELOG.md
+  - RELEASE_NOTES.md
+  - docs/project/detailed-delivery-roadmap.md
+  - docs/project/external-framework-pattern-adoption.md
+  - docs/project/known-limitations.md
+  - docs/project/unresolved-issues.md
+  - docs/project/v0.6-readiness-checklist.md
+  - model/project/maturation-register.yaml
+  - model/releases/v0.6.0.yaml
+  - release/RELEASE-NOTES-v0.6.0.md
+- id: URI-19
+  label: No formal process for importing proven external-framework patterns
+  sources:
+  - CHANGELOG.md
+  - RELEASE_NOTES.md
+  - docs/project/detailed-delivery-roadmap.md
+  - docs/project/external-framework-pattern-adoption.md
+  - docs/project/known-limitations.md
+  - docs/project/unresolved-issues.md
+  - docs/project/v0.6-readiness-checklist.md
+  - model/project/maturation-register.yaml
+  - model/releases/v0.6.0.yaml
+  - release/RELEASE-NOTES-v0.6.0.md
+- id: URI-20
+  label: Cross-repo compatibility bindings (TSMM, TIS) are unreviewed since ONDTF v0.2.0
+  sources:
+  - bindings/tis/ondtf-tis-profile.json
+  - bindings/tsmm/ondtf-tsmm-binding.json
+  - docs/project/unresolved-issues.md
+  - model/project/maturation-register.yaml

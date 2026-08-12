@@ -1,0 +1,7 @@
+id: PILOT-SEC-002
+sector: financial-services
+status: comparative-validation
+source_mapping: model/references/sector-standard-mappings/financial-services.yaml
+objective: Test whether the adoption method generalises to a regulated sector without converting relevance into adoption.
+evidence_required: [competent-sector-review, capability-gap-matrix, conflict-register]
+claim_boundary: No regulator or sector-authority approval is implied.

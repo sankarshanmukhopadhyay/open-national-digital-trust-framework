@@ -1,13 +1,13 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "profileId": "urn:ondtf:profile:tis:0.6.0",
-  "ondtfVersion": "0.6.0",
+  "profileId": "urn:ondtf:profile:tis:0.7.0",
+  "ondtfVersion": "0.7.0",
   "tisVersion": "0.12.0",
   "reviewStatus": {
     "status": "current",
-    "reviewedAgainstOndtfVersion": "0.6.0",
-    "reviewedOn": "2026-07-25",
-    "reviewBasis": "Mappings re-checked against the v0.6.0 core requirements, authority, assurance, profile and conformance models.",
+    "reviewedAgainstOndtfVersion": "0.7.0",
+    "reviewedOn": "2026-08-12",
+    "reviewBasis": "Re-reviewed for the v0.7.0 implementation and evaluation layer, including identifier, lifecycle, authority, evidence and conformance additions.",
     "trackedIssue": "URI-20",
     "result": "compatible-with-declared-scope"
   },

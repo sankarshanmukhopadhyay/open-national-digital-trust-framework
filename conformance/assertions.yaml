@@ -1,0 +1,39 @@
+schema_version: '1.0'
+suite_version: 0.7.0
+assertions:
+  - id: CT-AUT-001
+    title: Authentication alone cannot establish authority
+    requirement: ONDTF-AUT-001
+    class: machine-executable
+    severity: critical
+    expected: deny_when_authority_missing
+  - id: CT-AUT-002
+    title: Authority scope and validity are evaluated
+    requirement: ONDTF-AUT-002
+    class: machine-executable
+    severity: critical
+    expected: deny_outside_scope_or_time
+  - id: CT-AUT-003
+    title: Delegation cannot exceed principal authority
+    requirement: ONDTF-AUT-003
+    class: machine-executable
+    severity: critical
+    expected: deny_excess_delegation
+  - id: CT-OPS-001
+    title: Suspended provider cannot perform an active operation
+    requirement: ONDTF-AUT-002
+    class: machine-executable
+    severity: critical
+    expected: deny_when_provider_suspended
+  - id: CT-GOV-001
+    title: Emergency authority records purpose scope duration evidence and review
+    requirement: ONDTF-GOV-006
+    class: assessor-verifiable
+    severity: high
+    expected: complete_governance_record
+  - id: CT-RGT-001
+    title: Affected party can access challenge without scheme membership
+    requirement: ONDTF-ROL-007
+    class: judgement-dependent
+    severity: high
+    expected: journey_evidence_and_review

@@ -1,0 +1,11 @@
+sequenceDiagram
+  participant Principal
+  participant Delegate
+  participant RP as ROLE-RP
+  participant Status as Status service
+  Principal->>Delegate: Bounded delegation
+  Delegate->>RP: Request action + authority evidence
+  RP->>Status: Check effective status and freshness
+  Status-->>RP: Current status
+  RP->>RP: Evaluate ONDTF-AUT-002 and ONDTF-AUT-003
+  RP-->>Delegate: Permit deny or constrain + receipt

@@ -1,0 +1,13 @@
+sequenceDiagram
+  participant P as Provider
+  participant FA as ROLE-FA
+  participant CAB as ROLE-CAB
+  participant SA as ROLE-SA
+  participant R as Registry
+  P->>FA: Submit application
+  FA->>CAB: Request assessment
+  CAB-->>SA: Assessment evidence
+  SA-->>FA: Approval or rejection decision
+  FA->>R: Publish activation when conditions pass
+  SA->>R: Publish restriction or suspension decision
+  R-->>P: Effective status

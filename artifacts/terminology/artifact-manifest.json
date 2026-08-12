@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "framework_version": "0.6.0",
+  "framework_version": "0.7.0",
   "artifacts": [
     {
       "path": "artifacts/terminology/ctwg-crosswalk.json",
@@ -8,7 +8,7 @@
     },
     {
       "path": "artifacts/terminology/ondtf-glossary.json",
-      "sha256": "a54c50887c4c59795c1690d80511d22e9328769005f3eb1bfe5f6152823680ca"
+      "sha256": "6fdfec5d20c53d592e9c693bbfb8ed77ab1147c1eb2a143ae0cfc3b6fd33cdce"
     },
     {
       "path": "artifacts/terminology/ondtf-glossary.jsonld",
@@ -16,7 +16,7 @@
     },
     {
       "path": "artifacts/terminology/term-inventory.json",
-      "sha256": "328f379be2496eb8c87f8350adff88f1fc323120ebbcea114473bda687c62497"
+      "sha256": "fd0065e64b85689fc70cd8c012a433d2291c02728ccf06f8f6d6f9d97485a5c0"
     },
     {
       "path": "artifacts/terminology/terminology-quality-report.json",

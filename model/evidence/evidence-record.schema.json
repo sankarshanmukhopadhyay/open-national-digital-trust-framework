@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ONDTF Evidence Record",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "class",
+    "release",
+    "status",
+    "source",
+    "supports"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^EVD-[0-9]{4}$"
+    },
+    "title": {
+      "type": "string"
+    },
+    "class": {
+      "enum": [
+        "design",
+        "implementation",
+        "conformance",
+        "interoperability",
+        "operational",
+        "assurance",
+        "rights",
+        "recognition",
+        "governance",
+        "review"
+      ]
+    },
+    "release": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "planned",
+        "collected",
+        "reviewed",
+        "accepted",
+        "superseded"
+      ]
+    },
+    "source": {
+      "type": "object"
+    },
+    "supports": {
+      "type": "object"
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true
+}

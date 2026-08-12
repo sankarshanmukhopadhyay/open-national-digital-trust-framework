@@ -31,10 +31,13 @@ fi
 
 rm -rf "$output_dir"
 mkdir -p "$output_dir"
-for f in "${files[@]}"; do
+jobs="${MERMAID_JOBS:-4}"
+export cli_bin puppeteer_config output_dir
+printf '%s\0' "${files[@]}" | xargs -0 -n1 -P "$jobs" bash -c '
+  f="$1"
   out="$output_dir/$(basename "${f%.mmd}").svg"
   "$cli_bin" -p "$puppeteer_config" -i "$f" -o "$out" -b transparent >/dev/null
   test -s "$out"
-done
+' _
 
-echo "Validated and rendered ${#files[@]} Mermaid diagrams with Mermaid CLI $cli_version."
+echo "Validated and rendered ${#files[@]} Mermaid diagrams with Mermaid CLI $cli_version using $jobs workers."
