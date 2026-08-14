@@ -1,0 +1,65 @@
+mapping_status: analytical-inference
+scenarios:
+- name: provider-accreditation
+  purpose: Provider applies for accreditation and the regulator evaluates the service
+    against accreditation requirements.
+  expected_evidence:
+  - authority/source record
+  - applicable status evidence
+  - decision/transaction record
+  - exceptions or unresolved questions
+- name: agdis-participation
+  purpose: An accredited provider separately seeks approval to participate in AGDIS.
+  expected_evidence:
+  - authority/source record
+  - applicable status evidence
+  - decision/transaction record
+  - exceptions or unresolved questions
+- name: relying-party-use
+  purpose: An approved relying party requests identity verification and applicable
+    consent/privacy conditions are evaluated.
+  expected_evidence:
+  - authority/source record
+  - applicable status evidence
+  - decision/transaction record
+  - exceptions or unresolved questions
+- name: material-change
+  purpose: A material provider/service change triggers notification, impact review
+    and possible reassessment.
+  expected_evidence:
+  - authority/source record
+  - applicable status evidence
+  - decision/transaction record
+  - exceptions or unresolved questions
+- name: incident-and-regulatory-response
+  purpose: A material security/privacy incident triggers containment, evidence preservation,
+    notification and regulatory coordination.
+  expected_evidence:
+  - authority/source record
+  - applicable status evidence
+  - decision/transaction record
+  - exceptions or unresolved questions
+- name: suspension-and-register-propagation
+  purpose: A restriction or suspension changes authoritative status and relying decisions
+    must consume the current status.
+  expected_evidence:
+  - authority/source record
+  - applicable status evidence
+  - decision/transaction record
+  - exceptions or unresolved questions
+- name: individual-challenge-and-redress
+  purpose: An individual disputes an outcome and the profile maps support, complaint,
+    correction and remedy routes.
+  expected_evidence:
+  - authority/source record
+  - applicable status evidence
+  - decision/transaction record
+  - exceptions or unresolved questions
+- name: exit-or-expiry
+  purpose: Accreditation/participation ends and downstream status and dependency effects
+    are reconciled.
+  expected_evidence:
+  - authority/source record
+  - applicable status evidence
+  - decision/transaction record
+  - exceptions or unresolved questions

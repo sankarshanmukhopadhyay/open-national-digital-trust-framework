@@ -1,0 +1,29 @@
+mapping_status: analytical-inference
+warning: These states combine wallet, credential and transaction lifecycles for ONDTF
+  analysis. They are not presented as the canonical ARF state machine.
+states:
+- name: wallet-solution-designated-or-provided
+  external_state_label_asserted: false
+- name: wallet-unit-issued
+  external_state_label_asserted: false
+- name: wallet-active
+  external_state_label_asserted: false
+- name: credential-or-pid-provisioned
+  external_state_label_asserted: false
+- name: relying-party-request
+  external_state_label_asserted: false
+- name: user-approval-or-refusal
+  external_state_label_asserted: false
+- name: presentation-and-verification
+  external_state_label_asserted: false
+- name: status-change-or-revocation
+  external_state_label_asserted: false
+- name: wallet-suspension-or-revocation
+  external_state_label_asserted: false
+- name: migration-or-replacement
+  external_state_label_asserted: false
+transition_policy:
+  authority_required: true
+  evidence_required: true
+  effective_time_required: true
+  review_on_material_change: true

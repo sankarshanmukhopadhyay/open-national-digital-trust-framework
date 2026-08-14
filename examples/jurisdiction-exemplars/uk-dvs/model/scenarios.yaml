@@ -1,0 +1,66 @@
+mapping_status: analytical-inference
+scenarios:
+- name: cab-readiness
+  purpose: A CAB is approved and accredited before certifying against the applicable
+    scheme.
+  expected_evidence:
+  - authority/source record
+  - applicable status evidence
+  - decision/transaction record
+  - exceptions or unresolved questions
+- name: service-certification
+  purpose: A DVS service is assessed against the trust framework, role requirements
+    and applicable supplementary code.
+  expected_evidence:
+  - authority/source record
+  - applicable status evidence
+  - decision/transaction record
+  - exceptions or unresolved questions
+- name: register-entry
+  purpose: A certified service is represented on the public DVS register with explicit
+    scope.
+  expected_evidence:
+  - authority/source record
+  - applicable status evidence
+  - decision/transaction record
+  - exceptions or unresolved questions
+- name: scoped-reliance
+  purpose: A relying organisation verifies that the service and relevant use-case
+    scope are valid before reliance.
+  expected_evidence:
+  - authority/source record
+  - applicable status evidence
+  - decision/transaction record
+  - exceptions or unresolved questions
+- name: information-gateway
+  purpose: A registered DVS requests information from a public authority under the
+    statutory gateway and declared purpose.
+  expected_evidence:
+  - authority/source record
+  - applicable status evidence
+  - decision/transaction record
+  - exceptions or unresolved questions
+- name: surveillance-and-uplift
+  purpose: A service undergoes surveillance/re-evaluation and version uplift to preserve
+    certification status.
+  expected_evidence:
+  - authority/source record
+  - applicable status evidence
+  - decision/transaction record
+  - exceptions or unresolved questions
+- name: expiry-or-removal
+  purpose: Certification expiry/cessation propagates to public registration and relying
+    decisions.
+  expected_evidence:
+  - authority/source record
+  - applicable status evidence
+  - decision/transaction record
+  - exceptions or unresolved questions
+- name: complaint-or-challenge
+  purpose: An affected person challenges a verification outcome or service handling
+    and routes to the responsible organisation/regime path.
+  expected_evidence:
+  - authority/source record
+  - applicable status evidence
+  - decision/transaction record
+  - exceptions or unresolved questions

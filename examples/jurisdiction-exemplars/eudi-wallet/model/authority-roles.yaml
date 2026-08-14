@@ -1,0 +1,31 @@
+mapping_status: analytical
+roles:
+- ondtf_role: EU legislative/regulatory layer
+  external_actor: EU institutions
+  responsibility: establish common legal and implementing framework
+  basis: official-source
+- ondtf_role: Member State
+  external_actor: national competent authorities / wallet provision arrangements
+  responsibility: provide or mandate wallet solutions and govern national implementation
+  basis: official-source
+- ondtf_role: Wallet provider
+  external_actor: EUDI Wallet provider
+  responsibility: provide wallet unit conforming to applicable requirements
+  basis: official-source
+- ondtf_role: PID / attestation provider
+  external_actor: authoritative or qualified/non-qualified issuer role
+  responsibility: issue PID or attestations according to applicable trust and schema
+    rules
+  basis: official-source
+- ondtf_role: Wallet-relying party
+  external_actor: registered relying party/service provider
+  responsibility: request presentation for declared purposes and registered scope
+  basis: official-source
+- ondtf_role: Trust infrastructure / registrar
+  external_actor: national/EU trust and registration mechanisms
+  responsibility: support discovery, registration, authenticity and status
+  basis: official-source
+- ondtf_role: Wallet user
+  external_actor: natural person using wallet
+  responsibility: control presentation/use and exercise rights/remedy interests
+  basis: official-source

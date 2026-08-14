@@ -1,0 +1,66 @@
+mapping_status: analytical-inference
+scenarios:
+- name: account-registration
+  purpose: Eligible user registers and activates Singpass with required authentication
+    controls.
+  expected_evidence:
+  - authority/source record
+  - applicable status evidence
+  - decision/transaction record
+  - exceptions or unresolved questions
+- name: service-login
+  purpose: A relying service initiates Singpass authentication and consumes the authenticated
+    result.
+  expected_evidence:
+  - authority/source record
+  - applicable status evidence
+  - decision/transaction record
+  - exceptions or unresolved questions
+- name: higher-risk-verification
+  purpose: A higher-risk transaction triggers Singpass Face Verification or stronger
+    user verification.
+  expected_evidence:
+  - authority/source record
+  - applicable status evidence
+  - decision/transaction record
+  - exceptions or unresolved questions
+- name: myinfo-consent
+  purpose: User authenticates and consents to retrieval of selected personal data
+    from participating sources.
+  expected_evidence:
+  - authority/source record
+  - applicable status evidence
+  - decision/transaction record
+  - exceptions or unresolved questions
+- name: business-action
+  purpose: Individual authenticates with Singpass while Corppass supplies business-authorisation
+    context.
+  expected_evidence:
+  - authority/source record
+  - applicable status evidence
+  - decision/transaction record
+  - exceptions or unresolved questions
+- name: secure-signature
+  purpose: User signs a document with Sign with Singpass and the output is tamper-evident
+    Secure Electronic Signature evidence.
+  expected_evidence:
+  - authority/source record
+  - applicable status evidence
+  - decision/transaction record
+  - exceptions or unresolved questions
+- name: account-recovery
+  purpose: User changes device/credentials or recovers access using controlled account-management
+    flows.
+  expected_evidence:
+  - authority/source record
+  - applicable status evidence
+  - decision/transaction record
+  - exceptions or unresolved questions
+- name: support-and-challenge
+  purpose: User encounters account or transaction difficulty and follows support,
+    correction or service-specific dispute routes.
+  expected_evidence:
+  - authority/source record
+  - applicable status evidence
+  - decision/transaction record
+  - exceptions or unresolved questions

@@ -1,0 +1,28 @@
+mapping_status: analytical-inference
+warning: These are ONDTF analytical states assembled from accreditation, approval,
+  change, compliance and register concepts. They are not asserted to be statutory
+  state labels.
+states:
+- name: prospective-provider
+  external_state_label_asserted: false
+- name: accreditation-application
+  external_state_label_asserted: false
+- name: accredited
+  external_state_label_asserted: false
+- name: agdis-participation-application
+  external_state_label_asserted: false
+- name: agdis-approved
+  external_state_label_asserted: false
+- name: operating
+  external_state_label_asserted: false
+- name: material-change-review
+  external_state_label_asserted: false
+- name: suspended-or-restricted
+  external_state_label_asserted: false
+- name: withdrawn-or-expired
+  external_state_label_asserted: false
+transition_policy:
+  authority_required: true
+  evidence_required: true
+  effective_time_required: true
+  review_on_material_change: true

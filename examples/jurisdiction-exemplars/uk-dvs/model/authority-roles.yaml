@@ -1,0 +1,29 @@
+mapping_status: analytical
+roles:
+- ondtf_role: Framework authority
+  external_actor: DSIT / OfDIA
+  responsibility: publish and maintain statutory DVS trust framework; administer regime
+    functions
+  basis: official-source
+- ondtf_role: Accreditation body
+  external_actor: UKAS
+  responsibility: accredit conformity assessment bodies against the certification
+    scheme
+  basis: official-source
+- ondtf_role: Conformity assessment body
+  external_actor: OfDIA-approved and UKAS-accredited CAB
+  responsibility: assess/certify DVS services in scope
+  basis: official-source
+- ondtf_role: DVS provider
+  external_actor: registered/certified digital verification service provider
+  responsibility: operate service within certified role/supplementary-code scope
+  basis: official-source
+- ondtf_role: Public authority
+  external_actor: information source under applicable gateway conditions
+  responsibility: provide information through statutory information gateway where
+    lawful
+  basis: official-source
+- ondtf_role: User / relying organisation
+  external_actor: consumer or organisation using verification outcome
+  responsibility: use scoped service and retain challenge/redress interests
+  basis: interpreted

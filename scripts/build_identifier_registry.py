@@ -31,7 +31,19 @@ for p in ROOT.rglob('*'):
             for ident in PAT.findall(cells[0]):
                 if len(cells)>1 and cells[1] and cells[1] not in {'---','Entity','Title','Name'}:
                     labels.setdefault(ident,re.sub(r'\[([^]]+)\]\([^)]*\)',r'\1',cells[1]))
-reg=[{'id':i,'label':str(labels.get(i,'')),'sources':sorted(found[i])[:12]} for i in sorted(found)]
+def source_priority(path):
+    # Prefer canonical normative/model surfaces over informative examples when
+    # selecting the compact source list rendered to readers.
+    priorities=(
+        ('model/normative/',0),('model/requirements/',1),('model/governance/',2),
+        ('model/conformance/',3),('conformance/',4),('release/',5),
+        ('docs/core-specification/',6),('docs/',7),('model/',8),('profiles/',9),
+        ('examples/',20),
+    )
+    for prefix,rank in priorities:
+        if path.startswith(prefix): return (rank,path)
+    return (15,path)
+reg=[{'id':i,'label':str(labels.get(i,'')),'sources':sorted(found[i],key=source_priority)[:12]} for i in sorted(found)]
 (ROOT/'model/references').mkdir(parents=True,exist_ok=True)
 (ROOT/'model/references/identifier-registry.yaml').write_text(yaml.safe_dump({'schema_version':'1.0','generated':True,'identifier_classes':PREFIXES,'identifiers':reg},sort_keys=False,width=120),encoding='utf-8')
 lines=['---','layout: default','title: Identifier Registry','parent: Information Architecture','nav_order: 7','---','','# Identifier registry','','This generated registry is the universal resolution surface for controlled ONDTF identifiers. Published pages automatically link recognised identifiers here; each entry provides a human label where the canonical sources expose one and points back to repository locations in which the identifier is defined or used.','','| Identifier | Meaning | Canonical/source locations |','|---|---|---|']

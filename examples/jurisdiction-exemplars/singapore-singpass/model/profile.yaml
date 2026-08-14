@@ -1,0 +1,21 @@
+example:
+  name: Singapore Singpass
+  status: informative-worked-exemplar
+  source_cutoff: '2026-08-14'
+  normative_effect: none
+  legal_advice: false
+  government_endorsement: false
+summary: A centrally operated national digital identity and shared-service ecosystem
+  combining authentication, Myinfo consented data retrieval, Corppass business authorisation
+  context and Sign with Singpass secure electronic signatures.
+authority_basis:
+- Government Technology Agency of Singapore (GovTech) operation of Singpass and national
+  digital identity services
+- Singpass/Myinfo developer integration rules and service controls
+- Electronic Transactions Act context for Secure Electronic Signatures via Sign with
+  Singpass
+source_register: source-register.yaml
+mapping: ondtf-mapping.yaml
+roles: authority-roles.yaml
+lifecycle: lifecycle.yaml
+scenarios: scenarios.yaml

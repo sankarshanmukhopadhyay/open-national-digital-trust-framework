@@ -1,0 +1,42 @@
+source_cutoff: '2026-08-14'
+sources:
+- key: AU-SRC-ACT
+  title: Digital ID Act 2024
+  url: https://www.digitalidsystem.gov.au/what-is-digital-id/digital-id-act-2024
+  class: primary-official
+  status_at_cutoff: current
+  checked: '2026-08-14'
+- key: AU-SRC-RULES
+  title: Rules and regulations
+  url: https://www.digitalidsystem.gov.au/rules-and-regulations
+  class: primary-official
+  status_at_cutoff: current
+  checked: '2026-08-14'
+- key: AU-SRC-REGULATOR
+  title: Digital ID regulation — ACCC
+  url: https://www.accc.gov.au/by-industry/digital-platforms-and-services/digital-id-regulation
+  class: primary-official
+  status_at_cutoff: current
+  checked: '2026-08-14'
+- key: AU-SRC-SYSTEM
+  title: How the system works
+  url: https://www.digitalidsystem.gov.au/how-the-system-works
+  class: primary-official
+  status_at_cutoff: current
+  checked: '2026-08-14'
+- key: AU-SRC-PRIVACY
+  title: Interaction between Digital ID Act and Privacy Act
+  url: https://www.digitalidsystem.gov.au/digital-id-accreditation/privacy-materials-for-accredited-entities/interaction-between-the-digital-id-act-and-the-privacy-act
+  class: primary-official
+  status_at_cutoff: current
+  checked: '2026-08-14'
+- key: AU-SRC-CONSENT
+  title: Express consent obligations
+  url: https://www.digitalidsystem.gov.au/digital-id-accreditation/privacy-materials-for-accredited-entities/express-consent
+  class: primary-official
+  status_at_cutoff: current
+  checked: '2026-08-14'
+provenance_classes:
+- source-fact
+- ondtf-mapping
+- analytical-inference

@@ -1,0 +1,22 @@
+mapping_status: analytical
+roles:
+- ondtf_role: Digital ID Regulator
+  external_actor: ACCC
+  responsibility: accredit services; approve participation; compliance and enforcement
+  basis: official-source
+- ondtf_role: System Administrator
+  external_actor: Australian Government system-administration function
+  responsibility: operate/coordinate AGDIS participation and compliance referral
+  basis: official-source
+- ondtf_role: Accredited entity
+  external_actor: identity, attribute or exchange provider
+  responsibility: provide accredited Digital ID service within accreditation scope
+  basis: official-source
+- ondtf_role: Participating relying party
+  external_actor: approved service using AGDIS
+  responsibility: request identity verification within approved participation scope
+  basis: official-source
+- ondtf_role: Individual
+  external_actor: Digital ID user / affected party
+  responsibility: consent, use, support, complaint and redress interests
+  basis: official-source

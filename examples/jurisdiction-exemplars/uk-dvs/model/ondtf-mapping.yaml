@@ -1,0 +1,41 @@
+mapping_status: ondtf-mapping
+normative_effect: none
+mappings:
+- concern: statutory-framework-authority
+  external_capability: Act + statutory trust framework establish mandate and controlled
+    requirements
+  ondtf_requirements:
+  - ONDTF-GOV-001
+  - ONDTF-GOV-005
+- concern: independent-conformity-assessment
+  external_capability: OfDIA approval + UKAS accreditation + CAB certification separate
+    governance and assessment roles
+  ondtf_requirements:
+  - ONDTF-GOV-002
+  - ONDTF-ROL-003
+  - ONDTF-ROL-004
+- concern: scoped-conformance
+  external_capability: Certification applies to named service/role/supplementary-code
+    scope rather than a generic compliance claim
+  ondtf_requirements:
+  - ONDTF-CON-001
+  - ONDTF-CON-003
+- concern: public-registration-and-status
+  external_capability: Register/certification status becomes evidence for reliance
+    decisions
+  ondtf_requirements:
+  - ONDTF-EVI-003
+  - ONDTF-AUT-002
+- concern: information-gateway
+  external_capability: Public-authority information access is purpose/scope constrained
+  ondtf_requirements:
+  - ONDTF-AUT-002
+  - ONDTF-EVI-001
+- concern: version-uplift-and-expiry
+  external_capability: Evaluation and uplift rules make change/expiry consequences
+    explicit
+  ondtf_requirements:
+  - ONDTF-GOV-005
+  - ONDTF-MNT-002
+portability_rule: Removing this exemplar must not alter ONDTF core requirements or
+  conformance.

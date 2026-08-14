@@ -1,0 +1,28 @@
+mapping_status: analytical
+roles:
+- ondtf_role: Platform operator
+  external_actor: GovTech Singapore
+  responsibility: operate Singpass and associated national digital identity services
+  basis: official-source
+- ondtf_role: Individual
+  external_actor: eligible Singpass account holder
+  responsibility: authenticate, approve data sharing, sign, recover/manage account
+  basis: official-source
+- ondtf_role: Relying digital service
+  external_actor: government agency or business service integrated with Singpass
+  responsibility: request authentication and approved attributes for a declared service
+    purpose
+  basis: official-source
+- ondtf_role: Government data source
+  external_actor: participating government agency datasets
+  responsibility: provide authoritative data made available through Myinfo subject
+    to consent/integration rules
+  basis: official-source
+- ondtf_role: Business authorisation service
+  external_actor: Corppass context
+  responsibility: bind authenticated individual access to business authorisation context
+  basis: official-source
+- ondtf_role: Signing trust service
+  external_actor: Sign with Singpass / National Certification Authority context
+  responsibility: support secure electronic signature transactions
+  basis: official-source

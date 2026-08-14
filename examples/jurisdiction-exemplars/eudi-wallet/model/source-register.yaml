@@ -1,0 +1,42 @@
+source_cutoff: '2026-08-14'
+sources:
+- key: EU-SRC-REG
+  title: European Digital Identity Regulation
+  url: https://digital-strategy.ec.europa.eu/en/policies/eudi-regulation
+  class: primary-official
+  status_at_cutoff: current
+  checked: '2026-08-14'
+- key: EU-SRC-COMMISSION
+  title: European Digital Identity — European Commission
+  url: https://commission.europa.eu/topics/digital-economy-and-society/european-digital-identity_en
+  class: primary-official
+  status_at_cutoff: current
+  checked: '2026-08-14'
+- key: EU-SRC-HOME
+  title: EU Digital Identity Wallet home
+  url: https://ec.europa.eu/digital-building-blocks/sites/spaces/EUDIGITALIDENTITYWALLET/pages/694487738/EU%2BDigital%2BIdentity%2BWallet%2BHome
+  class: primary-official
+  status_at_cutoff: current
+  checked: '2026-08-14'
+- key: EU-SRC-ARF
+  title: Architecture and Reference Framework 2.0 announcement
+  url: https://ec.europa.eu/digital-building-blocks/sites/spaces/EUDIGITALIDENTITYWALLET/pages/900014854/Version%2B2.0%2Bof%2Bthe%2BArchitecture%2Band%2BReference%2BFramework%2Bnow%2Bavailable
+  class: primary-official
+  status_at_cutoff: current
+  checked: '2026-08-14'
+- key: EU-SRC-TECH
+  title: Technical Specifications
+  url: https://ec.europa.eu/digital-building-blocks/sites/spaces/EUDIGITALIDENTITYWALLET/pages/869793973/Technical%2BSpecifications
+  class: primary-official
+  status_at_cutoff: current
+  checked: '2026-08-14'
+- key: EU-SRC-RP
+  title: Wallet for service providers
+  url: https://ec.europa.eu/digital-building-blocks/sites/spaces/EUDIGITALIDENTITYWALLET/pages/881984674/Wallet%2Bfor%2Bservice%2Bproviders
+  class: primary-official
+  status_at_cutoff: current
+  checked: '2026-08-14'
+provenance_classes:
+- source-fact
+- ondtf-mapping
+- analytical-inference

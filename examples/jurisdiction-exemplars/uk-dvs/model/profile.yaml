@@ -1,0 +1,21 @@
+example:
+  name: UK DVS Trust Framework
+  status: informative-worked-exemplar
+  source_cutoff: '2026-08-14'
+  normative_effect: none
+  legal_advice: false
+  government_endorsement: false
+summary: A statutory trust-framework and independent-certification model in which
+  service roles, conformity assessment, public registration, trust-mark use, surveillance/renewal
+  and scoped claims can be expressed separately.
+authority_basis:
+- Part 2 of the Data (Use and Access) Act 2025
+- Digital Verification Services Trust Framework 1.0
+- Office for Digital Identities and Attributes (OfDIA) / Department for Science, Innovation
+  and Technology (DSIT)
+- UKAS accreditation and approved conformity assessment bodies
+source_register: source-register.yaml
+mapping: ondtf-mapping.yaml
+roles: authority-roles.yaml
+lifecycle: lifecycle.yaml
+scenarios: scenarios.yaml

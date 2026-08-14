@@ -1,0 +1,40 @@
+mapping_status: ondtf-mapping
+normative_effect: none
+mappings:
+- concern: mandate-and-authority
+  external_capability: Digital ID Act, Rules and scheme administration
+  ondtf_requirements:
+  - ONDTF-GOV-001
+  - ONDTF-GOV-002
+- concern: provider-accreditation-and-scope
+  external_capability: Accreditation and AGDIS approval are represented as separate
+    governed decisions
+  ondtf_requirements:
+  - ONDTF-GOV-003
+  - ONDTF-ROL-002
+  - ONDTF-CON-001
+- concern: status-and-registers
+  external_capability: Accredited entity / AGDIS participation status is authoritative
+    decision evidence
+  ondtf_requirements:
+  - ONDTF-EVI-003
+  - ONDTF-AUT-002
+- concern: privacy-and-consent
+  external_capability: Additional Digital ID privacy safeguards and express consent
+    become profile constraints
+  ondtf_requirements:
+  - ONDTF-SPR-001
+  - ONDTF-RED-001
+- concern: incident-and-enforcement
+  external_capability: Compliance, incident and enforcement responsibilities are explicit
+  ondtf_requirements:
+  - ONDTF-INC-001
+  - ONDTF-DEC-003
+- concern: change-and-exit
+  external_capability: Material change and termination are governed dependency/lifecycle
+    events
+  ondtf_requirements:
+  - ONDTF-MNT-002
+  - ONDTF-GOV-005
+portability_rule: Removing this exemplar must not alter ONDTF core requirements or
+  conformance.

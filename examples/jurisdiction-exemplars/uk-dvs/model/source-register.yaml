@@ -1,0 +1,42 @@
+source_cutoff: '2026-08-14'
+sources:
+- key: UK-SRC-TF
+  title: UK DVS Trust Framework 1.0
+  url: https://www.gov.uk/government/publications/uk-digital-verification-services-trust-framework-1-0/uk-digital-verification-services-trust-framework-1-0-pre-release
+  class: primary-official
+  status_at_cutoff: final-pre-effective
+  checked: '2026-08-14'
+- key: UK-SRC-LAW
+  title: DVS measures in the Data Act have come into force
+  url: https://enablingdigitalidentity.blog.gov.uk/2025/12/01/dvs-measures-in-the-data-act-have-come-into-force/
+  class: official-explanatory
+  status_at_cutoff: current
+  checked: '2026-08-14'
+- key: UK-SRC-CERT
+  title: Certification scheme guidance
+  url: https://www.gov.uk/guidance/certification-scheme-for-the-uk-digital-identity-and-attributes-trust-framework
+  class: primary-official
+  status_at_cutoff: current
+  checked: '2026-08-14'
+- key: UK-SRC-UPLIFT
+  title: 'Uplift to trust framework 1.0: pathways and timelines'
+  url: https://enablingdigitalidentity.blog.gov.uk/2026/06/10/uplift-to-1-0-trust-framework-pathways-and-timelines/
+  class: official-explanatory
+  status_at_cutoff: current
+  checked: '2026-08-14'
+- key: UK-SRC-FINAL
+  title: Final release of the 1.0 trust framework
+  url: https://enablingdigitalidentity.blog.gov.uk/2026/06/10/final-release-of-the-1-0-trust-framework-what-does-it-mean-for-you/
+  class: official-explanatory
+  status_at_cutoff: current
+  checked: '2026-08-14'
+- key: UK-SRC-GATEWAY
+  title: Information gateway
+  url: https://enablingdigitalidentity.blog.gov.uk/2026/04/13/the-information-gateway-enabling-secure-sharing-of-information-held-by-public-authorities-with-trusted-digital-verification-services/
+  class: official-explanatory
+  status_at_cutoff: current
+  checked: '2026-08-14'
+provenance_classes:
+- source-fact
+- ondtf-mapping
+- analytical-inference

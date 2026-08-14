@@ -1,0 +1,21 @@
+example:
+  name: Australia Digital ID
+  status: informative-worked-exemplar
+  source_cutoff: '2026-08-14'
+  normative_effect: none
+  legal_advice: false
+  government_endorsement: false
+summary: A regulator- and accreditation-led national digital identity environment
+  that distinguishes accreditation from approval to participate in the Australian
+  Government Digital ID System (AGDIS), with explicit privacy, security, accessibility,
+  consent, register, compliance and enforcement surfaces.
+authority_basis:
+- Digital ID Act 2024 and supporting Rules/Data Standards
+- Australian Competition and Consumer Commission (ACCC) as Digital ID Regulator
+- Australian Government Digital ID System (AGDIS) governance and system-administration
+  arrangements
+source_register: source-register.yaml
+mapping: ondtf-mapping.yaml
+roles: authority-roles.yaml
+lifecycle: lifecycle.yaml
+scenarios: scenarios.yaml

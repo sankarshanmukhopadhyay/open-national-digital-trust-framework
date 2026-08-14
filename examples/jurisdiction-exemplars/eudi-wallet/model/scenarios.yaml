@@ -1,0 +1,74 @@
+mapping_status: analytical-inference
+scenarios:
+- name: wallet-provisioning
+  purpose: A Member-State arrangement provides an eligible user with a wallet unit
+    under the applicable governance and certification framework.
+  expected_evidence:
+  - authority/source record
+  - applicable status evidence
+  - decision/transaction record
+  - exceptions or unresolved questions
+- name: pid-provisioning
+  purpose: PID is provisioned to a wallet and source/integrity/status requirements
+    are retained as evidence.
+  expected_evidence:
+  - authority/source record
+  - applicable status evidence
+  - decision/transaction record
+  - exceptions or unresolved questions
+- name: attestation-issuance
+  purpose: An attestation provider issues an attribute credential under its applicable
+    trust regime.
+  expected_evidence:
+  - authority/source record
+  - applicable status evidence
+  - decision/transaction record
+  - exceptions or unresolved questions
+- name: relying-party-registration
+  purpose: A wallet-relying party is registered with declared identity, purpose and
+    requested data categories.
+  expected_evidence:
+  - authority/source record
+  - applicable status evidence
+  - decision/transaction record
+  - exceptions or unresolved questions
+- name: cross-border-presentation
+  purpose: User presents PID/attestation to a relying party in another Member State
+    and interoperability/trust evidence is resolved.
+  expected_evidence:
+  - authority/source record
+  - applicable status evidence
+  - decision/transaction record
+  - exceptions or unresolved questions
+- name: selective-disclosure-and-consent
+  purpose: Wallet mediates a request, shows purpose/data request and allows approval/refusal
+    consistent with applicable rules.
+  expected_evidence:
+  - authority/source record
+  - applicable status evidence
+  - decision/transaction record
+  - exceptions or unresolved questions
+- name: status-or-revocation
+  purpose: Credential, provider or wallet status changes and the relying decision
+    consumes authoritative current status.
+  expected_evidence:
+  - authority/source record
+  - applicable status evidence
+  - decision/transaction record
+  - exceptions or unresolved questions
+- name: complaint-and-remedy
+  purpose: A user challenges misuse, incorrect data or an adverse outcome across potentially
+    multiple responsible parties/jurisdictions.
+  expected_evidence:
+  - authority/source record
+  - applicable status evidence
+  - decision/transaction record
+  - exceptions or unresolved questions
+- name: version-migration
+  purpose: ARF/implementing-rule or schema/profile changes trigger compatibility and
+    migration review.
+  expected_evidence:
+  - authority/source record
+  - applicable status evidence
+  - decision/transaction record
+  - exceptions or unresolved questions

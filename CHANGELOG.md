@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+### Real-world worked exemplars
+- Added source-bounded ONDTF worked exemplars for Australia Digital ID, the UK DVS Trust Framework, Singapore Singpass, and the EUDI Wallet ecosystem.
+- Each exemplar separates authoritative source facts, ONDTF mappings, and analytical inferences; includes role/lifecycle/scenario/evidence fixtures; and preserves ecosystem neutrality.
+- Added CI validation that examples remain informative, source-bounded, requirement-resolving, and non-normative.
+
 ### Added
 - explicit external-pattern portability and substitutability semantics, including five controlled implementation relationships;
 - a capability-first portability guide and three non-normative multi-ecosystem mapping examples.

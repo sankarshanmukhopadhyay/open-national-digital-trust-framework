@@ -1,0 +1,20 @@
+example:
+  name: EUDI Wallet Ecosystem
+  status: informative-worked-exemplar
+  source_cutoff: '2026-08-14'
+  normative_effect: none
+  legal_advice: false
+  government_endorsement: false
+summary: A multi-jurisdictional wallet ecosystem with EU-level legal authority, Member-State
+  implementation, wallet providers, PID/attestation issuers, relying parties, trust
+  infrastructure, certification and cross-border interoperability/recognition.
+authority_basis:
+- Regulation (EU) 2024/1183 establishing the European Digital Identity Framework
+- Commission Implementing Regulations
+- EU Digital Identity Wallet Architecture and Reference Framework (ARF)
+- Member-State authorities and designated/certified ecosystem participants
+source_register: source-register.yaml
+mapping: ondtf-mapping.yaml
+roles: authority-roles.yaml
+lifecycle: lifecycle.yaml
+scenarios: scenarios.yaml

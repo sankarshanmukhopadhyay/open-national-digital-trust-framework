@@ -1,0 +1,30 @@
+mapping_status: analytical-inference
+warning: These are ONDTF analytical states derived from certification, register, surveillance/evaluation
+  and expiry concepts; they are not a claim that the DVS framework uses this exact
+  state vocabulary.
+states:
+- name: candidate-service
+  external_state_label_asserted: false
+- name: assessment-planned
+  external_state_label_asserted: false
+- name: under-assessment
+  external_state_label_asserted: false
+- name: certified
+  external_state_label_asserted: false
+- name: registered
+  external_state_label_asserted: false
+- name: operating
+  external_state_label_asserted: false
+- name: surveillance-or-reassessment
+  external_state_label_asserted: false
+- name: certificate-expiring
+  external_state_label_asserted: false
+- name: suspended-or-ceased
+  external_state_label_asserted: false
+- name: removed-from-register
+  external_state_label_asserted: false
+transition_policy:
+  authority_required: true
+  evidence_required: true
+  effective_time_required: true
+  review_on_material_change: true

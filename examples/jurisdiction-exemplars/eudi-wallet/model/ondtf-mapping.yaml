@@ -1,0 +1,48 @@
+mapping_status: ondtf-mapping
+normative_effect: none
+mappings:
+- concern: multi-level-authority
+  external_capability: EU legal/implementing layer and Member-State implementation
+    are represented as layered authority, not one actor
+  ondtf_requirements:
+  - ONDTF-GOV-001
+  - ONDTF-GOV-002
+  - ONDTF-ROL-006
+- concern: wallet-and-provider-governance
+  external_capability: Wallet/PID/attestation roles carry distinct authority, evidence
+    and lifecycle obligations
+  ondtf_requirements:
+  - ONDTF-ROL-001
+  - ONDTF-ROL-002
+- concern: relying-party-purpose-and-scope
+  external_capability: Requests are evaluated in context of registered relying party,
+    purpose and requested data
+  ondtf_requirements:
+  - ONDTF-AUT-002
+  - ONDTF-SPR-001
+- concern: cross-border-interoperability
+  external_capability: Syntactic and technical interoperability are distinguished
+    from policy/legal recognition
+  ondtf_requirements:
+  - ONDTF-CON-003
+  - ONDTF-EVI-003
+- concern: status-and-revocation
+  external_capability: Wallet/credential/provider status is time-sensitive evidence
+    for relying decisions
+  ondtf_requirements:
+  - ONDTF-EVI-001
+  - ONDTF-EVI-003
+- concern: rights-and-cross-border-remedy
+  external_capability: User challenge/remedy may span issuer, wallet, relying party
+    and jurisdictional responsibilities
+  ondtf_requirements:
+  - ONDTF-RED-001
+  - ONDTF-ROL-006
+- concern: version-migration
+  external_capability: ARF, implementing rules, schemas and trust infrastructure are
+    controlled external dependencies
+  ondtf_requirements:
+  - ONDTF-GOV-005
+  - ONDTF-MNT-002
+portability_rule: Removing this exemplar must not alter ONDTF core requirements or
+  conformance.

@@ -1,0 +1,28 @@
+mapping_status: analytical-inference
+warning: This example intentionally models user/transaction state rather than fabricating
+  a provider-accreditation lifecycle. Service-provider integration governance is represented
+  separately in the role and dependency model.
+states:
+- name: eligible-user
+  external_state_label_asserted: false
+- name: account-registration
+  external_state_label_asserted: false
+- name: account-active
+  external_state_label_asserted: false
+- name: authentication-challenge
+  external_state_label_asserted: false
+- name: authenticated-session
+  external_state_label_asserted: false
+- name: higher-risk-face-verification
+  external_state_label_asserted: false
+- name: data-consent
+  external_state_label_asserted: false
+- name: transaction-complete
+  external_state_label_asserted: false
+- name: account-recovery-or-change
+  external_state_label_asserted: false
+transition_policy:
+  authority_required: true
+  evidence_required: true
+  effective_time_required: true
+  review_on_material_change: true

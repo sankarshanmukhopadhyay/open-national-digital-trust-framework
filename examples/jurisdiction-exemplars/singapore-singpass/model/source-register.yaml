@@ -1,0 +1,42 @@
+source_cutoff: '2026-08-14'
+sources:
+- key: SG-SRC-SINGPASS
+  title: Singpass — GovTech
+  url: https://www.tech.gov.sg/products-and-services/for-citizens/digital-services/singpass/
+  class: primary-official
+  status_at_cutoff: current
+  checked: '2026-08-14'
+- key: SG-SRC-DEVELOPER
+  title: Singpass — Government Developer Portal
+  url: https://www.developer.tech.gov.sg/products/categories/digital-identity/singpass/overview
+  class: primary-official
+  status_at_cutoff: current
+  checked: '2026-08-14'
+- key: SG-SRC-MYINFO
+  title: Myinfo — how it works
+  url: https://www.developer.tech.gov.sg/products/categories/digital-identity/myinfo/how-it-works
+  class: primary-official
+  status_at_cutoff: current
+  checked: '2026-08-14'
+- key: SG-SRC-MYINFO-GS
+  title: Myinfo — getting started
+  url: https://www.developer.tech.gov.sg/products/categories/digital-identity/myinfo/getting-started
+  class: primary-official
+  status_at_cutoff: current
+  checked: '2026-08-14'
+- key: SG-SRC-CORPPASS
+  title: Corppass overview
+  url: https://www.developer.tech.gov.sg/products/categories/digital-identity/corppass/overview
+  class: primary-official
+  status_at_cutoff: current
+  checked: '2026-08-14'
+- key: SG-SRC-SIGN
+  title: Sign with Singpass overview
+  url: https://www.developer.tech.gov.sg/products/categories/digital-identity/sign-with-singpass/overview
+  class: primary-official
+  status_at_cutoff: current
+  checked: '2026-08-14'
+provenance_classes:
+- source-fact
+- ondtf-mapping
+- analytical-inference

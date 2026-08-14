@@ -96,3 +96,8 @@ Documentation is licensed under [CC BY 4.0](LICENSE). Code and executable exampl
 ## Current release
 
 **v0.9.0 — Candidate Specification** freezes the candidate normative architecture, provides complete requirement-to-conformance coverage, adds named conformance classes, five-layer interoperability and bounded recognition/equivalence models, provisional evidence-led calibration, candidate change control, and versioned Guided Framework Construction. Candidate status is explicitly not a claim of legal approval, production certification, or externally operated interoperability.
+
+
+## Real-world worked exemplars
+
+ONDTF includes source-bounded analytical exemplars for [Australia Digital ID](examples/jurisdiction-exemplars/australia-digital-id/), the [UK DVS Trust Framework](examples/jurisdiction-exemplars/uk-dvs/), [Singapore Singpass](examples/jurisdiction-exemplars/singapore-singpass/), and the [EUDI Wallet ecosystem](examples/jurisdiction-exemplars/eudi-wallet/). These are informative portability demonstrations and do not create ecosystem dependencies in the ONDTF core.

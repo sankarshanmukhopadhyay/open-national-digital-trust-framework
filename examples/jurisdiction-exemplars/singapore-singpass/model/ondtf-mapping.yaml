@@ -1,0 +1,41 @@
+mapping_status: ondtf-mapping
+normative_effect: none
+mappings:
+- concern: operating-authority
+  external_capability: GovTech operates the national identity service and associated
+    integration surfaces
+  ondtf_requirements:
+  - ONDTF-GOV-001
+  - ONDTF-GOV-002
+- concern: authentication-vs-authority
+  external_capability: Authentication is treated as evidence of identity/session,
+    not universal authority to perform an action
+  ondtf_requirements:
+  - ONDTF-AUT-001
+  - ONDTF-AUT-002
+- concern: consented-data-retrieval
+  external_capability: Myinfo data retrieval is represented as evidence access governed
+    by authentication, consent and declared purpose
+  ondtf_requirements:
+  - ONDTF-EVI-001
+  - ONDTF-SPR-001
+- concern: business-authorisation-context
+  external_capability: Corppass illustrates separation between individual authentication
+    and organisational authority context
+  ondtf_requirements:
+  - ONDTF-AUT-002
+  - ONDTF-AUT-003
+- concern: secure-signing
+  external_capability: Sign with Singpass produces transaction evidence whose integrity
+    and legal effect are distinct from authentication alone
+  ondtf_requirements:
+  - ONDTF-EVI-001
+  - ONDTF-DEC-003
+- concern: support-and-recovery
+  external_capability: Account support/recovery and service disputes are affected-party
+    operational paths
+  ondtf_requirements:
+  - ONDTF-RED-001
+  - ONDTF-INC-001
+portability_rule: Removing this exemplar must not alter ONDTF core requirements or
+  conformance.

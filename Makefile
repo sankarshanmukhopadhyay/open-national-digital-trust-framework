@@ -20,6 +20,7 @@ validate:
 	python3 scripts/validate_operations_conformance.py
 	python3 scripts/validate_assurance_rights.py
 	python3 scripts/validate_profile_adoption.py
+	python3 scripts/validate_jurisdiction_exemplars.py
 	python3 scripts/validate_sector_standards.py
 	python3 scripts/validate_worked_profile.py
 	python3 scripts/validate_release.py
