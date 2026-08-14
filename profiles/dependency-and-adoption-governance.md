@@ -25,14 +25,19 @@ Each adoption record must state:
 
 - source and version;
 - capability or pattern being adopted;
+- required outcomes that remain stable regardless of the selected mechanism;
 - ONDTF concepts and requirements affected;
 - normative or informative status;
 - profile scope;
+- implementation relationship: substitutable, complementary, required-companion, profile-exclusive, or incompatible;
+- explicit justification where the profile prohibits alternatives;
 - safeguards against semantic drift or lock-in;
 - evidence and conformance implications;
 - review owner and trigger;
 - migration and retirement conditions.
 
-The machine-readable register is `model/profiles/external-adoption-register.yaml`. The controlled dependency catalogue is `model/profiles/dependency-register.yaml`.
+The machine-readable register is `model/profiles/external-adoption-register.yaml`. The controlled dependency catalogue is `model/profiles/dependency-register.yaml`. Relationship semantics are governed by `model/profiles/external-adoption-taxonomy.yaml`. Informative ecosystem examples are kept outside the live register so that examples cannot acquire normative effect by placement.
+
+See [Portability and External Patterns](../docs/adoption/portability-and-external-patterns.md) for the capability-first selection method.
 
 [Previous: Composition and Inheritance](profile-composition.md) · [Next: Versioning and Change](profile-versioning-and-change.md)

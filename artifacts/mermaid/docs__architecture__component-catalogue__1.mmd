@@ -1,7 +1,0 @@
-flowchart LR
-  GA[Governance Authority] -->|delegates operation| OP[Scheme Operator]
-  OP -->|publishes status| AR[Authority Registry]
-  AS[Assurance Service] -->|independently assesses| OP
-  DS[Decision Service] -->|authorises| EE[Effect Executor]
-  EE -->|execution evidence| DR[Decision Receipt Service]
-  RR[Redress Service] -->|may require correction| EE

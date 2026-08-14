@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+### Added
+- explicit external-pattern portability and substitutability semantics, including five controlled implementation relationships;
+- a capability-first portability guide and three non-normative multi-ecosystem mapping examples.
+
+### Changed
+- refined Guided Framework Construction so external capabilities and required outcomes are established before profile-specific technology selection;
+- strengthened external-adoption validation to prevent examples from acquiring live-register authority and to require justification for exclusive selections.
+
 ## [0.9.0] - 2026-08-14
 
 ### Added

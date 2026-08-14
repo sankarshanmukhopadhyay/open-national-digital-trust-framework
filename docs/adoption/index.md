@@ -27,7 +27,8 @@ flowchart LR
 5. [Generated artefacts](generated-artefacts.md)
 6. [Workshop facilitation guide](workshop-guide.md)
 7. [Model and implementation guide](guided-construction-model.md)
-8. [Worked operational profile](../../examples/worked-profile/)
+8. [Portability and external patterns](portability-and-external-patterns.md)
+9. [Worked operational profile](../../examples/worked-profile/)
 
 ## Role-based adoption paths
 

@@ -1,0 +1,35 @@
+schema_version: '1.0'
+illustrative: true
+normative_effect: none
+purpose: Demonstrate that materially different external ecosystems can satisfy the same ONDTF governance capabilities without changing the ONDTF core.
+examples:
+  - ecosystem: DTG portfolio illustration
+    mappings:
+      - external_capability: governed action / Trust Tasks
+        ondtf_pattern: EPA-013
+        relationship: substitutable
+        required_outcomes: [authority-verification, execution-time-validity, durable-decision-evidence]
+      - external_capability: credential and proof mechanisms
+        ondtf_pattern: EPA-012
+        relationship: substitutable
+        required_outcomes: [evidence-integrity, status-evaluation, privacy-appropriate-disclosure]
+  - ecosystem: EUDI-style wallet illustration
+    mappings:
+      - external_capability: wallet presentation and relying-party interaction
+        ondtf_pattern: EPA-011
+        relationship: substitutable
+        required_outcomes: [purpose-bound-authorisation, evidence-presentation, user-control]
+      - external_capability: trusted-list and status mechanisms
+        ondtf_pattern: EPA-003
+        relationship: substitutable
+        required_outcomes: [authoritative-discovery, provider-status, lifecycle-enforcement]
+  - ecosystem: OpenID-Federation-style enterprise illustration
+    mappings:
+      - external_capability: trust-chain and metadata-policy evaluation
+        ondtf_pattern: EPA-009
+        relationship: substitutable
+        required_outcomes: [authority-resolution, bounded-recognition, policy-evaluation]
+      - external_capability: federation evidence and trust marks
+        ondtf_pattern: EPA-001
+        relationship: complementary
+        required_outcomes: [assessment-evidence, assurance-signalling, auditable-reliance]

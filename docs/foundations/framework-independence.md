@@ -31,6 +31,14 @@ Conformance is assessed against observable capabilities, declared profiles, and 
 
 A jurisdiction or sector profile may select a specific external model or schema where local interoperability requires it. That selection applies only to the declared profile and does not become a universal ONDTF dependency.
 
+## Portability and substitutability
+
+Framework independence is not only the absence of mandatory external dependencies. ONDTF also requires profile-selected mechanisms to remain replaceable where the required governance capability and outcomes can be preserved. External selections therefore declare whether they are substitutable, complementary, required companions, profile-exclusive, or incompatible.
+
+A profile may constrain a mechanism for an interoperability, legal, policy, assurance, or operational reason, but that exclusivity must be explicit and justified. It does not elevate the selected mechanism into a universal ONDTF dependency.
+
+The governed method is described in [Portability and External Patterns](../adoption/portability-and-external-patterns.md).
+
 ## Optional compatibility resources
 
 [TSMM](https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model) and [TIS](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas) remain useful reference resources:

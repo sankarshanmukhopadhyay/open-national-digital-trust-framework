@@ -1081,6 +1081,7 @@ identifiers:
   label: Independent conformity assessment
   sources:
   - docs/project/external-framework-pattern-adoption.md
+  - examples/external-pattern-mappings/mapping-examples.yaml
   - model/project/maturation-register.yaml
 - id: EPA-002
   label: Provider accreditation and certification lifecycle
@@ -1091,6 +1092,7 @@ identifiers:
   label: Supervisory authority, public register and recognition status
   sources:
   - docs/project/external-framework-pattern-adoption.md
+  - examples/external-pattern-mappings/mapping-examples.yaml
   - model/project/maturation-register.yaml
 - id: EPA-004
   label: Controlled governance document set
@@ -1121,6 +1123,7 @@ identifiers:
   label: Cross-framework recognition profile
   sources:
   - docs/project/external-framework-pattern-adoption.md
+  - examples/external-pattern-mappings/mapping-examples.yaml
   - model/project/maturation-register.yaml
 - id: EPA-010
   label: Accessible challenge, appeal and remedy operations
@@ -1131,16 +1134,19 @@ identifiers:
   label: Consent and authorisation evidence for data exchange
   sources:
   - docs/project/external-framework-pattern-adoption.md
+  - examples/external-pattern-mappings/mapping-examples.yaml
   - model/project/maturation-register.yaml
 - id: EPA-012
   label: Privacy-preserving status and registry resolution
   sources:
   - docs/project/external-framework-pattern-adoption.md
+  - examples/external-pattern-mappings/mapping-examples.yaml
   - model/project/maturation-register.yaml
 - id: EPA-013
   label: Executable conformance fixtures
   sources:
   - docs/project/external-framework-pattern-adoption.md
+  - examples/external-pattern-mappings/mapping-examples.yaml
   - model/project/maturation-register.yaml
 - id: EPA-014
   label: Interoperability and scale test events

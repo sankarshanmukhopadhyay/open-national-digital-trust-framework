@@ -1,8 +1,0 @@
-stateDiagram-v2
-  [*] --> proposed
-  proposed --> active: authority established
-  active --> suspended: temporary constraint
-  suspended --> active: reinstated
-  active --> revoked: revocation effective
-  active --> expired: validity ends
-  suspended --> revoked: revocation effective

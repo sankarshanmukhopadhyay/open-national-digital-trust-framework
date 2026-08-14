@@ -1,8 +1,0 @@
-flowchart TD
-  S[Assessment scope] --> E[Collect evidence]
-  E --> A[Evaluate assertions]
-  A --> N{Nonconformity?}
-  N -->|no| D[Scoped conformance decision]
-  N -->|yes| C[Corrective action]
-  C --> R[Reassessment]
-  R --> D

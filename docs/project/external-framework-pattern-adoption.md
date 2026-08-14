@@ -50,6 +50,14 @@ flowchart LR
 8. **Protect ONDTF’s architectural through-line.** Imported patterns must strengthen the connection between identity, authority, evidence, decision, effect, accountability and remedy.
 9. **Avoid false legal or conformity claims.** An architectural mapping does not create statutory accreditation, qualified status, recognition or certification.
 10. **Govern change.** A pattern must have an owner, target release, status, dependencies and migration path.
+11. **Make substitutability explicit.** Where multiple mechanisms can satisfy the same ONDTF capability and outcomes, adoption records should preserve that choice rather than imply ecosystem exclusivity.
+12. **Justify exclusivity.** A profile-exclusive mechanism must identify the competent authority, constraint and evidence that make alternatives unsuitable for that profile.
+
+## Portability boundary
+
+The pattern-adoption process does not create an integration layer between ONDTF and a named ecosystem. External mechanisms attach below an ONDTF governance capability and pattern. Removing an external example must leave the core model complete.
+
+Implementation relationship semantics are governed in `model/profiles/external-adoption-taxonomy.yaml`. The live adoption register records actual profile decisions; examples remain separate and informative. See [Portability and External Patterns](../adoption/portability-and-external-patterns.md).
 
 ## Source-framework taxonomy
 

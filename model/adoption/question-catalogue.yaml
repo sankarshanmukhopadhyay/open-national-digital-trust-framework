@@ -126,15 +126,23 @@ questions:
   - PAT-CON-003
 - id: GFC-TEC-001
   stage: 7
-  prompt: Which identifiers, credentials, protocols, registries, status mechanisms, and cryptographic dependencies are permitted?
+  prompt: Which external capabilities are required, and which identifiers, credentials, protocols, registries, status mechanisms,
+    and cryptographic dependencies satisfy those capabilities for this profile?
   response_type: dependency_list
   required: true
   maps_to:
+  - capabilities
   - dependencies
   review:
   - technical
   - security
   - privacy
+  - governance
+  selection_sequence:
+  - define-required-capabilities
+  - state-required-outcomes
+  - select-implementation-mechanisms
+  - record-substitutability-or-justified-exclusivity
 - id: GFC-RGT-001
   stage: 8
   prompt: Which affected-party classes, notice, explanation, challenge, appeal, remedy, accessibility, and alternative-channel

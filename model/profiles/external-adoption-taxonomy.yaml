@@ -1,0 +1,29 @@
+version: 1
+status: active
+implementation_relationships:
+  - id: substitutable
+    meaning: Multiple external mechanisms may satisfy the same ONDTF capability and required outcomes.
+    alternatives_permitted: true
+    exclusivity_requires_justification: false
+  - id: complementary
+    meaning: The mechanism supplies a capability that is intended to operate alongside another selected mechanism.
+    alternatives_permitted: true
+    exclusivity_requires_justification: false
+  - id: required-companion
+    meaning: The mechanism is selected only together with a declared companion capability or dependency.
+    alternatives_permitted: false
+    exclusivity_requires_justification: true
+  - id: profile-exclusive
+    meaning: The profile authority has constrained the profile to this mechanism for a documented interoperability, legal, policy, or operational reason.
+    alternatives_permitted: false
+    exclusivity_requires_justification: true
+  - id: incompatible
+    meaning: The mechanism cannot satisfy the mapped ONDTF capability within the declared profile constraints.
+    alternatives_permitted: false
+    exclusivity_requires_justification: true
+rules:
+  - capability-before-mechanism
+  - no-core-privilege
+  - explicit-normative-effect
+  - non-weakening
+  - change-isolation

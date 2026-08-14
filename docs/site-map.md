@@ -32,6 +32,7 @@ This page provides publication coverage for the complete documentation set.
 - [International interoperability]({{ '/docs/international/' | relative_url }})
 - [Adoption]({{ '/docs/adoption/' | relative_url }})
   - [Guided Framework Construction]({{ '/docs/adoption/guided-framework-construction.html' | relative_url }})
+  - [Portability and External Patterns]({{ '/docs/adoption/portability-and-external-patterns.html' | relative_url }})
   - [Construction Stages]({{ '/docs/adoption/construction-stages.html' | relative_url }})
   - [Contradiction and Completeness]({{ '/docs/adoption/contradiction-and-completeness.html' | relative_url }})
   - [Generated Artefacts]({{ '/docs/adoption/generated-artefacts.html' | relative_url }})

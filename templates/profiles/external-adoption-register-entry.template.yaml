@@ -5,11 +5,20 @@ source_family: external-framework
 source_reference: <authoritative source URI>
 source_version: <version or publication date>
 capability: <bounded capability being adopted>
+required_outcomes: []
 ondtf_mapping: []
 destination_profiles: []
 status: identified
 normative_effect: informative
-safeguards: []
+implementation_relationship:
+  type: substitutable
+  alternatives_permitted: true
+  exclusivity_justification: null
+  companion_capabilities: []
+selection_constraints: []
+safeguards:
+  - preserve-ondtf-core-independence
+  - prevent-silent-requirement-weakening
 evidence_required: []
 review_owner: ROLE-PA
 review_triggers:
