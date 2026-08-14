@@ -1,0 +1,37 @@
+schema_version: '1.0'
+framework_version: 0.9.0
+freeze_status: candidate
+freeze_effective: '2026-08-14'
+artefacts:
+- id: NCP-001
+  path: model/normative/requirement-catalogue.yaml
+  classification: core-normative
+  stability: candidate-frozen
+- id: NCP-002
+  path: model/governance/institutional-role-catalogue.yaml
+  classification: core-normative
+  stability: candidate-frozen
+- id: NCP-003
+  path: model/operations/provider-lifecycle.yaml
+  classification: core-normative
+  stability: candidate-frozen
+- id: NCP-004
+  path: model/conformance/conformance-classes.yaml
+  classification: conformance-normative
+  stability: candidate-frozen
+- id: NCP-005
+  path: model/interoperability/interoperability-profile.yaml
+  classification: profile-normative
+  stability: candidate-profile
+- id: NCP-006
+  path: model/recognition/recognition-profile.yaml
+  classification: example
+  stability: candidate-example
+- id: NCP-007
+  path: reference-implementation/
+  classification: implementation-evidence
+  stability: informative
+- id: NCP-008
+  path: docs/implementation/
+  classification: informative-guidance
+  stability: maintained

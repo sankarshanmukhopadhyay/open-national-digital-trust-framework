@@ -1,0 +1,8 @@
+flowchart TD
+  R[Recognition request] --> A[Authority and legal/policy basis]
+  A --> E[Dimension-by-dimension equivalence]
+  E --> S[Scope and exclusions]
+  S --> M[Monitoring and incident obligations]
+  M --> D{Decision}
+  D -->|recognise| L[Recognition lifecycle]
+  D -->|reject| X[Recorded reasons]

@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "event_id": "INT-EVT-001",
+  "status": "passed-internal-cross-codebase",
+  "results": [
+    {
+      "id": "INT-001",
+      "scenario": "positive",
+      "expected": "permit",
+      "implementation_a": "permit",
+      "implementation_b": "permit",
+      "pass": true
+    },
+    {
+      "id": "INT-002",
+      "scenario": "suspended-provider",
+      "expected": "deny",
+      "implementation_a": "deny",
+      "implementation_b": "deny",
+      "pass": true
+    },
+    {
+      "id": "INT-003",
+      "scenario": "revoked-authority",
+      "expected": "deny",
+      "implementation_a": "deny",
+      "implementation_b": "deny",
+      "pass": true
+    },
+    {
+      "id": "INT-004",
+      "scenario": "stale-status",
+      "expected": "deny",
+      "implementation_a": "deny",
+      "implementation_b": "deny",
+      "pass": true
+    },
+    {
+      "id": "INT-005",
+      "scenario": "scope-mismatch",
+      "expected": "deny",
+      "implementation_a": "deny",
+      "implementation_b": "deny",
+      "pass": true
+    }
+  ],
+  "limitations": [
+    "Implementation B is independently coded within this repository, not independently operated by an external team."
+  ]
+}

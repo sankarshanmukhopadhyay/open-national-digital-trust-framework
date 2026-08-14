@@ -1,15 +1,14 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "bindingId": "urn:ondtf:binding:tsmm:0.7.0",
-  "ondtfVersion": "0.7.0",
+  "bindingId": "urn:ondtf:binding:tsmm:0.9.0",
+  "ondtfVersion": "0.9.0",
   "tsmmVersion": "0.23.0",
   "reviewStatus": {
     "status": "current",
-    "reviewedAgainstOndtfVersion": "0.7.0",
-    "reviewedOn": "2026-08-12",
-    "reviewBasis": "Re-reviewed for the v0.7.0 implementation and evaluation layer, including identifier, lifecycle, authority, evidence and conformance additions.",
-    "trackedIssue": "URI-20",
-    "result": "compatible-with-declared-scope"
+    "reviewedAgainstOndtfVersion": "0.9.0",
+    "reviewedOn": "2026-08-14",
+    "reviewBasis": "Candidate specification compatibility review against stable normative identifiers, conformance classes and current interoperability/recognition models.",
+    "result": "compatible-with-candidate-with-profile-specific-limitations"
   },
   "sourceRepository": "https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model",
   "treatments": [

@@ -1,0 +1,14 @@
+schema_version: '1.0'
+framework_version: 0.9.0
+status: open-for-external-review
+comments:
+- id: REV-001
+  class: governance
+  source: internal candidate preparation
+  summary: External independent review evidence is not yet available in-repository.
+  disposition: retain-as-v1-entrance-evidence
+  status: open
+  affected:
+  - URI-01
+  - URI-03
+  - URI-15

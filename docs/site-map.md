@@ -206,3 +206,8 @@ Machine-readable bindings, model records, governance registers, and validation e
 - [Rights Evidence](rights/rights-evidence.md)
 
 - [Worked operational profile](../examples/worked-profile/)
+
+- [Interoperability and Recognition](interoperability/index.md)
+- [Candidate Normative Inventory](normative/candidate-normative-inventory.md)
+- [Candidate Review Programme](project/candidate-review-programme.md)
+- [v1.0.0 Entrance Criteria](project/v1-readiness.md)

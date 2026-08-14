@@ -2,6 +2,23 @@
 
 ## [Unreleased]
 
+## [0.9.0] - 2026-08-14
+
+### Added
+- candidate normative inventory, freeze and controlled-change governance;
+- complete 28/28 requirement-to-conformance assertion coverage and six named conformance classes;
+- five-layer interoperability profile, internal cross-codebase harness and recognition/equivalence model;
+- provisional calibration register, candidate adversarial evidence and privacy/freshness comparison;
+- Guided Construction versioning, migration controls and a second construction package;
+- candidate review protocol, v1.0.0 entrance criteria and release evidence inventories.
+
+### Changed
+- advanced project maturity to Candidate Specification;
+- promoted the stable normative requirement catalogue to active candidate status without renumbering identifiers;
+- re-reviewed TSMM and TIS bindings against v0.9.0;
+- bounded external evidence gaps rather than treating repository-local simulations as independent deployment proof.
+
+
 ## [0.7.0] - 2026-08-12
 
 ### Added

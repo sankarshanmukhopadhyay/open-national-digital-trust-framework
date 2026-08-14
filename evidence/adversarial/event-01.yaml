@@ -1,0 +1,25 @@
+schema_version: '1.0'
+event_id: ADV-EVT-001
+status: executed-internal-tabletop
+executed_at: '2026-08-14'
+exercises:
+- id: ADV-101
+  title: Delayed suspension propagation
+  expected_control: freshness enforcement
+  observed: stale record rejected by harness
+  result: control-observed
+  test_added: INT-004
+- id: ADV-102
+  title: Authentic but revoked authority
+  expected_control: revocation evaluation
+  observed: both implementations deny
+  result: control-observed
+  test_added: INT-003
+- id: ADV-103
+  title: Profile downgrade attempt
+  expected_control: explicit profile version handling
+  observed: candidate schema requires profile identity; external downgrade negotiation not yet tested
+  result: partial
+  residual_risk: external negotiation evidence pending
+limitations:
+- Internal exercise; does not substitute for an external adversarial event or production penetration test.

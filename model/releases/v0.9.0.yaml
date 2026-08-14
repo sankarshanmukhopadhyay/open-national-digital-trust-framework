@@ -1,0 +1,44 @@
+schema_version: 1.0.0
+framework_version: 0.9.0
+release_label: Candidate Specification
+release_date: '2026-08-14'
+status: candidate_release_with_disclosed_external_evidence_limits
+capability_domains:
+  normative_core_freeze: delivered
+  complete_requirement_traceability: delivered
+  candidate_conformance_classes: delivered
+  candidate_conformance_suite: delivered
+  guided_construction_candidate_hardening: delivered
+  second_construction_package: delivered
+  interoperability_profile: delivered
+  cross_codebase_interoperability_matrix: delivered_internal
+  recognition_profile_and_equivalence: delivered_candidate_example
+  quantitative_calibration: provisional_internal_evidence
+  adversarial_exercises: delivered_internal
+  candidate_change_control: delivered
+  identifier_resolution: delivered
+  external_independent_implementation: pending_external_evidence
+  competent_jurisdiction_review: pending_external_evidence
+  external_candidate_review: open_review_window
+claim_boundary:
+- Candidate means the normative surface is stable, traceable and reviewable; it does not assert legal approval, production
+  certification or external interoperability deployment.
+- Repository-local implementation B and test-event evidence do not substitute for independently operated external implementation
+  evidence.
+- Recognition example REC-001 is illustrative and creates no legal recognition.
+quality_gates:
+- repository_validation
+- candidate_specification_validation
+- interoperability_candidate_validation
+- identifier_resolution
+- normative_governance
+- maturation_governance
+- mermaid_source_and_render
+- jekyll_build
+- built_site_link_validation
+release_notes: release/RELEASE-NOTES-v0.9.0.md
+manifest: release/MANIFEST-v0.9.0.md
+evidence_inventory: release/EVIDENCE-INVENTORY-v0.9.0.md
+requirements_inventory: release/REQUIREMENTS-INVENTORY-v0.9.0.md
+candidate_coverage: release/CONFORMANCE-COVERAGE-v0.9.0.md
+deviation_register: release/DEVIATION-REGISTER-v0.9.0.md

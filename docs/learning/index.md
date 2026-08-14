@@ -26,6 +26,13 @@ Use this section when you want to **understand the framework in a deliberate seq
 | [Assurance and assessment path](assurance.md) | Auditors, assessors, accreditation teams | 2–3 hours | Understand assurance claims, evidence, conformance, and continuous review |
 | [Jurisdiction profile path](jurisdiction.md) | National programme teams | 2–3 hours | Understand how to specialise ONDTF without weakening the core |
 | [Framework construction path](framework-construction.md) | DTF design and facilitation teams | 3–5 hours | Construct and validate a governed DTF profile package |
+| [Framework authority path](framework-authority.md) | Framework authorities | 90 minutes | Govern mandate, change and candidate release decisions |
+| [Profile author path](profile-author.md) | Profile authors | 2 hours | Specialise ONDTF without weakening the core |
+| [Provider path](provider.md) | Providers and service operators | 2 hours | Understand lifecycle, obligations and conformance |
+| [Relying party path](relying-party.md) | Decision and relying services | 90 minutes | Evaluate authority, evidence, status and accountability |
+| [Rights and remedy operator path](rights-remedy.md) | Complaint, appeal and remedy operators | 2 hours | Run affected-party processes and evidence |
+| [Interoperability participant path](interoperability-participant.md) | Implementers and test-event teams | 2 hours | Test five-layer interoperability and mismatch semantics |
+| [Candidate reviewer path](reviewer.md) | Specification and governance reviewers | 2 hours | Review normative coverage, limitations and change controls |
 
 ## How to use the site
 
@@ -55,4 +62,21 @@ flowchart LR
   AS --> REF
   JP --> REF
   FC --> REF
+```
+
+## Candidate review roles
+
+The candidate release adds explicit entry routes for framework authority, profile author, provider, relying party, rights/remedy operator, interoperability participant and reviewer roles. Implementers and assessors continue to use their existing dedicated paths.
+
+```mermaid
+flowchart TD
+  C[v0.9.0 Candidate Specification] --> FA[Framework authority]
+  C --> PA[Profile author]
+  C --> IM[Implementer]
+  C --> PR[Provider]
+  C --> AS[Assessor]
+  C --> RP[Relying party]
+  C --> RR[Rights and remedy]
+  C --> IP[Interoperability participant]
+  C --> RV[Reviewer]
 ```

@@ -1,0 +1,441 @@
+{
+  "framework_id": "CANDIDATE-DTF-B",
+  "generated_at": "2026-08-14T00:00:00Z",
+  "responses": [
+    {
+      "question_id": "GFC-SCP-001",
+      "state": "selected",
+      "value": {
+        "decision": "candidate-example",
+        "question": "GFC-SCP-001"
+      },
+      "provenance": {
+        "recorded_by": "Candidate independent-construction simulation",
+        "recorded_at": "2026-08-14T00:00:00Z",
+        "authority_reference": "SIMULATION-NOT-ADOPTION-AUTHORITY"
+      },
+      "reviews": [
+        {
+          "type": "governance",
+          "status": "not_required",
+          "reviewer": "simulation"
+        },
+        {
+          "type": "stakeholder",
+          "status": "not_required",
+          "reviewer": "simulation"
+        }
+      ]
+    },
+    {
+      "question_id": "GFC-SCP-002",
+      "state": "selected",
+      "value": {
+        "decision": "candidate-example",
+        "question": "GFC-SCP-002"
+      },
+      "provenance": {
+        "recorded_by": "Candidate independent-construction simulation",
+        "recorded_at": "2026-08-14T00:00:00Z",
+        "authority_reference": "SIMULATION-NOT-ADOPTION-AUTHORITY"
+      },
+      "reviews": [
+        {
+          "type": "governance",
+          "status": "not_required",
+          "reviewer": "simulation"
+        },
+        {
+          "type": "risk",
+          "status": "not_required",
+          "reviewer": "simulation"
+        },
+        {
+          "type": "stakeholder",
+          "status": "not_required",
+          "reviewer": "simulation"
+        }
+      ]
+    },
+    {
+      "question_id": "GFC-AUT-001",
+      "state": "selected",
+      "value": {
+        "decision": "candidate-example",
+        "question": "GFC-AUT-001"
+      },
+      "provenance": {
+        "recorded_by": "Candidate independent-construction simulation",
+        "recorded_at": "2026-08-14T00:00:00Z",
+        "authority_reference": "SIMULATION-NOT-ADOPTION-AUTHORITY"
+      },
+      "reviews": [
+        {
+          "type": "legal",
+          "status": "not_required",
+          "reviewer": "simulation"
+        },
+        {
+          "type": "governance",
+          "status": "not_required",
+          "reviewer": "simulation"
+        }
+      ]
+    },
+    {
+      "question_id": "GFC-AUT-002",
+      "state": "selected",
+      "value": {
+        "decision": "candidate-example",
+        "question": "GFC-AUT-002"
+      },
+      "provenance": {
+        "recorded_by": "Candidate independent-construction simulation",
+        "recorded_at": "2026-08-14T00:00:00Z",
+        "authority_reference": "SIMULATION-NOT-ADOPTION-AUTHORITY"
+      },
+      "reviews": [
+        {
+          "type": "legal",
+          "status": "not_required",
+          "reviewer": "simulation"
+        },
+        {
+          "type": "governance",
+          "status": "not_required",
+          "reviewer": "simulation"
+        }
+      ]
+    },
+    {
+      "question_id": "GFC-ROL-001",
+      "state": "selected",
+      "value": {
+        "decision": "candidate-example",
+        "question": "GFC-ROL-001"
+      },
+      "provenance": {
+        "recorded_by": "Candidate independent-construction simulation",
+        "recorded_at": "2026-08-14T00:00:00Z",
+        "authority_reference": "SIMULATION-NOT-ADOPTION-AUTHORITY"
+      },
+      "reviews": [
+        {
+          "type": "governance",
+          "status": "not_required",
+          "reviewer": "simulation"
+        },
+        {
+          "type": "assurance",
+          "status": "not_required",
+          "reviewer": "simulation"
+        }
+      ]
+    },
+    {
+      "question_id": "GFC-LCY-001",
+      "state": "selected",
+      "value": {
+        "pattern": "PAT-LCY-001"
+      },
+      "provenance": {
+        "recorded_by": "Candidate independent-construction simulation",
+        "recorded_at": "2026-08-14T00:00:00Z",
+        "authority_reference": "SIMULATION-NOT-ADOPTION-AUTHORITY"
+      },
+      "reviews": [
+        {
+          "type": "operations",
+          "status": "not_required",
+          "reviewer": "simulation"
+        },
+        {
+          "type": "governance",
+          "status": "not_required",
+          "reviewer": "simulation"
+        }
+      ]
+    },
+    {
+      "question_id": "GFC-ASR-001",
+      "state": "selected",
+      "value": {
+        "decision": "candidate-example",
+        "question": "GFC-ASR-001"
+      },
+      "provenance": {
+        "recorded_by": "Candidate independent-construction simulation",
+        "recorded_at": "2026-08-14T00:00:00Z",
+        "authority_reference": "SIMULATION-NOT-ADOPTION-AUTHORITY"
+      },
+      "reviews": [
+        {
+          "type": "assurance",
+          "status": "not_required",
+          "reviewer": "simulation"
+        },
+        {
+          "type": "risk",
+          "status": "not_required",
+          "reviewer": "simulation"
+        }
+      ]
+    },
+    {
+      "question_id": "GFC-ASR-002",
+      "state": "selected",
+      "value": {
+        "decision": "candidate-example",
+        "question": "GFC-ASR-002"
+      },
+      "provenance": {
+        "recorded_by": "Candidate independent-construction simulation",
+        "recorded_at": "2026-08-14T00:00:00Z",
+        "authority_reference": "SIMULATION-NOT-ADOPTION-AUTHORITY"
+      },
+      "reviews": [
+        {
+          "type": "assurance",
+          "status": "not_required",
+          "reviewer": "simulation"
+        },
+        {
+          "type": "risk",
+          "status": "not_required",
+          "reviewer": "simulation"
+        }
+      ]
+    },
+    {
+      "question_id": "GFC-CON-001",
+      "state": "selected",
+      "value": {
+        "pattern": "PAT-CON-001"
+      },
+      "provenance": {
+        "recorded_by": "Candidate independent-construction simulation",
+        "recorded_at": "2026-08-14T00:00:00Z",
+        "authority_reference": "SIMULATION-NOT-ADOPTION-AUTHORITY"
+      },
+      "reviews": [
+        {
+          "type": "assurance",
+          "status": "not_required",
+          "reviewer": "simulation"
+        },
+        {
+          "type": "governance",
+          "status": "not_required",
+          "reviewer": "simulation"
+        }
+      ]
+    },
+    {
+      "question_id": "GFC-TEC-001",
+      "state": "selected",
+      "value": {
+        "decision": "candidate-example",
+        "question": "GFC-TEC-001"
+      },
+      "provenance": {
+        "recorded_by": "Candidate independent-construction simulation",
+        "recorded_at": "2026-08-14T00:00:00Z",
+        "authority_reference": "SIMULATION-NOT-ADOPTION-AUTHORITY"
+      },
+      "reviews": [
+        {
+          "type": "technical",
+          "status": "not_required",
+          "reviewer": "simulation"
+        },
+        {
+          "type": "security",
+          "status": "not_required",
+          "reviewer": "simulation"
+        },
+        {
+          "type": "privacy",
+          "status": "not_required",
+          "reviewer": "simulation"
+        }
+      ]
+    },
+    {
+      "question_id": "GFC-RGT-001",
+      "state": "selected",
+      "value": {
+        "decision": "candidate-example",
+        "question": "GFC-RGT-001"
+      },
+      "provenance": {
+        "recorded_by": "Candidate independent-construction simulation",
+        "recorded_at": "2026-08-14T00:00:00Z",
+        "authority_reference": "SIMULATION-NOT-ADOPTION-AUTHORITY"
+      },
+      "reviews": [
+        {
+          "type": "rights",
+          "status": "not_required",
+          "reviewer": "simulation"
+        },
+        {
+          "type": "accessibility",
+          "status": "not_required",
+          "reviewer": "simulation"
+        },
+        {
+          "type": "legal",
+          "status": "not_required",
+          "reviewer": "simulation"
+        },
+        {
+          "type": "stakeholder",
+          "status": "not_required",
+          "reviewer": "simulation"
+        }
+      ]
+    },
+    {
+      "question_id": "GFC-RSK-001",
+      "state": "selected",
+      "value": {
+        "decision": "candidate-example",
+        "question": "GFC-RSK-001"
+      },
+      "provenance": {
+        "recorded_by": "Candidate independent-construction simulation",
+        "recorded_at": "2026-08-14T00:00:00Z",
+        "authority_reference": "SIMULATION-NOT-ADOPTION-AUTHORITY"
+      },
+      "reviews": [
+        {
+          "type": "security",
+          "status": "not_required",
+          "reviewer": "simulation"
+        },
+        {
+          "type": "risk",
+          "status": "not_required",
+          "reviewer": "simulation"
+        },
+        {
+          "type": "operations",
+          "status": "not_required",
+          "reviewer": "simulation"
+        }
+      ]
+    },
+    {
+      "question_id": "GFC-REC-001",
+      "state": "selected",
+      "value": false,
+      "provenance": {
+        "recorded_by": "Candidate independent-construction simulation",
+        "recorded_at": "2026-08-14T00:00:00Z",
+        "authority_reference": "SIMULATION-NOT-ADOPTION-AUTHORITY"
+      },
+      "reviews": [
+        {
+          "type": "legal",
+          "status": "not_required",
+          "reviewer": "simulation"
+        },
+        {
+          "type": "governance",
+          "status": "not_required",
+          "reviewer": "simulation"
+        },
+        {
+          "type": "assurance",
+          "status": "not_required",
+          "reviewer": "simulation"
+        }
+      ]
+    },
+    {
+      "question_id": "GFC-REC-002",
+      "state": "not_applicable",
+      "value": {
+        "decision": "candidate-example",
+        "question": "GFC-REC-002"
+      },
+      "provenance": {
+        "recorded_by": "Candidate independent-construction simulation",
+        "recorded_at": "2026-08-14T00:00:00Z",
+        "authority_reference": "SIMULATION-NOT-ADOPTION-AUTHORITY"
+      },
+      "reviews": [
+        {
+          "type": "legal",
+          "status": "not_required",
+          "reviewer": "simulation"
+        },
+        {
+          "type": "governance",
+          "status": "not_required",
+          "reviewer": "simulation"
+        },
+        {
+          "type": "assurance",
+          "status": "not_required",
+          "reviewer": "simulation"
+        }
+      ]
+    },
+    {
+      "question_id": "GFC-MNT-001",
+      "state": "selected",
+      "value": {
+        "decision": "candidate-example",
+        "question": "GFC-MNT-001"
+      },
+      "provenance": {
+        "recorded_by": "Candidate independent-construction simulation",
+        "recorded_at": "2026-08-14T00:00:00Z",
+        "authority_reference": "SIMULATION-NOT-ADOPTION-AUTHORITY"
+      },
+      "reviews": [
+        {
+          "type": "governance",
+          "status": "not_required",
+          "reviewer": "simulation"
+        },
+        {
+          "type": "operations",
+          "status": "not_required",
+          "reviewer": "simulation"
+        }
+      ]
+    },
+    {
+      "question_id": "GFC-MNT-002",
+      "state": "selected",
+      "value": {
+        "decision": "candidate-example",
+        "question": "GFC-MNT-002"
+      },
+      "provenance": {
+        "recorded_by": "Candidate independent-construction simulation",
+        "recorded_at": "2026-08-14T00:00:00Z",
+        "authority_reference": "SIMULATION-NOT-ADOPTION-AUTHORITY"
+      },
+      "reviews": [
+        {
+          "type": "governance",
+          "status": "not_required",
+          "reviewer": "simulation"
+        },
+        {
+          "type": "technical",
+          "status": "not_required",
+          "reviewer": "simulation"
+        },
+        {
+          "type": "operations",
+          "status": "not_required",
+          "reviewer": "simulation"
+        }
+      ]
+    }
+  ]
+}

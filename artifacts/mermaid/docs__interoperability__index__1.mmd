@@ -1,0 +1,6 @@
+flowchart LR
+  A[Producer implementation] -->|versioned record| B[Schema and profile validation]
+  B --> C{Semantics understood?}
+  C -->|no| X[Explicit mismatch]
+  C -->|yes| D[Policy and governance evaluation]
+  D --> E[Decision + evidence receipt]

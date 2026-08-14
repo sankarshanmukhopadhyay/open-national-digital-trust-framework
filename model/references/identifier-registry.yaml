@@ -28,6 +28,14 @@ identifier_classes:
 - LIM
 - MPR
 - EVD
+- IPR
+- REC
+- EQV
+- CAL
+- CCL
+- NCP
+- REV
+- GFM
 identifiers:
 - id: ADR-0001
   label: Jurisdiction-neutral core
@@ -149,6 +157,18 @@ identifiers:
   - docs/security/threat-catalogue.md
   - model/security/adversaries.yaml
   - model/security/threats.yaml
+- id: ADV-101
+  label: Delayed suspension propagation
+  sources:
+  - evidence/adversarial/event-01.yaml
+- id: ADV-102
+  label: Authentic but revoked authority
+  sources:
+  - evidence/adversarial/event-01.yaml
+- id: ADV-103
+  label: Profile downgrade attempt
+  sources:
+  - evidence/adversarial/event-01.yaml
 - id: ADV-11
   label: Autonomous agent outside mandate
   sources:
@@ -379,7 +399,7 @@ identifiers:
   - model/security/security-boundaries.yaml
   - model/security/threats.yaml
 - id: AST-05
-  label: Policies duties and prohibitions
+  label: Policies, duties, and prohibitions
   sources:
   - docs/security/protected-assets.md
   - docs/security/threat-catalogue.md
@@ -388,7 +408,7 @@ identifiers:
   - model/security/security-boundaries.yaml
   - model/security/threats.yaml
 - id: AST-06
-  label: Credentials claims and attestations
+  label: Credentials, claims, and attestations
   sources:
   - docs/security/protected-assets.md
   - docs/security/threat-catalogue.md
@@ -406,7 +426,7 @@ identifiers:
   - model/security/security-boundaries.yaml
   - model/security/threats.yaml
 - id: AST-08
-  label: Registries directories and status data
+  label: Registries, directories, and status data
   sources:
   - docs/security/protected-assets.md
   - docs/security/threat-catalogue.md
@@ -460,7 +480,7 @@ identifiers:
   - model/security/security-boundaries.yaml
   - model/security/threats.yaml
 - id: AST-14
-  label: Challenge appeal and remedy records
+  label: Challenge, appeal, and remedy records
   sources:
   - docs/security/protected-assets.md
   - docs/security/threat-catalogue.md
@@ -478,7 +498,7 @@ identifiers:
   - model/security/security-boundaries.yaml
   - model/security/threats.yaml
 - id: AST-16
-  label: Software configuration and policy code
+  label: Software, configuration, and policy code
   sources:
   - docs/security/protected-assets.md
   - docs/security/threat-catalogue.md
@@ -496,7 +516,7 @@ identifiers:
   - model/security/security-boundaries.yaml
   - model/security/threats.yaml
 - id: AST-18
-  label: Personal organisational and relationship information
+  label: Personal, organisational, and relationship information
   sources:
   - docs/security/protected-assets.md
   - docs/security/threat-catalogue.md
@@ -532,6 +552,27 @@ identifiers:
   - model/security/protected-assets.yaml
   - model/security/security-boundaries.yaml
   - model/security/threats.yaml
+- id: CAL-001
+  label: Operational parameter calibration baseline
+  sources:
+  - RELEASE_NOTES.md
+  - docs/assurance/quantitative-calibration.md
+  - docs/project/known-limitations.md
+  - model/assurance/calibration-baseline.yaml
+  - release/RELEASE-NOTES-v0.9.0.md
+- id: CAL-101
+  label: maximum_status_age_seconds
+  sources:
+  - docs/privacy/status-resolution-comparison.md
+  - model/assurance/calibration-baseline.yaml
+- id: CAL-102
+  label: revocation_propagation_objective_seconds
+  sources:
+  - model/assurance/calibration-baseline.yaml
+- id: CAL-103
+  label: challenge_acknowledgement_hours
+  sources:
+  - model/assurance/calibration-baseline.yaml
 - id: CAP-01
   label: Governance establishment
   sources:
@@ -607,6 +648,40 @@ identifiers:
   - docs/core-specification/capability-model.md
   - model/normative/requirement-catalogue.yaml
   - model/requirements/core-requirements.yaml
+- id: CCL-001
+  label: Core Governance Conformance
+  sources:
+  - conformance/candidate-assertions.yaml
+  - docs/implementation/candidate-conformance.md
+  - model/conformance/candidate-coverage.yaml
+  - model/conformance/conformance-classes.yaml
+- id: CCL-002
+  label: Operational Profile Conformance
+  sources:
+  - conformance/candidate-assertions.yaml
+  - model/conformance/candidate-coverage.yaml
+  - model/conformance/conformance-classes.yaml
+- id: CCL-003
+  label: Security Privacy and Rights Conformance
+  sources:
+  - conformance/candidate-assertions.yaml
+  - model/conformance/candidate-coverage.yaml
+  - model/conformance/conformance-classes.yaml
+- id: CCL-004
+  label: Assessment and Conformance Governance
+  sources:
+  - conformance/candidate-assertions.yaml
+  - model/conformance/candidate-coverage.yaml
+  - model/conformance/conformance-classes.yaml
+- id: CCL-005
+  label: Interoperability Profile Conformance
+  sources:
+  - model/conformance/conformance-classes.yaml
+- id: CCL-006
+  label: Recognition Profile Conformance
+  sources:
+  - docs/implementation/candidate-conformance.md
+  - model/conformance/conformance-classes.yaml
 - id: CLAR-001
   label: ''
   sources:
@@ -630,6 +705,146 @@ identifiers:
   label: Delegation cannot exceed principal authority
   sources:
   - conformance/assertions.yaml
+- id: CT-CAN-001
+  label: Candidate assessment for ONDTF-GOV-001
+  sources:
+  - conformance/candidate-assertions.yaml
+  - model/conformance/candidate-coverage.yaml
+- id: CT-CAN-002
+  label: Candidate assessment for ONDTF-GOV-002
+  sources:
+  - conformance/candidate-assertions.yaml
+  - model/conformance/candidate-coverage.yaml
+- id: CT-CAN-003
+  label: Candidate assessment for ONDTF-GOV-003
+  sources:
+  - conformance/candidate-assertions.yaml
+  - model/conformance/candidate-coverage.yaml
+- id: CT-CAN-004
+  label: Candidate assessment for ONDTF-GOV-004
+  sources:
+  - conformance/candidate-assertions.yaml
+  - model/conformance/candidate-coverage.yaml
+- id: CT-CAN-005
+  label: Candidate assessment for ONDTF-GOV-005
+  sources:
+  - conformance/candidate-assertions.yaml
+  - model/conformance/candidate-coverage.yaml
+- id: CT-CAN-006
+  label: Candidate assessment for ONDTF-GOV-006
+  sources:
+  - conformance/candidate-assertions.yaml
+  - model/conformance/candidate-coverage.yaml
+- id: CT-CAN-007
+  label: Candidate assessment for ONDTF-ROL-001
+  sources:
+  - conformance/candidate-assertions.yaml
+  - model/conformance/candidate-coverage.yaml
+- id: CT-CAN-008
+  label: Candidate assessment for ONDTF-ROL-002
+  sources:
+  - conformance/candidate-assertions.yaml
+  - model/conformance/candidate-coverage.yaml
+- id: CT-CAN-009
+  label: Candidate assessment for ONDTF-ROL-003
+  sources:
+  - conformance/candidate-assertions.yaml
+  - model/conformance/candidate-coverage.yaml
+- id: CT-CAN-010
+  label: Candidate assessment for ONDTF-ROL-004
+  sources:
+  - conformance/candidate-assertions.yaml
+  - model/conformance/candidate-coverage.yaml
+- id: CT-CAN-011
+  label: Candidate assessment for ONDTF-ROL-005
+  sources:
+  - conformance/candidate-assertions.yaml
+  - model/conformance/candidate-coverage.yaml
+- id: CT-CAN-012
+  label: Candidate assessment for ONDTF-ROL-006
+  sources:
+  - conformance/candidate-assertions.yaml
+  - model/conformance/candidate-coverage.yaml
+- id: CT-CAN-013
+  label: Candidate assessment for ONDTF-ROL-007
+  sources:
+  - conformance/candidate-assertions.yaml
+  - model/conformance/candidate-coverage.yaml
+- id: CT-CAN-014
+  label: Candidate assessment for ONDTF-ROL-008
+  sources:
+  - conformance/candidate-assertions.yaml
+  - model/conformance/candidate-coverage.yaml
+- id: CT-CAN-015
+  label: Candidate assessment for ONDTF-AUT-001
+  sources:
+  - conformance/candidate-assertions.yaml
+  - model/conformance/candidate-coverage.yaml
+- id: CT-CAN-016
+  label: Candidate assessment for ONDTF-AUT-002
+  sources:
+  - conformance/candidate-assertions.yaml
+  - model/conformance/candidate-coverage.yaml
+- id: CT-CAN-017
+  label: Candidate assessment for ONDTF-AUT-003
+  sources:
+  - conformance/candidate-assertions.yaml
+  - model/conformance/candidate-coverage.yaml
+- id: CT-CAN-018
+  label: Candidate assessment for ONDTF-EVI-001
+  sources:
+  - conformance/candidate-assertions.yaml
+  - model/conformance/candidate-coverage.yaml
+- id: CT-CAN-019
+  label: Candidate assessment for ONDTF-EVI-003
+  sources:
+  - conformance/candidate-assertions.yaml
+  - model/conformance/candidate-coverage.yaml
+- id: CT-CAN-020
+  label: Candidate assessment for ONDTF-DEC-003
+  sources:
+  - conformance/candidate-assertions.yaml
+  - model/conformance/candidate-coverage.yaml
+- id: CT-CAN-021
+  label: Candidate assessment for ONDTF-SPR-001
+  sources:
+  - conformance/candidate-assertions.yaml
+  - model/conformance/candidate-coverage.yaml
+- id: CT-CAN-022
+  label: Candidate assessment for ONDTF-INC-001
+  sources:
+  - conformance/candidate-assertions.yaml
+  - model/conformance/candidate-coverage.yaml
+- id: CT-CAN-023
+  label: Candidate assessment for ONDTF-RED-001
+  sources:
+  - conformance/candidate-assertions.yaml
+  - model/conformance/candidate-coverage.yaml
+- id: CT-CAN-024
+  label: Candidate assessment for ONDTF-CON-001
+  sources:
+  - conformance/candidate-assertions.yaml
+  - model/conformance/candidate-coverage.yaml
+- id: CT-CAN-025
+  label: Candidate assessment for ONDTF-CON-002
+  sources:
+  - conformance/candidate-assertions.yaml
+  - model/conformance/candidate-coverage.yaml
+- id: CT-CAN-026
+  label: Candidate assessment for ONDTF-CON-003
+  sources:
+  - conformance/candidate-assertions.yaml
+  - model/conformance/candidate-coverage.yaml
+- id: CT-CAN-027
+  label: Candidate assessment for ONDTF-MNT-001
+  sources:
+  - conformance/candidate-assertions.yaml
+  - model/conformance/candidate-coverage.yaml
+- id: CT-CAN-028
+  label: Candidate assessment for ONDTF-MNT-002
+  sources:
+  - conformance/candidate-assertions.yaml
+  - model/conformance/candidate-coverage.yaml
 - id: CT-GOV-001
   label: Emergency authority records purpose scope duration evidence and review
   sources:
@@ -942,6 +1157,24 @@ identifiers:
   sources:
   - docs/project/external-framework-pattern-adoption.md
   - model/project/maturation-register.yaml
+- id: EQV-001
+  label: ''
+  sources:
+  - docs/interoperability/recognition-profile.md
+  - model/recognition/recognition-profile.yaml
+- id: EQV-002
+  label: ''
+  sources:
+  - model/recognition/recognition-profile.yaml
+- id: EQV-003
+  label: ''
+  sources:
+  - model/recognition/recognition-profile.yaml
+- id: EQV-004
+  label: ''
+  sources:
+  - docs/interoperability/recognition-profile.md
+  - model/recognition/recognition-profile.yaml
 - id: EVD-0001
   label: implementation
   sources:
@@ -953,6 +1186,10 @@ identifiers:
   sources:
   - model/evidence/evidence-inventory.yaml
   - release/EVIDENCE-INVENTORY-v0.7.0.md
+- id: GFM-001
+  label: ''
+  sources:
+  - model/adoption/question-set-migrations.yaml
 - id: IM-ACT
   label: Accountable Authority
   sources:
@@ -1093,18 +1330,41 @@ identifiers:
   sources:
   - docs/information-model/canonical-entities.md
   - model/information-model/entities.yaml
+- id: INT-001
+  label: ''
+  sources:
+  - evidence/interoperability/event-01-results.json
+- id: INT-002
+  label: ''
+  sources:
+  - evidence/interoperability/event-01-results.json
+- id: INT-003
+  label: ''
+  sources:
+  - evidence/adversarial/event-01.yaml
+  - evidence/interoperability/event-01-results.json
+- id: INT-004
+  label: ''
+  sources:
+  - docs/privacy/status-resolution-comparison.md
+  - evidence/adversarial/event-01.yaml
+  - evidence/interoperability/event-01-results.json
+- id: INT-005
+  label: ''
+  sources:
+  - evidence/interoperability/event-01-results.json
 - id: INT-01
-  label: Establish trust scheme
+  label: Establish a trust scheme
   sources:
   - docs/architecture/interaction-catalogue.md
   - model/architecture/interactions.yaml
 - id: INT-02
-  label: Admit participant
+  label: Admit a participant
   sources:
   - docs/architecture/interaction-catalogue.md
   - model/architecture/interactions.yaml
 - id: INT-03
-  label: Recognise evidence provider
+  label: Recognise an evidence provider
   sources:
   - docs/architecture/interaction-catalogue.md
   - model/architecture/interactions.yaml
@@ -1119,12 +1379,12 @@ identifiers:
   - docs/architecture/interaction-catalogue.md
   - model/architecture/interactions.yaml
 - id: INT-06
-  label: Issue evidence
+  label: Issue evidence or credential
   sources:
   - docs/architecture/interaction-catalogue.md
   - model/architecture/interactions.yaml
 - id: INT-07
-  label: Present evidence
+  label: Present or obtain evidence
   sources:
   - docs/architecture/interaction-catalogue.md
   - model/architecture/interactions.yaml
@@ -1134,17 +1394,17 @@ identifiers:
   - docs/architecture/interaction-catalogue.md
   - model/architecture/interactions.yaml
 - id: INT-09
-  label: Admit effect
+  label: Admit an effect
   sources:
   - docs/architecture/interaction-catalogue.md
   - model/architecture/interactions.yaml
 - id: INT-10
-  label: Change status
+  label: Change status or revoke
   sources:
   - docs/architecture/interaction-catalogue.md
   - model/architecture/interactions.yaml
 - id: INT-11
-  label: Suspend participant
+  label: Suspend a participant
   sources:
   - docs/architecture/interaction-catalogue.md
   - model/architecture/interactions.yaml
@@ -1159,22 +1419,22 @@ identifiers:
   - docs/architecture/interaction-catalogue.md
   - model/architecture/interactions.yaml
 - id: INT-14
-  label: Report incident
+  label: Report and contain an incident
   sources:
   - docs/architecture/interaction-catalogue.md
   - model/architecture/interactions.yaml
 - id: INT-15
-  label: Submit challenge
+  label: Submit and decide a challenge
   sources:
   - docs/architecture/interaction-catalogue.md
   - model/architecture/interactions.yaml
 - id: INT-16
-  label: Execute remedy
+  label: Execute a remedy
   sources:
   - docs/architecture/interaction-catalogue.md
   - model/architecture/interactions.yaml
 - id: INT-17
-  label: Establish recognition
+  label: Establish cross-domain recognition
   sources:
   - docs/architecture/interaction-catalogue.md
   - model/architecture/interactions.yaml
@@ -1189,10 +1449,38 @@ identifiers:
   - docs/architecture/interaction-catalogue.md
   - model/architecture/interactions.yaml
 - id: INT-20
-  label: Retire trust scheme
+  label: Retire a trust scheme
   sources:
   - docs/architecture/interaction-catalogue.md
   - model/architecture/interactions.yaml
+- id: IPR-001
+  label: ONDTF Candidate Interoperability Profile
+  sources:
+  - RELEASE_NOTES.md
+  - docs/interoperability/index.md
+  - model/interoperability/interoperability-profile.yaml
+  - release/IMPLEMENTATION-AND-INTEROPERABILITY-REPORT-v0.9.0.md
+  - release/RELEASE-NOTES-v0.9.0.md
+- id: IPR-101
+  label: syntactic
+  sources:
+  - model/interoperability/interoperability-profile.yaml
+- id: IPR-102
+  label: semantic
+  sources:
+  - model/interoperability/interoperability-profile.yaml
+- id: IPR-103
+  label: policy
+  sources:
+  - model/interoperability/interoperability-profile.yaml
+- id: IPR-104
+  label: governance
+  sources:
+  - model/interoperability/interoperability-profile.yaml
+- id: IPR-105
+  label: operational
+  sources:
+  - model/interoperability/interoperability-profile.yaml
 - id: JRN-RGT-001
   label: Incorrect evidence causes an adverse outcome
   sources:
@@ -1210,85 +1498,121 @@ identifiers:
   sources:
   - evaluation/rights-remedy/journeys.yaml
 - id: LIM-01
-  label: Independent implementation evidence remains limited
+  label: External independent implementation evidence remains limited
   sources:
   - docs/project/known-limitations.md
   - model/project/maturation-register.yaml
 - id: LIM-02
-  label: Standards mappings are informative unless selected by a profile
+  label: Standards mappings do not create adoption authority
   sources:
   - docs/project/known-limitations.md
   - model/project/maturation-register.yaml
 - id: LIM-03
-  label: Jurisdiction profiles are implementation aids, not legal advice
+  label: Jurisdiction profiles are not legal advice
   sources:
   - docs/project/known-limitations.md
   - model/project/maturation-register.yaml
 - id: LIM-04
-  label: Quantitative thresholds require contextual calibration
+  label: Quantitative defaults are contextual
   sources:
   - docs/project/known-limitations.md
   - model/project/maturation-register.yaml
 - id: LIM-05
-  label: Reference schemas and fixtures are not production software
+  label: Reference code is not production software
   sources:
   - docs/project/known-limitations.md
   - model/project/maturation-register.yaml
 - id: LIM-06
-  label: Cross-border recognition depends on external legal and institutional arrangements
+  label: Recognition depends on external authority
   sources:
   - docs/project/known-limitations.md
   - model/project/maturation-register.yaml
 - id: LIM-07
-  label: Cryptographic and protocol choices remain profile-dependent
+  label: Protocol/cryptographic choices remain profile-dependent
   sources:
   - docs/project/known-limitations.md
   - model/project/maturation-register.yaml
 - id: LIM-08
-  label: Repository validation is not implementation or scheme conformance
+  label: Repository validation is not provider certification
   sources:
   - docs/project/known-limitations.md
   - model/project/maturation-register.yaml
 - id: LIM-09
-  label: Standards and regulatory sources change over time
+  label: External standards change
   sources:
   - docs/project/known-limitations.md
   - model/project/maturation-register.yaml
 - id: MPR-01
-  label: Normative and role architecture
+  label: completed_for_v0.6.0
   sources:
   - docs/project/future-work.md
   - model/project/maturation-register.yaml
 - id: MPR-02
-  label: Conformance and accreditation
+  label: active_next_evidence_phase
   sources:
   - docs/project/future-work.md
   - model/project/maturation-register.yaml
 - id: MPR-03
-  label: Profiles and external-framework adoption
+  label: active_next_evidence_phase
   sources:
   - docs/project/future-work.md
   - model/project/maturation-register.yaml
 - id: MPR-04
-  label: Implementation and interoperability
+  label: candidate_internal_cross_codebase_evidence_external_independence_pending
   sources:
   - docs/project/future-work.md
   - model/project/maturation-register.yaml
 - id: MPR-05
-  label: Evidence and quantitative calibration
+  label: candidate_provisional_calibration_and_internal_adversarial_evidence
   sources:
   - docs/project/future-work.md
   - model/project/maturation-register.yaml
 - id: MPR-06
-  label: Rights, accessibility and remedy validation
+  label: candidate_journey_evidence_external_pilot_pending
   sources:
   - docs/project/future-work.md
   - model/project/maturation-register.yaml
 - id: MPR-07
-  label: Candidate-specification governance
+  label: candidate_governance_active_external_review_open
   sources:
   - docs/project/future-work.md
   - model/project/maturation-register.yaml
+- id: NCP-001
+  label: ''
+  sources:
+  - docs/normative/candidate-normative-inventory.md
+  - docs/project/candidate-freeze-and-change-control.md
+  - model/project/normative-document-manifest.yaml
+- id: NCP-002
+  label: ''
+  sources:
+  - model/project/normative-document-manifest.yaml
+- id: NCP-003
+  label: ''
+  sources:
+  - model/project/normative-document-manifest.yaml
+- id: NCP-004
+  label: ''
+  sources:
+  - model/project/normative-document-manifest.yaml
+- id: NCP-005
+  label: ''
+  sources:
+  - docs/normative/candidate-normative-inventory.md
+  - docs/project/candidate-freeze-and-change-control.md
+  - model/project/normative-document-manifest.yaml
+- id: NCP-006
+  label: ''
+  sources:
+  - model/project/normative-document-manifest.yaml
+- id: NCP-007
+  label: ''
+  sources:
+  - model/project/normative-document-manifest.yaml
+- id: NCP-008
+  label: ''
+  sources:
+  - model/project/normative-document-manifest.yaml
 - id: ONDTF-ASR-001
   label: Scope assurance claims by subject, controls, evidence basis, assessment, and freshness.
   sources:
@@ -1302,30 +1626,39 @@ identifiers:
   label: Admit a consequential action solely because the actor or system is authenticated.
   sources:
   - conformance/assertions.yaml
+  - conformance/candidate-assertions.yaml
   - docs/core-specification/normative-requirements.md
+  - model/conformance/candidate-coverage.yaml
   - model/evidence/evidence-inventory.yaml
   - model/normative/requirement-catalogue.yaml
   - model/requirements/core-requirements.yaml
+  - release/REQUIREMENTS-INVENTORY-v0.9.0.md
 - id: ONDTF-AUT-002
   label: Evaluate scope, purpose, domain, time, conditions and revocation status when determining applicable authority.
   sources:
   - conformance/assertions.yaml
+  - conformance/candidate-assertions.yaml
   - docs/core-specification/normative-requirements.md
   - docs/governance/authority-delegation.md
   - docs/implementation/getting-started.md
   - evaluation/rights-remedy/journeys.yaml
+  - model/conformance/candidate-coverage.yaml
   - model/evidence/evidence-inventory.yaml
   - model/normative/requirement-catalogue.yaml
+  - release/REQUIREMENTS-INVENTORY-v0.9.0.md
 - id: ONDTF-AUT-003
   label: Permit delegated authority to exceed the authority held by the delegating party.
   sources:
   - conformance/assertions.yaml
+  - conformance/candidate-assertions.yaml
   - docs/core-specification/normative-requirements.md
   - docs/governance/authority-delegation.md
   - evaluation/rights-remedy/journeys.yaml
+  - model/conformance/candidate-coverage.yaml
   - model/evidence/evidence-inventory.yaml
   - model/normative/requirement-catalogue.yaml
   - model/requirements/core-requirements.yaml
+  - release/REQUIREMENTS-INVENTORY-v0.9.0.md
 - id: ONDTF-AUT-004
   label: ''
   sources:
@@ -1342,21 +1675,30 @@ identifiers:
   label: Scope a conformance claim by ONDTF version, profile, assessed object, organisational boundary, applicable requirements,
     evidence cut-off and approved exceptions.
   sources:
+  - conformance/candidate-assertions.yaml
   - docs/core-specification/normative-requirements.md
+  - model/conformance/candidate-coverage.yaml
   - model/normative/requirement-catalogue.yaml
   - model/requirements/core-requirements.yaml
+  - release/REQUIREMENTS-INVENTORY-v0.9.0.md
 - id: ONDTF-CON-002
   label: Require a particular external meta-model, schema, protocol, registry implementation or product for core conformance.
   sources:
+  - conformance/candidate-assertions.yaml
   - docs/core-specification/normative-requirements.md
+  - model/conformance/candidate-coverage.yaml
   - model/normative/requirement-catalogue.yaml
   - model/requirements/core-requirements.yaml
+  - release/REQUIREMENTS-INVENTORY-v0.9.0.md
 - id: ONDTF-CON-003
   label: Identify the exact version, selected scope, constraints and maintenance responsibility for every normative external
     dependency.
   sources:
+  - conformance/candidate-assertions.yaml
   - docs/core-specification/normative-requirements.md
+  - model/conformance/candidate-coverage.yaml
   - model/normative/requirement-catalogue.yaml
+  - release/REQUIREMENTS-INVENTORY-v0.9.0.md
 - id: ONDTF-DEC-001
   label: ''
   sources:
@@ -1369,9 +1711,12 @@ identifiers:
   label: Produce or reference a reviewable record sufficient to establish the basis and responsible authority for a consequential
     decision.
   sources:
+  - conformance/candidate-assertions.yaml
   - docs/core-specification/normative-requirements.md
+  - model/conformance/candidate-coverage.yaml
   - model/normative/requirement-catalogue.yaml
   - model/requirements/core-requirements.yaml
+  - release/REQUIREMENTS-INVENTORY-v0.9.0.md
 - id: ONDTF-DEC-004
   label: ''
   sources:
@@ -1383,9 +1728,12 @@ identifiers:
 - id: ONDTF-EVI-001
   label: Evaluate consequential evidence for source attribution, integrity, relevance and freshness.
   sources:
+  - conformance/candidate-assertions.yaml
   - docs/core-specification/normative-requirements.md
+  - model/conformance/candidate-coverage.yaml
   - model/normative/requirement-catalogue.yaml
   - model/requirements/core-requirements.yaml
+  - release/REQUIREMENTS-INVENTORY-v0.9.0.md
 - id: ONDTF-EVI-002
   label: ''
   sources:
@@ -1393,8 +1741,11 @@ identifiers:
 - id: ONDTF-EVI-003
   label: Publish the governing authority, scope, update policy, effective time and provenance of registry or status information.
   sources:
+  - conformance/candidate-assertions.yaml
   - docs/core-specification/normative-requirements.md
+  - model/conformance/candidate-coverage.yaml
   - model/normative/requirement-catalogue.yaml
+  - release/REQUIREMENTS-INVENTORY-v0.9.0.md
 - id: ONDTF-EVI-004
   label: ''
   sources:
@@ -1402,42 +1753,64 @@ identifiers:
 - id: ONDTF-GOV-001
   label: Identify and publish the legal, policy, contractual or institutional mandate under which the adoption operates.
   sources:
+  - conformance/candidate-assertions.yaml
   - docs/core-specification/normative-requirements.md
+  - model/conformance/candidate-coverage.yaml
   - model/normative/requirement-catalogue.yaml
   - model/requirements/core-requirements.yaml
+  - release/REQUIREMENTS-INVENTORY-v0.9.0.md
 - id: ONDTF-GOV-002
   label: Identify the bodies accountable for governance, administration, supervision, assessment, review and remedy.
   sources:
+  - conformance/candidate-assertions.yaml
   - docs/core-specification/normative-requirements.md
+  - model/conformance/candidate-coverage.yaml
   - model/normative/requirement-catalogue.yaml
   - model/requirements/core-requirements.yaml
+  - release/REQUIREMENTS-INVENTORY-v0.9.0.md
 - id: ONDTF-GOV-003
   label: Publish the interactions, participants, services, effects and exclusions within the adoption scope.
   sources:
+  - conformance/candidate-assertions.yaml
   - docs/core-specification/normative-requirements.md
+  - model/conformance/candidate-coverage.yaml
   - model/normative/requirement-catalogue.yaml
+  - release/REQUIREMENTS-INVENTORY-v0.9.0.md
 - id: ONDTF-GOV-004
   label: Document decision rights, delegations, escalation paths and conflicts of interest for institutional functions.
   sources:
+  - conformance/candidate-assertions.yaml
   - docs/core-specification/normative-requirements.md
+  - model/conformance/candidate-coverage.yaml
   - model/normative/requirement-catalogue.yaml
+  - release/REQUIREMENTS-INVENTORY-v0.9.0.md
 - id: ONDTF-GOV-005
   label: Version, approve, communicate and assign effective dates to material governance changes.
   sources:
+  - conformance/candidate-assertions.yaml
   - docs/core-specification/normative-requirements.md
+  - model/conformance/candidate-coverage.yaml
   - model/normative/requirement-catalogue.yaml
+  - release/REQUIREMENTS-INVENTORY-v0.9.0.md
 - id: ONDTF-GOV-006
   label: Bound emergency authority by purpose, scope, duration, evidence, review and termination conditions.
   sources:
   - conformance/assertions.yaml
+  - conformance/candidate-assertions.yaml
   - docs/core-specification/normative-requirements.md
+  - docs/project/errata-and-emergency-change.md
+  - model/conformance/candidate-coverage.yaml
   - model/normative/requirement-catalogue.yaml
+  - release/REQUIREMENTS-INVENTORY-v0.9.0.md
 - id: ONDTF-INC-001
   label: Define detection, containment, evidence preservation, recovery, notification and coordination responsibilities for
     material incidents.
   sources:
+  - conformance/candidate-assertions.yaml
   - docs/core-specification/normative-requirements.md
+  - model/conformance/candidate-coverage.yaml
   - model/normative/requirement-catalogue.yaml
+  - release/REQUIREMENTS-INVENTORY-v0.9.0.md
 - id: ONDTF-INT-001
   label: ''
   sources:
@@ -1449,19 +1822,28 @@ identifiers:
 - id: ONDTF-MNT-001
   label: Preserve stable identifiers and lifecycle status for active, deprecated, withdrawn and superseded requirements.
   sources:
+  - conformance/candidate-assertions.yaml
+  - model/conformance/candidate-coverage.yaml
   - model/normative/requirement-catalogue.yaml
+  - release/REQUIREMENTS-INVENTORY-v0.9.0.md
 - id: ONDTF-MNT-002
   label: Perform change-impact analysis across profiles, roles, controls, evidence, tests and conformance claims for every
     material normative change.
   sources:
+  - conformance/candidate-assertions.yaml
+  - model/conformance/candidate-coverage.yaml
   - model/normative/requirement-catalogue.yaml
+  - release/REQUIREMENTS-INVENTORY-v0.9.0.md
 - id: ONDTF-RED-001
   label: Provide affected parties an accessible route to correction, challenge, independent review and effective remedy for
     consequential decisions.
   sources:
+  - conformance/candidate-assertions.yaml
   - docs/core-specification/normative-requirements.md
+  - model/conformance/candidate-coverage.yaml
   - model/normative/requirement-catalogue.yaml
   - model/requirements/core-requirements.yaml
+  - release/REQUIREMENTS-INVENTORY-v0.9.0.md
 - id: ONDTF-RED-002
   label: ''
   sources:
@@ -1469,44 +1851,71 @@ identifiers:
 - id: ONDTF-ROL-001
   label: Define every institutional function before allocating it to one or more named bodies.
   sources:
+  - conformance/candidate-assertions.yaml
+  - model/conformance/candidate-coverage.yaml
   - model/normative/requirement-catalogue.yaml
+  - release/REQUIREMENTS-INVENTORY-v0.9.0.md
 - id: ONDTF-ROL-002
   label: Record the authority source, scope, accountability and minimum evidence obligations of each assigned role.
   sources:
+  - conformance/candidate-assertions.yaml
+  - model/conformance/candidate-coverage.yaml
   - model/normative/requirement-catalogue.yaml
+  - release/REQUIREMENTS-INVENTORY-v0.9.0.md
 - id: ONDTF-ROL-003
   label: Assess concentration and conflict risks whenever one body performs two or more institutional roles.
   sources:
+  - conformance/candidate-assertions.yaml
+  - model/conformance/candidate-coverage.yaml
   - model/normative/requirement-catalogue.yaml
+  - release/REQUIREMENTS-INVENTORY-v0.9.0.md
 - id: ONDTF-ROL-004
   label: Preserve an independent review path for material admission, suspension, enforcement, appeal and remedy decisions.
   sources:
+  - conformance/candidate-assertions.yaml
   - evaluation/rights-remedy/journeys.yaml
+  - model/conformance/candidate-coverage.yaml
   - model/normative/requirement-catalogue.yaml
+  - release/REQUIREMENTS-INVENTORY-v0.9.0.md
 - id: ONDTF-ROL-005
   label: Permit an operating body to be the sole assessor and final appeals body for its own material conformance decisions.
   sources:
+  - conformance/candidate-assertions.yaml
+  - model/conformance/candidate-coverage.yaml
   - model/normative/requirement-catalogue.yaml
+  - release/REQUIREMENTS-INVENTORY-v0.9.0.md
 - id: ONDTF-ROL-006
   label: Define referral and lead-authority rules where supervisory or regulatory competence overlaps.
   sources:
+  - conformance/candidate-assertions.yaml
+  - model/conformance/candidate-coverage.yaml
   - model/normative/requirement-catalogue.yaml
+  - release/REQUIREMENTS-INVENTORY-v0.9.0.md
 - id: ONDTF-ROL-007
   label: Give affected parties standing to access complaint, challenge and remedy processes without requiring scheme membership.
   sources:
   - conformance/assertions.yaml
+  - conformance/candidate-assertions.yaml
   - evaluation/rights-remedy/journeys.yaml
+  - model/conformance/candidate-coverage.yaml
   - model/normative/requirement-catalogue.yaml
+  - release/REQUIREMENTS-INVENTORY-v0.9.0.md
 - id: ONDTF-ROL-008
   label: Include independent and affected-party perspectives in periodic review of framework effectiveness and institutional
     legitimacy.
   sources:
+  - conformance/candidate-assertions.yaml
+  - model/conformance/candidate-coverage.yaml
   - model/normative/requirement-catalogue.yaml
+  - release/REQUIREMENTS-INVENTORY-v0.9.0.md
 - id: ONDTF-SPR-001
   label: Maintain a threat, privacy and risk model proportionate to the covered effects and institutional powers.
   sources:
+  - conformance/candidate-assertions.yaml
   - docs/core-specification/normative-requirements.md
+  - model/conformance/candidate-coverage.yaml
   - model/normative/requirement-catalogue.yaml
+  - release/REQUIREMENTS-INVENTORY-v0.9.0.md
 - id: ONDTF-SPR-002
   label: ''
   sources:
@@ -1578,6 +1987,37 @@ identifiers:
   sources:
   - docs/operations/provider-lifecycle.md
   - model/operations/provider-lifecycle.yaml
+- id: REC-001
+  label: Bounded external-framework recognition profile
+  sources:
+  - RELEASE_NOTES.md
+  - docs/interoperability/index.md
+  - docs/interoperability/recognition-profile.md
+  - docs/project/known-limitations.md
+  - examples/candidate-profile-b/model/construction-response.json
+  - examples/worked-profile/model/construction-response.json
+  - examples/worked-profile/model/decision-register.yaml
+  - examples/worked-profile/model/review-register.yaml
+  - model/adoption/completeness-gates.yaml
+  - model/adoption/contradiction-rules.yaml
+  - model/adoption/pattern-catalogue.yaml
+  - model/adoption/question-catalogue.yaml
+- id: REC-002
+  label: ''
+  sources:
+  - examples/candidate-profile-b/model/construction-response.json
+  - examples/worked-profile/model/construction-response.json
+  - examples/worked-profile/model/decision-register.yaml
+  - examples/worked-profile/model/review-register.yaml
+  - model/adoption/completeness-gates.yaml
+  - model/adoption/pattern-catalogue.yaml
+  - model/adoption/question-catalogue.yaml
+- id: REV-001
+  label: ''
+  sources:
+  - model/project/candidate-review-register.yaml
+  - release/DEVIATION-REGISTER-v0.9.0.md
+  - release/REVIEW-DISPOSITION-REPORT-v0.9.0.md
 - id: ROLE-001
   label: ''
   sources:
@@ -1608,6 +2048,7 @@ identifiers:
   - docs/conformance/assessment-decision.md
   - docs/operations/provider-lifecycle.md
   - model/conformance/assessment-scheme.yaml
+  - model/conformance/candidate-coverage.yaml
   - model/governance/institutional-role-catalogue.yaml
   - model/governance/responsibility-assignment.yaml
   - model/normative/requirement-catalogue.yaml
@@ -1617,6 +2058,7 @@ identifiers:
   sources:
   - docs/conformance/assessment-decision.md
   - docs/rights/challenge-and-correction.md
+  - model/conformance/candidate-coverage.yaml
   - model/governance/institutional-role-catalogue.yaml
   - model/governance/responsibility-assignment.yaml
   - model/normative/requirement-catalogue.yaml
@@ -1625,6 +2067,7 @@ identifiers:
   sources:
   - docs/operations/provider-lifecycle.md
   - model/conformance/assessment-scheme.yaml
+  - model/conformance/candidate-coverage.yaml
   - model/governance/institutional-role-catalogue.yaml
   - model/governance/responsibility-assignment.yaml
   - model/normative/requirement-catalogue.yaml
@@ -1633,26 +2076,31 @@ identifiers:
   label: Governing Authority
   sources:
   - model/conformance/assessment-scheme.yaml
+  - model/conformance/candidate-coverage.yaml
   - model/governance/institutional-role-catalogue.yaml
   - model/governance/responsibility-assignment.yaml
   - model/normative/requirement-catalogue.yaml
   - model/project/controlled-document-register.yaml
+  - model/recognition/recognition-profile.yaml
   - templates/profiles/profile-manifest.template.yaml
 - id: ROLE-ICA
   label: Incident Coordination Authority
   sources:
+  - model/conformance/candidate-coverage.yaml
   - model/governance/institutional-role-catalogue.yaml
   - model/governance/responsibility-assignment.yaml
   - model/normative/requirement-catalogue.yaml
 - id: ROLE-IO
   label: Independent Oversight
   sources:
+  - model/conformance/candidate-coverage.yaml
   - model/governance/institutional-role-catalogue.yaml
   - model/governance/responsibility-assignment.yaml
   - model/normative/requirement-catalogue.yaml
 - id: ROLE-PA
   label: Profile Authority
   sources:
+  - model/conformance/candidate-coverage.yaml
   - model/governance/institutional-role-catalogue.yaml
   - model/governance/responsibility-assignment.yaml
   - model/normative/requirement-catalogue.yaml
@@ -1665,6 +2113,7 @@ identifiers:
   sources:
   - docs/governance/authority-delegation.md
   - docs/rights/challenge-and-correction.md
+  - model/conformance/candidate-coverage.yaml
   - model/governance/institutional-role-catalogue.yaml
   - model/governance/responsibility-assignment.yaml
   - model/normative/requirement-catalogue.yaml
@@ -1680,6 +2129,7 @@ identifiers:
   - docs/implementation/getting-started.md
   - docs/operations/provider-lifecycle.md
   - model/conformance/assessment-scheme.yaml
+  - model/conformance/candidate-coverage.yaml
   - model/governance/institutional-role-catalogue.yaml
   - model/governance/responsibility-assignment.yaml
   - model/normative/requirement-catalogue.yaml
@@ -1688,6 +2138,7 @@ identifiers:
   label: Service Provider
   sources:
   - docs/rights/challenge-and-correction.md
+  - model/conformance/candidate-coverage.yaml
   - model/governance/institutional-role-catalogue.yaml
   - model/governance/responsibility-assignment.yaml
   - model/normative/requirement-catalogue.yaml
@@ -1697,7 +2148,7 @@ identifiers:
   - model/references/sector-standard-mappings/financial-services.yaml
   - model/references/sector-standard-mappings/public-services.yaml
 - id: SB-01
-  label: Mandate to governing authority
+  label: Constitutional or statutory mandate to governing authority
   sources:
   - docs/security/attack-surfaces.md
   - docs/security/security-boundaries.md
@@ -1964,12 +2415,12 @@ identifiers:
   - docs/security/trust-assumptions.md
   - model/security/security-foundations.yaml
 - id: TB-01
-  label: Mandate to operator
+  label: Government mandate to scheme operator
   sources:
   - docs/architecture/trust-boundaries.md
   - model/architecture/trust-boundaries.yaml
 - id: TB-02
-  label: Regulator to participant
+  label: Regulator to regulated participant
   sources:
   - docs/architecture/trust-boundaries.md
   - model/architecture/trust-boundaries.yaml
@@ -1989,7 +2440,7 @@ identifiers:
   - docs/architecture/trust-boundaries.md
   - model/architecture/trust-boundaries.yaml
 - id: TB-06
-  label: Decision to execution
+  label: Decision service to effect executor
   sources:
   - docs/architecture/trust-boundaries.md
   - model/architecture/trust-boundaries.yaml
@@ -2004,7 +2455,7 @@ identifiers:
   - docs/architecture/trust-boundaries.md
   - model/architecture/trust-boundaries.yaml
 - id: TB-09
-  label: Evidence producer to store
+  label: Evidence producer to evidence store
   sources:
   - docs/architecture/trust-boundaries.md
   - model/architecture/trust-boundaries.yaml
@@ -2461,14 +2912,16 @@ identifiers:
   - docs/project/detailed-delivery-roadmap.md
   - docs/project/known-limitations.md
   - docs/project/unresolved-issues.md
+  - model/project/candidate-review-register.yaml
   - model/project/maturation-register.yaml
+  - release/DEVIATION-REGISTER-v0.9.0.md
 - id: URI-02
   label: Quantitative thresholds require empirical calibration
   sources:
   - docs/project/detailed-delivery-roadmap.md
-  - docs/project/known-limitations.md
   - docs/project/unresolved-issues.md
   - model/project/maturation-register.yaml
+  - release/DEVIATION-REGISTER-v0.9.0.md
 - id: URI-03
   label: Jurisdiction profiles require competent current legal review
   sources:
@@ -2477,8 +2930,10 @@ identifiers:
   - docs/project/known-limitations.md
   - docs/project/unresolved-issues.md
   - docs/project/v0.7-readiness-checklist.md
+  - model/project/candidate-review-register.yaml
   - model/project/maturation-register.yaml
   - pilots/jurisdiction/india-review-record.yaml
+  - release/DEVIATION-REGISTER-v0.9.0.md
   - release/RELEASE-NOTES-v0.7.0.md
 - id: URI-04
   label: Reference catalogues are not a complete conformance suite
@@ -2486,7 +2941,6 @@ identifiers:
   - CHANGELOG.md
   - docs/implementation/getting-started.md
   - docs/project/detailed-delivery-roadmap.md
-  - docs/project/known-limitations.md
   - docs/project/unresolved-issues.md
   - docs/project/v0.7-readiness-checklist.md
   - model/evidence/evidence-inventory.yaml
@@ -2495,14 +2949,13 @@ identifiers:
 - id: URI-05
   label: Privacy-preserving status and cross-domain resolution patterns need comparison
   sources:
+  - docs/privacy/status-resolution-comparison.md
   - docs/project/detailed-delivery-roadmap.md
-  - docs/project/known-limitations.md
   - docs/project/unresolved-issues.md
   - model/project/maturation-register.yaml
 - id: URI-06
   label: Accessibility is not validated across downstream implementation patterns
   sources:
-  - RELEASE_NOTES.md
   - docs/project/detailed-delivery-roadmap.md
   - docs/project/unresolved-issues.md
   - docs/project/v0.6-readiness-checklist.md
@@ -2512,10 +2965,8 @@ identifiers:
   label: Standards and regulatory instruments may change after publication
   sources:
   - CHANGELOG.md
-  - RELEASE_NOTES.md
   - docs/project/detailed-delivery-roadmap.md
   - docs/project/external-framework-pattern-adoption.md
-  - docs/project/known-limitations.md
   - docs/project/unresolved-issues.md
   - docs/project/v0.6-readiness-checklist.md
   - model/project/maturation-register.yaml
@@ -2525,7 +2976,6 @@ identifiers:
   label: Role-specific normative obligations catalogue requires release review
   sources:
   - CHANGELOG.md
-  - RELEASE_NOTES.md
   - docs/project/detailed-delivery-roadmap.md
   - docs/project/unresolved-issues.md
   - docs/project/v0.6-readiness-checklist.md
@@ -2536,7 +2986,6 @@ identifiers:
   label: No fully specified accreditation and certification operating model
   sources:
   - CHANGELOG.md
-  - RELEASE_NOTES.md
   - docs/project/detailed-delivery-roadmap.md
   - docs/project/unresolved-issues.md
   - docs/project/v0.6-readiness-checklist.md
@@ -2547,7 +2996,6 @@ identifiers:
   label: No complete provider lifecycle
   sources:
   - CHANGELOG.md
-  - RELEASE_NOTES.md
   - docs/project/detailed-delivery-roadmap.md
   - docs/project/unresolved-issues.md
   - docs/project/v0.6-readiness-checklist.md
@@ -2558,7 +3006,6 @@ identifiers:
   label: Institutional-governance operating model requires profile validation
   sources:
   - CHANGELOG.md
-  - RELEASE_NOTES.md
   - docs/project/detailed-delivery-roadmap.md
   - docs/project/unresolved-issues.md
   - docs/project/v0.6-readiness-checklist.md
@@ -2569,7 +3016,6 @@ identifiers:
   label: No complete sector-profile construction and validation method
   sources:
   - CHANGELOG.md
-  - RELEASE_NOTES.md
   - docs/project/detailed-delivery-roadmap.md
   - docs/project/external-framework-pattern-adoption.md
   - docs/project/unresolved-issues.md
@@ -2583,6 +3029,7 @@ identifiers:
   - docs/project/detailed-delivery-roadmap.md
   - docs/project/unresolved-issues.md
   - model/project/maturation-register.yaml
+  - release/DEVIATION-REGISTER-v0.9.0.md
 - id: URI-14
   label: Adversarial exercises and incident simulations have not been executed
   sources:
@@ -2598,18 +3045,18 @@ identifiers:
   sources:
   - docs/project/detailed-delivery-roadmap.md
   - docs/project/unresolved-issues.md
+  - model/project/candidate-review-register.yaml
   - model/project/maturation-register.yaml
 - id: URI-16
   label: No assurance-equivalence model for cross-framework recognition
   sources:
   - docs/project/detailed-delivery-roadmap.md
-  - docs/project/known-limitations.md
   - docs/project/unresolved-issues.md
   - model/project/maturation-register.yaml
+  - release/DEVIATION-REGISTER-v0.9.0.md
 - id: URI-17
   label: No end-to-end pilot of challenge, appeal and remedy
   sources:
-  - RELEASE_NOTES.md
   - docs/project/detailed-delivery-roadmap.md
   - docs/project/unresolved-issues.md
   - docs/project/v0.6-readiness-checklist.md
@@ -2619,10 +3066,8 @@ identifiers:
   label: No complete maintenance model for standards, profiles and controlled documents
   sources:
   - CHANGELOG.md
-  - RELEASE_NOTES.md
   - docs/project/detailed-delivery-roadmap.md
   - docs/project/external-framework-pattern-adoption.md
-  - docs/project/known-limitations.md
   - docs/project/unresolved-issues.md
   - docs/project/v0.6-readiness-checklist.md
   - model/project/maturation-register.yaml
@@ -2632,10 +3077,8 @@ identifiers:
   label: No formal process for importing proven external-framework patterns
   sources:
   - CHANGELOG.md
-  - RELEASE_NOTES.md
   - docs/project/detailed-delivery-roadmap.md
   - docs/project/external-framework-pattern-adoption.md
-  - docs/project/known-limitations.md
   - docs/project/unresolved-issues.md
   - docs/project/v0.6-readiness-checklist.md
   - model/project/maturation-register.yaml
@@ -2644,7 +3087,5 @@ identifiers:
 - id: URI-20
   label: Cross-repo compatibility bindings (TSMM, TIS) are unreviewed since ONDTF v0.2.0
   sources:
-  - bindings/tis/ondtf-tis-profile.json
-  - bindings/tsmm/ondtf-tsmm-binding.json
   - docs/project/unresolved-issues.md
   - model/project/maturation-register.yaml

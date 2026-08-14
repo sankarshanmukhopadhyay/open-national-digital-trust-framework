@@ -1,9 +1,11 @@
-.PHONY: terminology validate site candidate-check v070-check
+.PHONY: terminology validate site candidate-check v070-check v090-check
 terminology:
 	python3 scripts/build_terminology.py
 	python3 scripts/validate_terminology.py
 validate:
 	python3 scripts/validate_v070_execution.py
+	python3 scripts/validate_interoperability_candidate.py
+	python3 scripts/validate_candidate_specification.py
 	python3 scripts/build_identifier_registry.py
 	python3 scripts/validate_identifier_registry.py
 	python3 scripts/validate_schema_instances.py
@@ -28,6 +30,9 @@ site:
 	bundle exec jekyll build --trace
 	python3 scripts/check_built_site.py
 candidate-check: validate site
-
 v070-check:
 	python3 scripts/validate_v070_execution.py
+v090-check:
+	python3 scripts/validate_interoperability_candidate.py
+	python3 scripts/validate_candidate_specification.py
+	python3 scripts/validate_release.py

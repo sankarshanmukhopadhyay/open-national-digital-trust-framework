@@ -1,0 +1,27 @@
+schema_version: '1.0'
+id: CAL-001
+status: provisional-internal-test-derived
+title: Operational parameter calibration baseline
+parameters:
+- id: CAL-101
+  name: maximum_status_age_seconds
+  value: 300
+  classification: profile-default
+  evidence: internal deterministic interoperability harness
+  confidence: low
+  recalibration_trigger: external pilot evidence
+- id: CAL-102
+  name: revocation_propagation_objective_seconds
+  value: 60
+  classification: profile-default
+  evidence: internal deterministic interoperability harness
+  confidence: low
+  recalibration_trigger: measured deployment evidence
+- id: CAL-103
+  name: challenge_acknowledgement_hours
+  value: 24
+  classification: illustrative-service-objective
+  evidence: rights/remedy journey design
+  confidence: low
+  recalibration_trigger: competent service-design or operational evidence
+rule: No value in this register is a core normative minimum unless separately promoted through governed change control.

@@ -928,6 +928,8 @@ The release may be published only when:
 
 # Part IV — v0.9.0 Candidate Specification
 
+> **v0.9.0 implementation note (14 August 2026):** The repository now contains the candidate normative inventory, complete requirement-to-assertion coverage, named conformance classes, candidate Guided Construction versioning, internal cross-codebase interoperability evidence, bounded recognition/equivalence, provisional calibration and candidate change-control machinery. External independent operation, competent jurisdiction review and external candidate review remain explicitly disclosed evidence limits rather than unsupported closure claims.
+
 ## 20. Release objective
 
 `v0.9.0` should freeze the candidate normative architecture for final review and implementation feedback.

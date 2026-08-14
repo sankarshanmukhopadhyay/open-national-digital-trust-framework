@@ -1,0 +1,7 @@
+stateDiagram-v2
+  [*] --> Proposed
+  Proposed --> Recognised: governed approval
+  Recognised --> Suspended: trigger / review
+  Suspended --> Recognised: remediation accepted
+  Suspended --> Withdrawn: withdrawal decision
+  Recognised --> Withdrawn: termination

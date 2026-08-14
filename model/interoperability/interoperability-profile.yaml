@@ -1,0 +1,56 @@
+schema_version: '1.0'
+id: IPR-001
+title: ONDTF Candidate Interoperability Profile
+status: candidate-evidence-profile
+version: 0.9.0
+layers:
+- id: IPR-101
+  name: syntactic
+  claim: Records conform to the selected schemas and version declarations.
+- id: IPR-102
+  name: semantic
+  claim: Producer and consumer interpret authority, status, freshness and decision outcomes consistently.
+- id: IPR-103
+  name: policy
+  claim: Profile parameters and failure semantics are understood consistently.
+- id: IPR-104
+  name: governance
+  claim: Decision authority, review, suspension and remedy obligations remain attributable.
+- id: IPR-105
+  name: operational
+  claim: Status, incidents, retries and degraded-mode behaviour are observable and bounded.
+record_contract:
+  required:
+  - record_id
+  - record_type
+  - schema_version
+  - profile_id
+  - producer
+  - issued_at
+  - payload
+  - integrity
+  status_fields:
+  - state
+  - effective_at
+  - observed_at
+  - freshness_seconds
+  - authority
+  decision_fields:
+  - decision
+  - reason_codes
+  - requirements
+  - authority_evidence
+  - status_evidence
+failure_codes:
+- UNSUPPORTED_SCHEMA_VERSION
+- PROFILE_VERSION_MISMATCH
+- UNKNOWN_AUTHORITY
+- STALE_STATUS
+- REVOKED_AUTHORITY
+- SUSPENDED_PROVIDER
+- INCOMPLETE_EVIDENCE
+- UNSUPPORTED_CAPABILITY
+privacy:
+  correlation_minimisation: Profile implementations SHOULD minimise status-query linkability and disclose unavoidable correlation
+    surfaces.
+  offline: Offline evidence MUST expose its observation time and applicable freshness policy.

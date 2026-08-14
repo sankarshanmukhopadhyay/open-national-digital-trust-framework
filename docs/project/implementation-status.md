@@ -4,22 +4,18 @@ title: Implementation Status
 parent: Project Governance and Releases
 nav_order: 6
 ---
-
 # Implementation status
 
-ONDTF v0.5.0 is a feature-complete specification and governance framework with reference artefacts. It is not represented as a production implementation or independently certified deployment.
+ONDTF v0.9.0 is a **Candidate Specification** with executable repository-local implementation, conformance and interoperability evidence. It is not represented as production software, a certified deployment or a legally approved national framework.
 
-| Artefact type | Status | Appropriate use |
+| Artefact | Candidate status | Appropriate use |
 |---|---|---|
-| Normative and guidance documents | Draft | Review, profiling and implementation planning |
-| Machine-readable schemas and catalogues | Reference draft | Validation experiments and tooling development |
-| Worked reference scenario | Illustrative | End-to-end comprehension and test design |
-| Standards crosswalks | Informative | Gap analysis and profile design |
-| Jurisdiction profiles | Informative draft | Localisation planning subject to current legal review |
-| Repository validators | Maintainer tooling | Structural and publication quality checks |
+| Normative requirement catalogue | Candidate frozen | implementation and formal review |
+| Candidate conformance suite | 28/28 requirements covered | implementation/assessment planning and executable checks where applicable |
+| Reference implementation | Informative | observable-behaviour demonstration |
+| Implementation B | Independent-codebase simulation | cross-codebase semantics; not external independence evidence |
+| Interoperability profile | Candidate profile | test design and profile authoring |
+| Recognition profile | Candidate example | bounded equivalence method; no legal effect |
+| Guided Construction | Candidate-hardened | governed decision capture and package construction |
 
-Implementers are encouraged to report ambiguity, conflicting requirements, missing evidence semantics, interoperability problems and operational assumptions. Implementation feedback should distinguish framework defects from profile choices and deployment-specific constraints.
-
-## Current operationalisation
-
-The provider and service lifecycle, assessment scheme, conformance claim model, surveillance, nonconformity, public status and appeals architecture now have coordinated human-readable and machine-readable drafts.
+External implementation teams should record questions through the candidate review process rather than relying on private interpretation.

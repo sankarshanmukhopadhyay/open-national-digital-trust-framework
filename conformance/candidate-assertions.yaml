@@ -1,0 +1,321 @@
+schema_version: '1.0'
+suite_version: 0.9.0-candidate
+assertions:
+- id: CT-CAN-001
+  title: Candidate assessment for ONDTF-GOV-001
+  requirement: ONDTF-GOV-001
+  class: assessor-verifiable
+  severity: critical
+  conformance_class: CCL-001
+  assessment_basis:
+  - Published mandate
+  - Scope statement
+  expected: evidence-and-outcome-consistent-with-requirement
+  automation_status: assessor-procedure-defined
+- id: CT-CAN-002
+  title: Candidate assessment for ONDTF-GOV-002
+  requirement: ONDTF-GOV-002
+  class: assessor-verifiable
+  severity: critical
+  conformance_class: CCL-001
+  assessment_basis:
+  - Institutional role catalogue
+  - Responsibility assignment
+  expected: evidence-and-outcome-consistent-with-requirement
+  automation_status: assessor-procedure-defined
+- id: CT-CAN-003
+  title: Candidate assessment for ONDTF-GOV-003
+  requirement: ONDTF-GOV-003
+  class: assessor-verifiable
+  severity: critical
+  conformance_class: CCL-001
+  assessment_basis:
+  - Scope and non-goals statement
+  - Profile manifest
+  expected: evidence-and-outcome-consistent-with-requirement
+  automation_status: assessor-procedure-defined
+- id: CT-CAN-004
+  title: Candidate assessment for ONDTF-GOV-004
+  requirement: ONDTF-GOV-004
+  class: assessor-verifiable
+  severity: critical
+  conformance_class: CCL-001
+  assessment_basis:
+  - Decision-rights matrix
+  - Delegation register
+  - Conflict register
+  expected: evidence-and-outcome-consistent-with-requirement
+  automation_status: assessor-procedure-defined
+- id: CT-CAN-005
+  title: Candidate assessment for ONDTF-GOV-005
+  requirement: ONDTF-GOV-005
+  class: assessor-verifiable
+  severity: critical
+  conformance_class: CCL-001
+  assessment_basis:
+  - Change record
+  - Approval record
+  - Publication notice
+  expected: evidence-and-outcome-consistent-with-requirement
+  automation_status: assessor-procedure-defined
+- id: CT-CAN-006
+  title: Candidate assessment for ONDTF-GOV-006
+  requirement: ONDTF-GOV-006
+  class: assessor-verifiable
+  severity: critical
+  conformance_class: CCL-001
+  assessment_basis:
+  - Emergency authority policy
+  - Exercise or invocation record
+  - Independent review
+  expected: evidence-and-outcome-consistent-with-requirement
+  automation_status: assessor-procedure-defined
+- id: CT-CAN-007
+  title: Candidate assessment for ONDTF-ROL-001
+  requirement: ONDTF-ROL-001
+  class: judgement-dependent
+  severity: critical
+  conformance_class: CCL-001
+  assessment_basis:
+  - Institutional function map
+  - Role allocation decision
+  expected: evidence-and-outcome-consistent-with-requirement
+  automation_status: assessor-procedure-defined
+- id: CT-CAN-008
+  title: Candidate assessment for ONDTF-ROL-002
+  requirement: ONDTF-ROL-002
+  class: judgement-dependent
+  severity: critical
+  conformance_class: CCL-001
+  assessment_basis:
+  - Role catalogue
+  - Appointment or designation instrument
+  expected: evidence-and-outcome-consistent-with-requirement
+  automation_status: assessor-procedure-defined
+- id: CT-CAN-009
+  title: Candidate assessment for ONDTF-ROL-003
+  requirement: ONDTF-ROL-003
+  class: judgement-dependent
+  severity: critical
+  conformance_class: CCL-001
+  assessment_basis:
+  - Concentration assessment
+  - Conflict treatment plan
+  expected: evidence-and-outcome-consistent-with-requirement
+  automation_status: assessor-procedure-defined
+- id: CT-CAN-010
+  title: Candidate assessment for ONDTF-ROL-004
+  requirement: ONDTF-ROL-004
+  class: judgement-dependent
+  severity: critical
+  conformance_class: CCL-001
+  assessment_basis:
+  - Appeal procedure
+  - Independence safeguards
+  - Case records
+  expected: evidence-and-outcome-consistent-with-requirement
+  automation_status: assessor-procedure-defined
+- id: CT-CAN-011
+  title: Candidate assessment for ONDTF-ROL-005
+  requirement: ONDTF-ROL-005
+  class: judgement-dependent
+  severity: critical
+  conformance_class: CCL-001
+  assessment_basis:
+  - Responsibility assignment
+  - Independence controls
+  expected: evidence-and-outcome-consistent-with-requirement
+  automation_status: assessor-procedure-defined
+- id: CT-CAN-012
+  title: Candidate assessment for ONDTF-ROL-006
+  requirement: ONDTF-ROL-006
+  class: judgement-dependent
+  severity: critical
+  conformance_class: CCL-001
+  assessment_basis:
+  - Coordination protocol
+  - Referral records
+  expected: evidence-and-outcome-consistent-with-requirement
+  automation_status: assessor-procedure-defined
+- id: CT-CAN-013
+  title: Candidate assessment for ONDTF-ROL-007
+  requirement: ONDTF-ROL-007
+  class: judgement-dependent
+  severity: critical
+  conformance_class: CCL-001
+  assessment_basis:
+  - Published eligibility rules
+  - Accessible procedures
+  - Case records
+  expected: evidence-and-outcome-consistent-with-requirement
+  automation_status: assessor-procedure-defined
+- id: CT-CAN-014
+  title: Candidate assessment for ONDTF-ROL-008
+  requirement: ONDTF-ROL-008
+  class: judgement-dependent
+  severity: high
+  conformance_class: CCL-001
+  assessment_basis:
+  - Review terms
+  - Participation records
+  - Published findings
+  expected: evidence-and-outcome-consistent-with-requirement
+  automation_status: assessor-procedure-defined
+- id: CT-CAN-015
+  title: Candidate assessment for ONDTF-AUT-001
+  requirement: ONDTF-AUT-001
+  class: machine-executable
+  severity: critical
+  conformance_class: CCL-002
+  assessment_basis:
+  - Decision policy
+  - Decision records
+  expected: evidence-and-outcome-consistent-with-requirement
+  automation_status: implemented
+- id: CT-CAN-016
+  title: Candidate assessment for ONDTF-AUT-002
+  requirement: ONDTF-AUT-002
+  class: machine-executable
+  severity: critical
+  conformance_class: CCL-002
+  assessment_basis:
+  - Authority policy
+  - Evaluation record
+  expected: evidence-and-outcome-consistent-with-requirement
+  automation_status: implemented
+- id: CT-CAN-017
+  title: Candidate assessment for ONDTF-AUT-003
+  requirement: ONDTF-AUT-003
+  class: machine-executable
+  severity: critical
+  conformance_class: CCL-002
+  assessment_basis:
+  - Delegation constraints
+  - Negative tests
+  expected: evidence-and-outcome-consistent-with-requirement
+  automation_status: implemented
+- id: CT-CAN-018
+  title: Candidate assessment for ONDTF-EVI-001
+  requirement: ONDTF-EVI-001
+  class: assessor-verifiable
+  severity: critical
+  conformance_class: CCL-002
+  assessment_basis:
+  - Evidence policy
+  - Decision record
+  expected: evidence-and-outcome-consistent-with-requirement
+  automation_status: assessor-procedure-defined
+- id: CT-CAN-019
+  title: Candidate assessment for ONDTF-EVI-003
+  requirement: ONDTF-EVI-003
+  class: machine-executable
+  severity: critical
+  conformance_class: CCL-002
+  assessment_basis:
+  - Registry governance statement
+  - Status history
+  - Change log
+  expected: evidence-and-outcome-consistent-with-requirement
+  automation_status: implemented
+- id: CT-CAN-020
+  title: Candidate assessment for ONDTF-DEC-003
+  requirement: ONDTF-DEC-003
+  class: machine-executable
+  severity: critical
+  conformance_class: CCL-002
+  assessment_basis:
+  - Decision record
+  - Preserved evidence reference
+  expected: evidence-and-outcome-consistent-with-requirement
+  automation_status: implemented
+- id: CT-CAN-021
+  title: Candidate assessment for ONDTF-SPR-001
+  requirement: ONDTF-SPR-001
+  class: assessor-verifiable
+  severity: critical
+  conformance_class: CCL-003
+  assessment_basis:
+  - Threat model
+  - Privacy assessment
+  - Risk register
+  expected: evidence-and-outcome-consistent-with-requirement
+  automation_status: assessor-procedure-defined
+- id: CT-CAN-022
+  title: Candidate assessment for ONDTF-INC-001
+  requirement: ONDTF-INC-001
+  class: assessor-verifiable
+  severity: critical
+  conformance_class: CCL-002
+  assessment_basis:
+  - Incident plan
+  - Exercise record
+  - Incident report
+  expected: evidence-and-outcome-consistent-with-requirement
+  automation_status: assessor-procedure-defined
+- id: CT-CAN-023
+  title: Candidate assessment for ONDTF-RED-001
+  requirement: ONDTF-RED-001
+  class: judgement-dependent
+  severity: critical
+  conformance_class: CCL-003
+  assessment_basis:
+  - Published procedure
+  - Case record
+  - Remedy completion record
+  expected: evidence-and-outcome-consistent-with-requirement
+  automation_status: assessor-procedure-defined
+- id: CT-CAN-024
+  title: Candidate assessment for ONDTF-CON-001
+  requirement: ONDTF-CON-001
+  class: assessor-verifiable
+  severity: critical
+  conformance_class: CCL-004
+  assessment_basis:
+  - Conformance declaration
+  - Assessment record
+  expected: evidence-and-outcome-consistent-with-requirement
+  automation_status: assessor-procedure-defined
+- id: CT-CAN-025
+  title: Candidate assessment for ONDTF-CON-002
+  requirement: ONDTF-CON-002
+  class: assessor-verifiable
+  severity: critical
+  conformance_class: CCL-004
+  assessment_basis:
+  - Core conformance policy
+  - Profile dependency declarations
+  expected: evidence-and-outcome-consistent-with-requirement
+  automation_status: assessor-procedure-defined
+- id: CT-CAN-026
+  title: Candidate assessment for ONDTF-CON-003
+  requirement: ONDTF-CON-003
+  class: assessor-verifiable
+  severity: critical
+  conformance_class: CCL-004
+  assessment_basis:
+  - Profile manifest
+  - Dependency register
+  expected: evidence-and-outcome-consistent-with-requirement
+  automation_status: assessor-procedure-defined
+- id: CT-CAN-027
+  title: Candidate assessment for ONDTF-MNT-001
+  requirement: ONDTF-MNT-001
+  class: assessor-verifiable
+  severity: critical
+  conformance_class: CCL-001
+  assessment_basis:
+  - Requirement catalogue
+  - Change history
+  expected: evidence-and-outcome-consistent-with-requirement
+  automation_status: assessor-procedure-defined
+- id: CT-CAN-028
+  title: Candidate assessment for ONDTF-MNT-002
+  requirement: ONDTF-MNT-002
+  class: assessor-verifiable
+  severity: critical
+  conformance_class: CCL-001
+  assessment_basis:
+  - Change-impact record
+  - Migration plan
+  expected: evidence-and-outcome-consistent-with-requirement
+  automation_status: assessor-procedure-defined

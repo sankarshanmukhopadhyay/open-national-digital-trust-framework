@@ -1,4 +1,4 @@
-version: 1
+version: 2
 stages:
 - id: 1
   title: Purpose and boundary
@@ -25,8 +25,7 @@ stages:
 questions:
 - id: GFC-SCP-001
   stage: 1
-  prompt: What problem and public or institutional outcome is the DTF intended to
-    address?
+  prompt: What problem and public or institutional outcome is the DTF intended to address?
   response_type: long_text
   required: true
   maps_to:
@@ -36,8 +35,7 @@ questions:
   - stakeholder
 - id: GFC-SCP-002
   stage: 1
-  prompt: Which services, transactions, actors, affected parties, harms, and exclusions
-    are in scope?
+  prompt: Which services, transactions, actors, affected parties, harms, and exclusions are in scope?
   response_type: structured
   required: true
   maps_to:
@@ -48,8 +46,7 @@ questions:
   - stakeholder
 - id: GFC-AUT-001
   stage: 2
-  prompt: What is the legal, regulatory, contractual, or institutional source of authority
-    for the DTF?
+  prompt: What is the legal, regulatory, contractual, or institutional source of authority for the DTF?
   response_type: structured
   required: true
   maps_to:
@@ -70,8 +67,7 @@ questions:
   - governance
 - id: GFC-ROL-001
   stage: 3
-  prompt: Which institutional and participant roles are required, and which role combinations
-    are prohibited?
+  prompt: Which institutional and participant roles are required, and which role combinations are prohibited?
   response_type: role_matrix
   required: true
   maps_to:
@@ -105,8 +101,7 @@ questions:
   - risk
 - id: GFC-ASR-002
   stage: 5
-  prompt: What minimum level and critical non-compensable floor applies to each use
-    case?
+  prompt: What minimum level and critical non-compensable floor applies to each use case?
   response_type: matrix
   required: true
   maps_to:
@@ -131,8 +126,7 @@ questions:
   - PAT-CON-003
 - id: GFC-TEC-001
   stage: 7
-  prompt: Which identifiers, credentials, protocols, registries, status mechanisms,
-    and cryptographic dependencies are permitted?
+  prompt: Which identifiers, credentials, protocols, registries, status mechanisms, and cryptographic dependencies are permitted?
   response_type: dependency_list
   required: true
   maps_to:
@@ -143,8 +137,8 @@ questions:
   - privacy
 - id: GFC-RGT-001
   stage: 8
-  prompt: Which affected-party classes, notice, explanation, challenge, appeal, remedy,
-    accessibility, and alternative-channel obligations apply?
+  prompt: Which affected-party classes, notice, explanation, challenge, appeal, remedy, accessibility, and alternative-channel
+    obligations apply?
   response_type: structured
   required: true
   maps_to:
@@ -156,8 +150,7 @@ questions:
   - stakeholder
 - id: GFC-RSK-001
   stage: 9
-  prompt: Which adversarial conditions, collusion risks, systemic dependencies, and
-    emergency scenarios must be addressed?
+  prompt: Which adversarial conditions, collusion risks, systemic dependencies, and emergency scenarios must be addressed?
   response_type: risk_register
   required: true
   maps_to:
@@ -168,8 +161,7 @@ questions:
   - operations
 - id: GFC-REC-001
   stage: 10
-  prompt: Will the DTF recognise external frameworks, providers, credentials, or assurance
-    results?
+  prompt: Will the DTF recognise external frameworks, providers, credentials, or assurance results?
   response_type: boolean
   required: true
   maps_to:
@@ -180,8 +172,7 @@ questions:
   - assurance
 - id: GFC-REC-002
   stage: 10
-  prompt: What recognition basis, conditions, liability, evidence, suspension, and
-    remedy model applies?
+  prompt: What recognition basis, conditions, liability, evidence, suspension, and remedy model applies?
   response_type: structured
   required: true
   maps_to:
@@ -195,8 +186,7 @@ questions:
     equals: true
 - id: GFC-MNT-001
   stage: 11
-  prompt: Who owns each controlled document and dependency, and what review and change
-    triggers apply?
+  prompt: Who owns each controlled document and dependency, and what review and change triggers apply?
   response_type: structured
   required: true
   maps_to:
@@ -206,8 +196,7 @@ questions:
   - operations
 - id: GFC-MNT-002
   stage: 11
-  prompt: What migration, compatibility, emergency-change, deprecation, and retirement
-    rules apply?
+  prompt: What migration, compatibility, emergency-change, deprecation, and retirement rules apply?
   response_type: structured
   required: true
   maps_to:
@@ -216,3 +205,4 @@ questions:
   - governance
   - technical
   - operations
+candidate_version: 0.9.0

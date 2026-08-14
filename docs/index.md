@@ -69,10 +69,11 @@ flowchart LR
 | [Rights and Redress](rights/index.md) | Affected parties, transparency, challenge, appeal, remedy, and accountability |
 | [Assurance](assurance/index.md) | Assurance levels, evidence, assessment, and conformance |
 | [Implementation](implementation/index.md) | Deployment patterns, implementation sequence, and reference interfaces |
+| [Interoperability and recognition](interoperability/index.md) | Cross-codebase semantics, recognition boundaries, equivalence and calibration |
 | [Worked reference scenario](reference-scenario/index.md) | Instantiated artefacts and end-to-end traceability |
 | [Jurisdiction profiles](../profiles/index.md) | National specialisation without weakening the core |
 | [Documentation architecture](documentation/index.md) | Reading order, framework map, dependencies, and maintenance conventions |
 
 ## Current posture
 
-ONDTF v0.5.0 is the Feature Complete Draft. It establishes the complete planned architectural baseline while remaining open to implementation evidence, interoperability testing, external review, and editorial refinement before candidate-specification status.
+ONDTF **v0.9.0 is the Candidate Specification**. The normative surface is frozen for review, all 28 normative requirements have candidate conformance coverage, and interoperability/recognition evidence is published with explicit limitations. External legal approval, production certification and independently operated deployment evidence are not implied.

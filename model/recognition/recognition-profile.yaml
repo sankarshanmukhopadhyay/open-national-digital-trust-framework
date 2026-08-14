@@ -1,0 +1,49 @@
+schema_version: '1.0'
+id: REC-001
+title: Bounded external-framework recognition profile
+status: candidate-example
+recognising_authority: ROLE-GA
+recognised_framework: EXTERNAL-FRAMEWORK-A
+recognised_version: '1.0'
+basis:
+  type: governance-decision
+  record: REC-DEC-001
+scope:
+  roles:
+  - service-provider
+  services:
+  - delegated-authority-verification
+  exclusions:
+  - final-remedy-equivalence
+equivalence:
+- id: EQV-001
+  dimension: identity-and-attribution
+  result: equivalent
+  basis: documented evidence semantics
+- id: EQV-002
+  dimension: authority-evaluation
+  result: conditionally-equivalent
+  conditions:
+  - scope and revocation semantics preserved
+- id: EQV-003
+  dimension: operational-supervision
+  result: not-established
+  conditions:
+  - external supervision evidence required
+- id: EQV-004
+  dimension: rights-and-remedy
+  result: not-equivalent
+  conditions:
+  - route complaints to recognising framework authority
+lifecycle:
+  review_interval_days: 180
+  suspension_triggers:
+  - material-version-change
+  - incident-nondisclosure
+  - status-interface-failure
+  withdrawal_requires:
+  - decision-record
+  - effective-date
+  - transition-notice
+limitations:
+- Illustrative evidence profile; does not establish legal recognition of any real external framework.

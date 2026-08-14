@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "framework_version": "0.7.0",
+  "framework_version": "0.9.0",
   "artifacts": [
     {
       "path": "artifacts/terminology/ctwg-crosswalk.json",
@@ -8,7 +8,7 @@
     },
     {
       "path": "artifacts/terminology/ondtf-glossary.json",
-      "sha256": "6fdfec5d20c53d592e9c693bbfb8ed77ab1147c1eb2a143ae0cfc3b6fd33cdce"
+      "sha256": "8f5b9d153812399a931a9074e6bad6223944ff6eecd9f851d446ea277c976feb"
     },
     {
       "path": "artifacts/terminology/ondtf-glossary.jsonld",

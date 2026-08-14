@@ -1,0 +1,38 @@
+schema_version: '1.0'
+version: 0.9.0
+claim_rule: A conformance claim MUST name class, profile/version, suite version, implementation/assessed object and assessment
+  basis. Generic ONDTF-compliant claims are not permitted.
+classes:
+- id: CCL-001
+  name: Core Governance Conformance
+  scope:
+  - governance
+  - institutional_roles
+  - maintenance
+- id: CCL-002
+  name: Operational Profile Conformance
+  scope:
+  - authority
+  - delegation
+  - evidence
+  - registries
+  - accountability
+  - incident
+- id: CCL-003
+  name: Security Privacy and Rights Conformance
+  scope:
+  - security_privacy
+  - redress
+- id: CCL-004
+  name: Assessment and Conformance Governance
+  scope:
+  - conformance
+  - independence
+- id: CCL-005
+  name: Interoperability Profile Conformance
+  scope:
+  - interoperability
+- id: CCL-006
+  name: Recognition Profile Conformance
+  scope:
+  - recognition

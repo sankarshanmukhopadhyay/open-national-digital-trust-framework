@@ -1,7 +1,7 @@
 from pathlib import Path
 import re, yaml, json
 ROOT=Path(__file__).resolve().parents[1]
-PREFIXES=['ONDTF','ROLE','URI','IM','PLT','CT','ADV','JRN','CLAR','CAP','THR','CTL','SB','AST','THCAT','SEC','EPA','RS','INT','AS','AP','TA','TB','ADR','LIM','MPR','EVD']
+PREFIXES=['ONDTF','ROLE','URI','IM','PLT','CT','ADV','JRN','CLAR','CAP','THR','CTL','SB','AST','THCAT','SEC','EPA','RS','INT','AS','AP','TA','TB','ADR','LIM','MPR','EVD','IPR','REC','EQV','CAL','CCL','NCP','REV','GFM']
 PREFIX_ALT='|'.join(sorted(PREFIXES,key=len,reverse=True))
 PAT=re.compile(rf'\b(?:(?:ONDTF)-[A-Z]{{3}}-\d{{3}}|(?:CT)-[A-Z]{{3}}-\d{{3}}|(?:JRN)-[A-Z]{{3}}-\d{{3}}|(?:{PREFIX_ALT})-\d{{2,4}}|ROLE-[A-Z0-9]+|IM-[A-Z]{{3}})\b')
 EXCLUDE={Path('docs/information-model/identifier-registry.md'),Path('model/references/identifier-registry.yaml'),Path('assets/data/identifiers.json')}

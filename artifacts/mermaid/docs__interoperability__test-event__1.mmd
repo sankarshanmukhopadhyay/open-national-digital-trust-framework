@@ -1,0 +1,10 @@
+sequenceDiagram
+  participant A as Implementation A
+  participant H as Harness
+  participant B as Implementation B
+  A->>H: evaluate fixture
+  H->>B: same versioned fixture
+  B-->>H: decision
+  A-->>H: decision
+  H->>H: compare expected semantics
+  H-->>A: result/evidence record

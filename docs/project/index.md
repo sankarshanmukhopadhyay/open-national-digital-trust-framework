@@ -9,10 +9,12 @@ has_children: true
 
 This section makes the repository's maturity, boundaries and future direction visible on GitHub Pages. It complements the canonical governance and release documents maintained at the repository root.
 
-## v0.6.0 Operational Framework Draft
+## v0.9.0 Candidate Specification
 
-- [Normative Architecture](../normative/index.md)
-- [Institutional Operating Model](../governance/institutional-operating-model.md)
+- [Candidate Normative Inventory](../normative/candidate-normative-inventory.md)
+- [Candidate Conformance Classes](../implementation/candidate-conformance.md)
+- [Interoperability and Recognition](../interoperability/index.md)
+- [Candidate Review Programme](candidate-review-programme.md)
 
 ## Current release and project status
 
@@ -45,3 +47,11 @@ This section makes the repository's maturity, boundaries and future direction vi
 - [Code of Conduct](https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/blob/main/CODE_OF_CONDUCT.md)
 - [Changelog](https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/blob/main/CHANGELOG.md)
 - [Release notes](https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/blob/main/RELEASE_NOTES.md)
+
+## Candidate governance and v1 promotion
+
+- [Candidate Freeze and Change Control](candidate-freeze-and-change-control.md)
+- [Candidate Review Programme](candidate-review-programme.md)
+- [Errata and Emergency Change](errata-and-emergency-change.md)
+- [v1.0.0 Entrance Criteria](v1-readiness.md)
+- [v0.9.0 Readiness Checklist](v0.9-readiness-checklist.md)

@@ -1,0 +1,266 @@
+schema_version: '1.0'
+framework_version: 0.9.0
+requirements_total: 28
+coverage:
+- requirement: ONDTF-GOV-001
+  assertions:
+  - CT-CAN-001
+  accountable_role: ROLE-GA
+  evidence:
+  - Published mandate
+  - Scope statement
+  conformance_class: CCL-001
+  coverage_status: covered
+- requirement: ONDTF-GOV-002
+  assertions:
+  - CT-CAN-002
+  accountable_role: ROLE-GA
+  evidence:
+  - Institutional role catalogue
+  - Responsibility assignment
+  conformance_class: CCL-001
+  coverage_status: covered
+- requirement: ONDTF-GOV-003
+  assertions:
+  - CT-CAN-003
+  accountable_role: ROLE-GA
+  evidence:
+  - Scope and non-goals statement
+  - Profile manifest
+  conformance_class: CCL-001
+  coverage_status: covered
+- requirement: ONDTF-GOV-004
+  assertions:
+  - CT-CAN-004
+  accountable_role: ROLE-GA
+  evidence:
+  - Decision-rights matrix
+  - Delegation register
+  - Conflict register
+  conformance_class: CCL-001
+  coverage_status: covered
+- requirement: ONDTF-GOV-005
+  assertions:
+  - CT-CAN-005
+  accountable_role: ROLE-FA
+  evidence:
+  - Change record
+  - Approval record
+  - Publication notice
+  conformance_class: CCL-001
+  coverage_status: covered
+- requirement: ONDTF-GOV-006
+  assertions:
+  - CT-CAN-006
+  accountable_role: ROLE-GA
+  evidence:
+  - Emergency authority policy
+  - Exercise or invocation record
+  - Independent review
+  conformance_class: CCL-001
+  coverage_status: covered
+- requirement: ONDTF-ROL-001
+  assertions:
+  - CT-CAN-007
+  accountable_role: ROLE-GA
+  evidence:
+  - Institutional function map
+  - Role allocation decision
+  conformance_class: CCL-001
+  coverage_status: covered
+- requirement: ONDTF-ROL-002
+  assertions:
+  - CT-CAN-008
+  accountable_role: ROLE-GA
+  evidence:
+  - Role catalogue
+  - Appointment or designation instrument
+  conformance_class: CCL-001
+  coverage_status: covered
+- requirement: ONDTF-ROL-003
+  assertions:
+  - CT-CAN-009
+  accountable_role: ROLE-GA
+  evidence:
+  - Concentration assessment
+  - Conflict treatment plan
+  conformance_class: CCL-001
+  coverage_status: covered
+- requirement: ONDTF-ROL-004
+  assertions:
+  - CT-CAN-010
+  accountable_role: ROLE-GA
+  evidence:
+  - Appeal procedure
+  - Independence safeguards
+  - Case records
+  conformance_class: CCL-001
+  coverage_status: covered
+- requirement: ONDTF-ROL-005
+  assertions:
+  - CT-CAN-011
+  accountable_role: ROLE-GA
+  evidence:
+  - Responsibility assignment
+  - Independence controls
+  conformance_class: CCL-001
+  coverage_status: covered
+- requirement: ONDTF-ROL-006
+  assertions:
+  - CT-CAN-012
+  accountable_role: ROLE-SA
+  evidence:
+  - Coordination protocol
+  - Referral records
+  conformance_class: CCL-001
+  coverage_status: covered
+- requirement: ONDTF-ROL-007
+  assertions:
+  - CT-CAN-013
+  accountable_role: ROLE-CAR
+  evidence:
+  - Published eligibility rules
+  - Accessible procedures
+  - Case records
+  conformance_class: CCL-001
+  coverage_status: covered
+- requirement: ONDTF-ROL-008
+  assertions:
+  - CT-CAN-014
+  accountable_role: ROLE-IO
+  evidence:
+  - Review terms
+  - Participation records
+  - Published findings
+  conformance_class: CCL-001
+  coverage_status: covered
+- requirement: ONDTF-AUT-001
+  assertions:
+  - CT-CAN-015
+  accountable_role: ROLE-RP
+  evidence:
+  - Decision policy
+  - Decision records
+  conformance_class: CCL-002
+  coverage_status: covered
+- requirement: ONDTF-AUT-002
+  assertions:
+  - CT-CAN-016
+  accountable_role: ROLE-RP
+  evidence:
+  - Authority policy
+  - Evaluation record
+  conformance_class: CCL-002
+  coverage_status: covered
+- requirement: ONDTF-AUT-003
+  assertions:
+  - CT-CAN-017
+  accountable_role: ROLE-SP
+  evidence:
+  - Delegation constraints
+  - Negative tests
+  conformance_class: CCL-002
+  coverage_status: covered
+- requirement: ONDTF-EVI-001
+  assertions:
+  - CT-CAN-018
+  accountable_role: ROLE-RP
+  evidence:
+  - Evidence policy
+  - Decision record
+  conformance_class: CCL-002
+  coverage_status: covered
+- requirement: ONDTF-EVI-003
+  assertions:
+  - CT-CAN-019
+  accountable_role: ROLE-FA
+  evidence:
+  - Registry governance statement
+  - Status history
+  - Change log
+  conformance_class: CCL-002
+  coverage_status: covered
+- requirement: ONDTF-DEC-003
+  assertions:
+  - CT-CAN-020
+  accountable_role: ROLE-RP
+  evidence:
+  - Decision record
+  - Preserved evidence reference
+  conformance_class: CCL-002
+  coverage_status: covered
+- requirement: ONDTF-SPR-001
+  assertions:
+  - CT-CAN-021
+  accountable_role: ROLE-GA
+  evidence:
+  - Threat model
+  - Privacy assessment
+  - Risk register
+  conformance_class: CCL-003
+  coverage_status: covered
+- requirement: ONDTF-INC-001
+  assertions:
+  - CT-CAN-022
+  accountable_role: ROLE-ICA
+  evidence:
+  - Incident plan
+  - Exercise record
+  - Incident report
+  conformance_class: CCL-002
+  coverage_status: covered
+- requirement: ONDTF-RED-001
+  assertions:
+  - CT-CAN-023
+  accountable_role: ROLE-CAR
+  evidence:
+  - Published procedure
+  - Case record
+  - Remedy completion record
+  conformance_class: CCL-003
+  coverage_status: covered
+- requirement: ONDTF-CON-001
+  assertions:
+  - CT-CAN-024
+  accountable_role: ROLE-CAB
+  evidence:
+  - Conformance declaration
+  - Assessment record
+  conformance_class: CCL-004
+  coverage_status: covered
+- requirement: ONDTF-CON-002
+  assertions:
+  - CT-CAN-025
+  accountable_role: ROLE-GA
+  evidence:
+  - Core conformance policy
+  - Profile dependency declarations
+  conformance_class: CCL-004
+  coverage_status: covered
+- requirement: ONDTF-CON-003
+  assertions:
+  - CT-CAN-026
+  accountable_role: ROLE-PA
+  evidence:
+  - Profile manifest
+  - Dependency register
+  conformance_class: CCL-004
+  coverage_status: covered
+- requirement: ONDTF-MNT-001
+  assertions:
+  - CT-CAN-027
+  accountable_role: ROLE-FA
+  evidence:
+  - Requirement catalogue
+  - Change history
+  conformance_class: CCL-001
+  coverage_status: covered
+- requirement: ONDTF-MNT-002
+  assertions:
+  - CT-CAN-028
+  accountable_role: ROLE-FA
+  evidence:
+  - Change-impact record
+  - Migration plan
+  conformance_class: CCL-001
+  coverage_status: covered

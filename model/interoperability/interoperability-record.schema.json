@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ondtf.example/schemas/interoperability-record.schema.json",
+  "title": "ONDTF interoperability record",
+  "type": "object",
+  "required": [
+    "record_id",
+    "record_type",
+    "schema_version",
+    "profile_id",
+    "producer",
+    "issued_at",
+    "payload",
+    "integrity"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string"
+    },
+    "record_type": {
+      "enum": [
+        "status",
+        "authority",
+        "decision",
+        "incident",
+        "remedy-reference"
+      ]
+    },
+    "schema_version": {
+      "type": "string"
+    },
+    "profile_id": {
+      "type": "string"
+    },
+    "producer": {
+      "type": "string"
+    },
+    "issued_at": {
+      "type": "string"
+    },
+    "payload": {
+      "type": "object"
+    },
+    "integrity": {
+      "type": "object",
+      "required": [
+        "mechanism",
+        "value"
+      ],
+      "properties": {
+        "mechanism": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}
