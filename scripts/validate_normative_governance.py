@@ -64,7 +64,7 @@ for row in assign_data.get('assignments') or []:
             if ref not in role_set: errors.append(f"{row.get('activity')}: unknown {field} role {ref}")
 
 required_docs = [
- 'docs/normative/index.md','docs/normative/requirements-conventions.md','docs/normative/applicability-and-scoping.md',
+ 'docs/core-specification/requirements-register.md', 'docs/normative/index.md','docs/normative/requirements-conventions.md','docs/normative/applicability-and-scoping.md',
  'docs/normative/profile-requirement-inheritance.md','docs/normative/exceptions-and-risk-acceptance.md','docs/normative/requirements-traceability.md',
  'docs/governance/institutional-operating-model.md','docs/governance/governing-authority.md','docs/governance/administrative-authority.md',
  'docs/governance/supervisory-and-regulatory-roles.md','docs/governance/accreditation-and-assessment-roles.md',

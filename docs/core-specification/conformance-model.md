@@ -2,7 +2,7 @@
 layout: default
 title: Conformance Model
 parent: Core Specification
-nav_order: 5
+nav_order: 6
 ---
 
 # Conformance model

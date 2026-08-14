@@ -20,7 +20,8 @@ The core uses the terms **MUST**, **MUST NOT**, **SHOULD**, **SHOULD NOT**, and 
 | [Scope and non-goals](scope-and-non-goals.md) | Establishes the framework boundary |
 | [Conceptual baseline](conceptual-baseline.md) | Defines the minimum shared concepts |
 | [Capability model](capability-model.md) | Describes outcome-oriented capabilities |
-| [Normative requirements](normative-requirements.md) | Establishes the core requirement set |
+| [Requirements Register](requirements-register.md) | Canonical reader-facing register for every stable `ONDTF-*` requirement |
+| [Requirements overview](normative-requirements.md) | Explains how to read, scope and trace requirements |
 | [Conformance model](conformance-model.md) | Defines how claims are scoped and evidenced |
 | [Traceability](traceability.md) | Links outcomes, capabilities, requirements, and evidence |
 

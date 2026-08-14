@@ -54,7 +54,8 @@ Machine-readable bindings, model records, governance registers, and validation e
 - [Scope and non-goals]({{ '/docs/core-specification/scope-and-non-goals.html' | relative_url }})
 - [Conceptual baseline]({{ '/docs/core-specification/conceptual-baseline.html' | relative_url }})
 - [Capability model]({{ '/docs/core-specification/capability-model.html' | relative_url }})
-- [Normative requirements]({{ '/docs/core-specification/normative-requirements.html' | relative_url }})
+- [Requirements Register]({{ '/docs/core-specification/requirements-register.html' | relative_url }})
+- [Requirements overview]({{ '/docs/core-specification/normative-requirements.html' | relative_url }})
 - [Conformance model]({{ '/docs/core-specification/conformance-model.html' | relative_url }})
 - [Requirements traceability]({{ '/docs/core-specification/traceability.html' | relative_url }})
 

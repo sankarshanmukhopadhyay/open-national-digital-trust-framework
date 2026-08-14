@@ -6,8 +6,10 @@ validate:
 	python3 scripts/validate_v070_execution.py
 	python3 scripts/validate_interoperability_candidate.py
 	python3 scripts/validate_candidate_specification.py
+	python3 scripts/build_requirements_register.py
 	python3 scripts/build_identifier_registry.py
 	python3 scripts/validate_identifier_registry.py
+	python3 scripts/validate_requirements_register.py
 	python3 scripts/validate_schema_instances.py
 	python3 scripts/validate_release_integrity.py
 	python3 scripts/validate_terminology.py

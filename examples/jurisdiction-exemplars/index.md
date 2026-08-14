@@ -14,10 +14,10 @@ The examples deliberately preserve institutional differences rather than forcing
 
 | Exemplar | Institutional shape | What it pressure-tests |
 |---|---|---|
-| [Australia Digital ID](australia-digital-id/) | regulator + accreditation + system participation | accreditation versus participation, provider lifecycle, privacy, status and enforcement |
-| [UK DVS Trust Framework](uk-dvs/) | statutory trust framework + independent certification | scoped conformance, CAB independence, register status, version uplift |
-| [Singapore Singpass](singapore-singpass/) | centrally operated national identity/service ecosystem | authentication versus authority, consented data retrieval, business authority, signing |
-| [EUDI Wallet ecosystem](eudi-wallet/) | multi-jurisdictional legal + wallet + trust infrastructure | cross-border interoperability, layered authority, recognition, status and remedy |
+| [Australia Digital ID](../../examples/jurisdiction-exemplars/australia-digital-id/) | regulator + accreditation + system participation | accreditation versus participation, provider lifecycle, privacy, status and enforcement |
+| [UK DVS Trust Framework](../../examples/jurisdiction-exemplars/uk-dvs/) | statutory trust framework + independent certification | scoped conformance, CAB independence, register status, version uplift |
+| [Singapore Singpass](../../examples/jurisdiction-exemplars/singapore-singpass/) | centrally operated national identity/service ecosystem | authentication versus authority, consented data retrieval, business authority, signing |
+| [EUDI Wallet ecosystem](../../examples/jurisdiction-exemplars/eudi-wallet/) | multi-jurisdictional legal + wallet + trust infrastructure | cross-border interoperability, layered authority, recognition, status and remedy |
 
 ```mermaid
 flowchart TB
@@ -46,4 +46,4 @@ Each package separates:
 
 Every package records a source cut-off date and unresolved questions. External facts must be rechecked before a profile is used for policy, legal, procurement, assessment or production decisions.
 
-[Previous: Worked Operational Profile](../worked-profile/) · [Next: Australia Digital ID](australia-digital-id/)
+[Previous: Worked Operational Profile](../worked-operational-profile/) · [Next: Australia Digital ID](../../examples/jurisdiction-exemplars/australia-digital-id/)

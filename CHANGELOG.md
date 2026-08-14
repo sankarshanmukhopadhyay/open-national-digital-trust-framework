@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+### Fixed
+- corrected the generated-site routes from the Real-world Worked Exemplars landing page to all four exemplar packages and the worked operational profile, resolving the GitHub Pages built-link failures;
+- removed the duplicated legacy requirement list from the reader-facing core specification so retired v0.5-only identifiers are no longer presented as current candidate requirements.
+
+### Added
+- a generated ONDTF Requirements Register with stable anchors for all 28 canonical candidate requirements, including normative force, applicability, accountable/responsible roles, expected evidence and candidate conformance assertions;
+- direct automatic linking of every published `ONDTF-*` identifier to its Requirements Register entry, with CI validation that the register remains synchronized with the canonical requirement catalogue and conformance suite.
+
 ### Real-world worked exemplars
 - Added source-bounded ONDTF worked exemplars for Australia Digital ID, the UK DVS Trust Framework, Singapore Singpass, and the EUDI Wallet ecosystem.
 - Each exemplar separates authoritative source facts, ONDTF mappings, and analytical inferences; includes role/lifecycle/scenario/evidence fixtures; and preserves ecosystem neutrality.

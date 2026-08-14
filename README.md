@@ -68,6 +68,7 @@ For a guided introduction, use the rendered documentation:
 - **[ONDTF in One Hour](https://sankarshanmukhopadhyay.github.io/open-national-digital-trust-framework/docs/learning/one-hour.html)**
 - **[Choose a role-based learning path](https://sankarshanmukhopadhyay.github.io/open-national-digital-trust-framework/learn/)**
 - **[View the framework map](https://sankarshanmukhopadhyay.github.io/open-national-digital-trust-framework/docs/documentation/framework-map.html)**
+- **[Browse the ONDTF Requirements Register](https://sankarshanmukhopadhyay.github.io/open-national-digital-trust-framework/docs/core-specification/requirements-register.html)**
 
 The GitHub Pages site provides sidebar reference navigation, breadcrumbs, search, and explicit Previous/Next links for the canonical guided sequence.
 

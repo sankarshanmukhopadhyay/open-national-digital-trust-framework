@@ -17,7 +17,7 @@ nav_order: 7
 |---:|---|---|
 | 1 | [Assurance framework](../assurance/index.md) | Understand the assurance cycle. |
 | 2 | [Assurance levels](../assurance/levels.md) | Understand ONDTF assurance claims. |
-| 3 | [Normative requirements](../core-specification/normative-requirements.md) | Identify assessable obligations. |
+| 3 | [Requirements Register](../core-specification/requirements-register.md) | Identify assessable obligations. |
 | 4 | [Conformance model](../core-specification/conformance-model.md) | Understand scoped claims. |
 | 5 | [Traceability](../core-specification/traceability.md) | Follow requirements to evidence. |
 | 6 | [Control framework](../security/control-framework.md) | Connect controls to expected evidence. |

@@ -2,7 +2,7 @@
 layout: default
 title: Requirements Traceability
 parent: Core Specification
-nav_order: 6
+nav_order: 7
 ---
 
 # Requirements traceability
