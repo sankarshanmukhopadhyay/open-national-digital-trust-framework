@@ -1,0 +1,44 @@
+schema_version: '1.0'
+id: PSV-001
+title: Cross-profile portable semantics vectors
+status: candidate-test-vectors
+purpose: Test whether independently authored profiles preserve core semantic meaning without requiring identical implementation choices.
+vectors:
+- id: PSV-AUTH-001
+  semantic: authority
+  input: {identity_valid: true, authority_present: false}
+  invariant: identity alone does not establish authority
+  expected_core_outcome: deny-or-not-authorised
+- id: PSV-DEL-001
+  semantic: delegation
+  input: {principal_scope: read, delegated_scope: write}
+  invariant: delegation cannot widen principal authority
+  expected_core_outcome: deny-excess-delegation
+- id: PSV-FRESH-001
+  semantic: evidence-freshness
+  input: {max_age_seconds: 3600, observed_age_seconds: 7200}
+  invariant: stale consequential evidence must be surfaced and dispositioned explicitly
+  expected_core_outcome: fail-defer-or-explicit-profile-exception
+- id: PSV-SUSP-001
+  semantic: suspension
+  input: {participant_status: suspended, operation_requires_active_status: true}
+  invariant: suspension has an effective operational consequence
+  expected_core_outcome: deny-active-operation
+- id: PSV-REV-001
+  semantic: revocation
+  input: {authority_revoked: true, cached_permit: true}
+  invariant: a cached permit cannot silently override current revocation state
+  expected_core_outcome: deny-or-revalidate
+- id: PSV-REM-001
+  semantic: remedy
+  input: {decision_overturned: true, consequential_state_changed: false}
+  invariant: a remedy is not complete merely because a decision record changed
+  expected_core_outcome: remedy-incomplete
+profile_declaration_contract:
+  required_fields:
+  - profile_id
+  - vector_id
+  - observed_outcome
+  - divergence_from_core
+  - divergence_rationale
+  rule: A profile may differ in implementation or disposition, but semantic divergence MUST be declared rather than presented as equivalent behavior.

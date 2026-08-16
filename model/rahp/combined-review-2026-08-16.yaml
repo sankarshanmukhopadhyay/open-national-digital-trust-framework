@@ -1,0 +1,41 @@
+schema_version: '1.0'
+assessment_date: '2026-08-16'
+assessment_mode: combined-rahp-security
+reviewed_revision: e99c96148bf43221680a48929230d214e469795b
+findings:
+- id: ON-RH-01
+  status: addressed
+  controls: [LEP-001]
+  requirements: [ONDTF-GOV-001, ONDTF-ROL-008]
+  evidence: [model/assurance/legitimacy-evidence-profile.yaml, docs/assurance/legitimacy-evidence.md]
+- id: ON-RH-02
+  status: addressed
+  controls: [OIEP-001]
+  requirements: [ONDTF-ROL-004, ONDTF-ROL-005]
+  evidence: [model/governance/operational-independence-evidence.yaml, docs/governance/operational-independence.md]
+- id: ON-RH-03
+  status: addressed
+  controls: [NGV-001]
+  requirements: [ONDTF-GOV-006]
+  evidence: [model/conformance/negative-governance-vectors.yaml, docs/conformance/negative-governance-vectors.md]
+- id: ON-RH-04
+  status: addressed
+  controls: [REC-001]
+  requirements: [ONDTF-CON-003]
+  evidence: [model/recognition/recognition-profile.yaml, docs/interoperability/recognition-profile.md]
+- id: ON-RH-05
+  status: addressed
+  controls: [REM-EFF-001]
+  requirements: [ONDTF-ROL-007, ONDTF-RED-001]
+  evidence: [model/rights/remedy-record.schema.json, docs/rights/remedy-execution.md]
+- id: ON-RH-06
+  status: addressed
+  controls: [PSV-001]
+  requirements: [ONDTF-CON-002, ONDTF-CON-003]
+  evidence: [model/conformance/portable-semantics-vectors.yaml, docs/interoperability/portable-semantics-vectors.md]
+cross_repository_boundary:
+  duplicated_items: []
+  references:
+  - XR-01 may consume PSV-001 as an ONDTF-local contribution but remains portfolio-owned.
+  - XR-02 remains cross-project conformance work.
+  - XR-03 remains RAHP/assurance pattern work and is not duplicated here.

@@ -2,6 +2,13 @@
 
 ## [Unreleased]
 
+### Assurance hardening
+- closed RAHP findings `ON-RH-01` through `ON-RH-06` with machine-readable traceability and a dedicated validation gate;
+- added an informative legitimacy-evidence profile that separates formal mandate evidence from participation, proportionality, independent review, transparency and affected-party representation;
+- added operational-independence evidence tests, deterministic negative emergency-authority vectors and cross-profile portable-semantics vectors;
+- bounded recognition/equivalence with an explicit assurance ceiling, weakest-link rule, evidence basis, expiry and revocation state;
+- extended remedy evidence so assessors can distinguish procedural completion from an effective change to consequential state.
+
 ### Fixed
 - corrected the generated-site routes from the Real-world Worked Exemplars landing page to all four exemplar packages and the worked operational profile, resolving the GitHub Pages built-link failures;
 - removed the duplicated legacy requirement list from the reader-facing core specification so retired v0.5-only identifiers are no longer presented as current candidate requirements.

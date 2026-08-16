@@ -66,3 +66,4 @@ Every recognised trust scheme MUST publish machine-readable and human-readable v
 - [Registry and Trust-list Operators](registry-and-trust-list-operators.md)
 - [Appeals, Redress and Oversight](appeals-redress-and-oversight.md)
 - [Separation of Duties](separation-of-duties.md)
+- [Operational Independence Evidence](operational-independence.md)

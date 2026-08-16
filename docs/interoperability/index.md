@@ -33,3 +33,6 @@ stateDiagram-v2
 ```
 
 See the machine-readable artefacts in `model/interoperability/` and `model/recognition/` and the internal cross-implementation evidence in `evidence/interoperability/`.
+
+- [Recognition Profile](recognition-profile.md)
+- [Portable Semantics Vectors](portable-semantics-vectors.md)

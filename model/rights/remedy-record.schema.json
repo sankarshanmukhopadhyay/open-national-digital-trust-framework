@@ -58,6 +58,45 @@
     },
     "residual_harm": {
       "type": "string"
+    },
+    "access_channel": {
+      "type": "string"
+    },
+    "eligibility_basis": {
+      "type": "string"
+    },
+    "interim_relief_requested": {
+      "type": "boolean"
+    },
+    "interim_relief_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "final_decision_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "consequential_state_changed": {
+      "type": "boolean"
+    },
+    "state_change_evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "affected_party_confirmation": {
+      "type": "string"
+    },
+    "effectiveness_status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "effective",
+        "partially-effective",
+        "ineffective",
+        "not-applicable"
+      ]
     }
   },
   "additionalProperties": false

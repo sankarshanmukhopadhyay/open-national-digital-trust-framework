@@ -1,0 +1,55 @@
+schema_version: '1.0'
+id: OIEP-001
+title: Operational independence evidence tests
+status: informative-assurance-profile
+requirements:
+- ONDTF-ROL-004
+- ONDTF-ROL-005
+principle: Organisational separation alone is insufficient; independence claims require evidence that review can operate without material control by the reviewed body.
+tests:
+- id: OI-APPOINTMENT
+  dimension: appointment authority
+  evidence:
+  - appointment instrument
+  - removal conditions
+  fail_if: reviewed body can appoint and remove reviewers without independent constraint
+- id: OI-FUNDING
+  dimension: funding and control relationships
+  evidence:
+  - funding source disclosure
+  - budget control arrangement
+  fail_if: reviewed body can materially constrain review through discretionary funding control
+- id: OI-CONFLICT
+  dimension: conflict-of-interest controls
+  evidence:
+  - conflict declaration policy
+  - conflict register
+  fail_if: material conflicts are not declared, assessed and treated
+- id: OI-RECUSAL
+  dimension: recusal
+  evidence:
+  - recusal criteria
+  - recusal records
+  fail_if: conflicted reviewer can remain the deciding reviewer without documented exception and safeguard
+- id: OI-REMEDIAL-AUTHORITY
+  dimension: decision override and remedial authority
+  evidence:
+  - review decision-rights instrument
+  - remedy or override records
+  fail_if: reviewer can issue findings but cannot cause, require or escalate corrective action
+- id: OI-PUBLICATION
+  dimension: publication obligations
+  evidence:
+  - publication policy
+  - published findings or reasoned non-publication record
+  fail_if: reviewed body can suppress material review outcomes without an independent decision
+- id: OI-STRUCTURAL-DEPENDENCE
+  dimension: structural dependence
+  evidence:
+  - ownership and governance relationship map
+  - shared-control assessment
+  fail_if: reviewer and reviewed body are commonly controlled without effective compensating safeguards
+negative_scenario:
+  id: OI-NEG-001
+  description: Review body is separately named but funded, appointed and removable solely by the operating body and has no remedial authority.
+  expected: fail-operational-independence

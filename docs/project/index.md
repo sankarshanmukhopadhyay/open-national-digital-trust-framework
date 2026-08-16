@@ -55,3 +55,5 @@ This section makes the repository's maturity, boundaries and future direction vi
 - [Errata and Emergency Change](errata-and-emergency-change.md)
 - [v1.0.0 Entrance Criteria](v1-readiness.md)
 - [v0.9.0 Readiness Checklist](v0.9-readiness-checklist.md)
+
+- [RAHP Combined Review Follow-up — 2026-08-16](../rahp-follow-up-2026-08-16.md)

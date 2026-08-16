@@ -4,6 +4,7 @@ terminology:
 	python3 scripts/validate_terminology.py
 validate:
 	python3 scripts/validate_v070_execution.py
+	python3 scripts/validate_rahp_closure.py
 	python3 scripts/validate_interoperability_candidate.py
 	python3 scripts/validate_candidate_specification.py
 	python3 scripts/build_requirements_register.py

@@ -1,0 +1,53 @@
+schema_version: '1.0'
+id: LEP-001
+title: Informative legitimacy evidence profile
+status: informative-assurance-profile
+purpose: Distinguish substantive governance legitimacy evidence from evidence that a formal mandate exists.
+non_normative_boundary: This profile complements ONDTF-GOV-001 and ONDTF-ROL-008; it does not create a jurisdiction-specific institutional form or legal test.
+requirements:
+- ONDTF-GOV-001
+- ONDTF-ROL-008
+dimensions:
+- id: legitimacy-participation
+  name: participation
+  expected_evidence:
+  - documented participation opportunities
+  - participation records or consultation summary
+  gap_signal: affected groups have no meaningful route to influence material governance choices
+- id: legitimacy-proportionality
+  name: proportionality
+  expected_evidence:
+  - documented necessity and proportionality assessment
+  - less-intrusive-alternative analysis where relevant
+  gap_signal: burdens or exclusions are not justified against the stated purpose
+- id: legitimacy-independent-review
+  name: independent review
+  expected_evidence:
+  - review mandate and decision rights
+  - operational independence evidence conforming to OIEP-001
+  gap_signal: review exists only within the body whose decision is being reviewed
+- id: legitimacy-transparency
+  name: transparency
+  expected_evidence:
+  - published governance scope and decision criteria
+  - material decision or review summaries
+  gap_signal: consequential governance choices cannot be inspected or explained
+- id: legitimacy-affected-party-representation
+  name: affected-party representation
+  expected_evidence:
+  - representation or structured input mechanism
+  - evidence of how affected-party input changed or was dispositioned
+  gap_signal: affected parties are consulted nominally but cannot influence or challenge outcomes
+assessment_outcomes:
+- supported
+- partially-supported
+- gap-identified
+- not-assessed
+example:
+  formal_mandate: present
+  participation: gap-identified
+  proportionality: partially-supported
+  independent_review: gap-identified
+  transparency: supported
+  affected_party_representation: gap-identified
+  conclusion: Formal mandate evidence is present, but substantive legitimacy evidence contains material gaps.

@@ -58,3 +58,5 @@ The companion [Standards and Specifications Register](../standards/references.md
 - [Assurance State and Validity](assurance-state-and-validity.md)
 - [AI-enabled System Assurance](ai-enabled-system-assurance.md)
 - [Assurance Profile Authoring](assurance-profile-authoring.md)
+
+- [Legitimacy Evidence Profile](legitimacy-evidence.md)

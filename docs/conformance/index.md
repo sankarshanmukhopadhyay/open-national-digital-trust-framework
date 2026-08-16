@@ -39,3 +39,5 @@ flowchart LR
 - [Nonconformity and Remediation](nonconformity-and-remediation.md)
 - [Public Conformance Register](public-conformance-register.md)
 - [Appeals and Complaints](appeals-and-complaints.md)
+
+- [Negative Governance Vectors](negative-governance-vectors.md)

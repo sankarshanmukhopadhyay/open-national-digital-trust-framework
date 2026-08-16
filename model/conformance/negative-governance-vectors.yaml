@@ -1,0 +1,41 @@
+schema_version: '1.0'
+id: NGV-001
+title: Negative governance conformance vectors
+status: candidate-test-vectors
+vectors:
+- id: EMG-NEG-001
+  requirement: ONDTF-GOV-006
+  case: expired-emergency-authority
+  input: {authority_state: active, invoked_at: '2026-01-01T00:00:00Z', expires_at: '2026-01-02T00:00:00Z', action_at: '2026-01-03T00:00:00Z'}
+  expected: nonconformant
+  reason: emergency authority expired before action
+- id: EMG-NEG-002
+  requirement: ONDTF-GOV-006
+  case: repeated-renewal-without-fresh-justification
+  input: {renewal_count: 4, fresh_independent_justification: false}
+  expected: nonconformant
+  reason: renewal is not a fresh independently justified invocation
+- id: EMG-NEG-003
+  requirement: ONDTF-GOV-006
+  case: scope-expansion
+  input: {approved_scope: service-continuity, exercised_scope: participant-exclusion}
+  expected: nonconformant
+  reason: action exceeds approved emergency scope
+- id: EMG-NEG-004
+  requirement: ONDTF-GOV-006
+  case: missing-independent-review
+  input: {independent_review_required: true, independent_review_present: false}
+  expected: nonconformant
+  reason: required review evidence is absent
+- id: EMG-NEG-005
+  requirement: ONDTF-GOV-006
+  case: action-after-termination
+  input: {terminated_at: '2026-01-02T12:00:00Z', action_at: '2026-01-02T13:00:00Z'}
+  expected: nonconformant
+  reason: terminated authority cannot remain effective
+- id: EMG-NEG-006
+  requirement: ONDTF-GOV-006
+  case: retrospective-justification
+  input: {action_at: '2026-01-02T12:00:00Z', evidence_created_at: '2026-01-03T12:00:00Z', contemporaneous_evidence: false}
+  expected: nonconformant
+  reason: retrospective evidence cannot silently substitute for required contemporaneous invocation evidence

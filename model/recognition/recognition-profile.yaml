@@ -45,5 +45,29 @@ lifecycle:
   - decision-record
   - effective-date
   - transition-notice
+  revocation_state: not-revoked
+  revocation_requires:
+  - decision-record
+  - effective-date
+  - status-publication
+  - transition-notice
 limitations:
-- Illustrative evidence profile; does not establish legal recognition of any real external framework.
+- Illustrative evidence profile; does not establish legal recognition of any real
+  external framework.
+assurance_ceiling:
+  maximum_inherited_level: profile-declared-only
+  rule: Recognition MUST NOT cause a recognised framework to inherit an assurance
+    level higher than the lowest supported equivalent dimension.
+  excluded_claims:
+  - final-remedy-equivalence
+validity:
+  effective_at: '2026-01-01T00:00:00Z'
+  expires_at: '2026-06-30T23:59:59Z'
+  state: active
+  review_required_before_renewal: true
+evidence_basis:
+- REC-DEC-001
+- documented evidence semantics
+- external supervision evidence where equivalence is claimed
+weakest_link_rule: A relying decision MUST apply the lowest applicable supported assurance
+  among the recognised dimensions used for that decision.
