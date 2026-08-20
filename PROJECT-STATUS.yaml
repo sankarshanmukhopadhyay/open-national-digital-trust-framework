@@ -1,9 +1,52 @@
-project: Open National Digital Trust Framework
-short_name: ONDTF
-version: 0.9.0
-maturity: Candidate Specification
-release_label: Candidate Specification
-canonical_repository: https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework
+schema_version: "1.0"
+project:
+  name: open-national-digital-trust-framework
+  maturity: candidate
+  lifecycle: active
+  operational_status: active-validation
+  specification_status: candidate-specification
+  intended_use:
+    - national-digital-trust-framework-design
+    - jurisdictional-adaptation
+    - interoperability-and-conformance-planning
+  not_asserted:
+    - production-certification
+    - jurisdictional-legal-approval
+    - independent-third-party-assurance
+authority:
+  normative_scope:
+    - national-digital-trust-framework
+  implementation_scope:
+    - framework-requirements
+    - governance-patterns
+    - jurisdiction-and-sector-profiles
+    - conformance-classes
+  does_not_own:
+    - jurisdictional-authority
+    - external-regulatory-policy
+    - downstream-implementation-governance
+  delegation: "Repository maintainers approve framework, profile, status, and release changes within the authority defined by repository governance; jurisdictions and external authorities retain their own decision rights."
+  revocation_or_supersession: "Framework releases, profiles, and status claims are superseded through explicit versioned releases and recorded governance changes while preserving historical evidence."
+evidence:
+  validation_commands:
+    - python3 scripts/validate_interoperability_candidate.py
+    - python3 scripts/validate_candidate_specification.py
+    - python3 scripts/validate_repo.py
+    - python3 scripts/validate_release.py
+    - bundle exec jekyll build --trace
+  evidence_outputs:
+    - artifacts/conformance/schema-validation-report.json
+    - artifacts/mermaid-rendered/
+    - _site/
+  known_limitations:
+    - candidate specification status is not production certification
+    - jurisdiction-specific legal and institutional adoption remains outside repository authority
+release:
+  short_name: ONDTF
+  version: 0.9.0
+  release_label: Candidate Specification
+  release_date: "2026-08-14"
+  canonical_repository: https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework
 dependencies:
   TSMM:
     version_reviewed: 0.23.0
@@ -22,4 +65,3 @@ quality:
   candidate_identifier_stability_required: true
   interoperability_evidence_required: true
   conformance_class_validation_required: true
-release_date: '2026-08-14'
