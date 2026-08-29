@@ -1,3 +1,8 @@
+---
+layout: default
+title: Assurance Evidence
+---
+
 # Assurance evidence contract
 
 The framework's portfolio assurance claims are backed by repository-native GitHub Actions evidence.
