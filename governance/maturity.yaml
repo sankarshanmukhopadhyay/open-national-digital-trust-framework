@@ -1,0 +1,72 @@
+schema_version: 1
+framework: ONDTF
+specification:
+  version: 0.9.0
+  maturity: candidate
+  allowed_maturity_states:
+    - draft
+    - candidate
+    - stable
+  target_maturity: stable
+  promotion:
+    v1.0.0:
+      required_repository_controlled_gates:
+        - normative-stability
+        - identifier-stability
+        - requirement-conformance-traceability
+        - deterministic-validation
+        - adversarial-negative-evidence
+        - compatibility-change-control
+        - errata-process
+        - blocking-issue-disposition
+        - release-integrity
+      external_evidence_state_must_be_declared: true
+      independent_implementation_required: false
+      prohibited_release_implications:
+        - independently-validated-implementation
+        - production-readiness
+        - legal-approval
+        - externally-demonstrated-interoperability
+
+evidence:
+  scale:
+    E0: specification-evidence-only
+    E1: repository-controlled-reference-implementation-evidence
+    E2: independent-implementation-evidence
+    E3: cross-implementation-interoperability-evidence
+    E4: operational-deployment-evidence
+  current_level: E1
+  independent_implementation:
+    state: missing
+    required_for:
+      - independently-validated-implementation
+      - E2
+    blocks_specification_promotion: false
+  cross_implementation_interoperability:
+    state: missing
+    required_for:
+      - externally-demonstrated-interoperability
+      - E3
+    blocks_specification_promotion: false
+  operational_deployment:
+    state: missing
+    required_for:
+      - operationally-validated
+      - E4
+    blocks_specification_promotion: false
+  invalidation:
+    triggers:
+      - material-normative-change
+      - evidence-expiry
+      - withdrawn-source
+      - superseded-implementation
+      - discovered-invalidating-defect
+    rule: evidence-maturity-must-not-survive-an-invalidating-trigger-without-reassessment
+
+governance_invariant: >-
+  No release shall require evidence whose production is exclusively dependent
+  upon an external actor unless the absence of that evidence prevents the
+  specific claim made by the release. External evidence may constrain an
+  assurance, conformance, interoperability, deployment, or validation claim;
+  it shall not indefinitely prevent maintenance or maturation of the
+  specification itself.
