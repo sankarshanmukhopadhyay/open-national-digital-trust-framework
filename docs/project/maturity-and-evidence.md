@@ -14,7 +14,7 @@ The governing principle is claim-scoped evidence: evidence is mandatory for the 
 
 > No release shall require evidence whose production is exclusively dependent upon an external actor unless the absence of that evidence prevents the specific claim made by the release. External evidence may constrain an assurance, conformance, interoperability, deployment, or validation claim; it SHALL NOT indefinitely prevent maintenance or maturation of the specification itself.
 
-The machine-readable authority for the current maturity state is [`governance/maturity.yaml`](../../governance/maturity.yaml).
+The machine-readable authority for the current maturity state is [`governance/maturity.yaml`](https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/blob/main/governance/maturity.yaml).
 
 ## 1. Specification maturity
 
