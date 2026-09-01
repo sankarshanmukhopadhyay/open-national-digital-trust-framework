@@ -16,6 +16,7 @@ validate:
 	python3 scripts/validate_terminology.py
 	python3 scripts/validate_repo.py
 	python3 scripts/validate_maturity.py
+	python3 scripts/validate_v1_readiness.py
 	python3 scripts/validate_assurance_references.py
 	python3 scripts/validate_data_privacy_rights.py
 	python3 scripts/validate_integration.py
