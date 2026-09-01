@@ -1,0 +1,146 @@
+schema_version: 1
+framework: ONDTF
+target_release: v1.0.0
+target_specification_maturity: stable
+source_maturity_authority: governance/maturity.yaml
+promotion_ready: false
+state_vocabulary:
+  - satisfied
+  - evidence-required
+  - blocked
+
+external_evidence:
+  current_level: E1
+  required_for_specification_promotion: false
+  note: >-
+    E2, E3 and E4 remain stronger evidence claims. Their absence must remain
+    explicit but cannot satisfy or bypass a repository-controlled v1.0 gate.
+
+gates:
+  - id: normative-stability
+    state: evidence-required
+    blocking: true
+    evidence:
+      - model/releases/v0.9.0.yaml
+      - release/REQUIREMENTS-INVENTORY-v0.9.0.md
+      - scripts/validate_candidate_specification.py
+    judgment: >-
+      v0.9.0 demonstrates a coherent candidate normative surface, but stable
+      promotion requires an explicit v1.0 normative-freeze and change-control
+      judgment rather than inference from candidate status.
+    residual_work: >-
+      Record the v1.0 normative freeze, define what constitutes a material
+      normative change, and require reassessment of affected readiness gates.
+
+  - id: identifier-stability
+    state: satisfied
+    blocking: true
+    evidence:
+      - scripts/build_identifier_registry.py
+      - scripts/validate_identifier_registry.py
+      - release/REQUIREMENTS-INVENTORY-v0.9.0.md
+    judgment: >-
+      The generated identifier registry and validator provide deterministic
+      duplicate and resolution checks for the controlled identifier surface.
+    residual_work: none
+
+  - id: requirement-conformance-traceability
+    state: satisfied
+    blocking: true
+    evidence:
+      - scripts/build_requirements_register.py
+      - scripts/validate_requirements_register.py
+      - scripts/validate_candidate_specification.py
+      - release/CONFORMANCE-COVERAGE-v0.9.0.md
+    judgment: >-
+      All 28 candidate requirements are represented in the requirements and
+      conformance machinery and are checked by deterministic validation.
+    residual_work: none
+
+  - id: deterministic-validation
+    state: satisfied
+    blocking: true
+    evidence:
+      - Makefile
+      - scripts/validate_repo.py
+      - scripts/validate_schema_instances.py
+      - scripts/validate_integration.py
+      - scripts/check_built_site.py
+    judgment: >-
+      Repository, schema, integration, documentation and publication checks
+      execute through the repository-wide validation path and fail closed.
+    residual_work: none
+
+  - id: adversarial-negative-evidence
+    state: evidence-required
+    blocking: true
+    evidence:
+      - scripts/validate_schema_instances.py
+      - scripts/validate_interoperability_candidate.py
+      - release/IMPLEMENTATION-AND-INTEROPERABILITY-REPORT-v0.9.0.md
+    judgment: >-
+      Consequential negative evidence exists, but v1.0 requires an explicit
+      sufficiency judgment showing coverage of the stable contract's principal
+      authority, scope, lifecycle, revocation, recognition and failure domains.
+    residual_work: >-
+      Publish a v1.0 adversarial coverage matrix mapping consequential failure
+      domains to executable negative vectors or governed assessor procedures.
+
+  - id: compatibility-change-control
+    state: evidence-required
+    blocking: true
+    evidence:
+      - ROADMAP.md
+      - docs/project/maturity-and-evidence.md
+    judgment: >-
+      The maturity model requires compatibility control, but the stable v1.x
+      contract still needs an explicit enforceable normative change policy.
+    residual_work: >-
+      Define backwards-compatible, materially normative and breaking change
+      classes; require versioning, migration and evidence-invalidation effects
+      for each class.
+
+  - id: errata-process
+    state: evidence-required
+    blocking: true
+    evidence:
+      - docs/project/maturity-and-evidence.md
+      - governance/maturity.yaml
+    judgment: >-
+      Evidence invalidation is governed, but stable release maintenance needs a
+      concrete errata and emergency-change process with bounded authority.
+    residual_work: >-
+      Define errata intake, decision authority, emergency correction scope,
+      publication, supersession, notification and evidence reassessment rules.
+
+  - id: blocking-issue-disposition
+    state: blocked
+    blocking: true
+    evidence:
+      - https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/issues/5
+      - https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/issues/8
+    judgment: >-
+      Repository baseline issue #5 remains open and contains controls that may
+      affect stable-release adoption, security and governance integrity.
+    residual_work: >-
+      Complete issue #5 or record an explicit evidence-backed judgment that each
+      residual item is non-blocking for v1.0 before this gate can be satisfied.
+
+  - id: release-integrity
+    state: satisfied
+    blocking: true
+    evidence:
+      - scripts/validate_release_integrity.py
+      - scripts/validate_release.py
+      - release/MANIFEST-v0.9.0.md
+      - release/EVIDENCE-INVENTORY-v0.9.0.md
+    judgment: >-
+      The current release payload has deterministic integrity, manifest and
+      coherence validation suitable as the baseline for constructing v1.0.
+    residual_work: none
+
+promotion_rule: >-
+  promotion_ready may be true only when every gate required by
+  governance/maturity.yaml is present exactly once and has state satisfied.
+  Missing external E2, E3 or E4 evidence may constrain claims but must neither
+  block specification promotion nor compensate for an unsatisfied repository-controlled gate.
