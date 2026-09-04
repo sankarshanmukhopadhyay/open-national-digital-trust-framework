@@ -18,11 +18,33 @@ Contributions should remain vendor-neutral, implementation-neutral and aligned w
 
 ## Process
 
-1. Open an issue describing the problem or proposal.
-2. For substantial changes, include the affected framework layers and stakeholders.
-3. Submit a pull request with clear rationale and impact analysis.
-4. Update diagrams, navigation and conformance requirements where relevant.
-5. Confirm that GitHub Pages builds successfully.
+1. Open an issue describing the problem, proposition, scope, and acceptance criteria.
+2. For substantial changes, identify the affected framework layers, stakeholders, authority boundaries, compatibility impact, and evidence that could falsify the proposed approach.
+3. Submit a pull request with the smallest coherent implementation, rationale, evidence, and residual risk.
+4. Add or update tests/validation for consequential claims and important negative or boundary cases.
+5. Update diagrams, navigation, conformance requirements, examples, and release notes where relevant.
+6. Confirm the repository validation and GitHub Pages build complete successfully before merge.
+7. Merge only after the issue acceptance criteria are satisfied and the judgment that should remain visible is preserved in the issue, PR, tests, or durable documentation.
+
+Substantive changes therefore follow **Issue → PR → tests/evidence → merge/release**. Trivial editorial changes may use a lighter path when they do not alter normative meaning, compatibility, authority, assurance, or release behaviour.
+
+## Change titles
+
+Prefer typed titles of the form:
+
+```text
+<type>(<scope>): <imperative summary>
+```
+
+Use `!` before `:` for consumer-visible breaking changes. Typical types are `feat`, `fix`, `docs`, `test`, `chore`, `refactor`, `ci`, `security`, and `governance`.
+
+## Validation
+
+Run the repository's documented validation path before submitting substantive work. The shortest current validation path is listed in `README.md`; CI remains the authoritative merge evidence for the submitted revision.
+
+## Security and support
+
+Do not disclose exploitable vulnerabilities in public issues; follow [SECURITY.md](SECURITY.md). General support and routing guidance is in [SUPPORT.md](SUPPORT.md).
 
 ## Style
 
