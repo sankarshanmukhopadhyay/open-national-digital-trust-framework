@@ -1,0 +1,36 @@
+name: Framework or governance proposal
+description: Propose a substantive ONDTF architecture, governance, assurance, or interoperability change.
+title: "feat: "
+labels: []
+body:
+  - type: textarea
+    id: proposition
+    attributes:
+      label: Proposition
+      description: State the change or governance proposition being proposed.
+    validations:
+      required: true
+  - type: textarea
+    id: authority
+    attributes:
+      label: Authority and scope
+      description: Identify what ONDTF owns, what remains external, and any delegation or recognition assumptions.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and falsification
+      description: State what evidence supports the proposal and what would falsify it.
+    validations:
+      required: true
+  - type: textarea
+    id: compatibility
+    attributes:
+      label: Compatibility and migration impact
+      description: Identify affected profiles, requirements, implementations, schemas, or releases.
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Define machine-verifiable or reviewable completion evidence.
