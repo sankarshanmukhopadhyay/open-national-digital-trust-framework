@@ -1,0 +1,29 @@
+name: Defect report
+description: Report a reproducible defect in ONDTF documentation, validation, schemas, or examples.
+title: "fix: "
+labels: []
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Describe the observed defect and the expected behaviour or requirement.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Provide paths, requirement identifiers, commands, outputs, or links that make the claim testable.
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact and scope
+      description: Identify affected framework layers, profiles, consumers, or compatibility assumptions.
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: State what evidence would demonstrate that the defect is resolved.
