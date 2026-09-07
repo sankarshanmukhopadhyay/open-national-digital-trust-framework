@@ -114,17 +114,25 @@ gates:
       publication, supersession, notification and evidence reassessment rules.
 
   - id: blocking-issue-disposition
-    state: blocked
+    state: satisfied
     blocking: true
     evidence:
       - https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/issues/5
-      - https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/issues/8
+      - https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/issues/11
+      - https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/issues/12
     judgment: >-
-      Repository baseline issue #5 remains open and contains controls that may
-      affect stable-release adoption, security and governance integrity.
-    residual_work: >-
-      Complete issue #5 or record an explicit evidence-backed judgment that each
-      residual item is non-blocking for v1.0 before this gate can be satisfied.
+      The repository-baseline work tracked by issue #5 is complete. Its bounded
+      residual platform-security evidence is explicitly tracked by issue #11 and
+      is not, on present evidence, a blocker to specification stability. Missing
+      platform evidence remains evidence-required and does not become PASS.
+    residual_work: none
+    non_blocking_residual_evidence:
+      - source: https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/issues/11
+        state: evidence-required
+        scope: platform-security-and-action-pinning
+        reason: >-
+          The residual evidence constrains repository-security confidence but
+          does not currently invalidate the stable specification contract.
 
   - id: release-integrity
     state: satisfied
