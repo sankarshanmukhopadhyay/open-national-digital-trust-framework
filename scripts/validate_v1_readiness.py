@@ -65,6 +65,39 @@ for entry in entries:
     if state != "satisfied" and (not residual or residual == "none"):
         errors.append(f"{gate_id}: unsatisfied gate must declare concrete residual work")
 
+    if state == "blocked":
+        conditions = entry.get("blocking_conditions") or []
+        if not conditions:
+            errors.append(
+                f"{gate_id}: blocked gate must declare machine-readable blocking_conditions"
+            )
+        for index, condition in enumerate(conditions, start=1):
+            if not isinstance(condition, dict):
+                errors.append(f"{gate_id}: blocking condition {index} must be a mapping")
+                continue
+            for field in ("source", "condition", "observed_at"):
+                if not condition.get(field):
+                    errors.append(
+                        f"{gate_id}: blocking condition {index} missing {field}"
+                    )
+
+    residual_evidence = entry.get("non_blocking_residual_evidence") or []
+    for index, item in enumerate(residual_evidence, start=1):
+        if not isinstance(item, dict):
+            errors.append(
+                f"{gate_id}: non-blocking residual evidence {index} must be a mapping"
+            )
+            continue
+        if item.get("state") not in {"evidence-required", "indeterminate", "accepted-risk"}:
+            errors.append(
+                f"{gate_id}: non-blocking residual evidence {index} has unsupported state"
+            )
+        for field in ("source", "scope", "reason"):
+            if not item.get(field):
+                errors.append(
+                    f"{gate_id}: non-blocking residual evidence {index} missing {field}"
+                )
+
 promotion_ready = readiness.get("promotion_ready")
 all_satisfied = bool(entries) and all(entry.get("state") == "satisfied" for entry in entries)
 if promotion_ready is True and not all_satisfied:
