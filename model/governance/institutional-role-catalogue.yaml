@@ -1,6 +1,6 @@
 specification: ONDTF
-version: 0.7.0-draft
-status: draft
+version: 0.9.0-candidate
+status: active
 roles:
   - id: ROLE-GA
     title: Governing Authority
