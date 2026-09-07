@@ -3,7 +3,7 @@ framework: ONDTF
 target_release: v1.0.0
 target_specification_maturity: stable
 source_maturity_authority: governance/maturity.yaml
-promotion_ready: false
+promotion_ready: true
 state_vocabulary:
   - satisfied
   - evidence-required
@@ -13,8 +13,10 @@ external_evidence:
   current_level: E1
   required_for_specification_promotion: false
   note: >-
-    E2, E3 and E4 remain stronger evidence claims. Their absence must remain
-    explicit but cannot satisfy or bypass a repository-controlled v1.0 gate.
+    E2, E3 and E4 remain stronger evidence claims. Their absence remains
+    explicit. Promotion readiness is a specification-maturity conclusion only
+    and does not imply independent implementation, external interoperability,
+    operational deployment, certification, production readiness or legal approval.
 
 gates:
   - id: normative-stability
@@ -112,7 +114,7 @@ gates:
     residual_work: none
 
   - id: blocking-issue-disposition
-    state: evidence-required
+    state: satisfied
     blocking: true
     evidence:
       - https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/issues/5
@@ -121,22 +123,24 @@ gates:
       - https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/issues/15
       - https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/issues/16
       - https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/issues/17
+      - https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/pull/18
+      - https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/issues/19
     judgment: >-
-      The historical repository-baseline blocker #5 is complete and #11 remains
-      bounded non-blocking security evidence. Issues #14 through #17 are the
-      release-relevant implementation controls represented by the current
-      change and remain open until that implementation is merged and CI is
-      accepted; therefore this gate is not pre-emptively marked satisfied.
-    residual_work: >-
-      Merge the implementation that closes #14, #15, #16 and #17 with green CI,
-      then reconcile this gate against their authoritative closed state.
+      The historical repository-baseline work is complete and the four
+      release-relevant stable-control issues #14 through #17 were closed by
+      merged PR #18 after full repository validation, Mermaid rendering,
+      documentation build and generated-site inspection passed. Issue #11
+      remains explicit non-blocking repository-security evidence-required work
+      and is not interpreted as PASS.
+    residual_work: none
     non_blocking_residual_evidence:
       - source: https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/issues/11
         state: evidence-required
         scope: platform-security-and-action-pinning
         reason: >-
           The residual evidence constrains repository-security confidence but
-          does not currently invalidate the stable specification contract.
+          does not currently invalidate the stable specification contract or
+          any of the nine repository-controlled specification-promotion gates.
 
   - id: release-integrity
     state: satisfied
@@ -154,5 +158,12 @@ gates:
 promotion_rule: >-
   promotion_ready may be true only when every gate required by
   governance/maturity.yaml is present exactly once and has state satisfied.
-  Missing external E2, E3 or E4 evidence may constrain claims but must neither
-  block specification promotion nor compensate for an unsatisfied repository-controlled gate.
+  Missing external E2, E3 or E4 evidence constrains the claims that may be made
+  about a release but neither blocks specification promotion nor compensates for
+  an unsatisfied repository-controlled gate.
+
+release_decision_boundary: >-
+  promotion_ready=true means the repository-controlled predicates permit a
+  human-governed v1.0.0 Stable Framework Specification release decision. It is
+  not itself a release event and does not change ONDTF's current published
+  version or E1 evidence maturity.
