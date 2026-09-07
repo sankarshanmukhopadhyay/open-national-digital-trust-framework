@@ -14,27 +14,27 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
           python-version: '3.12'
       - run: pip install -r requirements-validation.txt
-      - run: python3 scripts/validate_interoperability_candidate.py && python3 scripts/validate_candidate_specification.py && python3 scripts/build_requirements_register.py && python3 scripts/build_identifier_registry.py && python3 scripts/validate_identifier_registry.py && python3 scripts/validate_requirements_register.py && python3 scripts/validate_schema_instances.py && python3 scripts/validate_release_integrity.py && python3 scripts/validate_terminology.py && python3 scripts/validate_repo.py && python3 scripts/validate_assurance_references.py && python3 scripts/validate_data_privacy_rights.py && python3 scripts/validate_integration.py && python3 scripts/validate_maturation.py && python3 scripts/validate_normative_governance.py && python3 scripts/validate_operations_conformance.py && python3 scripts/validate_assurance_rights.py && python3 scripts/validate_profile_adoption.py && python3 scripts/validate_jurisdiction_exemplars.py && python3 scripts/validate_sector_standards.py && python3 scripts/validate_worked_profile.py && python3 scripts/validate_release.py
-      - uses: actions/setup-node@v4
+      - run: python3 scripts/validate_workflow_security.py && python3 scripts/validate_interoperability_candidate.py && python3 scripts/validate_candidate_specification.py && python3 scripts/build_requirements_register.py && python3 scripts/build_identifier_registry.py && python3 scripts/validate_identifier_registry.py && python3 scripts/validate_requirements_register.py && python3 scripts/validate_schema_instances.py && python3 scripts/validate_release_integrity.py && python3 scripts/validate_terminology.py && python3 scripts/validate_repo.py && python3 scripts/validate_assurance_references.py && python3 scripts/validate_data_privacy_rights.py && python3 scripts/validate_integration.py && python3 scripts/validate_maturation.py && python3 scripts/validate_normative_governance.py && python3 scripts/validate_operations_conformance.py && python3 scripts/validate_assurance_rights.py && python3 scripts/validate_profile_adoption.py && python3 scripts/validate_jurisdiction_exemplars.py && python3 scripts/validate_sector_standards.py && python3 scripts/validate_worked_profile.py && python3 scripts/validate_release.py
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
           node-version: '24'
       - run: python3 scripts/check_mermaid_source.py && python3 scripts/extract_mermaid.py && bash scripts/validate_mermaid.sh
-      - uses: ruby/setup-ruby@v1
+      - uses: ruby/setup-ruby@95ef2b042f9d7a56d8268cba8559e2842e2ad01b # v1 branch observed 2026-09-07
         with:
           ruby-version: '3.3'
           bundler-cache: true
       - name: Configure Pages
         id: pages
-        uses: actions/configure-pages@v6
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
       - name: Build site
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
       - run: python3 scripts/check_built_site.py
-      - uses: actions/upload-pages-artifact@v5
+      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
           path: ./_site
   deploy:
@@ -46,4 +46,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v5
+        uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5.0.0
