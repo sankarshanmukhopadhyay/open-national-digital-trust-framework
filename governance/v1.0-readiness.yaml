@@ -18,19 +18,17 @@ external_evidence:
 
 gates:
   - id: normative-stability
-    state: evidence-required
+    state: satisfied
     blocking: true
     evidence:
-      - model/releases/v0.9.0.yaml
-      - release/REQUIREMENTS-INVENTORY-v0.9.0.md
-      - scripts/validate_candidate_specification.py
+      - governance/v1.0-normative-freeze.yaml
+      - scripts/validate_v1_stable_controls.py
+      - model/project/normative-document-manifest.yaml
     judgment: >-
-      v0.9.0 demonstrates a coherent candidate normative surface, but stable
-      promotion requires an explicit v1.0 normative-freeze and change-control
-      judgment rather than inference from candidate status.
-    residual_work: >-
-      Record the v1.0 normative freeze, define what constitutes a material
-      normative change, and require reassessment of affected readiness gates.
+      The v1.0 release-decision candidate binds the five normative candidate
+      artifacts by exact Git blob SHA, defines material normative change, and
+      requires evidence invalidation and gate reassessment after material drift.
+    residual_work: none
 
   - id: identifier-stability
     state: satisfied
@@ -66,66 +64,72 @@ gates:
       - scripts/validate_schema_instances.py
       - scripts/validate_integration.py
       - scripts/check_built_site.py
+      - scripts/validate_v1_stable_controls.py
     judgment: >-
-      Repository, schema, integration, documentation and publication checks
-      execute through the repository-wide validation path and fail closed.
+      Repository, schema, integration, documentation, publication and stable
+      governance controls execute through the repository-wide validation path
+      and fail closed.
     residual_work: none
 
   - id: adversarial-negative-evidence
-    state: evidence-required
+    state: satisfied
     blocking: true
     evidence:
-      - scripts/validate_schema_instances.py
+      - governance/v1.0-adversarial-coverage.yaml
+      - scripts/validate_v1_stable_controls.py
+      - evidence/adversarial/event-01.yaml
       - scripts/validate_interoperability_candidate.py
-      - release/IMPLEMENTATION-AND-INTEROPERABILITY-REPORT-v0.9.0.md
     judgment: >-
-      Consequential negative evidence exists, but v1.0 requires an explicit
-      sufficiency judgment showing coverage of the stable contract's principal
-      authority, scope, lifecycle, revocation, recognition and failure domains.
-    residual_work: >-
-      Publish a v1.0 adversarial coverage matrix mapping consequential failure
-      domains to executable negative vectors or governed assessor procedures.
+      Thirteen consequential failure domains are explicitly classified as
+      executable or assessor-verifiable, bound to requirements and evidence,
+      with orphan-domain acceptance rejected by a falsification fixture.
+    residual_work: none
 
   - id: compatibility-change-control
-    state: evidence-required
+    state: satisfied
     blocking: true
     evidence:
-      - ROADMAP.md
-      - docs/project/maturity-and-evidence.md
+      - governance/v1.x-change-control.yaml
+      - scripts/validate_v1_stable_controls.py
     judgment: >-
-      The maturity model requires compatibility control, but the stable v1.x
-      contract still needs an explicit enforceable normative change policy.
-    residual_work: >-
-      Define backwards-compatible, materially normative and breaking change
-      classes; require versioning, migration and evidence-invalidation effects
-      for each class.
+      The v1.x contract requires explicit compatible, materially-normative or
+      breaking classification; unknown classes fail closed, breaking changes
+      require a major version, and material changes trigger evidence
+      invalidation and assurance reassessment.
+    residual_work: none
 
   - id: errata-process
-    state: evidence-required
+    state: satisfied
     blocking: true
     evidence:
-      - docs/project/maturity-and-evidence.md
-      - governance/maturity.yaml
+      - governance/errata-and-emergency-change.yaml
+      - scripts/validate_v1_stable_controls.py
     judgment: >-
-      Evidence invalidation is governed, but stable release maintenance needs a
-      concrete errata and emergency-change process with bounded authority.
-    residual_work: >-
-      Define errata intake, decision authority, emergency correction scope,
-      publication, supersession, notification and evidence reassessment rules.
+      Stable maintenance has an attributable correction lifecycle with bounded
+      emergency authority, supersession, notification, evidence invalidation,
+      reassessment and explicit terminal states. Authority-free emergency
+      correction is rejected by a falsification fixture.
+    residual_work: none
 
   - id: blocking-issue-disposition
-    state: satisfied
+    state: evidence-required
     blocking: true
     evidence:
       - https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/issues/5
       - https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/issues/11
-      - https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/issues/12
+      - https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/issues/14
+      - https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/issues/15
+      - https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/issues/16
+      - https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/issues/17
     judgment: >-
-      The repository-baseline work tracked by issue #5 is complete. Its bounded
-      residual platform-security evidence is explicitly tracked by issue #11 and
-      is not, on present evidence, a blocker to specification stability. Missing
-      platform evidence remains evidence-required and does not become PASS.
-    residual_work: none
+      The historical repository-baseline blocker #5 is complete and #11 remains
+      bounded non-blocking security evidence. Issues #14 through #17 are the
+      release-relevant implementation controls represented by the current
+      change and remain open until that implementation is merged and CI is
+      accepted; therefore this gate is not pre-emptively marked satisfied.
+    residual_work: >-
+      Merge the implementation that closes #14, #15, #16 and #17 with green CI,
+      then reconcile this gate against their authoritative closed state.
     non_blocking_residual_evidence:
       - source: https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/issues/11
         state: evidence-required
