@@ -1,0 +1,107 @@
+schema_version: 1
+repository: sankarshanmukhopadhyay/open-national-digital-trust-framework
+observed_at: 2026-09-07
+source_issue: https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/issues/11
+
+controls:
+  protect_main:
+    state: verified
+    evidence:
+      source: https://api.github.com/repos/sankarshanmukhopadhyay/open-national-digital-trust-framework/rulesets/21977459
+      ruleset: protect-main
+      enforcement: active
+      target: default-branch
+      deletion_prohibited: true
+      non_fast_forward_prohibited: true
+      linear_history_required: true
+      pull_request_required: true
+      review_thread_resolution_required: true
+      strict_status_checks: true
+      required_status_check: validate
+      bypass_actors: []
+      current_user_can_bypass: never
+
+  workflow_permissions:
+    state: verified
+    evidence:
+      - .github/workflows/quality.yml
+      - .github/workflows/pages.yml
+    judgment: >-
+      Documentation quality declares contents:read. Pages declares contents:read,
+      pages:write and id-token:write, which are required for Pages deployment.
+      No pull_request_target or workflow_run privileged trigger is admitted by
+      scripts/validate_workflow_security.py.
+
+  action_immutability:
+    state: verified
+    enforcement: scripts/validate_workflow_security.py
+    update_management: .github/dependabot.yml
+    policy: >-
+      Every non-local `uses:` reference in repository workflows must resolve to
+      an exact 40-character commit SHA. Dependabot groups GitHub Actions updates
+      weekly so immutable pins remain update-managed.
+    observed_pins:
+      actions/checkout:
+        version: v7.0.1
+        sha: 3d3c42e5aac5ba805825da76410c181273ba90b1
+      actions/setup-python:
+        version: v7.0.0
+        sha: 5fda3b95a4ea91299a34e894583c3862153e4b97
+      actions/setup-node:
+        version: v7.0.0
+        sha: 820762786026740c76f36085b0efc47a31fe5020
+      actions/upload-artifact:
+        version: v7.0.0
+        sha: bbbca2ddaa5d8feaa63e36b76fdaad77386f024f
+      actions/configure-pages:
+        version: v6.0.0
+        sha: 45bfe0192ca1faeb007ade9deae92b16b8254a0d
+      actions/upload-pages-artifact:
+        version: v5.0.0
+        sha: fc324d3547104276b827a68afc52ff2a11cc49c9
+      actions/deploy-pages:
+        version: v5.0.0
+        sha: cd2ce8fcbc39b97be8ca5fce6e763baed58fa128
+      ruby/setup-ruby:
+        version_reference: v1-branch-observed-2026-09-07
+        sha: 95ef2b042f9d7a56d8268cba8559e2842e2ad01b
+        classification: third-party
+
+  private_vulnerability_reporting_policy:
+    state: partially_verified
+    evidence:
+      - SECURITY.md
+    judgment: >-
+      Repository policy requires private reporting and names GitHub private
+      vulnerability reporting when available. The active connector does not
+      expose authoritative repository-level private-reporting enablement state.
+
+  github_hosted_security_settings:
+    state: evidence_required
+    attempted_evidence:
+      - repository metadata endpoint
+      - vulnerability-alert endpoint through the connected GitHub capability
+    unavailable_evidence:
+      - secret-scanning enablement
+      - push-protection enablement
+      - Dependabot vulnerability-alert enablement
+      - private vulnerability reporting platform toggle
+    judgment: >-
+      These settings are account/platform state and are not exposed through the
+      currently authorized repository evidence surface. Missing platform
+      evidence is retained as evidence_required and is not inferred as PASS or
+      FAIL.
+
+residual_risk:
+  - id: ONDTF-SEC-PLATFORM-001
+    state: evidence_required
+    scope: github-hosted-security-settings
+    consequence: >-
+      Repository-file controls and protected-main evidence are verified, but a
+      complete claim about GitHub-hosted scanning/reporting settings requires an
+      authorized platform-level observation.
+    blocks_specification_promotion: false
+    closure_condition: >-
+      Record an authoritative platform snapshot of applicable security settings
+      or explicitly classify an unavailable control as not-applicable with a
+      governed rationale.
