@@ -1,5 +1,6 @@
 schema_version: '1.0'
-status: draft
+version: 0.9.0-candidate
+status: active
 purpose: Governed provider lifecycle and transition contract.
 states:
 - id: prospective

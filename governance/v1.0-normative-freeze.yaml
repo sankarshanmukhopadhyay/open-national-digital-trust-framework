@@ -1,0 +1,72 @@
+schema_version: 1
+framework: ONDTF
+target_release: v1.0.0
+state: release-decision-candidate
+baseline_source: model/project/normative-document-manifest.yaml
+baseline_semantics: >-
+  The v1.0 stable release candidate adopts the v0.9.0 candidate normative
+  semantics without a material semantic change. This record freezes the exact
+  repository bytes to be evaluated for the stable-release decision.
+
+normative_surface:
+  - id: NCP-001
+    path: model/normative/requirement-catalogue.yaml
+    classification: core-normative
+    git_blob_sha: 6aa3540ceead86577491f91d3bef13fba94d336f
+  - id: NCP-002
+    path: model/governance/institutional-role-catalogue.yaml
+    classification: core-normative
+    git_blob_sha: d56b0a94e9e187d7f8f478f1883fd249286da304
+  - id: NCP-003
+    path: model/operations/provider-lifecycle.yaml
+    classification: core-normative
+    git_blob_sha: 6c5d03efb1857258530a342cf06f6804b83d6486
+  - id: NCP-004
+    path: model/conformance/conformance-classes.yaml
+    classification: conformance-normative
+    git_blob_sha: 7cf76ddf388cc43ed7ebcc8284e9ffdfa27c131f
+  - id: NCP-005
+    path: model/interoperability/interoperability-profile.yaml
+    classification: profile-normative
+    git_blob_sha: 84d6b06a3536df7402796c770b3aa0e70fd44ad3
+
+excluded_from_normative_freeze:
+  - path: model/recognition/recognition-profile.yaml
+    reason: informative candidate example, not normative stable surface
+  - path: reference-implementation/
+    reason: implementation evidence, not normative authority
+  - path: docs/implementation/
+    reason: informative guidance, not normative authority
+
+material_normative_change:
+  definition: >-
+    A change is material when it can alter an adopter's required behaviour,
+    authority or delegation semantics, lifecycle or revocation outcome,
+    evidence obligation, conformance result, profile compatibility, or the
+    meaning/resolution of a governed identifier.
+  requires:
+    - explicit change classification
+    - change-impact analysis
+    - affected requirement and profile identification
+    - migration determination
+    - evidence invalidation assessment
+    - reassessment of every affected v1 readiness gate
+    - governed release decision
+
+reassessment_triggers:
+  - normative_surface_blob_mismatch
+  - material_normative_change
+  - evidence_invalidation
+  - discovered_semantic_defect
+  - governed_identifier_change
+  - incompatible_profile_change
+
+decision_authority:
+  approve_freeze: maintainers
+  approve_stable_release: maintainers
+  bypass_allowed: false
+
+claim_boundary:
+  - This freeze makes ONDTF eligible for a stable-release decision only when every v1 readiness gate is satisfied.
+  - It does not itself publish v1.0.0 or change the current external evidence level from E1.
+  - It does not assert independent implementation, external interoperability, production readiness, certification, or legal approval.

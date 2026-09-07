@@ -1,0 +1,114 @@
+schema_version: 1
+framework: ONDTF
+applies_to: v1.x
+
+states:
+  - reported
+  - triaged
+  - accepted
+  - rejected
+  - ordinary-erratum
+  - emergency-correction
+  - published
+  - superseded
+  - reassessment-complete
+
+terminal_states:
+  - rejected
+  - reassessment-complete
+
+transitions:
+  - from: reported
+    to: triaged
+    authority: framework-administrator
+    evidence: triage-record
+  - from: triaged
+    to: accepted
+    authority: maintainers
+    evidence: acceptance-decision
+  - from: triaged
+    to: rejected
+    authority: maintainers
+    evidence: rejection-decision
+  - from: accepted
+    to: ordinary-erratum
+    authority: maintainers
+    evidence: correction-classification
+  - from: accepted
+    to: emergency-correction
+    authority: emergency-change-authority
+    evidence: emergency-authority-record
+  - from: ordinary-erratum
+    to: published
+    authority: framework-administrator
+    evidence: publication-record
+  - from: emergency-correction
+    to: published
+    authority: framework-administrator
+    evidence: publication-record
+  - from: published
+    to: superseded
+    authority: maintainers
+    evidence: supersession-record
+  - from: superseded
+    to: reassessment-complete
+    authority: maintainers
+    evidence: reassessment-record
+
+ordinary_erratum:
+  permitted_scope:
+    - non-semantic defect correction
+    - clarification that does not alter normative force
+    - reference or publication defect
+  material_normative_change_allowed: false
+  change_class: compatible
+
+emergency_correction:
+  purpose: >-
+    Permit a time-bounded correction only when delaying action would leave a
+    material security, safety, rights, governance, or conformance defect active.
+  authority: maintainers
+  delegated_execution_role: framework-administrator
+  maximum_scope: smallest change necessary to contain or correct the material defect
+  required_fields:
+    - trigger
+    - affected_normative_surface
+    - authority
+    - effective_at
+    - expiry_or_review_at
+    - evidence_preserved
+    - notification_targets
+    - rollback_or_supersession_path
+    - evidence_invalidation_scope
+  must_trigger:
+    - change_classification
+    - evidence_invalidation_assessment
+    - affected_gate_reassessment
+    - publication_notice
+    - independent_post_action_review
+  cannot:
+    - waive a normative requirement permanently
+    - expand authority beyond the published emergency purpose and scope
+    - suppress preserved evidence
+    - convert missing reassessment evidence into PASS
+
+publication_requirements:
+  - attributable decision record
+  - affected version and identifiers
+  - effective time
+  - change class
+  - migration or operator action where applicable
+  - supersession relationship
+  - evidence invalidation and reassessment state
+
+revocation_and_supersession:
+  rule: >-
+    Every published correction remains reconstructable. A superseding record
+    MUST identify the prior record and MUST NOT erase the historical decision,
+    evidence, or period of effect.
+
+invariants:
+  - Emergency authority is bounded by purpose, scope, duration, evidence, review and termination.
+  - A published correction cannot reach reassessment-complete without a supersession and reassessment record.
+  - Rejected reports create no normative change.
+  - Missing decision authority or evidence is a validation failure, not an implied approval.
