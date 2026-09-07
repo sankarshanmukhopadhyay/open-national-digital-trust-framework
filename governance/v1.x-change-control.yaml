@@ -1,0 +1,70 @@
+schema_version: 1
+framework: ONDTF
+applies_to: v1.x
+classification_required: true
+unknown_class_policy: reject
+
+change_classes:
+  compatible:
+    meaning: >-
+      No consumer-visible semantic incompatibility and no reduction in an
+      existing normative obligation or assurance boundary.
+    version_effect: patch-or-minor
+    migration_required: false
+    evidence_invalidation_assessment_required: true
+    change_impact_record_required: true
+    release_notes_required: true
+
+  materially-normative:
+    meaning: >-
+      Changes normative meaning, obligation, authority, lifecycle, evidence,
+      conformance, or profile semantics while remaining representable within
+      the v1 compatibility contract.
+    version_effect: minor
+    migration_assessment_required: true
+    evidence_invalidation_assessment_required: true
+    assurance_reassessment_required: true
+    affected_requirements_required: true
+    affected_profiles_required: true
+    change_impact_record_required: true
+    release_notes_required: true
+
+  breaking:
+    meaning: >-
+      Creates consumer-visible incompatibility or cannot safely preserve the v1
+      normative contract.
+    version_effect: major
+    title_marker_required: '!'
+    migration_required: true
+    compatibility_evidence_required: true
+    rollback_or_recovery_required: true
+    evidence_invalidation_assessment_required: true
+    assurance_reassessment_required: true
+    affected_consumers_required: true
+    affected_requirements_required: true
+    affected_profiles_required: true
+    change_impact_record_required: true
+    release_notes_required: true
+
+classification_dimensions:
+  - normative_requirements
+  - authority_and_delegation
+  - lifecycle_and_revocation
+  - governed_identifiers
+  - conformance_classes_and_assertions
+  - profiles_and_dependencies
+  - evidence_and_assurance
+  - interoperability_and_recognition
+
+invariants:
+  - A breaking change MUST NOT be published in the v1.x line.
+  - Missing change classification MUST NOT be interpreted as compatible.
+  - A material normative change MUST trigger evidence-invalidation assessment.
+  - Evidence invalidated by a change MUST NOT retain its prior assurance state without reassessment.
+  - Editorial changes MUST be represented as compatible only when they cannot change normative interpretation.
+
+decision_authority:
+  classification: maintainers
+  breaking_exception_within_v1: prohibited
+  material_change_approval: maintainers
+  evidence_reinstatement_after_invalidation: explicit_reassessment_only
