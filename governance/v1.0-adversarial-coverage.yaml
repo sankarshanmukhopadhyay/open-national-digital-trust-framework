@@ -39,7 +39,7 @@ coverage:
   - domain: jurisdiction
     mode: assessor
     requirements: [ONDTF-GOV-001, ONDTF-ROL-006]
-    evidence: [docs/core-specification/governance-requirements.md]
+    evidence: [docs/core-specification/requirements-register.md]
     procedure: Verify mandate, competence, referral and lead-authority evidence against the adopted profile and applicable jurisdiction.
   - domain: lifecycle
     mode: executable
@@ -74,7 +74,7 @@ coverage:
   - domain: remedy
     mode: assessor
     requirements: [ONDTF-RED-001, ONDTF-ROL-007]
-    evidence: [docs/core-specification/governance-requirements.md]
+    evidence: [docs/core-specification/requirements-register.md]
     procedure: Verify accessible challenge, independent review and a remedy completion record capable of changing or correcting the consequential outcome.
   - domain: version-mismatch
     mode: executable
