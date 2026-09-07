@@ -1,0 +1,93 @@
+schema_version: 1
+framework: ONDTF
+target_release: v1.0.0
+coverage_rule: >-
+  Every consequential failure domain must have executable negative evidence or
+  an explicit governed assessor procedure. Missing evidence is not PASS.
+
+required_domains:
+  - authority
+  - delegation
+  - scope
+  - jurisdiction
+  - lifecycle
+  - freshness
+  - suspension
+  - revocation
+  - recognition-equivalence
+  - assurance-downgrade
+  - remedy
+  - version-mismatch
+  - evidence-invalidation
+
+coverage:
+  - domain: authority
+    mode: executable
+    requirements: [ONDTF-AUT-001, ONDTF-AUT-002]
+    evidence: [scripts/validate_interoperability_candidate.py, interop/harness.py]
+    claim: Consequential action is denied when authority evaluation fails even if identity or evidence is otherwise valid.
+  - domain: delegation
+    mode: executable
+    requirements: [ONDTF-AUT-003]
+    evidence: [scripts/validate_schema_instances.py, conformance/candidate-assertions.yaml]
+    claim: Delegated authority cannot validly exceed delegator authority.
+  - domain: scope
+    mode: executable
+    requirements: [ONDTF-GOV-003, ONDTF-CON-001]
+    evidence: [scripts/validate_candidate_specification.py, conformance/candidate-assertions.yaml]
+    claim: Conformance and adoption scope are explicit and bounded.
+  - domain: jurisdiction
+    mode: assessor
+    requirements: [ONDTF-GOV-001, ONDTF-ROL-006]
+    evidence: [docs/core-specification/governance-requirements.md]
+    procedure: Verify mandate, competence, referral and lead-authority evidence against the adopted profile and applicable jurisdiction.
+  - domain: lifecycle
+    mode: executable
+    requirements: [ONDTF-MNT-001]
+    evidence: [model/operations/provider-lifecycle.yaml, scripts/validate_operations_conformance.py]
+    claim: Lifecycle state and permitted transitions are controlled and attributable.
+  - domain: freshness
+    mode: executable
+    requirements: [ONDTF-AUT-002, ONDTF-EVI-001]
+    evidence: [evidence/adversarial/event-01.yaml, scripts/validate_interoperability_candidate.py]
+    claim: Stale authority or evidence is rejected rather than silently reused.
+  - domain: suspension
+    mode: executable
+    requirements: [ONDTF-AUT-002]
+    evidence: [model/operations/provider-lifecycle.yaml, scripts/validate_operations_conformance.py]
+    claim: Suspended state changes admissible authority/effect and is not treated as active.
+  - domain: revocation
+    mode: executable
+    requirements: [ONDTF-AUT-002]
+    evidence: [evidence/adversarial/event-01.yaml, scripts/validate_interoperability_candidate.py]
+    claim: Authentic but revoked authority is denied.
+  - domain: recognition-equivalence
+    mode: executable
+    requirements: [ONDTF-CON-001, ONDTF-CON-003]
+    evidence: [model/recognition/recognition-profile.yaml, scripts/validate_interoperability_candidate.py]
+    claim: Recognition and equivalence remain versioned, scoped and evidence-bounded.
+  - domain: assurance-downgrade
+    mode: assessor
+    requirements: [ONDTF-CON-001, ONDTF-SPR-001]
+    evidence: [evidence/adversarial/event-01.yaml, release/IMPLEMENTATION-AND-INTEROPERABILITY-REPORT-v0.9.0.md]
+    procedure: Reject a downgrade when the proposed evidence or profile would lower an asserted assurance boundary without an explicit bounded decision and updated claim.
+  - domain: remedy
+    mode: assessor
+    requirements: [ONDTF-RED-001, ONDTF-ROL-007]
+    evidence: [docs/core-specification/governance-requirements.md]
+    procedure: Verify accessible challenge, independent review and a remedy completion record capable of changing or correcting the consequential outcome.
+  - domain: version-mismatch
+    mode: executable
+    requirements: [ONDTF-CON-001, ONDTF-CON-003, ONDTF-MNT-001]
+    evidence: [scripts/validate_interoperability_candidate.py, model/interoperability/interoperability-profile.yaml]
+    claim: Version and profile identity are explicit; mismatched versions cannot be silently treated as equivalent.
+  - domain: evidence-invalidation
+    mode: executable
+    requirements: [ONDTF-MNT-002]
+    evidence: [governance/v1.x-change-control.yaml, scripts/validate_v1_stable_controls.py]
+    claim: Material normative change cannot preserve affected evidence state without explicit invalidation assessment and reassessment.
+
+limitations:
+  - Repository-controlled executable evidence remains E1 and is not external penetration testing or operational evidence.
+  - Assessor procedures remain governed human-verification surfaces until equivalent deterministic evidence is available.
+  - The profile-downgrade exercise remains partial for external negotiation; the stable claim is bounded to explicit downgrade detection/disposition, not external protocol interoperability.
