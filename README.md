@@ -1,6 +1,6 @@
 # Open National Digital Trust Framework (ONDTF)
 
-[![Documentation](https://img.shields.io/badge/docs-GitHub%20Pages-blue)](https://sankarshanmukhopadhyay.github.io/open-national-digital-trust-framework/)
+[![Documentation](https://img.shields.io/badge/docs-GitHub%20Pages-blue)](https://qbf-consulting.github.io/open-national-digital-trust-framework/)
 [![Status](https://img.shields.io/badge/status-candidate%20specification-blue)](RELEASE_NOTES.md)
 [![Version](https://img.shields.io/badge/version-v0.9.0-green)](CHANGELOG.md)
 
@@ -8,17 +8,13 @@ The **Open National Digital Trust Framework (ONDTF)** is a jurisdiction-neutral,
 
 ONDTF treats trust as an operational system property. It connects identity, authority, policy, evidence, assurance, decision, effect, accountability, and redress without requiring a single identity system, credential format, registry, protocol, or technology provider.
 
+**Author and maintainer:** Sankarshan Mukhopadhyay, QBF Consulting LLP — `sankarshan@qbfconsulting.digital`  
+**Project stewardship:** QBF Consulting LLP  
+**Canonical repository:** https://github.com/qbf-consulting/open-national-digital-trust-framework
+
 ## What problem does this solve?
 
-National digital programmes often provide identity, authentication, payments, data exchange, credentials, or registries independently. They rarely provide one coherent model for determining:
-
-- who or what is acting;
-- under whose authority;
-- within which policy and jurisdiction;
-- using what evidence;
-- with what assurance;
-- producing which attributable effect;
-- and through which challenge, revocation, and remedy path.
+National digital programmes often provide identity, authentication, payments, data exchange, credentials, or registries independently. They rarely provide one coherent model for determining who or what is acting, under whose authority, within which policy and jurisdiction, using what evidence, with what assurance, producing which attributable effect, and through which challenge, revocation, and remedy path.
 
 ONDTF supplies that missing governance and architecture layer.
 
@@ -33,16 +29,17 @@ ONDTF supplies that missing governance and architecture layer.
 | Primary artefact | Framework, reference architecture, and profile method |
 | Normative posture | Normative requirements are explicitly labelled |
 | India material | Illustrative jurisdiction profile under `profiles/india/` |
+| Stewardship | QBF Consulting LLP |
 | Validation | `python3 scripts/validate_repo.py` |
 
 ## Framework independence and optional compatibility
 
 ONDTF is self-contained at the framework level, implementation-neutral at the architecture level, and extensible through jurisdiction, sector, and technical profiles. Core adoption does not require any particular external meta-model, schema suite, protocol, registry product, or software stack.
 
-Two related projects provide optional implementation accelerators:
+Two related QBF-stewarded projects provide optional implementation accelerators:
 
-- **[Trust Systems Meta-Model (TSMM)](https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model):** a compatible reference meta-model that may be used for deeper semantic formalisation.
-- **[Trust Infrastructure Schemas (TIS)](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas):** a compatible schema suite that may be selected by an implementation or profile for portable machine-readable artefacts.
+- **[Trust Systems Meta-Model (TSMM)](https://github.com/qbf-consulting/trust-systems-meta-model):** a compatible reference meta-model that may be used for deeper semantic formalisation.
+- **[Trust Infrastructure Schemas (TIS)](https://github.com/qbf-consulting/trust-infrastructure-schemas):** a compatible schema suite that may be selected by an implementation or profile for portable machine-readable artefacts.
 
 ```mermaid
 flowchart TB
@@ -65,10 +62,11 @@ See [Framework independence](docs/foundations/framework-independence.md), [Portf
 
 For a guided introduction, use the rendered documentation:
 
-- **[ONDTF in One Hour](https://sankarshanmukhopadhyay.github.io/open-national-digital-trust-framework/docs/learning/one-hour.html)**
-- **[Choose a role-based learning path](https://sankarshanmukhopadhyay.github.io/open-national-digital-trust-framework/learn/)**
-- **[View the framework map](https://sankarshanmukhopadhyay.github.io/open-national-digital-trust-framework/docs/documentation/framework-map.html)**
-- **[Browse the ONDTF Requirements Register](https://sankarshanmukhopadhyay.github.io/open-national-digital-trust-framework/docs/core-specification/requirements-register.html)**
+- **[ONDTF in One Hour](https://qbf-consulting.github.io/open-national-digital-trust-framework/docs/learning/one-hour.html)**
+- **[Choose a role-based learning path](https://qbf-consulting.github.io/open-national-digital-trust-framework/learn/)**
+- **[View the framework map](https://qbf-consulting.github.io/open-national-digital-trust-framework/docs/documentation/framework-map.html)**
+- **[Browse the ONDTF Requirements Register](https://qbf-consulting.github.io/open-national-digital-trust-framework/docs/core-specification/requirements-register.html)**
+- **[Citation metadata](CITATION.cff)**
 
 The GitHub Pages site provides sidebar reference navigation, breadcrumbs, search, and explicit Previous/Next links for the canonical guided sequence.
 
@@ -97,7 +95,6 @@ Documentation is licensed under [CC BY 4.0](LICENSE). Code and executable exampl
 ## Current release
 
 **v0.9.0 — Candidate Specification** freezes the candidate normative architecture, provides complete requirement-to-conformance coverage, adds named conformance classes, five-layer interoperability and bounded recognition/equivalence models, provisional evidence-led calibration, candidate change control, and versioned Guided Framework Construction. Candidate status is explicitly not a claim of legal approval, production certification, or externally operated interoperability.
-
 
 ## Real-world worked exemplars
 

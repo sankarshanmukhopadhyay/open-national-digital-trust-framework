@@ -2,9 +2,9 @@ title: Open National Digital Trust Framework
 short_title: ONDTF
 description: Jurisdiction-neutral, open standards-based framework for national digital
   trust infrastructure.
-url: https://sankarshanmukhopadhyay.github.io
+url: https://qbf-consulting.github.io
 baseurl: /open-national-digital-trust-framework
-repository: sankarshanmukhopadhyay/open-national-digital-trust-framework
+repository: qbf-consulting/open-national-digital-trust-framework
 theme: just-the-docs
 color_scheme: light
 search_enabled: true
@@ -13,7 +13,7 @@ mermaid:
   version: 11.4.1
 aux_links:
   ONDTF on GitHub:
-  - https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework
+  - https://github.com/qbf-consulting/open-national-digital-trust-framework
 aux_links_new_tab: true
 plugins:
 - jekyll-seo-tag
@@ -48,6 +48,6 @@ defaults:
     layout: default
 gh_edit_link: true
 gh_edit_link_text: Suggest an improvement to this page on GitHub.
-gh_edit_repository: https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework
+gh_edit_repository: https://github.com/qbf-consulting/open-national-digital-trust-framework
 gh_edit_branch: main
 gh_edit_view_mode: edit
